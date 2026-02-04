@@ -1,0 +1,65 @@
+---
+interface Props {
+  name: string;
+  slug: string;
+  category: string;
+  categorySlug: string;
+  categoryColor: string;
+  jobCount: number;
+  description?: string;
+}
+
+const { name, slug, category, categorySlug, categoryColor, jobCount, description } = Astro.props;
+---
+
+<a href={`/tools/${slug}/`} class="tool-card card">
+  <div class="tool-card-header">
+    <h3>{name}</h3>
+    <span class="badge" style={`background: ${categoryColor}15; color: ${categoryColor};`}>{category}</span>
+  </div>
+  {description && <p class="tool-desc">{description}</p>}
+  <div class="tool-card-meta">
+    <span class="tool-demand mono">{jobCount.toLocaleString()} job mentions</span>
+  </div>
+</a>
+
+<style>
+  .tool-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .tool-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+
+  .tool-card h3 {
+    margin: 0;
+    font-size: var(--text-lg);
+  }
+
+  .tool-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+    flex: 1;
+  }
+
+  .tool-card-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .tool-demand {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+  }
+</style>

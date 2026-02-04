@@ -1,0 +1,16 @@
+<svg width="400" height="60" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- DataStackGuide Full Logo — Dark Background -->
+  <!-- Font: Plus Jakarta Sans 700 -->
+  <rect width="48" height="48" y="6" rx="11" fill="url(#g1)"/>
+  <rect x="11" y="18" width="26" height="5" rx="2" fill="white"/>
+  <rect x="11" y="27" width="26" height="5" rx="2" fill="white" opacity="0.65"/>
+  <rect x="11" y="36" width="26" height="5" rx="2" fill="white" opacity="0.35"/>
+  <text x="62" y="38" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5">
+    <tspan fill="#14B8A6">Data</tspan><tspan fill="#E8E9ED">StackGuide</tspan>
+  </text>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="6" x2="48" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/>
+    </linearGradient>
+  </defs>
+</svg>

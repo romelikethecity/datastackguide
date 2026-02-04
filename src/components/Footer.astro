@@ -1,0 +1,163 @@
+---
+const currentYear = new Date().getFullYear();
+
+const categoryLinks = [
+  { href: '/categories/enrichment/', label: 'Data Enrichment' },
+  { href: '/categories/cleaning/', label: 'Data Cleaning' },
+  { href: '/categories/validation/', label: 'Data Validation' },
+  { href: '/categories/intent/', label: 'Intent Data' },
+  { href: '/categories/abm/', label: 'ABM & Targeting' },
+  { href: '/categories/healthcare/', label: 'Healthcare Data' },
+];
+
+const resourceLinks = [
+  { href: '/compare/', label: 'Tool Comparisons' },
+  { href: '/alternatives/', label: 'Alternatives' },
+  { href: '/guides/', label: 'Guides' },
+  { href: '/glossary/', label: 'Glossary' },
+];
+
+const companyLinks = [
+  { href: 'https://veruminc.com', label: 'Verum', external: true },
+  { href: 'https://getprovyx.com', label: 'Provyx', external: true },
+];
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/logos/logo-horizontal-dark-bg.svg" alt="DataStackGuide" width="180" height="40">
+        <p>Compare 200+ B2B data tools. Real pricing. Honest reviews. Job market demand data from 23,000+ postings.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          {categoryLinks.map(link => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          {resourceLinks.map(link => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          {companyLinks.map(link => (
+            <li>
+              <a href={link.href} target="_blank" rel="noopener">{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="disclosure">DataStackGuide is operated by the team behind <a href="https://veruminc.com" target="_blank" rel="noopener">Verum</a> and <a href="https://getprovyx.com" target="_blank" rel="noopener">Provyx</a>. We include our services where relevant but maintain editorial independence in our reviews.</p>
+      <p class="copyright">&copy; {currentYear} DataStackGuide. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--slate-900);
+    color: var(--slate-400);
+    padding: var(--space-16) 0 var(--space-8);
+    margin-top: var(--space-16);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-10);
+    margin-bottom: var(--space-12);
+  }
+
+  .footer-brand img {
+    margin-bottom: var(--space-4);
+  }
+
+  .footer-brand p {
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    max-width: 320px;
+  }
+
+  .footer-col h4 {
+    color: var(--slate-200);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-col li {
+    margin-bottom: var(--space-2);
+  }
+
+  .footer-col a {
+    color: var(--slate-400);
+    font-size: var(--text-sm);
+    transition: color 0.15s ease;
+  }
+
+  .footer-col a:hover {
+    color: var(--teal-400);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: var(--space-6);
+  }
+
+  .footer-bottom .disclosure {
+    font-size: var(--text-xs);
+    color: var(--slate-500);
+    margin-bottom: var(--space-3);
+    line-height: 1.6;
+  }
+
+  .footer-bottom .disclosure a {
+    color: var(--slate-400);
+  }
+
+  .footer-bottom .copyright {
+    font-size: var(--text-xs);
+    color: var(--slate-600);
+  }
+
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8);
+    }
+
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

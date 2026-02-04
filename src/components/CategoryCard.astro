@@ -1,0 +1,64 @@
+---
+interface Props {
+  name: string;
+  slug: string;
+  description: string;
+  toolCount: number;
+  color: string;
+  icon: string;
+}
+
+const { name, slug, description, toolCount, color, icon } = Astro.props;
+---
+
+<a href={`/categories/${slug}/`} class="category-card card">
+  <div class="category-icon" style={`background: ${color}15; color: ${color};`}>
+    <span aria-hidden="true">{icon}</span>
+  </div>
+  <h3>{name}</h3>
+  <p>{description}</p>
+  <span class="category-count mono">{toolCount} tools</span>
+</a>
+
+<style>
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .category-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .category-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    font-size: 1.3rem;
+  }
+
+  .category-card h3 {
+    font-size: var(--text-lg);
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  .category-card p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+    flex: 1;
+  }
+
+  .category-count {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+  }
+</style>

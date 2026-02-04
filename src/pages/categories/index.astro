@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CategoryCard from '../../components/CategoryCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+import categoriesData from '../../../data/categories.json';
+
+const categories = categoriesData.categories;
+---
+
+<BaseLayout
+  title="Data Tool Categories"
+  description="Browse B2B data tools by category: enrichment, cleaning, validation, intent data, ABM, orchestration, and more. Compare tools with real pricing and job demand data."
+  canonicalPath="categories/"
+>
+  <div class="container">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Categories' }
+    ]} />
+
+    <section class="page-hero">
+      <h1>Data Tool Categories</h1>
+      <p>Browse {categories.length} categories of B2B data tools. Each category includes real pricing, honest reviews, and job market demand data.</p>
+    </section>
+
+    <div class="category-grid">
+      {categories.map((cat: any) => (
+        <CategoryCard
+          name={cat.name}
+          slug={cat.slug}
+          description={cat.description}
+          toolCount={cat.tool_count}
+          color={cat.color}
+          icon={cat.icon}
+        />
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: var(--space-8) 0;
+  }
+
+  .page-hero h1 {
+    margin-bottom: var(--space-3);
+  }
+
+  .page-hero p {
+    color: var(--color-text-secondary);
+    max-width: 640px;
+    line-height: 1.6;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-6);
+    padding-bottom: var(--space-16);
+  }
+</style>

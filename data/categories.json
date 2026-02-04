@@ -1,0 +1,867 @@
+{
+  "generated_at": "2026-02-03T16:12:41.421327",
+  "categories": [
+    {
+      "name": "List Building & Prospecting",
+      "slug": "list-building",
+      "description": "Build targeted prospect lists from scratch. Search by industry, title, company size, and more.",
+      "color": "#F97316",
+      "icon": "\ud83d\udccb",
+      "tool_count": 20,
+      "tools": [
+        {
+          "name": "Zoominfo",
+          "slug": "zoominfo",
+          "job_count": 85,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Linkedin Sales Navigator",
+          "slug": "linkedin-sales-navigator",
+          "job_count": 61,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Salesloft",
+          "slug": "salesloft",
+          "job_count": 43,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Instantly",
+          "slug": "instantly",
+          "job_count": 38,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Apollo",
+          "slug": "apollo",
+          "job_count": 37,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Nooks",
+          "slug": "nooks",
+          "job_count": 8,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Clearbit",
+          "slug": "clearbit",
+          "job_count": 7,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Outreach Io",
+          "slug": "outreach-io",
+          "job_count": 7,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Orum",
+          "slug": "orum",
+          "job_count": 6,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Cognism",
+          "slug": "cognism",
+          "job_count": 4,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Leadiq",
+          "slug": "leadiq",
+          "job_count": 3,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Amplemarket",
+          "slug": "amplemarket",
+          "job_count": 2,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Lemlist",
+          "slug": "lemlist",
+          "job_count": 2,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Bombora",
+          "slug": "bombora",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Gong Engage",
+          "slug": "gong-engage",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Groove Clari",
+          "slug": "groove-clari",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Seamless Ai",
+          "slug": "seamless-ai",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Smartlead",
+          "slug": "smartlead",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Verum",
+          "slug": "verum",
+          "job_count": 0,
+          "description": "Done-for-you data cleaning, enrichment, and validation services. Projects start at $500.",
+          "is_service": true
+        },
+        {
+          "name": "Provyx",
+          "slug": "provyx",
+          "job_count": 0,
+          "description": "NPI-verified healthcare provider data across 40+ specialties. Pay-per-record, no contracts.",
+          "is_service": true
+        }
+      ]
+    },
+    {
+      "name": "Data Orchestration",
+      "slug": "orchestration",
+      "description": "Move data between systems, sync CRM fields, and automate data workflows across your stack.",
+      "color": "#F59E0B",
+      "icon": "\u26a1",
+      "tool_count": 12,
+      "tools": [
+        {
+          "name": "Zapier",
+          "slug": "zapier",
+          "job_count": 17,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Fivetran",
+          "slug": "fivetran",
+          "job_count": 11,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Mulesoft",
+          "slug": "mulesoft",
+          "job_count": 10,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Census Data",
+          "slug": "census-data",
+          "job_count": 6,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "N8N",
+          "slug": "n8n",
+          "job_count": 6,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Boomi",
+          "slug": "boomi",
+          "job_count": 5,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Workato Ipaas",
+          "slug": "workato-ipaas",
+          "job_count": 5,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Make",
+          "slug": "make",
+          "job_count": 4,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Hightouch",
+          "slug": "hightouch",
+          "job_count": 3,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Tray",
+          "slug": "tray",
+          "job_count": 3,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Airbyte",
+          "slug": "airbyte",
+          "job_count": 2,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Celigo",
+          "slug": "celigo",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        }
+      ]
+    },
+    {
+      "name": "CRM Platforms",
+      "slug": "crm",
+      "description": "Customer relationship management platforms where your data lives. The system of record for sales and marketing.",
+      "color": "#3B82F6",
+      "icon": "\ud83d\uddc3\ufe0f",
+      "tool_count": 12,
+      "tools": [
+        {
+          "name": "Salesforce",
+          "slug": "salesforce",
+          "job_count": 1694,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Hubspot",
+          "slug": "hubspot",
+          "job_count": 432,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Dynamics 365",
+          "slug": "dynamics-365",
+          "job_count": 65,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Zoho Crm",
+          "slug": "zoho-crm",
+          "job_count": 20,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Copper",
+          "slug": "copper",
+          "job_count": 12,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Pipedrive",
+          "slug": "pipedrive",
+          "job_count": 9,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Monday Sales",
+          "slug": "monday-sales",
+          "job_count": 7,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Sugarcrm",
+          "slug": "sugarcrm",
+          "job_count": 5,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Sap Sales Cloud",
+          "slug": "sap-sales-cloud",
+          "job_count": 3,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Oracle Cx",
+          "slug": "oracle-cx",
+          "job_count": 2,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Freshsales",
+          "slug": "freshsales",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Nutshell",
+          "slug": "nutshell",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        }
+      ]
+    },
+    {
+      "name": "Data Enrichment",
+      "slug": "enrichment",
+      "description": "Tools that append firmographic, technographic, and contact data to your existing records. Fill the gaps in your CRM without manual research.",
+      "color": "#14B8A6",
+      "icon": "\ud83d\udd0d",
+      "tool_count": 10,
+      "tools": [
+        {
+          "name": "Zoominfo",
+          "slug": "zoominfo",
+          "job_count": 85,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Linkedin Sales Navigator",
+          "slug": "linkedin-sales-navigator",
+          "job_count": 61,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Clay",
+          "slug": "clay",
+          "job_count": 26,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Clearbit",
+          "slug": "clearbit",
+          "job_count": 7,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Cognism",
+          "slug": "cognism",
+          "job_count": 4,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Leadiq",
+          "slug": "leadiq",
+          "job_count": 3,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Bombora",
+          "slug": "bombora",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Seamless Ai",
+          "slug": "seamless-ai",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Verum",
+          "slug": "verum",
+          "job_count": 0,
+          "description": "Done-for-you data cleaning, enrichment, and validation services. Projects start at $500.",
+          "is_service": true
+        },
+        {
+          "name": "Provyx",
+          "slug": "provyx",
+          "job_count": 0,
+          "description": "NPI-verified healthcare provider data across 40+ specialties. Pay-per-record, no contracts.",
+          "is_service": true
+        }
+      ]
+    },
+    {
+      "name": "Data Validation",
+      "slug": "validation",
+      "description": "Verify emails, phone numbers, and addresses before they enter your CRM. Catch bad data at the source.",
+      "color": "#06B6D4",
+      "icon": "\u2713",
+      "tool_count": 10,
+      "tools": [
+        {
+          "name": "Zoominfo",
+          "slug": "zoominfo",
+          "job_count": 85,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Linkedin Sales Navigator",
+          "slug": "linkedin-sales-navigator",
+          "job_count": 61,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Demandtools",
+          "slug": "demandtools",
+          "job_count": 32,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Clearbit",
+          "slug": "clearbit",
+          "job_count": 7,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Cognism",
+          "slug": "cognism",
+          "job_count": 4,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Leadiq",
+          "slug": "leadiq",
+          "job_count": 3,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Bombora",
+          "slug": "bombora",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Ringlead Revops",
+          "slug": "ringlead-revops",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Seamless Ai",
+          "slug": "seamless-ai",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Verum",
+          "slug": "verum",
+          "job_count": 0,
+          "description": "Done-for-you data cleaning, enrichment, and validation services. Projects start at $500.",
+          "is_service": true
+        }
+      ]
+    },
+    {
+      "name": "Contact Databases",
+      "slug": "contact-databases",
+      "description": "Access millions of verified B2B contacts. Direct dials, emails, and professional profiles.",
+      "color": "#6366F1",
+      "icon": "\ud83d\udcc7",
+      "tool_count": 10,
+      "tools": [
+        {
+          "name": "Zoominfo",
+          "slug": "zoominfo",
+          "job_count": 85,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Linkedin Sales Navigator",
+          "slug": "linkedin-sales-navigator",
+          "job_count": 61,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Clay",
+          "slug": "clay",
+          "job_count": 26,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Clearbit",
+          "slug": "clearbit",
+          "job_count": 7,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Cognism",
+          "slug": "cognism",
+          "job_count": 4,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Leadiq",
+          "slug": "leadiq",
+          "job_count": 3,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Bombora",
+          "slug": "bombora",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Seamless Ai",
+          "slug": "seamless-ai",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Provyx",
+          "slug": "provyx",
+          "job_count": 0,
+          "description": "NPI-verified healthcare provider data across 40+ specialties. Pay-per-record, no contracts.",
+          "is_service": true
+        },
+        {
+          "name": "Definitive Healthcare",
+          "slug": "definitive-healthcare",
+          "job_count": 0,
+          "description": "Healthcare commercial intelligence platform with provider, claims, and reference data.",
+          "is_service": false
+        }
+      ]
+    },
+    {
+      "name": "Technographic Data",
+      "slug": "technographic",
+      "description": "See what technology your prospects use. Target by tech stack, identify displacement opportunities.",
+      "color": "#EC4899",
+      "icon": "\ud83d\udcbb",
+      "tool_count": 9,
+      "tools": [
+        {
+          "name": "Zoominfo",
+          "slug": "zoominfo",
+          "job_count": 85,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Linkedin Sales Navigator",
+          "slug": "linkedin-sales-navigator",
+          "job_count": 61,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Clay",
+          "slug": "clay",
+          "job_count": 26,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Clearbit",
+          "slug": "clearbit",
+          "job_count": 7,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Cognism",
+          "slug": "cognism",
+          "job_count": 4,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Leadiq",
+          "slug": "leadiq",
+          "job_count": 3,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Bombora",
+          "slug": "bombora",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Seamless Ai",
+          "slug": "seamless-ai",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Provyx",
+          "slug": "provyx",
+          "job_count": 0,
+          "description": "NPI-verified healthcare provider data across 40+ specialties. Pay-per-record, no contracts.",
+          "is_service": true
+        }
+      ]
+    },
+    {
+      "name": "Intent Data",
+      "slug": "intent",
+      "description": "Identify accounts actively researching solutions like yours. Know who's in-market before they fill out a form.",
+      "color": "#8B5CF6",
+      "icon": "\ud83d\udce1",
+      "tool_count": 6,
+      "tools": [
+        {
+          "name": "Warmly",
+          "slug": "warmly",
+          "job_count": 31,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Bombora Intent",
+          "slug": "bombora-intent",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Common Room",
+          "slug": "common-room",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Leadfeeder",
+          "slug": "leadfeeder",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Mutiny",
+          "slug": "mutiny",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Rb2B",
+          "slug": "rb2b",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        }
+      ]
+    },
+    {
+      "name": "ABM & Targeting",
+      "slug": "abm",
+      "description": "Account-based marketing platforms for targeting, advertising, and engaging high-value accounts.",
+      "color": "#EF4444",
+      "icon": "\ud83c\udfaf",
+      "tool_count": 6,
+      "tools": [
+        {
+          "name": "6Sense",
+          "slug": "6sense",
+          "job_count": 22,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Linkedin Marketing",
+          "slug": "linkedin-marketing",
+          "job_count": 9,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Demandbase",
+          "slug": "demandbase",
+          "job_count": 8,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Rollworks",
+          "slug": "rollworks",
+          "job_count": 2,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Terminus",
+          "slug": "terminus",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Verum",
+          "slug": "verum",
+          "job_count": 0,
+          "description": "Done-for-you data cleaning, enrichment, and validation services. Projects start at $500.",
+          "is_service": true
+        }
+      ]
+    },
+    {
+      "name": "Data Quality & Governance",
+      "slug": "data-quality",
+      "description": "Monitor, score, and improve data quality across your systems. Prevent bad data from entering your pipeline.",
+      "color": "#10B981",
+      "icon": "\ud83d\udcca",
+      "tool_count": 6,
+      "tools": [
+        {
+          "name": "Demandtools",
+          "slug": "demandtools",
+          "job_count": 32,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Fivetran",
+          "slug": "fivetran",
+          "job_count": 11,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Census Data",
+          "slug": "census-data",
+          "job_count": 6,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Hightouch",
+          "slug": "hightouch",
+          "job_count": 3,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Airbyte",
+          "slug": "airbyte",
+          "job_count": 2,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Ringlead Revops",
+          "slug": "ringlead-revops",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        }
+      ]
+    },
+    {
+      "name": "Data Cleaning & Hygiene",
+      "slug": "cleaning",
+      "description": "Deduplication, standardization, and formatting tools that keep your CRM data accurate and usable.",
+      "color": "#10B981",
+      "icon": "\ud83e\uddf9",
+      "tool_count": 3,
+      "tools": [
+        {
+          "name": "Demandtools",
+          "slug": "demandtools",
+          "job_count": 32,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Ringlead Revops",
+          "slug": "ringlead-revops",
+          "job_count": 1,
+          "description": "",
+          "is_service": false
+        },
+        {
+          "name": "Verum",
+          "slug": "verum",
+          "job_count": 0,
+          "description": "Done-for-you data cleaning, enrichment, and validation services. Projects start at $500.",
+          "is_service": true
+        }
+      ]
+    },
+    {
+      "name": "Healthcare Data",
+      "slug": "healthcare",
+      "description": "NPI-verified provider data, practice intelligence, and healthcare-specific enrichment for medical sales teams.",
+      "color": "#3B82F6",
+      "icon": "\ud83c\udfe5",
+      "tool_count": 2,
+      "tools": [
+        {
+          "name": "Provyx",
+          "slug": "provyx",
+          "job_count": 0,
+          "description": "NPI-verified healthcare provider data across 40+ specialties. Pay-per-record, no contracts.",
+          "is_service": true
+        },
+        {
+          "name": "Definitive Healthcare",
+          "slug": "definitive-healthcare",
+          "job_count": 0,
+          "description": "Healthcare commercial intelligence platform with provider, claims, and reference data.",
+          "is_service": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import ToolCard from '../components/ToolCard.astro';
+
+import categoriesData from '../../data/categories.json';
+import marketData from '../../data/market_signals.json';
+
+const categories = categoriesData.categories;
+const topTools = marketData.top_tools;
+const totalJobs = marketData.total_jobs_analyzed;
+const totalCompanies = marketData.total_companies;
+const totalTools = marketData.total_tools_tracked;
+
+// Find category color for each tool
+function getCategoryColor(catSlug: string): string {
+  const cat = categories.find((c: any) => c.slug === catSlug);
+  return cat?.color || '#14B8A6';
+}
+
+function getCategoryName(catSlug: string): string {
+  const cat = categories.find((c: any) => c.slug === catSlug);
+  return cat?.name || catSlug;
+}
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DataStackGuide",
+  "url": "https://datastackguide.com",
+  "logo": "https://datastackguide.com/assets/icons/icon.svg",
+  "description": "Compare 200+ B2B data enrichment, validation, and intent tools. Real pricing, honest reviews, job market demand data."
+};
+---
+
+<BaseLayout
+  title="Find the Right B2B Data Tool"
+  description="Compare 200+ B2B data enrichment, validation, and intent tools. Real pricing, honest reviews, and job demand data from 23,000+ postings."
+  canonicalPath=""
+  schema={schema}
+>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Find the Right B2B Data Tool</h1>
+      <p class="hero-sub">Compare data enrichment, validation, and intent tools. Real pricing. Honest reviews. Job demand data from {totalJobs.toLocaleString()}+ postings.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number mono">{totalTools}+</span>
+          <span class="stat-label">Tools tracked</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number mono">{totalJobs.toLocaleString()}+</span>
+          <span class="stat-label">Jobs analyzed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number mono">{totalCompanies.toLocaleString()}+</span>
+          <span class="stat-label">Companies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
+    <div class="container">
+      <h2>Browse by Category</h2>
+      <div class="category-grid">
+        {categories.map((cat: any) => (
+          <CategoryCard
+            name={cat.name}
+            slug={cat.slug}
+            description={cat.description}
+            toolCount={cat.tool_count}
+            color={cat.color}
+            icon={cat.icon}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Tools -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Most In-Demand Tools</h2>
+        <p class="text-secondary">Based on job posting frequency across {totalCompanies.toLocaleString()}+ companies.</p>
+      </div>
+      <div class="tool-grid">
+        {topTools.slice(0, 12).map((tool: any) => {
+          const primaryCat = tool.categories[0];
+          return (
+            <ToolCard
+              name={tool.name}
+              slug={tool.slug}
+              category={getCategoryName(primaryCat)}
+              categorySlug={primaryCat}
+              categoryColor={getCategoryColor(primaryCat)}
+              jobCount={tool.job_count}
+            />
+          );
+        })}
+      </div>
+      <div class="section-cta">
+        <a href="/tools/" class="btn-outline">View all tools →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-content">
+          <h2>Don't have time to manage this yourself?</h2>
+          <p>Verum handles data cleaning and enrichment as a service. Projects start at $500, delivered in 24-48 hours.</p>
+          <div class="cta-buttons">
+            <a href="https://veruminc.com" class="btn" target="_blank" rel="noopener">Learn about Verum →</a>
+            <a href="https://getprovyx.com" class="btn-outline" target="_blank" rel="noopener">Healthcare data? Try Provyx →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="section section-alt">
+    <div class="container-narrow">
+      <div class="methodology">
+        <h3>How we get our data</h3>
+        <p>We analyze {totalJobs.toLocaleString()}+ job postings across {totalCompanies.toLocaleString()}+ companies to measure real-world tool adoption. When companies hire for roles that require specific tools, it shows what they're actually using, not what they claim to use.</p>
+        <p>Every tool page includes job demand data, salary correlations, and co-occurrence insights you won't find anywhere else. No pay-to-play. No vendor-sponsored rankings.</p>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .hero {
+    background: var(--gradient-brand-deep);
+    color: #fff;
+    padding: var(--space-16) 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: var(--text-3xl);
+    color: #fff;
+    margin-bottom: var(--space-4);
+  }
+
+  .hero-sub {
+    font-size: var(--text-lg);
+    color: var(--teal-100);
+    max-width: 640px;
+    margin: 0 auto var(--space-10);
+    line-height: 1.6;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-10);
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
+  .stat-number {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--teal-300);
+  }
+
+  .stat-label {
+    font-size: var(--text-sm);
+    color: var(--teal-200);
+  }
+
+  .section {
+    padding: var(--space-16) 0;
+  }
+
+  .section-alt {
+    background: var(--color-bg);
+  }
+
+  .section h2 {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-header p {
+    margin-top: var(--space-2);
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .section-cta {
+    text-align: center;
+    margin-top: var(--space-8);
+  }
+
+  .cta-banner {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-10);
+  }
+
+  .cta-content h2 {
+    margin-bottom: var(--space-3);
+  }
+
+  .cta-content p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+    max-width: 560px;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .methodology {
+    text-align: center;
+  }
+
+  .methodology h3 {
+    margin-bottom: var(--space-4);
+  }
+
+  .methodology p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-4);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: var(--space-10) 0;
+    }
+
+    .hero h1 {
+      font-size: var(--text-2xl);
+    }
+
+    .hero-stats {
+      gap: var(--space-6);
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-stats {
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+  }
+</style>

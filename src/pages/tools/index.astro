@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ToolCard from '../../components/ToolCard.astro';
+
+import toolsData from '../../../data/tools.json';
+import categoriesData from '../../../data/categories.json';
+
+const tools = toolsData.tools;
+const categories = categoriesData.categories;
+
+function getCategoryColor(catSlug: string): string {
+  const cat = categories.find((c: any) => c.slug === catSlug);
+  return cat?.color || '#14B8A6';
+}
+
+function getCategoryName(catSlug: string): string {
+  const cat = categories.find((c: any) => c.slug === catSlug);
+  return cat?.name || catSlug;
+}
+---
+
+<BaseLayout
+  title="All Data Tools"
+  description="Browse all B2B data tools: enrichment, cleaning, validation, intent data, ABM, and more. Compare pricing, features, and job market demand."
+  canonicalPath="tools/"
+>
+  <div class="container">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'All Tools' }
+    ]} />
+
+    <section class="page-hero">
+      <h1>All Data Tools</h1>
+      <p>{tools.length} tools tracked across {categories.length} categories. Sorted by job market demand.</p>
+    </section>
+
+    <div class="tool-grid">
+      {tools.map((tool: any) => {
+        const primaryCat = tool.primary_category || tool.categories[0];
+        return (
+          <ToolCard
+            name={tool.name}
+            slug={tool.slug}
+            category={getCategoryName(primaryCat)}
+            categorySlug={primaryCat}
+            categoryColor={getCategoryColor(primaryCat)}
+            jobCount={tool.job_count}
+            description={tool.description}
+          />
+        );
+      })}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: var(--space-8) 0;
+  }
+
+  .page-hero h1 {
+    margin-bottom: var(--space-3);
+  }
+
+  .page-hero p {
+    color: var(--color-text-secondary);
+  }
+
+  .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-6);
+    padding-bottom: var(--space-16);
+  }
+</style>

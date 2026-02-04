@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page Not Found"
+  description="The page you're looking for doesn't exist. Browse our B2B data tools directory."
+>
+  <div class="container">
+    <section class="not-found">
+      <h1>404</h1>
+      <p>Page not found. It may have moved, or you might have a typo in the URL.</p>
+      <div class="not-found-links">
+        <a href="/" class="btn">Back to Home</a>
+        <a href="/categories/" class="btn-outline">Browse Categories</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found {
+    text-align: center;
+    padding: var(--space-16) 0;
+  }
+
+  .not-found h1 {
+    font-size: 6rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .not-found p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+    font-size: var(--text-lg);
+  }
+
+  .not-found-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+</style>
