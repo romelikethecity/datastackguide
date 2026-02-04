@@ -3038,6 +3038,455 @@
           "a": "Both identify website visitors, but at different levels. Leadfeeder identifies companies. RB2B identifies individual visitors (person-level identification). RB2B is newer and more granular but has a smaller track record. Leadfeeder is more established with better CRM integrations."
         }
       ]
+    },
+    {
+      "slug": "zoho-crm-pricing",
+      "tool_slug": "zoho-crm",
+      "title": "Zoho CRM Pricing (2026): Every Tier Broken Down",
+      "meta_description": "Zoho CRM pricing explained: all 5 tiers from Free to Ultimate, hidden costs, and what a 20-person team pays. Updated for 2026.",
+      "hook": "Zoho CRM is one of the cheapest CRMs that can compete with Salesforce and HubSpot. Plans range from free to $52/user/month. But cheap doesn't mean zero hidden costs. Here's the full breakdown.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "Free (up to 3 users)",
+          "highlights": [
+            "Up to 3 users",
+            "Basic contact and lead management",
+            "Tasks, events, and call logs",
+            "Standard reports"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price": "$14/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Scoring rules",
+            "Workflows and email templates",
+            "Custom dashboards",
+            "Multiple pipelines"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "$23/user/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "SalesSignals (real-time notifications)",
+            "Blueprint (process management)",
+            "Inventory management",
+            "Validation rules"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "$40/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Zia AI assistant",
+            "Advanced customization",
+            "Multi-user portals",
+            "Custom modules and buttons",
+            "Territory management"
+          ]
+        },
+        {
+          "name": "Ultimate",
+          "price": "$52/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Advanced BI (bundled Zoho Analytics)",
+            "Enhanced storage limits",
+            "Extended AI features",
+            "Priority support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Data migration",
+          "range": "$500-$5,000",
+          "note": "Migrating from another CRM takes time. Zoho offers paid migration services, or you can do it yourself with CSV imports."
+        },
+        {
+          "item": "Third-party integrations",
+          "range": "$1,000-$5,000/year",
+          "note": "Zoho has its own ecosystem, but connecting to non-Zoho tools (Slack, Mailchimp, etc.) sometimes requires Zapier or custom middleware."
+        },
+        {
+          "item": "Training and onboarding",
+          "range": "$500-$2,000",
+          "note": "Zoho's UI isn't as intuitive as HubSpot. Budget for team training, especially if you're coming from a simpler CRM."
+        },
+        {
+          "item": "Zoho Analytics add-on",
+          "range": "$24/user/mo",
+          "note": "Advanced reporting beyond built-in dashboards requires Zoho Analytics, sold separately unless you're on Ultimate."
+        },
+        {
+          "item": "Zoho One bundle consideration",
+          "range": "$37/user/mo",
+          "note": "Zoho One includes 45+ Zoho apps for $37/user/month. If you need more than 2-3 Zoho products, the bundle is better value than buying individually."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "20-person sales team on Enterprise tier",
+        "line_items": [
+          {
+            "item": "20 Enterprise licenses ($40/user/mo)",
+            "annual": "$9,600"
+          },
+          {
+            "item": "Third-party integrations (Zapier, middleware)",
+            "annual": "$2,000"
+          },
+          {
+            "item": "Training and onboarding",
+            "annual": "$1,000"
+          }
+        ],
+        "total": "~$13,000/year",
+        "per_user_real": "~$54/user/mo"
+      },
+      "bottom_line": "Zoho CRM is one of the most affordable CRMs at scale. A 20-person team on Enterprise costs about $13K/year all-in. That's a fraction of what Salesforce or HubSpot charge. The catch: Zoho's ecosystem is deep but can feel clunky compared to those competitors. You save money but may spend more time configuring workflows and training your team. For budget-conscious teams that don't mind a learning curve, it's hard to beat.",
+      "faq": [
+        {
+          "q": "Is Zoho CRM's free plan worth using?",
+          "a": "For teams of 3 or fewer, yes. You get basic contact management, task tracking, and standard reports. It's limited, but it's a real CRM, not a demo. Once you hit 4 users or need workflow automation, you'll need to upgrade to Standard ($14/user/month)."
+        },
+        {
+          "q": "Should I buy Zoho CRM or Zoho One?",
+          "a": "If you only need CRM, buy CRM. But if you're also using Zoho Desk, Zoho Campaigns, or Zoho Analytics, Zoho One at $37/user/month bundles 45+ apps and usually saves money. Do the math on which Zoho products your team uses before deciding."
+        },
+        {
+          "q": "How does Zoho CRM compare to HubSpot on price?",
+          "a": "Zoho is significantly cheaper. Enterprise Zoho costs $40/user/month. HubSpot's Professional tier starts at $90/month per seat with a $1,781 onboarding fee. For a 20-person team, Zoho is roughly one-third the cost of HubSpot. HubSpot has a smoother UI and better marketing tools. Zoho wins on price."
+        }
+      ]
+    },
+    {
+      "slug": "terminus-pricing",
+      "tool_slug": "terminus",
+      "title": "Terminus Pricing (2026): ABM Platform Costs Explained",
+      "meta_description": "Terminus pricing breakdown: estimated costs by tier, hidden fees like ad spend, and what mid-market ABM teams pay. Custom quotes demystified.",
+      "hook": "Terminus doesn't publish pricing. Based on buyer data, expect $24,000-$75,000+/year for the platform alone. Add in ad spend and implementation, and first-year costs can top $100K. Here's what you're looking at.",
+      "tiers": [
+        {
+          "name": "Starter",
+          "price": "~$24,000/year",
+          "billing": "Annual (custom quote)",
+          "highlights": [
+            "ABM advertising (display ads to target accounts)",
+            "Account identification and scoring",
+            "Basic reporting and analytics",
+            "CRM integration"
+          ]
+        },
+        {
+          "name": "Growth",
+          "price": "~$48,000/year",
+          "billing": "Annual (custom quote)",
+          "popular": true,
+          "highlights": [
+            "Everything in Starter",
+            "Intent data signals",
+            "Chat and conversational marketing",
+            "Email signature marketing",
+            "Multi-channel campaign orchestration"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "~$75,000+/year",
+          "billing": "Annual (custom quote)",
+          "highlights": [
+            "Full ABM platform",
+            "Multi-touch attribution",
+            "Advanced analytics and revenue reporting",
+            "Custom integrations and API access",
+            "Dedicated customer success manager"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Ad spend (separate from platform)",
+          "range": "$5,000-$20,000/mo",
+          "note": "Terminus runs ads to your target accounts, but the media spend is billed separately. $5K/month is a bare minimum for meaningful ABM ad campaigns."
+        },
+        {
+          "item": "Implementation and setup",
+          "range": "$5,000-$15,000",
+          "note": "Getting Terminus connected to your CRM, MAP, and ad accounts takes 4-8 weeks. Most companies use Terminus's professional services for setup."
+        },
+        {
+          "item": "Content creation for campaigns",
+          "range": "$5,000-$20,000/year",
+          "note": "ABM campaigns need targeted content: landing pages, ad creatives, email sequences per segment. This is often the most underestimated cost."
+        },
+        {
+          "item": "Headcount to manage ABM",
+          "range": "$60K-$100K/year",
+          "note": "Terminus doesn't run itself. Most companies assign at least a half-time or full-time ABM manager to build campaigns, analyze data, and coordinate with sales."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market ABM team targeting 50,000 accounts",
+        "line_items": [
+          {
+            "item": "Terminus Growth plan",
+            "annual": "$36,000"
+          },
+          {
+            "item": "ABM ad spend ($5K/mo average)",
+            "annual": "$60,000"
+          },
+          {
+            "item": "Implementation (Year 1)",
+            "annual": "$10,000"
+          }
+        ],
+        "total": "~$106,000 first year",
+        "per_user_real": "N/A (platform-level cost, not per-user)"
+      },
+      "bottom_line": "Terminus isn't cheap, but ABM platforms never are. First-year costs can easily hit $100K+ once you factor in ad spend and setup. The real question is whether your sales cycle and deal size justify it. If your average deal is under $30K ARR, ABM platforms like Terminus are overkill. If you're closing six-figure deals with long sales cycles, the account-level targeting and intent data can pay for themselves in a few closed deals.",
+      "faq": [
+        {
+          "q": "Why doesn't Terminus publish pricing?",
+          "a": "Like most enterprise ABM platforms, Terminus prices based on your target account volume, modules selected, and contract length. Expect to go through a sales process with a demo before getting a quote. Budget 2-3 weeks for the evaluation."
+        },
+        {
+          "q": "Is Terminus worth it for small companies?",
+          "a": "Probably not. If your marketing budget is under $50K/year total, Terminus will eat most of it. Smaller teams can get ABM-like results using LinkedIn Ads targeting plus a tool like RollWorks or even manual outreach. Terminus makes more sense when you have 10,000+ target accounts and a dedicated demand gen team."
+        },
+        {
+          "q": "How does Terminus compare to Demandbase and 6sense?",
+          "a": "All three are enterprise ABM platforms with similar capabilities. Terminus is often the least expensive of the three and strongest in ABM advertising. Demandbase offers deeper data and account intelligence. 6sense leads in predictive intent modeling. Your choice depends on whether you prioritize ads, data, or intent signals."
+        }
+      ]
+    },
+    {
+      "slug": "mutiny-pricing",
+      "tool_slug": "mutiny",
+      "title": "Mutiny Pricing (2026): Website Personalization Costs",
+      "meta_description": "Mutiny pricing breakdown: estimated costs for website personalization, hidden fees, and whether it's worth $50K+ per year. Real buyer data.",
+      "hook": "Mutiny doesn't publish pricing. Expect $36,000-$100,000+/year depending on traffic and features. That's a lot for website personalization. Here's how to figure out if it's worth it.",
+      "tiers": [
+        {
+          "name": "Growth",
+          "price": "~$36,000/year",
+          "billing": "Annual (custom quote)",
+          "highlights": [
+            "Website personalization for key segments",
+            "Audience targeting by firmographic data",
+            "A/B testing built in",
+            "CRM and MAP integrations",
+            "Performance analytics"
+          ]
+        },
+        {
+          "name": "Scale",
+          "price": "~$60,000-$80,000/year",
+          "billing": "Annual (custom quote)",
+          "popular": true,
+          "highlights": [
+            "Everything in Growth",
+            "AI-powered content suggestions",
+            "Full-funnel personalization",
+            "Advanced audience segmentation",
+            "Dedicated onboarding support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "~$100,000+/year",
+          "billing": "Annual (custom quote)",
+          "highlights": [
+            "Everything in Scale",
+            "Custom integrations and API access",
+            "Multi-site support",
+            "Advanced security and compliance",
+            "Dedicated customer success manager"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Content creation for personalized experiences",
+          "range": "$10,000-$30,000/year",
+          "note": "Mutiny lets you personalize pages, but someone has to write the variations. Each segment needs unique headlines, CTAs, and sometimes full page designs."
+        },
+        {
+          "item": "A/B testing resources",
+          "range": "Internal time cost",
+          "note": "Running meaningful tests requires someone to design experiments, monitor results, and iterate. Budget 5-10 hours/week from your marketing team."
+        },
+        {
+          "item": "Integration setup",
+          "range": "$2,000-$5,000",
+          "note": "Connecting Mutiny to your CRM, MAP, and analytics tools takes 1-3 weeks. Some companies hire a consultant for initial setup."
+        },
+        {
+          "item": "Traffic volume pricing tiers",
+          "range": "Varies",
+          "note": "Mutiny's price scales with your website traffic. If your traffic grows significantly, expect a pricing conversation at renewal."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "B2B SaaS company with 100K monthly website visitors",
+        "line_items": [
+          {
+            "item": "Mutiny Scale plan",
+            "annual": "$48,000"
+          },
+          {
+            "item": "Content creation (copywriter, designer)",
+            "annual": "$15,000"
+          },
+          {
+            "item": "Integration and setup (Year 1)",
+            "annual": "$5,000"
+          }
+        ],
+        "total": "~$68,000 first year",
+        "per_user_real": "N/A (platform-level cost, not per-user)"
+      },
+      "bottom_line": "Mutiny is expensive for what looks like a simple concept: swap out headlines and CTAs based on who's visiting. But companies that use it well report 10-30% lifts in conversion rates. Whether it's worth $50K+ depends on two things: your traffic volume and your ability to create personalized content for each segment. If you're getting 100K+ monthly visitors and have a content team ready to produce variations, the ROI math works. If you're under 25K visitors, the sample sizes are too small for meaningful personalization.",
+      "faq": [
+        {
+          "q": "Why is Mutiny so expensive for website personalization?",
+          "a": "Mutiny positions itself as a revenue tool, not a CRO widget. The pricing reflects the enterprise buyer profile: B2B companies with high-traffic websites and large deal sizes. If a 15% conversion lift on your pricing page generates $500K in pipeline, $50K/year is easy to justify. If your website generates $100K total, it's not."
+        },
+        {
+          "q": "Can I use Mutiny with a low-traffic website?",
+          "a": "You can, but you shouldn't. Personalization needs enough traffic to reach statistical significance on A/B tests. Below 25K monthly visitors, you'll wait months for results and won't be able to test enough variations to justify the cost. Look at simpler tools like Optimizely or Google Optimize first."
+        },
+        {
+          "q": "How does Mutiny compare to Intellimize or VWO?",
+          "a": "Mutiny is built specifically for B2B personalization using firmographic data (industry, company size, tech stack). Intellimize uses AI-driven optimization with less manual setup. VWO is a broader A/B testing platform at a lower price point ($200-$1,000/month). Pick Mutiny if B2B account-level personalization is your priority."
+        }
+      ]
+    },
+    {
+      "slug": "nutshell-pricing",
+      "tool_slug": "nutshell",
+      "title": "Nutshell Pricing (2026): Simple CRM, Simple Pricing",
+      "meta_description": "Nutshell CRM pricing breakdown: all 5 tiers from $13-$79/user/month, what's included, and why it's one of the best CRM values for SMBs.",
+      "hook": "Nutshell publishes its pricing. No sales calls required. Plans run $13-$79/user/month with annual billing. Here's what each tier includes and what it costs in practice.",
+      "tiers": [
+        {
+          "name": "Foundation",
+          "price": "$13/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Contact and lead management",
+            "Email and calendar sync",
+            "Customizable pipelines",
+            "Basic reporting"
+          ]
+        },
+        {
+          "name": "Growth",
+          "price": "$25/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Foundation",
+            "Activity and email reports",
+            "Pipeline milestones",
+            "Team collaboration tools"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$42/user/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Growth",
+            "Sales automation sequences",
+            "Personal email sequences",
+            "Full reporting suite",
+            "Click-to-call and phone logging"
+          ]
+        },
+        {
+          "name": "Business",
+          "price": "$59/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Pro",
+            "AI-powered timeline summarization",
+            "Enhanced territory management",
+            "Increased automation limits",
+            "Audit logging"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "$79/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Business",
+            "Dedicated success manager",
+            "Custom onboarding",
+            "API support and custom integrations",
+            "Priority phone support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Email marketing add-on",
+          "range": "$5-$35/mo",
+          "note": "Nutshell offers email marketing (newsletters, drip campaigns) as a separate add-on. It's not included in any CRM tier."
+        },
+        {
+          "item": "Phone number credits",
+          "range": "Pay-as-you-go",
+          "note": "Click-to-call and SMS features use phone credits. Costs are minimal for most teams but can add up for high-volume calling."
+        },
+        {
+          "item": "Migration assistance",
+          "range": "$0 (self-serve)",
+          "note": "Nutshell provides free import tools and guides. No paid migration service, which keeps costs down but means you do the work yourself."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "10-person sales team on Pro tier",
+        "line_items": [
+          {
+            "item": "10 Pro licenses ($42/user/mo)",
+            "annual": "$5,040"
+          },
+          {
+            "item": "Email marketing add-on",
+            "annual": "$600"
+          },
+          {
+            "item": "Migration assistance",
+            "annual": "$0"
+          }
+        ],
+        "total": "~$5,640/year",
+        "per_user_real": "~$47/user/mo"
+      },
+      "bottom_line": "Nutshell is refreshingly straightforward. No enterprise sales process, no mandatory onboarding fees, no annual-only contracts (monthly billing is available at higher rates). It's not the most powerful CRM on the market. You won't get Salesforce-level customization or HubSpot's marketing suite. But for SMBs who want a CRM that works without hiring an admin, it's one of the best values out there. A 10-person team on Pro pays $5,640/year. Try getting that from HubSpot or Salesforce.",
+      "faq": [
+        {
+          "q": "Does Nutshell offer monthly billing?",
+          "a": "Yes. Unlike Salesforce and many other CRMs, Nutshell offers month-to-month billing. It costs more than annual billing, but there's no long-term commitment. Annual billing saves you roughly 15-20%."
+        },
+        {
+          "q": "How does Nutshell compare to Pipedrive?",
+          "a": "Both target SMBs with simple, visual CRMs. Nutshell starts at $13/user/month vs. Pipedrive's $14/user/month. Nutshell includes more features at each tier, especially around email marketing and automation. Pipedrive has a larger app marketplace and more third-party integrations. It's close, but Nutshell is slightly better value at the Pro level."
+        },
+        {
+          "q": "Is Nutshell good enough for a 50-person sales team?",
+          "a": "It depends on complexity. If your sales process is straightforward (pipeline stages, email sequences, basic reporting), Nutshell can handle 50 users on the Business or Enterprise tier. If you need advanced territory management, custom objects, or deep ERP integrations, you'll outgrow it. Nutshell is built for teams of 5-30."
+        }
+      ]
     }
   ]
 }

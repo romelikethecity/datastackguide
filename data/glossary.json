@@ -583,6 +583,106 @@
         "gong-engage"
       ],
       "category_slug": "sales-engagement"
+    },
+    {
+      "slug": "churn-rate",
+      "term": "Churn Rate",
+      "short_definition": "The percentage of customers who stop using a product or cancel their subscription during a given time period.",
+      "full_definition": "Churn rate measures customer attrition. Calculate it by dividing the number of customers lost during a period by the number at the start of that period. A SaaS company with 1,000 customers that loses 30 in a month has 3% monthly churn. There's also revenue churn (sometimes called dollar churn), which measures the revenue lost from cancellations and downgrades. Revenue churn matters more than logo churn because losing a $50K account hurts more than losing five $1K accounts.",
+      "why_it_matters": "Churn is the silent killer of SaaS businesses. You can grow 20% annually but still shrink if your churn outpaces acquisition. A 5% monthly churn rate means you're replacing more than half your customer base every year. That's a leaky bucket no amount of new logos can fill. RevOps teams track churn to identify at-risk accounts early and intervene before cancellation.",
+      "example": "A B2B SaaS company with $10M ARR and 8% annual gross revenue churn loses $800K in recurring revenue each year. Their expansion revenue (upsells, cross-sells) needs to exceed $800K just to break even before any net new customers.",
+      "related_terms": [
+        "arr-mrr",
+        "sales-pipeline",
+        "sales-forecasting"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "gong-engage"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "arr-mrr",
+      "term": "ARR/MRR",
+      "short_definition": "Annual Recurring Revenue (ARR) and Monthly Recurring Revenue (MRR) measure the predictable, recurring revenue from subscriptions.",
+      "full_definition": "MRR is the total predictable revenue normalized to a monthly figure. ARR is MRR multiplied by 12. These metrics exclude one-time fees, professional services, and usage overages. There are several flavors: New MRR (from new customers), Expansion MRR (upsells and add-ons), Contraction MRR (downgrades), and Churned MRR (cancellations). Net New MRR combines all four. Investors and boards care about Net Revenue Retention (NRR), which is the percentage of ARR retained from existing customers including expansion and contraction.",
+      "why_it_matters": "ARR and MRR are the heartbeat metrics of any subscription business. They tell you whether your revenue engine is accelerating or stalling. A company growing ARR at 50% year-over-year with 120% NRR is in fundamentally different shape than one growing at 50% with 80% NRR. The first is expanding within its base; the second is churning and replacing.",
+      "example": "A company starts January with $1M MRR. During the month, they add $80K New MRR, $30K Expansion MRR, lose $15K to Contraction MRR, and $25K to Churned MRR. Their Net New MRR is $70K, ending January at $1.07M MRR ($12.84M ARR).",
+      "related_terms": [
+        "churn-rate",
+        "sales-forecasting",
+        "sales-pipeline"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "gong-engage"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "sales-velocity",
+      "term": "Sales Velocity",
+      "short_definition": "A formula that measures how quickly your sales team generates revenue, combining deal count, win rate, average deal size, and sales cycle length.",
+      "full_definition": "Sales velocity = (Number of Opportunities x Win Rate x Average Deal Size) / Sales Cycle Length in Days. The result tells you how much revenue you generate per day. It's a composite metric that captures the health of your entire pipeline in one number. Improving any of the four variables increases velocity, but the highest-leverage move varies by company. Early-stage startups usually benefit most from increasing deal count; mature companies from improving win rate or deal size.",
+      "why_it_matters": "Sales velocity gives you a single number to benchmark your pipeline efficiency. If velocity is increasing quarter over quarter, your revenue engine is getting more efficient. If it's flat or declining despite more pipeline, you have a conversion or cycle-time problem. RevOps teams use sales velocity to forecast more accurately and identify which stage of the funnel needs attention.",
+      "example": "A team has 100 qualified opportunities, a 25% win rate, $40K average deal size, and a 60-day sales cycle. Their velocity is (100 x 0.25 x $40,000) / 60 = $16,667 per day. If they can shorten the cycle to 45 days with the same inputs, velocity jumps to $22,222 per day.",
+      "related_terms": [
+        "sales-pipeline",
+        "sales-forecasting",
+        "lead-scoring"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "gong-engage",
+        "salesloft"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "account-mapping",
+      "term": "Account Mapping",
+      "short_definition": "The process of identifying and visualizing the key stakeholders, decision-makers, and influencers within a target account.",
+      "full_definition": "Account mapping goes beyond knowing who your point of contact is. It's about understanding the full buying committee: who has budget authority, who influences the decision, who can block the deal, and who champions your product internally. In partner ecosystems, account mapping also refers to matching your prospect accounts against a partner's customer base to find mutual opportunities. Tools like Crossbeam and Reveal specialize in this partner-ecosystem flavor.",
+      "why_it_matters": "B2B deals don't close because one person says yes. They stall because someone you never talked to says no. Account mapping forces sales teams to think beyond their single contact and systematically engage all stakeholders. For enterprise deals over $100K, mapping the buying committee isn't optional. It's the difference between deals that close and deals that ghost you after a great demo.",
+      "example": "Your AE is working a $200K deal at a Fortune 500 company. The account map shows 8 stakeholders: the VP of Sales (economic buyer), Director of RevOps (technical evaluator), 2 Sales Managers (influencers), IT Security (potential blocker), CFO (final sign-off), a Salesforce Admin (end user), and an internal champion who brought you in. Without this map, your AE would have talked to 2-3 people and wondered why the deal stalled.",
+      "related_terms": [
+        "buying-committee",
+        "multi-threading",
+        "icp"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "linkedin-sales-navigator",
+        "gong-engage"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "buying-committee",
+      "term": "Buying Committee",
+      "short_definition": "The group of people within a company who are involved in making a B2B purchase decision.",
+      "full_definition": "The buying committee (sometimes called the decision-making unit or DMU) includes everyone who influences a purchase. Gartner research puts the average B2B buying group at 6-10 people. Each member plays a role: economic buyer (controls budget), technical evaluator (assesses fit), champion (advocates internally), influencer (shapes opinion), end user (will use the product daily), and blocker (raises objections or compliance concerns). The committee grows with deal size. A $10K tool might have 2-3 people involved. A $500K platform deal can involve 15+.",
+      "why_it_matters": "Sales teams that sell to one person lose to competitors that sell to the committee. Multi-threading across the buying group isn't just a nice-to-have. Research from Gong shows that deals involving 3+ contacts on the buyer side close at 2x the rate of single-threaded deals. RevOps teams build processes and plays that systematically identify and engage each committee member throughout the sales cycle.",
+      "example": "An SDR books a meeting with a Director of Marketing. During discovery, they learn the VP of Marketing, CMO, IT Director, and Procurement all need to approve vendors over $50K. The rep builds a champion strategy with the Director, creates a custom business case for the CMO, schedules a technical review with IT, and prepares procurement paperwork in advance. The deal closes in 45 days instead of the 90-day average.",
+      "related_terms": [
+        "account-mapping",
+        "multi-threading",
+        "icp",
+        "sales-pipeline"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "linkedin-sales-navigator",
+        "gong-engage",
+        "6sense"
+      ],
+      "category_slug": "crm"
     }
   ]
 }

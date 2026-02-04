@@ -2763,6 +2763,12 @@ Track what's working:
 - [x] 5 new glossary terms: ICP, MQL/SQL, Sales Forecasting, CRM Hygiene, Multi-Threading (30 terms total)
 - [x] 1 new guide: Freshsales vs Zoho CRM vs Pipedrive three-way SMB CRM comparison (5 guides total)
 - [x] Site now at 218 pages (up from 197)
+- [x] 4 new comparison pages: Freshsales vs HubSpot, Cognism vs Apollo, Outreach vs Apollo, Smartlead vs Instantly (29 comparisons total)
+- [x] 4 new pricing pages: Zoho CRM, Terminus, Mutiny, Nutshell (30 pricing pages total)
+- [x] 4 new alternatives pages: Pipedrive, Zoho CRM, Nooks, Nutshell (27 alternatives total)
+- [x] 4 new best-of roundups: Best Sales Dialer Tools, Best B2B Intent Data Tools, Best CRM for Real Estate, Best RevOps Tools (26 roundups total)
+- [x] 5 new glossary terms: Churn Rate, ARR/MRR, Sales Velocity, Account Mapping, Buying Committee (35 terms total)
+- [x] Site now at 239 pages (up from 218)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker
