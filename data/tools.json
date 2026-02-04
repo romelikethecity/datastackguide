@@ -2,7 +2,7 @@
   "generated_at": "2026-02-03T17:01:42.066927",
   "total_jobs_analyzed": 23338,
   "total_companies": 9088,
-  "tool_count": 62,
+  "tool_count": 63,
   "tools": [
     {
       "name": "Salesforce",
@@ -999,6 +999,24 @@
       "pricing_model": "Tiered",
       "pricing_note": "From ~$1,250/mo, custom enterprise pricing",
       "db_category": "Marketing_Automation_Enterprise"
+    },
+    {
+      "name": "Capterra",
+      "slug": "capterra",
+      "description": "B2B software review and comparison platform owned by Gartner, connecting buyers with software vendors.",
+      "categories": [
+        "review-platforms"
+      ],
+      "primary_category": "review-platforms",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 95000,
+      "salary_max": 135000,
+      "is_service": false,
+      "website": "https://www.capterra.com",
+      "pricing_model": "PPC / Tiered",
+      "pricing_note": "Free listing, PPC from $2/click, premium placements from $500/mo",
+      "db_category": "Review_Platforms"
     }
   ]
 }

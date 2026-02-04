@@ -4012,5 +4012,69 @@
         "a": "The platform is primarily focused on the U.S. healthcare market. While there's limited data on some international healthcare systems, it's not comprehensive enough for teams selling outside the United States. If you need global healthcare provider data, you'll likely need to supplement with regional data providers."
       }
     ]
+  },
+  "capterra": {
+    "display_name": "Capterra",
+    "tagline": "Gartner-owned software review and comparison marketplace that sells PPC vendor placements alongside user reviews.",
+    "description": "Capterra is a B2B software review and comparison platform owned by Gartner Digital Markets (alongside GetApp and Software Advice). It hosts user reviews, feature comparisons, and curated shortlists across thousands of software categories. Buyers use Capterra to research tools, read reviews, and request demos. Vendors use it to generate leads through pay-per-click (PPC) placements, sponsored profiles, and content syndication.",
+    "description_2": "The business model is different from G2's. Capterra monetizes primarily through PPC vendor placements, where software companies bid on category page positions and pay per click. This means the 'top' results on Capterra are often paid placements, not necessarily the highest-rated products. Capterra is transparent about this (sponsored listings are labeled), but buyers should know the rankings aren't purely organic.\n\nCapterra's strength is breadth. It covers categories that G2 doesn't, particularly in niche verticals like church management software, veterinary tools, and construction project management. For mainstream B2B categories, G2 has overtaken Capterra in review volume and buyer traffic, but Capterra remains a strong channel for mid-market and vertical software companies.",
+    "website": "https://www.capterra.com",
+    "founded": 1999,
+    "hq": "Arlington, VA (Gartner)",
+    "pricing": {
+      "model": "PPC + Tiered vendor plans",
+      "tiers": [
+        {
+          "name": "Free Listing",
+          "price": "$0",
+          "notes": "Basic product profile, collect reviews, category presence"
+        },
+        {
+          "name": "PPC Placements",
+          "price": "From $2/click",
+          "notes": "Bid on category page position, pay per click to your profile"
+        },
+        {
+          "name": "Premium Profiles",
+          "price": "From $500/mo",
+          "notes": "Enhanced profile, custom content, priority placement options"
+        }
+      ],
+      "notes": "Capterra's vendor pricing is PPC-based, making it more accessible than G2's annual contracts. Typical B2B software companies spend $2,000-$10,000/month on Capterra PPC, with cost-per-lead varying widely by category competitiveness. ROI depends heavily on your category, conversion rate, and sales cycle length."
+    },
+    "pros": [
+      "Broader category coverage than G2, including niche verticals that G2 doesn't reach",
+      "PPC model is more accessible for smaller vendors vs. G2's $15K+ annual contracts",
+      "Gartner ownership provides credibility and cross-platform distribution (GetApp, Software Advice)",
+      "Strong lead generation channel for mid-market software companies",
+      "Lower barrier to entry for collecting reviews and establishing a presence"
+    ],
+    "cons": [
+      "Category rankings are heavily influenced by PPC spend, not just review quality",
+      "Lower buyer traffic than G2 for mainstream B2B software categories",
+      "No buyer intent data product comparable to G2's Buyer Intent signals",
+      "Review depth and volume lag behind G2 in competitive categories like CRM and marketing automation",
+      "PPC costs can escalate in competitive categories without proportional lead quality"
+    ],
+    "best_for": "Mid-market and vertical software companies that want an accessible, pay-as-you-go review and lead generation channel without committing to G2's annual contracts",
+    "not_for": "Enterprise software companies primarily competing for buyer trust in mainstream B2B categories where G2's review volume and intent data have more impact",
+    "alternatives": [
+      "g2",
+      "bombora"
+    ],
+    "faq": [
+      {
+        "q": "Is Capterra better than G2?",
+        "a": "They serve different strengths. G2 has more reviews, higher buyer traffic in mainstream categories, and offers buyer intent data as a product. Capterra has broader category coverage, a more accessible PPC pricing model, and better reach in niche verticals. Most B2B software companies maintain a presence on both."
+      },
+      {
+        "q": "How much does it cost to advertise on Capterra?",
+        "a": "Capterra uses a PPC model starting around $2/click. Actual costs depend on category competitiveness. In crowded categories (CRM, project management), expect $5-$15/click. Most vendors spend $2,000-$10,000/month. Unlike G2, there's no mandatory annual contract for advertising."
+      },
+      {
+        "q": "Does Capterra offer buyer intent data?",
+        "a": "Not as a standalone product like G2 Buyer Intent. Capterra provides lead data (form fills, demo requests) from its PPC campaigns, but it doesn't sell third-party intent signals the way G2 does. For intent data, you'd need G2, Bombora, or a dedicated intent data provider."
+      }
+    ]
   }
 }

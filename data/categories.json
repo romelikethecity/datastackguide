@@ -900,13 +900,20 @@
       "description": "Software review sites and buyer intent data platforms that capture purchase signals from B2B research activity.",
       "color": "#F59E0B",
       "icon": "\u2b50",
-      "tool_count": 1,
+      "tool_count": 2,
       "tools": [
         {
           "name": "G2",
           "slug": "g2",
           "job_count": 42,
           "description": "B2B software review platform and buyer intent data provider used by marketing and sales teams.",
+          "is_service": false
+        },
+        {
+          "name": "Capterra",
+          "slug": "capterra",
+          "job_count": 1,
+          "description": "B2B software review and comparison platform owned by Gartner, connecting buyers with software vendors.",
           "is_service": false
         }
       ]

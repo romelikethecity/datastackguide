@@ -2742,6 +2742,13 @@ Track what's working:
 - [x] 2 new alternatives pages: Marketo Alternatives, Cognism Alternatives (13 alternatives total)
 - [x] 3 new best-of roundups: Best Visitor Identification Tools, Best Cold Email Tools, Best B2B Contact Databases (11 roundups total)
 - [x] Site now at 159 pages (up from 142)
+- [x] 1 new tool added: Capterra (63 tools total, review-platforms category now has 2 tools)
+- [x] 3 new comparison pages: G2 vs Capterra, Clearbit vs ZoomInfo, Workato vs MuleSoft (20 comparisons total)
+- [x] 4 new pricing pages: Instantly, Lemlist, Freshsales, Gong (18 pricing pages total)
+- [x] 3 new alternatives pages: Freshsales Alternatives, Bombora Alternatives, Demandbase Alternatives (16 alternatives total)
+- [x] 3 new best-of roundups: Best Lead Scoring Tools, Best Data Quality Tools, Best CRM for Enterprise (14 roundups total)
+- [x] 5 new glossary terms: Sales Automation, Buyer Journey, Lead Routing, Data Deduplication, Sales Cadence (20 terms total)
+- [x] Site now at 178 pages (up from 159)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker

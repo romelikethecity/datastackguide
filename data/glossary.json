@@ -282,6 +282,104 @@
         "mulesoft"
       ],
       "category_slug": "orchestration"
+    },
+    {
+      "slug": "sales-automation",
+      "term": "Sales Automation",
+      "short_definition": "Technology that automates repetitive sales tasks like follow-up emails, data entry, lead routing, and activity logging.",
+      "full_definition": "Sales automation handles the mechanical work that eats into a rep's selling time. That includes automated email sequences (drip campaigns that fire based on time or prospect behavior), CRM data entry (logging calls, updating deal stages, capturing meeting notes), lead routing (assigning new leads to the right rep based on territory, round-robin, or scoring rules), and task creation (automatically generating follow-up reminders after meetings or when deals go cold).",
+      "why_it_matters": "Sales reps spend roughly 30% of their time actually selling. The rest goes to data entry, administrative tasks, internal meetings, and prospecting logistics. Sales automation reclaims a chunk of that non-selling time by eliminating manual steps. A rep who doesn't have to remember to follow up, log activities, or update deal stages can focus on conversations that close deals.",
+      "example": "An SDR connects with a prospect on a call. When the call ends, Gong transcribes it and pushes a summary to Salesforce. Outreach automatically creates a follow-up task for 3 days later. If the prospect doesn't respond, an automated email sequence starts 5 days after the call with personalized content. The SDR didn't touch the CRM once.",
+      "related_terms": [
+        "sales-engagement",
+        "sales-cadence",
+        "revops"
+      ],
+      "related_tools": [
+        "salesloft",
+        "outreach-io",
+        "hubspot",
+        "salesforce"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "buyer-journey",
+      "term": "Buyer Journey",
+      "short_definition": "The process a B2B buyer goes through from initial awareness of a problem to selecting and purchasing a solution.",
+      "full_definition": "The buyer journey maps the stages a prospect moves through before becoming a customer. In B2B, it typically follows three phases: awareness (the buyer recognizes a problem or opportunity), consideration (the buyer evaluates different approaches and solutions), and decision (the buyer selects a vendor and negotiates terms). B2B buyer journeys are longer and more complex than B2C, often involving 6-10 stakeholders, 3-6 month sales cycles, and dozens of content touchpoints before a purchase decision.",
+      "why_it_matters": "Aligning your marketing and sales efforts to the buyer's actual journey is what separates targeted outreach from spam. A prospect in the awareness stage doesn't want a demo. A prospect in the decision stage doesn't want a blog post about industry trends. Understanding where accounts sit in their journey lets you deliver the right content, through the right channel, at the right time. Intent data has made this mapping more precise by revealing which stage a company is in based on their research behavior.",
+      "example": "A VP of Sales at a mid-market company reads three blog posts about CRM migration (awareness). She downloads a CRM comparison guide and visits G2 to read reviews (consideration). She requests demos from two vendors and involves her CFO and IT director in evaluation calls (decision). Each stage requires different content and engagement from the selling organization.",
+      "related_terms": [
+        "buyer-intent",
+        "intent-data",
+        "lead-scoring",
+        "abm"
+      ],
+      "related_tools": [
+        "6sense",
+        "demandbase",
+        "hubspot"
+      ],
+      "category_slug": "intent"
+    },
+    {
+      "slug": "lead-routing",
+      "term": "Lead Routing",
+      "short_definition": "The automated process of assigning incoming leads to the right sales rep based on predefined rules.",
+      "full_definition": "Lead routing determines which sales rep gets which lead. The simplest approach is round-robin (each rep gets the next lead in rotation). More sophisticated routing uses rules based on territory (geographic or industry assignment), deal size (enterprise leads go to senior reps), product interest (route to the specialist), account ownership (existing customer leads go to their assigned rep), or lead score (hot leads get routed to top performers). Speed-to-lead studies consistently show that responding to an inbound lead within 5 minutes vs. 30 minutes increases conversion rates by 10x or more.",
+      "why_it_matters": "Slow or incorrect routing kills conversions. A lead that sits unassigned for 24 hours has already moved on. A lead routed to the wrong rep (wrong territory, wrong product line) creates a bad first impression and internal friction. Automated routing eliminates the 'someone will get to it' gap and ensures every lead hits the right rep's queue within seconds of arriving.",
+      "example": "A director of marketing at a 500-person company in Chicago fills out a demo request form. The CRM checks: company size (mid-market routing), industry (technology), geography (Central territory), existing account owner (none). The lead is automatically assigned to the Central mid-market AE, a Slack notification fires, and the rep's Outreach sequence starts a personalized cadence within 2 minutes of form submission.",
+      "related_terms": [
+        "lead-scoring",
+        "revops",
+        "sales-automation"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "salesloft"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "data-deduplication",
+      "term": "Data Deduplication",
+      "short_definition": "The process of identifying and merging or removing duplicate records in a database or CRM.",
+      "full_definition": "Data deduplication (dedup) finds and resolves duplicate records that accumulate in CRMs and databases. Duplicates happen when the same person or company gets entered multiple times through different channels (web forms, manual entry, data imports, integrations). Basic deduplication matches on exact fields (same email address). Advanced deduplication uses fuzzy matching (\"John Smith\" at \"Acme Corp\" vs. \"J. Smith\" at \"Acme Corporation\"), domain matching, and probabilistic algorithms to catch near-duplicates that exact matching misses.",
+      "why_it_matters": "Duplicates wreck everything downstream. Lead routing breaks when the same company has three records assigned to different reps. Marketing sends the same person three emails. Pipeline reporting inflates because the same opportunity appears twice. Territory planning miscounts accounts. Sales reps waste time calling the same prospect that a colleague already spoke to. Studies estimate that 10-30% of CRM records are duplicates in the average B2B organization.",
+      "example": "Your CRM has three records for the same person: 'Michael Johnson' from a trade show scan, 'Mike Johnson' from a web form, and 'M. Johnson' imported via your data enrichment tool. All three have different email formats but the same company domain. A deduplication tool identifies all three as the same person, merges the records (keeping the most complete data from each), and assigns one clean master record to the correct account owner.",
+      "related_terms": [
+        "data-hygiene",
+        "data-validation",
+        "data-enrichment"
+      ],
+      "related_tools": [
+        "demandtools",
+        "salesforce",
+        "hubspot"
+      ],
+      "category_slug": "data-quality"
+    },
+    {
+      "slug": "sales-cadence",
+      "term": "Sales Cadence",
+      "short_definition": "A structured sequence of outreach touchpoints (emails, calls, social touches) designed to engage a prospect over a defined period.",
+      "full_definition": "A sales cadence is a playbook for prospect engagement. It defines what to do, when, and through which channel. A typical outbound cadence might span 14-21 days with 8-12 touchpoints: Day 1 email, Day 2 LinkedIn connection, Day 3 call, Day 5 email, Day 7 call, Day 10 email with case study, Day 14 breakup email. Cadences can be manual (rep executes each step), semi-automated (emails fire automatically, calls and social are manual), or fully automated (all steps execute without rep input). Sales engagement platforms like Outreach and Salesloft are built around cadence management.",
+      "why_it_matters": "Without a defined cadence, reps follow up inconsistently. Some prospects get five touches in two days (annoying). Others get one email and then nothing for a month (forgotten). Structured cadences ensure every prospect gets the right number of touches at the right intervals, which directly impacts reply rates and pipeline generation. Data from multiple studies shows that multi-channel cadences (email + phone + social) outperform single-channel approaches by 2-3x on reply rates.",
+      "example": "An SDR adds a target prospect to a 14-day multi-channel cadence in Outreach. Day 1: personalized email referencing the company's recent funding round. Day 2: LinkedIn connection request with a short note. Day 4: phone call attempt. Day 7: follow-up email with a relevant case study. Day 10: call + voicemail. Day 14: final breakup email. If the prospect replies at any point, the cadence pauses and the rep takes over manually.",
+      "related_terms": [
+        "sales-engagement",
+        "sales-automation"
+      ],
+      "related_tools": [
+        "outreach-io",
+        "salesloft",
+        "apollo",
+        "instantly",
+        "lemlist"
+      ],
+      "category_slug": "crm"
     }
   ]
 }
