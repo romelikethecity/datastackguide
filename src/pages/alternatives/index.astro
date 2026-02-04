@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+import alternativesData from '../../../data/alternatives.json';
+import toolContentData from '../../../data/tool_content.json';
+
+const alternatives = alternativesData.alternatives;
+
+function getToolName(slug: string): string {
+  const content = (toolContentData as any)[slug];
+  return content?.display_name || slug;
+}
+---
+
+<BaseLayout
+  title="Tool Alternatives"
+  description="Find alternatives to popular B2B data tools. Compare pricing, features, and fit for your team's needs and budget."
+  canonicalPath="alternatives/"
+>
+  <div class="container">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Alternatives' }
+    ]} />
+
+    <section class="page-hero">
+      <h1>Tool Alternatives</h1>
+      <p>Looking for a different option? Compare alternatives with real pricing and honest analysis.</p>
+    </section>
+
+    <div class="alt-grid">
+      {alternatives.map((alt: any) => (
+        <a href={`/alternatives/${alt.slug}/`} class="alt-card card">
+          <h3>{getToolName(alt.tool_slug)} Alternatives</h3>
+          <p class="text-sm text-secondary">{alt.alternatives_list.length} alternatives compared</p>
+          <div class="alt-card-tools">
+            {alt.alternatives_list.slice(0, 3).map((tool: any) => (
+              <span class="badge">{tool.name}</span>
+            ))}
+            {alt.alternatives_list.length > 3 && (
+              <span class="text-xs text-muted">+{alt.alternatives_list.length - 3} more</span>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: var(--space-8) 0;
+  }
+
+  .page-hero h1 {
+    margin-bottom: var(--space-3);
+  }
+
+  .page-hero p {
+    color: var(--color-text-secondary);
+  }
+
+  .alt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--space-5);
+    padding-bottom: var(--space-16);
+  }
+
+  .alt-card {
+    text-decoration: none;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .alt-card h3 {
+    font-size: var(--text-lg);
+    margin: 0;
+  }
+
+  .alt-card-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    align-items: center;
+  }
+</style>

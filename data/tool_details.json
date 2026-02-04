@@ -1,0 +1,3025 @@
+{
+  "generated_at": "2026-02-03T17:01:42.117364",
+  "details": {
+    "salesforce": {
+      "company_stages": {
+        "Enterprise/Public": 35,
+        "Series C/D": 13,
+        "Late Stage": 10,
+        "Series A/B": 9,
+        "Series B/C": 7,
+        "Seed/Series A": 4
+      },
+      "seniority": {
+        "mid": 261,
+        "vp": 206,
+        "director": 191,
+        "senior": 146,
+        "entry": 67,
+        "manager": 27,
+        "c_level": 14,
+        "head_of": 13,
+        "analyst": 13,
+        "svp": 12,
+        "specialist": 11,
+        "lead": 5,
+        "senior_manager": 3,
+        "associate": 3,
+        "other": 2,
+        "head": 2,
+        "evp": 2
+      },
+      "functions": {
+        "sales": 1146,
+        "other": 182,
+        "operations": 107,
+        "marketing": 46,
+        "engineering": 17,
+        "finance": 16,
+        "product": 10,
+        "people": 8,
+        "data": 6,
+        "legal": 4
+      },
+      "top_companies": [
+        {
+          "name": "salesforce",
+          "jobs": 36
+        },
+        {
+          "name": "global payments",
+          "jobs": 20
+        },
+        {
+          "name": "spectrum",
+          "jobs": 17
+        },
+        {
+          "name": "internet brands",
+          "jobs": 17
+        },
+        {
+          "name": "amazon web services",
+          "jobs": 16
+        },
+        {
+          "name": "thermo fisher scientific",
+          "jobs": 12
+        },
+        {
+          "name": "deloitte",
+          "jobs": 11
+        },
+        {
+          "name": "qureos",
+          "jobs": 8
+        },
+        {
+          "name": "loomis",
+          "jobs": 8
+        },
+        {
+          "name": "knowbe4",
+          "jobs": 8
+        }
+      ],
+      "remote_split": {
+        "remote": 865,
+        "onsite": 829
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 43
+        },
+        {
+          "title": "Account Executive",
+          "count": 39
+        },
+        {
+          "title": "Account Manager",
+          "count": 20
+        },
+        {
+          "title": "Sales Representative",
+          "count": 19
+        },
+        {
+          "title": "Outside Sales Representative",
+          "count": 19
+        }
+      ]
+    },
+    "hubspot": {
+      "company_stages": {
+        "Series B/C": 5,
+        "Series A/B": 5,
+        "Series C/D": 1,
+        "Seed/Series A": 1,
+        "Late Stage": 1,
+        "Enterprise/Public": 1
+      },
+      "seniority": {
+        "vp": 61,
+        "mid": 57,
+        "associate": 45,
+        "director": 40,
+        "senior": 22,
+        "manager": 18,
+        "c_level": 14,
+        "entry": 7,
+        "head_of": 5,
+        "specialist": 4,
+        "svp": 3,
+        "analyst": 2,
+        "senior_manager": 1,
+        "head": 1,
+        "evp": 1
+      },
+      "functions": {
+        "sales": 217,
+        "operations": 88,
+        "marketing": 53,
+        "other": 28,
+        "finance": 7,
+        "data": 2,
+        "people": 1
+      },
+      "top_companies": [
+        {
+          "name": "ensora health",
+          "jobs": 43
+        },
+        {
+          "name": "world insurance associates,",
+          "jobs": 7
+        },
+        {
+          "name": "visit.org",
+          "jobs": 6
+        },
+        {
+          "name": "apollo.io",
+          "jobs": 6
+        },
+        {
+          "name": "mesa moving and storage",
+          "jobs": 4
+        },
+        {
+          "name": "gokeyless",
+          "jobs": 4
+        },
+        {
+          "name": "motus",
+          "jobs": 3
+        },
+        {
+          "name": "jet linx aviation",
+          "jobs": 3
+        },
+        {
+          "name": "iserv",
+          "jobs": 3
+        },
+        {
+          "name": "facilisgroup",
+          "jobs": 3
+        }
+      ],
+      "remote_split": {
+        "remote": 243,
+        "onsite": 189
+      },
+      "top_titles": [
+        {
+          "title": "Associate Marketing Operations Analyst- Hubspot",
+          "count": 43
+        },
+        {
+          "title": "Sales Development Representative",
+          "count": 15
+        },
+        {
+          "title": "Account Executive",
+          "count": 12
+        },
+        {
+          "title": "Account Manager",
+          "count": 9
+        },
+        {
+          "title": "Vice President, Sales \u2013 Commercial Services",
+          "count": 7
+        }
+      ]
+    },
+    "zoominfo": {
+      "company_stages": {
+        "Series B/C": 1,
+        "Enterprise/Public": 1
+      },
+      "seniority": {
+        "senior": 10,
+        "mid": 6,
+        "vp": 5,
+        "manager": 3,
+        "entry": 2,
+        "director": 2,
+        "svp": 1,
+        "specialist": 1,
+        "senior_manager": 1,
+        "head_of": 1,
+        "c_level": 1
+      },
+      "functions": {
+        "sales": 69,
+        "operations": 8,
+        "other": 3,
+        "marketing": 2
+      },
+      "top_companies": [
+        {
+          "name": "sectigo",
+          "jobs": 3
+        },
+        {
+          "name": "reveal-brainspace",
+          "jobs": 3
+        },
+        {
+          "name": "zoominfo",
+          "jobs": 2
+        },
+        {
+          "name": "trinet",
+          "jobs": 2
+        },
+        {
+          "name": "stratix corporation",
+          "jobs": 2
+        },
+        {
+          "name": "outreach.io",
+          "jobs": 2
+        },
+        {
+          "name": "informa techtarget",
+          "jobs": 2
+        },
+        {
+          "name": "global payments",
+          "jobs": 2
+        },
+        {
+          "name": "brex",
+          "jobs": 2
+        },
+        {
+          "name": "bill",
+          "jobs": 2
+        }
+      ],
+      "remote_split": {
+        "remote": 49,
+        "onsite": 36
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 9
+        },
+        {
+          "title": "Account Executive",
+          "count": 5
+        },
+        {
+          "title": "Account Executive, Enterprise - Washington DC/Baltimore/Philadelphia Area (Law Firm)",
+          "count": 3
+        },
+        {
+          "title": "Senior Sales Development Representative",
+          "count": 2
+        },
+        {
+          "title": "Senior Marketing Operations Manager, B2B Sales",
+          "count": 2
+        }
+      ]
+    },
+    "dynamics-365": {
+      "company_stages": {},
+      "seniority": {
+        "director": 16,
+        "vp": 9,
+        "mid": 6,
+        "entry": 2,
+        "c_level": 2,
+        "specialist": 1,
+        "senior": 1,
+        "head_of": 1,
+        "associate": 1
+      },
+      "functions": {
+        "sales": 36,
+        "other": 12,
+        "finance": 7,
+        "operations": 3,
+        "marketing": 1
+      },
+      "top_companies": [
+        {
+          "name": "pritchard industries",
+          "jobs": 4
+        },
+        {
+          "name": "highspring",
+          "jobs": 4
+        },
+        {
+          "name": "mcaconnect",
+          "jobs": 3
+        },
+        {
+          "name": "impact networking llc",
+          "jobs": 3
+        },
+        {
+          "name": "shift paradigm",
+          "jobs": 2
+        },
+        {
+          "name": "servicenow",
+          "jobs": 2
+        },
+        {
+          "name": "impact networking,",
+          "jobs": 2
+        },
+        {
+          "name": "hitachi solutions north america",
+          "jobs": 2
+        },
+        {
+          "name": "coesia",
+          "jobs": 2
+        },
+        {
+          "name": "avasure",
+          "jobs": 2
+        }
+      ],
+      "remote_split": {
+        "remote": 33,
+        "onsite": 32
+      },
+      "top_titles": [
+        {
+          "title": "Director, IT Audit and Technology Risk\u00a0Advisory",
+          "count": 4
+        },
+        {
+          "title": "Sales Development Representative",
+          "count": 3
+        },
+        {
+          "title": "Divisional Vice President of Sales - Sports",
+          "count": 3
+        },
+        {
+          "title": "Vice President of Sales",
+          "count": 2
+        },
+        {
+          "title": "Senior Director Sales Excellence, Enablement and Operations",
+          "count": 2
+        }
+      ]
+    },
+    "linkedin-sales-navigator": {
+      "company_stages": {},
+      "seniority": {
+        "senior": 6,
+        "mid": 3,
+        "director": 3,
+        "vp": 2,
+        "entry": 2
+      },
+      "functions": {
+        "sales": 57,
+        "other": 1,
+        "operations": 1,
+        "marketing": 1
+      },
+      "top_companies": [
+        {
+          "name": "trinet",
+          "jobs": 2
+        },
+        {
+          "name": "rapid7",
+          "jobs": 2
+        },
+        {
+          "name": "global payments",
+          "jobs": 2
+        },
+        {
+          "name": "cloudzero",
+          "jobs": 2
+        },
+        {
+          "name": "actian corporation",
+          "jobs": 2
+        },
+        {
+          "name": "zoom communications",
+          "jobs": 1
+        },
+        {
+          "name": "xpansiv",
+          "jobs": 1
+        },
+        {
+          "name": "tom james",
+          "jobs": 1
+        },
+        {
+          "name": "tenor",
+          "jobs": 1
+        },
+        {
+          "name": "stacker",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 34,
+        "onsite": 27
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 13
+        },
+        {
+          "title": "Account Executive",
+          "count": 7
+        },
+        {
+          "title": "Senior Sales Development Representative",
+          "count": 2
+        },
+        {
+          "title": "Senior Account Executive",
+          "count": 2
+        },
+        {
+          "title": "Sales Consultant",
+          "count": 2
+        }
+      ]
+    },
+    "salesloft": {
+      "company_stages": {},
+      "seniority": {
+        "senior": 5,
+        "mid": 3,
+        "vp": 2,
+        "manager": 2,
+        "director": 2,
+        "entry": 1
+      },
+      "functions": {
+        "sales": 39,
+        "operations": 3,
+        "other": 1
+      },
+      "top_companies": [
+        {
+          "name": "sectigo",
+          "jobs": 3
+        },
+        {
+          "name": "impact networking llc",
+          "jobs": 3
+        },
+        {
+          "name": "servicetitan",
+          "jobs": 2
+        },
+        {
+          "name": "impact networking,",
+          "jobs": 2
+        },
+        {
+          "name": "active network",
+          "jobs": 2
+        },
+        {
+          "name": "watchfire signs",
+          "jobs": 1
+        },
+        {
+          "name": "vestwell",
+          "jobs": 1
+        },
+        {
+          "name": "synthesia",
+          "jobs": 1
+        },
+        {
+          "name": "surfline\\wavetrak,",
+          "jobs": 1
+        },
+        {
+          "name": "snappr",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 23,
+        "onsite": 20
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 10
+        },
+        {
+          "title": "Senior Sales Development Representative",
+          "count": 2
+        },
+        {
+          "title": "Vice President, Revenue Operations",
+          "count": 1
+        },
+        {
+          "title": "Vice President of Media Sales",
+          "count": 1
+        },
+        {
+          "title": "Sr. Solution Sales Director",
+          "count": 1
+        }
+      ]
+    },
+    "instantly": {
+      "company_stages": {
+        "Series A/B": 2,
+        "Seed/Series A": 2,
+        "Series C/D": 1
+      },
+      "seniority": {
+        "vp": 8,
+        "director": 8,
+        "mid": 4,
+        "senior": 3,
+        "head_of": 1
+      },
+      "functions": {
+        "sales": 16,
+        "operations": 5,
+        "other": 4,
+        "finance": 3,
+        "people": 2,
+        "engineering": 2
+      },
+      "top_companies": [
+        {
+          "name": "hockeystack",
+          "jobs": 7
+        },
+        {
+          "name": "launchdarkly",
+          "jobs": 3
+        },
+        {
+          "name": "iserv",
+          "jobs": 3
+        },
+        {
+          "name": "grafana labs",
+          "jobs": 3
+        },
+        {
+          "name": "talon.one",
+          "jobs": 2
+        },
+        {
+          "name": "smartcat",
+          "jobs": 2
+        },
+        {
+          "name": "talon.one linkedin jobs",
+          "jobs": 1
+        },
+        {
+          "name": "swisswatchexpo",
+          "jobs": 1
+        },
+        {
+          "name": "sportsbiz",
+          "jobs": 1
+        },
+        {
+          "name": "search miners",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 24,
+        "onsite": 14
+      },
+      "top_titles": [
+        {
+          "title": "VP, Sales AMER",
+          "count": 3
+        },
+        {
+          "title": "Technical Client Success Manager (AI & Operations Focus)",
+          "count": 3
+        },
+        {
+          "title": "Sales Engineer, GTM AI",
+          "count": 2
+        },
+        {
+          "title": "Sales Development Representative",
+          "count": 2
+        },
+        {
+          "title": "Account Executive",
+          "count": 2
+        }
+      ]
+    },
+    "apollo": {
+      "company_stages": {},
+      "seniority": {
+        "director": 5,
+        "senior": 4,
+        "mid": 4,
+        "manager": 2,
+        "c_level": 2,
+        "vp": 1
+      },
+      "functions": {
+        "sales": 29,
+        "operations": 4,
+        "other": 2,
+        "marketing": 2
+      },
+      "top_companies": [
+        {
+          "name": "apollo.io",
+          "jobs": 6
+        },
+        {
+          "name": "team velocity marketing",
+          "jobs": 3
+        },
+        {
+          "name": "stratix corporation",
+          "jobs": 2
+        },
+        {
+          "name": "mantra digital",
+          "jobs": 2
+        },
+        {
+          "name": "global payments",
+          "jobs": 2
+        },
+        {
+          "name": "woom bikes",
+          "jobs": 1
+        },
+        {
+          "name": "surfline\\wavetrak,",
+          "jobs": 1
+        },
+        {
+          "name": "snappr",
+          "jobs": 1
+        },
+        {
+          "name": "search miners",
+          "jobs": 1
+        },
+        {
+          "name": "realnetworks",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 22,
+        "onsite": 15
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 3
+        },
+        {
+          "title": "Regional Sales Director (RSD) | Denver",
+          "count": 3
+        },
+        {
+          "title": "Business Development Representative (BDR)",
+          "count": 3
+        },
+        {
+          "title": "Senior Manager, Mid-Market Account Executive",
+          "count": 2
+        },
+        {
+          "title": "Enterprise Account Executive (Founding Team)",
+          "count": 2
+        }
+      ]
+    },
+    "demandtools": {
+      "company_stages": {
+        "Enterprise/Public": 2
+      },
+      "seniority": {
+        "vp": 11,
+        "director": 7,
+        "senior": 2,
+        "mid": 2,
+        "c_level": 2,
+        "svp": 1,
+        "entry": 1
+      },
+      "functions": {
+        "other": 11,
+        "finance": 6,
+        "sales": 3,
+        "product": 3,
+        "operations": 3,
+        "legal": 3,
+        "data": 1
+      },
+      "top_companies": [
+        {
+          "name": "ascensus",
+          "jobs": 4
+        },
+        {
+          "name": "jpmorganchase",
+          "jobs": 3
+        },
+        {
+          "name": "university of utah",
+          "jobs": 2
+        },
+        {
+          "name": "validity",
+          "jobs": 1
+        },
+        {
+          "name": "united nations development programme",
+          "jobs": 1
+        },
+        {
+          "name": "the walt disney",
+          "jobs": 1
+        },
+        {
+          "name": "texas comptroller of public accounts",
+          "jobs": 1
+        },
+        {
+          "name": "tatcha",
+          "jobs": 1
+        },
+        {
+          "name": "sumitomo group",
+          "jobs": 1
+        },
+        {
+          "name": "sumitomo",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 8,
+        "onsite": 24
+      },
+      "top_titles": [
+        {
+          "title": "VP, Sales Consultant - Pittsburgh",
+          "count": 2
+        },
+        {
+          "title": "OAG - Child Support | Child Support Officer II-III | 26-0235",
+          "count": 2
+        },
+        {
+          "title": "Director, Product Management",
+          "count": 2
+        },
+        {
+          "title": "Vice President of Project Management",
+          "count": 1
+        },
+        {
+          "title": "VP Strategic Growth",
+          "count": 1
+        }
+      ]
+    },
+    "warmly": {
+      "company_stages": {},
+      "seniority": {
+        "vp": 9,
+        "director": 6,
+        "mid": 3,
+        "senior": 1,
+        "entry": 1
+      },
+      "functions": {
+        "data": 9,
+        "other": 8,
+        "sales": 4,
+        "engineering": 4,
+        "product": 2,
+        "people": 2,
+        "operations": 1,
+        "legal": 1
+      },
+      "top_companies": [
+        {
+          "name": "state street",
+          "jobs": 8
+        },
+        {
+          "name": "alzheimer's association",
+          "jobs": 8
+        },
+        {
+          "name": "talkdesk",
+          "jobs": 4
+        },
+        {
+          "name": "woodforest national bank",
+          "jobs": 3
+        },
+        {
+          "name": "california state university fullerton",
+          "jobs": 2
+        },
+        {
+          "name": "olympus corporation",
+          "jobs": 1
+        },
+        {
+          "name": "j.crew",
+          "jobs": 1
+        },
+        {
+          "name": "e auto motor sa (pty)",
+          "jobs": 1
+        },
+        {
+          "name": "diocese of joliet",
+          "jobs": 1
+        },
+        {
+          "name": "beep depot",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 6,
+        "onsite": 25
+      },
+      "top_titles": [
+        {
+          "title": "Fundraising Vice President, Development",
+          "count": 4
+        },
+        {
+          "title": "Retail Branch Manager I",
+          "count": 2
+        },
+        {
+          "title": "Director of Development, Health and Human Development",
+          "count": 2
+        },
+        {
+          "title": "Vice President Talent Management",
+          "count": 1
+        },
+        {
+          "title": "Territory Vice President - West",
+          "count": 1
+        }
+      ]
+    },
+    "clay": {
+      "company_stages": {},
+      "seniority": {
+        "senior": 7,
+        "mid": 3,
+        "manager": 3,
+        "c_level": 2,
+        "svp": 1,
+        "entry": 1,
+        "director": 1
+      },
+      "functions": {
+        "sales": 16,
+        "operations": 3,
+        "other": 2,
+        "finance": 2,
+        "product": 1,
+        "marketing": 1,
+        "engineering": 1
+      },
+      "top_companies": [
+        {
+          "name": "klaviyo",
+          "jobs": 9
+        },
+        {
+          "name": "brex",
+          "jobs": 2
+        },
+        {
+          "name": "yoodli ai roleplays",
+          "jobs": 1
+        },
+        {
+          "name": "massage envy",
+          "jobs": 1
+        },
+        {
+          "name": "mantra digital",
+          "jobs": 1
+        },
+        {
+          "name": "jumpseat",
+          "jobs": 1
+        },
+        {
+          "name": "hyperproof",
+          "jobs": 1
+        },
+        {
+          "name": "fox corporation",
+          "jobs": 1
+        },
+        {
+          "name": "exmoor country club",
+          "jobs": 1
+        },
+        {
+          "name": "dust",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 12,
+        "onsite": 14
+      },
+      "top_titles": [
+        {
+          "title": "Senior Account Executive, Large Enterprise",
+          "count": 6
+        },
+        {
+          "title": "Senior Marketing Operations Manager, B2B Sales",
+          "count": 2
+        },
+        {
+          "title": "Sr. Financial Analyst - GTM (Sales & Partnerships)",
+          "count": 1
+        },
+        {
+          "title": "Senior Executive Business Partner",
+          "count": 1
+        },
+        {
+          "title": "Sales Manager",
+          "count": 1
+        }
+      ]
+    },
+    "6sense": {
+      "company_stages": {},
+      "seniority": {
+        "director": 4,
+        "senior": 3,
+        "vp": 2,
+        "svp": 1,
+        "mid": 1,
+        "manager": 1,
+        "head_of": 1
+      },
+      "functions": {
+        "sales": 13,
+        "marketing": 6,
+        "operations": 2,
+        "other": 1
+      },
+      "top_companies": [
+        {
+          "name": "6sense",
+          "jobs": 4
+        },
+        {
+          "name": "impact networking llc",
+          "jobs": 3
+        },
+        {
+          "name": "impact networking,",
+          "jobs": 2
+        },
+        {
+          "name": "walkme",
+          "jobs": 1
+        },
+        {
+          "name": "snowflake",
+          "jobs": 1
+        },
+        {
+          "name": "o'reilly media",
+          "jobs": 1
+        },
+        {
+          "name": "matillion",
+          "jobs": 1
+        },
+        {
+          "name": "iron horse",
+          "jobs": 1
+        },
+        {
+          "name": "hyperproof",
+          "jobs": 1
+        },
+        {
+          "name": "flexera",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 13,
+        "onsite": 9
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 3
+        },
+        {
+          "title": "Vice President, Global Revenue Enablement",
+          "count": 1
+        },
+        {
+          "title": "VP, Performance Marketing",
+          "count": 1
+        },
+        {
+          "title": "Sr. Manager, Strategic Sales",
+          "count": 1
+        },
+        {
+          "title": "Sr. Manager, Enterprise Sales",
+          "count": 1
+        }
+      ]
+    },
+    "zoho-crm": {
+      "company_stages": {
+        "Seed/Series A": 1
+      },
+      "seniority": {
+        "mid": 8,
+        "vp": 3,
+        "senior": 1,
+        "director": 1
+      },
+      "functions": {
+        "sales": 16,
+        "other": 1,
+        "marketing": 1,
+        "data": 1
+      },
+      "top_companies": [
+        {
+          "name": "braden business systems",
+          "jobs": 2
+        },
+        {
+          "name": "zoho corporation b.v.",
+          "jobs": 1
+        },
+        {
+          "name": "waller group properties",
+          "jobs": 1
+        },
+        {
+          "name": "tandem hotel sales",
+          "jobs": 1
+        },
+        {
+          "name": "talnt",
+          "jobs": 1
+        },
+        {
+          "name": "sony",
+          "jobs": 1
+        },
+        {
+          "name": "sologic",
+          "jobs": 1
+        },
+        {
+          "name": "smartsites",
+          "jobs": 1
+        },
+        {
+          "name": "openloop",
+          "jobs": 1
+        },
+        {
+          "name": "lovibond",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 12,
+        "onsite": 8
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 3
+        },
+        {
+          "title": "VP, Customer Success (Enterprise Data & SaaS)",
+          "count": 1
+        },
+        {
+          "title": "VP of Sales",
+          "count": 1
+        },
+        {
+          "title": "US Sales Manager",
+          "count": 1
+        },
+        {
+          "title": "Traffic Account Manager",
+          "count": 1
+        }
+      ]
+    },
+    "zapier": {
+      "company_stages": {},
+      "seniority": {
+        "manager": 6,
+        "mid": 3,
+        "vp": 1,
+        "entry": 1,
+        "director": 1
+      },
+      "functions": {
+        "operations": 7,
+        "sales": 5,
+        "marketing": 4,
+        "data": 1
+      },
+      "top_companies": [
+        {
+          "name": "brex",
+          "jobs": 4
+        },
+        {
+          "name": "olly olly",
+          "jobs": 2
+        },
+        {
+          "name": "waller group properties",
+          "jobs": 1
+        },
+        {
+          "name": "snappr",
+          "jobs": 1
+        },
+        {
+          "name": "rainbow services",
+          "jobs": 1
+        },
+        {
+          "name": "process pro consulting",
+          "jobs": 1
+        },
+        {
+          "name": "griffin funding,",
+          "jobs": 1
+        },
+        {
+          "name": "gains intermediate",
+          "jobs": 1
+        },
+        {
+          "name": "big brothers big sisters",
+          "jobs": 1
+        },
+        {
+          "name": "alpha nodus,",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 13,
+        "onsite": 4
+      },
+      "top_titles": [
+        {
+          "title": "Senior Marketing Operations Manager, Product-Led Growth",
+          "count": 2
+        },
+        {
+          "title": "Senior Marketing Operations Manager, B2B Sales",
+          "count": 2
+        },
+        {
+          "title": "Revenue Operations Manager, GTM Systems & Integrations",
+          "count": 2
+        },
+        {
+          "title": "Vice President of Marketing",
+          "count": 1
+        },
+        {
+          "title": "Traffic Account Manager",
+          "count": 1
+        }
+      ]
+    },
+    "copper": {
+      "company_stages": {},
+      "seniority": {
+        "director": 4,
+        "mid": 3,
+        "c_level": 2,
+        "vp": 1
+      },
+      "functions": {
+        "sales": 5,
+        "other": 3,
+        "finance": 2,
+        "operations": 1,
+        "engineering": 1
+      },
+      "top_companies": [
+        {
+          "name": "commscope",
+          "jobs": 3
+        },
+        {
+          "name": "santa clara university",
+          "jobs": 1
+        },
+        {
+          "name": "prysmian",
+          "jobs": 1
+        },
+        {
+          "name": "myriad360",
+          "jobs": 1
+        },
+        {
+          "name": "methow valley citizens council",
+          "jobs": 1
+        },
+        {
+          "name": "leviton",
+          "jobs": 1
+        },
+        {
+          "name": "j&j contractors 1 llc",
+          "jobs": 1
+        },
+        {
+          "name": "hylan",
+          "jobs": 1
+        },
+        {
+          "name": "copper springs",
+          "jobs": 1
+        },
+        {
+          "name": "copper run capital",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 4,
+        "onsite": 8
+      },
+      "top_titles": [
+        {
+          "title": "Chief Financial Officer (CFO)",
+          "count": 2
+        },
+        {
+          "title": "Vice President of National ISP Construction (Mid-Atlantic) Virginia",
+          "count": 1
+        },
+        {
+          "title": "Strategic Account Manager",
+          "count": 1
+        },
+        {
+          "title": "Sales Engineer",
+          "count": 1
+        },
+        {
+          "title": "Remote NA Sales Manager - Elevator and Escalator",
+          "count": 1
+        }
+      ]
+    },
+    "fivetran": {
+      "company_stages": {},
+      "seniority": {
+        "senior": 2,
+        "mid": 2,
+        "director": 2,
+        "vp": 1
+      },
+      "functions": {
+        "sales": 5,
+        "engineering": 3,
+        "data": 2,
+        "product": 1
+      },
+      "top_companies": [
+        {
+          "name": "fivetran",
+          "jobs": 3
+        },
+        {
+          "name": "radiant",
+          "jobs": 1
+        },
+        {
+          "name": "point digital finance",
+          "jobs": 1
+        },
+        {
+          "name": "petfolk",
+          "jobs": 1
+        },
+        {
+          "name": "magnit global",
+          "jobs": 1
+        },
+        {
+          "name": "gallagher",
+          "jobs": 1
+        },
+        {
+          "name": "axos bank",
+          "jobs": 1
+        },
+        {
+          "name": "argano",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 8,
+        "onsite": 3
+      },
+      "top_titles": [
+        {
+          "title": "GTM Finance Manager",
+          "count": 2
+        },
+        {
+          "title": "Director of Data Engineering",
+          "count": 2
+        },
+        {
+          "title": "VP, Data Engineering Technical Lead",
+          "count": 1
+        },
+        {
+          "title": "Sr. Director, Data, Analytics & AI",
+          "count": 1
+        },
+        {
+          "title": "Senior Revenue Enablement Manager, Commercial",
+          "count": 1
+        }
+      ]
+    },
+    "mulesoft": {
+      "company_stages": {},
+      "seniority": {
+        "director": 4,
+        "vp": 1,
+        "evp": 1,
+        "entry": 1
+      },
+      "functions": {
+        "engineering": 4,
+        "sales": 2,
+        "other": 2,
+        "product": 1,
+        "data": 1
+      },
+      "top_companies": [
+        {
+          "name": "salesforce",
+          "jobs": 2
+        },
+        {
+          "name": "webster financial",
+          "jobs": 1
+        },
+        {
+          "name": "newell brands",
+          "jobs": 1
+        },
+        {
+          "name": "national philanthropic trust",
+          "jobs": 1
+        },
+        {
+          "name": "hasbro,",
+          "jobs": 1
+        },
+        {
+          "name": "databank",
+          "jobs": 1
+        },
+        {
+          "name": "argano",
+          "jobs": 1
+        },
+        {
+          "name": "american electric power",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 9
+      },
+      "top_titles": [
+        {
+          "title": "VP Middleware Technology",
+          "count": 1
+        },
+        {
+          "title": "Sr Director Engineering",
+          "count": 1
+        },
+        {
+          "title": "Senior Director of Software Engineering (Remote)",
+          "count": 1
+        },
+        {
+          "title": "Named Account Executive, JPS",
+          "count": 1
+        },
+        {
+          "title": "MuleSoft Account Executive, Higher Education (Northeast)",
+          "count": 1
+        }
+      ]
+    },
+    "linkedin-marketing": {
+      "company_stages": {},
+      "seniority": {
+        "manager": 4,
+        "entry": 2,
+        "vp": 1,
+        "head_of": 1,
+        "director": 1
+      },
+      "functions": {
+        "operations": 4,
+        "sales": 2,
+        "marketing": 2,
+        "other": 1
+      },
+      "top_companies": [
+        {
+          "name": "brex",
+          "jobs": 4
+        },
+        {
+          "name": "planmember financial corporation",
+          "jobs": 1
+        },
+        {
+          "name": "iron horse",
+          "jobs": 1
+        },
+        {
+          "name": "expatiate communications",
+          "jobs": 1
+        },
+        {
+          "name": "engin",
+          "jobs": 1
+        },
+        {
+          "name": "dodge construction network",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 7,
+        "onsite": 2
+      },
+      "top_titles": [
+        {
+          "title": "Senior Marketing Operations Manager, Product-Led Growth",
+          "count": 2
+        },
+        {
+          "title": "Senior Marketing Operations Manager, B2B Sales",
+          "count": 2
+        },
+        {
+          "title": "VP, Performance Marketing",
+          "count": 1
+        },
+        {
+          "title": "Retail Sales & Recruiting Support Specialist (Advisory)",
+          "count": 1
+        },
+        {
+          "title": "Head of Performance Media",
+          "count": 1
+        }
+      ]
+    },
+    "pipedrive": {
+      "company_stages": {
+        "Series A/B": 1
+      },
+      "seniority": {
+        "mid": 2,
+        "vp": 1,
+        "entry": 1
+      },
+      "functions": {
+        "sales": 8
+      },
+      "top_companies": [
+        {
+          "name": "smartbug media",
+          "jobs": 1
+        },
+        {
+          "name": "from, the digital transformation agency(",
+          "jobs": 1
+        },
+        {
+          "name": "fox corporation",
+          "jobs": 1
+        },
+        {
+          "name": "filterbuy",
+          "jobs": 1
+        },
+        {
+          "name": "ezgogroupinc@gmail.com",
+          "jobs": 1
+        },
+        {
+          "name": "alpha nodus,",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 6,
+        "onsite": 3
+      },
+      "top_titles": [
+        {
+          "title": "VP, Sales",
+          "count": 1
+        },
+        {
+          "title": "Sales Development & Growth Coordinator",
+          "count": 1
+        },
+        {
+          "title": "RevOps / GTM Hacker",
+          "count": 1
+        },
+        {
+          "title": "Private Equity Sales Executive",
+          "count": 1
+        },
+        {
+          "title": "Inside sales/ CSR",
+          "count": 1
+        }
+      ]
+    },
+    "demandbase": {
+      "company_stages": {},
+      "seniority": {
+        "vp": 2,
+        "senior": 1,
+        "mid": 1,
+        "head_of": 1
+      },
+      "functions": {
+        "sales": 5,
+        "marketing": 2,
+        "other": 1
+      },
+      "top_companies": [
+        {
+          "name": "actian corporation",
+          "jobs": 2
+        },
+        {
+          "name": "zoom communications",
+          "jobs": 1
+        },
+        {
+          "name": "snowflake",
+          "jobs": 1
+        },
+        {
+          "name": "iron horse",
+          "jobs": 1
+        },
+        {
+          "name": "dodge construction network",
+          "jobs": 1
+        },
+        {
+          "name": "cox communications",
+          "jobs": 1
+        },
+        {
+          "name": "airtable",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 3,
+        "onsite": 5
+      },
+      "top_titles": [
+        {
+          "title": "Vice President, Global Revenue Enablement",
+          "count": 1
+        },
+        {
+          "title": "VP, Performance Marketing",
+          "count": 1
+        },
+        {
+          "title": "Senior Manager, Marketing Operations and GTM Analytics (RapidScale)",
+          "count": 1
+        },
+        {
+          "title": "Sales Development Representative- Data Intelligence",
+          "count": 1
+        },
+        {
+          "title": "Sales Development Representative- Business Intelligence + Artificial Intelligence",
+          "count": 1
+        }
+      ]
+    },
+    "nooks": {
+      "company_stages": {},
+      "seniority": {
+        "director": 2,
+        "head_of": 1,
+        "entry": 1
+      },
+      "functions": {
+        "sales": 7,
+        "operations": 1
+      },
+      "top_companies": [
+        {
+          "name": "maesa",
+          "jobs": 3
+        },
+        {
+          "name": "vector solutions",
+          "jobs": 2
+        },
+        {
+          "name": "tavrn",
+          "jobs": 1
+        },
+        {
+          "name": "relyance ai",
+          "jobs": 1
+        },
+        {
+          "name": "launchdarkly",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 3,
+        "onsite": 5
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative (SDR)",
+          "count": 1
+        },
+        {
+          "title": "Sales Development Representative",
+          "count": 1
+        },
+        {
+          "title": "Head of Sales Development",
+          "count": 1
+        },
+        {
+          "title": "Enterprise Sales Development Representative- Law Enforcement",
+          "count": 1
+        },
+        {
+          "title": "Enterprise Sales Development Representative- Fire",
+          "count": 1
+        }
+      ]
+    },
+    "clearbit": {
+      "company_stages": {},
+      "seniority": {
+        "senior": 1,
+        "manager": 1,
+        "director": 1
+      },
+      "functions": {
+        "sales": 6,
+        "operations": 1
+      },
+      "top_companies": [
+        {
+          "name": "andela",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 2,
+        "onsite": 5
+      },
+      "top_titles": [
+        {
+          "title": "Strategic Account Executive",
+          "count": 1
+        },
+        {
+          "title": "Senior Sales Development Manager",
+          "count": 1
+        },
+        {
+          "title": "Sales Development Representative",
+          "count": 1
+        },
+        {
+          "title": "RevOps / GTM Hacker",
+          "count": 1
+        },
+        {
+          "title": "Marketing Operations Manager",
+          "count": 1
+        }
+      ]
+    },
+    "monday-sales": {
+      "company_stages": {},
+      "seniority": {
+        "mid": 2,
+        "entry": 2,
+        "senior": 1,
+        "director": 1
+      },
+      "functions": {
+        "sales": 6,
+        "finance": 1
+      },
+      "top_companies": [
+        {
+          "name": "first national capital",
+          "jobs": 2
+        },
+        {
+          "name": "adp",
+          "jobs": 2
+        },
+        {
+          "name": "protection plus warranty",
+          "jobs": 1
+        },
+        {
+          "name": "marriott international",
+          "jobs": 1
+        },
+        {
+          "name": "belden",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 2,
+        "onsite": 5
+      },
+      "top_titles": [
+        {
+          "title": "Senior Account Manager (Equipment Finance)",
+          "count": 1
+        },
+        {
+          "title": "Regional Sales Manager",
+          "count": 1
+        },
+        {
+          "title": "Inbound Sales Representative",
+          "count": 1
+        },
+        {
+          "title": "Director of Finance",
+          "count": 1
+        },
+        {
+          "title": "Digital Sales Associate",
+          "count": 1
+        }
+      ]
+    },
+    "outreach-io": {
+      "company_stages": {},
+      "seniority": {
+        "senior": 1,
+        "mid": 1
+      },
+      "functions": {
+        "sales": 7
+      },
+      "top_companies": [
+        {
+          "name": "outreach.io",
+          "jobs": 2
+        },
+        {
+          "name": "smarsh",
+          "jobs": 1
+        },
+        {
+          "name": "raintree systems,",
+          "jobs": 1
+        },
+        {
+          "name": "proofpoint",
+          "jobs": 1
+        },
+        {
+          "name": "computershare",
+          "jobs": 1
+        },
+        {
+          "name": "activated insights",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 5,
+        "onsite": 2
+      },
+      "top_titles": [
+        {
+          "title": "Senior Account Executive, Mid-Market",
+          "count": 1
+        },
+        {
+          "title": "Sales Development Representative",
+          "count": 1
+        },
+        {
+          "title": "Manager, Sales Development Representative",
+          "count": 1
+        },
+        {
+          "title": "Client Account Executive, Commercial",
+          "count": 1
+        },
+        {
+          "title": "Account Executive I, Corporate Accounts",
+          "count": 1
+        }
+      ]
+    },
+    "census-data": {
+      "company_stages": {
+        "Enterprise/Public": 2
+      },
+      "seniority": {
+        "vp": 4,
+        "mid": 1,
+        "director": 1
+      },
+      "functions": {
+        "sales": 2,
+        "other": 2
+      },
+      "top_companies": [
+        {
+          "name": "ascensus",
+          "jobs": 4
+        },
+        {
+          "name": "shaw industries",
+          "jobs": 1
+        },
+        {
+          "name": "aaa roofing",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 5
+      },
+      "top_titles": [
+        {
+          "title": "VP, Sales Consultant - Pittsburgh",
+          "count": 2
+        },
+        {
+          "title": "Regional Vice President, Retirement Sales (South Texas Territory)",
+          "count": 1
+        },
+        {
+          "title": "Regional Vice President, Retirement Sales (Central California Territory)",
+          "count": 1
+        },
+        {
+          "title": "Human Resource Manager",
+          "count": 1
+        },
+        {
+          "title": "Director of Strategic Initiatives",
+          "count": 1
+        }
+      ]
+    },
+    "n8n": {
+      "company_stages": {},
+      "seniority": {
+        "vp": 1,
+        "entry": 1,
+        "director": 1
+      },
+      "functions": {
+        "sales": 4,
+        "other": 1,
+        "data": 1
+      },
+      "top_companies": [
+        {
+          "name": "n8n",
+          "jobs": 1
+        },
+        {
+          "name": "buspatrol",
+          "jobs": 1
+        },
+        {
+          "name": "alpha nodus,",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 5,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "VP of Global Customer Support Transformation",
+          "count": 1
+        },
+        {
+          "title": "Sales Development & Growth Coordinator",
+          "count": 1
+        },
+        {
+          "title": "RevOps / GTM Hacker",
+          "count": 1
+        },
+        {
+          "title": "Enterprise Account Executive (Remote or Hybrid San Francisco)",
+          "count": 1
+        },
+        {
+          "title": "Director, AI Enablement",
+          "count": 1
+        }
+      ]
+    },
+    "orum": {
+      "company_stages": {},
+      "seniority": {
+        "vp": 1,
+        "senior": 1,
+        "mid": 1
+      },
+      "functions": {
+        "sales": 5,
+        "marketing": 1
+      },
+      "top_companies": [
+        {
+          "name": "impact networking,",
+          "jobs": 2
+        },
+        {
+          "name": "impact networking llc",
+          "jobs": 2
+        },
+        {
+          "name": "zoom communications",
+          "jobs": 1
+        },
+        {
+          "name": "orum",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 2,
+        "onsite": 4
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 3
+        },
+        {
+          "title": "VP of Marketing",
+          "count": 1
+        },
+        {
+          "title": "Senior Sales Development Representative",
+          "count": 1
+        },
+        {
+          "title": "Business Development Manager (BDR Manager)",
+          "count": 1
+        }
+      ]
+    },
+    "boomi": {
+      "company_stages": {},
+      "seniority": {
+        "director": 2,
+        "senior": 1,
+        "mid": 1,
+        "evp": 1
+      },
+      "functions": {
+        "engineering": 2,
+        "sales": 1,
+        "data": 1
+      },
+      "top_companies": [
+        {
+          "name": "regeneron",
+          "jobs": 1
+        },
+        {
+          "name": "hasbro,",
+          "jobs": 1
+        },
+        {
+          "name": "golden state foods",
+          "jobs": 1
+        },
+        {
+          "name": "boomi",
+          "jobs": 1
+        },
+        {
+          "name": "argano",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 4
+      },
+      "top_titles": [
+        {
+          "title": "Sr Director Engineering",
+          "count": 1
+        },
+        {
+          "title": "Senior Boomi SOA Developer",
+          "count": 1
+        },
+        {
+          "title": "Enterprise Account Manager - Northern CA",
+          "count": 1
+        },
+        {
+          "title": "Director IT Engineering",
+          "count": 1
+        },
+        {
+          "title": "Client Executive Vice President \u2013 Data, Cloud, Integration and AI",
+          "count": 1
+        }
+      ]
+    },
+    "sugarcrm": {
+      "company_stages": {},
+      "seniority": {
+        "mid": 5
+      },
+      "functions": {
+        "sales": 4,
+        "finance": 1
+      },
+      "top_companies": [
+        {
+          "name": "dynatron software",
+          "jobs": 4
+        },
+        {
+          "name": "sugarcrm",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 5,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Regional Sales Manager - West Pennsylvania",
+          "count": 1
+        },
+        {
+          "title": "Regional Sales Manager - South Texas & Louisiana",
+          "count": 1
+        },
+        {
+          "title": "Regional Sales Manager - South Florida",
+          "count": 1
+        },
+        {
+          "title": "Regional Sales Manager - IA, MO, NE",
+          "count": 1
+        },
+        {
+          "title": "FP&A Manager",
+          "count": 1
+        }
+      ]
+    },
+    "workato-ipaas": {
+      "company_stages": {},
+      "seniority": {
+        "manager": 4
+      },
+      "functions": {
+        "operations": 4,
+        "data": 1
+      },
+      "top_companies": [
+        {
+          "name": "udemy",
+          "jobs": 2
+        },
+        {
+          "name": "brex",
+          "jobs": 2
+        },
+        {
+          "name": "evercommerce",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 3,
+        "onsite": 2
+      },
+      "top_titles": [
+        {
+          "title": "Senior Marketing Operations Manager, B2B Sales",
+          "count": 2
+        },
+        {
+          "title": "Marketing Operations Manager",
+          "count": 2
+        },
+        {
+          "title": "EverPro - AI Internship (Remote, US)",
+          "count": 1
+        }
+      ]
+    },
+    "cognism": {
+      "company_stages": {},
+      "seniority": {
+        "mid": 1
+      },
+      "functions": {
+        "sales": 4
+      },
+      "top_companies": [
+        {
+          "name": "actian corporation",
+          "jobs": 2
+        },
+        {
+          "name": "usecure",
+          "jobs": 1
+        },
+        {
+          "name": "beeline",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 4
+      },
+      "top_titles": [
+        {
+          "title": "Sales Representative, Beeline Supplier Network",
+          "count": 1
+        },
+        {
+          "title": "Sales Development Representative- Data Intelligence",
+          "count": 1
+        },
+        {
+          "title": "Sales Development Representative- Business Intelligence + Artificial Intelligence",
+          "count": 1
+        },
+        {
+          "title": "North America Account Manager",
+          "count": 1
+        }
+      ]
+    },
+    "make": {
+      "company_stages": {},
+      "seniority": {
+        "mid": 2,
+        "manager": 2
+      },
+      "functions": {
+        "operations": 2,
+        "sales": 1,
+        "marketing": 1
+      },
+      "top_companies": [
+        {
+          "name": "olly olly",
+          "jobs": 2
+        },
+        {
+          "name": "rainbow services",
+          "jobs": 1
+        },
+        {
+          "name": "gains intermediate",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 2,
+        "onsite": 2
+      },
+      "top_titles": [
+        {
+          "title": "Revenue Operations Manager, GTM Systems & Integrations",
+          "count": 2
+        },
+        {
+          "title": "Traffic Account Manager",
+          "count": 1
+        },
+        {
+          "title": "Growth & Marketing Manager",
+          "count": 1
+        }
+      ]
+    },
+    "hightouch": {
+      "company_stages": {},
+      "seniority": {
+        "director": 2,
+        "senior": 1
+      },
+      "functions": {
+        "sales": 1,
+        "other": 1,
+        "data": 1
+      },
+      "top_companies": [
+        {
+          "name": "shift paradigm",
+          "jobs": 2
+        },
+        {
+          "name": "point digital finance",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 3,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Senior Director, Data (Head of Data)",
+          "count": 1
+        },
+        {
+          "title": "Director / Sr. Director, Technology Services - Salesforce Ecosystem",
+          "count": 1
+        },
+        {
+          "title": "Director / Sr. Director, Technology Services - Adobe Ecosystem",
+          "count": 1
+        }
+      ]
+    },
+    "leadiq": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {
+        "sales": 3
+      },
+      "top_companies": [
+        {
+          "name": "surfline\\wavetrak,",
+          "jobs": 1
+        },
+        {
+          "name": "rapid7",
+          "jobs": 1
+        },
+        {
+          "name": "computershare",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 3,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 2
+        },
+        {
+          "title": "Sales Development Representative, Surfline Coastal Intelligence",
+          "count": 1
+        }
+      ]
+    },
+    "sap-sales-cloud": {
+      "company_stages": {},
+      "seniority": {
+        "director": 3
+      },
+      "functions": {
+        "other": 3
+      },
+      "top_companies": [
+        {
+          "name": "kpmg",
+          "jobs": 3
+        }
+      ],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 3
+      },
+      "top_titles": [
+        {
+          "title": "Director, SAP CRM, Utilities",
+          "count": 3
+        }
+      ]
+    },
+    "tray": {
+      "company_stages": {},
+      "seniority": {
+        "mid": 1
+      },
+      "functions": {
+        "sales": 1,
+        "people": 1,
+        "other": 1
+      },
+      "top_companies": [
+        {
+          "name": "graphic packaging international",
+          "jobs": 1
+        },
+        {
+          "name": "carmel valley manor",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 2
+      },
+      "top_titles": [
+        {
+          "title": "RevOps / GTM Hacker",
+          "count": 1
+        },
+        {
+          "title": "Registered Dietitian",
+          "count": 1
+        },
+        {
+          "title": "HS&E/HR Associate Manager",
+          "count": 1
+        }
+      ]
+    },
+    "airbyte": {
+      "company_stages": {},
+      "seniority": {
+        "director": 1
+      },
+      "functions": {
+        "sales": 1,
+        "engineering": 1
+      },
+      "top_companies": [
+        {
+          "name": "petfolk",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 2,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Director of Data Engineering",
+          "count": 1
+        },
+        {
+          "title": "Account manager (AI digital marketing agency)",
+          "count": 1
+        }
+      ]
+    },
+    "amplemarket": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {
+        "sales": 2
+      },
+      "top_companies": [
+        {
+          "name": "synthesia",
+          "jobs": 1
+        },
+        {
+          "name": "o'reilly media",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative - NYC",
+          "count": 1
+        },
+        {
+          "title": "Account Executive (North America)",
+          "count": 1
+        }
+      ]
+    },
+    "lemlist": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {
+        "sales": 2
+      },
+      "top_companies": [
+        {
+          "name": "soda data",
+          "jobs": 1
+        },
+        {
+          "name": "mantra digital",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 2,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative(SDR) Internship",
+          "count": 1
+        },
+        {
+          "title": "Account Executive (B2B SaaS)",
+          "count": 1
+        }
+      ]
+    },
+    "oracle-cx": {
+      "company_stages": {},
+      "seniority": {
+        "vp": 1,
+        "mid": 1
+      },
+      "functions": {
+        "sales": 1,
+        "other": 1
+      },
+      "top_companies": [
+        {
+          "name": "oracle",
+          "jobs": 1
+        },
+        {
+          "name": "avery dennison",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "ERP Regional Vice President - Local Government, West Team",
+          "count": 1
+        },
+        {
+          "title": "Account Manager - Pro Sports",
+          "count": 1
+        }
+      ]
+    },
+    "rollworks": {
+      "company_stages": {},
+      "seniority": {
+        "svp": 1
+      },
+      "functions": {
+        "sales": 1,
+        "marketing": 1
+      },
+      "top_companies": [
+        {
+          "name": "snappr",
+          "jobs": 1
+        },
+        {
+          "name": "hyperproof",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "SVP of Marketing",
+          "count": 1
+        },
+        {
+          "title": "Enterprise Sales Development Representative (Part-time)",
+          "count": 1
+        }
+      ]
+    },
+    "bombora": {
+      "company_stages": {},
+      "seniority": {
+        "head_of": 1
+      },
+      "functions": {
+        "other": 1
+      },
+      "top_companies": [
+        {
+          "name": "iron horse",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Head of Performance Media",
+          "count": 1
+        }
+      ]
+    },
+    "bombora-intent": {
+      "company_stages": {},
+      "seniority": {
+        "head_of": 1
+      },
+      "functions": {
+        "other": 1
+      },
+      "top_companies": [
+        {
+          "name": "iron horse",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Head of Performance Media",
+          "count": 1
+        }
+      ]
+    },
+    "celigo": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {
+        "sales": 1
+      },
+      "top_companies": [
+        {
+          "name": "celigo",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Strategic Account Executive",
+          "count": 1
+        }
+      ]
+    },
+    "common-room": {
+      "company_stages": {},
+      "seniority": {
+        "svp": 1
+      },
+      "functions": {
+        "marketing": 1
+      },
+      "top_companies": [
+        {
+          "name": "hyperproof",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "SVP of Marketing",
+          "count": 1
+        }
+      ]
+    },
+    "freshsales": {
+      "company_stages": {},
+      "seniority": {
+        "senior": 1
+      },
+      "functions": {
+        "marketing": 1
+      },
+      "top_companies": [
+        {
+          "name": "freshworks",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "Senior Manager, Employee Experience and Content Strategy",
+          "count": 1
+        }
+      ]
+    },
+    "gong-engage": {
+      "company_stages": {},
+      "seniority": {
+        "director": 1
+      },
+      "functions": {
+        "sales": 1
+      },
+      "top_companies": [
+        {
+          "name": "foxen",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Director of Revenue Operations",
+          "count": 1
+        }
+      ]
+    },
+    "groove-clari": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {
+        "sales": 1
+      },
+      "top_companies": [
+        {
+          "name": "paradox",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Sales Development Representative",
+          "count": 1
+        }
+      ]
+    },
+    "leadfeeder": {
+      "company_stages": {},
+      "seniority": {
+        "director": 1
+      },
+      "functions": {
+        "other": 1
+      },
+      "top_companies": [
+        {
+          "name": "greater des moines partnership",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "Director of Business Growth and Expansion",
+          "count": 1
+        }
+      ]
+    },
+    "mutiny": {
+      "company_stages": {},
+      "seniority": {
+        "svp": 1
+      },
+      "functions": {
+        "marketing": 1
+      },
+      "top_companies": [
+        {
+          "name": "hyperproof",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "SVP of Marketing",
+          "count": 1
+        }
+      ]
+    },
+    "nutshell": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {
+        "sales": 1
+      },
+      "top_companies": [
+        {
+          "name": "sciens building solutions",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "Fire Systems Sales Rep 2",
+          "count": 1
+        }
+      ]
+    },
+    "rb2b": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {
+        "sales": 1
+      },
+      "top_companies": [
+        {
+          "name": "snappr",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "Enterprise Sales Development Representative (Part-time)",
+          "count": 1
+        }
+      ]
+    },
+    "ringlead-revops": {
+      "company_stages": {},
+      "seniority": {
+        "senior": 1
+      },
+      "functions": {
+        "operations": 1
+      },
+      "top_companies": [
+        {
+          "name": "vestwell",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Senior Associate, Revenue Operations",
+          "count": 1
+        }
+      ]
+    },
+    "seamless-ai": {
+      "company_stages": {},
+      "seniority": {
+        "director": 1
+      },
+      "functions": {
+        "data": 1
+      },
+      "top_companies": [
+        {
+          "name": "jpmorganchase",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "Executive Director - AI Transformation Lead",
+          "count": 1
+        }
+      ]
+    },
+    "smartlead": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {
+        "sales": 1
+      },
+      "top_companies": [
+        {
+          "name": "search miners",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 1,
+        "onsite": 0
+      },
+      "top_titles": [
+        {
+          "title": "Business Development Representative (BDR)",
+          "count": 1
+        }
+      ]
+    },
+    "terminus": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {
+        "marketing": 1
+      },
+      "top_companies": [
+        {
+          "name": "airtable",
+          "jobs": 1
+        }
+      ],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 1
+      },
+      "top_titles": [
+        {
+          "title": "Field Marketing Manager, Central",
+          "count": 1
+        }
+      ]
+    },
+    "verum": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {},
+      "top_companies": [],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 0
+      },
+      "top_titles": []
+    },
+    "provyx": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {},
+      "top_companies": [],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 0
+      },
+      "top_titles": []
+    },
+    "definitive-healthcare": {
+      "company_stages": {},
+      "seniority": {},
+      "functions": {},
+      "top_companies": [],
+      "remote_split": {
+        "remote": 0,
+        "onsite": 0
+      },
+      "top_titles": []
+    }
+  }
+}

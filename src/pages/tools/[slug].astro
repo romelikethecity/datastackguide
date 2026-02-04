@@ -1,0 +1,985 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+import toolsData from '../../../data/tools.json';
+import categoriesData from '../../../data/categories.json';
+import cooccurrenceData from '../../../data/cooccurrence.json';
+import trendsData from '../../../data/trends.json';
+import toolDetailsData from '../../../data/tool_details.json';
+import toolContentData from '../../../data/tool_content.json';
+
+// Only generate pages for tools that have editorial content
+const toolsWithContent = toolsData.tools.filter(
+  (t: any) => (toolContentData as any)[t.slug]
+);
+
+export function getStaticPaths() {
+  const tools = toolsData.tools.filter(
+    (t: any) => (toolContentData as any)[t.slug]
+  );
+  return tools.map((tool: any) => ({
+    params: { slug: tool.slug },
+    props: { tool }
+  }));
+}
+
+interface Props {
+  tool: any;
+}
+
+const { tool } = Astro.props;
+const slug = tool.slug;
+const content = (toolContentData as any)[slug];
+const details = (toolDetailsData as any).details?.[slug] || {};
+const cooc = (cooccurrenceData as any).cooccurrence?.[slug] || [];
+const totalJobs = toolsData.total_jobs_analyzed;
+
+// Get category info
+const categories = categoriesData.categories;
+function getCategoryColor(catSlug: string): string {
+  const cat = categories.find((c: any) => c.slug === catSlug);
+  return cat?.color || '#14B8A6';
+}
+function getCategoryName(catSlug: string): string {
+  const cat = categories.find((c: any) => c.slug === catSlug);
+  return cat?.name || catSlug;
+}
+
+const primaryCat = tool.primary_category || tool.categories?.[0] || 'enrichment';
+const primaryCatName = getCategoryName(primaryCat);
+const primaryCatColor = getCategoryColor(primaryCat);
+
+// Build trend data for this tool
+const months = Object.keys(trendsData.trends).sort();
+const trendPoints = months.map((month: string) => {
+  const entry = trendsData.trends[month]?.find((t: any) => t.slug === slug);
+  return { month, mentions: entry?.mentions || 0 };
+}).filter((p: any) => p.mentions > 0);
+
+// Get alternative tools info
+const alternativeSlugs = content.alternatives || [];
+const alternativeTools = alternativeSlugs
+  .map((altSlug: string) => {
+    const altTool = toolsData.tools.find((t: any) => t.slug === altSlug);
+    const altContent = (toolContentData as any)[altSlug];
+    return altTool ? {
+      ...altTool,
+      display_name: altContent?.display_name || altTool.name,
+      pricing_summary: altContent?.pricing?.tiers?.[0]
+        ? altContent.pricing.tiers[0].price
+        : 'Contact for pricing',
+      best_for: altContent?.best_for || '',
+    } : null;
+  })
+  .filter(Boolean);
+
+// Top co-occurring tools (limit to 8)
+const topCooc = cooc.slice(0, 8);
+
+// Company stage data
+const companyStages = details.company_stages || {};
+const stageOrder = ['Seed/Series A', 'Series A/B', 'Series B/C', 'Series C/D', 'Late Stage', 'Enterprise/Public'];
+const sortedStages = stageOrder.filter(s => companyStages[s]).map(s => ({
+  name: s,
+  count: companyStages[s]
+}));
+const totalStageJobs = sortedStages.reduce((sum: number, s: any) => sum + s.count, 0);
+
+// Function distribution
+const functions = details.functions || {};
+const sortedFunctions = Object.entries(functions)
+  .sort((a: any, b: any) => b[1] - a[1])
+  .slice(0, 6)
+  .map(([name, count]: [string, any]) => ({ name, count }));
+const totalFunctionJobs = sortedFunctions.reduce((sum: number, f: any) => sum + f.count, 0);
+
+// Remote split
+const remote = details.remote_split || {};
+const totalRemote = (remote.remote || 0) + (remote.onsite || 0);
+const remotePercent = totalRemote > 0 ? Math.round((remote.remote / totalRemote) * 100) : 0;
+
+// Salary display
+const salaryMin = tool.salary_min ? `$${Math.round(tool.salary_min / 1000)}K` : null;
+const salaryMax = tool.salary_max ? `$${Math.round(tool.salary_max / 1000)}K` : null;
+const salaryRange = salaryMin && salaryMax ? `${salaryMin} - ${salaryMax}` : null;
+
+// Top titles
+const topTitles = details.top_titles || [];
+
+// Top companies
+const topCompanies = details.top_companies || [];
+
+// SEO
+const title = `${content.display_name} Review: Pricing, Features & What the Data Shows`;
+const metaDescription = `${content.display_name} review: pricing, features, pros/cons, and job demand data from ${totalJobs.toLocaleString()}+ postings. Honest analysis for B2B buyers.`;
+const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+// FAQ Schema
+const faqSchema = content.faq?.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": content.faq.map((item: any) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
+} : null;
+
+// Product Schema
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": content.display_name,
+  "description": content.description,
+  "url": content.website,
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": content.pricing?.tiers?.[0] ? {
+    "@type": "Offer",
+    "description": `${content.pricing.tiers[0].name}: ${content.pricing.tiers[0].price}`
+  } : undefined
+};
+---
+
+<BaseLayout
+  title={title}
+  description={metaDescription}
+  canonicalPath={`tools/${slug}/`}
+  schema={productSchema}
+>
+  <Fragment slot="head">
+    {faqSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    )}
+  </Fragment>
+
+  <div class="container">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Tools', href: '/tools/' },
+      { label: primaryCatName, href: `/categories/${primaryCat}/` },
+      { label: content.display_name }
+    ]} />
+
+    <!-- Hero -->
+    <section class="tool-hero">
+      <div class="tool-hero-top">
+        <div>
+          <div class="tool-badges">
+            {tool.categories?.map((cat: string) => (
+              <a href={`/categories/${cat}/`} class="badge" style={`background: ${getCategoryColor(cat)}15; color: ${getCategoryColor(cat)};`}>
+                {getCategoryName(cat)}
+              </a>
+            ))}
+          </div>
+          <h1>{content.display_name} Review: Pricing, Features &amp; What the Data Shows</h1>
+          <p class="tool-tagline">{content.tagline}</p>
+        </div>
+      </div>
+
+      <!-- Quick Facts -->
+      <div class="quick-facts">
+        {content.pricing?.tiers?.[0] && (
+          <div class="fact">
+            <span class="fact-label">Starting Price</span>
+            <span class="fact-value">{content.pricing.tiers[0].price}</span>
+          </div>
+        )}
+        {content.founded && (
+          <div class="fact">
+            <span class="fact-label">Founded</span>
+            <span class="fact-value">{content.founded}</span>
+          </div>
+        )}
+        {content.hq && (
+          <div class="fact">
+            <span class="fact-label">HQ</span>
+            <span class="fact-value">{content.hq}</span>
+          </div>
+        )}
+        {tool.job_count > 0 && (
+          <div class="fact">
+            <span class="fact-label">Job Mentions</span>
+            <span class="fact-value">{tool.job_count.toLocaleString()}</span>
+          </div>
+        )}
+        {salaryRange && (
+          <div class="fact">
+            <span class="fact-label">Avg Salary Range</span>
+            <span class="fact-value">{salaryRange}</span>
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- What It Does -->
+    <section class="content-section" id="overview">
+      <h2>What {content.display_name} Does</h2>
+      <p>{content.description}</p>
+      {content.description_2 && <p>{content.description_2}</p>}
+      {content.website && (
+        <p><a href={content.website} target="_blank" rel="noopener noreferrer">Visit {content.display_name} →</a></p>
+      )}
+    </section>
+
+    <!-- Pricing -->
+    <section class="content-section" id="pricing">
+      <h2>{content.display_name} Pricing</h2>
+      {content.pricing?.tiers && (
+        <div class="pricing-grid">
+          {content.pricing.tiers.map((tier: any) => (
+            <div class="pricing-card card">
+              <h3>{tier.name}</h3>
+              <div class="pricing-amount">{tier.price}</div>
+              <p class="text-sm text-secondary">{tier.notes}</p>
+            </div>
+          ))}
+        </div>
+      )}
+      {content.pricing?.notes && (
+        <div class="pricing-notes">
+          <p>{content.pricing.notes}</p>
+        </div>
+      )}
+    </section>
+
+    <!-- Job Market Demand -->
+    {tool.job_count > 0 && (
+      <section class="content-section" id="demand">
+        <h2>Job Market Demand for {content.display_name}</h2>
+        <p>
+          {content.display_name} appears in <strong>{tool.job_count.toLocaleString()} job postings</strong> across <strong>{tool.unique_companies.toLocaleString()} companies</strong> in our database of {totalJobs.toLocaleString()}+ analyzed job postings.
+          {salaryRange && (<> The average salary range for roles requiring {content.display_name}: <strong>{salaryRange}</strong>.</>)}
+        </p>
+
+        <div class="demand-grid">
+          <!-- Company Stage -->
+          {sortedStages.length > 0 && (
+            <div class="demand-card card">
+              <h3>Company Stage</h3>
+              <div class="bar-chart">
+                {sortedStages.map((stage: any) => {
+                  const pct = Math.round((stage.count / totalStageJobs) * 100);
+                  return (
+                    <div class="bar-row">
+                      <span class="bar-label">{stage.name}</span>
+                      <div class="bar-track">
+                        <div class="bar-fill" style={`width: ${pct}%; background: ${primaryCatColor};`}></div>
+                      </div>
+                      <span class="bar-value mono">{pct}%</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          <!-- Department Distribution -->
+          {sortedFunctions.length > 0 && (
+            <div class="demand-card card">
+              <h3>Department</h3>
+              <div class="bar-chart">
+                {sortedFunctions.map((fn: any) => {
+                  const pct = Math.round((fn.count / totalFunctionJobs) * 100);
+                  return (
+                    <div class="bar-row">
+                      <span class="bar-label">{fn.name}</span>
+                      <div class="bar-track">
+                        <div class="bar-fill" style={`width: ${pct}%; background: ${primaryCatColor};`}></div>
+                      </div>
+                      <span class="bar-value mono">{pct}%</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <!-- Additional stats row -->
+        <div class="stats-row">
+          {remotePercent > 0 && (
+            <div class="stat-item">
+              <span class="stat-number">{remotePercent}%</span>
+              <span class="stat-desc">Remote-friendly</span>
+            </div>
+          )}
+          {topTitles.length > 0 && (
+            <div class="stat-item stat-titles">
+              <span class="stat-label">Top Job Titles</span>
+              <ul>
+                {topTitles.slice(0, 3).map((t: any) => (
+                  <li class="text-sm">{t.title}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {topCompanies.length > 0 && (
+            <div class="stat-item stat-companies">
+              <span class="stat-label">Top Hiring Companies</span>
+              <ul>
+                {topCompanies.slice(0, 5).map((c: any) => (
+                  <li class="text-sm">{c.name} <span class="text-muted">({c.jobs})</span></li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </section>
+    )}
+
+    <!-- Co-occurrence -->
+    {topCooc.length > 0 && (
+      <section class="content-section" id="used-with">
+        <h2>Commonly Used With {content.display_name}</h2>
+        <p>Based on job posting co-occurrence data, these tools are most frequently mentioned alongside {content.display_name}:</p>
+        <div class="cooc-grid">
+          {topCooc.map((pair: any) => {
+            const pairTool = toolsData.tools.find((t: any) => t.slug === pair.slug);
+            const hasPage = pairTool && (toolContentData as any)[pair.slug];
+            return (
+              <div class="cooc-card card">
+                {hasPage ? (
+                  <a href={`/tools/${pair.slug}/`} class="cooc-link">
+                    <span class="cooc-name">{pair.tool}</span>
+                    <span class="cooc-count mono">{pair.count} co-mentions</span>
+                  </a>
+                ) : (
+                  <div class="cooc-link">
+                    <span class="cooc-name">{pair.tool}</span>
+                    <span class="cooc-count mono">{pair.count} co-mentions</span>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    <!-- Pros & Cons -->
+    <section class="content-section" id="pros-cons">
+      <h2>Pros &amp; Cons</h2>
+      <div class="proscons-grid">
+        {content.pros?.length > 0 && (
+          <div class="proscons-card card pros-card">
+            <h3>Pros</h3>
+            <ul class="proscons-list">
+              {content.pros.map((pro: string) => (
+                <li class="pro-item">{pro}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {content.cons?.length > 0 && (
+          <div class="proscons-card card cons-card">
+            <h3>Cons</h3>
+            <ul class="proscons-list">
+              {content.cons.map((con: string) => (
+                <li class="con-item">{con}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      {(content.best_for || content.not_for) && (
+        <div class="verdict-box card">
+          {content.best_for && (
+            <p><strong>Best for:</strong> {content.best_for}</p>
+          )}
+          {content.not_for && (
+            <p><strong>Not ideal for:</strong> {content.not_for}</p>
+          )}
+        </div>
+      )}
+    </section>
+
+    <!-- Alternatives -->
+    {alternativeTools.length > 0 && (
+      <section class="content-section" id="alternatives">
+        <h2>{content.display_name} Alternatives</h2>
+        <div class="alternatives-table-wrap">
+          <table class="alternatives-table">
+            <thead>
+              <tr>
+                <th>Tool</th>
+                <th>Starting Price</th>
+                <th>Job Mentions</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              {alternativeTools.map((alt: any) => (
+                <tr>
+                  <td>
+                    {(toolContentData as any)[alt.slug] ? (
+                      <a href={`/tools/${alt.slug}/`}>{alt.display_name}</a>
+                    ) : (
+                      <span>{alt.display_name}</span>
+                    )}
+                  </td>
+                  <td class="mono">{alt.pricing_summary}</td>
+                  <td class="mono">{alt.job_count > 0 ? alt.job_count.toLocaleString() : '—'}</td>
+                  <td class="text-sm">{alt.best_for || '—'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    <!-- FAQ -->
+    {content.faq?.length > 0 && (
+      <section class="content-section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {content.faq.map((item: any) => (
+            <details class="faq-item">
+              <summary>{item.q}</summary>
+              <p>{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- CTA -->
+    {(tool.categories?.includes('enrichment') || tool.categories?.includes('cleaning') || tool.categories?.includes('validation') || tool.categories?.includes('list-building')) && slug !== 'verum' && (
+      <section class="cta-section">
+        <div class="cta-box">
+          <h3>Need help with data cleaning or enrichment?</h3>
+          <p>Verum handles data projects as a service — no software, no annual contracts. Projects start at $500.</p>
+          <a href="https://veruminc.com" class="btn" target="_blank" rel="noopener">Learn about Verum →</a>
+        </div>
+      </section>
+    )}
+
+    {tool.categories?.includes('healthcare') && slug !== 'provyx' && (
+      <section class="cta-section">
+        <div class="cta-box">
+          <h3>Need healthcare provider data?</h3>
+          <p>Provyx provides NPI-verified provider data across 40+ specialties. Pay-per-record, no contracts.</p>
+          <a href="https://getprovyx.com" class="btn" target="_blank" rel="noopener">Learn about Provyx →</a>
+        </div>
+      </section>
+    )}
+
+    <!-- Related Links -->
+    <section class="content-section related-links-section">
+      <h2>Related</h2>
+      <div class="related-links-grid">
+        <a href={`/categories/${primaryCat}/`} class="related-link card">
+          <span class="related-link-label text-sm text-muted">Category</span>
+          <span>{primaryCatName} Tools</span>
+        </a>
+        {alternativeTools.slice(0, 2).map((alt: any) => (
+          (toolContentData as any)[alt.slug] && (
+            <a href={`/tools/${alt.slug}/`} class="related-link card">
+              <span class="related-link-label text-sm text-muted">Alternative</span>
+              <span>{alt.display_name}</span>
+            </a>
+          )
+        ))}
+        <a href="/tools/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>All Data Tools</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer Info -->
+    <div class="page-footer-info">
+      <p class="text-sm text-muted">Last updated: {lastUpdated}</p>
+      <div class="disclosure">
+        <p>DataStackGuide is independently operated. Some links on this page may be affiliate links. We only recommend tools we'd use ourselves. Our job market data comes from analyzing {totalJobs.toLocaleString()}+ real job postings — not vendor marketing materials. <a href="/about/">Learn more about our methodology.</a></p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  /* Hero */
+  .tool-hero {
+    padding: var(--space-6) 0 var(--space-4);
+  }
+
+  .tool-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+
+  .tool-badges .badge {
+    text-decoration: none;
+  }
+
+  .tool-hero h1 {
+    margin-bottom: var(--space-3);
+    max-width: 800px;
+  }
+
+  .tool-tagline {
+    color: var(--color-text-secondary);
+    font-size: var(--text-lg);
+    max-width: 700px;
+    line-height: 1.5;
+  }
+
+  .quick-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+    padding: var(--space-5) var(--space-6);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+  }
+
+  .fact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .fact-label {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+
+  .fact-value {
+    font-weight: 700;
+    font-size: var(--text-lg);
+  }
+
+  /* Content Sections */
+  .content-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .content-section p {
+    max-width: 720px;
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Pricing */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--space-4);
+    margin-bottom: var(--space-5);
+  }
+
+  .pricing-card {
+    text-align: center;
+  }
+
+  .pricing-card h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+  }
+
+  .pricing-amount {
+    font-size: var(--text-xl);
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .pricing-notes {
+    background: var(--color-primary-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+  }
+
+  .pricing-notes p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin: 0;
+    max-width: none;
+  }
+
+  /* Demand Section */
+  .demand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-5);
+    margin-top: var(--space-5);
+  }
+
+  .demand-card h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-4);
+  }
+
+  .bar-chart {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .bar-row {
+    display: grid;
+    grid-template-columns: 120px 1fr 45px;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .bar-label {
+    font-size: var(--text-sm);
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .bar-track {
+    height: 8px;
+    background: var(--color-border-subtle);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    transition: width 0.3s ease;
+  }
+
+  .bar-value {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    text-align: right;
+  }
+
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-8);
+    margin-top: var(--space-6);
+    padding: var(--space-5) var(--space-6);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .stat-number {
+    font-size: var(--text-xl);
+    font-weight: 800;
+    color: var(--color-primary);
+  }
+
+  .stat-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+
+  .stat-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-1);
+  }
+
+  .stat-titles ul,
+  .stat-companies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .stat-titles li,
+  .stat-companies li {
+    padding: var(--space-1) 0;
+    color: var(--color-text-secondary);
+  }
+
+  /* Co-occurrence */
+  .cooc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+  }
+
+  .cooc-card {
+    padding: var(--space-4);
+  }
+
+  .cooc-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  a.cooc-link:hover .cooc-name {
+    color: var(--color-primary);
+  }
+
+  .cooc-name {
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  .cooc-count {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+  }
+
+  /* Pros & Cons */
+  .proscons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-5);
+  }
+
+  .proscons-card h3 {
+    margin-bottom: var(--space-4);
+  }
+
+  .pros-card {
+    border-left: 4px solid #10B981;
+  }
+
+  .cons-card {
+    border-left: 4px solid #EF4444;
+  }
+
+  .proscons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .pro-item::before {
+    content: '✓ ';
+    color: #10B981;
+    font-weight: 700;
+  }
+
+  .con-item::before {
+    content: '✗ ';
+    color: #EF4444;
+    font-weight: 700;
+  }
+
+  .verdict-box {
+    margin-top: var(--space-5);
+    border-left: 4px solid var(--color-primary);
+  }
+
+  .verdict-box p {
+    margin-bottom: var(--space-2);
+    max-width: none;
+  }
+
+  .verdict-box p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Alternatives Table */
+  .alternatives-table-wrap {
+    overflow-x: auto;
+    margin-top: var(--space-4);
+  }
+
+  .alternatives-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+  }
+
+  .alternatives-table th {
+    text-align: left;
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 2px solid var(--color-border);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  .alternatives-table td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border-subtle);
+    vertical-align: top;
+  }
+
+  .alternatives-table tr:hover td {
+    background: var(--color-primary-subtle);
+  }
+
+  /* FAQ */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .faq-item {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .faq-item summary {
+    padding: var(--space-4) var(--space-5);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+
+  .faq-item[open] summary::after {
+    content: '−';
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item p {
+    padding: 0 var(--space-5) var(--space-5);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    max-width: none;
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: var(--space-6) 0;
+  }
+
+  .cta-box {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: var(--space-8);
+  }
+
+  .cta-box h3 {
+    margin-bottom: var(--space-2);
+  }
+
+  .cta-box p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-5);
+    max-width: none;
+  }
+
+  /* Related Links */
+  .related-links-section {
+    padding-bottom: var(--space-6);
+  }
+
+  .related-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .related-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .related-link:hover {
+    color: var(--color-primary);
+  }
+
+  .related-link-label {
+    font-size: var(--text-xs);
+  }
+
+  /* Footer */
+  .page-footer-info {
+    padding: var(--space-6) 0 var(--space-16);
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .page-footer-info .disclosure {
+    margin-top: var(--space-4);
+    padding: 0;
+    border: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .quick-facts {
+      gap: var(--space-4);
+    }
+
+    .fact-value {
+      font-size: var(--text-base);
+    }
+
+    .bar-row {
+      grid-template-columns: 90px 1fr 40px;
+    }
+
+    .stats-row {
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+
+    .demand-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .proscons-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

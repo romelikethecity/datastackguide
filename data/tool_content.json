@@ -1,0 +1,812 @@
+{
+  "salesforce": {
+    "display_name": "Salesforce CRM",
+    "tagline": "The dominant enterprise CRM platform that most B2B data tools are built to integrate with.",
+    "description": "Salesforce is the world's largest CRM platform, used by over 150,000 companies globally. It serves as the system of record for sales, marketing, and customer service teams. Most B2B data tools — enrichment, validation, intent — are designed to push data into Salesforce. If you're evaluating data tools, Salesforce compatibility is table stakes.",
+    "description_2": "The platform has expanded well beyond basic CRM into a full suite: Sales Cloud, Service Cloud, Marketing Cloud, and the Einstein AI layer. For RevOps teams, the real value is the ecosystem — thousands of AppExchange integrations mean you can bolt on almost any data capability.",
+    "website": "https://www.salesforce.com",
+    "founded": 1999,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {"name": "Starter Suite", "price": "$25/user/mo", "notes": "Basic CRM for small teams"},
+        {"name": "Professional", "price": "$80/user/mo", "notes": "Full CRM with forecasting"},
+        {"name": "Enterprise", "price": "$165/user/mo", "notes": "Advanced customization + API access"},
+        {"name": "Unlimited", "price": "$330/user/mo", "notes": "Everything + premier support"}
+      ],
+      "notes": "Annual contracts required. Most mid-market companies end up on Enterprise ($165/user/mo). Add-ons like CPQ, Pardot, and data credits cost extra. Real all-in cost for a 50-person sales team: $120K-200K/year."
+    },
+    "pros": [
+      "Largest ecosystem — virtually every B2B tool integrates with it",
+      "Highly customizable with Flows, Apex, and Lightning components",
+      "Dominant market position means abundant talent pool",
+      "AppExchange marketplace with 5,000+ integrations",
+      "Strong reporting and dashboard capabilities"
+    ],
+    "cons": [
+      "Expensive — real costs are 2-3x the listed price after add-ons",
+      "Steep learning curve for administration",
+      "Implementation typically takes 3-6 months with consulting help",
+      "Data model can become unwieldy without governance",
+      "Annual contracts with significant lock-in"
+    ],
+    "best_for": "Mid-market to enterprise B2B companies with dedicated RevOps or Salesforce admin resources",
+    "not_for": "Small teams under 10 reps or companies that need a simple, affordable CRM",
+    "alternatives": ["hubspot", "dynamics-365", "zoho-crm", "pipedrive", "copper"],
+    "faq": [
+      {
+        "q": "How much does Salesforce actually cost per year?",
+        "a": "Listed pricing starts at $25/user/month, but most B2B companies land on Enterprise at $165/user/month. Factor in add-ons (Pardot, CPQ, data credits), implementation consulting ($50K-150K), and ongoing admin costs. A 50-person sales team typically spends $150K-250K/year all-in."
+      },
+      {
+        "q": "Is Salesforce worth it for small businesses?",
+        "a": "For teams under 10 people, probably not. HubSpot's free CRM or Pipedrive at $15/user/month will cover most needs. Salesforce's value comes from its ecosystem and customizability, which smaller teams rarely need."
+      },
+      {
+        "q": "What skills do Salesforce jobs require?",
+        "a": "Based on our analysis of 1,694 job postings, the most common requirements are Salesforce administration, Apex development, Flow Builder, reporting, and integration management. Over 60% of roles are at the senior or manager level."
+      },
+      {
+        "q": "What tools are most commonly used alongside Salesforce?",
+        "a": "HubSpot (for marketing), ZoomInfo and LinkedIn Sales Navigator (for data enrichment), and Tableau/Looker (for analytics) are the most frequently co-mentioned tools in job postings."
+      }
+    ]
+  },
+  "hubspot": {
+    "display_name": "HubSpot CRM",
+    "tagline": "The mid-market CRM that's eating Salesforce's lunch with its free tier and marketing-first approach.",
+    "description": "HubSpot started as a marketing automation platform and expanded into a full CRM suite. Its free CRM tier has been a trojan horse — companies start free, then grow into paid Marketing Hub, Sales Hub, and Service Hub products. For marketing-led B2B companies, HubSpot's native content, email, and lead scoring tools make it a strong alternative to the Salesforce + Pardot stack.",
+    "description_2": "HubSpot's biggest advantage is usability. Where Salesforce requires dedicated admins, HubSpot is designed for marketing and sales teams to configure themselves. The trade-off is less customization depth — if you need complex multi-object relationships or custom code, you'll hit limits faster.",
+    "website": "https://www.hubspot.com",
+    "founded": 2006,
+    "hq": "Cambridge, MA",
+    "pricing": {
+      "model": "Per user/month (tiered by hub)",
+      "tiers": [
+        {"name": "Free Tools", "price": "$0", "notes": "Basic CRM, forms, email — limited features"},
+        {"name": "Starter", "price": "$20/user/mo", "notes": "Core tools, remove HubSpot branding"},
+        {"name": "Professional", "price": "$100/user/mo", "notes": "Automation, reporting, teams"},
+        {"name": "Enterprise", "price": "$150/user/mo", "notes": "Advanced features, custom objects"}
+      ],
+      "notes": "Pricing is per hub — a company using Marketing Hub Professional ($800/mo for 2K contacts) + Sales Hub Professional ($100/user/mo) adds up quickly. Onboarding fees ($1,500-$6,000) are mandatory for Pro+ tiers. Contact-based pricing on Marketing Hub can spike as your database grows."
+    },
+    "pros": [
+      "Free CRM tier is genuinely useful for small teams",
+      "Excellent UX — non-technical teams can self-serve",
+      "Native marketing automation without needing a separate MAP",
+      "Strong content management and blogging tools built in",
+      "Growing ecosystem of integrations"
+    ],
+    "cons": [
+      "Contact-based pricing on Marketing Hub gets expensive at scale",
+      "Less customizable than Salesforce for complex B2B workflows",
+      "Mandatory onboarding fees for Professional and Enterprise",
+      "Reporting is good but not as deep as Salesforce + Tableau",
+      "Data model is simpler — can be a limitation for complex orgs"
+    ],
+    "best_for": "Marketing-led B2B companies with 10-200 employees who want CRM + marketing automation in one platform",
+    "not_for": "Enterprise sales teams with complex CPQ needs or multi-entity structures",
+    "alternatives": ["salesforce", "zoho-crm", "pipedrive", "monday-sales", "copper"],
+    "faq": [
+      {
+        "q": "Is HubSpot really free?",
+        "a": "The free CRM is real — you get contact management, deal tracking, email, and forms at no cost. But it's limited: no automation, basic reporting, HubSpot branding on forms. Most growing companies move to Starter ($20/mo) or Professional ($100/user/mo) within 6-12 months."
+      },
+      {
+        "q": "HubSpot vs Salesforce — which is better?",
+        "a": "HubSpot wins on ease of use and marketing integration. Salesforce wins on customization, ecosystem depth, and enterprise scalability. If your primary motion is marketing-led (content, inbound, nurture), HubSpot. If you're sales-led with complex deal structures, Salesforce."
+      },
+      {
+        "q": "How popular is HubSpot in job postings?",
+        "a": "HubSpot appears in 432 job postings across 301 companies in our database, making it the second most-demanded CRM after Salesforce (1,694 mentions). Average salary range for HubSpot roles: $107K-$142K."
+      }
+    ]
+  },
+  "zoominfo": {
+    "display_name": "ZoomInfo",
+    "tagline": "The largest B2B contact database, used by enterprise sales teams for prospecting and enrichment.",
+    "description": "ZoomInfo is the market leader in B2B contact and company data. It maintains a database of 100M+ business profiles with direct dials, email addresses, technographic data, and intent signals. Sales and marketing teams use it to build prospect lists, enrich CRM records, and identify accounts showing buying intent.",
+    "description_2": "ZoomInfo has expanded aggressively through acquisitions — buying Chorus (conversation intelligence), RingLead (data quality), and Comparably. The platform now covers the full go-to-market stack, though most customers still use it primarily for contact data and prospecting.",
+    "website": "https://www.zoominfo.com",
+    "founded": 2000,
+    "hq": "Vancouver, WA",
+    "pricing": {
+      "model": "Annual contract, tiered by credits",
+      "tiers": [
+        {"name": "Professional", "price": "$15,000+/yr", "notes": "Core contact/company data, basic search"},
+        {"name": "Advanced", "price": "$25,000+/yr", "notes": "Intent data, website visitor tracking"},
+        {"name": "Elite", "price": "$40,000+/yr", "notes": "Real-time intent, AI recommendations"}
+      ],
+      "notes": "Pricing is not publicly listed — these are estimates from user reports and industry sources. Annual contracts are standard with auto-renewal clauses. Seat-based pricing means costs scale linearly with team size. Many companies report their actual spend is 20-40% higher than initial quotes after add-ons."
+    },
+    "pros": [
+      "Largest B2B contact database with broad coverage",
+      "Direct dial phone numbers — hard to find elsewhere",
+      "Strong company and technographic data",
+      "Intent data identifies in-market accounts",
+      "Deep Salesforce and HubSpot integrations"
+    ],
+    "cons": [
+      "Expensive — minimum $15K/year, most teams spend $25K-50K+",
+      "Data accuracy varies by segment — stronger on US enterprise",
+      "Annual contracts with aggressive auto-renewal terms",
+      "Credit-based system means you can run out mid-cycle",
+      "SMB and international coverage is notably weaker"
+    ],
+    "best_for": "Mid-market to enterprise sales teams targeting US-based B2B companies",
+    "not_for": "Startups on tight budgets, teams focused on SMB or international markets",
+    "alternatives": ["apollo", "linkedin-sales-navigator", "cognism", "leadiq", "clearbit"],
+    "faq": [
+      {
+        "q": "How much does ZoomInfo cost?",
+        "a": "ZoomInfo doesn't publish pricing. Based on user reports, Professional starts around $15,000/year, Advanced around $25,000/year, and Elite around $40,000/year. These are per-seat costs, and most companies end up paying more after add-ons for intent data, enrichment credits, and additional seats."
+      },
+      {
+        "q": "Is ZoomInfo data accurate?",
+        "a": "ZoomInfo's accuracy is generally strong for US-based enterprise contacts — expect 85-90% email accuracy and 70-80% direct dial accuracy. Accuracy drops significantly for SMB contacts, international data, and rapidly changing roles. Always verify critical contacts before high-stakes outreach."
+      },
+      {
+        "q": "What are the best ZoomInfo alternatives?",
+        "a": "Apollo.io ($49-119/user/mo) offers similar contact data at a fraction of the cost. LinkedIn Sales Navigator ($99/mo) has the most current professional data. Cognism is stronger for European data. Clay combines multiple data providers for better coverage."
+      },
+      {
+        "q": "How in-demand is ZoomInfo experience?",
+        "a": "ZoomInfo appears in 85 job postings across 69 companies in our database, making it the most-demanded data provider tool. Average salary range: $95K-$124K. It's most commonly required alongside Salesforce, HubSpot, and LinkedIn Sales Navigator."
+      }
+    ]
+  },
+  "dynamics-365": {
+    "display_name": "Microsoft Dynamics 365",
+    "tagline": "Microsoft's enterprise CRM — the natural choice for companies already deep in the Microsoft ecosystem.",
+    "description": "Dynamics 365 is Microsoft's CRM and ERP platform, combining sales, marketing, customer service, and finance modules. For organizations already using Microsoft 365, Teams, and Azure, Dynamics offers tight integration advantages that Salesforce can't match — shared identity, embedded Teams collaboration, and native Power BI reporting.",
+    "description_2": "The platform is most popular in regulated industries (financial services, government, healthcare) where Microsoft's compliance certifications and on-premise deployment options matter. It's less common in the startup and tech world, where Salesforce and HubSpot dominate.",
+    "website": "https://dynamics.microsoft.com",
+    "founded": 2016,
+    "hq": "Redmond, WA",
+    "pricing": {
+      "model": "Per user/month, modular",
+      "tiers": [
+        {"name": "Sales Professional", "price": "$65/user/mo", "notes": "Core CRM for sales teams"},
+        {"name": "Sales Enterprise", "price": "$95/user/mo", "notes": "Customization, AI, forecasting"},
+        {"name": "Sales Premium", "price": "$135/user/mo", "notes": "Conversation intelligence, predictive"},
+        {"name": "Customer Insights", "price": "$1,500/tenant/mo", "notes": "CDP + analytics module"}
+      ],
+      "notes": "Dynamics 365 pricing is modular — you pay per app, per user. A full stack (Sales + Marketing + Service) can rival Salesforce pricing. Microsoft often bundles Dynamics discounts into larger Microsoft 365 enterprise agreements."
+    },
+    "pros": [
+      "Deep Microsoft 365 integration — Outlook, Teams, Excel, Power BI",
+      "Strong in regulated industries with compliance certifications",
+      "Power Platform (Power Apps, Power Automate) extends functionality",
+      "Can be deployed on-premise or in sovereign clouds",
+      "Often bundled at a discount in Microsoft enterprise agreements"
+    ],
+    "cons": [
+      "Smaller ecosystem than Salesforce — fewer third-party integrations",
+      "Partner/consultant ecosystem is less mature",
+      "UI/UX is improving but still behind Salesforce and HubSpot",
+      "Marketing module (Dynamics Marketing) lags behind Pardot/HubSpot",
+      "Complexity of the Microsoft stack can create dependency"
+    ],
+    "best_for": "Enterprise organizations already invested in the Microsoft ecosystem, especially in regulated industries",
+    "not_for": "Startups or companies not using Microsoft 365",
+    "alternatives": ["salesforce", "hubspot", "zoho-crm", "sap-sales-cloud"],
+    "faq": [
+      {
+        "q": "How does Dynamics 365 compare to Salesforce?",
+        "a": "Dynamics 365 wins on Microsoft integration and regulated industry compliance. Salesforce wins on ecosystem size, third-party integrations, and talent availability. Dynamics is often cheaper when bundled into Microsoft enterprise agreements. Salesforce has 25x more job postings mentioning it."
+      },
+      {
+        "q": "What salary can you expect with Dynamics 365 skills?",
+        "a": "Based on our job data, Dynamics 365 roles average $122K-$160K — higher than the Salesforce average ($112K-$156K), likely because Dynamics roles skew toward enterprise and specialized implementations."
+      }
+    ]
+  },
+  "linkedin-sales-navigator": {
+    "display_name": "LinkedIn Sales Navigator",
+    "tagline": "The prospecting tool built on the world's largest professional network.",
+    "description": "LinkedIn Sales Navigator gives sales teams advanced search and filtering across LinkedIn's 900M+ member database. Unlike basic LinkedIn, Navigator offers lead recommendations, InMail credits, CRM integration, and real-time alerts when prospects change jobs or engage with content. It's the most universally used prospecting tool in B2B sales.",
+    "description_2": "Sales Navigator's unique advantage is data freshness — because LinkedIn members update their own profiles, the data is more current than any third-party database. The limitation is that you're restricted to LinkedIn's platform; you can't export data freely, and contact information (emails, phone numbers) requires additional tools.",
+    "website": "https://business.linkedin.com/sales-solutions",
+    "founded": 2014,
+    "hq": "Sunnyvale, CA",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {"name": "Core", "price": "$99/user/mo", "notes": "Advanced search, lead lists, 50 InMails/mo"},
+        {"name": "Advanced", "price": "$149/user/mo", "notes": "TeamLink, SmartLinks, CSV upload"},
+        {"name": "Advanced Plus", "price": "Custom", "notes": "CRM sync, enterprise SSO, API access"}
+      ],
+      "notes": "Annual billing required for best rates. Advanced Plus (with CRM sync) pricing is not public but typically $1,200-1,800/user/year. LinkedIn occasionally offers discounts for annual commitments. InMail credits are limited and don't roll over."
+    },
+    "pros": [
+      "Most current professional data — members update their own profiles",
+      "Boolean search across 900M+ profiles is powerful",
+      "Job change alerts catch prospects at their most receptive",
+      "Universally recognized — every B2B seller knows how to use it",
+      "TeamLink shows warm paths through your company's network"
+    ],
+    "cons": [
+      "Can't export contact data (emails, phones) — need a companion tool",
+      "InMail response rates have declined as the platform gets noisier",
+      "CRM sync (Advanced Plus) requires enterprise pricing",
+      "Search results are limited by LinkedIn's algorithm",
+      "No direct phone numbers — need ZoomInfo, Apollo, or similar"
+    ],
+    "best_for": "Any B2B sales team as a foundational prospecting tool — works for SMB through enterprise",
+    "not_for": "Teams that need bulk contact data export or phone numbers (pair with a data provider)",
+    "alternatives": ["zoominfo", "apollo", "clay", "cognism", "leadiq"],
+    "faq": [
+      {
+        "q": "Is LinkedIn Sales Navigator worth the cost?",
+        "a": "For B2B sales teams, yes. At $99/mo for Core, it's the cheapest way to access LinkedIn's full search and filtering. The ROI comes from finding the right prospects faster and catching job changes. Most teams pair it with a data provider (ZoomInfo, Apollo) for contact info."
+      },
+      {
+        "q": "How does Sales Navigator differ from LinkedIn Premium?",
+        "a": "Sales Navigator is built for sales prospecting — advanced lead search, lead lists, CRM integration, and team features. LinkedIn Premium Business ($60/mo) is for individual networking with basic InMail and profile views. Navigator has far more powerful search filters and lead management."
+      }
+    ]
+  },
+  "salesloft": {
+    "display_name": "Salesloft",
+    "tagline": "Enterprise sales engagement platform for managing multi-channel outreach sequences.",
+    "description": "Salesloft is a sales engagement platform that helps revenue teams manage email sequences (cadences), phone calls, and social touches in coordinated workflows. It sits between your CRM and your communication channels, tracking engagement across every touchpoint. In 2024, Salesloft was acquired by Vista Equity Partners for $2.3B, cementing its position as a market leader alongside Outreach.",
+    "description_2": "Salesloft's strength is in enterprise sales — complex, multi-touch sequences with multiple stakeholders. Its Rhythm AI feature prioritizes activities based on buyer engagement signals. For smaller teams doing high-volume outbound, tools like Instantly or Apollo may be more cost-effective.",
+    "website": "https://www.salesloft.com",
+    "founded": 2011,
+    "hq": "Atlanta, GA",
+    "pricing": {
+      "model": "Per user/month, annual contract",
+      "tiers": [
+        {"name": "Essentials", "price": "$75/user/mo", "notes": "Core cadences, email tracking"},
+        {"name": "Advanced", "price": "$125/user/mo", "notes": "Conversations, deals, forecasting"},
+        {"name": "Premier", "price": "$165/user/mo", "notes": "Full platform + Rhythm AI"}
+      ],
+      "notes": "Annual contracts required. Pricing is not publicly listed — these are estimates from user reports. Enterprise deals often include volume discounts. Minimum seat requirements may apply."
+    },
+    "pros": [
+      "Strong cadence/sequence builder with multi-channel support",
+      "Good analytics on rep performance and sequence effectiveness",
+      "Deep Salesforce integration",
+      "Conversation intelligence built in (Advanced+)",
+      "Rhythm AI helps prioritize rep activities"
+    ],
+    "cons": [
+      "Expensive for small teams — minimum $75/user/mo",
+      "Can feel over-engineered for simple outbound workflows",
+      "Deliverability management requires separate tools",
+      "Limited built-in data — you need a separate data provider",
+      "Annual contracts with limited flexibility"
+    ],
+    "best_for": "Mid-market to enterprise sales teams with 10+ SDRs/AEs running structured outbound sequences",
+    "not_for": "Solo founders or small teams doing high-volume cold email",
+    "alternatives": ["outreach-io", "apollo", "instantly", "hubspot"],
+    "faq": [
+      {
+        "q": "Salesloft vs Outreach — which is better?",
+        "a": "They're functionally similar. Salesloft is often praised for better UX and customer support. Outreach has slightly more advanced analytics and workflow automation. Both target enterprise sales teams. Choose based on which integrates better with your existing stack."
+      },
+      {
+        "q": "How popular is Salesloft in the job market?",
+        "a": "Salesloft appears in 43 job postings across 34 companies in our data, making it the most-demanded sales engagement platform. Average salary range for roles requiring Salesloft: $87K-$107K."
+      }
+    ]
+  },
+  "instantly": {
+    "display_name": "Instantly",
+    "tagline": "High-volume cold email platform built for agencies and growth teams.",
+    "description": "Instantly is a cold email platform designed for high-volume outbound. Its key features are unlimited email accounts, built-in email warmup, and a lead database (Instantly B2B Lead Finder). It's popular with agencies, consultants, and growth-stage startups running aggressive outbound campaigns.",
+    "description_2": "Unlike Salesloft or Outreach, Instantly is optimized for volume and deliverability rather than multi-channel enterprise sequences. The email warmup feature automatically warms up your sending domains, and the platform manages rotation across multiple inboxes to maintain deliverability at scale.",
+    "website": "https://instantly.ai",
+    "founded": 2021,
+    "hq": "Remote",
+    "pricing": {
+      "model": "Per workspace/month",
+      "tiers": [
+        {"name": "Growth", "price": "$37/mo", "notes": "1,000 leads, 5,000 emails/mo, email warmup"},
+        {"name": "Hypergrowth", "price": "$97/mo", "notes": "25,000 leads, 75,000 emails/mo"},
+        {"name": "Light Speed", "price": "$358/mo", "notes": "100,000 leads, 500,000 emails/mo"}
+      ],
+      "notes": "Pricing is per workspace, not per user — all team members included. B2B Lead Finder (contact database) is an add-on starting at $47/mo for 1,000 leads. Significantly cheaper than Salesloft/Outreach for volume-focused teams."
+    },
+    "pros": [
+      "Unlimited email accounts — send from many domains",
+      "Built-in email warmup keeps deliverability high",
+      "Very affordable compared to enterprise SEPs",
+      "Simple UI — easy to set up and run campaigns",
+      "B2B Lead Finder add-on provides contact data"
+    ],
+    "cons": [
+      "Email-only — no native phone dialer or LinkedIn integration",
+      "Less suited for complex enterprise sales cycles",
+      "Data quality from Lead Finder is inconsistent",
+      "Limited reporting compared to Salesloft/Outreach",
+      "Deliverability at very high volumes still requires expertise"
+    ],
+    "best_for": "Agencies, consultants, and growth teams running high-volume cold email campaigns",
+    "not_for": "Enterprise sales teams with complex multi-channel sequences",
+    "alternatives": ["apollo", "lemlist", "smartlead", "salesloft", "outreach-io"],
+    "faq": [
+      {
+        "q": "Is Instantly good for cold email?",
+        "a": "Yes, Instantly is one of the best options for cold email at scale. The unlimited email accounts and built-in warmup solve the two biggest cold email challenges: deliverability and volume. At $37/mo, it's accessible for solo operators and small teams."
+      },
+      {
+        "q": "How does Instantly compare to Apollo?",
+        "a": "Instantly is a cold email specialist — better warmup, more sending volume, simpler UX. Apollo is an all-in-one platform with built-in contact data, multi-channel sequences, and CRM features. Choose Instantly for pure email volume; Apollo for a broader sales engagement stack."
+      }
+    ]
+  },
+  "apollo": {
+    "display_name": "Apollo.io",
+    "tagline": "The all-in-one sales platform combining contact data, sequences, and CRM for growth teams.",
+    "description": "Apollo.io is a sales intelligence and engagement platform that combines a B2B contact database (275M+ contacts), email/phone sequences, and a built-in CRM. It's positioned as a lower-cost alternative to the ZoomInfo + Salesloft/Outreach stack, offering data and engagement in one platform.",
+    "description_2": "Apollo has grown rapidly by offering generous free tiers and competitive pricing. Their contact data covers 275M+ contacts and 73M+ companies. While data accuracy doesn't match ZoomInfo's for enterprise contacts, Apollo provides solid coverage for the price point — especially for growth-stage companies.",
+    "website": "https://www.apollo.io",
+    "founded": 2015,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {"name": "Free", "price": "$0", "notes": "250 emails/day, 60 mobile credits/yr, basic sequences"},
+        {"name": "Basic", "price": "$49/user/mo", "notes": "Unlimited emails, 900 mobile credits/yr"},
+        {"name": "Professional", "price": "$79/user/mo", "notes": "Uncapped sending, dialer, A/B testing"},
+        {"name": "Organization", "price": "$119/user/mo", "notes": "Advanced reports, call transcription, SSO"}
+      ],
+      "notes": "Annual billing for listed prices. Monthly billing is 20% higher. The free tier is genuinely useful for individual sellers. Mobile credits (phone number reveals) are the main consumption-based cost."
+    },
+    "pros": [
+      "All-in-one: data + sequences + CRM in one platform",
+      "Generous free tier for individuals and small teams",
+      "275M+ contact database at a fraction of ZoomInfo's price",
+      "Email and phone sequences with A/B testing",
+      "Strong API for custom integrations"
+    ],
+    "cons": [
+      "Data accuracy is lower than ZoomInfo for enterprise contacts",
+      "Mobile credit limits can be restrictive on lower tiers",
+      "Built-in CRM is basic — most teams still use Salesforce/HubSpot",
+      "Email deliverability management is less robust than Instantly",
+      "International data coverage is weaker"
+    ],
+    "best_for": "Growth-stage startups and SMBs wanting contact data + outreach in one affordable platform",
+    "not_for": "Enterprise teams needing premium data accuracy or complex CRM workflows",
+    "alternatives": ["zoominfo", "instantly", "linkedin-sales-navigator", "cognism", "leadiq"],
+    "faq": [
+      {
+        "q": "Is Apollo a good alternative to ZoomInfo?",
+        "a": "For growth-stage companies, yes. Apollo offers 80% of ZoomInfo's functionality at 20% of the cost. Data accuracy is lower for enterprise contacts, but for SMB and mid-market prospecting, Apollo's 275M+ database is more than sufficient. You'll save $10K-30K/year switching from ZoomInfo."
+      },
+      {
+        "q": "How accurate is Apollo's data?",
+        "a": "Apollo claims 91% email accuracy. In practice, expect 80-85% for business emails. Phone number accuracy is lower — around 60-70% for direct dials. Accuracy is best for US tech companies and worse for international or niche verticals."
+      },
+      {
+        "q": "How popular is Apollo in job postings?",
+        "a": "Apollo appears in 37 job postings across 25 companies in our data. Average salary range: $146K-$173K — higher than average, suggesting it's popular at well-funded startups."
+      }
+    ]
+  },
+  "demandtools": {
+    "display_name": "DemandTools",
+    "tagline": "The gold standard for Salesforce data quality — deduplication, mass updates, and standardization.",
+    "description": "DemandTools (by Validity, formerly Data.com) is the most widely used data quality tool for Salesforce. It handles mass deduplication, standardization, data imports, and record management directly within Salesforce. For RevOps teams managing dirty CRM data, DemandTools is the go-to solution for batch data operations.",
+    "description_2": "The tool excels at one thing: cleaning Salesforce data. It's not an enrichment tool or a prospecting platform — it's a surgical instrument for finding duplicates, standardizing fields, and performing mass updates without breaking Salesforce workflows. Most RevOps professionals consider it essential.",
+    "website": "https://www.validity.com/demandtools/",
+    "founded": 2003,
+    "hq": "Boston, MA",
+    "pricing": {
+      "model": "Annual license",
+      "tiers": [
+        {"name": "DemandTools", "price": "$3,000-6,000/yr", "notes": "Core data quality modules"},
+        {"name": "Validity Platform", "price": "$10,000+/yr", "notes": "DemandTools + BriteVerify + GridBuddy"}
+      ],
+      "notes": "Pricing is per Salesforce org, not per user. Validity bundles DemandTools with their other products (BriteVerify for email verification, GridBuddy for mass editing). Standalone DemandTools pricing typically ranges $3K-6K/year."
+    },
+    "pros": [
+      "Best-in-class Salesforce deduplication with fuzzy matching",
+      "Mass update capabilities save hours of manual work",
+      "Standardization modules clean address, phone, and name fields",
+      "Point-and-click interface — no Apex code needed",
+      "Import module handles bulk data loads with validation"
+    ],
+    "cons": [
+      "Salesforce-only — doesn't work with HubSpot or other CRMs",
+      "Desktop application (Windows) — no cloud-native version yet",
+      "Learning curve for advanced matching scenarios",
+      "Expensive for small orgs that only need basic dedup",
+      "Some modules require Validity platform subscription"
+    ],
+    "best_for": "RevOps and Salesforce admins who need to maintain clean CRM data at scale",
+    "not_for": "HubSpot users or teams not on Salesforce",
+    "alternatives": ["ringlead-revops", "cloudingo", "duplicate-check"],
+    "faq": [
+      {
+        "q": "What does DemandTools do?",
+        "a": "DemandTools is a Salesforce data quality toolkit. It finds and merges duplicate records, standardizes field values (addresses, phone numbers, titles), performs mass updates, and handles bulk data imports with validation rules. It's used by RevOps teams to keep CRM data clean."
+      },
+      {
+        "q": "How much does DemandTools cost?",
+        "a": "DemandTools typically costs $3,000-6,000/year per Salesforce org. Validity also offers a platform bundle ($10K+/yr) that includes DemandTools, BriteVerify (email verification), and GridBuddy (mass editing)."
+      },
+      {
+        "q": "How in-demand are DemandTools skills?",
+        "a": "DemandTools appears in 32 job postings across 26 companies in our data, making it the most-demanded data quality tool. Average salary range: $135K-$181K — reflecting that it's primarily used by senior RevOps professionals."
+      }
+    ]
+  },
+  "warmly": {
+    "display_name": "Warmly",
+    "tagline": "Real-time website visitor identification that shows you who's browsing your site right now.",
+    "description": "Warmly is a website visitor identification platform that de-anonymizes your website traffic and provides real-time alerts when target accounts visit your site. It identifies companies and individual visitors, then triggers automated outreach sequences via email, LinkedIn, or chat.",
+    "description_2": "Unlike traditional intent data providers that show topic-level interest, Warmly shows you exactly which pages specific prospects visit on your site. This first-party intent signal is more actionable than third-party intent data from Bombora or G2. The trade-off is that it only covers your own website traffic.",
+    "website": "https://www.warmly.ai",
+    "founded": 2020,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Monthly, based on visitors identified",
+      "tiers": [
+        {"name": "Free", "price": "$0", "notes": "500 visitors/mo, basic identification"},
+        {"name": "Startup", "price": "$700/mo", "notes": "Up to 10,000 identified visitors"},
+        {"name": "Business", "price": "$1,400/mo", "notes": "Orchestration, AI chat, integrations"},
+        {"name": "Enterprise", "price": "Custom", "notes": "Unlimited visitors, custom integrations"}
+      ],
+      "notes": "Pricing scales with traffic volume. The free tier is useful for testing. Most mid-market companies land on the Business tier ($1,400/mo). Warmly's pricing is competitive with similar tools like Clearbit Reveal or 6Sense."
+    },
+    "pros": [
+      "Real-time visitor identification — see who's on your site now",
+      "Identifies individual contacts, not just companies",
+      "Automated outreach triggers based on page visits",
+      "AI chatbot engages visitors while they're still on-site",
+      "Free tier available for testing"
+    ],
+    "cons": [
+      "Only covers your own website traffic — no third-party intent",
+      "Identification rates vary (typically 15-30% of traffic)",
+      "Can feel invasive to prospects — use with care",
+      "Pricing scales with traffic — expensive for high-traffic sites",
+      "Newer platform — smaller ecosystem than established players"
+    ],
+    "best_for": "B2B companies with meaningful website traffic wanting to convert anonymous visitors to pipeline",
+    "not_for": "Companies with low website traffic or selling to consumers",
+    "alternatives": ["6sense", "clearbit", "leadfeeder", "rb2b"],
+    "faq": [
+      {
+        "q": "How does Warmly identify website visitors?",
+        "a": "Warmly uses a combination of reverse IP lookup, cookie matching, and data partnerships to identify companies and individuals visiting your website. Identification rates typically range 15-30% of total traffic, with higher rates for US-based enterprise visitors."
+      },
+      {
+        "q": "Is Warmly worth the price?",
+        "a": "If your website gets 5,000+ monthly visitors from target accounts, yes. The ROI comes from converting anonymous traffic to pipeline. A single enterprise deal sourced from Warmly can pay for a year of the platform. Low-traffic sites won't see enough identified visitors to justify the cost."
+      }
+    ]
+  },
+  "clay": {
+    "display_name": "Clay",
+    "tagline": "The spreadsheet-meets-data-enrichment platform that lets you waterfall across 75+ data providers.",
+    "description": "Clay is a data enrichment and workflow automation platform that connects to 75+ data providers (ZoomInfo, Apollo, Clearbit, and others) and lets you build enrichment sequences that waterfall across multiple sources. You build enrichment workflows in a spreadsheet-like interface, pulling the best data from whichever provider has it.",
+    "description_2": "Clay's unique value is data waterfalling — instead of committing to a single data provider, you can try multiple providers in sequence and use the first result that matches. This typically improves coverage by 20-40% compared to any single provider. The platform also supports AI-powered data transformations and outbound personalization.",
+    "website": "https://www.clay.com",
+    "founded": 2017,
+    "hq": "New York, NY",
+    "pricing": {
+      "model": "Monthly, based on credits",
+      "tiers": [
+        {"name": "Starter", "price": "$149/mo", "notes": "2,000 credits/mo"},
+        {"name": "Explorer", "price": "$349/mo", "notes": "10,000 credits/mo"},
+        {"name": "Pro", "price": "$800/mo", "notes": "50,000 credits/mo"},
+        {"name": "Enterprise", "price": "Custom", "notes": "Unlimited credits, custom integrations"}
+      ],
+      "notes": "Each enrichment lookup consumes credits. A single contact enrichment might use 3-5 credits depending on which providers you query. Most growth teams start on Explorer ($349/mo). Credit usage can spike quickly with complex waterfall workflows."
+    },
+    "pros": [
+      "Data waterfalling across 75+ providers improves coverage 20-40%",
+      "Spreadsheet-like UI is intuitive for ops professionals",
+      "AI-powered data transformations and personalization",
+      "Flexible — build custom enrichment workflows without code",
+      "Integrates with CRMs, SEPs, and most sales tools"
+    ],
+    "cons": [
+      "Credit-based pricing can be expensive at scale",
+      "Learning curve for building complex workflows",
+      "Still requires subscriptions to underlying data providers",
+      "Can be slow for very large enrichment jobs",
+      "Relatively new — some features are still maturing"
+    ],
+    "best_for": "RevOps teams and growth operators who need data from multiple providers without committing to one",
+    "not_for": "Teams happy with a single data provider or non-technical users wanting a plug-and-play solution",
+    "alternatives": ["zoominfo", "apollo", "clearbit", "cognism"],
+    "faq": [
+      {
+        "q": "What is Clay used for?",
+        "a": "Clay is used for B2B data enrichment and outbound workflow automation. You import a list of leads or companies, build enrichment sequences that pull data from 75+ providers, then push the enriched data to your CRM or outreach tools. Think of it as a smart spreadsheet that connects to every data source."
+      },
+      {
+        "q": "How does Clay compare to ZoomInfo?",
+        "a": "ZoomInfo is a single data provider. Clay is a platform that can query ZoomInfo alongside 74 other providers. Clay's advantage is better coverage through waterfalling; ZoomInfo's advantage is deeper single-source data and a simpler all-in-one experience. Many teams use both — ZoomInfo as a primary source and Clay for coverage gaps."
+      }
+    ]
+  },
+  "6sense": {
+    "display_name": "6sense",
+    "tagline": "AI-powered ABM platform that predicts which accounts are ready to buy.",
+    "description": "6sense is an account-based marketing (ABM) platform that uses AI to identify accounts showing buying intent. It aggregates intent signals from across the web — content consumption, keyword research, competitor visits — and scores accounts by their likelihood to purchase. Marketing and sales teams use these scores to prioritize outreach and personalize campaigns.",
+    "description_2": "The platform combines intent data, predictive analytics, and advertising capabilities into an ABM orchestration layer. 6sense can identify anonymous web visitors, segment audiences by buying stage, and serve targeted display ads to in-market accounts. It's a significant investment, typically targeting companies with $50K+ ABM budgets.",
+    "website": "https://6sense.com",
+    "founded": 2013,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Annual contract, usage-based",
+      "tiers": [
+        {"name": "Team", "price": "$25,000+/yr", "notes": "Core intent data, basic dashboards"},
+        {"name": "Growth", "price": "$50,000+/yr", "notes": "Predictive, segments, advertising"},
+        {"name": "Enterprise", "price": "$100,000+/yr", "notes": "Full platform, AI, custom models"}
+      ],
+      "notes": "6sense does not publish pricing. Estimates are from user reports and industry sources. Most mid-market deployments cost $50K-100K/year. Enterprise deals with advertising spend can exceed $200K/year. Annual contracts are standard."
+    },
+    "pros": [
+      "AI-powered intent signals identify in-market accounts early",
+      "Anonymous visitor identification across your digital properties",
+      "Predictive models score accounts by buying stage",
+      "Built-in display advertising for ABM campaigns",
+      "Deep Salesforce and marketing automation integrations"
+    ],
+    "cons": [
+      "Expensive — minimum $25K/year, most deployments $50K-100K+",
+      "Intent data accuracy can be inconsistent for niche markets",
+      "Requires organizational buy-in across sales and marketing",
+      "Long implementation timeline (2-4 months typical)",
+      "ROI is hard to measure directly"
+    ],
+    "best_for": "Mid-market to enterprise B2B companies with $50K+ ABM budgets and aligned sales/marketing teams",
+    "not_for": "Startups, SMBs, or companies without dedicated ABM resources",
+    "alternatives": ["demandbase", "bombora-intent", "warmly", "linkedin-marketing"],
+    "faq": [
+      {
+        "q": "How much does 6sense cost?",
+        "a": "6sense doesn't publish pricing. Based on user reports, the Team plan starts around $25,000/year. Most mid-market companies pay $50,000-100,000/year for Growth or Enterprise tiers. Advertising spend is additional."
+      },
+      {
+        "q": "6sense vs Demandbase — which is better?",
+        "a": "Both are strong ABM platforms. 6sense is generally considered better at predictive scoring and intent data aggregation. Demandbase has stronger advertising capabilities and a more established ABM advertising network. Choose based on whether your priority is intent intelligence (6sense) or ABM advertising (Demandbase)."
+      }
+    ]
+  },
+  "zoho-crm": {
+    "display_name": "Zoho CRM",
+    "tagline": "The affordable all-in-one business platform for budget-conscious teams.",
+    "description": "Zoho CRM is part of the broader Zoho suite of 45+ business applications. It offers CRM, marketing automation, helpdesk, project management, and more at significantly lower price points than Salesforce or HubSpot. For bootstrapped companies and SMBs in cost-sensitive markets, Zoho provides enterprise-grade functionality without enterprise-grade pricing.",
+    "description_2": "Zoho's strength is breadth — the Zoho One bundle ($45/user/mo for all 45+ apps) gives you CRM, email, project management, accounting, and HR tools in one suite. The trade-off is that individual apps are good but rarely best-in-class, and the third-party integration ecosystem is smaller than Salesforce or HubSpot.",
+    "website": "https://www.zoho.com/crm/",
+    "founded": 2005,
+    "hq": "Chennai, India",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {"name": "Standard", "price": "$14/user/mo", "notes": "Core CRM features, email integration"},
+        {"name": "Professional", "price": "$23/user/mo", "notes": "Workflow automation, inventory"},
+        {"name": "Enterprise", "price": "$40/user/mo", "notes": "AI (Zia), multi-org, custom modules"},
+        {"name": "Zoho One", "price": "$45/user/mo", "notes": "All 45+ Zoho apps bundled"}
+      ],
+      "notes": "Annual billing for listed prices. Zoho One at $45/user/mo for 45+ apps is remarkable value. No mandatory onboarding fees. Free tier available for up to 3 users."
+    },
+    "pros": [
+      "Significantly cheaper than Salesforce and HubSpot",
+      "Zoho One bundle is exceptional value — 45+ apps for $45/user/mo",
+      "No mandatory onboarding or consulting fees",
+      "Full platform: CRM + email + projects + finance in one suite",
+      "Free tier for up to 3 users"
+    ],
+    "cons": [
+      "Third-party integration ecosystem is smaller",
+      "Individual apps are good but not best-in-class",
+      "UI/UX is functional but less polished",
+      "Talent pool is smaller — harder to find experienced Zoho admins",
+      "Support response times can be slow on lower tiers"
+    ],
+    "best_for": "Bootstrapped SMBs and cost-sensitive teams who want an all-in-one suite without enterprise pricing",
+    "not_for": "Enterprise teams that need deep third-party integrations or a large partner ecosystem",
+    "alternatives": ["hubspot", "pipedrive", "freshsales", "monday-sales", "copper"],
+    "faq": [
+      {
+        "q": "Is Zoho CRM as good as Salesforce?",
+        "a": "For basic CRM functionality, Zoho covers 80% of what most teams need at 20% of Salesforce's cost. Where Salesforce pulls ahead: ecosystem depth (5,000+ integrations vs hundreds), customization (Apex, custom Lightning), and enterprise scalability. If your needs are straightforward, Zoho is a strong choice."
+      },
+      {
+        "q": "What is Zoho One?",
+        "a": "Zoho One is a bundle of 45+ Zoho applications for $45/user/month. It includes CRM, email, project management, accounting, HR, and more. It's one of the best values in business software if you're willing to use the Zoho ecosystem."
+      }
+    ]
+  },
+  "zapier": {
+    "display_name": "Zapier",
+    "tagline": "The no-code integration platform that connects 6,000+ apps without engineering help.",
+    "description": "Zapier is the most popular no-code integration platform, connecting 6,000+ apps through automated workflows called Zaps. For RevOps teams, Zapier handles the data plumbing between CRM, marketing automation, data providers, and other tools without requiring engineering resources. Common use cases: syncing leads between forms and CRM, triggering enrichment workflows, and automating data entry.",
+    "description_2": "Zapier's simplicity is its superpower — anyone can build a basic integration in minutes. The limitation is that complex, high-volume, or real-time integrations eventually outgrow Zapier. For enterprise-grade iPaaS needs, teams graduate to Workato, MuleSoft, or Tray.io.",
+    "website": "https://zapier.com",
+    "founded": 2011,
+    "hq": "Remote (San Francisco HQ)",
+    "pricing": {
+      "model": "Monthly, based on tasks",
+      "tiers": [
+        {"name": "Free", "price": "$0", "notes": "100 tasks/mo, 5 Zaps, single-step only"},
+        {"name": "Starter", "price": "$20/mo", "notes": "750 tasks/mo, multi-step Zaps"},
+        {"name": "Professional", "price": "$49/mo", "notes": "2,000 tasks/mo, custom logic, webhooks"},
+        {"name": "Team", "price": "$69/mo", "notes": "2,000 tasks/mo, shared workspaces, SSO"}
+      ],
+      "notes": "A 'task' is each action in a Zap. A 5-step Zap running once uses 5 tasks. Task usage can add up quickly with multi-step workflows on large datasets. Enterprise pricing (custom) is available for high-volume needs."
+    },
+    "pros": [
+      "6,000+ app integrations — largest ecosystem of any iPaaS",
+      "No-code interface — non-technical teams can self-serve",
+      "Free tier for basic automations",
+      "Paths, filters, and formatters handle complex logic",
+      "Reliable — high uptime and solid error handling"
+    ],
+    "cons": [
+      "Task-based pricing gets expensive at scale",
+      "Not real-time — minimum 1-2 minute polling delay on most plans",
+      "Complex workflows become hard to manage and debug",
+      "No native data transformation beyond basic formatting",
+      "Enterprise features (SSO, admin controls) require Team+ plan"
+    ],
+    "best_for": "SMBs and ops teams needing quick integrations between SaaS tools without engineering help",
+    "not_for": "Enterprise teams needing real-time, high-volume data orchestration",
+    "alternatives": ["make", "n8n", "workato-ipaas", "tray"],
+    "faq": [
+      {
+        "q": "What is Zapier used for in RevOps?",
+        "a": "RevOps teams use Zapier to automate data flows: syncing form submissions to CRM, triggering data enrichment on new leads, routing leads to the right rep based on criteria, and keeping tools in sync without manual data entry."
+      },
+      {
+        "q": "Zapier vs Make (Integromat) — which is better?",
+        "a": "Zapier has more integrations (6,000+ vs 1,500+) and a simpler interface. Make is cheaper, handles complex branching logic better, and offers more tasks per dollar. For simple automations, Zapier. For complex workflows on a budget, Make."
+      }
+    ]
+  },
+  "copper": {
+    "display_name": "Copper CRM",
+    "tagline": "The Google Workspace-native CRM built for teams that live in Gmail.",
+    "description": "Copper is a CRM designed specifically for Google Workspace users. It lives inside Gmail and Google Calendar, automatically logging emails, tracking contacts, and managing deals without switching between apps. For teams that rely on Google Workspace and want a CRM that doesn't require behavior change, Copper is the most seamless option.",
+    "description_2": "Copper's deep Google integration means your CRM updates as you work — emails are auto-logged, contacts are auto-created, and calendar events are linked to deals. The trade-off is limited functionality outside the Google ecosystem and fewer third-party integrations than Salesforce or HubSpot.",
+    "website": "https://www.copper.com",
+    "founded": 2013,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {"name": "Basic", "price": "$23/user/mo", "notes": "Core CRM, Google integration"},
+        {"name": "Professional", "price": "$59/user/mo", "notes": "Workflow automation, reporting"},
+        {"name": "Business", "price": "$99/user/mo", "notes": "Advanced reporting, email sequences"}
+      ],
+      "notes": "Annual billing for listed prices. All plans include Google Workspace integration. No free tier, but 14-day free trial available."
+    },
+    "pros": [
+      "Deepest Google Workspace integration of any CRM",
+      "Auto-logs emails and creates contact records from Gmail",
+      "Clean, simple UI — minimal training needed",
+      "Good for relationship-driven businesses (consulting, agencies)",
+      "Reasonably priced for small teams"
+    ],
+    "cons": [
+      "Only works with Google Workspace — no Microsoft 365 support",
+      "Limited customization compared to Salesforce or HubSpot",
+      "Smaller integration ecosystem",
+      "Automation capabilities are basic",
+      "Not suited for complex enterprise sales processes"
+    ],
+    "best_for": "Small to mid-size teams (5-50 users) that live in Google Workspace and want zero-friction CRM",
+    "not_for": "Enterprise teams, Microsoft shops, or companies needing advanced automation",
+    "alternatives": ["hubspot", "pipedrive", "zoho-crm", "freshsales"],
+    "faq": [
+      {
+        "q": "Is Copper CRM only for Google Workspace?",
+        "a": "Yes. Copper is built exclusively for Google Workspace. If your company uses Microsoft 365, Copper is not an option. This tight focus is what makes its Gmail and Calendar integration so seamless."
+      },
+      {
+        "q": "How does Copper compare to HubSpot?",
+        "a": "Copper wins on Google integration and simplicity. HubSpot wins on marketing features, free tier, and ecosystem breadth. For pure CRM in a Google shop, Copper is smoother. For CRM + marketing automation, HubSpot is more complete."
+      }
+    ]
+  },
+  "verum": {
+    "display_name": "Verum",
+    "tagline": "Done-for-you data services: cleaning, enrichment, and validation without annual contracts.",
+    "description": "Verum is a B2B data services company that handles data cleaning, enrichment, and validation as a managed service. Instead of buying software licenses and figuring it out yourself, you send your data to Verum and get clean, enriched records back. Projects start at $500 with no annual contracts or seat licenses.",
+    "description_2": "Verum sits in the gap between expensive enterprise data platforms and DIY spreadsheet work. For companies that need clean data but don't have a full-time data ops team, Verum handles the heavy lifting: deduplication, field standardization, email verification, firmographic enrichment, and list building. The service model means you pay for outcomes, not software seats.",
+    "website": "https://veruminc.com",
+    "founded": 2023,
+    "hq": "United States",
+    "pricing": {
+      "model": "Project-based",
+      "tiers": [
+        {"name": "Data Cleaning", "price": "From $500", "notes": "Dedup, standardization, formatting"},
+        {"name": "Data Enrichment", "price": "From $750", "notes": "Firmographic, contact, technographic append"},
+        {"name": "List Building", "price": "From $500", "notes": "Custom prospect lists to your ICP"},
+        {"name": "Ongoing", "price": "Custom", "notes": "Recurring data hygiene and enrichment"}
+      ],
+      "notes": "No annual contracts or seat licenses. Pay per project. Volume discounts available for ongoing engagements. Free initial data audit to scope the project."
+    },
+    "pros": [
+      "No software to learn — send data, get results",
+      "No annual contracts or seat-based pricing",
+      "Projects start at $500 — accessible for SMBs",
+      "Human QA on every deliverable",
+      "Combines multiple data sources for better coverage"
+    ],
+    "cons": [
+      "Not self-service — turnaround is days, not instant",
+      "Less control over the enrichment process",
+      "Not suited for real-time data needs",
+      "Newer company — smaller track record than established vendors",
+      "Custom pricing means you need to get a quote"
+    ],
+    "best_for": "SMBs and mid-market teams that need clean, enriched data without dedicating headcount to data ops",
+    "not_for": "Teams needing real-time enrichment or full self-service control",
+    "alternatives": ["zoominfo", "clay", "apollo", "clearbit"],
+    "faq": [
+      {
+        "q": "What data services does Verum provide?",
+        "a": "Verum provides data cleaning (deduplication, standardization), data enrichment (firmographic, technographic, contact data), email verification, and custom list building. Projects are scoped based on your specific needs — no one-size-fits-all packages."
+      },
+      {
+        "q": "How is Verum different from ZoomInfo or Apollo?",
+        "a": "ZoomInfo and Apollo are self-service software platforms with annual contracts. Verum is a managed service — you send your data and get results back. Verum is better for teams without data ops resources; ZoomInfo/Apollo are better for teams that want always-on access to a contact database."
+      },
+      {
+        "q": "How much does Verum cost?",
+        "a": "Projects start at $500 with no annual contracts. Pricing depends on data volume and complexity. A typical data cleaning project for 10K-50K records runs $500-2,000. Enrichment projects are priced per record. Contact Verum for a free data audit and quote."
+      }
+    ]
+  },
+  "provyx": {
+    "display_name": "Provyx",
+    "tagline": "NPI-verified healthcare provider data across 40+ specialties — pay per record, no contracts.",
+    "description": "Provyx provides NPI-verified healthcare provider data for medical device, pharmaceutical, and health tech sales teams. The platform covers 40+ medical specialties with data including NPI numbers, practice addresses, affiliations, prescribing patterns, and contact information.",
+    "description_2": "Healthcare data is uniquely challenging — NPI verification requirements, HIPAA considerations, and the complexity of provider affiliations make general-purpose data tools inadequate. Provyx addresses this with healthcare-specific data that's verified against the NPI registry and updated regularly. The pay-per-record model means you only pay for the providers you need.",
+    "website": "https://getprovyx.com",
+    "founded": 2024,
+    "hq": "United States",
+    "pricing": {
+      "model": "Pay-per-record",
+      "tiers": [
+        {"name": "Standard Records", "price": "From $0.15/record", "notes": "NPI, name, specialty, practice address"},
+        {"name": "Enhanced Records", "price": "From $0.50/record", "notes": "Standard + contact info, affiliations"},
+        {"name": "Premium Records", "price": "From $1.00/record", "notes": "Enhanced + prescribing data, referral patterns"},
+        {"name": "Custom", "price": "Contact us", "notes": "Enterprise volumes, API access, ongoing feeds"}
+      ],
+      "notes": "No annual contracts or minimum commitments. Volume discounts available. All records include NPI verification. Free sample available to evaluate data quality."
+    },
+    "pros": [
+      "NPI-verified provider data — critical for healthcare sales",
+      "40+ medical specialties covered",
+      "Pay-per-record — no annual contracts or minimums",
+      "Practice-level data including affiliations and locations",
+      "Significantly cheaper than Definitive Healthcare"
+    ],
+    "cons": [
+      "Healthcare-only — not useful for general B2B prospecting",
+      "Newer platform — still building coverage depth",
+      "No self-service portal yet — data delivered via files",
+      "Limited to US healthcare providers currently",
+      "Prescribing data availability varies by specialty"
+    ],
+    "best_for": "Medical device, pharmaceutical, and health tech sales teams targeting US healthcare providers",
+    "not_for": "General B2B sales teams or companies selling outside healthcare",
+    "alternatives": ["definitive-healthcare"],
+    "faq": [
+      {
+        "q": "What healthcare data does Provyx provide?",
+        "a": "Provyx provides NPI-verified healthcare provider data including: NPI numbers, provider names, specialties, practice addresses, phone/fax numbers, hospital affiliations, and (for premium records) prescribing patterns and referral networks. Coverage spans 40+ medical specialties."
+      },
+      {
+        "q": "How does Provyx compare to Definitive Healthcare?",
+        "a": "Definitive Healthcare is an enterprise platform ($50K+/year) with broader healthcare intelligence including claims data, hospital financials, and market analytics. Provyx focuses on provider contact data at a fraction of the cost ($0.15-1.00/record). Choose Provyx for provider prospecting; Definitive Healthcare for strategic market analysis."
+      },
+      {
+        "q": "Is Provyx HIPAA compliant?",
+        "a": "Provyx provides publicly available provider data (NPI registry, state license boards, published practice information). This data is not protected health information (PHI) under HIPAA. Provyx does not access or store patient data."
+      }
+    ]
+  }
+}

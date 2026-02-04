@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+import comparisonsData from '../../../data/comparisons.json';
+import toolContentData from '../../../data/tool_content.json';
+
+const comparisons = comparisonsData.comparisons;
+
+function getToolName(slug: string): string {
+  const content = (toolContentData as any)[slug];
+  return content?.display_name || slug;
+}
+---
+
+<BaseLayout
+  title="Tool Comparisons"
+  description="Side-by-side comparisons of B2B data tools: pricing, features, pros/cons, and job demand data. Honest analysis to help you choose."
+  canonicalPath="compare/"
+>
+  <div class="container">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Compare' }
+    ]} />
+
+    <section class="page-hero">
+      <h1>Tool Comparisons</h1>
+      <p>Side-by-side comparisons with real pricing, honest pros/cons, and job market data.</p>
+    </section>
+
+    <div class="comp-grid">
+      {comparisons.map((comp: any) => (
+        <a href={`/compare/${comp.slug}/`} class="comp-card card">
+          <div class="comp-card-tools">
+            <span class="comp-tool-name">{getToolName(comp.tool_a)}</span>
+            <span class="comp-vs mono text-muted">vs</span>
+            <span class="comp-tool-name">{getToolName(comp.tool_b)}</span>
+          </div>
+          <p class="comp-card-hook text-sm text-secondary">{comp.hook}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: var(--space-8) 0;
+  }
+
+  .page-hero h1 {
+    margin-bottom: var(--space-3);
+  }
+
+  .page-hero p {
+    color: var(--color-text-secondary);
+  }
+
+  .comp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--space-5);
+    padding-bottom: var(--space-16);
+  }
+
+  .comp-card {
+    text-decoration: none;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .comp-card-tools {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .comp-tool-name {
+    font-weight: 700;
+    font-size: var(--text-lg);
+  }
+
+  .comp-vs {
+    font-size: var(--text-sm);
+  }
+
+  .comp-card-hook {
+    line-height: 1.5;
+    margin: 0;
+  }
+</style>

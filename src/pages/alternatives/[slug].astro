@@ -1,0 +1,440 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+import alternativesData from '../../../data/alternatives.json';
+import toolsData from '../../../data/tools.json';
+import toolContentData from '../../../data/tool_content.json';
+
+export function getStaticPaths() {
+  return alternativesData.alternatives.map((alt: any) => ({
+    params: { slug: alt.slug },
+    props: { page: alt }
+  }));
+}
+
+interface Props {
+  page: any;
+}
+
+const { page } = Astro.props;
+const totalJobs = toolsData.total_jobs_analyzed;
+
+const toolContent = (toolContentData as any)[page.tool_slug];
+const toolName = toolContent?.display_name || page.tool_slug;
+
+const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+// FAQ Schema
+const faqSchema = page.faq?.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": page.faq.map((item: any) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
+} : null;
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.meta_description}
+  canonicalPath={`alternatives/${page.slug}/`}
+>
+  <Fragment slot="head">
+    {faqSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    )}
+  </Fragment>
+
+  <div class="container-narrow">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Alternatives', href: '/alternatives/' },
+      { label: `${toolName} Alternatives` }
+    ]} />
+
+    <!-- Hero -->
+    <section class="alt-hero">
+      <h1>{page.title}</h1>
+      <p class="alt-opening">{page.opening}</p>
+    </section>
+
+    <!-- Quick Comparison Table -->
+    <section class="content-section">
+      <h2>At a Glance</h2>
+      <div class="table-wrap">
+        <table class="alt-table">
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Price</th>
+              <th>Best For</th>
+              <th>Key Difference</th>
+            </tr>
+          </thead>
+          <tbody>
+            {page.alternatives_list.map((alt: any) => (
+              <tr>
+                <td class="tool-name-col">
+                  {(toolContentData as any)[alt.slug] ? (
+                    <a href={`/tools/${alt.slug}/`}>{alt.name}</a>
+                  ) : (
+                    <span class="tool-name-text">{alt.name}</span>
+                  )}
+                </td>
+                <td class="mono price-col">{alt.price}</td>
+                <td class="text-sm">{alt.best_for}</td>
+                <td class="text-sm">{alt.key_difference}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Individual Alternatives -->
+    {page.alternatives_list.map((alt: any, i: number) => (
+      <section class="content-section alt-detail">
+        <h2>{i + 1}. {alt.name}</h2>
+
+        <div class="alt-meta">
+          <div class="alt-meta-item">
+            <span class="alt-meta-label">Price</span>
+            <span class="alt-meta-value mono">{alt.price}</span>
+          </div>
+          <div class="alt-meta-item">
+            <span class="alt-meta-label">Best For</span>
+            <span class="alt-meta-value">{alt.best_for}</span>
+          </div>
+        </div>
+
+        <h3>Coverage &amp; Capabilities</h3>
+        <p>{alt.coverage}</p>
+
+        <div class="alt-verdict">
+          <span class="verdict-label mono text-sm">VERDICT</span>
+          <p>{alt.verdict}</p>
+        </div>
+
+        {(toolContentData as any)[alt.slug] && (
+          <p><a href={`/tools/${alt.slug}/`}>Read the full {alt.name} review →</a></p>
+        )}
+      </section>
+    ))}
+
+    <!-- Methodology -->
+    {page.methodology && (
+      <section class="content-section">
+        <h2>How We Chose These Alternatives</h2>
+        <p>{page.methodology}</p>
+      </section>
+    )}
+
+    <!-- FAQ -->
+    {page.faq?.length > 0 && (
+      <section class="content-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {page.faq.map((item: any) => (
+            <details class="faq-item">
+              <summary>{item.q}</summary>
+              <p>{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- CTA -->
+    {(page.tool_slug === 'zoominfo' || page.tool_slug === 'salesloft') && (
+      <section class="cta-section">
+        <div class="cta-box">
+          <h3>Need clean, enriched data without managing software?</h3>
+          <p>Verum handles data cleaning and enrichment as a service. No contracts, no software — projects start at $500.</p>
+          <a href="https://veruminc.com" class="btn" target="_blank" rel="noopener">Learn about Verum →</a>
+        </div>
+      </section>
+    )}
+
+    <!-- Related Links -->
+    <section class="content-section related-section">
+      <h2>Related</h2>
+      <div class="related-grid">
+        {toolContent && (
+          <a href={`/tools/${page.tool_slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Tool Review</span>
+            <span>{toolName}</span>
+          </a>
+        )}
+        <a href="/compare/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>Tool Comparisons</span>
+        </a>
+        <a href="/tools/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>All Data Tools</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="page-footer-info">
+      <p class="text-sm text-muted">Last updated: {lastUpdated}</p>
+      <div class="disclosure">
+        <p>DataStackGuide is independently operated. Some links on this page may be affiliate links. Our job market data comes from analyzing {totalJobs.toLocaleString()}+ real job postings. <a href="/about/">Learn more about our methodology.</a></p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .alt-hero {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .alt-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .alt-opening {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    font-size: var(--text-base);
+  }
+
+  /* Content Sections */
+  .content-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .content-section h3 {
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-3);
+    font-size: var(--text-base);
+    font-weight: 700;
+  }
+
+  .content-section p {
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Table */
+  .table-wrap {
+    overflow-x: auto;
+    margin-top: var(--space-3);
+  }
+
+  .alt-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+  }
+
+  .alt-table th {
+    text-align: left;
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 2px solid var(--color-border);
+    font-weight: 600;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+  }
+
+  .alt-table td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border-subtle);
+    vertical-align: top;
+  }
+
+  .alt-table tr:hover td {
+    background: var(--color-primary-subtle);
+  }
+
+  .tool-name-col {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .tool-name-text {
+    font-weight: 600;
+  }
+
+  .price-col {
+    white-space: nowrap;
+  }
+
+  /* Alt Detail */
+  .alt-detail h2 {
+    color: var(--color-primary);
+  }
+
+  .alt-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+    margin-bottom: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .alt-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .alt-meta-label {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+
+  .alt-meta-value {
+    font-weight: 600;
+  }
+
+  .alt-verdict {
+    background: var(--color-primary-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+    margin: var(--space-4) 0;
+  }
+
+  .verdict-label {
+    display: inline-block;
+    color: var(--color-primary);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-2);
+  }
+
+  .alt-verdict p {
+    margin: 0;
+    color: var(--color-text-secondary);
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: var(--space-6) 0;
+  }
+
+  .cta-box {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: var(--space-8);
+  }
+
+  .cta-box h3 {
+    margin-bottom: var(--space-2);
+  }
+
+  .cta-box p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-5);
+  }
+
+  /* FAQ */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .faq-item {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .faq-item summary {
+    padding: var(--space-4) var(--space-5);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+
+  .faq-item[open] summary::after {
+    content: '−';
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item p {
+    padding: 0 var(--space-5) var(--space-5);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+  }
+
+  /* Related */
+  .related-section {
+    padding-bottom: var(--space-4);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .related-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .related-link:hover {
+    color: var(--color-primary);
+  }
+
+  /* Footer */
+  .page-footer-info {
+    padding: var(--space-6) 0 var(--space-16);
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .page-footer-info .disclosure {
+    margin-top: var(--space-4);
+    padding: 0;
+    border: none;
+  }
+</style>

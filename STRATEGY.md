@@ -2679,25 +2679,27 @@ Track what's working:
 
 ## 17. Complete Launch Priority List
 
-### Week 1: Foundation
+### Week 1: Foundation ✅
 - [x] Brand assets finalized
-- [ ] GitHub repo setup
-- [ ] Domain + GitHub Pages configured
-- [ ] Integrate brand.css + build site styles on top
+- [x] GitHub repo setup (Astro project)
+- [x] Domain + GitHub Pages configured
+- [x] Integrate brand.css + build site styles on top (global.css with full design system)
 - [ ] Analytics (GA4 + Clarity)
 - [ ] Search Console verified
-- [ ] Run initial data export from jobs.db
-- [ ] Homepage with category nav
-- [ ] 12 category landing pages
+- [x] Run initial data export from jobs.db (extract_data.py → 6 JSON data files)
+- [x] Homepage with category nav
+- [x] 12 category landing pages ([slug].astro dynamic route)
 
-### Week 2: Core Content
-- [ ] 15 tool pages (top by job demand)
-- [ ] 5 comparison pages
-- [ ] 5 alternatives pages
-- [ ] Verum tool page
-- [ ] Provyx tool page
+### Week 2: Core Content (In Progress)
+- [x] 15 tool pages (top by job demand) — [slug].astro dynamic route
+- [x] 5 comparison pages (Salesforce vs HubSpot, ZoomInfo vs Apollo, Salesloft vs Outreach, 6sense vs Demandbase, Instantly vs Apollo)
+- [x] 5 alternatives pages (ZoomInfo, Salesforce, 6sense, Salesloft, HubSpot alternatives)
+- [x] Verum tool page
+- [x] Provyx tool page
 - [ ] Methodology page
 - [ ] About page (with disclosure)
+- [x] Enhanced data pipeline: per-tool details (company stages, seniority, functions, top companies, remote split, titles)
+- [x] Editorial content JSON for all 17 tools (descriptions, pricing, pros/cons, FAQs, alternatives)
 
 ### Week 3: Reports & Long-tail
 - [ ] Most In-Demand Tools report

@@ -377,6 +377,95 @@ def build_categories(tools):
     return categories
 
 
+def extract_tool_details(conn, tools):
+    """Extract detailed per-tool data: company stages, seniority, functions, top companies."""
+    cursor = conn.cursor()
+    details = {}
+
+    for slug, tool in tools.items():
+        tool_name = tool["name"]
+
+        # Company stage distribution
+        cursor.execute("""
+            SELECT j.company_stage, COUNT(DISTINCT jt.job_id) as cnt
+            FROM job_tools jt
+            JOIN jobs j ON jt.job_id = j.id
+            WHERE jt.tool_name = ? AND j.company_stage IS NOT NULL AND j.company_stage != 'Unknown'
+            GROUP BY j.company_stage
+            ORDER BY cnt DESC
+        """, (tool_name,))
+        company_stages = {row[0]: row[1] for row in cursor.fetchall()}
+
+        # Seniority distribution
+        cursor.execute("""
+            SELECT j.seniority_tier, COUNT(DISTINCT jt.job_id) as cnt
+            FROM job_tools jt
+            JOIN jobs j ON jt.job_id = j.id
+            WHERE jt.tool_name = ? AND j.seniority_tier IS NOT NULL AND j.seniority_tier != 'unknown'
+            GROUP BY j.seniority_tier
+            ORDER BY cnt DESC
+        """, (tool_name,))
+        seniority = {row[0]: row[1] for row in cursor.fetchall()}
+
+        # Function category distribution
+        cursor.execute("""
+            SELECT j.function_category, COUNT(DISTINCT jt.job_id) as cnt
+            FROM job_tools jt
+            JOIN jobs j ON jt.job_id = j.id
+            WHERE jt.tool_name = ? AND j.function_category IS NOT NULL
+            GROUP BY j.function_category
+            ORDER BY cnt DESC
+        """, (tool_name,))
+        functions = {row[0]: row[1] for row in cursor.fetchall()}
+
+        # Top hiring companies
+        cursor.execute("""
+            SELECT j.company_name_normalized, COUNT(DISTINCT jt.job_id) as cnt
+            FROM job_tools jt
+            JOIN jobs j ON jt.job_id = j.id
+            WHERE jt.tool_name = ? AND j.company_name_normalized IS NOT NULL
+            GROUP BY j.company_name_normalized
+            ORDER BY cnt DESC
+            LIMIT 10
+        """, (tool_name,))
+        top_companies = [{"name": row[0], "jobs": row[1]} for row in cursor.fetchall()]
+
+        # Remote vs onsite
+        cursor.execute("""
+            SELECT
+                SUM(CASE WHEN j.is_remote = 1 THEN 1 ELSE 0 END) as remote,
+                SUM(CASE WHEN j.is_remote = 0 OR j.is_remote IS NULL THEN 1 ELSE 0 END) as onsite
+            FROM job_tools jt
+            JOIN jobs j ON jt.job_id = j.id
+            WHERE jt.tool_name = ?
+        """, (tool_name,))
+        row = cursor.fetchone()
+        remote_split = {"remote": row[0] or 0, "onsite": row[1] or 0}
+
+        # Top job titles
+        cursor.execute("""
+            SELECT j.title, COUNT(*) as cnt
+            FROM job_tools jt
+            JOIN jobs j ON jt.job_id = j.id
+            WHERE jt.tool_name = ?
+            GROUP BY j.title
+            ORDER BY cnt DESC
+            LIMIT 5
+        """, (tool_name,))
+        top_titles = [{"title": row[0], "count": row[1]} for row in cursor.fetchall()]
+
+        details[slug] = {
+            "company_stages": company_stages,
+            "seniority": seniority,
+            "functions": functions,
+            "top_companies": top_companies,
+            "remote_split": remote_split,
+            "top_titles": top_titles,
+        }
+
+    return details
+
+
 def get_total_jobs(conn):
     """Get total job count."""
     cursor = conn.cursor()
@@ -452,6 +541,17 @@ def main():
         }, f, indent=2)
     print(f"  → trends for {len(trends)} months")
 
+    # Per-tool details
+    print("Extracting per-tool details...")
+    tool_details = extract_tool_details(conn, tools)
+
+    with open(OUTPUT_DIR / "tool_details.json", "w") as f:
+        json.dump({
+            "generated_at": datetime.now().isoformat(),
+            "details": tool_details,
+        }, f, indent=2)
+    print(f"  → details for {len(tool_details)} tools")
+
     # Market signals (for homepage)
     print("Building market signals...")
     top_tools = tools_list[:20]
@@ -483,6 +583,7 @@ def main():
                 "categories.json",
                 "cooccurrence.json",
                 "trends.json",
+                "tool_details.json",
                 "market_signals.json",
             ],
         }, f, indent=2)
