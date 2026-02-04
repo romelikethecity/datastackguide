@@ -7,8 +7,17 @@
       "full_definition": "Data enrichment takes your existing contacts, leads, or accounts and fills in missing information. That might mean appending firmographic data (company size, revenue, industry), demographic data (job title, email, phone), technographic data (what software they use), or intent signals (what topics they're researching).",
       "why_it_matters": "Without enrichment, your CRM is full of half-complete records. Sales reps waste time researching prospects manually, marketing can't segment effectively, and lead scoring models don't have enough signals to work with. Enrichment automates what used to be hours of manual research.",
       "example": "You import 500 leads from a webinar. Each record has a name and email. An enrichment tool like ZoomInfo or Clearbit appends company name, size, industry, title, phone number, and technology stack to each record automatically.",
-      "related_terms": ["firmographic-data", "technographic-data", "intent-data"],
-      "related_tools": ["zoominfo", "clearbit", "apollo", "clay"],
+      "related_terms": [
+        "firmographic-data",
+        "technographic-data",
+        "intent-data"
+      ],
+      "related_tools": [
+        "zoominfo",
+        "clearbit",
+        "apollo",
+        "clay"
+      ],
       "category_slug": "enrichment"
     },
     {
@@ -18,8 +27,16 @@
       "full_definition": "Intent data captures online research behavior across the web, including content consumption, search queries, product review visits, and competitor page views. There are two types: first-party intent (tracked on your own website via tools like 6sense or Warmly) and third-party intent (aggregated from publisher networks, review sites, and content platforms like Bombora or TechTarget).",
       "why_it_matters": "Intent data lets sales and marketing teams prioritize accounts that are actively in-market for their solution. Instead of spraying outreach to cold lists, you can focus on companies that are already researching your category. This improves conversion rates and reduces wasted effort.",
       "example": "6sense detects that Acme Corp has had 12 employees researching 'data enrichment tools' and 'ZoomInfo alternatives' in the past two weeks. Your sales team gets an alert to prioritize Acme in their outreach cadence.",
-      "related_terms": ["abm", "data-enrichment", "lead-scoring"],
-      "related_tools": ["6sense", "bombora", "warmly"],
+      "related_terms": [
+        "abm",
+        "data-enrichment",
+        "lead-scoring"
+      ],
+      "related_tools": [
+        "6sense",
+        "bombora",
+        "warmly"
+      ],
       "category_slug": "intent"
     },
     {
@@ -29,8 +46,14 @@
       "full_definition": "ABM flips the traditional marketing funnel. Instead of casting a wide net and qualifying leads down to accounts, ABM starts with a defined list of target accounts and directs personalized marketing and sales efforts at those specific companies. It requires tight alignment between sales and marketing teams, shared account lists, and coordinated multi-channel outreach.",
       "why_it_matters": "For companies selling high-value deals to enterprise buyers, ABM is more efficient than inbound lead gen. It concentrates budget on accounts that match your ideal customer profile, which typically produces higher win rates and larger deal sizes. Research consistently shows ABM programs outperform traditional demand gen for enterprise sales motions.",
       "example": "Your marketing team identifies 200 target accounts based on firmographic fit and intent signals. They run LinkedIn ads, direct mail, and personalized email campaigns specifically to contacts at those 200 companies, while sales runs outbound cadences to the same list.",
-      "related_terms": ["intent-data", "lead-scoring", "firmographic-data"],
-      "related_tools": ["6sense"],
+      "related_terms": [
+        "intent-data",
+        "lead-scoring",
+        "firmographic-data"
+      ],
+      "related_tools": [
+        "6sense"
+      ],
       "category_slug": "abm"
     },
     {
@@ -40,8 +63,16 @@
       "full_definition": "Firmographics are to companies what demographics are to individuals. They describe the characteristics of a business: industry, annual revenue, number of employees, headquarters location, funding stage, and organizational structure. This data is foundational for lead scoring, market segmentation, and ideal customer profile (ICP) definition.",
       "why_it_matters": "Firmographic data is the first filter in any B2B targeting strategy. You can't sell enterprise software to a 5-person startup (or shouldn't be trying to). Firmographics help sales and marketing teams qualify accounts before any outreach begins.",
       "example": "Your ICP is SaaS companies with 200-2,000 employees and $20M+ ARR. Firmographic data from ZoomInfo or Apollo lets you filter your prospecting list to only companies matching those criteria.",
-      "related_terms": ["data-enrichment", "technographic-data", "lead-scoring"],
-      "related_tools": ["zoominfo", "apollo", "clearbit"],
+      "related_terms": [
+        "data-enrichment",
+        "technographic-data",
+        "lead-scoring"
+      ],
+      "related_tools": [
+        "zoominfo",
+        "apollo",
+        "clearbit"
+      ],
       "category_slug": "enrichment"
     },
     {
@@ -51,8 +82,15 @@
       "full_definition": "Technographic data reveals a company's technology stack: what CRM they run, which marketing automation platform they use, their cloud provider, analytics tools, and more. This data is collected through web scraping (detecting JavaScript tags, DNS records, job postings), surveys, and partnership data from technology platforms.",
       "why_it_matters": "Knowing a prospect's tech stack tells you whether your product integrates with their existing tools, whether they're using a competitor, and what their technical maturity level is. A company running Salesforce Enterprise is a different buyer than one using a spreadsheet for CRM.",
       "example": "You sell a Salesforce integration. Technographic data reveals that 800 companies in your target market run Salesforce Enterprise. That's your addressable market. The 200 running HubSpot might be a secondary target if you build that integration.",
-      "related_terms": ["firmographic-data", "data-enrichment", "intent-data"],
-      "related_tools": ["zoominfo", "clearbit"],
+      "related_terms": [
+        "firmographic-data",
+        "data-enrichment",
+        "intent-data"
+      ],
+      "related_tools": [
+        "zoominfo",
+        "clearbit"
+      ],
       "category_slug": "enrichment"
     },
     {
@@ -62,8 +100,16 @@
       "full_definition": "Lead scoring assigns numerical values to leads based on two dimensions: fit (how closely they match your ideal customer profile) and engagement (how actively they're interacting with your brand). Fit scoring uses firmographic and demographic data. Engagement scoring uses behavioral data like email opens, website visits, content downloads, and product usage. Most CRMs and marketing automation platforms include lead scoring functionality.",
       "why_it_matters": "Without lead scoring, sales teams treat all leads equally. A VP at an enterprise company who visited your pricing page three times gets the same priority as a student who downloaded a whitepaper. Lead scoring eliminates this guesswork by quantifying which leads deserve immediate attention.",
       "example": "A lead scores 85/100 because they're a Director at a 500-person SaaS company (high fit), visited your pricing page twice, attended a webinar, and opened 4 emails (high engagement). They get routed to a senior AE immediately.",
-      "related_terms": ["intent-data", "firmographic-data", "data-enrichment"],
-      "related_tools": ["hubspot", "salesforce", "6sense"],
+      "related_terms": [
+        "intent-data",
+        "firmographic-data",
+        "data-enrichment"
+      ],
+      "related_tools": [
+        "hubspot",
+        "salesforce",
+        "6sense"
+      ],
       "category_slug": "crm"
     },
     {
@@ -73,8 +119,14 @@
       "full_definition": "Data hygiene encompasses deduplication (merging duplicate records), standardization (normalizing formats for phone numbers, addresses, titles), validation (verifying emails and phone numbers are still active), decay management (identifying and updating stale records), and enrichment (filling in missing fields). It's not a one-time project. B2B data decays at roughly 30% per year as people change jobs, companies merge, and contact details change.",
       "why_it_matters": "Dirty data cascades through every downstream process. Bad emails increase bounce rates (hurting deliverability). Duplicate records create confusing customer experiences. Stale data wastes sales time on prospects who've already left the company. The cost of bad data compounds over time.",
       "example": "A quarterly data hygiene audit reveals 15% duplicate accounts, 22% of email addresses bouncing, and 8% of contacts listing a company they no longer work for. A cleanup project using DemandTools and a verification service fixes these issues.",
-      "related_terms": ["data-enrichment", "data-validation"],
-      "related_tools": ["demandtools", "verum"],
+      "related_terms": [
+        "data-enrichment",
+        "data-validation"
+      ],
+      "related_tools": [
+        "demandtools",
+        "verum"
+      ],
       "category_slug": "cleaning"
     },
     {
@@ -84,8 +136,14 @@
       "full_definition": "Data validation checks whether data meets quality standards before it enters or stays in your system. Email validation confirms addresses are deliverable (syntax check, domain check, mailbox verification). Phone validation verifies numbers are active and reachable. Address validation standardizes and verifies physical addresses against postal databases. Field-level validation ensures data conforms to expected formats (e.g., phone numbers have the right number of digits).",
       "why_it_matters": "Sending emails to invalid addresses damages your sender reputation. Calling dead phone numbers wastes rep time. Bad addresses cause returned mail and failed deliveries. Validation at the point of entry prevents garbage data from getting into your system in the first place.",
       "example": "You integrate an email validation API into your web forms. When a visitor types 'john@gmial.com', the system catches the typo in real-time and suggests 'john@gmail.com' before the lead enters your CRM.",
-      "related_terms": ["data-hygiene", "data-enrichment"],
-      "related_tools": ["demandtools", "verum"],
+      "related_terms": [
+        "data-hygiene",
+        "data-enrichment"
+      ],
+      "related_tools": [
+        "demandtools",
+        "verum"
+      ],
       "category_slug": "validation"
     },
     {
@@ -95,8 +153,15 @@
       "full_definition": "RevOps breaks down the traditional silos between sales ops, marketing ops, and customer success ops. A RevOps team owns the end-to-end revenue process: lead management, pipeline operations, forecasting, tool administration, data governance, and reporting. The function emerged because companies realized that siloed ops teams create disconnected tech stacks, inconsistent data, and conflicting processes.",
       "why_it_matters": "RevOps is the fastest-growing ops function in B2B. Companies with dedicated RevOps teams report better pipeline visibility, more accurate forecasting, and higher conversion rates. The role has moved from a nice-to-have to a core function at most B2B companies with 50+ employees.",
       "example": "A RevOps team at a 200-person SaaS company manages the Salesforce CRM, HubSpot Marketing Hub, ZoomInfo enrichment pipeline, Gong conversation intelligence, and Salesloft cadences. They ensure data flows cleanly between all systems and report on full-funnel metrics.",
-      "related_terms": ["lead-scoring", "data-hygiene", "abm"],
-      "related_tools": ["salesforce", "hubspot"],
+      "related_terms": [
+        "lead-scoring",
+        "data-hygiene",
+        "abm"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot"
+      ],
       "category_slug": "crm"
     },
     {
@@ -106,9 +171,117 @@
       "full_definition": "Sales engagement platforms orchestrate outbound sales activity across email, phone, social, and direct mail channels. They provide cadence management (structured sequences of touches), email automation with personalization, power dialers, analytics, and CRM sync. The category sits between your CRM (system of record) and your communication tools (email, phone), automating the execution layer of outbound sales.",
       "why_it_matters": "Manual outbound doesn't scale. A sales rep can manage maybe 20-30 prospects by hand. A sales engagement platform lets them run structured cadences to 200+ prospects simultaneously while tracking every interaction. The data from these platforms also feeds coaching and process optimization.",
       "example": "An SDR creates a 14-day cadence in Salesloft with 5 emails, 3 phone calls, and 2 LinkedIn touchpoints. They enroll 50 new prospects daily. The platform automates email sends, queues calls, and tracks open/reply rates across the sequence.",
-      "related_terms": ["revops", "lead-scoring"],
-      "related_tools": ["salesloft", "apollo", "instantly"],
+      "related_terms": [
+        "revops",
+        "lead-scoring"
+      ],
+      "related_tools": [
+        "salesloft",
+        "apollo",
+        "instantly"
+      ],
       "category_slug": "list-building"
+    },
+    {
+      "slug": "customer-data-platform",
+      "term": "Customer Data Platform (CDP)",
+      "short_definition": "A platform that unifies customer data from multiple sources into a single, persistent profile.",
+      "full_definition": "A customer data platform collects first-party data from your website, CRM, email tools, support tickets, and other touchpoints, then stitches it together into one record per person. Unlike a data warehouse, a CDP is built for activation. It's designed so marketing and sales teams can segment audiences and trigger campaigns without writing SQL or waiting on an analyst.",
+      "why_it_matters": "Without a CDP, customer data lives in silos. Marketing sees email engagement, sales sees CRM activity, and support sees tickets, but nobody has the full picture. That fragmentation leads to duplicate outreach, conflicting messages, and missed upsell signals. A CDP gives every team the same unified view so they can act on it.",
+      "example": "A B2B SaaS company connects HubSpot, Intercom, Stripe, and their product database to Hightouch. When a free-tier user hits a usage threshold and also opens a pricing email, the CDP creates a unified signal that triggers a sales alert and moves the account into a targeted ad audience.",
+      "related_terms": [
+        "data-enrichment",
+        "data-validation"
+      ],
+      "related_tools": [
+        "hightouch",
+        "census-data",
+        "salesforce",
+        "hubspot"
+      ],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "reverse-etl",
+      "term": "Reverse ETL",
+      "short_definition": "The process of syncing data from a data warehouse back into operational business tools like CRMs and marketing platforms.",
+      "full_definition": "Reverse ETL flips the traditional data pipeline. Instead of pulling data from business tools into a warehouse for analysis, it pushes modeled data back out to the tools where teams actually work. Think of it as the last mile of the modern data stack. Your analytics team builds models in dbt or Looker, and reverse ETL makes those models actionable in Salesforce, HubSpot, Marketo, or wherever your go-to-market team operates.",
+      "why_it_matters": "Most companies have better data in their warehouse than in their CRM. Lead scores, health scores, product usage metrics, and segmentation models sit in BigQuery or Snowflake where sales reps can't see them. Reverse ETL closes that gap. It means the data team's work actually reaches the people making decisions, without building custom integrations for every tool.",
+      "example": "Your data team builds a product-qualified lead score in Snowflake using signup data, feature usage, and billing info. Census syncs that score to a custom field in Salesforce every hour. Reps can now sort their pipeline by PQL score and prioritize accounts showing real buying signals instead of guessing.",
+      "related_terms": [
+        "data-enrichment",
+        "data-hygiene"
+      ],
+      "related_tools": [
+        "hightouch",
+        "census-data",
+        "fivetran",
+        "airbyte"
+      ],
+      "category_slug": "orchestration"
+    },
+    {
+      "slug": "sales-intelligence",
+      "term": "Sales Intelligence",
+      "short_definition": "Technology and data that helps sales teams identify, target, and engage the right buyers at the right time.",
+      "full_definition": "Sales intelligence platforms combine contact databases, firmographic data, technographic signals, and buying intent into a single workflow. They're designed to answer three questions: who should I sell to, what do I know about them, and when is the right time to reach out? The best platforms layer multiple data types so reps aren't just cold-calling from a list. They're reaching out with context.",
+      "why_it_matters": "Reps spend roughly 40% of their time researching prospects and finding contact info. That's time they aren't selling. Sales intelligence tools compress hours of manual research into seconds. More importantly, they surface signals that reps would never find on their own, like technology changes, hiring surges, or funding rounds that indicate buying windows.",
+      "example": "An AE targeting mid-market fintech companies uses ZoomInfo to build a list of CFOs at companies with 200-500 employees that recently raised Series B funding. Apollo flags three of those accounts as showing intent around 'payment processing solutions.' The AE writes personalized outreach referencing the funding round and the specific pain point.",
+      "related_terms": [
+        "intent-data",
+        "data-enrichment",
+        "lead-scoring"
+      ],
+      "related_tools": [
+        "zoominfo",
+        "apollo",
+        "cognism",
+        "linkedin-sales-navigator",
+        "clearbit"
+      ],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "buyer-intent",
+      "term": "Buyer Intent",
+      "short_definition": "Signals that indicate a prospect is actively researching or considering a purchase in your category.",
+      "full_definition": "Buyer intent captures the digital footprint of someone moving through a buying process. That includes searching for relevant keywords, visiting review sites like G2 or TrustRadius, reading competitor content, attending webinars, or downloading whitepapers. Intent platforms aggregate these signals across thousands of publisher sites and score accounts based on research intensity. First-party intent tracks behavior on your own site. Third-party intent tracks behavior across the broader web.",
+      "why_it_matters": "Timing is everything in B2B sales. Reaching an account six months before they're ready to buy wastes effort. Reaching them two weeks after they've signed with a competitor wastes even more. Buyer intent data tells you which accounts are in-market right now, so you can prioritize outreach to companies that are already thinking about solutions like yours.",
+      "example": "Bombora detects that a target account has had multiple employees researching 'CRM migration,' 'Salesforce alternatives,' and 'HubSpot enterprise pricing' over the past three weeks. The intent score spikes from 40 to 85. Your SDR team gets an alert and moves that account to the top of their outreach queue with messaging focused on CRM switching costs.",
+      "related_terms": [
+        "intent-data",
+        "abm",
+        "lead-scoring"
+      ],
+      "related_tools": [
+        "6sense",
+        "demandbase",
+        "bombora",
+        "zoominfo"
+      ],
+      "category_slug": "intent"
+    },
+    {
+      "slug": "data-orchestration",
+      "term": "Data Orchestration",
+      "short_definition": "The automated coordination of data flows between multiple systems, tools, and processes.",
+      "full_definition": "Data orchestration is the connective tissue of a modern go-to-market stack. It handles the logic of when data moves, where it goes, and what happens along the way. That might mean enriching a new lead in HubSpot, routing it to the right sales rep, syncing the record to Outreach, and updating a reporting dashboard, all triggered automatically by a single form submission. It goes beyond point-to-point integrations by managing multi-step workflows with branching logic, error handling, and conditional transforms.",
+      "why_it_matters": "Most teams run 15-30 SaaS tools. Without orchestration, data gets stuck in silos or requires manual copy-paste between systems. That creates delays, errors, and inconsistencies. When your orchestration breaks, your whole revenue engine slows down. Good orchestration means every team works with the same data, at the same time, without anyone manually moving spreadsheets around.",
+      "example": "A new inbound lead fills out a demo form. Zapier triggers a workflow: the lead is enriched via Clearbit, scored by a custom model, routed to the right SDR in Salesforce based on territory rules, added to a personalized Outreach sequence, and flagged in Slack for the sales manager. All of this happens in under 60 seconds with no manual steps.",
+      "related_terms": [
+        "data-enrichment",
+        "data-hygiene",
+        "revops"
+      ],
+      "related_tools": [
+        "workato-ipaas",
+        "zapier",
+        "make",
+        "n8n",
+        "boomi",
+        "mulesoft"
+      ],
+      "category_slug": "orchestration"
     }
   ]
 }

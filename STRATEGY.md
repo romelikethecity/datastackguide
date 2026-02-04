@@ -2722,6 +2722,11 @@ Track what's working:
 - [x] 2 new pricing pages: Pipedrive Pricing, Dynamics 365 Pricing
 - [x] 1 new alternatives page: Apollo Alternatives
 - [x] Site now at 82 pages (up from 72)
+- [x] 13 new tool pages: Demandbase, Clearbit, Outreach, monday Sales CRM, Census, n8n, Orum, Boomi, SugarCRM, Workato, Make, Hightouch, LeadIQ (35 tools total with editorial content)
+- [x] 2 new comparison pages: Pipedrive vs Zoho CRM, Cognism vs ZoomInfo (9 comparisons total)
+- [x] 5 new glossary terms: Customer Data Platform, Reverse ETL, Sales Intelligence, Buyer Intent, Data Orchestration (15 terms total)
+- [x] 1 new guide: How to Evaluate Sales Engagement Platforms (3 guides total)
+- [x] Site now at 103 pages (up from 82)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker
