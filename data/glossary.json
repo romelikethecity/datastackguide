@@ -785,6 +785,106 @@
         "dynamics-365"
       ],
       "category_slug": "crm"
+    },
+    {
+      "slug": "waterfall-enrichment",
+      "term": "Waterfall Enrichment",
+      "short_definition": "A data enrichment strategy that queries multiple data providers in sequence, using the best result from each.",
+      "full_definition": "Waterfall enrichment (sometimes called data waterfalling or cascade enrichment) queries multiple B2B data providers in a prioritized sequence for each record. Instead of relying on a single provider, the system checks Provider A first. If Provider A doesn't return a result (or returns low-confidence data), it falls through to Provider B, then Provider C, and so on. The first high-quality match is used, combining coverage from multiple sources without paying for redundant lookups.",
+      "why_it_matters": "No single B2B data provider covers every contact accurately. ZoomInfo might have strong coverage for enterprise tech companies but weaker data for SMBs. Apollo might fill the SMB gap. Waterfalling across both gives you better overall coverage than either alone. Teams using waterfall enrichment typically see 20-40% improvement in match rates compared to single-provider approaches.",
+      "example": "You have 5,000 leads that need email enrichment. Your waterfall: query ZoomInfo first (matches 3,200). Send the remaining 1,800 to Apollo (matches 1,100). Send the remaining 700 to Clearbit (matches 400). Final result: 4,700 enriched records (94%) vs. 3,200 (64%) from ZoomInfo alone. Clay automates this entire process in a single workflow.",
+      "related_terms": [
+        "data-enrichment",
+        "data-orchestration",
+        "data-validation"
+      ],
+      "related_tools": [
+        "clay",
+        "zoominfo",
+        "apollo",
+        "clearbit"
+      ],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "sales-ops-vs-revops",
+      "term": "Sales Ops vs RevOps",
+      "short_definition": "Sales ops focuses on sales team efficiency. RevOps aligns sales, marketing, and customer success operations under one umbrella.",
+      "full_definition": "Sales Operations (Sales Ops) is the function that supports the sales team with process optimization, territory planning, compensation design, CRM administration, and analytics. Revenue Operations (RevOps) is the evolution of Sales Ops that extends the same operational discipline across the entire revenue engine: sales, marketing, and customer success. RevOps breaks down silos between these teams by unifying data, processes, and technology under a single operational leader.",
+      "why_it_matters": "Companies with siloed sales, marketing, and customer success operations end up with inconsistent data, misaligned handoffs, and blind spots in the customer journey. RevOps addresses this by creating a single source of truth across all revenue-generating functions. Forrester research shows companies with aligned revenue operations grow 12-15% faster than those with siloed ops functions.",
+      "example": "In a Sales Ops model, the sales ops team manages Salesforce, while marketing ops manages HubSpot, and CS ops manages Gainsight. Each team has its own data, definitions, and reporting. In a RevOps model, one team manages all three systems with unified definitions (what counts as an MQL, SQL, and customer), shared dashboards, and end-to-end pipeline visibility.",
+      "related_terms": [
+        "revops",
+        "sales-pipeline",
+        "sales-forecasting",
+        "crm-hygiene"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "salesloft",
+        "clay"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "composable-cdp",
+      "term": "Composable CDP",
+      "short_definition": "A Customer Data Platform architecture that runs on your existing data warehouse instead of copying data into a separate system.",
+      "full_definition": "A composable CDP (Customer Data Platform) lets you build CDP functionality on top of your existing data warehouse (Snowflake, BigQuery, Databricks) instead of ingesting data into a standalone CDP platform. Tools like Census and Hightouch act as the activation layer, syncing audience segments and customer profiles from your warehouse directly to marketing and sales tools. The 'composable' part means you pick best-of-breed components (warehouse for storage, reverse ETL for activation, identity resolution from another vendor) instead of buying a monolithic CDP.",
+      "why_it_matters": "Traditional CDPs (Segment, mParticle, Treasure Data) require you to copy all your customer data into their platform. This creates data duplication, sync issues, and vendor lock-in. Composable CDPs flip this by treating your warehouse as the single source of truth. Your data stays in one place. You avoid paying a CDP vendor to store data you already have. And your data team maintains control over data models and transformations.",
+      "example": "Instead of sending all your customer events to Segment ($120K+/year), you land them in Snowflake, build audience segments with dbt, and use Hightouch to sync those segments to HubSpot, Facebook Ads, and Intercom. The warehouse already has the data. Hightouch activates it. Total cost: Snowflake + Hightouch, often 50-70% less than a traditional CDP.",
+      "related_terms": [
+        "customer-data-platform",
+        "reverse-etl",
+        "data-warehouse"
+      ],
+      "related_tools": [
+        "census-data",
+        "hightouch"
+      ],
+      "category_slug": "reverse-etl"
+    },
+    {
+      "slug": "account-scoring",
+      "term": "Account Scoring",
+      "short_definition": "A methodology for ranking target accounts based on their fit and likelihood to buy, used in ABM and enterprise sales.",
+      "full_definition": "Account scoring applies numerical values to companies (not individual leads) based on two dimensions: fit score (how closely the company matches your ideal customer profile) and engagement score (how actively the account is interacting with your brand or researching your category). Fit scoring uses firmographic data: industry, revenue, employee count, technology stack, and growth signals. Engagement scoring uses behavioral data: website visits, content downloads, ad interactions, intent signals, and sales touchpoints. The combined score helps sales and marketing teams prioritize which accounts to focus on.",
+      "why_it_matters": "Enterprise sales teams can't work every account equally. Account scoring surfaces the accounts most likely to convert, reducing wasted effort on poor-fit companies. ABM programs use account scores to determine advertising spend allocation, sales outreach priority, and executive engagement. Companies with mature account scoring models report 30-50% improvement in sales productivity by focusing reps on high-scoring accounts.",
+      "example": "Your ICP is SaaS companies with 200-2,000 employees and $20M+ ARR. A company matching this profile gets a fit score of 85/100. 6sense detects they've been researching 'CRM migration' with 15 employees showing buying intent. Their engagement score jumps to 90/100. Combined score: 175/200. This account goes to the top of your sales team's priority list.",
+      "related_terms": [
+        "lead-scoring",
+        "icp",
+        "abm",
+        "intent-data",
+        "buying-committee"
+      ],
+      "related_tools": [
+        "6sense",
+        "demandbase",
+        "salesforce"
+      ],
+      "category_slug": "abm"
+    },
+    {
+      "slug": "data-lakehouse",
+      "term": "Data Lakehouse",
+      "short_definition": "A data architecture that combines the low-cost storage of data lakes with the structured querying and performance of data warehouses.",
+      "full_definition": "A data lakehouse merges two previously separate architectures: data lakes (cheap storage for raw, unstructured data) and data warehouses (structured, optimized storage for analytics queries). The lakehouse stores data in open formats (Parquet, Delta Lake, Iceberg) on object storage (S3, GCS, ADLS) while providing the ACID transactions, schema enforcement, and query performance traditionally associated with data warehouses. Databricks popularized the term and architecture, but Snowflake, BigQuery, and others have adopted similar concepts.",
+      "why_it_matters": "Before lakehouses, companies maintained separate data lakes (for raw data and ML workloads) and data warehouses (for BI and analytics). This created data duplication, sync complexity, and higher costs. The lakehouse eliminates the need for two systems by providing warehouse-quality performance on lake-stored data. For B2B data operations, this means your enrichment data, intent signals, and CRM exports can live in one system that serves both analytics and machine learning workloads.",
+      "example": "A B2B company stores raw job posting data, website visitor logs, and CRM exports in a Delta Lake on S3. The data team runs SQL queries against this data using Databricks SQL for pipeline analytics and dashboards. The data science team trains intent prediction models on the same data using Spark. One storage layer serves both use cases without moving data between systems.",
+      "related_terms": [
+        "data-warehouse",
+        "data-orchestration",
+        "reverse-etl"
+      ],
+      "related_tools": [
+        "fivetran",
+        "airbyte",
+        "hightouch",
+        "census-data"
+      ],
+      "category_slug": "data-integration"
     }
   ]
 }

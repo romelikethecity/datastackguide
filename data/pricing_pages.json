@@ -3979,6 +3979,444 @@
           "a": "Orum offers paid pilots for teams that want to test before a full annual commitment. Free trials aren't standard, but negotiating a short pilot period (1-2 months) is possible for larger deals."
         }
       ]
+    },
+    {
+      "slug": "celigo-pricing",
+      "tool_slug": "celigo",
+      "title": "Celigo Pricing (2026): What iPaaS Actually Costs for Mid-Market",
+      "meta_description": "Celigo pricing breakdown: real costs by tier, hidden fees, and what mid-market companies actually pay for iPaaS. Updated for 2026.",
+      "hook": "Celigo markets itself as 'iPaaS for the rest of us.' Pricing starts reasonable but scales with the number of integrations, flows, and the volume of data you're moving.",
+      "tiers": [
+        {
+          "name": "Standard",
+          "price": "Contact for pricing",
+          "billing": "Annual",
+          "highlights": [
+            "Core integration platform",
+            "Pre-built templates for NetSuite, Shopify, Salesforce",
+            "Error management dashboard",
+            "Basic support"
+          ]
+        },
+        {
+          "name": "Premium",
+          "price": "Contact for pricing",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Standard",
+            "More flows and higher volume",
+            "Advanced error handling",
+            "Priority support",
+            "Custom connectors"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Contact for pricing",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Premium",
+            "Unlimited flows",
+            "Dedicated success manager",
+            "SOC2 compliance features",
+            "Custom SLAs"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Flow-based pricing",
+          "range": "Varies by tier",
+          "note": "Each integration scenario counts as a 'flow.' Complex integrations with branching logic may count as multiple flows."
+        },
+        {
+          "item": "Volume overages",
+          "range": "Per-record charges",
+          "note": "Each tier includes a record volume cap. Exceeding it triggers overage charges that aren't always transparent upfront."
+        },
+        {
+          "item": "Implementation services",
+          "range": "$10K-$50K",
+          "note": "While simpler than Workato or MuleSoft, complex NetSuite or ERP integrations often need partner help."
+        },
+        {
+          "item": "Custom connectors",
+          "range": "Premium tier required",
+          "note": "Building connectors to niche applications requires Premium tier or above."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market e-commerce company with NetSuite, Shopify, and Salesforce",
+        "line_items": [
+          {
+            "item": "Premium tier license",
+            "annual": "$36,000"
+          },
+          {
+            "item": "12 active integration flows",
+            "annual": "Included"
+          },
+          {
+            "item": "Implementation partner (initial setup)",
+            "annual": "$20,000"
+          },
+          {
+            "item": "Volume overage (peak season)",
+            "annual": "$4,000"
+          }
+        ],
+        "total": "$60,000 first year, ~$40,000 ongoing",
+        "per_user_real": "N/A (platform-level pricing)"
+      },
+      "bottom_line": "Celigo sits in the sweet spot between DIY tools like Zapier and enterprise platforms like MuleSoft. For NetSuite-centric businesses, it's one of the best options available. Expect $24K-$60K/year depending on complexity. The platform does what it promises, but watch out for flow limits and volume overages as your integration needs grow.",
+      "faq": [
+        {
+          "q": "Does Celigo publish pricing?",
+          "a": "No. Celigo requires you to contact sales for pricing. Based on market data, Standard tier starts around $2K/month and Premium around $3K/month. Enterprise pricing is fully custom."
+        },
+        {
+          "q": "How does Celigo compare to Workato pricing?",
+          "a": "Celigo is typically 30-50% cheaper than Workato for comparable integration complexity. Workato's recipe-based pricing can scale faster for companies with many automation workflows. Celigo is the better value for straightforward application-to-application integrations."
+        },
+        {
+          "q": "Is Celigo worth it for NetSuite integrations?",
+          "a": "Yes. Celigo was originally built for NetSuite and their pre-built templates for NetSuite-to-Shopify, NetSuite-to-Salesforce, and similar patterns are the most mature in the market. If NetSuite is your ERP, Celigo should be on your shortlist."
+        }
+      ]
+    },
+    {
+      "slug": "tray-pricing",
+      "tool_slug": "tray",
+      "title": "Tray.io Pricing (2026): What Enterprise Automation Actually Costs",
+      "meta_description": "Tray.io pricing breakdown: real costs by tier and what companies actually pay for enterprise automation. Updated for 2026.",
+      "hook": "Tray.io positions itself between Zapier and MuleSoft. The pricing reflects that: more than workflow tools, less than full iPaaS platforms. But the 'contact us' pricing model makes comparison shopping difficult.",
+      "tiers": [
+        {
+          "name": "Pro",
+          "price": "Contact for pricing",
+          "billing": "Annual",
+          "highlights": [
+            "Visual workflow builder",
+            "Core connectors library",
+            "Merlin AI assistant",
+            "Standard support"
+          ]
+        },
+        {
+          "name": "Team",
+          "price": "Contact for pricing",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Pro",
+            "Team collaboration features",
+            "Advanced connectors",
+            "Shared workspaces",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Contact for pricing",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Team",
+            "Custom SLAs",
+            "Dedicated CSM",
+            "SSO and advanced security",
+            "Unlimited workspaces"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Task-based pricing",
+          "range": "Varies",
+          "note": "Tray charges by 'tasks' (workflow steps executed). High-volume automations can burn through task allotments fast."
+        },
+        {
+          "item": "Connector costs",
+          "range": "Premium connectors extra",
+          "note": "Some enterprise connectors (SAP, Workday) may require premium tier access or add-on fees."
+        },
+        {
+          "item": "Onboarding and training",
+          "range": "$5K-$25K",
+          "note": "Tray's visual builder is more complex than Zapier. Most teams need onboarding to build production-quality workflows."
+        },
+        {
+          "item": "Task overages",
+          "range": "Per-task overage fees",
+          "note": "Exceeding your task allocation triggers overage charges. Monitor usage carefully during high-volume periods."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "B2B SaaS company automating marketing ops and RevOps workflows",
+        "line_items": [
+          {
+            "item": "Team tier license (5 builders)",
+            "annual": "$48,000"
+          },
+          {
+            "item": "Task allocation (500K/month)",
+            "annual": "Included"
+          },
+          {
+            "item": "Task overages (3 months)",
+            "annual": "$6,000"
+          },
+          {
+            "item": "Onboarding package",
+            "annual": "$10,000"
+          }
+        ],
+        "total": "$64,000 first year, ~$54,000 ongoing",
+        "per_user_real": "N/A (platform-level pricing)"
+      },
+      "bottom_line": "Tray.io fills the gap between Zapier's simplicity and MuleSoft's complexity. For RevOps and marketing ops teams that need more power than Zapier without the enterprise overhead, it's a solid fit. Budget $36K-$72K/year for most mid-market deployments. The Merlin AI feature is promising but still maturing.",
+      "faq": [
+        {
+          "q": "How much does Tray.io cost?",
+          "a": "Tray doesn't publish pricing. Based on market data, expect $3K-$6K/month for Team tier. Enterprise contracts are custom and can exceed $100K/year for large deployments."
+        },
+        {
+          "q": "How does Tray.io compare to Workato?",
+          "a": "Tray is typically 20-40% cheaper than Workato. Workato has broader enterprise adoption and more pre-built recipes. Tray's visual builder is more flexible for custom workflows. Both are significantly cheaper than MuleSoft."
+        },
+        {
+          "q": "Is Tray.io good for non-technical users?",
+          "a": "Tray sits between Zapier and developer-focused tools. The visual builder doesn't require coding, but building production workflows takes more technical thinking than Zapier's trigger-action model. Most companies designate 2-3 'builders' who create workflows for the broader team."
+        }
+      ]
+    },
+    {
+      "slug": "airbyte-pricing",
+      "tool_slug": "airbyte",
+      "title": "Airbyte Pricing (2026): Open Source vs Cloud Costs",
+      "meta_description": "Airbyte pricing breakdown: self-hosted (free) vs Cloud costs, and what data teams actually pay. Updated for 2026.",
+      "hook": "Airbyte's open-source version is free. Airbyte Cloud charges by usage. The real question isn't 'how much does Airbyte cost' but 'how much does running Airbyte cost you in engineering time?'",
+      "tiers": [
+        {
+          "name": "Open Source (Community)",
+          "price": "Free",
+          "billing": "Self-hosted",
+          "highlights": [
+            "Full connector catalog (350+)",
+            "Unlimited data volume",
+            "Community support",
+            "Docker-based deployment",
+            "Complete control over infrastructure"
+          ]
+        },
+        {
+          "name": "Cloud (Team)",
+          "price": "Usage-based",
+          "billing": "Monthly",
+          "popular": true,
+          "highlights": [
+            "Managed infrastructure",
+            "All connectors maintained by Airbyte",
+            "Automatic updates and monitoring",
+            "Basic RBAC",
+            "Standard support"
+          ]
+        },
+        {
+          "name": "Cloud (Enterprise)",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Team",
+            "SSO and advanced RBAC",
+            "Dedicated support",
+            "Custom SLAs",
+            "VPC deployment options"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Infrastructure costs (self-hosted)",
+          "range": "$200-$2,000/mo",
+          "note": "Self-hosting on AWS or GCP requires compute, storage, and networking. Costs depend on data volume and sync frequency."
+        },
+        {
+          "item": "Engineering time (self-hosted)",
+          "range": "5-20 hours/month",
+          "note": "Upgrades, connector troubleshooting, and infrastructure monitoring. This is the hidden cost most teams underestimate."
+        },
+        {
+          "item": "Cloud credits",
+          "range": "Usage-based",
+          "note": "Airbyte Cloud charges per credit. Credits correspond to data synced. Volume spikes from initial loads or large tables can create unexpected bills."
+        },
+        {
+          "item": "Connector development",
+          "range": "Engineering time",
+          "note": "If you need a connector that doesn't exist, you'll build it using Airbyte's CDK. Community connectors vary in quality and may need maintenance."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Data team syncing 15 sources to Snowflake (self-hosted)",
+        "line_items": [
+          {
+            "item": "Airbyte Open Source license",
+            "annual": "$0"
+          },
+          {
+            "item": "AWS infrastructure (EC2 + RDS)",
+            "annual": "$9,600"
+          },
+          {
+            "item": "Engineering time (10 hrs/month at $80/hr)",
+            "annual": "$9,600"
+          },
+          {
+            "item": "Connector fixes and upgrades",
+            "annual": "$2,400"
+          }
+        ],
+        "total": "$21,600/year (self-hosted)",
+        "per_user_real": "N/A (team-level infrastructure cost)"
+      },
+      "bottom_line": "Airbyte's open-source version is genuinely free and capable. The real cost is engineering time to run it. For data teams with DevOps support, self-hosting saves 50-80% vs Fivetran. For teams without engineering bandwidth, Airbyte Cloud is a managed alternative with competitive pricing. Budget $0-$22K/year self-hosted or $12K-$60K/year for Cloud depending on data volumes.",
+      "faq": [
+        {
+          "q": "Is Airbyte really free?",
+          "a": "The open-source core is free. You'll pay for infrastructure to host it (typically $200-$1,500/month on AWS or GCP) plus engineering time for maintenance. Airbyte Cloud is a paid managed service with usage-based pricing."
+        },
+        {
+          "q": "How does Airbyte Cloud pricing compare to Fivetran?",
+          "a": "Airbyte Cloud is typically 30-50% cheaper than Fivetran for comparable data volumes. The gap widens at higher volumes. Self-hosted Airbyte can be 70-90% cheaper, but you're trading money for engineering time."
+        },
+        {
+          "q": "Should I self-host or use Airbyte Cloud?",
+          "a": "Self-host if you have a data engineer who can dedicate 5-10 hours/month to infrastructure management and you want to minimize costs. Use Airbyte Cloud if your data team doesn't have DevOps support or if you prefer predictable managed service costs."
+        }
+      ]
+    },
+    {
+      "slug": "make-pricing",
+      "tool_slug": "make",
+      "title": "Make (Integromat) Pricing (2026): What Automation Actually Costs",
+      "meta_description": "Make pricing breakdown: all tiers compared, operation limits, and what teams actually pay. Formerly Integromat. Updated for 2026.",
+      "hook": "Make (formerly Integromat) is the power user's Zapier alternative. More flexible, more complex, and cheaper at scale. But operation-based pricing can surprise you if automations run hot.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "N/A",
+          "highlights": [
+            "1,000 operations/month",
+            "2 active scenarios",
+            "Core apps only",
+            "5-minute minimum interval"
+          ]
+        },
+        {
+          "name": "Core",
+          "price": "$10.59/mo",
+          "billing": "Monthly (annual: $9/mo)",
+          "highlights": [
+            "10,000 operations/month",
+            "Unlimited active scenarios",
+            "All apps and integrations",
+            "1-minute minimum interval"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$18.82/mo",
+          "billing": "Monthly (annual: $16/mo)",
+          "popular": true,
+          "highlights": [
+            "10,000 operations/month",
+            "Custom variables",
+            "Full-text execution log search",
+            "Priority execution"
+          ]
+        },
+        {
+          "name": "Teams",
+          "price": "$34.12/mo",
+          "billing": "Monthly (annual: $29/mo)",
+          "highlights": [
+            "10,000 operations/month",
+            "Team collaboration",
+            "Shared scenarios",
+            "High-priority execution"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Custom operations volume",
+            "SSO and SAML",
+            "Dedicated support",
+            "99.9% uptime SLA",
+            "Custom data residency"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Operation overages",
+          "range": "$0.001-$0.003 per operation",
+          "note": "Each step in a scenario counts as one operation. A 10-step workflow running 100 times daily uses 30,000 operations/month. That burns through the base 10,000 allocation in 10 days."
+        },
+        {
+          "item": "Additional operations packs",
+          "range": "$9-$29/month per 10K",
+          "note": "You can buy additional operation bundles. Most active teams need 2-5x the base allocation."
+        },
+        {
+          "item": "Data transfer limits",
+          "range": "5-70GB/month by tier",
+          "note": "File-heavy automations can hit data transfer caps, requiring upgrades."
+        },
+        {
+          "item": "Premium apps",
+          "range": "Included in all paid tiers",
+          "note": "Unlike Zapier, Make includes all apps in all paid plans. No separate app tier pricing."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Marketing ops team running 25 active automations",
+        "line_items": [
+          {
+            "item": "Pro tier (annual billing)",
+            "annual": "$192"
+          },
+          {
+            "item": "Additional 40K operations/month",
+            "annual": "$1,152"
+          },
+          {
+            "item": "Total operations: 50K/month",
+            "annual": "Included"
+          }
+        ],
+        "total": "$1,344/year",
+        "per_user_real": "~$112/month for the team"
+      },
+      "bottom_line": "Make is 50-80% cheaper than Zapier for comparable automation workloads. The operation-based pricing model rewards efficient workflows. The trade-off: Make's visual builder has a steeper learning curve, and the interface is less polished than Zapier's. For teams that need more than Zapier's basic trigger-action model, Make is the best value in workflow automation.",
+      "faq": [
+        {
+          "q": "Is Make cheaper than Zapier?",
+          "a": "Yes, significantly. Make's Pro plan ($16/month annual) includes features that require Zapier's Professional plan ($49.99/month). Make includes all apps in paid plans; Zapier charges extra for premium apps. For equivalent automation complexity, Make typically costs 50-80% less."
+        },
+        {
+          "q": "What counts as an 'operation' in Make?",
+          "a": "Each module (step) in a scenario that processes data counts as one operation. A scenario with 5 modules that runs once uses 5 operations. The same scenario running 100 times uses 500 operations. Filters and routers that don't process data don't count."
+        },
+        {
+          "q": "Can Make replace Zapier for my team?",
+          "a": "For most teams, yes. Make supports 1,000+ apps and has more flexibility for complex workflows with branching logic, error handling, and data transformation. The main reason to stay on Zapier: you want maximum simplicity and your automations are straightforward trigger-action patterns."
+        }
+      ]
     }
   ]
 }

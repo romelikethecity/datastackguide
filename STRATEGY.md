@@ -2775,6 +2775,13 @@ Track what's working:
 - [x] 4 new best-of roundups: Best Sales Coaching Tools, Best CPQ Tools, Best Partner Ecosystem Tools, Best Email Deliverability Tools (30 roundups total)
 - [x] 5 new glossary terms: Net Revenue Retention, Dark Funnel, Signal-Based Selling, Conversation Intelligence, Deal Desk (40 terms total)
 - [x] Site now at 260 pages (up from 239)
+- [x] 3 new comparison pages: Airbyte vs Fivetran, Boomi vs MuleSoft, Terminus vs 6sense (36 comparisons total)
+- [x] 1 new three-way comparison guide: Freshsales vs Zoho CRM vs monday Sales CRM (6 guides total)
+- [x] 4 new pricing pages: Celigo, Tray, Airbyte, Make (38 pricing pages total)
+- [x] 4 new alternatives pages: Amplemarket Alternatives, Terminus Alternatives, Smartlead Alternatives, Boomi Alternatives (35 alternatives total)
+- [x] 4 new best-of roundups: Best CRM for Healthcare, Best Sales Prospecting Tools, Best Workflow Automation Tools, Best Conversation Intelligence Tools (34 roundups total)
+- [x] 5 new glossary terms: Waterfall Enrichment, Sales Ops vs RevOps, Composable CDP, Account Scoring, Data Lakehouse (45 terms total)
+- [x] Site now at 281 pages (up from 260)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker
