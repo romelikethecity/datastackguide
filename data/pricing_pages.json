@@ -4417,6 +4417,584 @@
           "a": "For most teams, yes. Make supports 1,000+ apps and has more flexibility for complex workflows with branching logic, error handling, and data transformation. The main reason to stay on Zapier: you want maximum simplicity and your automations are straightforward trigger-action patterns."
         }
       ]
+    },
+    {
+      "slug": "boomi-pricing",
+      "tool_slug": "boomi",
+      "title": "Boomi Pricing (2026): What Integration Actually Costs",
+      "meta_description": "Boomi pricing breakdown: estimated costs by tier, hidden fees, and what mid-market companies pay for enterprise iPaaS. Updated for 2026.",
+      "hook": "Boomi doesn't publish pricing. That's by design. Enterprise iPaaS pricing is notoriously hard to pin down, and Boomi's sales-driven model makes it even harder to budget before you've talked to a rep. Here's what companies report paying.",
+      "tiers": [
+        {
+          "name": "Base Platform",
+          "price": "~$50K/year",
+          "billing": "Annual",
+          "highlights": [
+            "Core integration capabilities",
+            "Pre-built connectors for common apps",
+            "Basic workflow orchestration",
+            "Standard support"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "~$100K/year",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Advanced data mapping and transformation",
+            "API management basics",
+            "More connector options",
+            "Enhanced monitoring and alerting"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "$150K+/year",
+          "billing": "Annual",
+          "highlights": [
+            "Full AtomSphere platform access",
+            "Master data management",
+            "B2B/EDI integration",
+            "Advanced security and compliance",
+            "Dedicated support"
+          ]
+        }
+      ],
+      "pricing_note": "Boomi doesn't publish pricing publicly. All pricing requires a sales conversation. These ranges are based on user reports and may vary significantly by region and deal size.",
+      "hidden_costs": [
+        {
+          "item": "Implementation partner",
+          "range": "$30K-$100K",
+          "note": "Most companies hire a certified Boomi partner for initial setup. Complex deployments with many systems can push this higher."
+        },
+        {
+          "item": "Connector licenses",
+          "range": "$5K-$15K each",
+          "note": "Some connectors are included, but premium connectors for ERP systems, databases, or niche apps carry separate fees."
+        },
+        {
+          "item": "AtomSphere API Management",
+          "range": "Varies",
+          "note": "API management is a separate product from the integration platform. If you need both, expect to negotiate a bundle."
+        },
+        {
+          "item": "Training and certification",
+          "range": "$2K-$10K",
+          "note": "Boomi University courses aren't free. Certification exams and instructor-led training add up across a team."
+        },
+        {
+          "item": "Connection volume overages",
+          "range": "Varies",
+          "note": "Plans include a set number of connections. Exceeding that limit triggers overage charges or a forced tier upgrade."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market company running 15 integrations across ERP, CRM, and HRIS systems",
+        "line_items": [
+          {
+            "item": "Professional platform license",
+            "annual": "$100,000"
+          },
+          {
+            "item": "3 premium connector licenses",
+            "annual": "$30,000"
+          },
+          {
+            "item": "Implementation partner (Year 1, amortized over 3 years)",
+            "annual": "$20,000"
+          },
+          {
+            "item": "Training for 3 developers",
+            "annual": "$6,000"
+          },
+          {
+            "item": "Connection overage buffer",
+            "annual": "$5,000"
+          }
+        ],
+        "total": "$80K-$120K/year (after Year 1 implementation costs amortized)",
+        "per_user_real": "N/A (platform-level pricing)"
+      },
+      "bottom_line": "Boomi is enterprise pricing for enterprise integration. Budget $80K-$150K/year all-in for a mid-market deployment. If that's out of range, look at Make, n8n, or Workato's lower tiers. They won't match Boomi's depth for complex B2B or EDI scenarios, but they'll handle standard SaaS-to-SaaS integration at a fraction of the cost.",
+      "faq": [
+        {
+          "q": "Does Boomi offer a free trial?",
+          "a": "Boomi offers a 30-day trial of the AtomSphere platform. It's enough to test basic integrations, but you'll need to talk to sales to get it set up. Don't expect to evaluate complex scenarios in that window."
+        },
+        {
+          "q": "How does Boomi pricing compare to MuleSoft?",
+          "a": "They're in the same ballpark. MuleSoft tends to run 10-20% higher for comparable deployments, but both land in the $100K-$200K/year range for mid-market companies. The real difference is architecture preference: Boomi is low-code, MuleSoft is more developer-centric."
+        },
+        {
+          "q": "Can I start small with Boomi and scale up?",
+          "a": "In theory, yes. The Base Platform tier starts around $50K/year. In practice, most companies that choose Boomi have integration needs complex enough to land on Professional or Enterprise from day one. If you're starting small, a tool like Make or n8n gives you a lower entry point."
+        }
+      ]
+    },
+    {
+      "slug": "workato-pricing",
+      "tool_slug": "workato-ipaas",
+      "title": "Workato Pricing (2026): Recipe-Based Costs Explained",
+      "meta_description": "Workato pricing breakdown: recipe-based model, real costs by tier, and what operations teams pay. Updated for 2026.",
+      "hook": "Workato prices by recipes. A recipe is a single automation workflow. That's flexible when you're running 10 recipes. It gets unpredictable when you're running 200. Here's how the math works at different scales.",
+      "tiers": [
+        {
+          "name": "Team",
+          "price": "$5K-$15K/year",
+          "billing": "Annual",
+          "highlights": [
+            "Limited recipe count",
+            "Core connectors (Salesforce, Slack, etc.)",
+            "Basic workflow triggers",
+            "Community support"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "$30K-$60K/year",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "More recipes and connections",
+            "Advanced logic and error handling",
+            "API platform access",
+            "Priority support",
+            "Team collaboration features"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "$75K+/year",
+          "billing": "Annual",
+          "highlights": [
+            "Unlimited recipes",
+            "Advanced security (SSO, RBAC)",
+            "On-prem connectivity",
+            "Custom SLAs",
+            "Dedicated customer success manager"
+          ]
+        }
+      ],
+      "pricing_note": "Workato uses recipe-based pricing. A 'recipe' is an automation workflow connecting two or more apps. Pricing scales with recipe count and complexity. All plans require annual contracts.",
+      "hidden_costs": [
+        {
+          "item": "Recipe overages",
+          "range": "Varies",
+          "note": "Exceeding your recipe limit means renegotiating your contract or paying per-recipe overage fees. Plan your recipe count carefully."
+        },
+        {
+          "item": "Premium connector fees",
+          "range": "$5K-$15K/year",
+          "note": "Some enterprise connectors (SAP, Workday, custom databases) carry additional licensing fees beyond the base plan."
+        },
+        {
+          "item": "Workbot add-on",
+          "range": "$5K-$10K/year",
+          "note": "Workbot (Slack/Teams bot for triggering recipes via chat) is a separate add-on. Useful but not included in base pricing."
+        },
+        {
+          "item": "Implementation consulting",
+          "range": "$15K-$50K",
+          "note": "Workato's professional services or a partner can accelerate setup. Complex multi-system deployments benefit from expert help."
+        },
+        {
+          "item": "On-prem agent",
+          "range": "Included in Enterprise, extra on lower tiers",
+          "note": "Hybrid deployments connecting cloud and on-prem systems may require the on-prem agent, which isn't available on all plans."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Operations team running 50 recipes across Salesforce, NetSuite, and Slack",
+        "line_items": [
+          {
+            "item": "Professional plan (50 recipes)",
+            "annual": "$40,000"
+          },
+          {
+            "item": "NetSuite premium connector",
+            "annual": "$8,000"
+          },
+          {
+            "item": "Workbot for Slack",
+            "annual": "$5,000"
+          },
+          {
+            "item": "Implementation consulting (Year 1, amortized)",
+            "annual": "$10,000"
+          }
+        ],
+        "total": "$35K-$55K/year (ongoing, after Year 1 consulting)",
+        "per_user_real": "N/A (recipe-based, not per-user)"
+      },
+      "bottom_line": "Workato sits between budget tools like Zapier and Make and heavyweight iPaaS platforms like Boomi and MuleSoft. It's good value if you need enterprise-grade integration without six-figure contracts. The recipe model rewards careful planning. Map your workflows before you sign so you're not surprised by overages at renewal.",
+      "faq": [
+        {
+          "q": "How does Workato compare to Zapier?",
+          "a": "Workato handles more complex workflows with better error handling, conditional logic, and enterprise connectors. Zapier is simpler and cheaper for basic trigger-action automations. If your workflows involve data transformation or multi-step logic, Workato is the stronger choice."
+        },
+        {
+          "q": "Does Workato offer a free plan or trial?",
+          "a": "Workato offers a free trial with limited functionality. There's no permanent free tier. You'll need to speak with sales to get a trial configured for your specific use case."
+        },
+        {
+          "q": "What counts as a recipe in Workato?",
+          "a": "A recipe is a single automation workflow. It can have multiple steps, triggers, and actions, but it counts as one recipe regardless of complexity. A recipe that syncs Salesforce contacts to Mailchimp is one recipe, even if it includes data mapping, deduplication, and error handling steps."
+        }
+      ]
+    },
+    {
+      "slug": "n8n-pricing",
+      "tool_slug": "n8n",
+      "title": "n8n Pricing (2026): Open Source vs Cloud Costs",
+      "meta_description": "n8n pricing breakdown: self-hosted (free) vs cloud plans, execution limits, and what teams pay in practice. Updated for 2026.",
+      "hook": "n8n is one of the few workflow automation tools where self-hosting is free. No catch. Unlimited workflows, unlimited executions, no license fees. The cloud version starts at $20/mo if you'd rather not manage infrastructure.",
+      "tiers": [
+        {
+          "name": "Community (Self-Hosted)",
+          "price": "Free",
+          "billing": "N/A",
+          "highlights": [
+            "Unlimited workflows",
+            "Unlimited executions",
+            "400+ integrations",
+            "Full source code access",
+            "Community support only"
+          ]
+        },
+        {
+          "name": "Starter (Cloud)",
+          "price": "$20/mo",
+          "billing": "Monthly",
+          "highlights": [
+            "Cloud hosted by n8n",
+            "2,500 workflow executions/month",
+            "Core integrations",
+            "Basic support",
+            "5 active workflows"
+          ]
+        },
+        {
+          "name": "Pro (Cloud)",
+          "price": "$50/mo",
+          "billing": "Monthly",
+          "popular": true,
+          "highlights": [
+            "10,000 executions/month",
+            "Unlimited active workflows",
+            "Execution history (7 days)",
+            "Debugging tools",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "SSO/SAML",
+            "Audit logging",
+            "Custom execution limits",
+            "Dedicated infrastructure",
+            "SLA and dedicated support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Server costs (self-hosted)",
+          "range": "$20-$100/mo",
+          "note": "You'll need a VPS or container. A basic instance handles light workloads. CPU-intensive workflows or high volume push server costs up."
+        },
+        {
+          "item": "Maintenance time (self-hosted)",
+          "range": "2-5 hours/month",
+          "note": "Updates, monitoring, backups. Someone on your team needs to own this. It's not difficult, but it's not zero effort either."
+        },
+        {
+          "item": "No vendor support (self-hosted)",
+          "range": "N/A",
+          "note": "Community forums and GitHub issues are your support channels. There's no SLA, no guaranteed response time."
+        },
+        {
+          "item": "Execution overages (cloud)",
+          "range": "~$0.01/execution",
+          "note": "Going over your monthly execution limit costs roughly a penny per extra execution. Monitor your usage to avoid surprises."
+        },
+        {
+          "item": "Premium triggers (cloud)",
+          "range": "Varies",
+          "note": "Some trigger types (webhooks with custom auth, polling at high frequency) may consume executions faster than expected."
+        },
+        {
+          "item": "Custom node development",
+          "range": "Developer time",
+          "note": "If you need connectors that don't exist, you'll build them yourself. n8n's SDK makes this possible, but it takes engineering hours."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "DevOps team running 20 workflows with 8,000 monthly executions",
+        "line_items": [
+          {
+            "item": "n8n Pro cloud plan",
+            "annual": "$600"
+          },
+          {
+            "item": "Occasional execution overages (estimated)",
+            "annual": "$120"
+          }
+        ],
+        "total_cloud": "$600-$720/year",
+        "total_self_hosted": "$240-$600/year (server costs only)",
+        "total": "$240-$720/year depending on deployment model",
+        "per_user_real": "N/A (team-level pricing)"
+      },
+      "bottom_line": "n8n is the most cost-effective option for technical teams. Self-hosted is free forever with unlimited workflows. Cloud is competitively priced for teams that don't want to manage infrastructure. The trade-off is clear: pay with money (cloud) or pay with time (self-hosted). For most dev and ops teams, n8n costs 90% less than Zapier for equivalent workloads.",
+      "faq": [
+        {
+          "q": "How does n8n pricing compare to Zapier?",
+          "a": "Dramatically cheaper. Zapier's Team plan costs $399/mo for multi-step workflows. n8n's Pro plan is $50/mo with 10,000 executions. Self-hosted n8n is free. For technical teams comfortable with a slightly steeper learning curve, the savings are massive."
+        },
+        {
+          "q": "What do I need to self-host n8n?",
+          "a": "A Linux server with Docker. A $20/mo VPS from DigitalOcean, Hetzner, or AWS Lightsail works for most teams. You'll want at least 2GB RAM and reasonable disk space. n8n provides Docker images and docker-compose files to simplify setup."
+        },
+        {
+          "q": "Is the free self-hosted version limited in features?",
+          "a": "No. The self-hosted Community edition includes all core features, all integrations, and unlimited workflows and executions. You miss out on cloud-only conveniences like managed hosting, automatic updates, and vendor support. But the feature set is the same."
+        }
+      ]
+    },
+    {
+      "slug": "definitive-healthcare-pricing",
+      "tool_slug": "definitive-healthcare",
+      "title": "Definitive Healthcare Pricing (2026): Healthcare Data Platform Costs",
+      "meta_description": "Definitive Healthcare pricing breakdown: estimated costs by tier, data modules, and what healthcare companies pay. Updated for 2026.",
+      "hook": "Definitive Healthcare is the dominant healthcare commercial intelligence platform. And the pricing reflects that position. With limited direct competitors for comprehensive US healthcare data, Definitive sets the terms. Here's what you can expect to pay.",
+      "tiers": [
+        {
+          "name": "Essentials",
+          "price": "$30K+/year",
+          "billing": "Annual",
+          "highlights": [
+            "Hospital and health system profiles",
+            "Physician data",
+            "Basic search and filtering",
+            "Standard reporting"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "$60K+/year",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Essentials",
+            "Claims data and analytics",
+            "Market-level insights",
+            "Integration with CRM systems",
+            "Advanced analytics dashboards"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "$100K+/year",
+          "billing": "Annual",
+          "highlights": [
+            "Full platform access",
+            "Custom analytics and reporting",
+            "Referral network mapping",
+            "Predictive analytics",
+            "Dedicated account team",
+            "Custom data feeds"
+          ]
+        }
+      ],
+      "pricing_note": "Pricing is opaque and negotiated. These are market estimates based on user reports. Annual contracts are required. Multi-year deals may reduce per-year costs.",
+      "hidden_costs": [
+        {
+          "item": "Additional data modules",
+          "range": "$10K-$30K each",
+          "note": "Claims analytics, physician affiliations, and referral pattern data are often sold as separate modules. Each one adds to your annual spend."
+        },
+        {
+          "item": "API access",
+          "range": "Premium add-on",
+          "note": "Programmatic access to Definitive's data for internal tools or integrations is priced separately from the web platform."
+        },
+        {
+          "item": "Additional user seats",
+          "range": "$5K-$10K each",
+          "note": "Base plans include a limited number of seats. Adding users across sales, marketing, and strategy teams adds up fast."
+        },
+        {
+          "item": "Implementation and training",
+          "range": "$10K-$25K",
+          "note": "Onboarding, data training, and CRM integration setup are typically scoped as a separate engagement."
+        },
+        {
+          "item": "Data exports and integration fees",
+          "range": "Varies",
+          "note": "Exporting data for use in other systems or BI tools may carry additional licensing restrictions or fees."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Healthcare services company with 5 users needing hospital data and claims analytics",
+        "line_items": [
+          {
+            "item": "Professional platform license (2 included seats)",
+            "annual": "$60,000"
+          },
+          {
+            "item": "3 additional user seats",
+            "annual": "$21,000"
+          },
+          {
+            "item": "Claims analytics module",
+            "annual": "$20,000"
+          },
+          {
+            "item": "Implementation and training (Year 1, amortized)",
+            "annual": "$8,000"
+          },
+          {
+            "item": "CRM integration setup",
+            "annual": "$5,000"
+          }
+        ],
+        "total": "$75K-$120K/year",
+        "per_user_real": "$1,250-$2,000/user/mo"
+      },
+      "bottom_line": "Definitive Healthcare is expensive because it can be. There's no close competitor for comprehensive US healthcare commercial intelligence. Budget $50K-$150K/year depending on which modules you need. If you only need physician contact data without the full analytics platform, Provyx offers a managed service approach at a fraction of the cost.",
+      "faq": [
+        {
+          "q": "Does Definitive Healthcare offer a free trial?",
+          "a": "Definitive Healthcare offers limited demos and sample data access through their sales process. There's no self-service free trial. You'll need to schedule a demo with their team to see the platform in action."
+        },
+        {
+          "q": "How does Definitive Healthcare compare to ZoomInfo for healthcare?",
+          "a": "Different tools for different jobs. ZoomInfo gives you contact data and intent signals across all industries. Definitive Healthcare goes deep on healthcare-specific data: claims volumes, referral patterns, facility profiles, physician affiliations. If you're selling to hospitals, Definitive's healthcare depth is hard to match. If you need broader B2B prospecting with some healthcare coverage, ZoomInfo is more versatile."
+        },
+        {
+          "q": "What data is included in the base Essentials plan?",
+          "a": "Essentials covers hospital and health system profiles, physician data, and basic search. You get demographic and organizational data but not claims analytics, referral patterns, or advanced market insights. Those require Professional or add-on modules."
+        }
+      ]
+    },
+    {
+      "slug": "capterra-pricing",
+      "tool_slug": "capterra",
+      "title": "Capterra Pricing (2026): What Vendors Actually Pay",
+      "meta_description": "Capterra vendor pricing breakdown: PPC listings, premium profiles, and what it costs to get leads from Capterra. Updated for 2026.",
+      "hook": "Capterra is free for buyers. For vendors, it's a pay-per-click marketplace where cost-per-lead can range from $2 to $100+ depending on your software category.",
+      "tiers": [
+        {
+          "name": "Free Listing",
+          "price": "Free",
+          "billing": "N/A",
+          "highlights": [
+            "Basic profile with logo and description",
+            "Collect and display user reviews",
+            "Appear in category listings",
+            "No lead generation features"
+          ]
+        },
+        {
+          "name": "PPC (Pay-Per-Click)",
+          "price": "$2\u2013$100+/click",
+          "billing": "Monthly budget",
+          "popular": true,
+          "highlights": [
+            "Sponsored placement in category listings",
+            "Pay only when users click to your site",
+            "Bid-based pricing by category",
+            "Set daily and monthly budget caps"
+          ]
+        },
+        {
+          "name": "Premium Profile",
+          "price": "Custom pricing",
+          "billing": "Annual",
+          "highlights": [
+            "Enhanced profile with videos and screenshots",
+            "Competitor comparison removal",
+            "Custom CTA buttons",
+            "Priority review collection"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Click fraud and unqualified traffic",
+          "range": "10-30% of budget",
+          "note": "Not all clicks convert to real prospects. Budget for a significant portion of clicks being competitors, researchers, or unqualified buyers."
+        },
+        {
+          "item": "Review management",
+          "range": "$500\u2013$2K/year (time cost)",
+          "note": "Active review solicitation and response management requires ongoing effort. Reviews directly impact your ranking and click-through rate."
+        },
+        {
+          "item": "Category competition premiums",
+          "range": "Varies by category",
+          "note": "CRM and project management categories can see CPCs of $50-100+. Niche categories might be $2-10/click."
+        },
+        {
+          "item": "Landing page optimization",
+          "range": "$2K\u2013$10K",
+          "note": "Capterra traffic converts differently than organic. Most vendors need dedicated landing pages to maximize conversion from review site visitors."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market SaaS vendor in the CRM category",
+        "line_items": [
+          {
+            "item": "Monthly PPC budget (Capterra)",
+            "annual": "$24,000"
+          },
+          {
+            "item": "Average CPC in CRM category",
+            "annual": "$35\u2013$55/click"
+          },
+          {
+            "item": "Estimated clicks/month",
+            "annual": "~40\u201355 clicks"
+          },
+          {
+            "item": "Typical click-to-demo rate",
+            "annual": "5\u201315%"
+          },
+          {
+            "item": "Annual demos from Capterra",
+            "annual": "24\u201399"
+          },
+          {
+            "item": "Cost per demo",
+            "annual": "$242\u2013$1,000"
+          }
+        ],
+        "total": "$24,000\u2013$36,000/year",
+        "per_user_real": "$242\u2013$1,000/demo"
+      },
+      "bottom_line": "Capterra is a viable lead source for B2B software vendors, but cost efficiency varies dramatically by category. Niche categories with low competition can deliver cheap, qualified leads. Competitive categories like CRM, project management, and marketing automation have CPCs that make cost-per-demo comparable to LinkedIn ads. The free listing is worth claiming regardless; paid placement requires careful ROI tracking.",
+      "faq": [
+        {
+          "q": "Is Capterra free for software vendors?",
+          "a": "Basic listings are free. You can create a profile, collect reviews, and appear in category results at no cost. Sponsored (PPC) placement and premium profile features require payment."
+        },
+        {
+          "q": "How much does Capterra PPC cost?",
+          "a": "Capterra uses a bid-based PPC model. CPCs range from $2 in niche categories to $100+ in competitive ones like CRM or project management. You set monthly budget caps, so spend is controllable. Average CPCs for mid-market B2B software are typically $15-45."
+        },
+        {
+          "q": "Is Capterra worth it for lead generation?",
+          "a": "It depends on your category and conversion rate. Vendors in niche categories with low competition often see strong ROI. In crowded categories, the cost per qualified lead can exceed $500, which competes with other paid channels like LinkedIn or Google Ads."
+        },
+        {
+          "q": "How do Capterra reviews affect pricing?",
+          "a": "Reviews don't directly affect PPC pricing, but they heavily influence click-through rates. Vendors with 4.5+ star ratings and 50+ reviews get significantly more clicks at the same bid level. Investing in review collection is one of the highest-ROI activities on the platform."
+        }
+      ]
     }
   ]
 }

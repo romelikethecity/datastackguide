@@ -885,6 +885,199 @@
         "census-data"
       ],
       "category_slug": "data-integration"
+    },
+    {
+      "slug": "data-mesh",
+      "term": "Data Mesh",
+      "short_definition": "A decentralized data architecture where domain teams own and manage their own data products.",
+      "full_definition": "Data mesh is an organizational and architectural approach that shifts data ownership from a central data team to the domain teams that produce it. Sales, marketing, product, and finance each own their data, publishing it as a product with defined interfaces, quality standards, and SLAs. It's a direct reaction to the bottleneck that forms when a single central data team can't keep up with requests from every corner of the business.",
+      "why_it_matters": "Central data teams become bottlenecks. Every dashboard request, every schema change, every new report sits in a queue. Data mesh distributes that ownership so each team moves at its own pace. But it's not free. It requires strong governance, self-serve infrastructure, and a culture shift where domain teams accept responsibility for data quality.",
+      "example": "Instead of the data team building every Salesforce report and marketing dashboard, each team owns their domain's data products. Sales ops publishes pipeline data with defined schemas. Marketing publishes campaign attribution data. Both are queryable through a shared data catalog.",
+      "related_terms": [
+        "data-lakehouse",
+        "composable-cdp",
+        "revops"
+      ],
+      "related_tools": [
+        "fivetran",
+        "airbyte",
+        "census-data",
+        "hightouch"
+      ],
+      "category_slug": "orchestration"
+    },
+    {
+      "slug": "zero-party-data",
+      "term": "Zero-Party Data",
+      "short_definition": "Data that a customer intentionally and proactively shares with a brand, like preferences, survey responses, and purchase intentions.",
+      "full_definition": "Unlike first-party data (observed behavior) or third-party data (purchased from external sources), zero-party data is what customers tell you directly. Survey responses. Preference center selections. Quiz results. Explicitly stated purchase intent. Forrester coined the term in 2020 to distinguish this voluntarily shared information from data you collect through tracking or buy from vendors.",
+      "why_it_matters": "With third-party cookies dying and privacy regulations tightening, zero-party data is becoming the most reliable personalization input. It's also the most accurate because the customer provided it voluntarily. The challenge is creating enough value exchange to get people to share it. Nobody fills out a 20-question survey for fun.",
+      "example": "A CRM vendor's website quiz asks \"How many sales reps does your team have?\" and \"What's your biggest CRM pain point?\" The visitor answers willingly because they expect relevant recommendations in return. That data is more accurate than any third-party enrichment.",
+      "related_terms": [
+        "intent-data",
+        "lead-scoring",
+        "buyer-journey"
+      ],
+      "related_tools": [
+        "hubspot",
+        "salesforce",
+        "mutiny"
+      ],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "revenue-attribution",
+      "term": "Revenue Attribution",
+      "short_definition": "The process of connecting closed revenue back to the marketing and sales touchpoints that influenced the deal.",
+      "full_definition": "Revenue attribution answers a straightforward question: which marketing campaigns and sales activities contributed to this deal closing? It goes beyond lead attribution (which channel generated the lead) to track the full buyer journey across multiple touchpoints. Common models include first-touch, last-touch, linear, time-decay, and data-driven or algorithmic attribution. Each model distributes credit differently, and no single model is perfect.",
+      "why_it_matters": "Without attribution, marketing can't prove ROI and sales can't identify which activities move deals forward. It determines budget allocation. Teams that can attribute revenue to specific channels and campaigns make better investment decisions. Teams that can't end up funding whatever the loudest executive believes is working.",
+      "example": "A $100K deal closes. Revenue attribution shows the buyer first found you through an SEO blog post, attended a webinar, received three outbound emails from the SDR, saw two LinkedIn ads, and had a final demo from the AE. How much credit does each touchpoint get? That's the attribution question.",
+      "related_terms": [
+        "pipeline-velocity",
+        "sales-forecasting",
+        "mql-sql"
+      ],
+      "related_tools": [
+        "hubspot",
+        "salesforce",
+        "marketo",
+        "6sense"
+      ],
+      "category_slug": "data-quality"
+    },
+    {
+      "slug": "pipeline-velocity",
+      "term": "Pipeline Velocity",
+      "short_definition": "A metric that measures how fast revenue moves through your sales pipeline, calculated as (opportunities \u00d7 win rate \u00d7 average deal size) / sales cycle length.",
+      "full_definition": "Pipeline velocity combines four factors into one number: the number of qualified opportunities in your pipeline, your win rate, your average deal size, and the average length of your sales cycle. The formula is (Opportunities \u00d7 Win Rate \u00d7 Avg Deal Size) / Sales Cycle Days. It gives you a dollar-per-day figure that represents how much revenue your pipeline generates daily.",
+      "why_it_matters": "Pipeline velocity is one of the best single metrics for sales performance. It accounts for both volume (how many deals) and efficiency (how fast they close). Improving any of the four inputs increases velocity. It's more useful than pipeline coverage alone because it factors in speed and conversion, not just total dollar amount sitting in the funnel.",
+      "example": "Your team has 50 qualified opportunities, a 25% win rate, $40K average deal size, and 60-day sales cycle. Pipeline velocity = (50 \u00d7 0.25 \u00d7 $40,000) / 60 = $8,333/day. If you shorten the sales cycle to 45 days without changing anything else, velocity jumps to $11,111/day.",
+      "related_terms": [
+        "sales-velocity",
+        "sales-forecasting",
+        "sales-pipeline"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "gong-engage",
+        "salesloft"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "sales-territory-planning",
+      "term": "Sales Territory Planning",
+      "short_definition": "The process of dividing your total addressable market into defined territories assigned to specific sales reps or teams.",
+      "full_definition": "Sales territory planning segments your market by geography, industry, company size, product line, or account tier, then assigns those segments to reps. Good territory design balances opportunity across the team so no rep is overloaded while another starves. It directly impacts quota attainment, rep retention, and revenue predictability. Most companies redo territories annually, and it's a major operational lift every time.",
+      "why_it_matters": "Poorly designed territories kill morale and revenue. If one rep has 500 accounts and another has 50 enterprise accounts worth 10x the pipeline, you'll lose the overloaded rep and under-challenge the other. Territory planning also prevents account conflicts, double-coverage, and customer confusion about who their point of contact is.",
+      "example": "A 20-person sales team covers North America. Instead of splitting purely by geography (which creates uneven opportunity), you segment by company size and industry: 5 reps cover enterprise accounts nationally, 10 reps cover mid-market by region, and 5 reps handle SMB through an inbound model. Each territory targets roughly equal pipeline potential.",
+      "related_terms": [
+        "sales-ops-vs-revops",
+        "account-mapping",
+        "icp"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "dynamics-365"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "data-clean-room",
+      "term": "Data Clean Room",
+      "short_definition": "A secure environment where multiple parties can share and analyze combined datasets without exposing raw data to each other.",
+      "full_definition": "A data clean room is a privacy-safe technology that lets two or more organizations combine their first-party datasets for analysis without either party seeing the other's raw data. The clean room enforces strict access controls: you can run aggregate queries and build audience segments, but you can't export individual-level records. Major providers include Google Ads Data Hub, AWS Clean Rooms, Snowflake Data Clean Rooms, and LiveRamp. The concept borrows from pharmaceutical research, where \"clean rooms\" prevent contamination.",
+      "why_it_matters": "With third-party cookies dying and privacy regulations tightening, data clean rooms are becoming the primary way brands and publishers collaborate on audience targeting. They let you answer questions like \"how many of our CRM contacts saw Partner X's ads?\" without sharing your customer list. For B2B, clean rooms enable co-marketing measurement and joint account targeting between tech partners.",
+      "example": "A SaaS company and a media publisher set up a Snowflake Clean Room. The SaaS company loads their CRM account list. The publisher loads their subscriber data. The clean room matches records and returns aggregate overlap metrics (\"340 of your target accounts are active subscribers\") without either party accessing the other's full dataset.",
+      "related_terms": [
+        "zero-party-data",
+        "customer-data-platform",
+        "data-governance"
+      ],
+      "related_tools": [],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "product-qualified-lead",
+      "term": "Product-Qualified Lead (PQL)",
+      "short_definition": "A potential customer who has demonstrated purchase intent through actual product usage, not just marketing engagement.",
+      "full_definition": "A product-qualified lead is someone who's used your product (typically through a free trial or freemium plan) and hit behavioral thresholds that indicate they're likely to convert to a paid customer. PQLs are defined by product usage patterns: features used, frequency of login, team members invited, integrations connected, or data volume processed. The concept emerged from product-led growth (PLG) companies where users adopt the product before talking to sales.",
+      "why_it_matters": "PQLs convert at 2-5x the rate of marketing-qualified leads because they've already experienced the product's value. For PLG companies, PQLs are the primary pipeline source. The challenge is defining the right PQL criteria: which usage patterns actually predict conversion? This requires tight integration between product analytics (Pendo, Amplitude, Mixpanel) and CRM (HubSpot, Salesforce).",
+      "example": "A project management SaaS defines a PQL as a free user who has created 3+ projects, invited 2+ team members, and used the product for 14+ days. When a user hits all three criteria, the CRM flags them as a PQL and triggers a sales notification.",
+      "related_terms": [
+        "product-led-growth",
+        "lead-scoring",
+        "mql-sql",
+        "buyer-journey"
+      ],
+      "related_tools": [
+        "hubspot",
+        "salesforce"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "sales-signal",
+      "term": "Sales Signal",
+      "short_definition": "Any data point or event that indicates a prospect or account may be ready to buy.",
+      "full_definition": "A sales signal is a trigger event or behavioral indicator that suggests a prospect is entering an active buying cycle. Signals come from multiple sources: job postings (company hiring for a relevant role), technographic changes (company adopted a competitor's tool), intent data (researching your category), website visits (pricing page views), and firmographic changes (new funding round, leadership change). Modern sales intelligence platforms aggregate these signals to help reps prioritize outreach.",
+      "why_it_matters": "Cold outreach converts at 1-2%. Signal-based outreach can hit 5-15% response rates because you're reaching companies at the right moment. The shift from \"spray and pray\" to signal-based selling is the biggest change in outbound sales methodology in the past five years. Companies like 6sense, Common Room, and RB2B are built entirely around capturing and surfacing these signals.",
+      "example": "Your sales intelligence tool detects that a target account just posted a job for \"Revenue Operations Manager\" requiring Salesforce experience. Your competitor analysis shows they're currently on HubSpot. You reach out with a message about migration support, timed to their apparent platform evaluation.",
+      "related_terms": [
+        "signal-based-selling",
+        "intent-data",
+        "buyer-intent",
+        "account-scoring"
+      ],
+      "related_tools": [
+        "6sense",
+        "common-room",
+        "rb2b",
+        "bombora"
+      ],
+      "category_slug": "intent"
+    },
+    {
+      "slug": "account-intelligence",
+      "term": "Account Intelligence",
+      "short_definition": "Comprehensive data about a target company, including firmographics, technographics, intent signals, and organizational structure.",
+      "full_definition": "Account intelligence is the aggregation of all available data about a target company into a unified view that sales and marketing teams can act on. It goes beyond basic firmographics (size, industry, revenue) to include technology stack, recent news, hiring patterns, funding events, leadership changes, competitive tool usage, and intent signals. The best account intelligence combines multiple data sources into a single prioritized account score or profile.",
+      "why_it_matters": "Account intelligence determines sales efficiency. Without it, reps waste time on poorly-fit accounts and miss buying signals from high-potential targets. With it, teams can focus outreach on accounts most likely to convert, personalize messaging with relevant details, and time outreach to buying triggers. The difference between a rep who has account intelligence and one who doesn't is the difference between research-driven selling and random dialing.",
+      "example": "Before a discovery call, your account intelligence platform shows: Acme Corp (500 employees, $80M revenue, Series D). Tech stack includes Salesforce, Marketo, and a competitor's product. They posted 3 SDR roles last month. Two decision-makers recently viewed your pricing page. They've been researching your category on G2. This context shapes every aspect of your approach.",
+      "related_terms": [
+        "firmographic-data",
+        "technographic-data",
+        "intent-data",
+        "sales-intelligence",
+        "account-scoring"
+      ],
+      "related_tools": [
+        "zoominfo",
+        "6sense",
+        "demandbase",
+        "apollo",
+        "cognism"
+      ],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "data-governance",
+      "term": "Data Governance",
+      "short_definition": "The framework of policies, processes, and standards that ensure data is accurate, secure, compliant, and consistently managed across an organization.",
+      "full_definition": "Data governance is the organizational discipline that defines who can access what data, how data quality is maintained, where data lives, and how it complies with regulations like GDPR, CCPA, and HIPAA. It covers data ownership (who's responsible for each dataset), data quality standards (validation rules, deduplication processes), access controls (role-based permissions), data lineage (tracking where data came from and how it was transformed), and retention policies (how long data is kept and when it's deleted).",
+      "why_it_matters": "Poor data governance leads to three expensive problems: compliance violations (GDPR fines can reach 4% of global revenue), bad decisions based on dirty data, and duplicated effort across teams working with different versions of the truth. As companies adopt more data tools and collect more customer information, governance becomes the difference between a data-driven organization and a data-chaotic one.",
+      "example": "A B2B company implements data governance by: designating Marketing Ops as the owner of lead data, requiring all tools to sync through a central CDP, creating deduplication rules that run nightly, setting 24-month retention limits on prospect data for GDPR compliance, and establishing a data dictionary that defines how \"customer\" and \"prospect\" are classified across Salesforce, HubSpot, and their data warehouse.",
+      "related_terms": [
+        "data-hygiene",
+        "crm-hygiene",
+        "data-validation",
+        "data-mesh",
+        "data-clean-room"
+      ],
+      "related_tools": [],
+      "category_slug": "data-quality"
     }
   ]
 }

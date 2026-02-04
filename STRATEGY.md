@@ -2782,6 +2782,17 @@ Track what's working:
 - [x] 4 new best-of roundups: Best CRM for Healthcare, Best Sales Prospecting Tools, Best Workflow Automation Tools, Best Conversation Intelligence Tools (34 roundups total)
 - [x] 5 new glossary terms: Waterfall Enrichment, Sales Ops vs RevOps, Composable CDP, Account Scoring, Data Lakehouse (45 terms total)
 - [x] Site now at 281 pages (up from 260)
+- [x] 3 new comparison pages: Salesloft vs HubSpot, RollWorks vs 6sense, Clay vs ZoomInfo (39 comparisons total)
+- [x] 4 new pricing pages: Boomi, Workato, n8n, Definitive Healthcare (42 pricing pages total)
+- [x] 4 new alternatives pages: Fivetran Alternatives, Census Alternatives, Hightouch Alternatives, Capterra Alternatives (39 alternatives total)
+- [x] 4 new best-of roundups: Best CRM for Financial Services, Best Data Integration for Snowflake, Best ABM Tools for Mid-Market, Best Sales Tools for Startups (38 roundups total)
+- [x] 5 new glossary terms: Data Mesh, Zero-Party Data, Revenue Attribution, Pipeline Velocity, Sales Territory Planning (50 terms total)
+- [x] Site now at 301 pages (up from 281)
+- [x] 4 new comparison pages: Freshsales vs monday Sales CRM, Nutshell vs HubSpot, Airbyte vs Stitch, Leadfeeder vs RB2B (43 comparisons total)
+- [x] 1 new pricing page: Capterra Vendor Pricing (43 pricing pages total)
+- [x] 4 new best-of roundups: Best CRM for SaaS, Best Data Enrichment for SMB, Best Free Sales Tools, Best Data Tools for Healthcare (42 roundups total)
+- [x] 5 new glossary terms: Data Clean Room, Product-Qualified Lead, Sales Signal, Account Intelligence, Data Governance (55 terms total)
+- [x] Site now at 315 pages (up from 301)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker
