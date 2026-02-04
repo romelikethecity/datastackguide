@@ -55,7 +55,11 @@ const relatedTerms = (entry.related_terms || [])
 const catName = getCategoryName(entry.category_slug);
 const catColor = getCategoryColor(entry.category_slug);
 
-const title = `What is ${entry.term}? Definition & Guide`;
+// Keep title under 53 chars (+ " | DataStackGuide" suffix = 70 max)
+const fullTitle = `What is ${entry.term}? Definition & Guide`;
+const shortTitle = `${entry.term}: Definition & Guide`;
+const minTitle = `${entry.term} Explained`;
+const title = fullTitle.length <= 53 ? fullTitle : shortTitle.length <= 53 ? shortTitle : minTitle.length <= 53 ? minTitle : entry.term;
 const description = `${entry.term} definition: ${entry.short_definition} Learn what it means, why it matters, and which tools to use.`;
 
 const schema = {

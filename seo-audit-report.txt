@@ -1,0 +1,636 @@
+================================================================================
+  DataStackGuide SEO Audit Report
+  Generated: 2026-02-04 10:01:15
+================================================================================
+
+SUMMARY
+----------------------------------------
+  Total pages audited:    314
+  Pages passing:          314  (100.0%)
+  Pages with issues:      0  (0.0%)
+
+  Total CRITICAL issues:  0
+  Total WARNING issues:   0
+  Total INFO notes:       212
+
+ISSUES BY CATEGORY
+----------------------------------------
+  Category                    CRIT   WARN   INFO  Total
+  ------------------------- ------ ------ ------ ------
+  Meta Description               0      0    107    107
+  Title                          0      0     87     87
+  H1                             0      0     16     16
+  Content Length                 0      0      1      1
+  CSS Cache Busting              0      0      1      1
+
+MOST COMMON ISSUES (Top 20)
+----------------------------------------
+  [INFO] Title: Title slightly long (62 chars, ideal: 30-60)
+    Affected pages: 12
+  [INFO] Meta Description: Meta description slightly short (119 chars, ideal: 120-160)
+    Affected pages: 11
+  [INFO] Title: Title slightly long (65 chars, ideal: 30-60)
+    Affected pages: 10
+  [INFO] Title: Title slightly long (61 chars, ideal: 30-60)
+    Affected pages: 10
+  [INFO] Title: Title slightly long (63 chars, ideal: 30-60)
+    Affected pages: 10
+  [INFO] Title: Title slightly long (64 chars, ideal: 30-60)
+    Affected pages: 10
+  [INFO] Title: Title slightly long (66 chars, ideal: 30-60)
+    Affected pages: 8
+  [INFO] Title: Title slightly long (69 chars, ideal: 30-60)
+    Affected pages: 8
+  [INFO] Title: Title slightly long (68 chars, ideal: 30-60)
+    Affected pages: 7
+  [INFO] Title: Title slightly long (67 chars, ideal: 30-60)
+    Affected pages: 6
+  [INFO] Title: Title slightly long (70 chars, ideal: 30-60)
+    Affected pages: 6
+  [INFO] Meta Description: Meta description slightly short (118 chars, ideal: 120-160)
+    Affected pages: 5
+  [INFO] Meta Description: Meta description slightly short (117 chars, ideal: 120-160)
+    Affected pages: 5
+  [INFO] Meta Description: Meta description slightly short (113 chars, ideal: 120-160)
+    Affected pages: 4
+  [INFO] Meta Description: Meta description slightly short (106 chars, ideal: 120-160)
+    Affected pages: 3
+  [INFO] Meta Description: Meta description slightly short (116 chars, ideal: 120-160)
+    Affected pages: 3
+  [INFO] Meta Description: Meta description long (221 chars, may be truncated in SERPs)
+    Affected pages: 3
+  [INFO] Meta Description: Meta description long (181 chars, may be truncated in SERPs)
+    Affected pages: 2
+  [INFO] Meta Description: Meta description slightly short (99 chars, ideal: 120-160)
+    Affected pages: 2
+  [INFO] Meta Description: Meta description long (162 chars, may be truncated in SERPs)
+    Affected pages: 2
+
+PER-PAGE BREAKDOWN (pages with warnings or critical issues)
+================================================================================
+
+PAGES WITH INFO NOTES ONLY (166 pages)
+----------------------------------------
+  /alternatives/
+      Meta Description: Meta description slightly short (113 chars, ideal: 120-160)
+      H1: H1 short (17 chars): "Tool Alternatives"
+  /alternatives/capterra-alternatives/
+      Meta Description: Meta description slightly short (106 chars, ideal: 120-160)
+  /alternatives/census-alternatives/
+      Meta Description: Meta description slightly short (116 chars, ideal: 120-160)
+  /alternatives/cognism-alternatives/
+      Meta Description: Meta description long (181 chars, may be truncated in SERPs)
+  /alternatives/hightouch-alternatives/
+      Meta Description: Meta description slightly short (99 chars, ideal: 120-160)
+  /alternatives/linkedin-sales-navigator-alternatives/
+      Title: Title slightly long (67 chars, ideal: 30-60)
+  /alternatives/marketo-alternatives/
+      Meta Description: Meta description long (179 chars, may be truncated in SERPs)
+  /alternatives/outreach-alternatives/
+      Meta Description: Meta description long (162 chars, may be truncated in SERPs)
+  /best/best-abm-tools-for-mid-market/
+      Title: Title slightly long (65 chars, ideal: 30-60)
+  /best/best-conversation-intelligence-tools/
+      Title: Title slightly long (62 chars, ideal: 30-60)
+  /best/best-crm-for-enterprise/
+      Meta Description: Meta description long (167 chars, may be truncated in SERPs)
+  /best/best-data-enrichment-tools-for-smb/
+      Title: Title slightly long (61 chars, ideal: 30-60)
+  /best/best-data-integration-for-snowflake/
+      Title: Title slightly long (67 chars, ideal: 30-60)
+  /best/best-data-quality-tools/
+      Title: Title slightly long (63 chars, ideal: 30-60)
+  /best/best-data-tools-for-healthcare/
+      Title: Title slightly long (66 chars, ideal: 30-60)
+  /best/best-sales-intelligence-tools/
+      Meta Description: Meta description slightly short (118 chars, ideal: 120-160)
+  /categories/
+      Meta Description: Meta description long (164 chars, may be truncated in SERPs)
+  /categories/abm/
+      Meta Description: Meta description slightly short (103 chars, ideal: 120-160)
+  /categories/cleaning/
+      Meta Description: Meta description slightly short (111 chars, ideal: 120-160)
+  /categories/contact-databases/
+      Meta Description: Meta description slightly short (106 chars, ideal: 120-160)
+  /categories/crm/
+      Meta Description: Meta description slightly short (102 chars, ideal: 120-160)
+      H1: H1 short (19 chars): "CRM Platforms Tools"
+  /categories/data-quality/
+      Meta Description: Meta description slightly short (113 chars, ideal: 120-160)
+  /categories/enrichment/
+      Meta Description: Meta description slightly short (104 chars, ideal: 120-160)
+  /categories/healthcare/
+      Meta Description: Meta description slightly short (103 chars, ideal: 120-160)
+  /categories/intent/
+      Meta Description: Meta description slightly short (99 chars, ideal: 120-160)
+      H1: H1 short (17 chars): "Intent Data Tools"
+  /categories/list-building/
+      Meta Description: Meta description slightly short (116 chars, ideal: 120-160)
+  /categories/marketing-automation/
+      Meta Description: Meta description slightly short (108 chars, ideal: 120-160)
+  /categories/orchestration/
+      Meta Description: Meta description slightly short (107 chars, ideal: 120-160)
+  /categories/review-platforms/
+      Meta Description: Meta description slightly short (119 chars, ideal: 120-160)
+  /categories/technographic/
+      Meta Description: Meta description slightly short (106 chars, ideal: 120-160)
+  ... and 136 more pages
+
+CLEAN PAGES (148 pages with no issues)
+----------------------------------------
+  /
+  /about/
+  /alternatives/6sense-alternatives/
+  /alternatives/amplemarket-alternatives/
+  /alternatives/apollo-alternatives/
+  /alternatives/bombora-alternatives/
+  /alternatives/boomi-alternatives/
+  /alternatives/clay-alternatives/
+  /alternatives/clearbit-alternatives/
+  /alternatives/common-room-alternatives/
+  /alternatives/demandbase-alternatives/
+  /alternatives/dynamics-365-alternatives/
+  /alternatives/fivetran-alternatives/
+  /alternatives/freshsales-alternatives/
+  /alternatives/gong-alternatives/
+  /alternatives/hubspot-alternatives/
+  /alternatives/instantly-alternatives/
+  /alternatives/leadiq-alternatives/
+  /alternatives/lemlist-alternatives/
+  /alternatives/make-alternatives/
+  /alternatives/monday-sales-crm-alternatives/
+  /alternatives/nooks-alternatives/
+  /alternatives/nutshell-alternatives/
+  /alternatives/orum-alternatives/
+  /alternatives/pipedrive-alternatives/
+  /alternatives/rollworks-alternatives/
+  /alternatives/salesforce-alternatives/
+  /alternatives/salesloft-alternatives/
+  /alternatives/seamless-ai-alternatives/
+  /alternatives/smartlead-alternatives/
+  /alternatives/terminus-alternatives/
+  /alternatives/workato-alternatives/
+  /alternatives/zoho-crm-alternatives/
+  /alternatives/zoominfo-alternatives/
+  /best/best-abm-platforms/
+  /best/best-ai-sales-tools/
+  /best/best-b2b-contact-databases/
+  /best/best-b2b-intent-data-tools/
+  /best/best-cold-email-tools/
+  /best/best-cpq-tools/
+  /best/best-crm-for-financial-services/
+  /best/best-crm-for-healthcare/
+  /best/best-crm-for-real-estate/
+  /best/best-crm-for-saas/
+  /best/best-crm-for-small-business/
+  /best/best-crm-for-startups/
+  /best/best-data-enrichment-tools/
+  /best/best-data-integration-tools/
+  /best/best-email-deliverability-tools/
+  /best/best-free-crm/
+  /best/best-free-sales-tools/
+  /best/best-gtm-platforms/
+  /best/best-ipaas-integration-tools/
+  /best/best-lead-generation-tools/
+  /best/best-lead-scoring-tools/
+  /best/best-marketing-automation-tools/
+  /best/best-outbound-sales-tools/
+  /best/best-partner-ecosystem-tools/
+  /best/best-revenue-intelligence-tools/
+  /best/best-revops-tools/
+  /best/best-sales-analytics-tools/
+  /best/best-sales-coaching-tools/
+  /best/best-sales-dialer-tools/
+  /best/best-sales-engagement-platforms/
+  /best/best-sales-prospecting-tools/
+  /best/best-sales-tools-for-startups/
+  /best/best-visitor-identification-tools/
+  /best/best-workflow-automation-tools/
+  /compare/6sense-vs-demandbase/
+  /compare/airbyte-vs-fivetran/
+  /compare/amplemarket-vs-apollo/
+  /compare/apollo-vs-instantly/
+  /compare/bombora-vs-6sense/
+  /compare/boomi-vs-mulesoft/
+  /compare/celigo-vs-workato/
+  /compare/census-vs-hightouch/
+  /compare/clay-vs-apollo/
+  /compare/clay-vs-zoominfo/
+  /compare/clearbit-vs-apollo/
+  /compare/clearbit-vs-zoominfo/
+  /compare/cognism-vs-apollo/
+  /compare/cognism-vs-zoominfo/
+  /compare/dynamics-365-vs-salesforce/
+  /compare/freshsales-vs-hubspot/
+  /compare/freshsales-vs-pipedrive/
+  /compare/g2-vs-capterra/
+  /compare/hubspot-vs-pipedrive/
+  /compare/instantly-vs-apollo/
+  /compare/leadfeeder-vs-rb2b/
+  /compare/lemlist-vs-apollo/
+  /compare/lemlist-vs-instantly/
+  /compare/make-vs-zapier/
+  /compare/orum-vs-nooks/
+  /compare/outreach-vs-apollo/
+  /compare/pipedrive-vs-zoho-crm/
+  /compare/rollworks-vs-6sense/
+  /compare/rollworks-vs-demandbase/
+  /compare/salesforce-vs-hubspot/
+  /compare/salesloft-vs-apollo/
+  /compare/salesloft-vs-hubspot/
+  /compare/salesloft-vs-outreach/
+  /compare/seamless-ai-vs-zoominfo/
+  /compare/smartlead-vs-instantly/
+  /compare/workato-vs-mulesoft/
+  /compare/zoominfo-vs-apollo/
+  /guides/freshsales-vs-zoho-crm-vs-monday-sales-crm/
+  /guides/freshsales-vs-zoho-crm-vs-pipedrive/
+  /pricing/celigo-pricing/
+  /pricing/cognism-pricing/
+  /pricing/common-room-pricing/
+  /pricing/freshsales-pricing/
+  /pricing/gong-pricing/
+  /pricing/instantly-pricing/
+  /pricing/leadiq-pricing/
+  /pricing/lemlist-pricing/
+  /pricing/nooks-pricing/
+  /pricing/outreach-pricing/
+  /pricing/rb2b-pricing/
+  /pricing/rollworks-pricing/
+  /pricing/tray-pricing/
+  /pricing/zoominfo-pricing/
+  /reports/most-in-demand-tools/
+  /tools/airbyte/
+  /tools/apollo/
+  /tools/bombora/
+  /tools/capterra/
+  /tools/clearbit/
+  /tools/cognism/
+  /tools/definitive-healthcare/
+  /tools/dynamics-365/
+  /tools/fivetran/
+  /tools/hightouch/
+  /tools/instantly/
+  /tools/leadfeeder/
+  /tools/lemlist/
+  /tools/mulesoft/
+  /tools/nutshell/
+  /tools/outreach-io/
+  /tools/pipedrive/
+  /tools/rollworks/
+  /tools/salesloft/
+  /tools/smartlead/
+  /tools/sugarcrm/
+  /tools/terminus/
+  /tools/tray/
+  /tools/workato-ipaas/
+  /tools/zoho-crm/
+  /tools/zoominfo/
+
+PAGE STATISTICS (all pages)
+================================================================================
+  Page                                                     Words  Links  Imgs Title  Desc
+  ------------------------------------------------------- ------ ------ ----- ----- -----
+  /                                                          506     45     2    45   136
+  /about/                                                    652     23     2    37   138
+  /alternatives/                                             498     58     2    34   113
+  /alternatives/6sense-alternatives/                         909     32     2    49   138
+  /alternatives/amplemarket-alternatives/                    944     34     2    54   133
+  /alternatives/apollo-alternatives/                        1085     36     2    52   150
+  /alternatives/bombora-alternatives/                       1546     36     2    50   147
+  /alternatives/boomi-alternatives/                          951     34     2    48   128
+  /alternatives/capterra-alternatives/                       931     26     2    51   106
+  /alternatives/census-alternatives/                         916     30     2    49   116
+  /alternatives/clay-alternatives/                          1136     34     2    47   144
+  /alternatives/clearbit-alternatives/                       949     34     2    51   141
+  /alternatives/cognism-alternatives/                       1904     38     2    50   181
+  /alternatives/common-room-alternatives/                   1164     36     2    54   135
+  /alternatives/demandbase-alternatives/                    1493     36     2    53   129
+  /alternatives/dynamics-365-alternatives/                  1148     36     2    55   157
+  /alternatives/fivetran-alternatives/                      1031     30     2    51   132
+  /alternatives/freshsales-alternatives/                    1388     36     2    53   137
+  /alternatives/gong-alternatives/                          1061     32     2    47   127
+  /alternatives/hightouch-alternatives/                      943     26     2    52    99
+  /alternatives/hubspot-alternatives/                       1023     36     2    50   143
+  /alternatives/instantly-alternatives/                     1084     36     2    52   142
+  /alternatives/leadiq-alternatives/                         896     34     2    49   133
+  /alternatives/lemlist-alternatives/                        952     34     2    50   152
+  /alternatives/linkedin-sales-navigator-alternatives/      1017     36     2    67   136
+  /alternatives/make-alternatives/                          1032     36     2    60   124
+  /alternatives/marketo-alternatives/                       1606     36     2    50   179
+  /alternatives/monday-sales-crm-alternatives/              1187     36     2    59   149
+  /alternatives/nooks-alternatives/                         1226     34     2    48   144
+  /alternatives/nutshell-alternatives/                      1386     34     2    51   142
+  /alternatives/orum-alternatives/                          1205     36     2    47   130
+  /alternatives/outreach-alternatives/                      1136     36     2    51   162
+  /alternatives/pipedrive-alternatives/                     1258     34     2    52   145
+  /alternatives/rollworks-alternatives/                     1083     36     2    52   133
+  /alternatives/salesforce-alternatives/                     961     36     2    53   147
+  /alternatives/salesloft-alternatives/                      919     34     2    52   150
+  /alternatives/seamless-ai-alternatives/                    924     34     2    54   139
+  /alternatives/smartlead-alternatives/                      929     34     2    52   140
+  /alternatives/terminus-alternatives/                       990     34     2    51   133
+  /alternatives/workato-alternatives/                       1012     36     2    50   122
+  /alternatives/zoho-crm-alternatives/                      1298     34     2    51   137
+  /alternatives/zoominfo-alternatives/                      1166     38     2    51   144
+  /best/best-abm-platforms/                                 1191     36     2    44   138
+  /best/best-abm-tools-for-mid-market/                      1296     34     2    65   141
+  /best/best-ai-sales-tools/                                1346     38     2    45   140
+  /best/best-b2b-contact-databases/                         2102     38     2    52   145
+  /best/best-b2b-intent-data-tools/                         1207     36     2    52   134
+  /best/best-cold-email-tools/                              1933     38     2    47   149
+  /best/best-conversation-intelligence-tools/               1124     34     2    62   145
+  /best/best-cpq-tools/                                     1202     36     2    40   145
+  /best/best-crm-for-enterprise/                            1383     34     2    50   167
+  /best/best-crm-for-financial-services/                    1219     34     2    58   134
+  /best/best-crm-for-healthcare/                            1006     34     2    50   141
+  /best/best-crm-for-real-estate/                           1086     34     2    51   147
+  /best/best-crm-for-saas/                                  1362     38     2    59   135
+  /best/best-crm-for-small-business/                        1014     34     2    54   130
+  /best/best-crm-for-startups/                              1022     34     2    48   136
+  /best/best-data-enrichment-tools-for-smb/                 1064     34     2    61   123
+  /best/best-data-enrichment-tools/                         1100     36     2    52   131
+  /best/best-data-integration-for-snowflake/                1201     32     2    67   140
+  /best/best-data-integration-tools/                        1236     38     2    53   141
+  /best/best-data-quality-tools/                            1499     36     2    63   135
+  /best/best-data-tools-for-healthcare/                     1092     34     2    66   146
+  /best/best-email-deliverability-tools/                    1329     38     2    57   139
+  /best/best-free-crm/                                      1338     38     2    45   146
+  /best/best-free-sales-tools/                              1589     42     2    47   137
+  /best/best-gtm-platforms/                                 1277     38     2    59   128
+  /best/best-ipaas-integration-tools/                       1228     36     2    56   148
+  /best/best-lead-generation-tools/                         1261     38     2    52   122
+  /best/best-lead-scoring-tools/                            1519     36     2    49   149
+  /best/best-marketing-automation-tools/                    1134     36     2    57   133
+  /best/best-outbound-sales-tools/                          1245     38     2    51   142
+  /best/best-partner-ecosystem-tools/                       1114     36     2    54   143
+  /best/best-revenue-intelligence-tools/                    1150     36     2    57   147
+  /best/best-revops-tools/                                  1249     36     2    43   140
+  /best/best-sales-analytics-tools/                         1151     36     2    52   145
+  /best/best-sales-coaching-tools/                          1318     38     2    51   140
+  /best/best-sales-dialer-tools/                            1068     36     2    49   135
+  /best/best-sales-engagement-platforms/                    1208     38     2    57   136
+  /best/best-sales-intelligence-tools/                      1004     34     2    55   118
+  /best/best-sales-prospecting-tools/                       1250     38     2    54   138
+  /best/best-sales-tools-for-startups/                      1520     38     2    55   129
+  /best/best-visitor-identification-tools/                  1805     38     2    59   139
+  /best/best-workflow-automation-tools/                     1126     36     2    56   141
+  /categories/                                               317     33     2    37   164
+  /categories/abm/                                           135     30     2    38   103
+  /categories/cleaning/                                      154     27     2    46   111
+  /categories/contact-databases/                             172     34     2    40   106
+  /categories/crm/                                           168     36     2    36   102
+  /categories/data-quality/                                  137     30     2    48   113
+  /categories/enrichment/                                    212     34     2    38   104
+  /categories/healthcare/                                    144     26     2    38   103
+  /categories/intent/                                        129     30     2    34    99
+  /categories/list-building/                                 291     44     2    50   116
+  /categories/marketing-automation/                          144     27     2    43   108
+  /categories/orchestration/                                 161     36     2    41   107
+  /categories/review-platforms/                              142     26     2    54   119
+  /categories/technographic/                                 156     33     2    41   106
+  /categories/validation/                                    196     34     2    38   104
+  /compare/                                                 1399     62     2    33   130
+  /compare/6sense-vs-demandbase/                            1139     26     2    53   133
+  /compare/airbyte-vs-fivetran/                             1169     26     2    52   139
+  /compare/airbyte-vs-stitch/                               1368     24     2    62   144
+  /compare/amplemarket-vs-apollo/                           1344     26     2    54   151
+  /compare/apollo-vs-instantly/                             1658     26     2    52   147
+  /compare/bombora-vs-6sense/                               1438     26     2    50   141
+  /compare/boomi-vs-mulesoft/                               1258     26     2    50   132
+  /compare/celigo-vs-workato/                               1350     26     2    50   143
+  /compare/census-vs-hightouch/                             1371     26     2    52   151
+  /compare/clay-vs-apollo/                                  1200     26     2    47   140
+  /compare/clay-vs-zoominfo/                                1604     26     2    49   159
+  /compare/clearbit-vs-apollo/                              1355     26     2    51   133
+  /compare/clearbit-vs-zoominfo/                            1401     26     2    53   125
+  /compare/cognism-vs-apollo/                               1336     26     2    50   146
+  /compare/cognism-vs-zoominfo/                             2211     26     2    52   153
+  /compare/dynamics-365-vs-salesforce/                      1693     26     2    59   140
+  /compare/freshsales-vs-hubspot/                           1405     26     2    54   141
+  /compare/freshsales-vs-monday-sales-crm/                  1428     26     2    63   140
+  /compare/freshsales-vs-pipedrive/                         2007     26     2    56   157
+  /compare/g2-vs-capterra/                                  1437     26     2    47   147
+  /compare/hubspot-vs-pipedrive/                            1103     26     2    53   131
+  /compare/instantly-vs-apollo/                             1166     26     2    52   147
+  /compare/leadfeeder-vs-rb2b/                              1361     26     2    51   144
+  /compare/lemlist-vs-apollo/                               1320     26     2    50   127
+  /compare/lemlist-vs-instantly/                            2195     26     2    53   150
+  /compare/linkedin-sales-navigator-vs-zoominfo/            1594     26     2    69   144
+  /compare/make-vs-zapier/                                  1606     26     2    47   140
+  /compare/marketo-vs-salesforce-marketing-cloud/           1641     26     2    70   156
+  /compare/nutshell-vs-hubspot/                             1403     26     2    64   138
+  /compare/orum-vs-nooks/                                   1437     26     2    46   132
+  /compare/outreach-vs-apollo/                              1366     26     2    51   148
+  /compare/pipedrive-vs-zoho-crm/                           2101     26     2    54   150
+  /compare/rollworks-vs-6sense/                             1482     26     2    52   147
+  /compare/rollworks-vs-demandbase/                         1361     26     2    56   144
+  /compare/salesforce-vs-hubspot/                           1212     26     2    54   143
+  /compare/salesloft-vs-apollo/                             1423     26     2    52   143
+  /compare/salesloft-vs-hubspot/                            1445     26     2    53   145
+  /compare/salesloft-vs-outreach/                           1135     26     2    54   138
+  /compare/seamless-ai-vs-zoominfo/                         2413     26     2    56   140
+  /compare/smartlead-vs-instantly/                          1402     26     2    55   143
+  /compare/terminus-vs-6sense/                              1233     26     2    65   140
+  /compare/workato-vs-mulesoft/                             1443     26     2    52   144
+  /compare/zoominfo-vs-apollo/                              1214     26     2    51   144
+  /glossary/                                                1234     74     2    34   118
+  /glossary/abm/                                             266     29     2    66   202
+  /glossary/account-intelligence/                            326     35     2    65   223
+  /glossary/account-mapping/                                 341     32     2    60   211
+  /glossary/account-scoring/                                 343     33     2    60   206
+  /glossary/arr-mrr/                                         305     31     2    52   210
+  /glossary/buyer-intent/                                    311     32     2    57   186
+  /glossary/buyer-journey/                                   350     32     2    58   199
+  /glossary/buying-committee/                                361     34     2    61   178
+  /glossary/churn-rate/                                      308     31     2    55   193
+  /glossary/composable-cdp/                                  331     30     2    59   215
+  /glossary/conversation-intelligence/                       319     32     2    70   221
+  /glossary/crm-hygiene/                                     324     33     2    56   218
+  /glossary/customer-data-platform/                          293     31     2    65   196
+  /glossary/dark-funnel/                                     349     33     2    56   205
+  /glossary/data-clean-room/                                 311     28     2    60   213
+  /glossary/data-deduplication/                              338     31     2    63   182
+  /glossary/data-enrichment/                                 249     32     2    60   181
+  /glossary/data-governance/                                 318     30     2    60   238
+  /glossary/data-hygiene/                                    256     29     2    57   185
+  /glossary/data-lakehouse/                                  338     32     2    59   221
+  /glossary/data-mesh/                                       293     32     2    54   175
+  /glossary/data-orchestration/                              332     34     2    63   180
+  /glossary/data-validation/                                 253     29     2    60   173
+  /glossary/data-warehouse/                                  302     32     2    59   190
+  /glossary/deal-desk/                                       348     32     2    54   225
+  /glossary/firmographic-data/                               234     31     2    62   187
+  /glossary/gtm-strategy/                                    328     32     2    64   228
+  /glossary/icp/                                             327     32     2    65   196
+  /glossary/intent-data/                                     256     31     2    56   191
+  /glossary/lead-routing/                                    345     31     2    57   185
+  /glossary/lead-scoring/                                    268     31     2    57   169
+  /glossary/mql-sql/                                         380     33     2    64   252
+  /glossary/multi-threading/                                 358     33     2    68   215
+  /glossary/net-revenue-retention/                           307     31     2    64   229
+  /glossary/pipeline-velocity/                               301     32     2    62   248
+  /glossary/product-led-growth/                              339     31     2    69   230
+  /glossary/product-qualified-lead/                          312     31     2    65   220
+  /glossary/revenue-attribution/                             299     32     2    64   203
+  /glossary/reverse-etl/                                     307     31     2    56   206
+  /glossary/revops/                                          264     30     2    64   219
+  /glossary/sales-automation/                                322     32     2    61   209
+  /glossary/sales-cadence/                                   376     32     2    58   217
+  /glossary/sales-enablement/                                300     32     2    61   208
+  /glossary/sales-engagement/                                259     30     2    61   180
+  /glossary/sales-forecasting/                               318     32     2    62   208
+  /glossary/sales-intelligence/                              310     33     2    63   199
+  /glossary/sales-ops-vs-revops/                             321     33     2    64   220
+  /glossary/sales-pipeline/                                  318     33     2    59   193
+  /glossary/sales-signal/                                    307     33     2    57   167
+  /glossary/sales-territory-planning/                        303     31     2    69   218
+  /glossary/sales-velocity/                                  329     32     2    59   233
+  /glossary/signal-based-selling/                            349     34     2    65   222
+  /glossary/technographic-data/                              239     30     2    63   164
+  /glossary/waterfall-enrichment/                            318     32     2    65   203
+  /glossary/zero-party-data/                                 282     31     2    60   221
+  /guides/                                                   239     25     2    32   100
+  /guides/building-a-revops-tech-stack/                     1175     34     2    64   134
+  /guides/evaluating-sales-engagement-platforms/            1899     26     2    61   152
+  /guides/freshsales-vs-zoho-crm-vs-monday-sales-crm/        989     28     2    60   149
+  /guides/freshsales-vs-zoho-crm-vs-pipedrive/              1105     30     2    59   150
+  /guides/how-to-choose-b2b-data-provider/                  1061     31     2    63   140
+  /guides/salesforce-vs-dynamics-365-vs-hubspot/            1090     30     2    61   159
+  /methodology/                                              711     21     2    32   129
+  /pricing/6sense-pricing/                                   633     24     2    63   139
+  /pricing/airbyte-pricing/                                  641     24     2    67   113
+  /pricing/amplemarket-pricing/                              557     24     2    68   133
+  /pricing/apollo-pricing/                                   591     24     2    70   130
+  /pricing/bombora-pricing/                                 1101     24     2    66   162
+  /pricing/boomi-pricing/                                    682     24     2    70   136
+  /pricing/capterra-pricing/                                 703     24     2    67   130
+  /pricing/celigo-pricing/                                   583     24     2    53   130
+  /pricing/clay-pricing/                                     642     24     2    68   130
+  /pricing/cognism-pricing/                                  633     24     2    54   148
+  /pricing/common-room-pricing/                              650     24     2    58   140
+  /pricing/definitive-healthcare-pricing/                    673     24     2    68   132
+  /pricing/demandbase-pricing/                               999     24     2    69   166
+  /pricing/dynamics-365-pricing/                             689     24     2    65   136
+  /pricing/freshsales-pricing/                               800     24     2    57   151
+  /pricing/gong-pricing/                                     851     24     2    51   145
+  /pricing/hubspot-pricing/                                  640     24     2    62   131
+  /pricing/instantly-pricing/                                844     24     2    56   135
+  /pricing/leadfeeder-pricing/                               708     24     2    69   128
+  /pricing/leadiq-pricing/                                   615     24     2    53   141
+  /pricing/lemlist-pricing/                                  820     24     2    54   150
+  /pricing/linkedin-sales-navigator-pricing/                 716     24     2    68   158
+  /pricing/make-pricing/                                     666     24     2    64   129
+  /pricing/marketo-pricing/                                 1007     24     2    66   161
+  /pricing/monday-sales-crm-pricing/                         759     24     2    63   119
+  /pricing/mutiny-pricing/                                   730     24     2    69   139
+  /pricing/n8n-pricing/                                      708     24     2    63   125
+  /pricing/nooks-pricing/                                    678     24     2    52   141
+  /pricing/nutshell-pricing/                                 680     24     2    68   135
+  /pricing/orum-pricing/                                     687     24     2    67   120
+  /pricing/outreach-pricing/                                 579     24     2    55   157
+  /pricing/pipedrive-pricing/                                608     24     2    70   125
+  /pricing/rb2b-pricing/                                     676     24     2    51   133
+  /pricing/rollworks-pricing/                                582     24     2    56   129
+  /pricing/salesforce-pricing/                               624     24     2    66   124
+  /pricing/salesloft-pricing/                                522     24     2    68   147
+  /pricing/sap-sales-cloud-pricing/                          728     24     2    62   126
+  /pricing/seamless-ai-pricing/                              608     24     2    69   120
+  /pricing/terminus-pricing/                                 715     24     2    70   141
+  /pricing/tray-pricing/                                     582     24     2    54   122
+  /pricing/workato-pricing/                                  651     24     2    69   115
+  /pricing/zoho-crm-pricing/                                 747     24     2    64   126
+  /pricing/zoominfo-pricing/                                 593     24     2    55   134
+  /reports/                                                   93     21     2    33   113
+  /reports/most-in-demand-tools/                             696     77     2    53   134
+  /reports/salary-report/                                    747     43     2    52   119
+  /tools/                                                    550     82     2    31   138
+  /tools/6sense/                                             775     37     2    57   119
+  /tools/airbyte/                                           1220     33     2    58   120
+  /tools/amplemarket/                                        955     31     2    62   124
+  /tools/apollo/                                             915     39     2    60   122
+  /tools/bombora/                                            932     34     2    58   120
+  /tools/boomi/                                             1016     32     2    56   118
+  /tools/capterra/                                           924     29     2    59   121
+  /tools/celigo/                                            1241     32     2    57   119
+  /tools/census-data/                                       1031     32     2    57   119
+  /tools/clay/                                               878     39     2    55   117
+  /tools/clearbit/                                          1017     36     2    59   121
+  /tools/cognism/                                            901     38     2    58   120
+  /tools/common-room/                                        928     30     2    62   124
+  /tools/copper/                                             736     31     2    61   123
+  /tools/definitive-healthcare/                             1228     31     2    52   134
+  /tools/demandbase/                                        1032     37     2    61   123
+  /tools/demandtools/                                        756     28     2    62   124
+  /tools/dynamics-365/                                       840     36     2    53   135
+  /tools/fivetran/                                           988     35     2    59   121
+  /tools/freshsales/                                         959     32     2    61   123
+  /tools/g2/                                                1067     33     2    53   115
+  /tools/gong-engage/                                        892     28     2    55   117
+  /tools/hightouch/                                         1013     31     2    60   122
+  /tools/hubspot/                                            965     37     2    62   124
+  /tools/instantly/                                          840     34     2    60   122
+  /tools/leadfeeder/                                         921     31     2    53   135
+  /tools/leadiq/                                            1004     35     2    57   119
+  /tools/lemlist/                                            934     32     2    58   120
+  /tools/linkedin-marketing/                                 999     35     2    59   141
+  /tools/linkedin-sales-navigator/                           911     43     2    55   137
+  /tools/make/                                              1034     32     2    55   117
+  /tools/marketo/                                           1047     36     2    66   128
+  /tools/monday-sales/                                      1001     31     2    67   129
+  /tools/mulesoft/                                           927     33     2    59   121
+  /tools/mutiny/                                             885     30     2    57   119
+  /tools/n8n/                                               1032     32     2    54   116
+  /tools/nooks/                                              946     33     2    56   118
+  /tools/nutshell/                                           997     32     2    59   121
+  /tools/oracle-cx/                                         1261     32     2    66   128
+  /tools/orum/                                              1025     34     2    55   117
+  /tools/outreach-io/                                        978     33     2    59   121
+  /tools/pipedrive/                                          924     34     2    60   122
+  /tools/provyx/                                             685     31     2    57   119
+  /tools/rb2b/                                               888     31     2    55   117
+  /tools/rollworks/                                          949     30     2    60   122
+  /tools/salesforce-marketing-cloud/                        1090     32     2    57   139
+  /tools/salesforce/                                         965     36     2    65   127
+  /tools/salesloft/                                          793     38     2    60   122
+  /tools/sap-sales-cloud/                                   1204     32     2    66   128
+  /tools/seamless-ai/                                        952     35     2    62   124
+  /tools/smartlead/                                          904     30     2    60   122
+  /tools/sugarcrm/                                           987     31     2    59   121
+  /tools/terminus/                                           863     30     2    59   121
+  /tools/tray/                                              1246     32     2    58   120
+  /tools/verum/                                              721     35     2    56   118
+  /tools/warmly/                                             803     31     2    57   119
+  /tools/workato-ipaas/                                     1024     34     2    58   120
+  /tools/zapier/                                             858     39     2    57   119
+  /tools/zoho-crm/                                           862     34     2    59   121
+  /tools/zoominfo/                                           972     42     2    59   121
+
+AGGREGATE STATS
+----------------------------------------
+  Average word count:        900
+  Median word count:         949
+  Min word count:            93
+  Max word count:            2413
+  Average internal links:    32
+  Pages with < 3 links:     0
+  Pages with < 100 words:    1
+
+PAGE TYPE DISTRIBUTION
+----------------------------------------
+  tool                         61 pages
+  glossary                     56 pages
+  comparison                   44 pages
+  pricing                      43 pages
+  best-of                      42 pages
+  alternatives                 40 pages
+  category                     15 pages
+  guide                         7 pages
+  report                        3 pages
+  homepage                      1 pages
+  about                         1 pages
+  methodology                   1 pages
+
+================================================================================
+  End of SEO Audit Report
+================================================================================

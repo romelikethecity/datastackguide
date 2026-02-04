@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import AuthorBio from '../../components/AuthorBio.astro';
 
 import toolsData from '../../../data/tools.json';
 import categoriesData from '../../../data/categories.json';
@@ -111,7 +112,9 @@ const topTitles = details.top_titles || [];
 const topCompanies = details.top_companies || [];
 
 // SEO
-const title = `${content.display_name} Review: Pricing, Features & What the Data Shows`;
+// Keep title under 53 chars (+ " | DataStackGuide" suffix = 70 max)
+const fullTitle = `${content.display_name} Review: Pricing & Features (2026)`;
+const title = fullTitle.length <= 53 ? fullTitle : `${content.display_name} Review (2026)`;
 const metaDescription = `${content.display_name} review: pricing, features, pros/cons, and job demand data from ${totalJobs.toLocaleString()}+ postings. Honest analysis for B2B buyers.`;
 const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
@@ -492,6 +495,8 @@ const productSchema = {
         </a>
       </div>
     </section>
+
+    <AuthorBio />
 
     <!-- Footer Info -->
     <div class="page-footer-info">

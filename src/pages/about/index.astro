@@ -9,12 +9,43 @@ const totalTools = toolsData.tool_count;
 
 const title = 'About DataStackGuide';
 const description = `DataStackGuide helps B2B teams pick the right data tools. We analyze ${totalJobs.toLocaleString()}+ job postings to measure real-world adoption, not vendor hype.`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://datastackguide.com/about/#rome",
+      "name": "Rome Thorndike",
+      "jobTitle": "Founder",
+      "description": "Founder of DataStackGuide. Former Head of Sales at Datajoy (acquired by Databricks). Sold Dynamics and Azure AI/ML at Microsoft, and the full Salesforce stack including Analytics, MuleSoft, and Machine Learning.",
+      "url": "https://datastackguide.com/about/",
+      "worksFor": {
+        "@id": "https://datastackguide.com/#organization"
+      },
+      "knowsAbout": [
+        "B2B Data Tools",
+        "Revenue Operations",
+        "Sales Technology",
+        "Data Analytics",
+        "CRM Platforms",
+        "Data Enrichment",
+        "Machine Learning",
+        "Data Infrastructure"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/romethorndike/"
+      ]
+    }
+  ]
+};
 ---
 
 <BaseLayout
   title={title}
   description={description}
   canonicalPath="about/"
+  schema={schema}
 >
   <div class="container-narrow">
     <Breadcrumbs items={[
@@ -45,7 +76,9 @@ const description = `DataStackGuide helps B2B teams pick the right data tools. W
 
     <section class="content-section">
       <h2>Who's Behind This</h2>
-      <p>DataStackGuide is built by the team behind <a href="https://veruminc.com" target="_blank" rel="noopener">Verum</a> (B2B data services) and <a href="https://getprovyx.com" target="_blank" rel="noopener">Provyx</a> (healthcare provider data). We work with data tools every day, which is how we know the difference between marketing claims and what actually works.</p>
+      <p>DataStackGuide is built by <a href="https://www.linkedin.com/in/romethorndike/" target="_blank" rel="noopener">Rome Thorndike</a>. Rome has spent over a decade working with B2B data and sales technology. He led sales at Datajoy, an analytics infrastructure company acquired by Databricks, where the team built managed analytics pipelines for revenue teams. Before that, he sold Dynamics CRM and Azure AI/ML at Microsoft, and covered the full Salesforce stack, including Analytics, MuleSoft, and Machine Learning.</p>
+      <p>Rome also runs <a href="https://veruminc.com" target="_blank" rel="noopener">Verum</a> (B2B data services) and <a href="https://getprovyx.com" target="_blank" rel="noopener">Provyx</a> (healthcare provider data), and publishes The AI News Digest, reaching 2,000+ subscribers with analysis on AI and data trends.</p>
+      <p>He built DataStackGuide because most "best of" lists are pay-to-play, and review sites are easily gamed. Job posting data is a harder signal to fake. When a company lists a tool in a job description, they've committed budget and integrated the platform. That's the kind of adoption signal worth tracking.</p>
     </section>
 
     <section class="content-section">
