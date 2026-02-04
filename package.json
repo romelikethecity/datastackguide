@@ -1,0 +1,17 @@
+{
+  "name": "datastackguide",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "extract": "python3 scripts/extract_data.py",
+    "full-build": "python3 scripts/extract_data.py && astro build"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^5.17.1"
+  }
+}

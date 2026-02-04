@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DataStackGuide — Final Brand Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0F1117;
+    --surface: #1A1D27;
+    --surface2: #242836;
+    --text: #E8E9ED;
+    --text-muted: #9CA3AF;
+    --border: #2D3244;
+    --teal-50: #F0FDFA;
+    --teal-100: #CCFBF1;
+    --teal-300: #5EEAD4;
+    --teal-400: #2DD4BF;
+    --teal-500: #14B8A6;
+    --teal-600: #0D9488;
+    --teal-700: #0F766E;
+    --teal-800: #115E59;
+    --teal-900: #134E4A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Header */
+  .hero {
+    background: linear-gradient(160deg, var(--teal-900), var(--teal-700), var(--teal-600));
+    padding: 64px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(20,184,166,0.15), transparent 60%);
+  }
+
+  .hero-content { position: relative; z-index: 1; }
+
+  .hero-icon { margin-bottom: 20px; }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+  }
+
+  .hero .sub {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.6);
+    font-weight: 400;
+  }
+
+  .hero .badge {
+    display: inline-block;
+    margin-top: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--teal-300);
+    border: 1px solid rgba(94, 234, 212, 0.3);
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+
+  /* Container */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+
+  /* Section headers */
+  .section-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--teal-500);
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+
+  .section-desc {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin-bottom: 32px;
+    max-width: 640px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 48px 0;
+  }
+
+  /* Logo Lockups */
+  .lockup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .lockup-card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .lockup-preview {
+    padding: 36px 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 100px;
+  }
+
+  .lockup-preview.dark { background: var(--bg); }
+  .lockup-preview.light { background: #FFFFFF; }
+  .lockup-preview.teal { background: linear-gradient(135deg, var(--teal-600), var(--teal-700)); }
+
+  .lockup-footer {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    padding: 10px 18px;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+  }
+
+  .wm {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
+  .wm .t { color: var(--teal-500); }
+  .wm.dark-text { color: var(--bg); }
+  .wm.dark-text .t { color: var(--teal-600); }
+
+  .wm-sub {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 1px;
+  }
+
+  .wm-sub.light-text { color: rgba(255,255,255,0.55); }
+  .wm-sub.dark-sub { color: #6B7280; }
+
+  /* Icon sizes */
+  .icon-row {
+    display: flex;
+    align-items: end;
+    gap: 28px;
+    flex-wrap: wrap;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 36px;
+    margin-bottom: 32px;
+  }
+
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .icon-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.58rem;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  /* Color swatches */
+  .swatch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .swatch {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .swatch-color { height: 56px; }
+
+  .swatch-info {
+    background: var(--surface);
+    padding: 10px 12px;
+  }
+
+  .swatch-name {
+    font-size: 0.72rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .swatch-hex {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.62rem;
+    color: var(--text-muted);
+  }
+
+  .swatch-use {
+    font-size: 0.62rem;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+
+  /* Category colors */
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .cat-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+
+  .cat-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .cat-hex {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    margin-left: auto;
+  }
+
+  /* Typography */
+  .type-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 36px;
+    margin-bottom: 32px;
+  }
+
+  .type-row {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .type-row:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .type-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.58rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--teal-500);
+    margin-bottom: 8px;
+  }
+
+  .type-spec {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
+  /* Favicon context */
+  .context-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .context-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+  }
+
+  .context-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.58rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+  }
+
+  .browser-bar {
+    background: #2A2D3A;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tab {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #3A3D4A;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+  }
+
+  .tab.active {
+    background: var(--surface2);
+    color: var(--text);
+  }
+
+  /* OG preview */
+  .og-preview {
+    max-width: 560px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+
+  .og-image {
+    background: linear-gradient(145deg, var(--teal-900), var(--teal-700), var(--teal-600));
+    padding: 36px;
+    aspect-ratio: 1200/630;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .og-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.75);
+  }
+
+  .og-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+  }
+
+  .og-sub {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .og-link-preview {
+    background: var(--surface);
+    padding: 14px 18px;
+  }
+
+  .og-domain {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-bottom: 3px;
+  }
+
+  .og-link-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .og-link-desc {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  /* File list */
+  .file-list {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+  }
+
+  .file-item:last-child { border-bottom: none; }
+
+  .file-path {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--teal-400);
+  }
+
+  .file-desc {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-icon">
+        <svg width="64" height="64" viewBox="0 0 80 80" fill="none">
+          <rect width="80" height="80" rx="18" fill="rgba(255,255,255,0.12)"/>
+          <rect x="18" y="20" width="44" height="8" rx="3" fill="white"/>
+          <rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/>
+          <rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/>
+        </svg>
+      </div>
+      <h1>DataStackGuide</h1>
+      <div class="sub">Final Brand Guide</div>
+      <div class="badge">Plus Jakarta Sans · Teal · Stacked Layers</div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- SECTION 1: Primary Logo -->
+    <div class="section-num">01 — Logo</div>
+    <h2>Primary Lockups</h2>
+    <p class="section-desc">The logo in every context it'll appear. "Data" is always teal, "StackGuide" matches the background tone. On brand backgrounds, everything goes white.</p>
+
+    <div class="lockup-grid">
+      <div class="lockup-card">
+        <div class="lockup-preview dark">
+          <svg width="44" height="44" viewBox="0 0 80 80" fill="none">
+            <rect width="80" height="80" rx="18" fill="url(#g1)"/>
+            <rect x="18" y="20" width="44" height="8" rx="3" fill="white"/>
+            <rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/>
+            <rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/>
+            <defs><linearGradient id="g1" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs>
+          </svg>
+          <div>
+            <div class="wm"><span class="t">Data</span>StackGuide</div>
+            <div class="wm-sub">Your B2B data tools directory</div>
+          </div>
+        </div>
+        <div class="lockup-footer">Dark background — primary usage</div>
+      </div>
+
+      <div class="lockup-card">
+        <div class="lockup-preview light">
+          <svg width="44" height="44" viewBox="0 0 80 80" fill="none">
+            <rect width="80" height="80" rx="18" fill="url(#g2)"/>
+            <rect x="18" y="20" width="44" height="8" rx="3" fill="white"/>
+            <rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/>
+            <rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/>
+            <defs><linearGradient id="g2" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs>
+          </svg>
+          <div>
+            <div class="wm dark-text"><span class="t">Data</span>StackGuide</div>
+            <div class="wm-sub dark-sub">Your B2B data tools directory</div>
+          </div>
+        </div>
+        <div class="lockup-footer">Light background</div>
+      </div>
+
+      <div class="lockup-card">
+        <div class="lockup-preview teal">
+          <svg width="44" height="44" viewBox="0 0 80 80" fill="none">
+            <rect width="80" height="80" rx="18" fill="rgba(255,255,255,0.12)"/>
+            <rect x="18" y="20" width="44" height="8" rx="3" fill="white"/>
+            <rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/>
+            <rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/>
+          </svg>
+          <div>
+            <div class="wm" style="color: white;">DataStackGuide</div>
+            <div class="wm-sub light-text">Your B2B data tools directory</div>
+          </div>
+        </div>
+        <div class="lockup-footer">Brand background — all white</div>
+      </div>
+
+      <div class="lockup-card">
+        <div class="lockup-preview dark">
+          <svg width="28" height="28" viewBox="0 0 80 80" fill="none">
+            <rect width="80" height="80" rx="18" fill="url(#g3)"/>
+            <rect x="18" y="20" width="44" height="8" rx="3" fill="white"/>
+            <rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/>
+            <rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/>
+            <defs><linearGradient id="g3" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs>
+          </svg>
+          <div class="wm" style="font-size: 1.05rem;"><span class="t">Data</span>StackGuide</div>
+        </div>
+        <div class="lockup-footer">Compact — nav bars, footers</div>
+      </div>
+
+      <div class="lockup-card">
+        <div class="lockup-preview dark" style="flex-direction: column; gap: 10px;">
+          <svg width="52" height="52" viewBox="0 0 80 80" fill="none">
+            <rect width="80" height="80" rx="18" fill="url(#g4)"/>
+            <rect x="18" y="20" width="44" height="8" rx="3" fill="white"/>
+            <rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/>
+            <rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/>
+            <defs><linearGradient id="g4" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs>
+          </svg>
+          <div style="text-align: center;">
+            <div class="wm" style="font-size: 1.2rem;"><span class="t">Data</span>StackGuide</div>
+            <div class="wm-sub">Your B2B data tools directory</div>
+          </div>
+        </div>
+        <div class="lockup-footer">Stacked — social cards, OG images</div>
+      </div>
+
+      <div class="lockup-card">
+        <div class="lockup-preview dark" style="justify-content: center;">
+          <svg width="64" height="64" viewBox="0 0 80 80" fill="none">
+            <rect width="80" height="80" rx="18" fill="url(#g5)"/>
+            <rect x="18" y="20" width="44" height="8" rx="3" fill="white"/>
+            <rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/>
+            <rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/>
+            <defs><linearGradient id="g5" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs>
+          </svg>
+        </div>
+        <div class="lockup-footer">Icon only — app icon, social avatar</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- SECTION 2: Icon Sizes -->
+    <div class="section-num">02 — Icon Sizes</div>
+    <h2>Favicon → App Icon</h2>
+    <p class="section-desc">Every size you'll need. The three-bar geometry stays readable down to 16px.</p>
+
+    <div class="icon-row">
+      <div class="icon-item">
+        <svg width="16" height="16" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="18" fill="url(#s1)"/><rect x="18" y="20" width="44" height="8" rx="3" fill="white"/><rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/><rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/><defs><linearGradient id="s1" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs></svg>
+        <div class="icon-label">16px<br>favicon</div>
+      </div>
+      <div class="icon-item">
+        <svg width="32" height="32" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="18" fill="url(#s2)"/><rect x="18" y="20" width="44" height="8" rx="3" fill="white"/><rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/><rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/><defs><linearGradient id="s2" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs></svg>
+        <div class="icon-label">32px<br>retina tab</div>
+      </div>
+      <div class="icon-item">
+        <svg width="48" height="48" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="18" fill="url(#s3)"/><rect x="18" y="20" width="44" height="8" rx="3" fill="white"/><rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/><rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/><defs><linearGradient id="s3" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs></svg>
+        <div class="icon-label">48px<br>bookmark</div>
+      </div>
+      <div class="icon-item">
+        <svg width="64" height="64" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="18" fill="url(#s4)"/><rect x="18" y="20" width="44" height="8" rx="3" fill="white"/><rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/><rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/><defs><linearGradient id="s4" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs></svg>
+        <div class="icon-label">64px<br>shortcut</div>
+      </div>
+      <div class="icon-item">
+        <svg width="128" height="128" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="18" fill="url(#s5)"/><rect x="18" y="20" width="44" height="8" rx="3" fill="white"/><rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/><rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/><defs><linearGradient id="s5" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs></svg>
+        <div class="icon-label">128px<br>web manifest</div>
+      </div>
+      <div class="icon-item">
+        <svg width="180" height="180" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="18" fill="url(#s6)"/><rect x="18" y="20" width="44" height="8" rx="3" fill="white"/><rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/><rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/><defs><linearGradient id="s6" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs></svg>
+        <div class="icon-label">180px<br>apple touch</div>
+      </div>
+    </div>
+
+    <!-- Favicon in context -->
+    <div class="context-grid">
+      <div class="context-card">
+        <div class="context-label">Browser Tab</div>
+        <div class="browser-bar">
+          <div class="tab active">
+            <svg width="14" height="14" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="18" fill="url(#ct1)"/><rect x="18" y="20" width="44" height="8" rx="3" fill="white"/><rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/><rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/><defs><linearGradient id="ct1" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs></svg>
+            DataStackGuide
+          </div>
+          <div class="tab" style="opacity: 0.5;">
+            <div style="width:14px;height:14px;background:#444;border-radius:3px;"></div>
+            Other tab
+          </div>
+        </div>
+      </div>
+      <div class="context-card">
+        <div class="context-label">Bookmark Bar</div>
+        <div class="browser-bar" style="gap: 14px;">
+          <div style="display:flex;align-items:center;gap:5px;font-size:0.62rem;color:var(--text-muted);">
+            <div style="width:14px;height:14px;background:#4285F4;border-radius:3px;"></div>Gmail
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:0.62rem;color:var(--text-muted);">
+            <div style="width:14px;height:14px;background:#0A66C2;border-radius:3px;"></div>LinkedIn
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:0.62rem;color:var(--teal-400);">
+            <svg width="14" height="14" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="18" fill="url(#ct2)"/><rect x="18" y="20" width="44" height="8" rx="3" fill="white"/><rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/><rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/><defs><linearGradient id="ct2" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#14B8A6"/><stop offset="1" stop-color="#0D9488"/></linearGradient></defs></svg>
+            DSG
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:0.62rem;color:var(--text-muted);">
+            <div style="width:14px;height:14px;background:#FF0000;border-radius:3px;"></div>YouTube
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- SECTION 3: Colors -->
+    <div class="section-num">03 — Color System</div>
+    <h2>Primary Teal + Neutrals</h2>
+    <p class="section-desc">Full palette. Teal for brand and interactive elements, Slate neutrals for everything else.</p>
+
+    <div class="swatch-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#F0FDFA;"></div><div class="swatch-info"><div class="swatch-name">Teal 50</div><div class="swatch-hex">#F0FDFA</div><div class="swatch-use">Subtle bg tint</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#CCFBF1;"></div><div class="swatch-info"><div class="swatch-name">Teal 100</div><div class="swatch-hex">#CCFBF1</div><div class="swatch-use">Badge bg, highlights</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#5EEAD4;"></div><div class="swatch-info"><div class="swatch-name">Teal 300</div><div class="swatch-hex">#5EEAD4</div><div class="swatch-use">Light accents</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#14B8A6;"></div><div class="swatch-info"><div class="swatch-name" style="color:var(--teal-400);">Teal 500 ★</div><div class="swatch-hex">#14B8A6</div><div class="swatch-use">Primary — CTAs, links</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0D9488;"></div><div class="swatch-info"><div class="swatch-name">Teal 600</div><div class="swatch-hex">#0D9488</div><div class="swatch-use">Hover, icon bg</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0F766E;"></div><div class="swatch-info"><div class="swatch-name">Teal 700</div><div class="swatch-hex">#0F766E</div><div class="swatch-use">Gradient endpoints</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#134E4A;"></div><div class="swatch-info"><div class="swatch-name">Teal 900</div><div class="swatch-hex">#134E4A</div><div class="swatch-use">Deep bg, OG images</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#F8FAFC;"></div><div class="swatch-info"><div class="swatch-name">Slate 50</div><div class="swatch-hex">#F8FAFC</div><div class="swatch-use">Light mode page bg</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#E2E8F0;"></div><div class="swatch-info"><div class="swatch-name">Slate 200</div><div class="swatch-hex">#E2E8F0</div><div class="swatch-use">Borders (light)</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#64748B;"></div><div class="swatch-info"><div class="swatch-name">Slate 500</div><div class="swatch-hex">#64748B</div><div class="swatch-use">Muted text</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1E293B;"></div><div class="swatch-info"><div class="swatch-name">Slate 800</div><div class="swatch-hex">#1E293B</div><div class="swatch-use">Dark mode page bg</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0F172A;"></div><div class="swatch-info"><div class="swatch-name">Slate 900</div><div class="swatch-hex">#0F172A</div><div class="swatch-use">Headings (light mode)</div></div></div>
+    </div>
+
+    <h2 style="font-size: 1.1rem;">Category Accent Colors</h2>
+    <p class="section-desc">Each tool category gets a distinct accent. Keeps the directory visually scannable.</p>
+
+    <div class="cat-grid">
+      <div class="cat-chip"><div class="cat-dot" style="background:#14B8A6;"></div>Enrichment<span class="cat-hex">#14B8A6</span></div>
+      <div class="cat-chip"><div class="cat-dot" style="background:#10B981;"></div>Cleaning<span class="cat-hex">#10B981</span></div>
+      <div class="cat-chip"><div class="cat-dot" style="background:#06B6D4;"></div>Validation<span class="cat-hex">#06B6D4</span></div>
+      <div class="cat-chip"><div class="cat-dot" style="background:#8B5CF6;"></div>Intent Data<span class="cat-hex">#8B5CF6</span></div>
+      <div class="cat-chip"><div class="cat-dot" style="background:#F59E0B;"></div>Orchestration<span class="cat-hex">#F59E0B</span></div>
+      <div class="cat-chip"><div class="cat-dot" style="background:#EF4444;"></div>ABM<span class="cat-hex">#EF4444</span></div>
+      <div class="cat-chip"><div class="cat-dot" style="background:#3B82F6;"></div>Healthcare<span class="cat-hex">#3B82F6</span></div>
+      <div class="cat-chip"><div class="cat-dot" style="background:#EC4899;"></div>Technographic<span class="cat-hex">#EC4899</span></div>
+      <div class="cat-chip"><div class="cat-dot" style="background:#F97316;"></div>List Building<span class="cat-hex">#F97316</span></div>
+      <div class="cat-chip"><div class="cat-dot" style="background:#6366F1;"></div>Contact DBs<span class="cat-hex">#6366F1</span></div>
+    </div>
+
+    <hr>
+
+    <!-- SECTION 4: Typography -->
+    <div class="section-num">04 — Typography</div>
+    <h2>Type System</h2>
+    <p class="section-desc">Plus Jakarta Sans for all display and body text. Space Mono for data, tags, and technical metadata.</p>
+
+    <div class="type-card">
+      <div class="type-row">
+        <div class="type-label">H1 — Page Title</div>
+        <div style="font-size: 2.25rem; font-weight: 800; letter-spacing: -0.03em;">Best Data Enrichment Tools in 2026</div>
+        <div class="type-spec">Plus Jakarta Sans 800 · 2.25rem · -0.03em</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">H2 — Section Heading</div>
+        <div style="font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em;">ZoomInfo vs Apollo: Feature Comparison</div>
+        <div class="type-spec">Plus Jakarta Sans 700 · 1.5rem · -0.02em</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">H3 — Card / Category Title</div>
+        <div style="font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em;">Data Enrichment Tools</div>
+        <div class="type-spec">Plus Jakarta Sans 600 · 1.15rem · -0.01em</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Body — Descriptions & Content</div>
+        <div style="font-size: 0.95rem; font-weight: 400; line-height: 1.7; color: var(--text-muted); max-width: 560px;">ZoomInfo provides B2B contact and company intelligence used by sales, marketing, and recruiting teams. Their platform combines a database of 200M+ contacts with intent signals and workflow automation.</div>
+        <div class="type-spec">Plus Jakarta Sans 400 · 0.95rem · 1.7 line-height</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Caption — Metadata & Fine Print</div>
+        <div style="font-size: 0.8rem; font-weight: 500; color: var(--text-muted);">Last updated Jan 2026 · 847 companies hiring · Starting at $14,995/yr</div>
+        <div class="type-spec">Plus Jakarta Sans 500 · 0.8rem</div>
+      </div>
+      <div class="type-row">
+        <div class="type-label">Mono — Tags, Categories, Data</div>
+        <div style="font-family: 'Space Mono', monospace; font-size: 0.82rem; color: var(--teal-400);">enrichment · validation · cleaning · intent · abm · orchestration</div>
+        <div class="type-spec">Space Mono 400 · 0.82rem</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- SECTION 5: OG Template -->
+    <div class="section-num">05 — Social / OG Template</div>
+    <h2>Open Graph Preview</h2>
+    <p class="section-desc">How links look when shared on LinkedIn, Twitter, Slack. Uses the teal gradient background with the brand icon.</p>
+
+    <div class="og-preview">
+      <div class="og-image">
+        <div class="og-brand">
+          <svg width="24" height="24" viewBox="0 0 80 80" fill="none">
+            <rect width="80" height="80" rx="18" fill="rgba(255,255,255,0.12)"/>
+            <rect x="18" y="20" width="44" height="8" rx="3" fill="white"/>
+            <rect x="18" y="36" width="44" height="8" rx="3" fill="white" opacity="0.65"/>
+            <rect x="18" y="52" width="44" height="8" rx="3" fill="white" opacity="0.35"/>
+          </svg>
+          DataStackGuide
+        </div>
+        <div>
+          <div class="og-title">ZoomInfo vs Apollo<br>Which is Better in 2026?</div>
+          <div class="og-sub">Based on 23,000+ job postings · Pricing, features & market share</div>
+        </div>
+      </div>
+      <div class="og-link-preview">
+        <div class="og-domain">datastackguide.com</div>
+        <div class="og-link-title">ZoomInfo vs Apollo — Which is Better in 2026?</div>
+        <div class="og-link-desc">Side-by-side comparison based on 23,000+ job postings.</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- SECTION 6: Files -->
+    <div class="section-num">06 — Deliverables</div>
+    <h2>Asset Files</h2>
+    <p class="section-desc">Everything included in the brand package.</p>
+
+    <div class="file-list">
+      <div class="file-item"><span class="file-path">icons/favicon.ico</span><span class="file-desc">Multi-size ICO (16, 32, 48)</span></div>
+      <div class="file-item"><span class="file-path">icons/favicon-16x16.png</span><span class="file-desc">Browser tab</span></div>
+      <div class="file-item"><span class="file-path">icons/favicon-32x32.png</span><span class="file-desc">Retina browser tab</span></div>
+      <div class="file-item"><span class="file-path">icons/favicon-48x48.png</span><span class="file-desc">Bookmarks</span></div>
+      <div class="file-item"><span class="file-path">icons/icon-64x64.png</span><span class="file-desc">Desktop shortcut</span></div>
+      <div class="file-item"><span class="file-path">icons/icon-128x128.png</span><span class="file-desc">Web manifest</span></div>
+      <div class="file-item"><span class="file-path">icons/apple-touch-icon-180x180.png</span><span class="file-desc">iOS home screen</span></div>
+      <div class="file-item"><span class="file-path">icons/icon-192x192.png</span><span class="file-desc">Android home screen</span></div>
+      <div class="file-item"><span class="file-path">icons/icon-512x512.png</span><span class="file-desc">App store / high-res</span></div>
+      <div class="file-item"><span class="file-path">icons/icon.svg</span><span class="file-desc">Scalable vector icon</span></div>
+      <div class="file-item"><span class="file-path">logos/logo-horizontal-dark-bg.svg</span><span class="file-desc">Full logo for dark backgrounds</span></div>
+      <div class="file-item"><span class="file-path">logos/logo-horizontal-light-bg.svg</span><span class="file-desc">Full logo for light backgrounds</span></div>
+      <div class="file-item"><span class="file-path">logos/logo-horizontal-brand-bg.svg</span><span class="file-desc">Full logo for teal backgrounds</span></div>
+      <div class="file-item"><span class="file-path">logos/logo-stacked-dark-bg.svg</span><span class="file-desc">Stacked logo for social/OG</span></div>
+      <div class="file-item"><span class="file-path">logos/logo-compact-dark-bg.svg</span><span class="file-desc">Compact logo for nav bars</span></div>
+      <div class="file-item"><span class="file-path">css/brand.css</span><span class="file-desc">Full CSS variables + base styles</span></div>
+      <div class="file-item"><span class="file-path">head-snippet.html</span><span class="file-desc">Drop-in favicon &lt;head&gt; code</span></div>
+      <div class="file-item"><span class="file-path">site.webmanifest</span><span class="file-desc">PWA manifest file</span></div>
+      <div class="file-item"><span class="file-path">og-templates/*.png</span><span class="file-desc">Sample OG images (1200×630)</span></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
