@@ -2618,6 +2618,426 @@
           "a": "Yes. The free plan includes 50 verified work emails per week, 5 mobile phone numbers per month, and access to the Chrome extension. It's enough for individual prospectors to evaluate the tool."
         }
       ]
+    },
+    {
+      "slug": "linkedin-sales-navigator-pricing",
+      "tool_slug": "linkedin-sales-navigator",
+      "title": "LinkedIn Sales Navigator Pricing (2026): Plans, Costs, and What's Worth It",
+      "meta_description": "LinkedIn Sales Navigator pricing breakdown: Core, Advanced, and Advanced Plus plans with real costs. What each tier includes and whether it's worth the spend.",
+      "hook": "LinkedIn Sales Navigator is one of the few sales tools where the listed price is close to what you actually pay. No implementation fees, no surprise add-ons. The question is which tier you need.",
+      "tiers": [
+        {
+          "name": "Core",
+          "price": "$99.99/user/mo",
+          "billing": "Annual ($79.99/mo billed annually)",
+          "popular": true,
+          "highlights": [
+            "Advanced lead and company search",
+            "50 InMail messages per month",
+            "Lead and account recommendations",
+            "Custom lists and saved searches",
+            "Real-time sales updates on saved leads"
+          ]
+        },
+        {
+          "name": "Advanced",
+          "price": "$149.99/user/mo",
+          "billing": "Annual ($125/mo billed annually)",
+          "highlights": [
+            "Everything in Core",
+            "TeamLink for warm introductions via teammates",
+            "Buyer intent signals",
+            "Smart Links for tracking shared content",
+            "CSV upload for account lists",
+            "CRM integration (Salesforce, HubSpot, Dynamics)"
+          ]
+        },
+        {
+          "name": "Advanced Plus",
+          "price": "Custom pricing",
+          "billing": "Annual contract required",
+          "highlights": [
+            "Everything in Advanced",
+            "CRM sync (bi-directional, auto-save)",
+            "Advanced enterprise integrations",
+            "Data validation for CRM contacts",
+            "ROI reporting",
+            "Unified billing and admin controls"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Additional InMail credits",
+          "range": "Varies",
+          "note": "Core includes 50 InMails/month. If your team sends more, you'll hit limits. Unused credits roll over for up to 3 months, then expire."
+        },
+        {
+          "item": "Companion data tool",
+          "range": "$49-$500+/user/mo",
+          "note": "Sales Nav doesn't provide emails or phone numbers. Most teams pair it with Apollo, ZoomInfo, or Lusha for contact data. Budget for both."
+        },
+        {
+          "item": "Annual vs monthly billing gap",
+          "range": "20% premium for monthly",
+          "note": "Core monthly: $99.99/mo. Core annual: $79.99/mo. The annual plan saves about $240/user/year, but locks you in."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "10-person SDR team on Advanced plan (annual billing)",
+        "line_items": [
+          {
+            "item": "10 Advanced licenses (annual)",
+            "annual": "$15,000"
+          },
+          {
+            "item": "Apollo Professional (companion data tool)",
+            "annual": "$9,480"
+          },
+          {
+            "item": "LinkedIn Premium (for non-Sales Nav users, 5 seats)",
+            "annual": "$3,600"
+          }
+        ],
+        "total": "$28,080",
+        "per_user_real": "$2,808/user/year (Sales Nav + data tool)"
+      },
+      "bottom_line": "Sales Navigator is the rare sales tool that doesn't nickel-and-dime you with hidden fees. The pricing is transparent and the product delivers what it promises. The catch is that it's not a complete prospecting solution on its own. You'll need a companion tool for email addresses and phone numbers. Budget for Sales Nav + a data provider when planning costs.",
+      "faq": [
+        {
+          "q": "Is LinkedIn Sales Navigator worth the price?",
+          "a": "For B2B sales teams doing outbound prospecting, yes. The search filters, lead recommendations, and InMail access justify the cost if your reps use it daily. If your team prospects fewer than 20 accounts per week, the ROI is harder to justify."
+        },
+        {
+          "q": "What's the difference between Core and Advanced?",
+          "a": "Advanced adds TeamLink (see which prospects your colleagues know), buyer intent signals, Smart Links for content tracking, and CRM integration. The CRM sync alone justifies the upgrade for most teams."
+        },
+        {
+          "q": "Can I get LinkedIn Sales Navigator monthly?",
+          "a": "Yes, but you'll pay about 20% more than annual billing. Core is $99.99/mo monthly vs $79.99/mo annual. Start monthly to test the fit, then switch to annual if it sticks."
+        },
+        {
+          "q": "Does Sales Navigator include contact data like emails?",
+          "a": "No. Sales Navigator provides LinkedIn profile data, job titles, company info, and search filters. It doesn't export email addresses or phone numbers. You'll need a separate tool like Apollo, ZoomInfo, or LeadIQ for direct contact information."
+        }
+      ]
+    },
+    {
+      "slug": "nooks-pricing",
+      "tool_slug": "nooks",
+      "title": "Nooks Pricing (2026): AI Parallel Dialer Costs Explained",
+      "meta_description": "Nooks pricing breakdown: what the AI-powered parallel dialer costs, how billing works, and whether the ROI justifies the spend for SDR teams.",
+      "hook": "Nooks is an AI-powered parallel dialer that lets SDRs call multiple prospects simultaneously and connects them when someone picks up. The tool promises 5-10x more conversations per hour. Pricing isn't public.",
+      "tiers": [
+        {
+          "name": "Starter",
+          "price": "Contact for pricing",
+          "billing": "Annual",
+          "highlights": [
+            "AI parallel dialer",
+            "Virtual salesfloor for team calling",
+            "Call recording and transcription",
+            "Basic analytics dashboard",
+            "CRM integration"
+          ]
+        },
+        {
+          "name": "Growth",
+          "price": "Contact for pricing",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Starter",
+            "AI call summaries and coaching",
+            "Advanced analytics and reporting",
+            "Custom call dispositions",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Contact for pricing",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Growth",
+            "Dedicated customer success manager",
+            "Custom integrations",
+            "Advanced security and compliance",
+            "Volume-based pricing"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Per-minute calling costs",
+          "range": "Varies",
+          "note": "Nooks bundles calling minutes into plans, but high-volume teams may need additional minutes. Clarify the included allocation before signing."
+        },
+        {
+          "item": "Phone number provisioning",
+          "range": "$1-5/number/mo",
+          "note": "Teams running multi-line calling typically need multiple outbound numbers for caller ID rotation. Some plans include numbers; others charge per number."
+        },
+        {
+          "item": "Data provider (not included)",
+          "range": "$49-$500+/user/mo",
+          "note": "Nooks is a dialer, not a data provider. You still need Apollo, ZoomInfo, or similar for phone numbers to dial."
+        },
+        {
+          "item": "Training and ramp time",
+          "range": "1-2 weeks",
+          "note": "Parallel dialing is a different workflow than sequential dialing. Expect a ramp period before reps hit peak efficiency."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "8-person SDR team with estimated pricing",
+        "line_items": [
+          {
+            "item": "8 Nooks Growth licenses (estimated $150-200/user/mo)",
+            "annual": "$14,400-$19,200"
+          },
+          {
+            "item": "Phone number provisioning (8 numbers)",
+            "annual": "$480-$960"
+          },
+          {
+            "item": "Apollo Professional (data for phone numbers)",
+            "annual": "$7,584"
+          }
+        ],
+        "total": "$22,464-$27,744",
+        "per_user_real": "$2,808-$3,468/user/year (Nooks + data)"
+      },
+      "bottom_line": "Nooks doesn't publish pricing, which typically signals enterprise-level costs. Based on market reports, expect $150-250/user/month for most teams. The ROI calculation is straightforward: if Nooks helps each SDR have 3-5x more conversations per day, the tool pays for itself even at premium pricing. The catch is that parallel dialing works best for high-volume, transactional sales motions. Enterprise AEs who make 10 targeted calls a day won't see the same lift.",
+      "faq": [
+        {
+          "q": "How much does Nooks cost per user?",
+          "a": "Nooks doesn't publicly list pricing. Based on market data and user reports, expect $150-250/user/month depending on team size, contract length, and feature tier. Request a custom quote for accurate pricing."
+        },
+        {
+          "q": "Is Nooks worth the investment for SDR teams?",
+          "a": "For teams making 50+ dials per rep per day, the math works. If Nooks triples your connect rate, each SDR generates significantly more pipeline. For teams making fewer calls or selling into markets with low phone answer rates, the ROI is less clear."
+        },
+        {
+          "q": "What do I need besides Nooks?",
+          "a": "You'll need a data provider for phone numbers (Apollo, ZoomInfo, Cognism), a CRM (Salesforce, HubSpot), and optionally a sales engagement platform (Salesloft, Outreach) for email sequences alongside your calling."
+        },
+        {
+          "q": "Does Nooks work with my CRM?",
+          "a": "Nooks integrates with Salesforce and HubSpot natively. Check with their team for other CRM integrations or API-based custom connections."
+        }
+      ]
+    },
+    {
+      "slug": "common-room-pricing",
+      "tool_slug": "common-room",
+      "title": "Common Room Pricing (2026): Community-Led Growth Platform Costs",
+      "meta_description": "Common Room pricing breakdown: plans for community intelligence and signal-based selling. What it costs and whether it fits your GTM motion.",
+      "hook": "Common Room aggregates community, product, and intent signals to help GTM teams identify and engage buyers. Pricing starts free and scales with contacts and integrations.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "Free forever",
+          "highlights": [
+            "Up to 500 contacts",
+            "Community signal tracking",
+            "Basic reporting",
+            "Slack and Discord integration",
+            "Manual enrichment"
+          ]
+        },
+        {
+          "name": "Team",
+          "price": "$500/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Up to 10,000 contacts",
+            "All community integrations",
+            "Auto-enrichment",
+            "Salesforce and HubSpot sync",
+            "Signal-based alerts",
+            "Team collaboration features"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom pricing",
+          "billing": "Annual",
+          "highlights": [
+            "Unlimited contacts",
+            "Advanced signal scoring",
+            "Custom integrations (API)",
+            "SSO and advanced security",
+            "Dedicated success manager",
+            "Custom reporting"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Contact overage",
+          "range": "Varies",
+          "note": "The Team plan caps at 10,000 contacts. If your community or prospect pool is larger, you'll need Enterprise pricing. Ask about overage rates."
+        },
+        {
+          "item": "Enrichment credits",
+          "range": "Included (limited)",
+          "note": "Auto-enrichment is included in Team and above, but deeper enrichment or higher volumes may require additional credits or a companion tool."
+        },
+        {
+          "item": "Integration complexity",
+          "range": "Internal time cost",
+          "note": "Connecting community platforms, CRM, product analytics, and signal sources takes setup time. Budget 1-2 weeks for initial configuration."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Growth-stage SaaS company with 5 GTM team members",
+        "line_items": [
+          {
+            "item": "Common Room Team plan",
+            "annual": "$6,000"
+          },
+          {
+            "item": "CRM (HubSpot Professional)",
+            "annual": "$10,800"
+          },
+          {
+            "item": "Apollo Professional (3 seats for outreach)",
+            "annual": "$2,844"
+          }
+        ],
+        "total": "$19,644",
+        "per_user_real": "$3,929/user/year"
+      },
+      "bottom_line": "Common Room fills a niche that traditional sales tools don't cover: aggregating community and product signals to find warm leads before they hit your pipeline. The free tier is generous enough to test the concept. The Team plan at $500/month is reasonable for companies with active community or open-source programs. If your GTM motion doesn't rely on community signals, you probably don't need this tool.",
+      "faq": [
+        {
+          "q": "What does Common Room actually do?",
+          "a": "Common Room aggregates signals from community platforms (Slack, Discord, GitHub), social media (LinkedIn, Twitter), product usage, and intent data into a single view. It helps GTM teams identify who's engaged with your brand across these channels and route them to sales."
+        },
+        {
+          "q": "Is Common Room worth it for companies without a community?",
+          "a": "Probably not. Common Room's value scales with the number of signal sources you connect. If you don't have active community channels, a developer ecosystem, or open-source projects, you won't generate enough signals to justify the cost."
+        },
+        {
+          "q": "How does Common Room compare to 6sense?",
+          "a": "Different tools for different signals. 6sense focuses on anonymous web intent and ABM orchestration. Common Room focuses on community, social, and product engagement signals. Some companies use both: 6sense for intent-based outbound, Common Room for community-led inbound."
+        },
+        {
+          "q": "Does Common Room replace my CRM?",
+          "a": "No. Common Room integrates with your CRM (Salesforce, HubSpot) and enriches it with community signals. It's a signal layer that sits on top of your existing CRM, not a replacement."
+        }
+      ]
+    },
+    {
+      "slug": "leadfeeder-pricing",
+      "tool_slug": "leadfeeder",
+      "title": "Leadfeeder (Dealfront) Pricing (2026): Website Visitor Identification Costs",
+      "meta_description": "Leadfeeder pricing by Dealfront: plans, costs, and what you get for website visitor identification. Free vs paid tiers compared.",
+      "hook": "Leadfeeder identifies companies visiting your website and turns anonymous traffic into sales leads. After merging with Echobot to form Dealfront, pricing has shifted. Here's what it costs now.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "Free forever",
+          "highlights": [
+            "Shows last 7 days of data only",
+            "Up to 100 identified companies",
+            "Basic company information",
+            "No integrations",
+            "Limited filtering"
+          ]
+        },
+        {
+          "name": "Paid",
+          "price": "From $99/mo",
+          "billing": "Monthly or Annual",
+          "popular": true,
+          "highlights": [
+            "Unlimited data retention",
+            "Unlimited identified companies",
+            "CRM integrations (Salesforce, HubSpot, Pipedrive)",
+            "Custom feeds and filters",
+            "Email and Slack notifications",
+            "Contact data for identified companies"
+          ]
+        },
+        {
+          "name": "Dealfront Platform",
+          "price": "Custom pricing",
+          "billing": "Annual",
+          "highlights": [
+            "Full Dealfront suite (Leadfeeder + Echobot data)",
+            "European B2B company data (GDPR-compliant)",
+            "Target account identification",
+            "Prospecting and data enrichment",
+            "Advanced intent signals",
+            "Multi-user enterprise features"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Pricing scales with website traffic",
+          "range": "$99-$999+/mo",
+          "note": "Leadfeeder's paid plan price increases based on the number of unique companies identified per month. High-traffic sites pay significantly more."
+        },
+        {
+          "item": "Contact data credits",
+          "range": "Included (limited)",
+          "note": "The paid plan includes some contact data, but deeper contact information and higher volumes may require a companion data tool."
+        },
+        {
+          "item": "CRM integration setup",
+          "range": "Internal time cost",
+          "note": "Setting up CRM sync, custom feeds, and notification rules takes 1-3 hours. Ongoing maintenance is minimal."
+        },
+        {
+          "item": "Dealfront upsell",
+          "range": "Varies",
+          "note": "Leadfeeder is now part of Dealfront. Expect sales conversations about upgrading to the full Dealfront platform for prospecting and European data."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market SaaS company with 5,000 monthly website visitors",
+        "line_items": [
+          {
+            "item": "Leadfeeder Paid plan (estimated 200-400 identified companies/mo)",
+            "annual": "$2,388-$3,588"
+          },
+          {
+            "item": "Apollo Professional (3 seats for follow-up outreach)",
+            "annual": "$2,844"
+          },
+          {
+            "item": "CRM (HubSpot Starter)",
+            "annual": "$1,080"
+          }
+        ],
+        "total": "$6,312-$7,512",
+        "per_user_real": "$2,104-$2,504/user/year (3-user team)"
+      },
+      "bottom_line": "Leadfeeder is a straightforward visitor identification tool at a reasonable price point. The free tier is limited but lets you validate the concept. The paid plan starts at $99/month, which is fair for the value if your sales team can actually follow up on the identified companies. The Dealfront merger means you'll get pitched on the full platform, but standalone Leadfeeder still works for basic visitor identification.",
+      "faq": [
+        {
+          "q": "How much does Leadfeeder cost per month?",
+          "a": "The paid plan starts at $99/month and scales based on the number of companies identified on your website. High-traffic sites (1,000+ identified companies/month) will pay more. A free tier exists but only shows the last 7 days of data."
+        },
+        {
+          "q": "Is Leadfeeder now called Dealfront?",
+          "a": "Leadfeeder merged with Echobot in 2023 to form Dealfront. Leadfeeder still exists as a product within the Dealfront platform. You can buy standalone Leadfeeder or the full Dealfront suite."
+        },
+        {
+          "q": "What's the difference between free and paid Leadfeeder?",
+          "a": "Free shows the last 7 days of visitors with basic info and no integrations. Paid gives unlimited data retention, CRM integrations, custom feeds, contact data, and email/Slack notifications. The jump from free to paid is significant."
+        },
+        {
+          "q": "How does Leadfeeder compare to RB2B?",
+          "a": "Both identify website visitors, but at different levels. Leadfeeder identifies companies. RB2B identifies individual visitors (person-level identification). RB2B is newer and more granular but has a smaller track record. Leadfeeder is more established with better CRM integrations."
+        }
+      ]
     }
   ]
 }

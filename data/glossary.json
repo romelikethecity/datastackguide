@@ -480,6 +480,109 @@
         "salesloft"
       ],
       "category_slug": "crm"
+    },
+    {
+      "slug": "icp",
+      "term": "Ideal Customer Profile (ICP)",
+      "short_definition": "A detailed description of the type of company that's the best fit for your product or service.",
+      "full_definition": "An Ideal Customer Profile defines the firmographic, technographic, and behavioral characteristics of companies most likely to buy, get value from, and retain your product. Unlike buyer personas (which describe individuals), ICPs describe organizations. A well-built ICP includes industry, company size, revenue range, tech stack, buying process, pain points, and common use cases. Most B2B companies start with a broad target and narrow their ICP as they collect data on which customers have the highest LTV and lowest churn.",
+      "why_it_matters": "Without a clear ICP, sales teams prospect randomly, marketing targets too broadly, and customer success gets stuck supporting poor-fit customers who churn. Every dollar spent on an account outside your ICP is a dollar wasted. The most efficient B2B companies define their ICP from data (not intuition), then align every GTM motion around it.",
+      "example": "A sales engagement platform defines its ICP: B2B SaaS companies, 50-500 employees, $10M-$100M ARR, headquartered in the US, with at least 10 SDRs, currently using Salesforce. That definition narrows their total addressable market from millions of companies to roughly 3,000, which lets their sales team focus outreach and marketing invest budget efficiently.",
+      "related_terms": [
+        "firmographic-data",
+        "lead-scoring",
+        "abm"
+      ],
+      "related_tools": [
+        "zoominfo",
+        "apollo",
+        "6sense",
+        "clearbit"
+      ],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "mql-sql",
+      "term": "MQL & SQL (Marketing and Sales Qualified Leads)",
+      "short_definition": "Lead qualification stages that define when marketing hands a lead to sales (MQL) and when sales confirms it's worth pursuing (SQL).",
+      "full_definition": "An MQL (Marketing Qualified Lead) is a lead that has engaged with marketing content enough to be considered a potential buyer. Engagement signals include downloading a whitepaper, attending a webinar, visiting the pricing page multiple times, or matching firmographic criteria. An SQL (Sales Qualified Lead) is an MQL that sales has vetted through direct conversation and confirmed has budget, authority, need, and timeline (BANT) for a purchase. The MQL-to-SQL handoff is one of the most critical (and most broken) processes in B2B organizations.",
+      "why_it_matters": "MQL and SQL definitions create the shared language between marketing and sales. When these definitions are vague or misaligned, marketing sends garbage leads to sales, sales ignores them, and both teams blame each other. Clear, data-driven MQL/SQL criteria improve conversion rates and reduce friction between teams. The MQL-to-SQL conversion rate is also one of the best indicators of whether marketing is targeting the right audience.",
+      "example": "A company defines MQL criteria: visited the pricing page twice, works at a company with 50+ employees, and has a VP or C-level title. When a lead meets all three criteria, it's routed to an SDR. The SDR qualifies it via a discovery call: if the prospect has confirmed budget, a timeline, and is the decision-maker, it becomes an SQL and gets a demo on the calendar.",
+      "related_terms": [
+        "lead-scoring",
+        "buyer-journey",
+        "sales-pipeline",
+        "lead-routing"
+      ],
+      "related_tools": [
+        "hubspot",
+        "salesforce",
+        "marketo",
+        "6sense"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "sales-forecasting",
+      "term": "Sales Forecasting",
+      "short_definition": "The process of estimating future sales revenue based on pipeline data, historical performance, and market conditions.",
+      "full_definition": "Sales forecasting predicts how much revenue your sales team will close in a given period (month, quarter, year). Methods range from simple (gut feel, weighted pipeline) to complex (multi-variable regression, AI-driven models). Most B2B companies use weighted pipeline forecasting, which multiplies each deal's value by its probability of closing based on deal stage. More advanced approaches layer in historical win rates by rep, deal size, segment, and time-in-stage to produce more accurate predictions.",
+      "why_it_matters": "Accurate forecasting drives every major business decision: hiring plans, marketing spend, product roadmap priorities, and cash flow management. Companies that consistently miss forecasts either over-hire (burning cash) or under-hire (missing growth). The CFO cares about forecast accuracy more than almost any other sales metric. In public companies, missing quarterly forecasts directly impacts stock price.",
+      "example": "A sales team has $2M in pipeline for Q2. Their weighted forecast: $500K in commit (90% close rate = $450K), $800K in best case (50% = $400K), and $700K in pipeline (20% = $140K). Weighted forecast: $990K. The VP of Sales calls $950K to the board. Actual close: $920K. That's a 3% miss, which is excellent forecast accuracy.",
+      "related_terms": [
+        "sales-pipeline",
+        "revops",
+        "sales-cadence"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "gong-engage",
+        "6sense"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "crm-hygiene",
+      "term": "CRM Hygiene",
+      "short_definition": "The practice of maintaining clean, accurate, and complete data in your CRM through regular audits, deduplication, and data standards.",
+      "full_definition": "CRM hygiene covers everything that keeps your customer database accurate and usable: deduplicating records, standardizing field values, removing stale data, merging duplicate accounts, validating contact information, and enforcing data entry standards. B2B data decays at roughly 30% per year as people change jobs, companies merge, and contact information goes stale. Without active hygiene, your CRM becomes a liability instead of an asset.",
+      "why_it_matters": "Bad CRM data cascades. Reps call wrong numbers. Marketing emails bounce. Lead scoring models produce garbage. Forecasts are built on phantom pipeline. Reporting becomes unreliable. The cost of bad data isn't just wasted time. It's every downstream decision that gets made based on wrong information. Studies estimate that bad data costs companies $12.9 million per year on average (Gartner).",
+      "example": "A RevOps team runs a quarterly CRM hygiene process: merge 2,000 duplicate contacts, remove 500 records with invalid email addresses, standardize job titles across 10,000 records (so 'VP Sales' and 'Vice President of Sales' are the same), and update 800 company records that had stale employee count data. The result: lead scoring accuracy improves 15%, email bounce rate drops from 8% to 2%.",
+      "related_terms": [
+        "data-hygiene",
+        "data-validation",
+        "data-deduplication",
+        "revops"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "demandtools",
+        "zoominfo"
+      ],
+      "category_slug": "cleaning"
+    },
+    {
+      "slug": "multi-threading",
+      "term": "Multi-Threading (Sales)",
+      "short_definition": "The practice of building relationships with multiple stakeholders within a target account, not just a single champion.",
+      "full_definition": "Multi-threading means engaging multiple contacts at different levels and functions within a prospect account. Instead of relying on one champion to shepherd your deal through internal approval, you build relationships with the economic buyer, technical evaluator, end users, and other influencers. The goal is to reduce single-point-of-failure risk: if your one contact leaves the company, changes roles, or loses political capital, a single-threaded deal dies. A multi-threaded deal survives.",
+      "why_it_matters": "Gartner research shows that the average B2B buying group involves 6-10 decision-makers. Deals that are single-threaded (only one contact engaged) close at roughly half the rate of multi-threaded deals. When your champion goes on vacation, takes a new job, or gets overruled by a stakeholder you've never met, the deal stalls. Multi-threading is insurance against these scenarios and it shortens sales cycles because you're addressing objections from multiple angles simultaneously.",
+      "example": "An AE selling a $200K CRM deal multi-threads by engaging: the VP of Sales (economic buyer), the Sales Ops Manager (technical evaluator), two SDR managers (end users), and the CFO (budget approver). When the VP of Sales gets promoted and the new VP wants to re-evaluate, the AE has five other relationships keeping the deal alive. A single-threaded AE would've lost the deal at that moment.",
+      "related_terms": [
+        "sales-pipeline",
+        "abm",
+        "sales-enablement",
+        "buyer-journey"
+      ],
+      "related_tools": [
+        "salesloft",
+        "outreach-io",
+        "linkedin-sales-navigator",
+        "gong-engage"
+      ],
+      "category_slug": "sales-engagement"
     }
   ]
 }

@@ -2756,6 +2756,13 @@ Track what's working:
 - [x] 5 new glossary terms: GTM Strategy, Product-Led Growth, Sales Enablement, Data Warehouse, Sales Pipeline (25 terms total)
 - [x] 1 new guide: Salesforce vs Dynamics 365 vs HubSpot three-way CRM comparison (4 guides total)
 - [x] Site now at 197 pages (up from 178)
+- [x] 3 new comparison pages: Amplemarket vs Apollo, Clearbit vs Apollo, Salesloft vs Apollo (25 comparisons total)
+- [x] 4 new pricing pages: LinkedIn Sales Navigator, Nooks, Common Room, Leadfeeder (26 pricing pages total)
+- [x] 4 new alternatives pages: Seamless.AI Alternatives, LeadIQ Alternatives, Lemlist Alternatives, Clearbit Alternatives (23 alternatives total)
+- [x] 4 new best-of roundups: Best Outbound Sales Tools, Best CRM for Startups, Best Data Integration Tools, Best Sales Analytics Tools (22 roundups total)
+- [x] 5 new glossary terms: ICP, MQL/SQL, Sales Forecasting, CRM Hygiene, Multi-Threading (30 terms total)
+- [x] 1 new guide: Freshsales vs Zoho CRM vs Pipedrive three-way SMB CRM comparison (5 guides total)
+- [x] Site now at 218 pages (up from 197)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker
