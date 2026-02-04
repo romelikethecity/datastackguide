@@ -2690,24 +2690,28 @@ Track what's working:
 - [x] Homepage with category nav
 - [x] 12 category landing pages ([slug].astro dynamic route)
 
-### Week 2: Core Content (In Progress)
+### Week 2: Core Content ✅
 - [x] 15 tool pages (top by job demand) — [slug].astro dynamic route
 - [x] 5 comparison pages (Salesforce vs HubSpot, ZoomInfo vs Apollo, Salesloft vs Outreach, 6sense vs Demandbase, Instantly vs Apollo)
 - [x] 5 alternatives pages (ZoomInfo, Salesforce, 6sense, Salesloft, HubSpot alternatives)
 - [x] Verum tool page
 - [x] Provyx tool page
-- [ ] Methodology page
-- [ ] About page (with disclosure)
+- [x] Methodology page (/methodology/)
+- [x] About page with disclosure (/about/)
 - [x] Enhanced data pipeline: per-tool details (company stages, seniority, functions, top companies, remote split, titles)
 - [x] Editorial content JSON for all 17 tools (descriptions, pricing, pros/cons, FAQs, alternatives)
 
-### Week 3: Reports & Long-tail
-- [ ] Most In-Demand Tools report
-- [ ] Salary Report
-- [ ] 3 "Best of" roundups
-- [ ] 5 pricing pages
-- [ ] 10 glossary terms
-- [ ] 2 guides
+### Week 3: Reports & Long-tail ✅
+- [x] Most In-Demand Tools report (/reports/most-in-demand-tools/)
+- [x] Salary Report (/reports/salary-report/)
+- [x] 3 "Best of" roundups (best-data-enrichment-tools, best-crm-for-small-business, best-sales-intelligence-tools)
+- [x] 5 pricing pages (salesforce-pricing, zoominfo-pricing, hubspot-pricing, apollo-pricing, salesloft-pricing)
+- [x] 10 glossary terms (data-enrichment, intent-data, abm, firmographic-data, technographic-data, lead-scoring, data-hygiene, data-validation, revops, sales-engagement)
+- [x] 2 guides (how-to-choose-b2b-data-provider, building-a-revops-tech-stack)
+- [x] Reports index page (/reports/)
+- [x] Guides index page (/guides/)
+- [x] Glossary index page (/glossary/)
+- [x] Updated Nav and Footer with new sections
 
 ### Week 4: Launch & Amplify
 - [ ] Final QA

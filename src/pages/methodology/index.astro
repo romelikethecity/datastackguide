@@ -1,0 +1,336 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import toolsData from '../../../data/tools.json';
+
+const totalJobs = toolsData.total_jobs_analyzed;
+const totalCompanies = toolsData.total_companies;
+const totalTools = toolsData.tool_count;
+
+const title = 'Our Methodology';
+const description = `How DataStackGuide measures B2B tool adoption. We analyze ${totalJobs.toLocaleString()}+ job postings across ${totalCompanies.toLocaleString()} companies to track real-world demand.`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "DataStackGuide Methodology: How We Measure Tool Adoption",
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": "DataStackGuide"
+  }
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath="methodology/"
+  schema={schema}
+>
+  <div class="container-narrow">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Methodology' }
+    ]} />
+
+    <section class="meth-hero">
+      <h1>How We Get Our Data</h1>
+      <p class="meth-lead">DataStackGuide tracks B2B data tool adoption by analyzing real job postings. Here's how we do it, what it tells you, and where it falls short.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>The Data Pipeline</h2>
+      <p>We continuously collect job postings from major job boards and company career pages. Our pipeline works in four stages:</p>
+
+      <div class="steps-grid">
+        <div class="step card">
+          <span class="step-number mono">01</span>
+          <h3>Collection</h3>
+          <p>We scrape and aggregate job postings daily from multiple sources. Each posting captures the job title, company, location, compensation, description, and metadata.</p>
+        </div>
+        <div class="step card">
+          <span class="step-number mono">02</span>
+          <h3>Tool Detection</h3>
+          <p>We scan each posting's description for mentions of {totalTools} B2B data tools across 12 categories. This uses pattern matching with context awareness to avoid false positives (e.g., "Apollo" the tool vs. "Apollo" the mission).</p>
+        </div>
+        <div class="step card">
+          <span class="step-number mono">03</span>
+          <h3>Enrichment</h3>
+          <p>We normalize company names, classify roles by function and seniority, categorize company stages, extract salary data, and identify remote vs. onsite roles.</p>
+        </div>
+        <div class="step card">
+          <span class="step-number mono">04</span>
+          <h3>Analysis</h3>
+          <p>We aggregate the data into adoption rankings, co-occurrence patterns (which tools are used together), salary ranges, trend lines, and company profiles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Current Dataset</h2>
+      <div class="stats-grid">
+        <div class="stat-card card">
+          <span class="stat-number">{totalJobs.toLocaleString()}+</span>
+          <span class="stat-label">Job Postings Analyzed</span>
+        </div>
+        <div class="stat-card card">
+          <span class="stat-number">{totalCompanies.toLocaleString()}</span>
+          <span class="stat-label">Unique Companies</span>
+        </div>
+        <div class="stat-card card">
+          <span class="stat-number">{totalTools}</span>
+          <span class="stat-label">Tools Tracked</span>
+        </div>
+        <div class="stat-card card">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Categories</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>What This Data Tells You</h2>
+      <p><strong>Adoption signals.</strong> When a company lists a tool in a job posting, it means they've committed budget, integrated the platform, and are hiring someone to use it. That's a stronger signal than a review or a case study.</p>
+      <p><strong>Market size comparisons.</strong> By counting tool mentions across thousands of postings, we can compare relative adoption. Salesforce appearing in 1,694 postings vs. HubSpot in 432 tells you something about market penetration that no survey can.</p>
+      <p><strong>Salary benchmarks.</strong> We extract compensation data from postings that include salary ranges. This tells you what companies pay people who use specific tools, broken down by seniority and function.</p>
+      <p><strong>Technology stacks.</strong> Co-occurrence data shows which tools are mentioned together. If ZoomInfo and Salesforce appear in the same posting 40 times, those platforms are part of the same stack.</p>
+      <p><strong>Company profiles.</strong> We track which companies are hiring for each tool, their stage (startup to enterprise), and geographic distribution.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Limitations & Caveats</h2>
+      <p>We're transparent about what this data doesn't capture:</p>
+      <div class="limitations-list">
+        <div class="limitation">
+          <h3>Large company bias</h3>
+          <p>Bigger companies post more jobs. A 10,000-person company will generate more postings mentioning Salesforce than a 20-person startup, even though both use the tool. Our data skews toward mid-market and enterprise.</p>
+        </div>
+        <div class="limitation">
+          <h3>Not all tools appear in postings</h3>
+          <p>Some tools (especially lightweight SaaS products) rarely show up in job descriptions. A company might use Clay or Warmly without ever mentioning it in a job posting. Our data underrepresents tools that aren't considered "skills."</p>
+        </div>
+        <div class="limitation">
+          <h3>Job postings lag adoption</h3>
+          <p>There's a delay between a company adopting a tool and hiring for it. Fast-growing tools may be underrepresented in our current data but growing in the trend line.</p>
+        </div>
+        <div class="limitation">
+          <h3>Salary data is incomplete</h3>
+          <p>Not all postings include salary ranges. In states without pay transparency laws, salary data is thinner. We only report salary figures when we have a meaningful sample size.</p>
+        </div>
+        <div class="limitation">
+          <h3>Category overlap</h3>
+          <p>Many tools span multiple categories. ZoomInfo is enrichment, validation, intent data, and prospecting all at once. We handle this with multi-category tagging, but some categorization is inherently subjective.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Editorial Standards</h2>
+      <p>Every tool page on DataStackGuide includes a disclosure footer noting our relationship with Verum and Provyx. Here's what guides our content:</p>
+      <ul class="standards-list">
+        <li>We don't accept payment for reviews, rankings, or placements</li>
+        <li>Affiliate links don't influence our recommendations</li>
+        <li>We apply the same editorial standards to our own products (Verum, Provyx) as to competitors</li>
+        <li>Pricing information is verified directly from vendor websites and updated regularly</li>
+        <li>We show our data sample sizes so you can judge the statistical significance</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Data Updates</h2>
+      <p>We run our data pipeline on a regular schedule. Job postings are collected continuously, and the analysis data on this site is refreshed to reflect the latest trends.</p>
+      <p>Every page shows a "Last updated" timestamp so you know how current the data is.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Questions?</h2>
+      <p>If you have questions about our methodology, want to report a data error, or think we're missing a tool, email <strong>hello@datastackguide.com</strong>.</p>
+    </section>
+
+    <section class="content-section related-section">
+      <h2>Related</h2>
+      <div class="related-grid">
+        <a href="/about/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">About</span>
+          <span>About DataStackGuide</span>
+        </a>
+        <a href="/tools/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>All Data Tools</span>
+        </a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .meth-hero {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .meth-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .meth-lead {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 680px;
+  }
+
+  .content-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .content-section p {
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+    max-width: 720px;
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-5);
+  }
+
+  .step {
+    position: relative;
+  }
+
+  .step-number {
+    font-size: var(--text-2xl);
+    font-weight: 800;
+    color: var(--color-primary);
+    opacity: 0.3;
+    display: block;
+    margin-bottom: var(--space-2);
+  }
+
+  .step h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+  }
+
+  .step p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    max-width: none;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .stat-card {
+    text-align: center;
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .stat-number {
+    display: block;
+    font-size: var(--text-2xl);
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .stat-label {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+
+  .limitations-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    margin-top: var(--space-4);
+  }
+
+  .limitation h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+  }
+
+  .limitation p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .standards-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-4) 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .standards-list li {
+    padding-left: var(--space-5);
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .standards-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-primary);
+  }
+
+  .related-section {
+    padding-bottom: var(--space-4);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .related-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .related-link:hover {
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 768px) {
+    .steps-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

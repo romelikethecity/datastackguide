@@ -1,0 +1,318 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import glossaryData from '../../../data/glossary.json';
+import toolsData from '../../../data/tools.json';
+import toolContentData from '../../../data/tool_content.json';
+import categoriesData from '../../../data/categories.json';
+
+export function getStaticPaths() {
+  return glossaryData.terms.map((term: any) => ({
+    params: { slug: term.slug },
+    props: { entry: term }
+  }));
+}
+
+interface Props {
+  entry: any;
+}
+
+const { entry } = Astro.props;
+const totalJobs = toolsData.total_jobs_analyzed;
+
+function getCategoryName(catSlug: string): string {
+  const cat = categoriesData.categories.find((c: any) => c.slug === catSlug);
+  return cat?.name || catSlug;
+}
+
+function getCategoryColor(catSlug: string): string {
+  const cat = categoriesData.categories.find((c: any) => c.slug === catSlug);
+  return cat?.color || '#14B8A6';
+}
+
+// Build related tools list
+const relatedTools = (entry.related_tools || [])
+  .map((slug: string) => {
+    const tool = toolsData.tools.find((t: any) => t.slug === slug);
+    const content = (toolContentData as any)[slug];
+    return tool ? {
+      slug,
+      name: content?.display_name || tool.name,
+      hasPage: !!content,
+      job_count: tool.job_count
+    } : null;
+  })
+  .filter(Boolean);
+
+// Build related terms list
+const relatedTerms = (entry.related_terms || [])
+  .map((slug: string) => {
+    const term = glossaryData.terms.find((t: any) => t.slug === slug);
+    return term ? { slug: term.slug, term: term.term } : null;
+  })
+  .filter(Boolean);
+
+const catName = getCategoryName(entry.category_slug);
+const catColor = getCategoryColor(entry.category_slug);
+
+const title = `What is ${entry.term}? Definition & Guide`;
+const description = `${entry.term} definition: ${entry.short_definition} Learn what it means, why it matters, and which tools to use.`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": entry.term,
+  "description": entry.short_definition
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={`glossary/${entry.slug}/`}
+  schema={schema}
+>
+  <div class="container-narrow">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Glossary', href: '/glossary/' },
+      { label: entry.term }
+    ]} />
+
+    <section class="glossary-hero">
+      <a href={`/categories/${entry.category_slug}/`} class="cat-badge" style={`background: ${catColor}15; color: ${catColor};`}>
+        {catName}
+      </a>
+      <h1>What is {entry.term}?</h1>
+      <p class="glossary-tldr">{entry.short_definition}</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Definition</h2>
+      <p>{entry.full_definition}</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Why It Matters</h2>
+      <p>{entry.why_it_matters}</p>
+    </section>
+
+    {entry.example && (
+      <section class="content-section">
+        <h2>Example</h2>
+        <div class="example-box">
+          <p>{entry.example}</p>
+        </div>
+      </section>
+    )}
+
+    <!-- Related Tools -->
+    {relatedTools.length > 0 && (
+      <section class="content-section">
+        <h2>Tools for {entry.term}</h2>
+        <div class="related-tools-grid">
+          {relatedTools.map((tool: any) => (
+            <div class="related-tool-card card">
+              {tool.hasPage ? (
+                <a href={`/tools/${tool.slug}/`} class="tool-link">
+                  <span class="tool-name">{tool.name}</span>
+                  {tool.job_count > 0 && (
+                    <span class="tool-jobs mono text-sm text-muted">{tool.job_count} job mentions</span>
+                  )}
+                </a>
+              ) : (
+                <div class="tool-link">
+                  <span class="tool-name">{tool.name}</span>
+                  {tool.job_count > 0 && (
+                    <span class="tool-jobs mono text-sm text-muted">{tool.job_count} job mentions</span>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Related Terms -->
+    {relatedTerms.length > 0 && (
+      <section class="content-section">
+        <h2>Related Terms</h2>
+        <div class="related-terms-list">
+          {relatedTerms.map((rt: any) => (
+            <a href={`/glossary/${rt.slug}/`} class="related-term-link">{rt.term}</a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Related Links -->
+    <section class="content-section related-section">
+      <h2>Related</h2>
+      <div class="related-grid">
+        <a href={`/categories/${entry.category_slug}/`} class="related-link card">
+          <span class="related-link-label text-sm text-muted">Category</span>
+          <span>{catName} Tools</span>
+        </a>
+        <a href="/glossary/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>All Glossary Terms</span>
+        </a>
+        <a href="/tools/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>All Data Tools</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="page-footer-info">
+      <div class="disclosure">
+        <p>DataStackGuide is independently operated. Our data comes from analyzing {totalJobs.toLocaleString()}+ real job postings. <a href="/about/">Learn more about us.</a></p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .glossary-hero {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .cat-badge {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    margin-bottom: var(--space-4);
+  }
+
+  .glossary-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .glossary-tldr {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 680px;
+    font-weight: 500;
+  }
+
+  .content-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .content-section p {
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+    max-width: 720px;
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .example-box {
+    background: var(--color-primary-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-5) var(--space-6);
+    border-left: 4px solid var(--color-primary);
+  }
+
+  .example-box p {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    max-width: none;
+  }
+
+  .related-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-3);
+  }
+
+  .related-tool-card {
+    padding: var(--space-4);
+  }
+
+  .tool-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  a.tool-link:hover .tool-name {
+    color: var(--color-primary);
+  }
+
+  .tool-name {
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  .related-terms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .related-term-link {
+    display: inline-block;
+    padding: var(--space-2) var(--space-4);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: var(--text-sm);
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .related-term-link:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  .related-section {
+    padding-bottom: var(--space-4);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .related-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .related-link:hover {
+    color: var(--color-primary);
+  }
+
+  .page-footer-info {
+    padding: var(--space-6) 0 var(--space-16);
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .page-footer-info .disclosure {
+    margin-top: var(--space-4);
+  }
+</style>

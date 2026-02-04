@@ -1,0 +1,241 @@
+{
+  "roundups": [
+    {
+      "slug": "best-data-enrichment-tools",
+      "title": "7 Best Data Enrichment Tools (2026)",
+      "meta_description": "The best B2B data enrichment tools compared. Real pricing, job demand data, and honest reviews to help you pick the right platform.",
+      "category_slug": "enrichment",
+      "intro": "Data enrichment tools fill in the gaps in your CRM records, appending firmographic, technographic, and contact data to your existing leads. The space is crowded. Every vendor claims 95%+ accuracy. Very few deliver that consistently.",
+      "intro_2": "We ranked these tools using a mix of job posting demand data, real-world pricing, and hands-on evaluation. No vendor paid to be on this list.",
+      "picks": [
+        {
+          "slug": "zoominfo",
+          "name": "ZoomInfo",
+          "award": "Best Overall",
+          "price": "$15K+/year",
+          "summary": "The largest B2B contact database with the most aggressive enrichment capabilities. ZoomInfo is the market leader for a reason: their data coverage is broad, their intent data layer is maturing, and they appear in more job postings than any other enrichment tool.",
+          "best_for": "Mid-market to enterprise companies with $15K+ annual budget for data tools",
+          "caveat": "Expensive, with annual contracts and aggressive upselling. Data accuracy varies by segment."
+        },
+        {
+          "slug": "apollo",
+          "name": "Apollo.io",
+          "award": "Best Value",
+          "price": "$49/user/mo",
+          "summary": "Apollo combines a contact database with email sequencing and a dialer, making it an all-in-one prospecting platform. The free tier is generous enough to evaluate properly, and paid plans are a fraction of ZoomInfo's cost.",
+          "best_for": "Startups and SMBs that want enrichment + outreach in one tool",
+          "caveat": "Data depth is thinner than ZoomInfo, especially for enterprise accounts."
+        },
+        {
+          "slug": "clearbit",
+          "name": "Clearbit",
+          "award": "Best for Real-Time Enrichment",
+          "price": "Contact for pricing",
+          "summary": "Clearbit (now part of HubSpot) specializes in real-time enrichment via APIs. It's popular with product-led growth companies that want to enrich form fills and identify website visitors on the fly.",
+          "best_for": "PLG companies that need API-first enrichment integrated into their product",
+          "caveat": "Acquired by HubSpot in 2023. Future pricing and standalone availability is uncertain."
+        },
+        {
+          "slug": "clay",
+          "name": "Clay",
+          "award": "Best for Workflow Automation",
+          "price": "$149/mo",
+          "summary": "Clay isn't a traditional enrichment tool. It's a spreadsheet-style workspace that lets you pull data from 75+ providers, chain enrichment steps together, and build custom prospecting workflows. Think of it as the middleware layer for data enrichment.",
+          "best_for": "Revenue ops teams building complex, multi-source enrichment workflows",
+          "caveat": "Steeper learning curve than point-and-click tools. You're paying for Clay plus your enrichment data credits."
+        },
+        {
+          "slug": "linkedin-sales-navigator",
+          "name": "LinkedIn Sales Navigator",
+          "award": "Best for Contact Discovery",
+          "price": "$99/user/mo",
+          "summary": "Sales Navigator gives you access to LinkedIn's 900M+ member database with advanced search filters. It's not a traditional enrichment tool, but it's the most reliable source for finding and verifying B2B contacts.",
+          "best_for": "Sales teams that rely on LinkedIn for prospecting and relationship building",
+          "caveat": "Data stays inside LinkedIn's ecosystem. Exporting is limited and technically against ToS."
+        },
+        {
+          "slug": "lusha",
+          "name": "Lusha",
+          "award": "Best for Quick Lookups",
+          "price": "$29/user/mo",
+          "summary": "Lusha is a lightweight enrichment tool focused on direct phone numbers and email addresses. The Chrome extension makes it easy to enrich contacts from LinkedIn profiles or company websites.",
+          "best_for": "Individual SDRs and small sales teams that need quick contact data",
+          "caveat": "Database is smaller than ZoomInfo or Apollo. Limited firmographic enrichment."
+        },
+        {
+          "slug": "cognism",
+          "name": "Cognism",
+          "award": "Best for European Data",
+          "price": "Contact for pricing",
+          "summary": "Cognism has built a strong reputation for GDPR-compliant European B2B data. Their phone-verified mobile numbers are a differentiator in markets where direct dial data is harder to source.",
+          "best_for": "Companies selling into European markets that need GDPR-compliant data",
+          "caveat": "Weaker coverage in North America compared to ZoomInfo or Apollo."
+        }
+      ],
+      "methodology": "We evaluated enrichment tools based on four factors: job posting demand (how many companies are hiring people to use this tool), data coverage breadth, pricing transparency, and real-world user feedback. Our job data comes from analyzing 23,000+ postings across 9,000+ companies.",
+      "faq": [
+        {
+          "q": "What is data enrichment?",
+          "a": "Data enrichment is the process of appending additional information to existing records in your CRM or database. This includes firmographic data (company size, revenue, industry), contact data (email, phone, title), and technographic data (what software a company uses)."
+        },
+        {
+          "q": "How accurate are data enrichment tools?",
+          "a": "Most vendors claim 90-95% accuracy, but real-world performance varies significantly by data type and market segment. Email accuracy tends to be higher (85-95%) than phone number accuracy (60-80%). Enterprise contact data is generally more accurate than SMB data."
+        },
+        {
+          "q": "How much do data enrichment tools cost?",
+          "a": "Prices range from free tiers (Apollo, Lusha) to $15K+/year (ZoomInfo). Most mid-market tools cost $100-500/user/month. The real cost often includes data credits on top of the platform fee."
+        }
+      ]
+    },
+    {
+      "slug": "best-crm-for-small-business",
+      "title": "5 Best CRMs for Small Business (2026)",
+      "meta_description": "The best CRM platforms for small businesses compared. Real pricing, features, and honest recommendations based on job market data.",
+      "category_slug": "crm",
+      "intro": "Most CRM comparison articles are written by the CRM companies themselves (or affiliates pushing the highest commission). We're going to skip the marketing and tell you which CRMs small businesses are actually using, based on job posting data and real pricing.",
+      "intro_2": "For small business, the right CRM is the one your team will actually use. A free CRM that gets adopted beats a $165/user/month platform that sits empty.",
+      "picks": [
+        {
+          "slug": "hubspot",
+          "name": "HubSpot CRM",
+          "award": "Best Overall for Small Business",
+          "price": "Free - $100/user/mo",
+          "summary": "HubSpot's free CRM is the best entry point for small businesses. You get contact management, deal tracking, email templates, and basic reporting without paying anything. The UX is clean enough that non-technical teams can set it up without a consultant.",
+          "best_for": "Teams of 1-25 that want a CRM they can start using today without training",
+          "caveat": "Costs escalate quickly once you move to Pro tier. Marketing Hub contact-based pricing can spike."
+        },
+        {
+          "slug": "zoho-crm",
+          "name": "Zoho CRM",
+          "award": "Best on Budget",
+          "price": "$14-$52/user/mo",
+          "summary": "Zoho packs a lot of features into a low price point. The standard tier at $14/user/month includes workflow automation, custom modules, and reporting. The broader Zoho One suite ($45/user/month for 45+ apps) is hard to beat on value.",
+          "best_for": "Budget-conscious teams that want full CRM functionality without the enterprise price tag",
+          "caveat": "UX feels dated compared to HubSpot. The sheer number of Zoho products can be overwhelming."
+        },
+        {
+          "slug": "copper",
+          "name": "Copper",
+          "award": "Best for Google Workspace Teams",
+          "price": "$23-$134/user/mo",
+          "summary": "Copper lives inside Gmail and Google Calendar. If your team already runs on Google Workspace, Copper eliminates the context-switching that kills CRM adoption. Contacts, deals, and activities sync automatically from your inbox.",
+          "best_for": "Google Workspace-centric teams that want CRM embedded in their existing workflow",
+          "caveat": "Limited outside the Google ecosystem. Reporting and customization are basic compared to larger CRMs."
+        },
+        {
+          "slug": "pipedrive",
+          "name": "Pipedrive",
+          "award": "Best Pipeline Management",
+          "price": "$15-$99/user/mo",
+          "summary": "Pipedrive is built around the visual sales pipeline. Drag-and-drop deal management, activity-based selling prompts, and clean reporting make it a strong choice for sales-first teams. It does one thing well: helping you close deals.",
+          "best_for": "Sales teams of 5-50 that want a pipeline-focused CRM without complexity",
+          "caveat": "Limited marketing and customer service features. You'll need other tools for those functions."
+        },
+        {
+          "slug": "salesforce",
+          "name": "Salesforce Starter",
+          "award": "Best for Growth Path",
+          "price": "$25/user/mo",
+          "summary": "Salesforce's Starter Suite is a stripped-down version of the enterprise platform at $25/user/month. The advantage is growth path: if your business scales, you can upgrade to Professional or Enterprise without migrating to a new platform.",
+          "best_for": "Small businesses that expect to scale to 50+ employees and want to avoid a future CRM migration",
+          "caveat": "Even the starter tier can feel over-engineered for a 5-person team. The full Salesforce ecosystem adds complexity."
+        }
+      ],
+      "methodology": "We evaluated CRMs based on four criteria: pricing accessibility for teams under 25 people, ease of setup without consultants, feature completeness for core sales workflows, and job market demand (indicating real-world adoption).",
+      "faq": [
+        {
+          "q": "Do I really need a CRM for my small business?",
+          "a": "If you have more than 50 contacts and more than one person interacting with customers, yes. A CRM isn't about the software. It's about not losing track of deals, follow-ups, and customer history as your team grows."
+        },
+        {
+          "q": "What's the best free CRM?",
+          "a": "HubSpot's free tier is the most capable free CRM available. It includes contact management, deal tracking, email templates, and basic reporting for unlimited users. The main limitation is you'll hit feature walls (automation, custom reporting) that push you toward paid plans."
+        },
+        {
+          "q": "When should I upgrade from a free CRM to a paid one?",
+          "a": "When you need workflow automation (auto-assign leads, trigger emails), custom reporting beyond basic dashboards, or team management features like territories and quotas. For most small businesses, that's around the 10-15 user mark."
+        }
+      ]
+    },
+    {
+      "slug": "best-sales-intelligence-tools",
+      "title": "6 Best Sales Intelligence Tools (2026)",
+      "meta_description": "The best sales intelligence platforms compared. Job demand data, real pricing, and honest reviews for B2B sales teams.",
+      "category_slug": "list-building",
+      "intro": "Sales intelligence tools help you find prospects, understand their buying signals, and time your outreach. The category has exploded in the last few years, with dozens of tools competing for the same budget line.",
+      "intro_2": "We looked at which tools companies are actually investing in (based on hiring data) and combined that with pricing and feature analysis to build this list.",
+      "picks": [
+        {
+          "slug": "linkedin-sales-navigator",
+          "name": "LinkedIn Sales Navigator",
+          "award": "Best for Relationship Selling",
+          "price": "$99/user/mo",
+          "summary": "Sales Navigator is the gold standard for B2B prospect research. Access to LinkedIn's 900M+ members, advanced search filters, lead recommendations, and InMail credits make it indispensable for enterprise sales teams. It appears in 61 job postings in our database.",
+          "best_for": "Enterprise and mid-market sales teams that sell through relationships",
+          "caveat": "Expensive for large teams. Data export is limited by design."
+        },
+        {
+          "slug": "zoominfo",
+          "name": "ZoomInfo",
+          "award": "Best Contact Database",
+          "price": "$15K+/year",
+          "summary": "ZoomInfo combines the largest B2B contact database with intent data, company insights, and workflow automation. It's the most comprehensive sales intelligence platform available, which is reflected in its pricing.",
+          "best_for": "Mid-market and enterprise teams with budget for a premium data platform",
+          "caveat": "Annual contracts starting at $15K+. Data accuracy varies by market segment."
+        },
+        {
+          "slug": "gong",
+          "name": "Gong",
+          "award": "Best for Conversation Intelligence",
+          "price": "Contact for pricing",
+          "summary": "Gong records and analyzes sales calls to surface deal insights, coaching opportunities, and competitive intelligence. It's moved beyond call recording into a full deal intelligence platform. Gong shows up in 60 job postings, making it one of the most in-demand tools in the space.",
+          "best_for": "Sales teams that want data-driven coaching and deal forecasting",
+          "caveat": "Expensive and requires buy-in from the entire sales org to be effective."
+        },
+        {
+          "slug": "6sense",
+          "name": "6sense",
+          "award": "Best for Intent Data",
+          "price": "Contact for pricing",
+          "summary": "6sense uses AI and intent data to identify accounts that are actively researching solutions like yours. It's an ABM-first platform that helps you prioritize accounts based on buying signals rather than gut feel.",
+          "best_for": "Enterprise teams running ABM programs that need to prioritize accounts by buying intent",
+          "caveat": "Complex implementation. Requires clean CRM data and alignment between sales and marketing."
+        },
+        {
+          "slug": "apollo",
+          "name": "Apollo.io",
+          "award": "Best for Outbound Prospecting",
+          "price": "$49/user/mo",
+          "summary": "Apollo combines a contact database, email sequencing, phone dialer, and lead scoring into one platform. The free tier includes 250 emails/day, making it accessible for early-stage companies building their outbound engine.",
+          "best_for": "Startups and SMBs building outbound sales from scratch",
+          "caveat": "Data quality is good but not ZoomInfo-level for enterprise accounts."
+        },
+        {
+          "slug": "salesloft",
+          "name": "Salesloft",
+          "award": "Best for Sales Engagement",
+          "price": "Contact for pricing",
+          "summary": "Salesloft is a sales engagement platform (cadences, email, dialer, analytics) that sits between your CRM and your reps. It appears in 43 job postings, showing strong adoption in the enterprise segment. Recently acquired by Vista Equity.",
+          "best_for": "Enterprise sales teams that need structured outbound cadences and coaching",
+          "caveat": "Enterprise pricing with annual contracts. Overlaps with CRM features."
+        }
+      ],
+      "methodology": "We evaluated sales intelligence tools based on job posting demand, feature coverage, pricing transparency, and category fit. Tools are ranked by overall value for B2B sales teams, not purely by adoption numbers.",
+      "faq": [
+        {
+          "q": "What is sales intelligence?",
+          "a": "Sales intelligence tools provide data, insights, and signals that help salespeople find prospects, prioritize accounts, and personalize outreach. This includes contact databases, intent data, conversation analytics, and engagement platforms."
+        },
+        {
+          "q": "What's the difference between sales intelligence and sales engagement?",
+          "a": "Sales intelligence is about data (who to contact, when to reach out, what they care about). Sales engagement is about execution (email sequences, call cadences, task management). Tools like ZoomInfo focus on intelligence; tools like Salesloft focus on engagement. Apollo and LinkedIn Sales Navigator blend both."
+        },
+        {
+          "q": "How much should I budget for sales intelligence tools?",
+          "a": "For a team of 10 reps, expect to spend $500-3,000/month on sales intelligence. Apollo and LinkedIn Sales Navigator are at the lower end ($50-100/user/month). ZoomInfo and 6sense are at the higher end ($15K-50K+/year)."
+        }
+      ]
+    }
+  ]
+}

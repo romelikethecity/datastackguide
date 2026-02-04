@@ -1,0 +1,477 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import toolsData from '../../../data/tools.json';
+import toolContentData from '../../../data/tool_content.json';
+
+const totalJobs = toolsData.total_jobs_analyzed;
+const totalCompanies = toolsData.total_companies;
+
+// Tools with salary data, sorted by midpoint
+const toolsWithSalary = toolsData.tools
+  .filter((t: any) => t.salary_min && t.salary_max && t.job_count >= 5)
+  .map((t: any) => ({
+    ...t,
+    midpoint: Math.round((t.salary_min + t.salary_max) / 2),
+    display_name: (toolContentData as any)[t.slug]?.display_name || t.name,
+    hasPage: !!(toolContentData as any)[t.slug]
+  }))
+  .sort((a: any, b: any) => b.midpoint - a.midpoint);
+
+// Salary by function data (hardcoded from DB query)
+const salaryByFunction = [
+  { function: 'Product', jobs: 181, avg_min: 165400, avg_max: 238805 },
+  { function: 'Engineering', jobs: 449, avg_min: 161467, avg_max: 233130 },
+  { function: 'Data', jobs: 310, avg_min: 148948, avg_max: 216982 },
+  { function: 'Legal', jobs: 192, avg_min: 147175, avg_max: 214111 },
+  { function: 'Finance', jobs: 583, avg_min: 149289, avg_max: 200328 },
+  { function: 'Marketing', jobs: 331, avg_min: 144801, avg_max: 195494 },
+  { function: 'Operations', jobs: 641, avg_min: 130462, avg_max: 175570 },
+  { function: 'People/HR', jobs: 481, avg_min: 114769, avg_max: 152246 },
+  { function: 'Sales', jobs: 4082, avg_min: 96833, avg_max: 144441 },
+];
+
+// Salary by seniority data (hardcoded from DB query)
+const salaryBySeniority = [
+  { level: 'EVP', jobs: 24, avg_min: 225229, avg_max: 291003 },
+  { level: 'SVP', jobs: 201, avg_min: 193444, avg_max: 275848 },
+  { level: 'Head of', jobs: 126, avg_min: 192012, avg_max: 261213 },
+  { level: 'VP', jobs: 1607, avg_min: 165961, avg_max: 233098 },
+  { level: 'C-Level', jobs: 455, avg_min: 161789, avg_max: 214949 },
+  { level: 'Senior', jobs: 4782, avg_min: 136887, avg_max: 208719 },
+  { level: 'Director', jobs: 1756, avg_min: 141146, avg_max: 192783 },
+  { level: 'Manager', jobs: 48, avg_min: 131886, avg_max: 184524 },
+  { level: 'Entry', jobs: 748, avg_min: 90311, avg_max: 129618 },
+  { level: 'Mid-Level', jobs: 1360, avg_min: 87995, avg_max: 124470 },
+];
+
+// Top metros
+const topMetros = [
+  { metro: 'San Francisco', jobs: 493, avg_min: 151370, avg_max: 219186 },
+  { metro: 'New York', jobs: 1418, avg_min: 140172, avg_max: 196830 },
+  { metro: 'Seattle', jobs: 288, avg_min: 140102, avg_max: 206067 },
+  { metro: 'Boston', jobs: 340, avg_min: 144252, avg_max: 202066 },
+  { metro: 'Washington DC', jobs: 282, avg_min: 145471, avg_max: 197227 },
+  { metro: 'Denver', jobs: 126, avg_min: 141344, avg_max: 194924 },
+  { metro: 'Chicago', jobs: 283, avg_min: 137386, avg_max: 195378 },
+  { metro: 'Los Angeles', jobs: 1786, avg_min: 117713, avg_max: 165712 },
+  { metro: 'Austin', jobs: 364, avg_min: 108291, avg_max: 158638 },
+  { metro: 'Miami', jobs: 100, avg_min: 125602, avg_max: 174091 },
+];
+
+const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const title = 'B2B Data Tools Salary Report (2026)';
+const description = `Salary data for B2B data tool roles. Compensation by tool, function, seniority, and location from ${totalJobs.toLocaleString()}+ job postings.`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": { "@type": "Organization", "name": "DataStackGuide" }
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath="reports/salary-report/"
+  schema={schema}
+>
+  <div class="container-narrow">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Reports' },
+      { label: 'Salary Report' }
+    ]} />
+
+    <section class="report-hero">
+      <span class="report-badge mono">REPORT</span>
+      <h1>B2B Data Tools Salary Report</h1>
+      <p class="report-lead">What do companies pay people who work with B2B data tools? We pulled salary data from {totalJobs.toLocaleString()}+ job postings to find out.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>The Quick Numbers</h2>
+      <div class="findings-grid">
+        <div class="finding card">
+          <span class="finding-number">$134K</span>
+          <span class="finding-label">Median midpoint salary across all roles</span>
+        </div>
+        <div class="finding card">
+          <span class="finding-number">$88K-$209K</span>
+          <span class="finding-label">Entry to Senior salary range</span>
+        </div>
+        <div class="finding card">
+          <span class="finding-number">32%</span>
+          <span class="finding-label">Roles offering remote work</span>
+        </div>
+        <div class="finding card">
+          <span class="finding-number">SF Bay Area</span>
+          <span class="finding-label">Highest-paying metro ($219K avg max)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Salary by Tool</h2>
+      <p>Average salary ranges for roles that mention specific B2B data tools. Tools with fewer than 5 salary-reporting postings are excluded.</p>
+
+      <div class="table-wrap">
+        <table class="salary-table">
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Salary Range</th>
+              <th>Midpoint</th>
+              <th>Sample</th>
+            </tr>
+          </thead>
+          <tbody>
+            {toolsWithSalary.slice(0, 20).map((tool: any) => (
+              <tr>
+                <td class="tool-name-col">
+                  {tool.hasPage ? (
+                    <a href={`/tools/${tool.slug}/`}>{tool.display_name}</a>
+                  ) : (
+                    <span>{tool.display_name}</span>
+                  )}
+                </td>
+                <td class="mono">${Math.round(tool.salary_min / 1000)}K - ${Math.round(tool.salary_max / 1000)}K</td>
+                <td class="mono">${Math.round(tool.midpoint / 1000)}K</td>
+                <td class="mono text-muted">{tool.job_count} jobs</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note text-sm text-muted">Salary data from postings that include compensation ranges. Not all postings disclose salary.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Salary by Function</h2>
+      <p>How compensation varies by department. Sales roles have the highest volume but lower base salaries (often supplemented by commission).</p>
+
+      <div class="bar-chart-section">
+        {salaryByFunction.map((fn: any) => {
+          const maxSalary = 240000;
+          const minPct = Math.round((fn.avg_min / maxSalary) * 100);
+          const rangePct = Math.round(((fn.avg_max - fn.avg_min) / maxSalary) * 100);
+          return (
+            <div class="salary-bar-row">
+              <span class="salary-bar-label">{fn.function}</span>
+              <div class="salary-bar-track">
+                <div class="salary-bar-range" style={`left: ${minPct}%; width: ${rangePct}%;`}>
+                  <span class="salary-bar-tooltip mono">${Math.round(fn.avg_min / 1000)}K-${Math.round(fn.avg_max / 1000)}K</span>
+                </div>
+              </div>
+              <span class="salary-bar-count mono text-muted">{fn.jobs.toLocaleString()}</span>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Salary by Seniority</h2>
+      <p>The seniority premium is steep. VP-level roles average $166K-$233K, while entry-level positions sit at $90K-$130K.</p>
+
+      <div class="table-wrap">
+        <table class="salary-table">
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Avg Min</th>
+              <th>Avg Max</th>
+              <th>Sample</th>
+            </tr>
+          </thead>
+          <tbody>
+            {salaryBySeniority.map((s: any) => (
+              <tr>
+                <td class="level-col">{s.level}</td>
+                <td class="mono">${Math.round(s.avg_min / 1000)}K</td>
+                <td class="mono">${Math.round(s.avg_max / 1000)}K</td>
+                <td class="mono text-muted">{s.jobs.toLocaleString()} jobs</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Salary by Metro</h2>
+      <p>Geography still matters, even with 32% of roles being remote. SF and NYC command the highest salaries, with LA posting the most volume.</p>
+
+      <div class="table-wrap">
+        <table class="salary-table">
+          <thead>
+            <tr>
+              <th>Metro</th>
+              <th>Avg Min</th>
+              <th>Avg Max</th>
+              <th>Postings</th>
+            </tr>
+          </thead>
+          <tbody>
+            {topMetros.map((m: any) => (
+              <tr>
+                <td class="metro-col">{m.metro}</td>
+                <td class="mono">${Math.round(m.avg_min / 1000)}K</td>
+                <td class="mono">${Math.round(m.avg_max / 1000)}K</td>
+                <td class="mono text-muted">{m.jobs.toLocaleString()}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>What This Means for You</h2>
+      <p>If you're a RevOps or data ops professional, the salary picture is strong. Even entry-level roles in this space start around $90K, and the path to $200K+ is well-defined through the VP/Director track.</p>
+      <p>Tool expertise matters for compensation. Roles mentioning niche tools like Demandbase or Gong tend to pay more than generalist CRM roles. That tracks: specialists command premiums.</p>
+      <p>The remote-friendly rate of 32% is lower than pure software engineering but higher than most sales roles. Operations and data positions are the most likely to offer remote work.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Methodology</h2>
+      <p>Salary data is extracted from job postings that include compensation ranges. We normalize all figures to annual salary (converting hourly and monthly rates). Postings below $30K/year are excluded as likely errors.</p>
+      <p>Not all postings include salary data. States with pay transparency laws (California, New York, Colorado, Washington) contribute disproportionately. Our sample size is noted in each table.</p>
+      <p><a href="/methodology/">Read our full methodology.</a></p>
+    </section>
+
+    <section class="content-section related-section">
+      <h2>Related</h2>
+      <div class="related-grid">
+        <a href="/reports/most-in-demand-tools/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Report</span>
+          <span>Most In-Demand Tools</span>
+        </a>
+        <a href="/tools/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>All Data Tools</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="page-footer-info">
+      <p class="text-sm text-muted">Last updated: {lastUpdated}</p>
+      <div class="disclosure">
+        <p>DataStackGuide is independently operated. Our job market data comes from analyzing {totalJobs.toLocaleString()}+ real job postings. <a href="/about/">Learn more about us.</a></p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .report-hero {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .report-badge {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    background: var(--color-primary-subtle);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-4);
+  }
+
+  .report-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .report-lead {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 680px;
+  }
+
+  .content-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .content-section p {
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+    max-width: 720px;
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .findings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .finding {
+    text-align: center;
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .finding-number {
+    display: block;
+    font-size: var(--text-xl);
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .finding-label {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    margin-top: var(--space-4);
+  }
+
+  .salary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+  }
+
+  .salary-table th {
+    text-align: left;
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 2px solid var(--color-border);
+    font-weight: 600;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+  }
+
+  .salary-table td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border-subtle);
+    vertical-align: middle;
+  }
+
+  .salary-table tr:hover td {
+    background: var(--color-primary-subtle);
+  }
+
+  .tool-name-col,
+  .level-col,
+  .metro-col {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .table-note {
+    margin-top: var(--space-3);
+  }
+
+  /* Salary Bar Chart */
+  .bar-chart-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+  }
+
+  .salary-bar-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 60px;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .salary-bar-label {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .salary-bar-track {
+    position: relative;
+    height: 24px;
+    background: var(--color-border-subtle);
+    border-radius: var(--radius-sm);
+    overflow: visible;
+  }
+
+  .salary-bar-range {
+    position: absolute;
+    top: 2px;
+    height: 20px;
+    background: var(--color-primary);
+    border-radius: var(--radius-sm);
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .salary-bar-tooltip {
+    font-size: 10px;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .salary-bar-count {
+    font-size: var(--text-xs);
+    text-align: right;
+  }
+
+  .related-section {
+    padding-bottom: var(--space-4);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .related-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .related-link:hover {
+    color: var(--color-primary);
+  }
+
+  .page-footer-info {
+    padding: var(--space-6) 0 var(--space-16);
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .page-footer-info .disclosure {
+    margin-top: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .findings-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .salary-bar-row {
+      grid-template-columns: 80px 1fr 50px;
+    }
+  }
+</style>

@@ -1,0 +1,482 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import pricingData from '../../../data/pricing_pages.json';
+import toolsData from '../../../data/tools.json';
+import toolContentData from '../../../data/tool_content.json';
+
+export function getStaticPaths() {
+  return pricingData.pages.map((page: any) => ({
+    params: { slug: page.slug },
+    props: { page }
+  }));
+}
+
+interface Props {
+  page: any;
+}
+
+const { page } = Astro.props;
+const totalJobs = toolsData.total_jobs_analyzed;
+const toolData = toolsData.tools.find((t: any) => t.slug === page.tool_slug);
+const toolContent = (toolContentData as any)[page.tool_slug];
+const toolName = toolContent?.display_name || toolData?.name || page.tool_slug;
+
+const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+const faqSchema = page.faq?.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": page.faq.map((item: any) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
+} : null;
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.meta_description}
+  canonicalPath={`pricing/${page.slug}/`}
+>
+  <Fragment slot="head">
+    {faqSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    )}
+  </Fragment>
+
+  <div class="container-narrow">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Pricing' },
+      { label: `${toolName} Pricing` }
+    ]} />
+
+    <section class="pricing-hero">
+      <h1>{page.title}</h1>
+      <p class="pricing-hook">{page.hook}</p>
+    </section>
+
+    <!-- Pricing Tiers -->
+    <section class="content-section">
+      <h2>Published Pricing</h2>
+      <div class="tiers-grid">
+        {page.tiers.map((tier: any) => (
+          <div class={`tier-card card ${tier.popular ? 'tier-popular' : ''}`}>
+            {tier.popular && <span class="popular-tag mono">MOST COMMON</span>}
+            <h3>{tier.name}</h3>
+            <div class="tier-price">{tier.price}</div>
+            <span class="tier-billing text-sm text-muted">{tier.billing}</span>
+            <ul class="tier-features">
+              {tier.highlights.map((h: string) => (
+                <li>{h}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Hidden Costs -->
+    {page.hidden_costs?.length > 0 && (
+      <section class="content-section">
+        <h2>What They Don't Tell You</h2>
+        <p>The listed price is just the starting point. Here are the costs that show up after you sign:</p>
+        <div class="hidden-costs-list">
+          {page.hidden_costs.map((cost: any) => (
+            <div class="hidden-cost-item">
+              <div class="hidden-cost-header">
+                <span class="hidden-cost-name">{cost.item}</span>
+                <span class="hidden-cost-range mono">{cost.range}</span>
+              </div>
+              <p class="hidden-cost-note text-sm">{cost.note}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Real Cost Example -->
+    {page.real_cost_example && (
+      <section class="content-section">
+        <h2>What It Actually Costs: A Real Example</h2>
+        <div class="real-cost-box card">
+          <h3 class="real-cost-scenario">{page.real_cost_example.scenario}</h3>
+          <table class="cost-table">
+            <tbody>
+              {page.real_cost_example.line_items.map((item: any) => (
+                <tr>
+                  <td>{item.item}</td>
+                  <td class="mono">{item.annual}</td>
+                </tr>
+              ))}
+              <tr class="total-row">
+                <td><strong>Total Annual Cost</strong></td>
+                <td class="mono"><strong>{page.real_cost_example.total}</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="real-cost-per-user">
+            <span class="text-sm text-muted">Real cost per user:</span>
+            <span class="per-user-amount mono">{page.real_cost_example.per_user_real}</span>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- Bottom Line -->
+    <section class="content-section">
+      <h2>The Bottom Line</h2>
+      <div class="bottom-line-box">
+        <p>{page.bottom_line}</p>
+      </div>
+      {toolContent && (
+        <p><a href={`/tools/${page.tool_slug}/`}>Read the full {toolName} review →</a></p>
+      )}
+    </section>
+
+    <!-- FAQ -->
+    {page.faq?.length > 0 && (
+      <section class="content-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {page.faq.map((item: any) => (
+            <details class="faq-item">
+              <summary>{item.q}</summary>
+              <p>{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Related -->
+    <section class="content-section related-section">
+      <h2>Related</h2>
+      <div class="related-grid">
+        {toolContent && (
+          <a href={`/tools/${page.tool_slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Tool Review</span>
+            <span>{toolName}</span>
+          </a>
+        )}
+        <a href="/compare/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>Tool Comparisons</span>
+        </a>
+        <a href="/tools/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>All Data Tools</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="page-footer-info">
+      <p class="text-sm text-muted">Last updated: {lastUpdated}. Pricing verified from vendor websites and buyer reports.</p>
+      <div class="disclosure">
+        <p>DataStackGuide is independently operated. Some links may be affiliate links. <a href="/about/">Learn more about us.</a></p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .pricing-hero {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .pricing-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .pricing-hook {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 680px;
+  }
+
+  .content-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .content-section p {
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+    max-width: 720px;
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Tiers */
+  .tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .tier-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .tier-popular {
+    border-color: var(--color-primary);
+    border-width: 2px;
+  }
+
+  .popular-tag {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #fff;
+    background: var(--color-primary);
+    padding: 2px 10px;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+  }
+
+  .tier-card h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+  }
+
+  .tier-price {
+    font-size: var(--text-xl);
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: var(--space-1);
+  }
+
+  .tier-billing {
+    display: block;
+    margin-bottom: var(--space-4);
+  }
+
+  .tier-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+  }
+
+  .tier-features li {
+    padding-left: var(--space-4);
+    position: relative;
+    line-height: 1.4;
+  }
+
+  .tier-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    opacity: 0.5;
+  }
+
+  /* Hidden Costs */
+  .hidden-costs-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+  }
+
+  .hidden-cost-item {
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .hidden-cost-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-2);
+  }
+
+  .hidden-cost-name {
+    font-weight: 600;
+  }
+
+  .hidden-cost-range {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  .hidden-cost-note {
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.5;
+    max-width: none;
+  }
+
+  /* Real Cost */
+  .real-cost-box {
+    border-left: 4px solid var(--color-primary);
+  }
+
+  .real-cost-scenario {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-4);
+    color: var(--color-text-secondary);
+  }
+
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-4);
+  }
+
+  .cost-table td {
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .cost-table td:last-child {
+    text-align: right;
+  }
+
+  .total-row td {
+    border-bottom: none;
+    border-top: 2px solid var(--color-border);
+    padding-top: var(--space-3);
+  }
+
+  .real-cost-per-user {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .per-user-amount {
+    font-size: var(--text-xl);
+    font-weight: 800;
+    color: var(--color-primary);
+  }
+
+  /* Bottom Line */
+  .bottom-line-box {
+    border-left: 4px solid var(--color-primary);
+    padding-left: var(--space-5);
+    margin-bottom: var(--space-5);
+  }
+
+  .bottom-line-box p {
+    line-height: 1.8;
+    max-width: none;
+  }
+
+  /* FAQ */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .faq-item {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .faq-item summary {
+    padding: var(--space-4) var(--space-5);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+
+  .faq-item[open] summary::after {
+    content: '−';
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item p {
+    padding: 0 var(--space-5) var(--space-5);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    max-width: none;
+  }
+
+  /* Related */
+  .related-section {
+    padding-bottom: var(--space-4);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .related-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .related-link:hover {
+    color: var(--color-primary);
+  }
+
+  .page-footer-info {
+    padding: var(--space-6) 0 var(--space-16);
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .page-footer-info .disclosure {
+    margin-top: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .tiers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

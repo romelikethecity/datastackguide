@@ -1,0 +1,410 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import toolsData from '../../../data/tools.json';
+import toolContentData from '../../../data/tool_content.json';
+import categoriesData from '../../../data/categories.json';
+
+const totalJobs = toolsData.total_jobs_analyzed;
+const totalCompanies = toolsData.total_companies;
+
+// Sort tools by job count, filter out generic tech
+const rankedTools = toolsData.tools
+  .filter((t: any) => t.job_count > 0)
+  .sort((a: any, b: any) => b.job_count - a.job_count);
+
+const top20 = rankedTools.slice(0, 20);
+const topTool = top20[0];
+
+// Category stats
+const catStats = categoriesData.categories.map((cat: any) => {
+  const totalMentions = cat.tools.reduce((sum: number, t: any) => sum + (t.job_count || 0), 0);
+  return { name: cat.name, slug: cat.slug, color: cat.color, toolCount: cat.tool_count, totalMentions };
+}).sort((a: any, b: any) => b.totalMentions - a.totalMentions);
+
+function getCategoryName(catSlug: string): string {
+  const cat = categoriesData.categories.find((c: any) => c.slug === catSlug);
+  return cat?.name || catSlug;
+}
+
+function getCategoryColor(catSlug: string): string {
+  const cat = categoriesData.categories.find((c: any) => c.slug === catSlug);
+  return cat?.color || '#14B8A6';
+}
+
+const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const title = 'Most In-Demand B2B Data Tools (2026)';
+const description = `The 20 most in-demand B2B data tools ranked by job posting mentions. Based on analysis of ${totalJobs.toLocaleString()}+ job postings across ${totalCompanies.toLocaleString()} companies.`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": { "@type": "Organization", "name": "DataStackGuide" },
+  "publisher": { "@type": "Organization", "name": "DataStackGuide" }
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath="reports/most-in-demand-tools/"
+  schema={schema}
+>
+  <div class="container-narrow">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Reports' },
+      { label: 'Most In-Demand Tools' }
+    ]} />
+
+    <section class="report-hero">
+      <span class="report-badge mono">REPORT</span>
+      <h1>Most In-Demand B2B Data Tools (2026)</h1>
+      <p class="report-lead">We analyzed {totalJobs.toLocaleString()}+ job postings across {totalCompanies.toLocaleString()} companies to rank B2B data tools by real-world adoption. No surveys. No vendor input. Just hiring data.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Key Findings</h2>
+      <div class="findings-grid">
+        <div class="finding card">
+          <span class="finding-number">{topTool.name}</span>
+          <span class="finding-label">Most mentioned tool ({topTool.job_count.toLocaleString()} postings)</span>
+        </div>
+        <div class="finding card">
+          <span class="finding-number">CRM</span>
+          <span class="finding-label">Most in-demand category overall</span>
+        </div>
+        <div class="finding card">
+          <span class="finding-number">32%</span>
+          <span class="finding-label">Of roles are remote-friendly</span>
+        </div>
+        <div class="finding card">
+          <span class="finding-number">{rankedTools.filter((t: any) => t.job_count >= 10).length}</span>
+          <span class="finding-label">Tools with 10+ job mentions</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Top 20 B2B Data Tools by Job Demand</h2>
+      <p>Ranked by the number of active job postings that mention each tool. Higher counts mean more companies are actively hiring people to use this tool.</p>
+
+      <div class="table-wrap">
+        <table class="rank-table">
+          <thead>
+            <tr>
+              <th class="rank-col">Rank</th>
+              <th>Tool</th>
+              <th>Category</th>
+              <th>Job Mentions</th>
+              <th>Companies</th>
+              <th>Avg Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            {top20.map((tool: any, i: number) => {
+              const hasPage = (toolContentData as any)[tool.slug];
+              const salaryMin = tool.salary_min ? `$${Math.round(tool.salary_min / 1000)}K` : null;
+              const salaryMax = tool.salary_max ? `$${Math.round(tool.salary_max / 1000)}K` : null;
+              const salary = salaryMin && salaryMax ? `${salaryMin}-${salaryMax}` : null;
+              const primaryCat = tool.primary_category || tool.categories?.[0];
+              return (
+                <tr>
+                  <td class="rank-col mono">{i + 1}</td>
+                  <td class="tool-name-col">
+                    {hasPage ? (
+                      <a href={`/tools/${tool.slug}/`}>{(toolContentData as any)[tool.slug]?.display_name || tool.name}</a>
+                    ) : (
+                      <span>{tool.name}</span>
+                    )}
+                  </td>
+                  <td>
+                    <a href={`/categories/${primaryCat}/`} class="cat-badge" style={`background: ${getCategoryColor(primaryCat)}15; color: ${getCategoryColor(primaryCat)};`}>
+                      {getCategoryName(primaryCat)}
+                    </a>
+                  </td>
+                  <td class="mono">{tool.job_count.toLocaleString()}</td>
+                  <td class="mono">{tool.unique_companies.toLocaleString()}</td>
+                  <td class="mono">{salary || 'N/A'}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>What This Tells Us</h2>
+      <p>Salesforce dominates with nearly 4x the job mentions of HubSpot, the second-place tool. That gap isn't closing. Salesforce has become the de facto operating system for B2B sales teams, and every other tool in this list is, to some degree, built to work with it.</p>
+      <p>The CRM category accounts for the bulk of demand, which makes sense. CRMs are the system of record that everything else plugs into. You hire for CRM skills first, then for the enrichment, intent, and prospecting tools that feed data into it.</p>
+      <p>What's interesting is the long tail. After the top 5 tools, job mentions drop sharply. Most B2B data tools appear in fewer than 50 postings. That doesn't mean they're bad products. It means their adoption is concentrated in specific niches or company sizes that don't generate high volumes of job postings.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Demand by Category</h2>
+      <div class="category-ranks">
+        {catStats.filter((c: any) => c.totalMentions > 0).map((cat: any, i: number) => {
+          const maxMentions = catStats[0].totalMentions;
+          const pct = Math.max(Math.round((cat.totalMentions / maxMentions) * 100), 3);
+          return (
+            <div class="cat-row">
+              <span class="cat-rank mono">{i + 1}</span>
+              <a href={`/categories/${cat.slug}/`} class="cat-name">{cat.name}</a>
+              <div class="cat-bar-track">
+                <div class="cat-bar-fill" style={`width: ${pct}%; background: ${cat.color};`}></div>
+              </div>
+              <span class="cat-count mono">{cat.totalMentions.toLocaleString()}</span>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Methodology</h2>
+      <p>This report is based on {totalJobs.toLocaleString()}+ job postings from companies across the U.S. We detect tool mentions in job descriptions using pattern matching, normalize company names, and classify roles by function and seniority.</p>
+      <p>Limitations: Job postings skew toward larger companies. Tools that are widely used but rarely mentioned in job descriptions (e.g., lightweight prospecting tools) may be underrepresented. <a href="/methodology/">Read our full methodology.</a></p>
+    </section>
+
+    <section class="content-section related-section">
+      <h2>Related</h2>
+      <div class="related-grid">
+        <a href="/reports/salary-report/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Report</span>
+          <span>B2B Data Salary Report</span>
+        </a>
+        <a href="/tools/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>All Data Tools</span>
+        </a>
+        <a href="/categories/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>Tool Categories</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="page-footer-info">
+      <p class="text-sm text-muted">Last updated: {lastUpdated}</p>
+      <div class="disclosure">
+        <p>DataStackGuide is independently operated. Our job market data comes from analyzing {totalJobs.toLocaleString()}+ real job postings. <a href="/about/">Learn more about us.</a></p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .report-hero {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .report-badge {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    background: var(--color-primary-subtle);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-4);
+  }
+
+  .report-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .report-lead {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 680px;
+  }
+
+  .content-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .content-section p {
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+    max-width: 720px;
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .findings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .finding {
+    text-align: center;
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .finding-number {
+    display: block;
+    font-size: var(--text-xl);
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .finding-label {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    margin-top: var(--space-4);
+  }
+
+  .rank-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+  }
+
+  .rank-table th {
+    text-align: left;
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 2px solid var(--color-border);
+    font-weight: 600;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+  }
+
+  .rank-table td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border-subtle);
+    vertical-align: middle;
+  }
+
+  .rank-table tr:hover td {
+    background: var(--color-primary-subtle);
+  }
+
+  .rank-col {
+    width: 50px;
+    text-align: center;
+  }
+
+  .tool-name-col {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .cat-badge {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .category-ranks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+  }
+
+  .cat-row {
+    display: grid;
+    grid-template-columns: 30px 180px 1fr 60px;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .cat-rank {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    text-align: center;
+  }
+
+  .cat-name {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cat-bar-track {
+    height: 10px;
+    background: var(--color-border-subtle);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+  }
+
+  .cat-bar-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+  }
+
+  .cat-count {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    text-align: right;
+  }
+
+  .related-section {
+    padding-bottom: var(--space-4);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .related-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .related-link:hover {
+    color: var(--color-primary);
+  }
+
+  .page-footer-info {
+    padding: var(--space-6) 0 var(--space-16);
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .page-footer-info .disclosure {
+    margin-top: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .findings-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .cat-row {
+      grid-template-columns: 30px 120px 1fr 50px;
+    }
+  }
+</style>

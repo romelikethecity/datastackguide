@@ -1,0 +1,114 @@
+{
+  "terms": [
+    {
+      "slug": "data-enrichment",
+      "term": "Data Enrichment",
+      "short_definition": "The process of appending additional data points to existing records in your CRM or database.",
+      "full_definition": "Data enrichment takes your existing contacts, leads, or accounts and fills in missing information. That might mean appending firmographic data (company size, revenue, industry), demographic data (job title, email, phone), technographic data (what software they use), or intent signals (what topics they're researching).",
+      "why_it_matters": "Without enrichment, your CRM is full of half-complete records. Sales reps waste time researching prospects manually, marketing can't segment effectively, and lead scoring models don't have enough signals to work with. Enrichment automates what used to be hours of manual research.",
+      "example": "You import 500 leads from a webinar. Each record has a name and email. An enrichment tool like ZoomInfo or Clearbit appends company name, size, industry, title, phone number, and technology stack to each record automatically.",
+      "related_terms": ["firmographic-data", "technographic-data", "intent-data"],
+      "related_tools": ["zoominfo", "clearbit", "apollo", "clay"],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "intent-data",
+      "term": "Intent Data",
+      "short_definition": "Behavioral signals that indicate a company or person is actively researching a specific topic or solution.",
+      "full_definition": "Intent data captures online research behavior across the web, including content consumption, search queries, product review visits, and competitor page views. There are two types: first-party intent (tracked on your own website via tools like 6sense or Warmly) and third-party intent (aggregated from publisher networks, review sites, and content platforms like Bombora or TechTarget).",
+      "why_it_matters": "Intent data lets sales and marketing teams prioritize accounts that are actively in-market for their solution. Instead of spraying outreach to cold lists, you can focus on companies that are already researching your category. This improves conversion rates and reduces wasted effort.",
+      "example": "6sense detects that Acme Corp has had 12 employees researching 'data enrichment tools' and 'ZoomInfo alternatives' in the past two weeks. Your sales team gets an alert to prioritize Acme in their outreach cadence.",
+      "related_terms": ["abm", "data-enrichment", "lead-scoring"],
+      "related_tools": ["6sense", "bombora", "warmly"],
+      "category_slug": "intent"
+    },
+    {
+      "slug": "abm",
+      "term": "Account-Based Marketing (ABM)",
+      "short_definition": "A B2B marketing strategy that focuses on targeted accounts rather than broad-based lead generation.",
+      "full_definition": "ABM flips the traditional marketing funnel. Instead of casting a wide net and qualifying leads down to accounts, ABM starts with a defined list of target accounts and directs personalized marketing and sales efforts at those specific companies. It requires tight alignment between sales and marketing teams, shared account lists, and coordinated multi-channel outreach.",
+      "why_it_matters": "For companies selling high-value deals to enterprise buyers, ABM is more efficient than inbound lead gen. It concentrates budget on accounts that match your ideal customer profile, which typically produces higher win rates and larger deal sizes. Research consistently shows ABM programs outperform traditional demand gen for enterprise sales motions.",
+      "example": "Your marketing team identifies 200 target accounts based on firmographic fit and intent signals. They run LinkedIn ads, direct mail, and personalized email campaigns specifically to contacts at those 200 companies, while sales runs outbound cadences to the same list.",
+      "related_terms": ["intent-data", "lead-scoring", "firmographic-data"],
+      "related_tools": ["6sense"],
+      "category_slug": "abm"
+    },
+    {
+      "slug": "firmographic-data",
+      "term": "Firmographic Data",
+      "short_definition": "Descriptive attributes about a company, such as industry, revenue, employee count, and location.",
+      "full_definition": "Firmographics are to companies what demographics are to individuals. They describe the characteristics of a business: industry, annual revenue, number of employees, headquarters location, funding stage, and organizational structure. This data is foundational for lead scoring, market segmentation, and ideal customer profile (ICP) definition.",
+      "why_it_matters": "Firmographic data is the first filter in any B2B targeting strategy. You can't sell enterprise software to a 5-person startup (or shouldn't be trying to). Firmographics help sales and marketing teams qualify accounts before any outreach begins.",
+      "example": "Your ICP is SaaS companies with 200-2,000 employees and $20M+ ARR. Firmographic data from ZoomInfo or Apollo lets you filter your prospecting list to only companies matching those criteria.",
+      "related_terms": ["data-enrichment", "technographic-data", "lead-scoring"],
+      "related_tools": ["zoominfo", "apollo", "clearbit"],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "technographic-data",
+      "term": "Technographic Data",
+      "short_definition": "Information about what technology products and platforms a company uses.",
+      "full_definition": "Technographic data reveals a company's technology stack: what CRM they run, which marketing automation platform they use, their cloud provider, analytics tools, and more. This data is collected through web scraping (detecting JavaScript tags, DNS records, job postings), surveys, and partnership data from technology platforms.",
+      "why_it_matters": "Knowing a prospect's tech stack tells you whether your product integrates with their existing tools, whether they're using a competitor, and what their technical maturity level is. A company running Salesforce Enterprise is a different buyer than one using a spreadsheet for CRM.",
+      "example": "You sell a Salesforce integration. Technographic data reveals that 800 companies in your target market run Salesforce Enterprise. That's your addressable market. The 200 running HubSpot might be a secondary target if you build that integration.",
+      "related_terms": ["firmographic-data", "data-enrichment", "intent-data"],
+      "related_tools": ["zoominfo", "clearbit"],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "lead-scoring",
+      "term": "Lead Scoring",
+      "short_definition": "A methodology for ranking leads based on their likelihood to convert to a customer.",
+      "full_definition": "Lead scoring assigns numerical values to leads based on two dimensions: fit (how closely they match your ideal customer profile) and engagement (how actively they're interacting with your brand). Fit scoring uses firmographic and demographic data. Engagement scoring uses behavioral data like email opens, website visits, content downloads, and product usage. Most CRMs and marketing automation platforms include lead scoring functionality.",
+      "why_it_matters": "Without lead scoring, sales teams treat all leads equally. A VP at an enterprise company who visited your pricing page three times gets the same priority as a student who downloaded a whitepaper. Lead scoring eliminates this guesswork by quantifying which leads deserve immediate attention.",
+      "example": "A lead scores 85/100 because they're a Director at a 500-person SaaS company (high fit), visited your pricing page twice, attended a webinar, and opened 4 emails (high engagement). They get routed to a senior AE immediately.",
+      "related_terms": ["intent-data", "firmographic-data", "data-enrichment"],
+      "related_tools": ["hubspot", "salesforce", "6sense"],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "data-hygiene",
+      "term": "Data Hygiene",
+      "short_definition": "The ongoing practice of maintaining clean, accurate, and up-to-date data in your CRM and databases.",
+      "full_definition": "Data hygiene encompasses deduplication (merging duplicate records), standardization (normalizing formats for phone numbers, addresses, titles), validation (verifying emails and phone numbers are still active), decay management (identifying and updating stale records), and enrichment (filling in missing fields). It's not a one-time project. B2B data decays at roughly 30% per year as people change jobs, companies merge, and contact details change.",
+      "why_it_matters": "Dirty data cascades through every downstream process. Bad emails increase bounce rates (hurting deliverability). Duplicate records create confusing customer experiences. Stale data wastes sales time on prospects who've already left the company. The cost of bad data compounds over time.",
+      "example": "A quarterly data hygiene audit reveals 15% duplicate accounts, 22% of email addresses bouncing, and 8% of contacts listing a company they no longer work for. A cleanup project using DemandTools and a verification service fixes these issues.",
+      "related_terms": ["data-enrichment", "data-validation"],
+      "related_tools": ["demandtools", "verum"],
+      "category_slug": "cleaning"
+    },
+    {
+      "slug": "data-validation",
+      "term": "Data Validation",
+      "short_definition": "The process of verifying that data is accurate, complete, and in the correct format.",
+      "full_definition": "Data validation checks whether data meets quality standards before it enters or stays in your system. Email validation confirms addresses are deliverable (syntax check, domain check, mailbox verification). Phone validation verifies numbers are active and reachable. Address validation standardizes and verifies physical addresses against postal databases. Field-level validation ensures data conforms to expected formats (e.g., phone numbers have the right number of digits).",
+      "why_it_matters": "Sending emails to invalid addresses damages your sender reputation. Calling dead phone numbers wastes rep time. Bad addresses cause returned mail and failed deliveries. Validation at the point of entry prevents garbage data from getting into your system in the first place.",
+      "example": "You integrate an email validation API into your web forms. When a visitor types 'john@gmial.com', the system catches the typo in real-time and suggests 'john@gmail.com' before the lead enters your CRM.",
+      "related_terms": ["data-hygiene", "data-enrichment"],
+      "related_tools": ["demandtools", "verum"],
+      "category_slug": "validation"
+    },
+    {
+      "slug": "revops",
+      "term": "Revenue Operations (RevOps)",
+      "short_definition": "A business function that aligns sales, marketing, and customer success operations to drive predictable revenue growth.",
+      "full_definition": "RevOps breaks down the traditional silos between sales ops, marketing ops, and customer success ops. A RevOps team owns the end-to-end revenue process: lead management, pipeline operations, forecasting, tool administration, data governance, and reporting. The function emerged because companies realized that siloed ops teams create disconnected tech stacks, inconsistent data, and conflicting processes.",
+      "why_it_matters": "RevOps is the fastest-growing ops function in B2B. Companies with dedicated RevOps teams report better pipeline visibility, more accurate forecasting, and higher conversion rates. The role has moved from a nice-to-have to a core function at most B2B companies with 50+ employees.",
+      "example": "A RevOps team at a 200-person SaaS company manages the Salesforce CRM, HubSpot Marketing Hub, ZoomInfo enrichment pipeline, Gong conversation intelligence, and Salesloft cadences. They ensure data flows cleanly between all systems and report on full-funnel metrics.",
+      "related_terms": ["lead-scoring", "data-hygiene", "abm"],
+      "related_tools": ["salesforce", "hubspot"],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "sales-engagement",
+      "term": "Sales Engagement",
+      "short_definition": "Software platforms that help sales teams execute multi-channel outreach cadences at scale.",
+      "full_definition": "Sales engagement platforms orchestrate outbound sales activity across email, phone, social, and direct mail channels. They provide cadence management (structured sequences of touches), email automation with personalization, power dialers, analytics, and CRM sync. The category sits between your CRM (system of record) and your communication tools (email, phone), automating the execution layer of outbound sales.",
+      "why_it_matters": "Manual outbound doesn't scale. A sales rep can manage maybe 20-30 prospects by hand. A sales engagement platform lets them run structured cadences to 200+ prospects simultaneously while tracking every interaction. The data from these platforms also feeds coaching and process optimization.",
+      "example": "An SDR creates a 14-day cadence in Salesloft with 5 emails, 3 phone calls, and 2 LinkedIn touchpoints. They enroll 50 new prospects daily. The platform automates email sends, queues calls, and tracks open/reply rates across the sequence.",
+      "related_terms": ["revops", "lead-scoring"],
+      "related_tools": ["salesloft", "apollo", "instantly"],
+      "category_slug": "list-building"
+    }
+  ]
+}

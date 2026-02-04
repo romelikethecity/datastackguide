@@ -1,0 +1,186 @@
+{
+  "pages": [
+    {
+      "slug": "salesforce-pricing",
+      "tool_slug": "salesforce",
+      "title": "Salesforce Pricing (2026): What It Actually Costs",
+      "meta_description": "Salesforce pricing breakdown: real costs by tier, hidden fees, and what mid-market companies actually pay. Updated for 2026.",
+      "hook": "Salesforce's pricing page lists $25-$330/user/month. The real cost is 2-3x that once you factor in add-ons, implementation, and admin overhead.",
+      "tiers": [
+        { "name": "Starter Suite", "price": "$25/user/mo", "billing": "Annual", "highlights": ["Basic CRM for small teams", "Contact & lead management", "Email integration", "Mobile app"] },
+        { "name": "Professional", "price": "$80/user/mo", "billing": "Annual", "highlights": ["Full CRM + forecasting", "Pipeline management", "Quoting & orders", "Custom dashboards"] },
+        { "name": "Enterprise", "price": "$165/user/mo", "billing": "Annual", "popular": true, "highlights": ["Advanced customization", "Workflow automation (Flows)", "API access", "AppExchange integrations", "Territory management"] },
+        { "name": "Unlimited", "price": "$330/user/mo", "billing": "Annual", "highlights": ["Everything in Enterprise", "Premier support included", "Sandbox environments", "Einstein AI features"] }
+      ],
+      "hidden_costs": [
+        { "item": "Implementation consulting", "range": "$50K-$150K", "note": "Most mid-market companies hire a Salesforce implementation partner. Budget 3-6 months." },
+        { "item": "Pardot / Marketing Cloud", "range": "$1,250-$15K/mo", "note": "Marketing automation is a separate product. Pardot Growth starts at $1,250/month." },
+        { "item": "CPQ (Configure, Price, Quote)", "range": "$75/user/mo", "note": "Add-on for complex quoting workflows. Common in B2B sales orgs." },
+        { "item": "Data Cloud / Einstein", "range": "Varies", "note": "AI features and data unification require additional licenses." },
+        { "item": "Salesforce Admin salary", "range": "$80K-$130K/year", "note": "Enterprise deployments need at least one dedicated admin." },
+        { "item": "Third-party apps (AppExchange)", "range": "$5-$50/user/mo each", "note": "Most companies run 5-15 AppExchange apps. It adds up." }
+      ],
+      "real_cost_example": {
+        "scenario": "50-person sales team on Enterprise tier",
+        "line_items": [
+          { "item": "50 Enterprise licenses", "annual": "$99,000" },
+          { "item": "Pardot Growth (marketing automation)", "annual": "$15,000" },
+          { "item": "CPQ (20 users)", "annual": "$18,000" },
+          { "item": "Implementation (Year 1, amortized)", "annual": "$30,000" },
+          { "item": "Salesforce Admin (1 FTE)", "annual": "$100,000" },
+          { "item": "AppExchange apps (5 apps)", "annual": "$15,000" }
+        ],
+        "total": "$277,000/year",
+        "per_user_real": "$462/user/mo"
+      },
+      "bottom_line": "Salesforce's listed price of $165/user/month is the starting point, not the ending point. For a 50-person team, expect to spend $250K-$350K/year all-in. That's 2-3x the sticker price. Budget for it or explore alternatives like HubSpot or Zoho that have lower total cost of ownership.",
+      "faq": [
+        { "q": "Does Salesforce offer monthly billing?", "a": "No. All Salesforce plans require annual contracts billed upfront or quarterly. There's no month-to-month option." },
+        { "q": "Can I negotiate Salesforce pricing?", "a": "Yes. Salesforce regularly offers discounts of 15-30% for multi-year commitments or end-of-quarter deals. Always negotiate, especially on initial contracts." },
+        { "q": "Is the Starter Suite good enough for small teams?", "a": "For teams under 10, the $25/user/month Starter Suite covers basic CRM needs. You'll hit feature limits around workflow automation and reporting customization, which push you to Professional ($80/user/month) or Enterprise ($165/user/month)." },
+        { "q": "What's the cheapest Salesforce option?", "a": "Starter Suite at $25/user/month is the entry point. But if price is a major concern, HubSpot's free CRM or Zoho at $14/user/month may be better fits." }
+      ]
+    },
+    {
+      "slug": "zoominfo-pricing",
+      "tool_slug": "zoominfo",
+      "title": "ZoomInfo Pricing (2026): Plans, Costs & What to Expect",
+      "meta_description": "ZoomInfo pricing breakdown: what plans actually cost, contract terms, and hidden fees. Based on real buyer data, not vendor marketing.",
+      "hook": "ZoomInfo doesn't publish pricing. Based on buyer reports, plans start around $15K/year and scale to $50K+ for larger teams. Here's what to expect.",
+      "tiers": [
+        { "name": "Professional", "price": "~$15K/year", "billing": "Annual", "highlights": ["Contact & company search", "Basic intent data", "Chrome extension", "CRM integration", "Limited exports/credits"] },
+        { "name": "Advanced", "price": "~$25K/year", "billing": "Annual", "popular": true, "highlights": ["Everything in Professional", "Website visitor tracking", "Advanced intent signals", "More export credits", "Workflow automation"] },
+        { "name": "Elite", "price": "~$40K+/year", "billing": "Annual", "highlights": ["Everything in Advanced", "Real-time intent data", "AI-powered recommendations", "Custom data attributes", "Dedicated support"] }
+      ],
+      "hidden_costs": [
+        { "item": "Credit overages", "range": "Varies", "note": "Each plan includes a set number of export credits. Overages are billed at premium per-contact rates." },
+        { "item": "Additional users", "range": "$2K-5K/user/year", "note": "Base pricing typically covers 3-5 users. Adding seats increases the contract." },
+        { "item": "Implementation", "range": "$0-$5K", "note": "Basic setup is included. Custom integrations or data mapping cost extra." },
+        { "item": "Data enrichment add-ons", "range": "$5K-$15K/year", "note": "FormComplete, WebSights, and other add-on products are priced separately." }
+      ],
+      "real_cost_example": {
+        "scenario": "10-person sales team on Advanced plan",
+        "line_items": [
+          { "item": "Advanced plan (5 included seats)", "annual": "$25,000" },
+          { "item": "5 additional seats", "annual": "$15,000" },
+          { "item": "Credit overage (mid-year top-up)", "annual": "$5,000" },
+          { "item": "WebSights add-on", "annual": "$6,000" }
+        ],
+        "total": "$51,000/year",
+        "per_user_real": "$425/user/mo"
+      },
+      "bottom_line": "ZoomInfo is the most comprehensive B2B data platform, but it's priced for mid-market and enterprise buyers. If you're spending less than $15K/year on data tools, Apollo.io or Lusha will cover most of your needs at a fraction of the cost. ZoomInfo's value kicks in when you need breadth of data across firmographic, technographic, and intent signals.",
+      "faq": [
+        { "q": "Why doesn't ZoomInfo publish pricing?", "a": "ZoomInfo uses a sales-led model with custom pricing based on team size, features needed, and negotiation. This is common for enterprise SaaS but frustrating for buyers doing initial research." },
+        { "q": "Can I get ZoomInfo for under $10K/year?", "a": "It's rare. Most reported contracts start at $14K-$15K/year for small teams. There may be startup or SMB programs with lower entry points, but they're not widely advertised." },
+        { "q": "Is ZoomInfo worth the cost?", "a": "For teams that rely heavily on outbound prospecting with high-volume data needs, ZoomInfo's coverage is hard to match. For teams doing fewer than 500 lookups/month, cheaper alternatives like Apollo or LinkedIn Sales Navigator offer better ROI." },
+        { "q": "What are ZoomInfo's contract terms?", "a": "Annual contracts are standard. Multi-year deals (2-3 years) come with discounts but reduce flexibility. Auto-renewal clauses are common, so mark your cancellation window." }
+      ]
+    },
+    {
+      "slug": "hubspot-pricing",
+      "tool_slug": "hubspot",
+      "title": "HubSpot Pricing (2026): Full Breakdown by Hub",
+      "meta_description": "HubSpot pricing explained: Free CRM, Starter, Professional, and Enterprise tiers across all Hubs. Real costs and what to watch for.",
+      "hook": "HubSpot's free CRM is a great entry point. But once you need automation, custom reporting, or marketing features, costs ramp up fast. Here's the full picture.",
+      "tiers": [
+        { "name": "Free Tools", "price": "$0", "billing": "Free forever", "highlights": ["Contact management (up to 1M)", "Deal tracking", "Email templates", "Forms & landing pages", "Live chat"] },
+        { "name": "Starter", "price": "$20/user/mo", "billing": "Annual", "highlights": ["Remove HubSpot branding", "Email marketing (5x contact tier limit)", "Meeting scheduling", "Simple automation", "Payments"] },
+        { "name": "Professional", "price": "$100/user/mo", "billing": "Annual", "popular": true, "highlights": ["Full marketing automation", "Custom reporting", "Teams & permissions", "Sequences (sales)", "A/B testing", "Required onboarding ($1,500-$3,000)"] },
+        { "name": "Enterprise", "price": "$150/user/mo", "billing": "Annual", "highlights": ["Custom objects", "Predictive lead scoring", "Advanced permissions", "Revenue attribution", "Required onboarding ($6,000)"] }
+      ],
+      "hidden_costs": [
+        { "item": "Marketing Hub contact pricing", "range": "$800-$3,600/mo", "note": "Marketing Hub Pro is priced per 2,000 contacts. At 50K contacts, that's $800/month for the base plus $250/mo per 5K additional contacts." },
+        { "item": "Onboarding fees", "range": "$1,500-$6,000", "note": "Mandatory for Professional and Enterprise tiers. One-time fee." },
+        { "item": "API calls", "range": "Included, with limits", "note": "Free and Starter tiers have tight API limits. Operations Hub may be needed for advanced integrations." },
+        { "item": "Operations Hub", "range": "$20-$150/user/mo", "note": "Data sync, custom code automation, and data quality tools are in a separate Hub." }
+      ],
+      "real_cost_example": {
+        "scenario": "20-person team: Sales Hub Pro + Marketing Hub Pro (10K contacts)",
+        "line_items": [
+          { "item": "Sales Hub Professional (20 users)", "annual": "$24,000" },
+          { "item": "Marketing Hub Professional (10K contacts)", "annual": "$10,680" },
+          { "item": "Onboarding (one-time, amortized)", "annual": "$3,000" },
+          { "item": "Operations Hub Starter (5 users)", "annual": "$1,200" }
+        ],
+        "total": "$38,880/year",
+        "per_user_real": "$162/user/mo"
+      },
+      "bottom_line": "HubSpot's free CRM is the best no-cost option for small teams. The jump to Professional ($100/user/month + contact-based Marketing pricing) is where the sticker shock hits. For a 20-person team with marketing needs, plan for $35K-$50K/year. That's significantly less than Salesforce but more than Zoho or Pipedrive.",
+      "faq": [
+        { "q": "Is HubSpot really free?", "a": "The core CRM is free with no time limit. You get contact management, deals, email templates, and basic reporting for unlimited users. The catch: advanced features (automation, custom reporting, sequences) require paid plans." },
+        { "q": "Which HubSpot plan do most companies use?", "a": "Based on our data, most B2B companies end up on Sales Hub Professional ($100/user/month) paired with Marketing Hub Professional. The free tier works for early evaluation, but teams outgrow it once they need automation." },
+        { "q": "Is HubSpot cheaper than Salesforce?", "a": "For most mid-market teams, yes. A 20-person team on HubSpot Pro will spend roughly $35K-50K/year vs. $150K-250K/year on Salesforce Enterprise with comparable add-ons. The gap narrows at enterprise scale." },
+        { "q": "Does HubSpot require annual contracts?", "a": "Starter plans offer monthly billing at a higher rate. Professional and Enterprise require annual commitments with mandatory onboarding fees." }
+      ]
+    },
+    {
+      "slug": "apollo-pricing",
+      "tool_slug": "apollo",
+      "title": "Apollo.io Pricing (2026): Plans, Credits & Real Costs",
+      "meta_description": "Apollo.io pricing breakdown: free tier, paid plans, credit system, and what you'll actually spend. Honest analysis for B2B buyers.",
+      "hook": "Apollo is one of the best values in B2B sales tools. A generous free tier, paid plans starting at $49/user/month, and an all-in-one feature set that replaces 2-3 separate tools.",
+      "tiers": [
+        { "name": "Free", "price": "$0", "billing": "Free forever", "highlights": ["250 emails/day", "Basic sequences", "LinkedIn extension", "Limited search filters", "Unlimited email accounts"] },
+        { "name": "Basic", "price": "$49/user/mo", "billing": "Annual", "highlights": ["Unlimited emails", "Advanced filters", "Intent data (basic)", "Job change alerts", "A/B testing"] },
+        { "name": "Professional", "price": "$79/user/mo", "billing": "Annual", "popular": true, "highlights": ["Everything in Basic", "Dialer + call recording", "Advanced reports", "AI email writing", "Conversations intelligence"] },
+        { "name": "Organization", "price": "$119/user/mo", "billing": "Annual", "highlights": ["Everything in Professional", "Advanced security (SSO)", "Custom roles", "Data enrichment API", "Advanced intent data"] }
+      ],
+      "hidden_costs": [
+        { "item": "Email sending credits", "range": "Included", "note": "Unlike many competitors, Apollo includes generous email sending in all plans." },
+        { "item": "Mobile number credits", "range": "Limited by plan", "note": "Each plan includes a set number of mobile credits/month. Additional credits can be purchased." },
+        { "item": "Data export credits", "range": "Limited by plan", "note": "Free: 25 exports/mo. Basic: 250/mo. Pro: 500/mo. Organization: unlimited." }
+      ],
+      "real_cost_example": {
+        "scenario": "10-person SDR team on Professional plan",
+        "line_items": [
+          { "item": "Professional plan (10 users)", "annual": "$9,480" },
+          { "item": "Additional mobile credits", "annual": "$1,200" }
+        ],
+        "total": "$10,680/year",
+        "per_user_real": "$89/user/mo"
+      },
+      "bottom_line": "Apollo is the clear value leader in B2B sales intelligence. A 10-person team spends roughly $10K/year vs. $40K+ on ZoomInfo for overlapping functionality. The trade-off is data depth: ZoomInfo has broader coverage for enterprise accounts. But for startups and SMBs, Apollo's pricing-to-value ratio is hard to beat.",
+      "faq": [
+        { "q": "Is Apollo.io really free?", "a": "Yes. The free tier includes 250 emails/day, basic search, and the LinkedIn extension. It's functional enough to run a small outbound operation. Paid features (advanced filters, dialer, intent data) require Basic ($49/user/month) or above." },
+        { "q": "How does Apollo compare to ZoomInfo?", "a": "Apollo covers 80% of ZoomInfo's functionality at 20-30% of the cost. ZoomInfo has deeper data for enterprise accounts and more advanced intent signals. For teams under 50 people, Apollo is typically the better value." },
+        { "q": "Does Apollo require annual contracts?", "a": "Annual billing saves 20% vs. monthly. Monthly billing is available on Basic and Professional plans. Organization plan requires annual commitment." },
+        { "q": "What's the catch with Apollo's low pricing?", "a": "Credit limits. Each plan caps the number of contact exports and mobile numbers you can access per month. High-volume prospecting teams may need the Organization plan ($119/user/month) or purchase additional credits." }
+      ]
+    },
+    {
+      "slug": "salesloft-pricing",
+      "tool_slug": "salesloft",
+      "title": "Salesloft Pricing (2026): What Enterprise Teams Pay",
+      "meta_description": "Salesloft pricing guide: plan tiers, contract terms, and real costs for enterprise sales teams. No published pricing, so here's what buyers report.",
+      "hook": "Salesloft doesn't publish pricing. Based on buyer reports, expect $100-$150/user/month with annual contracts. Here's what drives the final number.",
+      "tiers": [
+        { "name": "Essentials", "price": "~$100/user/mo", "billing": "Annual", "highlights": ["Cadence management", "Email tracking", "Calendar integration", "Basic analytics", "CRM sync"] },
+        { "name": "Advanced", "price": "~$130/user/mo", "billing": "Annual", "popular": true, "highlights": ["Everything in Essentials", "Dialer + voicemail drop", "Conversation intelligence", "Deal management", "Coaching tools"] },
+        { "name": "Premier", "price": "~$150+/user/mo", "billing": "Annual", "highlights": ["Everything in Advanced", "Revenue intelligence", "Forecasting", "Advanced analytics", "Priority support"] }
+      ],
+      "hidden_costs": [
+        { "item": "Implementation", "range": "$5K-$15K", "note": "Enterprise onboarding with CRM integration, training, and workflow setup." },
+        { "item": "Dialer minutes", "range": "Varies", "note": "Some plans include dialer minutes; heavy calling teams may need additional capacity." },
+        { "item": "Additional integrations", "range": "$0-$5K", "note": "Core CRM integrations included. Custom or third-party integrations may require professional services." }
+      ],
+      "real_cost_example": {
+        "scenario": "25-person sales team on Advanced plan",
+        "line_items": [
+          { "item": "Advanced plan (25 users)", "annual": "$39,000" },
+          { "item": "Implementation (one-time, amortized)", "annual": "$5,000" },
+          { "item": "Additional dialer capacity", "annual": "$3,000" }
+        ],
+        "total": "$47,000/year",
+        "per_user_real": "$157/user/mo"
+      },
+      "bottom_line": "Salesloft is priced for mid-market and enterprise sales teams. At $100-150/user/month, it's competitive with Outreach (its main competitor) but significantly more expensive than Apollo or Instantly for basic sales engagement. The value proposition is in the coaching, analytics, and deal management features that smaller tools lack.",
+      "faq": [
+        { "q": "Why doesn't Salesloft publish pricing?", "a": "Like most enterprise sales tools, Salesloft uses custom pricing based on team size, features, and contract length. This lets them negotiate based on each buyer's situation." },
+        { "q": "Is Salesloft better than Outreach?", "a": "They're close competitors. Salesloft tends to win on user experience and coaching features. Outreach tends to win on customization and enterprise workflow complexity. Both are in the $100-150/user/month range." },
+        { "q": "Can small teams use Salesloft?", "a": "Technically yes, but the pricing and feature set are designed for teams of 10+. Teams under 10 reps get better value from Apollo ($49/user/month) or Instantly ($30/user/month)." },
+        { "q": "Does Salesloft require annual contracts?", "a": "Yes. Annual contracts are standard. Multi-year deals come with 10-20% discounts. Monthly billing is not typically available." }
+      ]
+    }
+  ]
+}

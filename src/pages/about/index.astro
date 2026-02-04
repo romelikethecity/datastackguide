@@ -1,0 +1,185 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import toolsData from '../../../data/tools.json';
+
+const totalJobs = toolsData.total_jobs_analyzed;
+const totalCompanies = toolsData.total_companies;
+const totalTools = toolsData.tool_count;
+
+const title = 'About DataStackGuide';
+const description = `DataStackGuide helps B2B teams pick the right data tools. We analyze ${totalJobs.toLocaleString()}+ job postings to measure real-world adoption, not vendor hype.`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath="about/"
+>
+  <div class="container-narrow">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'About' }
+    ]} />
+
+    <section class="about-hero">
+      <h1>About DataStackGuide</h1>
+      <p class="about-lead">We help B2B teams cut through vendor noise and pick data tools based on what companies are actually using.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>What We Do</h2>
+      <p>DataStackGuide is a research site for RevOps, sales ops, and marketing ops teams evaluating B2B data tools. We cover enrichment platforms, CRMs, intent data providers, cleaning tools, validation services, and more.</p>
+      <p>Every tool page includes real pricing (not the "contact us" runaround), honest pros and cons, and job market demand data pulled from {totalJobs.toLocaleString()}+ analyzed job postings across {totalCompanies.toLocaleString()} companies.</p>
+      <p>We track {totalTools} tools across 12 categories. Our data updates regularly from live job postings, so you're seeing current adoption trends, not last year's Gartner quadrant.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Why Job Posting Data?</h2>
+      <p>Most review sites rely on user reviews (easily gamed) or vendor-reported metrics (obviously biased). We took a different approach.</p>
+      <p>When a company lists "Salesforce" or "ZoomInfo" in a job posting, that's a buying signal you can't fake. They're hiring someone to use that tool. It tells you the company has committed budget, integrated the platform, and plans to keep using it.</p>
+      <p>By analyzing thousands of these postings, we can measure which tools companies are actually adopting, which ones are growing or shrinking, and what roles and salaries are associated with each platform.</p>
+      <p>It's not perfect. Job postings skew toward larger companies, and not every tool shows up in every posting. But it's a far more honest signal than a 5-star review from someone who got a free trial.</p>
+      <p><a href="/methodology/">Read our full methodology</a> for details on how we collect and analyze this data.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Who's Behind This</h2>
+      <p>DataStackGuide is built by the team behind <a href="https://veruminc.com" target="_blank" rel="noopener">Verum</a> (B2B data services) and <a href="https://getprovyx.com" target="_blank" rel="noopener">Provyx</a> (healthcare provider data). We work with data tools every day, which is how we know the difference between marketing claims and what actually works.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Editorial Independence & Disclosure</h2>
+      <div class="disclosure-box">
+        <p>We believe in being upfront about how this site works:</p>
+        <ul>
+          <li><strong>Verum and Provyx are our companies.</strong> We include them in relevant tool categories and comparisons, clearly labeled. We apply the same editorial standards to our own products as we do to everyone else's.</li>
+          <li><strong>Some links are affiliate links.</strong> When you click through to a tool's website and sign up, we may earn a commission. This doesn't affect our rankings, reviews, or recommendations. We list tools we'd use ourselves, regardless of affiliate status.</li>
+          <li><strong>We don't accept paid placements.</strong> No vendor can pay to rank higher, get a better review, or appear in a comparison. Our data comes from job postings, not vendor marketing departments.</li>
+          <li><strong>Our data has limitations.</strong> Job posting analysis favors larger companies and tools that appear in job descriptions. Smaller or newer tools may be underrepresented. We're transparent about sample sizes on every page.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Contact</h2>
+      <p>Got a correction, a tool we should cover, or a question about our data? Reach out at <strong>hello@datastackguide.com</strong>.</p>
+      <p>If you're a vendor and want to update your pricing or product information, same email. We'll verify and update promptly.</p>
+    </section>
+
+    <section class="content-section related-section">
+      <h2>Related</h2>
+      <div class="related-grid">
+        <a href="/methodology/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Research</span>
+          <span>Our Methodology</span>
+        </a>
+        <a href="/tools/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>All Data Tools</span>
+        </a>
+        <a href="/categories/" class="related-link card">
+          <span class="related-link-label text-sm text-muted">Browse</span>
+          <span>Tool Categories</span>
+        </a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-hero {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .about-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .about-lead {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 680px;
+  }
+
+  .content-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .content-section p {
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+    max-width: 720px;
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .disclosure-box {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+  }
+
+  .disclosure-box p {
+    margin-bottom: var(--space-4);
+  }
+
+  .disclosure-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .disclosure-box li {
+    line-height: 1.7;
+    padding-left: var(--space-5);
+    position: relative;
+  }
+
+  .disclosure-box li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-primary);
+  }
+
+  .related-section {
+    padding-bottom: var(--space-4);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .related-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4) var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .related-link:hover {
+    color: var(--color-primary);
+  }
+</style>

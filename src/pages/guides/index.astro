@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import guidesData from '../../../data/guides.json';
+
+const title = 'B2B Data Guides';
+const description = 'Practical guides for B2B data teams: choosing data providers, building RevOps tech stacks, and more.';
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath="guides/"
+>
+  <div class="container-narrow">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: 'Guides' }
+    ]} />
+
+    <section class="guides-hero">
+      <h1>Guides</h1>
+      <p class="guides-lead">Practical frameworks for evaluating tools, building tech stacks, and running data operations. No fluff.</p>
+    </section>
+
+    <section class="guides-list">
+      {guidesData.guides.map((guide: any) => (
+        <a href={`/guides/${guide.slug}/`} class="guide-card card">
+          <span class="guide-badge mono">GUIDE</span>
+          <h2>{guide.title}</h2>
+          <p>{guide.meta_description}</p>
+          <span class="guide-sections text-sm text-muted">{guide.sections.length} sections</span>
+        </a>
+      ))}
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .guides-hero {
+    padding: var(--space-8) 0 var(--space-6);
+  }
+
+  .guides-hero h1 {
+    margin-bottom: var(--space-3);
+  }
+
+  .guides-lead {
+    color: var(--color-text-secondary);
+    font-size: var(--text-lg);
+    max-width: 600px;
+  }
+
+  .guides-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding-bottom: var(--space-16);
+  }
+
+  .guide-card {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 0.2s;
+  }
+
+  .guide-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .guide-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    background: var(--color-primary-subtle);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-3);
+  }
+
+  .guide-card h2 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+  }
+
+  .guide-card p {
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    margin-bottom: var(--space-3);
+  }
+</style>
