@@ -75,6 +75,15 @@ const pageTitle = `${title} | DataStackGuide`;
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   )}
 
+  <!-- Google Analytics (GA4) -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-VQCMDRQJ1K"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VQCMDRQJ1K');
+  </script>
+
   <slot name="head" />
 </head>
 <body>

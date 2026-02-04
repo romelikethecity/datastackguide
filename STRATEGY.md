@@ -2713,10 +2713,16 @@ Track what's working:
 - [x] Glossary index page (/glossary/)
 - [x] Updated Nav and Footer with new sections
 
-### Week 4: Launch & Amplify
-- [ ] Final QA
-- [ ] Submit sitemap
-- [ ] Cross-link from Verum, Provyx
+### Week 4: Launch & Amplify (In Progress)
+- [x] GA4 analytics integrated (G-VQCMDRQJ1K)
+- [x] Final QA: build passes clean, 82 pages, all routes verified
+- [x] Cross-link from Verum (footer, components.js) and Provyx (footer via nav_config.py, 226 pages rebuilt)
+- [x] 5 new tool pages: Pipedrive, Fivetran, MuleSoft, Cognism, Nooks
+- [x] 2 new comparison pages: HubSpot vs Pipedrive, Clay vs Apollo
+- [x] 2 new pricing pages: Pipedrive Pricing, Dynamics 365 Pricing
+- [x] 1 new alternatives page: Apollo Alternatives
+- [x] Site now at 82 pages (up from 72)
+- [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker
 - [ ] Email tools about their listings

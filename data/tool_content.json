@@ -808,5 +808,264 @@
         "a": "Provyx provides publicly available provider data (NPI registry, state license boards, published practice information). This data is not protected health information (PHI) under HIPAA. Provyx does not access or store patient data."
       }
     ]
+  },
+  "pipedrive": {
+    "display_name": "Pipedrive",
+    "tagline": "A sales-first CRM built around pipeline visibility, not feature bloat.",
+    "description": "Pipedrive was designed by salespeople, not enterprise architects. The whole product centers on a visual pipeline view where deals are dragged between stages. It's opinionated about simplicity: fewer features, less configuration, faster onboarding. For teams that want a CRM they can set up in an afternoon and start closing deals in, Pipedrive fits.",
+    "description_2": "Where Salesforce and HubSpot try to be everything (CRM, marketing, service, analytics), Pipedrive stays focused on sales execution. The trade-off is real: you won't get native marketing automation, customer service tools, or deep reporting. But if your sales team just needs to track deals, send emails, and follow up on time, the simplicity is a feature, not a limitation.",
+    "website": "https://www.pipedrive.com",
+    "founded": 2010,
+    "hq": "Tallinn, Estonia",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {"name": "Essential", "price": "$14/user/mo", "notes": "Basic pipeline management and lead tracking"},
+        {"name": "Advanced", "price": "$29/user/mo", "notes": "Email sync, automation, scheduling"},
+        {"name": "Professional", "price": "$49/user/mo", "notes": "Revenue forecasting, custom fields, e-signatures"},
+        {"name": "Power", "price": "$64/user/mo", "notes": "Phone support, project management, scalable controls"},
+        {"name": "Enterprise", "price": "$99/user/mo", "notes": "Unlimited features, security alerts, dedicated support"}
+      ],
+      "notes": "All plans billed annually. Monthly billing available at higher rates. No mandatory onboarding fees. Free 14-day trial with no credit card required. Most SMB teams land on Advanced or Professional."
+    },
+    "pros": [
+      "Visual pipeline UI that sales reps actually enjoy using",
+      "Fast setup: most teams are productive within a day",
+      "Significantly cheaper than Salesforce or HubSpot Pro",
+      "Clean mobile app for field sales",
+      "400+ integrations via Marketplace"
+    ],
+    "cons": [
+      "No native marketing automation",
+      "Reporting is basic compared to Salesforce or HubSpot",
+      "Limited customization for complex enterprise workflows",
+      "No built-in customer service tools",
+      "Smaller ecosystem than Salesforce or HubSpot"
+    ],
+    "best_for": "SMB sales teams (5-50 reps) who want a visual, pipeline-focused CRM without enterprise complexity",
+    "not_for": "Marketing-led companies that need CRM + MAP in one platform, or enterprise orgs with complex multi-object data models",
+    "alternatives": ["hubspot", "zoho-crm", "copper", "monday-sales", "salesforce"],
+    "faq": [
+      {
+        "q": "Is Pipedrive good for small businesses?",
+        "a": "Pipedrive is one of the best CRMs for small sales teams. At $14-49/user/month with no onboarding fees, it's affordable. The visual pipeline and simple setup mean your team can be productive on day one without hiring a CRM admin."
+      },
+      {
+        "q": "Pipedrive vs HubSpot: which is better?",
+        "a": "Pipedrive is better for pure sales execution at a lower price point. HubSpot is better if you need CRM + marketing automation + content tools in one platform. Pipedrive starts at $14/user/mo vs HubSpot Professional at $100/user/mo."
+      },
+      {
+        "q": "Can Pipedrive handle enterprise sales?",
+        "a": "For straightforward enterprise deal tracking, yes. For complex CPQ, multi-entity structures, or deep customization, you'll hit limits. Teams above 100 reps typically outgrow Pipedrive and move to Salesforce or HubSpot Enterprise."
+      },
+      {
+        "q": "Does Pipedrive integrate with other tools?",
+        "a": "Pipedrive has 400+ integrations including Slack, Zoom, Mailchimp, Zapier, and most major business tools. It also has an open API. The integration ecosystem is smaller than Salesforce but covers the essentials."
+      }
+    ]
+  },
+  "fivetran": {
+    "display_name": "Fivetran",
+    "tagline": "Automated data pipelines that move data from apps to warehouses without engineering overhead.",
+    "description": "Fivetran automates the extract-and-load part of ELT. It connects to 300+ data sources (SaaS apps, databases, files) and keeps your data warehouse in sync. The pitch is zero-maintenance pipelines: Fivetran handles schema changes, API updates, and incremental syncing so your data team focuses on analysis instead of plumbing.",
+    "description_2": "For RevOps and data teams, Fivetran's value is centralizing data from Salesforce, HubSpot, Marketo, and other GTM tools into a warehouse like Snowflake or BigQuery. This is the backbone of a modern data stack. Without it, you're writing custom ETL scripts or manually exporting CSVs. Fivetran's main competitor is its open-source alternative Airbyte, which offers similar connectors at a lower (but more hands-on) cost.",
+    "website": "https://www.fivetran.com",
+    "founded": 2012,
+    "hq": "Oakland, CA",
+    "pricing": {
+      "model": "Usage-based (Monthly Active Rows)",
+      "tiers": [
+        {"name": "Free", "price": "$0", "notes": "Up to 500K monthly active rows, limited connectors"},
+        {"name": "Starter", "price": "From $1/credit", "notes": "Pay-as-you-go, standard connectors"},
+        {"name": "Standard", "price": "Custom", "notes": "All connectors, transformations, multiple destinations"},
+        {"name": "Enterprise", "price": "Custom", "notes": "Private networking, SOC 2 Type II, SLAs"}
+      ],
+      "notes": "Pricing is based on Monthly Active Rows (MAR), which counts rows that change each month. Costs scale with data volume. A typical mid-market deployment syncing 5-10 SaaS sources runs $500-$3,000/month. Enterprise deployments with high-volume transactional data can reach $10K+/month."
+    },
+    "pros": [
+      "300+ pre-built connectors with automatic schema detection",
+      "Zero-maintenance: handles API changes and schema drift automatically",
+      "Fast setup: most connectors running in under 15 minutes",
+      "Supports all major warehouses (Snowflake, BigQuery, Redshift, Databricks)",
+      "Strong data reliability and observability features"
+    ],
+    "cons": [
+      "Usage-based pricing can spike with high-volume data sources",
+      "Less control than custom-built pipelines or open-source alternatives",
+      "Some connectors have sync frequency limitations on lower tiers",
+      "Vendor lock-in: migrating away requires rebuilding pipeline configs",
+      "Premium connectors (SAP, Oracle) cost significantly more"
+    ],
+    "best_for": "Data and RevOps teams that need reliable, automated data pipelines without dedicated data engineering resources",
+    "not_for": "Teams with heavy custom transformation needs during extraction, or companies where $500+/month for data pipelines isn't justified by analytics use cases",
+    "alternatives": ["airbyte", "mulesoft", "workato-ipaas", "hightouch", "zapier"],
+    "faq": [
+      {
+        "q": "How much does Fivetran cost per month?",
+        "a": "It depends on data volume. A typical B2B company syncing Salesforce, HubSpot, and a few other SaaS tools to Snowflake pays $500-$2,000/month. Enterprise deployments with large transactional databases can hit $5K-$15K/month. The free tier covers up to 500K monthly active rows."
+      },
+      {
+        "q": "Fivetran vs Airbyte: which should I use?",
+        "a": "Fivetran is fully managed with better reliability and support. Airbyte is open-source with lower costs but requires more engineering to maintain. If you have data engineers and want to minimize cost, Airbyte. If you want zero-maintenance pipelines and can budget for it, Fivetran."
+      },
+      {
+        "q": "What does Fivetran connect to?",
+        "a": "Fivetran has 300+ connectors including Salesforce, HubSpot, Google Analytics, Stripe, PostgreSQL, MySQL, S3, and virtually every major SaaS and database platform. New connectors are added regularly."
+      },
+      {
+        "q": "Do I need Fivetran if I have Zapier?",
+        "a": "Zapier and Fivetran solve different problems. Zapier triggers actions between apps (e.g., 'when a lead is created, notify Slack'). Fivetran syncs entire datasets to a data warehouse for analytics. If you need centralized analytics and reporting, you need Fivetran or something like it. Zapier won't replace a data pipeline."
+      }
+    ]
+  },
+  "mulesoft": {
+    "display_name": "MuleSoft",
+    "tagline": "Salesforce's enterprise integration platform for connecting anything to everything.",
+    "description": "MuleSoft is an integration platform (iPaaS) that connects applications, data sources, and APIs across an organization. Acquired by Salesforce in 2018 for $6.5 billion, it's positioned as the integration backbone for enterprise Salesforce deployments. MuleSoft's Anypoint Platform lets teams build, manage, and monitor APIs and integrations at scale.",
+    "description_2": "For enterprise RevOps teams, MuleSoft typically appears when you need to connect Salesforce with ERP systems (SAP, Oracle), data warehouses, or legacy on-premises applications. It's overkill for simple SaaS-to-SaaS integrations (use Zapier or Workato for that). MuleSoft's value shows up in complex enterprise architectures where you need governance, reusability, and monitoring across hundreds of integrations.",
+    "website": "https://www.mulesoft.com",
+    "founded": 2006,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Platform license + usage",
+      "tiers": [
+        {"name": "Gold", "price": "~$50K/year", "notes": "Standard connectors, limited API calls"},
+        {"name": "Platinum", "price": "~$100K/year", "notes": "Premium connectors, higher volumes, priority support"},
+        {"name": "Titanium", "price": "Custom", "notes": "Unlimited, dedicated support, advanced security"}
+      ],
+      "notes": "MuleSoft is enterprise-priced. Most implementations start at $50K-$100K/year for the platform license, plus $100K-$300K for implementation consulting. This is not a tool for small teams or simple integration needs. Salesforce customers may get bundled pricing."
+    },
+    "pros": [
+      "Handles complex enterprise integrations that simpler tools can't",
+      "Strong API management and governance capabilities",
+      "Deep Salesforce integration (same parent company)",
+      "Reusable APIs and connectors reduce long-term development costs",
+      "Enterprise-grade security, monitoring, and compliance"
+    ],
+    "cons": [
+      "Very expensive: $50K-$100K+ annual platform costs plus implementation",
+      "Steep learning curve requiring specialized MuleSoft developers",
+      "Massive overkill for simple SaaS integrations",
+      "Implementation timelines of 3-12 months are common",
+      "Talent pool is smaller and more expensive than general developers"
+    ],
+    "best_for": "Large enterprises with complex integration needs across Salesforce, ERP, and legacy systems",
+    "not_for": "SMBs, teams with simple SaaS-to-SaaS integration needs, or companies without dedicated integration engineering resources",
+    "alternatives": ["workato-ipaas", "boomi", "zapier", "fivetran", "tray"],
+    "faq": [
+      {
+        "q": "How much does MuleSoft cost?",
+        "a": "MuleSoft platform licenses start around $50K/year for the Gold tier. Most enterprise deployments cost $100K-$200K/year for the platform, plus $100K-$300K for implementation consulting. It's an enterprise purchase that requires budget approval."
+      },
+      {
+        "q": "Is MuleSoft only for Salesforce?",
+        "a": "No. While Salesforce owns MuleSoft, it's a general-purpose integration platform that connects any system. That said, the Salesforce integration is the strongest, and many customers adopt MuleSoft specifically to connect Salesforce with other enterprise systems."
+      },
+      {
+        "q": "MuleSoft vs Zapier: what's the difference?",
+        "a": "They're for different audiences. Zapier handles simple SaaS-to-SaaS automations at $20-$100/month. MuleSoft handles complex enterprise integrations at $50K+/year. If you're connecting Salesforce to Slack, use Zapier. If you're connecting Salesforce to SAP with custom data transformations across 50 systems, that's MuleSoft territory."
+      },
+      {
+        "q": "What skills do MuleSoft jobs require?",
+        "a": "Based on our job posting data, MuleSoft roles typically require experience with Anypoint Platform, DataWeave (MuleSoft's transformation language), REST/SOAP APIs, and often Salesforce. Average salaries are high ($161K-$213K) reflecting the specialized skill set."
+      }
+    ]
+  },
+  "cognism": {
+    "display_name": "Cognism",
+    "tagline": "GDPR-compliant B2B data provider with the strongest European contact coverage in the market.",
+    "description": "Cognism is a B2B data provider that competes directly with ZoomInfo. Its primary differentiator is stronger European data coverage and baked-in GDPR compliance. The Diamond Data feature provides phone-verified mobile numbers, which means higher connect rates on direct dials compared to most competitors.",
+    "description_2": "For B2B sales teams targeting European markets, Cognism fills a gap that ZoomInfo and Apollo leave open. European data regulations make it harder to build and maintain contact databases, and Cognism has invested heavily in GDPR-compliant data collection. The phone verification process is manual (humans call and verify numbers), which limits scale but improves accuracy. If your target market is primarily US-based, ZoomInfo or Apollo will serve you better for less money.",
+    "website": "https://www.cognism.com",
+    "founded": 2015,
+    "hq": "London, UK",
+    "pricing": {
+      "model": "Per user/year (custom pricing)",
+      "tiers": [
+        {"name": "Platinum", "price": "Custom (~$15K-25K/yr)", "notes": "Full contact and company data, Chrome extension, CRM integrations"},
+        {"name": "Diamond", "price": "Custom (~$25K-40K/yr)", "notes": "Everything in Platinum plus phone-verified mobile numbers (Diamond Data)"}
+      ],
+      "notes": "Cognism doesn't publish pricing. Based on buyer reports, plans range from $15K-$40K/year depending on team size and Diamond Data access. Pricing is comparable to ZoomInfo. Annual contracts are standard."
+    },
+    "pros": [
+      "Strongest European data coverage among major B2B data providers",
+      "Phone-verified mobile numbers (Diamond Data) with high connect rates",
+      "Built for GDPR compliance from the ground up",
+      "Clean UI with good Chrome extension for LinkedIn prospecting",
+      "Intent data integration via Bombora partnership"
+    ],
+    "cons": [
+      "US data coverage isn't as deep as ZoomInfo",
+      "Pricing is similar to ZoomInfo without the same breadth of features",
+      "Smaller market presence means fewer integrations than ZoomInfo",
+      "Diamond Data credits are limited, and you can burn through them quickly",
+      "Less brand recognition in the US market"
+    ],
+    "best_for": "B2B sales teams targeting European markets or companies that need GDPR-compliant data sourcing",
+    "not_for": "Teams focused exclusively on the US market, or budget-conscious teams that can work with Apollo's accuracy level",
+    "alternatives": ["zoominfo", "apollo", "linkedin-sales-navigator", "clearbit", "leadiq"],
+    "faq": [
+      {
+        "q": "How does Cognism compare to ZoomInfo?",
+        "a": "Cognism is stronger in Europe (GDPR compliance, better coverage in UK/DACH/Nordics) and offers phone-verified mobile numbers. ZoomInfo has deeper US coverage, more features (intent data, website visitor tracking), and a larger integration ecosystem. Pricing is similar for both."
+      },
+      {
+        "q": "What is Cognism Diamond Data?",
+        "a": "Diamond Data is Cognism's phone-verified mobile number feature. A research team manually calls and verifies mobile numbers, resulting in 87%+ accuracy on direct dials. It's the premium tier and costs more, but connect rates are significantly higher than non-verified databases."
+      },
+      {
+        "q": "Is Cognism GDPR compliant?",
+        "a": "Yes. Cognism was built with GDPR compliance as a core feature. They maintain data processing agreements, handle opt-outs, and ensure data collection meets European privacy regulations. This is a major selling point for companies with European operations."
+      }
+    ]
+  },
+  "nooks": {
+    "display_name": "Nooks",
+    "tagline": "AI-powered parallel dialer that turns cold calling from painful to productive.",
+    "description": "Nooks is an AI sales assistant focused on phone-based outreach. Its core feature is a parallel dialer that calls multiple prospects simultaneously and connects the rep only when someone answers. This eliminates the dead time of ringing, voicemails, and disconnected numbers. For outbound teams that still rely on cold calling, Nooks can 3-5x the number of live conversations per hour.",
+    "description_2": "The platform has expanded beyond just dialing. Nooks now includes AI-generated call summaries, a virtual salesfloor (so distributed teams can replicate the energy of a physical bullpen), and analytics on talk tracks. It's part of a wave of AI-powered sales tools that are making phone-based outreach viable again after years of declining connect rates.",
+    "website": "https://www.nooks.ai",
+    "founded": 2020,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {"name": "Starter", "price": "Contact for pricing", "notes": "Parallel dialer, basic analytics"},
+        {"name": "Pro", "price": "Contact for pricing", "notes": "AI summaries, virtual salesfloor, advanced analytics"},
+        {"name": "Enterprise", "price": "Contact for pricing", "notes": "Custom integrations, dedicated support, API access"}
+      ],
+      "notes": "Nooks doesn't publish pricing. Based on buyer reports, expect $300-$500/user/month. The ROI math works when a rep making 150+ dials/day can reach 3-5x more live conversations. Teams with fewer than 5 SDRs making outbound calls may not see enough ROI to justify the cost."
+    },
+    "pros": [
+      "Parallel dialing gets reps to live conversations 3-5x faster",
+      "AI call summaries eliminate manual note-taking",
+      "Virtual salesfloor brings energy to distributed outbound teams",
+      "Strong Salesforce and HubSpot integrations for auto-logging",
+      "Built by former reps who understand SDR workflows"
+    ],
+    "cons": [
+      "Expensive per-seat pricing for a single-channel tool",
+      "Only valuable for teams doing high-volume cold calling",
+      "Parallel dialing can burn through call lists quickly",
+      "Relatively new company with a smaller track record",
+      "Limited value for teams that rely primarily on email outreach"
+    ],
+    "best_for": "Outbound SDR/BDR teams with 5+ reps making 100+ cold calls per day",
+    "not_for": "Teams that don't cold call, small teams under 5 reps, or companies focused on inbound/email-first outreach",
+    "alternatives": ["salesloft", "outreach-io", "apollo", "instantly", "orum"],
+    "faq": [
+      {
+        "q": "How does Nooks parallel dialing work?",
+        "a": "Nooks calls multiple prospects simultaneously from your list. When someone picks up, it instantly connects the SDR to that live conversation and drops the other calls. The rep never hears ringing or voicemails. In practice, this means 3-5x more live conversations per hour compared to manual dialing."
+      },
+      {
+        "q": "Is Nooks worth the cost?",
+        "a": "The math depends on your outbound volume. If an SDR makes 150 dials/day and Nooks triples their live conversations, that's potentially 3x more pipeline from the same headcount. At $300-500/user/month, the ROI is clear for high-volume teams. For teams making under 50 calls/day, it's harder to justify."
+      },
+      {
+        "q": "How does Nooks compare to Salesloft or Outreach?",
+        "a": "Salesloft and Outreach are multi-channel engagement platforms (email sequences, calls, LinkedIn, etc.). Nooks is purpose-built for phone outreach with parallel dialing. Many teams use Nooks for calling alongside Salesloft or Outreach for email sequences."
+      }
+    ]
   }
 }

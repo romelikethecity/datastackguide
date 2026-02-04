@@ -181,6 +181,81 @@
         { "q": "Can small teams use Salesloft?", "a": "Technically yes, but the pricing and feature set are designed for teams of 10+. Teams under 10 reps get better value from Apollo ($49/user/month) or Instantly ($30/user/month)." },
         { "q": "Does Salesloft require annual contracts?", "a": "Yes. Annual contracts are standard. Multi-year deals come with 10-20% discounts. Monthly billing is not typically available." }
       ]
+    },
+    {
+      "slug": "pipedrive-pricing",
+      "tool_slug": "pipedrive",
+      "title": "Pipedrive Pricing (2026): Plans, Costs & What You Get",
+      "meta_description": "Pipedrive pricing breakdown: all 5 tiers compared, real costs, and which plan most sales teams actually need. No hidden fees.",
+      "hook": "Pipedrive is one of the few CRMs with transparent pricing and no mandatory onboarding fees. Here's what each tier includes and which one makes sense for your team.",
+      "tiers": [
+        { "name": "Essential", "price": "$14/user/mo", "billing": "Annual", "highlights": ["Visual pipeline management", "Contact and lead management", "Custom fields", "Calendar view", "Mobile app"] },
+        { "name": "Advanced", "price": "$29/user/mo", "billing": "Annual", "popular": true, "highlights": ["Full email sync and tracking", "Workflow automation", "Meeting scheduling", "Group emailing", "Custom automations (30/user)"] },
+        { "name": "Professional", "price": "$49/user/mo", "billing": "Annual", "highlights": ["Revenue forecasting", "E-signatures", "Custom reporting", "Team management", "Custom automations (60/user)"] },
+        { "name": "Power", "price": "$64/user/mo", "billing": "Annual", "highlights": ["Phone support", "Project management", "Scalable permissions", "CRM implementation support"] },
+        { "name": "Enterprise", "price": "$99/user/mo", "billing": "Annual", "highlights": ["Unlimited automations", "All features unlocked", "Security alerts", "Dedicated account manager", "Enhanced security preferences"] }
+      ],
+      "hidden_costs": [
+        { "item": "Monthly billing premium", "range": "+15-20%", "note": "Annual billing saves 15-20% compared to monthly billing. Monthly pricing: Essential $21/user, Advanced $37/user." },
+        { "item": "LeadBooster add-on", "range": "$32.50/mo", "note": "Chatbots, live chat, web forms, and prospector tool. Separate add-on." },
+        { "item": "Campaigns add-on", "range": "$13.33/mo", "note": "Email marketing campaigns. Pipedrive's attempt at marketing features." },
+        { "item": "Smart Docs add-on", "range": "$32.50/mo", "note": "Document templates with auto-fill from CRM fields." }
+      ],
+      "real_cost_example": {
+        "scenario": "15-person sales team on Advanced plan",
+        "line_items": [
+          { "item": "Advanced plan (15 users, annual)", "annual": "$5,220" },
+          { "item": "LeadBooster add-on", "annual": "$390" },
+          { "item": "Implementation", "annual": "$0" }
+        ],
+        "total": "$5,610/year",
+        "per_user_real": "$31/user/mo"
+      },
+      "bottom_line": "Pipedrive is the most affordable mid-tier CRM on the market. A 15-person team pays $5,200-$8,800/year depending on the plan. Compare that to HubSpot Sales Hub Professional ($24,000/year for 15 users) or Salesforce Enterprise ($29,700/year for 15 users). The trade-off: no marketing automation, basic reporting, and a smaller ecosystem. For sales-focused teams, that trade-off is worth it.",
+      "faq": [
+        { "q": "Which Pipedrive plan is best for most teams?", "a": "Advanced ($29/user/month). It includes email sync, workflow automation, and scheduling. Essential lacks automation; Professional adds forecasting and e-signatures that smaller teams may not need yet." },
+        { "q": "Does Pipedrive offer discounts?", "a": "Annual billing gives 15-20% off vs monthly. Pipedrive occasionally runs promotions for new accounts. They don't negotiate enterprise-style custom pricing." },
+        { "q": "Are there any mandatory fees?", "a": "No. Unlike HubSpot (mandatory onboarding) or Salesforce (implementation consulting), Pipedrive has zero mandatory additional fees. You pay the per-user price and that's it." },
+        { "q": "Can Pipedrive replace HubSpot or Salesforce?", "a": "For pure sales pipeline management, yes. For marketing automation, reporting, or complex enterprise workflows, no. Many teams use Pipedrive for CRM alongside separate tools for marketing (Mailchimp, ActiveCampaign) and reporting (Google Sheets, Looker)." }
+      ]
+    },
+    {
+      "slug": "dynamics-365-pricing",
+      "tool_slug": "dynamics-365",
+      "title": "Dynamics 365 Sales Pricing (2026): Microsoft's Enterprise CRM Costs",
+      "meta_description": "Dynamics 365 Sales pricing breakdown: plans from $65-$135/user/month, hidden costs, and how it compares to Salesforce. Updated for 2026.",
+      "hook": "Microsoft Dynamics 365 Sales is priced to undercut Salesforce while leveraging the Microsoft ecosystem. The reality is more nuanced than the pricing page suggests.",
+      "tiers": [
+        { "name": "Sales Professional", "price": "$65/user/mo", "billing": "Annual", "highlights": ["Core sales automation", "Microsoft 365 integration", "Customizable dashboards", "Mobile app", "LinkedIn Sales Navigator (basic)"] },
+        { "name": "Sales Enterprise", "price": "$95/user/mo", "billing": "Annual", "popular": true, "highlights": ["Everything in Professional", "Copilot AI features", "Sales forecasting", "Advanced customization", "Relationship analytics"] },
+        { "name": "Sales Premium", "price": "$135/user/mo", "billing": "Annual", "highlights": ["Everything in Enterprise", "Predictive scoring", "Relationship intelligence", "Pipeline intelligence", "Conversation intelligence"] }
+      ],
+      "hidden_costs": [
+        { "item": "Microsoft 365 requirement", "range": "$12-$57/user/mo", "note": "Dynamics 365 works best with Microsoft 365 (Outlook, Teams, SharePoint). Most companies already have this, but factor it in if you don't." },
+        { "item": "Implementation consulting", "range": "$30K-$150K", "note": "Like Salesforce, enterprise Dynamics deployments need implementation partners. Microsoft Partners typically charge $150-250/hour." },
+        { "item": "Power Platform add-ons", "range": "$20-40/user/mo", "note": "Power BI Pro ($10/user/mo), Power Automate ($15/user/mo), and Power Apps ($20/user/mo) are separate licenses." },
+        { "item": "Dynamics admin/developer", "range": "$90K-$140K/year", "note": "Enterprise deployments need dedicated Dynamics 365 admins. The talent pool is smaller than Salesforce." },
+        { "item": "LinkedIn Sales Navigator integration", "range": "$79-$149/user/mo", "note": "Full LinkedIn integration requires separate Sales Navigator licenses. Basic integration included in Enterprise tier." }
+      ],
+      "real_cost_example": {
+        "scenario": "30-person sales team on Sales Enterprise",
+        "line_items": [
+          { "item": "30 Sales Enterprise licenses", "annual": "$34,200" },
+          { "item": "Microsoft 365 E3 (if needed)", "annual": "$12,960" },
+          { "item": "Implementation (Year 1, amortized)", "annual": "$25,000" },
+          { "item": "Power BI Pro (10 managers)", "annual": "$1,200" },
+          { "item": "Dynamics Admin (0.5 FTE)", "annual": "$55,000" }
+        ],
+        "total": "$128,360/year",
+        "per_user_real": "$357/user/mo"
+      },
+      "bottom_line": "Dynamics 365 Sales is positioned as the 'cheaper Salesforce' at $65-$135/user/month vs Salesforce's $25-$330. The listed prices are lower, but real costs are comparable once you add Microsoft 365, Power Platform, and implementation. The main reason to choose Dynamics 365 over Salesforce: your organization is already invested in the Microsoft ecosystem (Azure, Teams, SharePoint, Outlook). If you're not a Microsoft shop, Salesforce's larger ecosystem and talent pool are safer bets.",
+      "faq": [
+        { "q": "Is Dynamics 365 cheaper than Salesforce?", "a": "On paper, yes. Dynamics 365 Sales Enterprise ($95/user/mo) vs Salesforce Enterprise ($165/user/mo). In practice, total costs are closer once you add Microsoft ecosystem components, Power Platform licenses, and implementation consulting." },
+        { "q": "Do I need Microsoft 365 to use Dynamics 365?", "a": "Technically no, but practically yes. Dynamics 365 is designed to integrate with Outlook, Teams, and SharePoint. Using it without Microsoft 365 means losing the main competitive advantage over Salesforce." },
+        { "q": "Dynamics 365 vs Salesforce: which is better?", "a": "For Microsoft-heavy organizations (Azure, Teams, Outlook), Dynamics 365 is the natural choice. For everyone else, Salesforce has a larger ecosystem, bigger talent pool, and more AppExchange integrations. Our job data shows 1,694 Salesforce postings vs 65 for Dynamics 365, reflecting this market reality." },
+        { "q": "What skills do Dynamics 365 roles require?", "a": "Based on our analysis, Dynamics 365 roles commonly require experience with Power Platform, Azure, DAX (for Power BI), and Microsoft integrations. Average salaries are competitive: $122K-$160K range." }
+      ]
     }
   ]
 }
