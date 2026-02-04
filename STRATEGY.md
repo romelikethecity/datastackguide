@@ -2749,6 +2749,13 @@ Track what's working:
 - [x] 3 new best-of roundups: Best Lead Scoring Tools, Best Data Quality Tools, Best CRM for Enterprise (14 roundups total)
 - [x] 5 new glossary terms: Sales Automation, Buyer Journey, Lead Routing, Data Deduplication, Sales Cadence (20 terms total)
 - [x] Site now at 178 pages (up from 159)
+- [x] 2 new comparison pages: Lemlist vs Apollo, Bombora vs 6sense (22 comparisons total)
+- [x] 4 new pricing pages: Seamless.AI, RollWorks, Amplemarket, LeadIQ (22 pricing pages total)
+- [x] 3 new alternatives pages: LinkedIn Sales Navigator Alternatives, Make Alternatives, Workato Alternatives (19 alternatives total)
+- [x] 4 new best-of roundups: Best Free CRM, Best AI Sales Tools, Best Lead Generation Tools, Best GTM Platforms (18 roundups total)
+- [x] 5 new glossary terms: GTM Strategy, Product-Led Growth, Sales Enablement, Data Warehouse, Sales Pipeline (25 terms total)
+- [x] 1 new guide: Salesforce vs Dynamics 365 vs HubSpot three-way CRM comparison (4 guides total)
+- [x] Site now at 197 pages (up from 178)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker

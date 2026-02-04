@@ -380,6 +380,106 @@
         "lemlist"
       ],
       "category_slug": "crm"
+    },
+    {
+      "slug": "gtm-strategy",
+      "term": "Go-to-Market (GTM) Strategy",
+      "short_definition": "The plan a company uses to bring a product to market, including target audience, messaging, pricing, and distribution channels.",
+      "full_definition": "A go-to-market strategy defines how a company will reach its target customers and achieve competitive advantage. It covers four core elements: target market definition (who you're selling to), value proposition (why they should buy), distribution channels (how you reach them), and pricing model (how you charge). In B2B, GTM strategies typically fall into two camps: sales-led (outbound reps drive deals) and product-led (the product itself drives adoption and expansion).",
+      "why_it_matters": "A GTM strategy determines which tools you need in your stack. Sales-led GTM demands CRM, sales engagement, and prospecting tools. Product-led GTM requires analytics, product usage tracking, and self-serve onboarding. Intent data and ABM platforms serve companies running account-based GTM. Your GTM motion shapes your entire technology stack.",
+      "example": "A B2B SaaS company launches a new product. Their GTM strategy: target VP-level buyers at mid-market companies (200-2,000 employees) in financial services. Sales-led motion with SDR outbound using Apollo for prospecting, Salesloft for sequences, and 6sense for intent data to prioritize accounts. Marketing supports with content and LinkedIn ads via RollWorks.",
+      "related_terms": [
+        "abm",
+        "sales-engagement",
+        "buyer-journey"
+      ],
+      "related_tools": [
+        "apollo",
+        "hubspot",
+        "6sense",
+        "salesloft"
+      ],
+      "category_slug": "list-building"
+    },
+    {
+      "slug": "product-led-growth",
+      "term": "Product-Led Growth (PLG)",
+      "short_definition": "A business strategy where the product itself drives user acquisition, activation, and expansion rather than traditional sales teams.",
+      "full_definition": "Product-led growth uses the product as the primary vehicle for customer acquisition and revenue expansion. Users sign up for a free or low-cost version, experience value, and upgrade to paid plans or enterprise tiers. The product handles onboarding, feature discovery, and upselling that would traditionally require salespeople. Companies like Slack, Zoom, and Figma popularized this model. The data stack for PLG companies looks different from sales-led organizations: product analytics (Amplitude, Mixpanel) matter more than sales engagement tools, and CRM enrichment focuses on identifying which free users represent enterprise opportunities.",
+      "why_it_matters": "PLG companies use different tools than sales-led companies. Instead of outbound prospecting tools, PLG companies invest in product analytics, user behavior tracking, and enrichment tools that identify which free users work at target accounts. Clearbit (now HubSpot) and 6sense are popular for this: identifying anonymous website visitors and enriching sign-up data to surface enterprise leads from the self-serve funnel.",
+      "example": "A PLG company offers a free tier. 10,000 users sign up monthly. Clearbit enriches each sign-up with company data (size, industry, funding). The RevOps team uses enrichment data to flag when 5+ users from the same company sign up, triggering a sales-assisted motion for enterprise conversion.",
+      "related_terms": [
+        "gtm-strategy",
+        "buyer-journey",
+        "lead-scoring"
+      ],
+      "related_tools": [
+        "hubspot",
+        "clearbit",
+        "apollo"
+      ],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "sales-enablement",
+      "term": "Sales Enablement",
+      "short_definition": "The process of providing sales teams with the content, tools, training, and data they need to close deals effectively.",
+      "full_definition": "Sales enablement bridges the gap between marketing content and sales execution. It covers four areas: content management (battlecards, case studies, decks), training and coaching (onboarding, call coaching, certifications), tools and technology (CRM, engagement platforms, content management systems), and data and analytics (win/loss analysis, content usage tracking, rep performance). The function has grown from a marketing sub-team into a standalone department at many B2B companies.",
+      "why_it_matters": "Sales enablement determines which tools get adopted and how effectively reps use them. A well-equipped enablement function ensures reps can find the right content, use their tools correctly, and act on data insights. Without enablement, companies buy expensive tools (CRM, engagement platforms, intent data) that reps barely use. It's the difference between having tools and having productive tools.",
+      "example": "A sales enablement team implements Gong for call coaching, creates battlecards comparing their product to competitors (using data from DataStackGuide), builds a training program for new reps on Salesforce and Salesloft, and tracks which content reps share most during deal cycles.",
+      "related_terms": [
+        "sales-engagement",
+        "sales-intelligence",
+        "revops"
+      ],
+      "related_tools": [
+        "gong-engage",
+        "salesloft",
+        "salesforce",
+        "hubspot"
+      ],
+      "category_slug": "list-building"
+    },
+    {
+      "slug": "data-warehouse",
+      "term": "Data Warehouse",
+      "short_definition": "A centralized repository that stores structured data from multiple sources for analysis and reporting.",
+      "full_definition": "A data warehouse collects data from operational systems (CRM, marketing automation, billing, product analytics) and stores it in a structured format optimized for analysis. Modern cloud data warehouses (Snowflake, BigQuery, Redshift, Databricks) have replaced on-premise solutions for most companies. The warehouse acts as the single source of truth for business intelligence, feeding dashboards, reports, and reverse ETL tools that push insights back into operational tools.",
+      "why_it_matters": "Data warehouses are the foundation of data-driven GTM operations. RevOps teams use warehouses to combine CRM data with product usage, marketing attribution, and financial metrics. Reverse ETL tools like Census and Hightouch push warehouse data back into CRM and marketing tools, creating a feedback loop between analytics and operations. Without a warehouse, each team operates on siloed data.",
+      "example": "A B2B company sends Salesforce CRM data, HubSpot marketing data, Stripe billing data, and product analytics to Snowflake via Fivetran. The data team builds models that identify expansion-ready accounts. Census pushes these insights back to Salesforce as account scores, and marketing uses them to trigger targeted campaigns in HubSpot.",
+      "related_terms": [
+        "reverse-etl",
+        "data-orchestration",
+        "customer-data-platform"
+      ],
+      "related_tools": [
+        "fivetran",
+        "census-data",
+        "hightouch",
+        "airbyte"
+      ],
+      "category_slug": "data-quality"
+    },
+    {
+      "slug": "sales-pipeline",
+      "term": "Sales Pipeline",
+      "short_definition": "A visual representation of where prospects are in the sales process, from initial contact to closed deal.",
+      "full_definition": "A sales pipeline maps the stages a prospect moves through before becoming a customer. Typical B2B pipeline stages: prospecting, qualification (BANT or MEDDIC), discovery/demo, proposal, negotiation, and closed-won/lost. Pipeline management involves tracking deal values, stage durations, conversion rates between stages, and pipeline velocity. CRM tools (Salesforce, HubSpot, Pipedrive) visualize the pipeline, while sales engagement tools (Salesloft, Outreach) drive prospects through it.",
+      "why_it_matters": "Pipeline is the leading indicator of revenue. Sales leaders use pipeline metrics (coverage ratio, velocity, conversion rates) to forecast quarterly results and identify bottlenecks. A healthy pipeline typically has 3-5x coverage of quota. Data tools impact every pipeline stage: enrichment tools improve qualification, intent data prioritizes outreach, and revenue intelligence tools (Gong) identify deal risks.",
+      "example": "A VP of Sales reviews the pipeline: $2M in deals across 40 opportunities. Average deal size is $50K, win rate is 25%, and average cycle length is 90 days. To hit a $500K quarterly target, they need $2M in pipeline (4x coverage). The team uses ZoomInfo to build prospecting lists, Salesloft to run outreach sequences, and Gong to coach reps on discovery calls that aren't converting.",
+      "related_terms": [
+        "lead-scoring",
+        "sales-engagement",
+        "buyer-journey",
+        "revops"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "pipedrive",
+        "salesloft"
+      ],
+      "category_slug": "crm"
     }
   ]
 }

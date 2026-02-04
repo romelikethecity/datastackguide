@@ -2144,6 +2144,480 @@
           "a": "Yes. Multi-year contracts, end-of-quarter timing, and larger seat counts all provide leverage for negotiation. First-year discounts of 15-25% are common. The best strategy is to get quotes from Chorus/ZoomInfo as competitive pressure before negotiating with Gong."
         }
       ]
+    },
+    {
+      "slug": "seamless-ai-pricing",
+      "tool_slug": "seamless-ai",
+      "title": "Seamless.AI Pricing (2026): What You'll Actually Pay",
+      "meta_description": "Seamless.AI pricing breakdown: real costs by tier, credit limits, and what sales teams actually spend. Updated for 2026.",
+      "hook": "Seamless.AI advertises a free plan and affordable per-user pricing. The real cost depends on how many credits you burn through and whether you need verified data.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "N/A",
+          "highlights": [
+            "50 credits",
+            "Basic search filters",
+            "Email addresses only",
+            "Chrome extension"
+          ]
+        },
+        {
+          "name": "Basic",
+          "price": "$147/mo",
+          "billing": "Annual",
+          "highlights": [
+            "250 credits/mo",
+            "Email + phone numbers",
+            "Basic integrations",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "Custom",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Unlimited credits (daily limit)",
+            "Advanced filters",
+            "Buyer intent data",
+            "CRM integrations",
+            "Dedicated CSM"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Custom credit volume",
+            "API access",
+            "Advanced analytics",
+            "Custom integrations",
+            "Priority support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Credit overages",
+          "range": "Varies",
+          "note": "Free and Basic tiers have strict limits. Exceeding them means upgrading or waiting until next month."
+        },
+        {
+          "item": "Data verification add-on",
+          "range": "$50-$100/mo",
+          "note": "Real-time verification of emails and phone numbers costs extra on lower tiers."
+        },
+        {
+          "item": "Buyer intent data",
+          "range": "Included in Pro+",
+          "note": "Intent signals are only available on Pro and Enterprise plans."
+        },
+        {
+          "item": "CRM integrations",
+          "range": "Included in Pro+",
+          "note": "Salesforce, HubSpot, and other CRM integrations require Pro tier or above."
+        },
+        {
+          "item": "Annual commitment",
+          "range": "Required",
+          "note": "Monthly pricing isn't available on paid plans. You're locked in for 12 months."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "5-person SDR team on Pro plan",
+        "line_items": [
+          {
+            "item": "5 Pro licenses",
+            "annual": "$15,000-$24,000"
+          },
+          {
+            "item": "CRM integration (Salesforce)",
+            "annual": "Included"
+          },
+          {
+            "item": "Buyer intent add-on",
+            "annual": "Included in Pro"
+          },
+          {
+            "item": "Data export/enrichment",
+            "annual": "Included"
+          }
+        ],
+        "total": "$15,000-$24,000/year",
+        "per_user_real": "$250-$400/user/mo"
+      },
+      "bottom_line": "Seamless.AI's free tier is a taste test, not a real solution. Basic at $147/mo works for individual reps who need limited lookups. Most teams end up on Pro, where pricing is negotiable but typically runs $250-$400/user/month. Compare that to Apollo's $49/user/mo with built-in sequences, and the value proposition gets harder to justify unless Seamless.AI's data quality is materially better for your target market.",
+      "faq": [
+        {
+          "q": "How much does Seamless.AI cost per month?",
+          "a": "The free tier costs nothing but includes only 50 credits. Basic starts at $147/month with 250 credits. Pro and Enterprise pricing is custom, typically $250-$400/user/month based on team size and credit volume."
+        },
+        {
+          "q": "Does Seamless.AI require an annual contract?",
+          "a": "Yes. Paid plans require annual commitments. There's no month-to-month option on Basic, Pro, or Enterprise tiers."
+        },
+        {
+          "q": "Is Seamless.AI cheaper than ZoomInfo?",
+          "a": "Yes, significantly. Seamless.AI Pro typically costs $15,000-$24,000/year for a 5-person team. ZoomInfo's comparable offering starts at $15,000/year for basic access and scales to $40,000-$60,000+ for similar team sizes with enrichment features."
+        }
+      ]
+    },
+    {
+      "slug": "rollworks-pricing",
+      "tool_slug": "rollworks",
+      "title": "RollWorks Pricing (2026): ABM Platform Costs Explained",
+      "meta_description": "RollWorks pricing breakdown: ABM platform tiers, ad spend requirements, and real costs for B2B marketing teams. Updated for 2026.",
+      "hook": "RollWorks offers a free account identification tool, but the ABM platform that makes it useful starts at $975/month. Ad spend is extra.",
+      "tiers": [
+        {
+          "name": "Starter (Free)",
+          "price": "$0",
+          "billing": "N/A",
+          "highlights": [
+            "Account identification",
+            "Basic company data",
+            "Up to 50 accounts",
+            "Limited reporting"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price": "$975/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Account-based advertising",
+            "Audience targeting",
+            "Account scoring",
+            "CRM integration",
+            "Campaign analytics"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "Custom",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Machine learning scoring",
+            "Advanced targeting",
+            "Salesforce native integration",
+            "Dedicated CSM",
+            "Intent data included"
+          ]
+        },
+        {
+          "name": "Ultimate",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Full ABM orchestration",
+            "Custom audiences",
+            "Advanced attribution",
+            "API access",
+            "Strategic services"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Display ad spend",
+          "range": "$2,000-$10,000+/mo",
+          "note": "RollWorks platform fees don't include ad spend. Budget separately for display campaigns."
+        },
+        {
+          "item": "Minimum ad commitment",
+          "range": "$3,000/mo typical",
+          "note": "Most plans have a minimum monthly ad spend requirement to activate display advertising."
+        },
+        {
+          "item": "Intent data",
+          "range": "Professional+ only",
+          "note": "Bombora-powered intent data is only available on Professional and Ultimate tiers."
+        },
+        {
+          "item": "Salesforce integration",
+          "range": "Professional+ only",
+          "note": "Native Salesforce integration requires the Professional tier. Standard uses basic CRM sync."
+        },
+        {
+          "item": "Implementation",
+          "range": "$2,000-$5,000",
+          "note": "Onboarding and setup assistance. More complex for Professional and Ultimate."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market B2B company running ABM with display ads",
+        "line_items": [
+          {
+            "item": "Professional platform license",
+            "annual": "$24,000-$48,000"
+          },
+          {
+            "item": "Display ad spend",
+            "annual": "$36,000-$60,000"
+          },
+          {
+            "item": "Implementation + onboarding",
+            "annual": "$3,000-$5,000 (year 1)"
+          },
+          {
+            "item": "Salesforce integration",
+            "annual": "Included in Professional"
+          }
+        ],
+        "total": "$63,000-$113,000/year (year 1)",
+        "per_user_real": "N/A (platform-based, not per-user)"
+      },
+      "bottom_line": "RollWorks positions itself as the more accessible ABM alternative to Demandbase and 6sense. The free account identification tool is a smart entry point, but the real product starts at $975/month. With ad spend on top, you're looking at $60K-$110K/year for a meaningful ABM program. That's 40-60% less than 6sense for companies that don't need predictive AI but still want account-based advertising and scoring.",
+      "faq": [
+        {
+          "q": "How much does RollWorks cost?",
+          "a": "The free Starter plan offers basic account identification. Paid plans start at $975/month (Standard). Professional and Ultimate tiers are custom-priced, typically $2,000-$4,000/month. Display ad spend is additional."
+        },
+        {
+          "q": "Is RollWorks cheaper than 6sense?",
+          "a": "Yes. RollWorks Professional with ad spend typically costs $60K-$110K/year. 6sense runs $75K-$250K/year. RollWorks trades predictive AI sophistication for lower cost and simpler implementation."
+        },
+        {
+          "q": "Does RollWorks include intent data?",
+          "a": "Intent data (powered by Bombora) is included in Professional and Ultimate plans. Standard and Starter plans don't include intent signals."
+        }
+      ]
+    },
+    {
+      "slug": "amplemarket-pricing",
+      "tool_slug": "amplemarket",
+      "title": "Amplemarket Pricing (2026): AI Sales Platform Costs",
+      "meta_description": "Amplemarket pricing breakdown: AI-powered sales platform tiers, what's included, and real costs for outbound teams. Updated for 2026.",
+      "hook": "Amplemarket bundles AI-powered prospecting, multichannel sequences, and a dialer into one platform. Pricing isn't public, but here's what companies report paying.",
+      "tiers": [
+        {
+          "name": "Starter",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Contact database access",
+            "Email sequences",
+            "Basic AI features",
+            "CRM integration"
+          ]
+        },
+        {
+          "name": "Growth",
+          "price": "Custom",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Multichannel sequences (email + LinkedIn + phone)",
+            "AI Copilot for messaging",
+            "Advanced filtering",
+            "Deliverability suite",
+            "Dedicated CSM"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Custom integrations",
+            "Advanced analytics",
+            "Team management",
+            "API access",
+            "Strategic support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Minimum seat commitment",
+          "range": "3-5 seats typical",
+          "note": "Amplemarket typically requires a minimum number of seats. Solo users may not qualify."
+        },
+        {
+          "item": "Annual contract",
+          "range": "Required",
+          "note": "No month-to-month options. Expect a 12-month minimum commitment."
+        },
+        {
+          "item": "Data credits",
+          "range": "Varies by plan",
+          "note": "Contact data lookups may be credit-limited on lower tiers."
+        },
+        {
+          "item": "LinkedIn integration",
+          "range": "Growth+ only",
+          "note": "LinkedIn outreach automation requires the Growth tier."
+        },
+        {
+          "item": "Dialer",
+          "range": "Growth+ only",
+          "note": "Built-in phone dialer is available on Growth and Enterprise plans."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "5-person SDR team on Growth plan",
+        "line_items": [
+          {
+            "item": "5 Growth licenses",
+            "annual": "$30,000-$60,000"
+          },
+          {
+            "item": "Data credits (included)",
+            "annual": "Included"
+          },
+          {
+            "item": "CRM integration",
+            "annual": "Included"
+          },
+          {
+            "item": "AI features",
+            "annual": "Included"
+          }
+        ],
+        "total": "$30,000-$60,000/year",
+        "per_user_real": "$500-$1,000/user/mo"
+      },
+      "bottom_line": "Amplemarket is priced between Apollo ($49-$119/user/mo) and enterprise tools like Salesloft + ZoomInfo. The AI features (message generation, prospect scoring, deliverability optimization) are the differentiator. Whether it justifies $500-$1,000/user/month over Apollo depends on how much you value AI assistance in your outbound workflow. For teams that would otherwise cobble together Apollo + Lemlist + a dialer, Amplemarket's consolidation can make financial sense.",
+      "faq": [
+        {
+          "q": "How much does Amplemarket cost?",
+          "a": "Amplemarket doesn't publish pricing. Based on user reports, expect $500-$1,000/user/month for the Growth plan. Enterprise pricing varies by team size and feature requirements. Annual contracts are required."
+        },
+        {
+          "q": "Is Amplemarket worth the price?",
+          "a": "For teams that value AI-powered outreach and want data, sequences, LinkedIn automation, and a dialer in one platform, Amplemarket can replace 2-3 separate tools. Compare the combined cost of Apollo + Lemlist + a dialer against Amplemarket's bundled price to evaluate."
+        },
+        {
+          "q": "Does Amplemarket have a free trial?",
+          "a": "Amplemarket offers demos but typically doesn't provide a self-service free trial. You'll need to go through a sales process to see the product and get pricing."
+        }
+      ]
+    },
+    {
+      "slug": "leadiq-pricing",
+      "tool_slug": "leadiq",
+      "title": "LeadIQ Pricing (2026): What Prospecting Actually Costs",
+      "meta_description": "LeadIQ pricing breakdown: plans, credit limits, and real costs for SDR teams. Compare to Apollo, ZoomInfo, and Seamless.AI. Updated for 2026.",
+      "hook": "LeadIQ's free plan gives you 50 verified emails/week. Paid plans start at $39/user/month, but credit limits determine whether that's enough for your team.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "N/A",
+          "highlights": [
+            "50 verified emails/week",
+            "5 phone numbers/mo",
+            "Chrome extension",
+            "10 accounts tracked"
+          ]
+        },
+        {
+          "name": "Essential",
+          "price": "$39/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "500 verified emails/mo",
+            "30 phone numbers/mo",
+            "CRM integration",
+            "Unlimited prospecting"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$79/user/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "1,000 verified emails/mo",
+            "70 phone numbers/mo",
+            "AI email generation (Scribe)",
+            "Job change alerts",
+            "Salesforce integration"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Custom credit volume",
+            "API access",
+            "Advanced CRM integrations",
+            "Dedicated CSM",
+            "SSO + admin controls"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Credit overages",
+          "range": "$0.10-$0.50/credit",
+          "note": "Exceeding monthly email or phone limits triggers overage charges or requires upgrading."
+        },
+        {
+          "item": "Salesforce integration",
+          "range": "Pro+ only",
+          "note": "Native Salesforce push requires the Pro plan. Essential only supports basic CRM sync."
+        },
+        {
+          "item": "Job change tracking",
+          "range": "Pro+ only",
+          "note": "Alerts when prospects change jobs are limited to Pro and Enterprise."
+        },
+        {
+          "item": "AI email generation",
+          "range": "Pro+ only",
+          "note": "LeadIQ's Scribe AI feature for personalized emails requires Pro tier."
+        },
+        {
+          "item": "Annual commitment",
+          "range": "Required for discounts",
+          "note": "Monthly pricing is available but 20-30% more expensive than annual."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "5-person SDR team on Pro plan",
+        "line_items": [
+          {
+            "item": "5 Pro licenses (annual)",
+            "annual": "$4,740"
+          },
+          {
+            "item": "5,000 verified emails/mo included",
+            "annual": "Included"
+          },
+          {
+            "item": "350 phone numbers/mo included",
+            "annual": "Included"
+          },
+          {
+            "item": "Credit overages (estimated)",
+            "annual": "$500-$1,000"
+          }
+        ],
+        "total": "$5,240-$5,740/year",
+        "per_user_real": "$87-$96/user/mo"
+      },
+      "bottom_line": "LeadIQ is one of the most affordable prospecting tools with verified data. At $79/user/month for Pro, it's cheaper than ZoomInfo by a wide margin and comparable to Apollo's paid tiers. The trade-off: LeadIQ is a capture tool (best used with LinkedIn Sales Navigator), not a full database like ZoomInfo or Apollo. It's ideal for SDRs who prospect from LinkedIn and need verified contact data pushed to their CRM.",
+      "faq": [
+        {
+          "q": "How much does LeadIQ cost per month?",
+          "a": "LeadIQ Free costs nothing (50 emails/week). Essential is $39/user/month and Pro is $79/user/month, both billed annually. Enterprise pricing is custom based on team size and credit needs."
+        },
+        {
+          "q": "Is LeadIQ cheaper than ZoomInfo?",
+          "a": "Significantly. A 5-person SDR team on LeadIQ Pro costs about $5,200/year. ZoomInfo's equivalent would be $15,000-$30,000/year. LeadIQ has a smaller database, but for LinkedIn-based prospecting, the data quality is comparable."
+        },
+        {
+          "q": "Does LeadIQ have a free plan?",
+          "a": "Yes. The free plan includes 50 verified work emails per week, 5 mobile phone numbers per month, and access to the Chrome extension. It's enough for individual prospectors to evaluate the tool."
+        }
+      ]
     }
   ]
 }
