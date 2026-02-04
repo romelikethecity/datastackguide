@@ -862,6 +862,54 @@
           "is_service": false
         }
       ]
+    },
+    {
+      "name": "Marketing Automation",
+      "slug": "marketing-automation",
+      "description": "Email marketing, lead nurturing, campaign orchestration, and marketing operations platforms for B2B teams.",
+      "color": "#EC4899",
+      "icon": "\ud83d\udce7",
+      "tool_count": 3,
+      "tools": [
+        {
+          "name": "Marketo",
+          "slug": "marketo",
+          "job_count": 36,
+          "description": "Enterprise B2B marketing automation platform, now part of Adobe Experience Cloud.",
+          "is_service": false
+        },
+        {
+          "name": "Salesforce Marketing Cloud",
+          "slug": "salesforce-marketing-cloud",
+          "job_count": 28,
+          "description": "Enterprise multi-channel marketing automation for email, SMS, social, and advertising.",
+          "is_service": false
+        },
+        {
+          "name": "HubSpot Marketing Hub",
+          "slug": "hubspot",
+          "job_count": 432,
+          "description": "Marketing automation included in HubSpot's CRM platform with email, workflows, and landing pages.",
+          "is_service": false
+        }
+      ]
+    },
+    {
+      "name": "Review & Buyer Intent Platforms",
+      "slug": "review-platforms",
+      "description": "Software review sites and buyer intent data platforms that capture purchase signals from B2B research activity.",
+      "color": "#F59E0B",
+      "icon": "\u2b50",
+      "tool_count": 1,
+      "tools": [
+        {
+          "name": "G2",
+          "slug": "g2",
+          "job_count": 42,
+          "description": "B2B software review platform and buyer intent data provider used by marketing and sales teams.",
+          "is_service": false
+        }
+      ]
     }
   ]
 }

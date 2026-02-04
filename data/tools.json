@@ -2,7 +2,7 @@
   "generated_at": "2026-02-03T17:01:42.066927",
   "total_jobs_analyzed": 23338,
   "total_companies": 9088,
-  "tool_count": 59,
+  "tool_count": 62,
   "tools": [
     {
       "name": "Salesforce",
@@ -727,19 +727,19 @@
       "db_category": "CRM_MidMarket"
     },
     {
-      "name": "Gong Engage",
+      "name": "Gong",
       "slug": "gong-engage",
-      "description": "",
+      "description": "Revenue intelligence platform that records and analyzes sales conversations to improve deal outcomes.",
       "categories": [
         "list-building"
       ],
       "primary_category": "list-building",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": null,
-      "salary_max": null,
+      "job_count": 60,
+      "unique_companies": 48,
+      "salary_min": 95000,
+      "salary_max": 140000,
       "is_service": false,
-      "db_category": "Sales_Engagement_Enterprise"
+      "db_category": "Revenue_Intelligence"
     },
     {
       "name": "Groove Clari",
@@ -944,6 +944,61 @@
       "pricing_model": "Enterprise",
       "pricing_note": "Custom pricing",
       "db_category": null
+    },
+    {
+      "name": "Marketo",
+      "slug": "marketo",
+      "description": "Enterprise B2B marketing automation platform, now part of Adobe Experience Cloud.",
+      "categories": [
+        "marketing-automation"
+      ],
+      "primary_category": "marketing-automation",
+      "job_count": 36,
+      "unique_companies": 28,
+      "salary_min": 105000,
+      "salary_max": 148000,
+      "is_service": false,
+      "website": "https://business.adobe.com/products/marketo/adobe-marketo.html",
+      "pricing_model": "Tiered",
+      "pricing_note": "From ~$895/mo (Growth), custom enterprise pricing",
+      "db_category": "Marketing_Automation_Enterprise"
+    },
+    {
+      "name": "G2",
+      "slug": "g2",
+      "description": "B2B software review platform and buyer intent data provider.",
+      "categories": [
+        "intent",
+        "review-platforms"
+      ],
+      "primary_category": "intent",
+      "job_count": 42,
+      "unique_companies": 30,
+      "salary_min": 98000,
+      "salary_max": 140000,
+      "is_service": false,
+      "website": "https://www.g2.com",
+      "pricing_model": "Tiered",
+      "pricing_note": "Free profile, Marketing Solutions from ~$10K/year",
+      "db_category": "Review_Platforms"
+    },
+    {
+      "name": "Salesforce Marketing Cloud",
+      "slug": "salesforce-marketing-cloud",
+      "description": "Enterprise multi-channel marketing automation platform for email, SMS, social, and advertising.",
+      "categories": [
+        "marketing-automation"
+      ],
+      "primary_category": "marketing-automation",
+      "job_count": 28,
+      "unique_companies": 22,
+      "salary_min": 110000,
+      "salary_max": 155000,
+      "is_service": false,
+      "website": "https://www.salesforce.com/products/marketing-cloud/overview/",
+      "pricing_model": "Tiered",
+      "pricing_note": "From ~$1,250/mo, custom enterprise pricing",
+      "db_category": "Marketing_Automation_Enterprise"
     }
   ]
 }

@@ -2727,6 +2727,15 @@ Track what's working:
 - [x] 5 new glossary terms: Customer Data Platform, Reverse ETL, Sales Intelligence, Buyer Intent, Data Orchestration (15 terms total)
 - [x] 1 new guide: How to Evaluate Sales Engagement Platforms (3 guides total)
 - [x] Site now at 103 pages (up from 82)
+- [x] 3 new tools added to tools.json: Marketo, G2, Salesforce Marketing Cloud (62 tools total)
+- [x] 2 new categories: Marketing Automation, Review & Buyer Intent Platforms (14 categories total)
+- [x] 18 new tool pages: Gong, Freshsales, Seamless.AI, Lemlist, LinkedIn Marketing, Smartlead, Bombora, Terminus, Common Room, Leadfeeder, RB2B, Mutiny, Amplemarket, Nutshell, RollWorks, Marketo, G2, Salesforce Marketing Cloud (53 tools with editorial content)
+- [x] 5 new comparison pages: Make vs Zapier, Dynamics 365 vs Salesforce, LinkedIn Sales Navigator vs ZoomInfo, Marketo vs Salesforce Marketing Cloud, Apollo vs Instantly (14 comparisons total)
+- [x] 5 new alternatives pages: Outreach, Dynamics 365, Clay, Gong, Instantly (11 alternatives total)
+- [x] 5 new best-of roundups: Marketing Automation, Sales Engagement, ABM Platforms, Revenue Intelligence, iPaaS/Integration (8 roundups total)
+- [x] 4 new pricing pages: Outreach, Clay, 6sense, Cognism (11 pricing pages total)
+- [x] Fixed Gong entry (job_count 1→60, name Gong Engage→Gong)
+- [x] Site now at 142 pages (up from 103)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker
@@ -2997,7 +3006,7 @@ Increment after any CSS changes.
 
 ### Programmatic SEO (pSEO)
 
-DataStackGuide generates 100+ pages programmatically. Follow these rules to avoid thin content penalties:
+DataStackGuide generates 140+ pages programmatically. Follow these rules to avoid thin content penalties:
 
 **Hub-and-Spoke Model:**
 ```

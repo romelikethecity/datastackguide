@@ -256,6 +256,147 @@
         { "q": "Dynamics 365 vs Salesforce: which is better?", "a": "For Microsoft-heavy organizations (Azure, Teams, Outlook), Dynamics 365 is the natural choice. For everyone else, Salesforce has a larger ecosystem, bigger talent pool, and more AppExchange integrations. Our job data shows 1,694 Salesforce postings vs 65 for Dynamics 365, reflecting this market reality." },
         { "q": "What skills do Dynamics 365 roles require?", "a": "Based on our analysis, Dynamics 365 roles commonly require experience with Power Platform, Azure, DAX (for Power BI), and Microsoft integrations. Average salaries are competitive: $122K-$160K range." }
       ]
+    },
+    {
+      "slug": "outreach-pricing",
+      "tool_slug": "outreach-io",
+      "title": "Outreach Pricing (2026): What Sales Teams Actually Pay",
+      "meta_description": "Outreach pricing breakdown: estimated plan costs, hidden fees, and what mid-market sales teams actually spend. Based on real buyer reports, updated for 2026.",
+      "hook": "Outreach doesn't publish pricing, but based on buyer reports, expect $100-130/user/month with annual contracts. The real cost depends on your seat count and add-ons.",
+      "tiers": [
+        { "name": "Standard", "price": "~$100/user/mo", "billing": "Annual", "highlights": ["Core sequencing", "Basic analytics", "CRM sync", "Email & calendar integration"] },
+        { "name": "Professional", "price": "~$130/user/mo", "billing": "Annual", "popular": true, "highlights": ["Everything in Standard", "Advanced analytics", "Deal management", "Governance controls", "Team-level reporting"] },
+        { "name": "Enterprise", "price": "Custom pricing", "billing": "Annual", "highlights": ["Everything in Professional", "Custom integrations", "Dedicated support", "Advanced security", "Custom SLAs"] }
+      ],
+      "hidden_costs": [
+        { "item": "Implementation", "range": "$10K-$30K", "note": "Outreach deployments need CRM mapping, workflow design, and team onboarding. Budget $10K for basic setup, $30K for complex multi-team rollouts." },
+        { "item": "Training", "range": "$3K-$10K", "note": "Getting reps to actually use the tool well takes structured training. Most teams underestimate this." },
+        { "item": "Additional seats", "range": "$100-$130/user/mo", "note": "Initial quotes cover a set number of seats. Expanding beyond your original contract triggers renegotiation at potentially higher rates." },
+        { "item": "Integrations and add-ons", "range": "Varies", "note": "Advanced integrations, conversation intelligence, and premium support cost extra beyond the base license." }
+      ],
+      "real_cost_example": {
+        "scenario": "25-person SDR team on Professional plan",
+        "line_items": [
+          { "item": "Professional plan (25 users)", "annual": "$39,000" },
+          { "item": "Implementation (one-time, amortized)", "annual": "$15,000" },
+          { "item": "Training and enablement", "annual": "$5,000" }
+        ],
+        "total": "~$59,000 first year, $39,000 ongoing",
+        "per_user_real": "$197/user/mo (Year 1), $130/user/mo (Year 2+)"
+      },
+      "bottom_line": "Outreach is priced for mid-market and enterprise sales teams with 20+ reps. If you're under 10 reps, Apollo or Instantly deliver 80% of the functionality at 20% of the cost.",
+      "faq": [
+        { "q": "Why doesn't Outreach publish pricing?", "a": "Outreach uses a sales-led pricing model. They tailor quotes based on team size, contract length, and which features you need. It's standard practice for enterprise sales engagement platforms." },
+        { "q": "How does Outreach compare to Salesloft?", "a": "They're direct competitors in the $100-150/user/month range. Outreach tends to win on customization and complex workflow support. Salesloft tends to win on ease of use and coaching features. Both require annual contracts." },
+        { "q": "Can I use Outreach with a small team?", "a": "You can, but it's not the best value under 10 reps. The minimum contract and implementation costs make the per-user economics tough for small teams. Apollo ($49/user/month) or Instantly ($30/user/month) are better fits at that scale." },
+        { "q": "Does Outreach require an annual contract?", "a": "Yes. Annual contracts are standard. Multi-year commitments come with discounts, but there's no month-to-month option." }
+      ]
+    },
+    {
+      "slug": "clay-pricing",
+      "tool_slug": "clay",
+      "title": "Clay Pricing (2026): Credits, Plans & the Real Math",
+      "meta_description": "Clay pricing explained: credit system, plan tiers, and what RevOps teams actually spend on enrichment workflows. Updated for 2026.",
+      "hook": "Clay's pricing looks simple on the surface, but the credit system means your actual cost depends heavily on how many enrichments you run. Here's how to budget.",
+      "tiers": [
+        { "name": "Free", "price": "$0", "billing": "100 credits/mo", "highlights": ["Basic enrichment", "Limited integrations", "Single user", "Community support"] },
+        { "name": "Starter", "price": "$149/mo", "billing": "2,000 credits/mo", "highlights": ["Most integrations", "Basic workflows", "Email support", "CSV import/export"] },
+        { "name": "Explorer", "price": "$349/mo", "billing": "10,000 credits/mo", "highlights": ["All integrations", "Advanced workflows", "CRM sync", "Priority support"] },
+        { "name": "Pro", "price": "$800/mo", "billing": "50,000 credits/mo", "popular": true, "highlights": ["Everything in Explorer", "Priority support", "Team features", "API access", "Advanced automations"] },
+        { "name": "Enterprise", "price": "Custom", "billing": "Custom credits", "highlights": ["Unlimited users", "Custom credit volumes", "Dedicated support", "Custom integrations", "SLA guarantees"] }
+      ],
+      "hidden_costs": [
+        { "item": "Credit overages", "range": "$0.01-$0.50/credit", "note": "Credit costs vary by enrichment provider. A simple email lookup might cost 1 credit, while a full company enrichment can burn 5-10. Overages add up fast on high-volume workflows." },
+        { "item": "Third-party data provider costs", "range": "Varies", "note": "Clay orchestrates enrichments, but the data comes from providers like Clearbit, Apollo, and Hunter. Some providers charge separately on top of Clay credits." },
+        { "item": "Learning curve", "range": "2-4 weeks ramp-up", "note": "Clay's workflow builder is powerful but not intuitive. Plan for dedicated setup time before your team is productive." }
+      ],
+      "real_cost_example": {
+        "scenario": "RevOps team enriching 5,000 leads/month",
+        "line_items": [
+          { "item": "Pro plan", "annual": "$9,600" },
+          { "item": "Average credit overage ($200/mo)", "annual": "$2,400" }
+        ],
+        "total": "~$12,000/year",
+        "per_user_real": "$1,000/mo (team cost)"
+      },
+      "bottom_line": "Clay's real cost is the Pro plan ($800/mo) plus enrichment credits from third-party providers. Budget $12K-20K/year for a team actively using it. If you just need basic enrichment without workflow automation, Apollo or ZoomInfo are simpler.",
+      "faq": [
+        { "q": "How does Clay's credit system work?", "a": "Each action in Clay (enriching a contact, looking up a company, running a waterfall) consumes credits. Simple lookups cost 1 credit. Complex multi-provider enrichments can cost 5-10 credits per record. Your plan includes a monthly credit allotment, and overages are billed separately." },
+        { "q": "Is Clay worth it vs. ZoomInfo or Apollo?", "a": "Different tools for different jobs. Clay excels at multi-source enrichment workflows and data orchestration. ZoomInfo and Apollo are better for straightforward contact lookup and outreach. If you're running complex enrichment pipelines across 3+ data sources, Clay pays for itself." },
+        { "q": "Can I use Clay for free?", "a": "Yes. The free tier gives you 100 credits/month, which is enough to test workflows and enrich a small batch of contacts. You'll need a paid plan for any real volume." },
+        { "q": "Does Clay replace my data providers?", "a": "No. Clay sits on top of your data providers and orchestrates them. Think of it as the workflow layer, not the data layer. You'll still need subscriptions to the underlying enrichment sources for best results." }
+      ]
+    },
+    {
+      "slug": "6sense-pricing",
+      "tool_slug": "6sense",
+      "title": "6sense Pricing (2026): What ABM Actually Costs",
+      "meta_description": "6sense pricing breakdown: contract ranges, hidden fees, and what ABM programs actually cost. Based on real buyer reports, updated for 2026.",
+      "hook": "6sense doesn't publish pricing. Based on buyer reports, contracts start around $60K-$75K/year and can scale to $200K+ for enterprise deployments. It's one of the most expensive tools in the B2B stack.",
+      "tiers": [
+        { "name": "Free", "price": "$0", "billing": "Free", "highlights": ["Basic account identification", "Limited intent data", "Chrome extension", "Community support"] },
+        { "name": "Team", "price": "~$60K-75K/year", "billing": "Annual", "highlights": ["Account identification", "Intent data", "Basic orchestration", "CRM integration", "Standard support"] },
+        { "name": "Growth", "price": "~$100K-150K/year", "billing": "Annual", "popular": true, "highlights": ["Everything in Team", "Advanced intent signals", "Predictive analytics", "Campaign orchestration", "Custom segments"] },
+        { "name": "Enterprise", "price": "$150K-250K+/year", "billing": "Annual", "highlights": ["Full platform access", "Custom predictive models", "Dedicated CSM", "Advanced integrations", "Custom reporting", "SLA guarantees"] }
+      ],
+      "hidden_costs": [
+        { "item": "Implementation consulting", "range": "$20K-$50K", "note": "6sense deployments are complex. You'll need help with data integration, model training, and workflow setup. Budget $20K minimum for a usable rollout." },
+        { "item": "Data integration setup", "range": "$5K-$15K", "note": "Connecting your CRM, MAP, and ad platforms to 6sense takes professional services time. The more systems, the higher the cost." },
+        { "item": "Additional data credits", "range": "Varies", "note": "Enrichment and identification credits beyond your plan allotment are billed separately." },
+        { "item": "ABM specialist headcount", "range": "$85K-$120K/year", "note": "You need someone who can operationalize 6sense data. Without a dedicated ABM person, the platform sits underutilized. This is the cost most buyers underestimate." }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market company (500 employees) on Team plan",
+        "line_items": [
+          { "item": "Team plan", "annual": "$75,000" },
+          { "item": "Implementation consulting", "annual": "$25,000" },
+          { "item": "ABM specialist (1 FTE)", "annual": "$85,000" }
+        ],
+        "total": "$185,000 first year",
+        "per_user_real": "N/A (platform-level cost, not per-user)"
+      },
+      "bottom_line": "6sense is the most expensive ABM platform on the market. It delivers real value for companies with the budget and team to operationalize intent data. For companies spending under $50K/year on ABM, Demandbase or RollWorks offer lower entry points.",
+      "faq": [
+        { "q": "Why is 6sense so expensive?", "a": "6sense combines account identification, intent data, predictive analytics, and orchestration in a single platform. You're paying for the data infrastructure and AI models behind it. The price reflects the enterprise buyer profile they target." },
+        { "q": "Is the 6sense free tier useful?", "a": "It's good for basic account identification and getting a feel for intent data. But the real value (predictive models, orchestration, advanced intent) requires paid plans starting at $60K/year. The free tier is a demo, not a working tool." },
+        { "q": "Do I need a dedicated person for 6sense?", "a": "Yes. Every successful 6sense deployment we've seen has at least one person focused on ABM operations. Without that, you're paying $75K+/year for a dashboard nobody acts on." },
+        { "q": "6sense vs Demandbase: which is better?", "a": "6sense generally has stronger predictive models and intent data. Demandbase has a lower entry point and stronger advertising features. For pure ABM orchestration, 6sense wins. For companies wanting ABM + display advertising in one tool, Demandbase is worth evaluating." }
+      ]
+    },
+    {
+      "slug": "cognism-pricing",
+      "tool_slug": "cognism",
+      "title": "Cognism Pricing (2026): Plans, Credits & European Data Costs",
+      "meta_description": "Cognism pricing breakdown: plan tiers, credit system, and what international sales teams actually pay for GDPR-compliant B2B data. Updated for 2026.",
+      "hook": "Cognism uses custom pricing similar to ZoomInfo. Based on buyer reports, plans start around $15K-25K/year for small teams. The GDPR-compliant European data and phone-verified mobile numbers justify the premium for international teams.",
+      "tiers": [
+        { "name": "Platinum", "price": "~$15K-25K/year", "billing": "Annual", "highlights": ["Contact and company search", "Chrome extension", "CRM integrations", "Basic intent data", "GDPR-compliant data"] },
+        { "name": "Diamond", "price": "~$25K-50K/year", "billing": "Annual", "popular": true, "highlights": ["Everything in Platinum", "Diamond verified phone numbers", "Advanced intent data", "More credits", "Priority support"] },
+        { "name": "Custom/Enterprise", "price": "$50K+/year", "billing": "Annual", "highlights": ["Custom credit volumes", "Dedicated support", "Advanced integrations", "Custom SLAs", "Unlimited users"] }
+      ],
+      "hidden_costs": [
+        { "item": "Additional users", "range": "$3K-$5K/user/year", "note": "Base plans cover a set number of seats. Adding reps beyond the initial quote increases the contract at $3K-5K per additional user per year." },
+        { "item": "Credit top-ups", "range": "Varies", "note": "Mid-contract credit top-ups are common for growing teams. They're priced at a premium compared to the per-credit rate in your original deal." },
+        { "item": "Implementation and CRM integration", "range": "$5K-$10K", "note": "Setup, data mapping, and CRM sync require professional services. Simpler setups run $5K, complex multi-CRM environments push toward $10K." },
+        { "item": "SDR team training", "range": "$2K-$5K", "note": "Getting your team proficient with Cognism's search, filters, and workflow takes structured onboarding. Budget for it." }
+      ],
+      "real_cost_example": {
+        "scenario": "15-person sales team targeting Europe on Diamond plan",
+        "line_items": [
+          { "item": "Diamond plan (5 included seats)", "annual": "$35,000" },
+          { "item": "10 additional seats", "annual": "$35,000" },
+          { "item": "Credit overage (mid-year top-up)", "annual": "$5,000" }
+        ],
+        "total": "~$75,000/year",
+        "per_user_real": "$417/user/mo"
+      },
+      "bottom_line": "Cognism is priced in the same tier as ZoomInfo but justifies the cost differently. If your target market is primarily European, Cognism's GDPR compliance and phone-verified mobile numbers are worth the premium. For US-only prospecting, ZoomInfo or Apollo offer better value.",
+      "faq": [
+        { "q": "How does Cognism compare to ZoomInfo?", "a": "ZoomInfo has deeper US data coverage. Cognism has stronger European data and GDPR compliance baked in. Pricing is comparable ($15K-50K/year range). Choose based on your target geography." },
+        { "q": "What are Diamond verified numbers?", "a": "Cognism's Diamond tier includes phone numbers that have been manually verified by their research team. The connect rate on Diamond numbers is significantly higher than standard database numbers. It's their primary differentiator." },
+        { "q": "Is Cognism GDPR compliant?", "a": "Yes. Cognism was built for the European market with GDPR compliance as a core feature. They maintain Do Not Call lists, process data deletion requests, and provide compliant data sourcing documentation. For teams selling into the EU, this matters." },
+        { "q": "Can I get Cognism for under $15K/year?", "a": "It's difficult. Cognism's sales model targets teams willing to commit to annual contracts in the $15K+ range. For budget-conscious teams, Apollo ($49/user/month) or Lusha offer lower entry points with less European coverage." }
+      ]
     }
   ]
 }

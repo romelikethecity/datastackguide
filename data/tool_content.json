@@ -2409,5 +2409,1203 @@
         "a": "Yes. LeadIQ's browser extension works with regular LinkedIn profiles, not just Sales Navigator. However, Sales Navigator makes prospecting more efficient because of its advanced search filters and lead recommendations. Most SDRs who use LeadIQ actively also have Sales Navigator licenses."
       }
     ]
+  },
+  "gong-engage": {
+    "display_name": "Gong",
+    "tagline": "Revenue intelligence platform that records, transcribes, and analyzes every customer interaction.",
+    "description": "Gong captures and analyzes sales calls, video meetings, and emails to give revenue teams visibility into what's actually happening in their deals. It records conversations, transcribes them with AI, and surfaces patterns: what top reps say differently, which deals are at risk, and where the pipeline is leaking. With 60 job postings in our dataset, it's one of the most in-demand revenue intelligence tools in the market.",
+    "description_2": "The real value isn't the recording. It's the analysis. Gong tracks talk-to-listen ratios, competitor mentions, pricing discussions, and next steps across thousands of conversations. Managers use it to coach reps on what winning calls look like. Forecasting features pull signals from actual conversations rather than relying on reps' self-reported deal stages. For B2B sales teams with 20+ reps, the data compounds quickly. For smaller teams, the per-seat cost is hard to justify when you could just listen to a few calls manually.",
+    "website": "https://www.gong.io",
+    "founded": 2015,
+    "hq": "Palo Alto, CA",
+    "pricing": {
+      "model": "Per user/month (annual contract)",
+      "tiers": [
+        {
+          "name": "Professional",
+          "price": "~$100/user/mo",
+          "notes": "Call recording, transcription, basic analytics"
+        },
+        {
+          "name": "Enterprise",
+          "price": "~$150+/user/mo",
+          "notes": "Forecasting, deal intelligence, API access, custom integrations"
+        }
+      ],
+      "notes": "Gong doesn't publish pricing. Based on buyer reports, most companies pay $100-$150/user/month with annual contracts. Platform fees of $5,000-$10,000/year are common on top of per-seat costs. Minimum seat requirements typically apply (5-10 seats). Expect $50K-$150K/year for a mid-size sales team."
+    },
+    "pros": [
+      "AI-powered conversation analysis reveals patterns across thousands of calls",
+      "Deal intelligence pulls risk signals from actual conversations, not rep guesses",
+      "Coaching features let managers compare top and bottom performers objectively",
+      "Forecasting grounded in real deal activity instead of gut feel",
+      "Deep integrations with Salesforce, HubSpot, Zoom, and major dialers"
+    ],
+    "cons": [
+      "Expensive per-seat pricing plus platform fees add up fast",
+      "Recording calls raises privacy and consent concerns in some jurisdictions",
+      "Steep learning curve before teams extract full value from analytics",
+      "Requires consistent adoption across the team to generate useful data",
+      "Annual contracts with limited flexibility to scale down"
+    ],
+    "best_for": "B2B sales organizations with 20+ reps who want data-driven coaching, deal intelligence, and forecasting based on actual conversations",
+    "not_for": "Small sales teams under 10 reps, budget-conscious startups, or teams in regions with strict call recording regulations",
+    "alternatives": [
+      "groove-clari",
+      "salesloft",
+      "hubspot"
+    ],
+    "faq": [
+      {
+        "q": "How much does Gong cost per year?",
+        "a": "For a team of 20 reps, expect to pay $25K-$40K/year at minimum, including platform fees and per-seat costs. Larger deployments with forecasting and deal intelligence features can run $100K-$200K+/year. There's no free tier or monthly billing option."
+      },
+      {
+        "q": "Is Gong worth it for small sales teams?",
+        "a": "Probably not. Gong's value comes from analyzing patterns across hundreds or thousands of conversations. A 5-person team won't generate enough data for the AI to surface meaningful insights. At $100+/user/month, you're better off using a lighter call recording tool and reviewing calls manually."
+      },
+      {
+        "q": "What about call recording consent?",
+        "a": "Gong can be configured to announce recording at the start of calls, and it supports consent workflows. But laws vary by state and country. Two-party consent states (like California) and GDPR jurisdictions require explicit approval. Make sure your legal team reviews compliance before rolling out."
+      }
+    ]
+  },
+  "freshsales": {
+    "display_name": "Freshsales",
+    "tagline": "Affordable CRM from Freshworks that gives SMBs a real alternative to HubSpot and Salesforce.",
+    "description": "Freshsales is the CRM product from Freshworks, built for small and mid-size businesses that want core sales functionality without enterprise pricing. It includes contact management, deal tracking, built-in phone and email, AI-powered lead scoring (Freddy AI), and workflow automation. The free tier covers the basics, and paid plans start at $9/user/month, making it one of the most accessible CRMs on the market.",
+    "description_2": "Freshsales works best for teams that want a clean, modern CRM without the complexity of Salesforce or the contact-based pricing gotchas of HubSpot's Marketing Hub. The built-in phone dialer and email are nice touches that eliminate the need for separate tools. The trade-off is ecosystem. Freshsales has fewer integrations, fewer AppExchange-style add-ons, and a smaller community than Salesforce or HubSpot. If you're a 5-50 person sales team and you don't need deep customization, it's a strong value pick.",
+    "website": "https://www.freshworks.com/crm/sales/",
+    "founded": 2010,
+    "hq": "San Mateo, CA",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "notes": "Basic CRM, contact management, built-in chat/email/phone"
+        },
+        {
+          "name": "Growth",
+          "price": "$9/user/mo",
+          "notes": "Visual pipeline, AI lead scoring, workflow automation"
+        },
+        {
+          "name": "Pro",
+          "price": "$39/user/mo",
+          "notes": "Multiple pipelines, time-based workflows, AI insights"
+        },
+        {
+          "name": "Enterprise",
+          "price": "$59/user/mo",
+          "notes": "Custom modules, audit logs, dedicated account manager"
+        }
+      ],
+      "notes": "Annual billing required for listed prices. Monthly billing is 20-30% higher. The free tier is genuinely functional for very small teams. Growth at $9/user/month is the sweet spot for most SMBs. No hidden onboarding fees."
+    },
+    "pros": [
+      "Very affordable with a functional free tier and paid plans starting at $9/user/mo",
+      "Built-in phone, email, and chat reduce the need for separate communication tools",
+      "Clean, intuitive UI that doesn't require a dedicated admin to manage",
+      "Freddy AI provides lead scoring and deal insights even on lower tiers",
+      "Part of the Freshworks suite, so it integrates natively with Freshdesk and Freshmarketer"
+    ],
+    "cons": [
+      "Smaller integration ecosystem compared to Salesforce and HubSpot",
+      "Limited customization for complex sales processes and multi-entity orgs",
+      "Reporting isn't as deep or flexible as enterprise CRMs",
+      "Smaller community means fewer resources, consultants, and online guides",
+      "Less name recognition in the market, which can matter for hiring ops talent"
+    ],
+    "best_for": "Small and mid-size B2B sales teams (2-50 reps) that want a capable, affordable CRM without enterprise complexity",
+    "not_for": "Enterprise organizations with complex deal structures, CPQ requirements, or teams that need a massive integration ecosystem",
+    "alternatives": [
+      "hubspot",
+      "pipedrive",
+      "zoho-crm",
+      "copper",
+      "nutshell"
+    ],
+    "faq": [
+      {
+        "q": "Freshsales vs HubSpot: which CRM is better for small businesses?",
+        "a": "Both have free tiers and target SMBs. HubSpot has a larger ecosystem and stronger marketing tools. Freshsales is cheaper on paid plans ($9/user/mo vs $20/user/mo for HubSpot Starter) and includes a built-in phone dialer. If marketing automation is your priority, HubSpot. If you want the most affordable CRM with solid sales features, Freshsales."
+      },
+      {
+        "q": "Is Freshsales good enough for a growing sales team?",
+        "a": "It works well up to about 50 reps. Beyond that, you'll likely need more customization, deeper reporting, and a broader integration ecosystem than Freshsales provides. Plan for a potential migration to Salesforce or HubSpot Enterprise if you're scaling past that point."
+      },
+      {
+        "q": "How popular is Freshsales in job postings?",
+        "a": "Freshsales appears in 1 job posting in our dataset, reflecting its SMB focus. Enterprise companies hiring for RevOps and CRM roles overwhelmingly ask for Salesforce or HubSpot experience. Freshsales skills transfer well to other CRMs, though."
+      }
+    ]
+  },
+  "seamless-ai": {
+    "display_name": "Seamless.AI",
+    "tagline": "AI-powered contact data platform focused on real-time verified emails and direct dials.",
+    "description": "Seamless.AI is a B2B contact data platform that uses AI to find and verify contact information in real time. Instead of maintaining a static database like ZoomInfo, Seamless.AI searches and verifies emails and phone numbers on the fly when you request them. The Chrome extension lets reps pull contact data while browsing LinkedIn or company websites. It's positioned as a more affordable alternative to ZoomInfo for teams that need contact data without committing to a $15K+ annual contract.",
+    "description_2": "The real-time verification approach is a double-edged sword. When it works, you get fresh, verified data. When it doesn't, accuracy can be inconsistent, and users report mixed results depending on the industry and seniority level of contacts. The platform has also drawn criticism for aggressive sales practices and auto-renewal terms. Credit limits on lower tiers mean heavy prospectors can burn through their allocation quickly. Still, for teams on a budget, the free tier (50 credits) lets you test before committing.",
+    "website": "https://seamless.ai",
+    "founded": 2015,
+    "hq": "Columbus, OH",
+    "pricing": {
+      "model": "Credit-based tiers",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "notes": "50 credits, basic search, Chrome extension"
+        },
+        {
+          "name": "Basic",
+          "price": "$147/mo",
+          "notes": "250 credits/month, email and phone data"
+        },
+        {
+          "name": "Pro",
+          "price": "Custom",
+          "notes": "Higher credit limits, advanced filters, integrations"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "notes": "Unlimited credits, API access, dedicated support"
+        }
+      ],
+      "notes": "Credit-based pricing means each contact lookup costs a credit. Heavy prospectors can burn through credits fast. Pro and Enterprise pricing is negotiated. Watch out for auto-renewal clauses in contracts."
+    },
+    "pros": [
+      "Real-time verification means data is checked at the moment you request it",
+      "Chrome extension works directly on LinkedIn and company websites",
+      "More affordable entry point than ZoomInfo for basic contact data needs",
+      "Free tier (50 credits) lets you test the product before paying",
+      "Direct dial phone numbers available alongside email addresses"
+    ],
+    "cons": [
+      "Data accuracy is inconsistent, especially for niche industries and international contacts",
+      "Aggressive sales tactics and auto-renewal terms have been widely reported by users",
+      "Credit limits on lower tiers run out quickly for active prospectors",
+      "Real-time search can be slow and occasionally fails to return results",
+      "Less comprehensive company and technographic data compared to ZoomInfo"
+    ],
+    "best_for": "Individual SDRs and small sales teams that need affordable contact data without a ZoomInfo-level commitment",
+    "not_for": "Teams that need consistently high-accuracy data at scale, or companies that want a full sales intelligence platform with intent and technographics",
+    "alternatives": [
+      "zoominfo",
+      "apollo",
+      "cognism",
+      "lusha",
+      "leadiq"
+    ],
+    "faq": [
+      {
+        "q": "How accurate is Seamless.AI's data?",
+        "a": "It varies. Email accuracy is generally 70-85%, which is lower than ZoomInfo's 85-90% for enterprise contacts. Phone number accuracy is less consistent. The real-time verification helps with freshness but doesn't guarantee accuracy. Always verify critical contacts before high-stakes outreach."
+      },
+      {
+        "q": "Seamless.AI vs ZoomInfo: which should I choose?",
+        "a": "ZoomInfo has better data quality, deeper company intelligence, and a more complete feature set. Seamless.AI is significantly cheaper. If you need reliable data for enterprise sales and have the budget, ZoomInfo. If you're a smaller team that needs basic contact info at a fraction of the cost, Seamless.AI is worth testing."
+      },
+      {
+        "q": "What are the complaints about Seamless.AI?",
+        "a": "The most common complaints are aggressive sales follow-up, auto-renewal contract terms that are hard to cancel, and inconsistent data accuracy. Many users recommend testing the free tier thoroughly and reading the contract carefully before signing up for a paid plan."
+      }
+    ]
+  },
+  "lemlist": {
+    "display_name": "lemlist",
+    "tagline": "Cold outreach platform with standout personalization features for email, LinkedIn, and calls.",
+    "description": "lemlist is a multichannel outreach platform built around personalization. It started as a cold email tool and has expanded to cover LinkedIn touches, phone calls, and personalized landing pages. What sets it apart is the ability to embed personalized images, videos, and dynamic landing pages directly into cold emails. For outbound teams that want their messages to stand out in crowded inboxes, lemlist's personalization engine is its strongest selling point.",
+    "description_2": "Beyond personalization, lemlist has invested heavily in deliverability tools: email warmup (via lemwarm), domain rotation, and sending optimization. The platform now includes a B2B lead database and LinkedIn automation, making it a more complete outreach stack. It's popular with European sales teams and agencies, partly because the company is Paris-based and the product reflects a more design-forward approach to outbound. The limitations are on the CRM side. lemlist isn't a CRM replacement, and its contact management is basic compared to Apollo or HubSpot.",
+    "website": "https://www.lemlist.com",
+    "founded": 2018,
+    "hq": "Paris, France",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {
+          "name": "Email Pro",
+          "price": "$55/user/mo",
+          "notes": "Email campaigns, warmup, custom tracking domain"
+        },
+        {
+          "name": "Multichannel Expert",
+          "price": "$79/user/mo",
+          "notes": "LinkedIn + email sequences, image personalization, A/B testing"
+        },
+        {
+          "name": "Outreach Scale",
+          "price": "$129/user/mo",
+          "notes": "Personalized landing pages, advanced conditions, API access"
+        }
+      ],
+      "notes": "Annual billing saves about 20%. All plans include email warmup via lemwarm. The Multichannel Expert tier is the most popular, covering email + LinkedIn outreach. A B2B lead database is available as an add-on."
+    },
+    "pros": [
+      "Personalized images, videos, and landing pages make cold outreach stand out",
+      "Built-in email warmup (lemwarm) included in all plans",
+      "Multichannel sequences across email, LinkedIn, and phone",
+      "Deliverability tools like domain rotation and send optimization are strong",
+      "Active product development with frequent feature releases"
+    ],
+    "cons": [
+      "Contact management is basic, not a CRM replacement",
+      "Smaller B2B database than Apollo or ZoomInfo when used as a data source",
+      "Per-user pricing adds up for larger teams compared to workspace-based tools like Instantly",
+      "LinkedIn automation features depend on your LinkedIn account limits",
+      "Learning curve for setting up advanced personalization workflows"
+    ],
+    "best_for": "Outbound sales teams and agencies that prioritize personalized, multichannel cold outreach and want strong deliverability",
+    "not_for": "Teams that need a combined CRM + outreach platform, or high-volume senders who want the cheapest possible per-email cost",
+    "alternatives": [
+      "instantly",
+      "apollo",
+      "salesloft",
+      "outreach-io",
+      "smartlead"
+    ],
+    "faq": [
+      {
+        "q": "lemlist vs Instantly: which cold email tool is better?",
+        "a": "Instantly is cheaper and better for pure high-volume cold email with unlimited accounts. lemlist is better for multichannel outreach (email + LinkedIn) and personalized campaigns with custom images and landing pages. If volume is your priority, Instantly. If personalization and multichannel are priorities, lemlist."
+      },
+      {
+        "q": "Does lemlist include a contact database?",
+        "a": "Yes, lemlist now offers a B2B lead database as part of its platform, though it's newer and smaller than Apollo's or ZoomInfo's. It's sufficient for basic prospecting, but teams doing heavy list building may want a dedicated data provider alongside lemlist."
+      },
+      {
+        "q": "How popular is lemlist in job postings?",
+        "a": "lemlist appears in 2 job postings in our dataset. It's more commonly used by agencies, freelancers, and European outbound teams than by large enterprises, which tend to standardize on Outreach or SalesLoft."
+      }
+    ]
+  },
+  "linkedin-marketing": {
+    "display_name": "LinkedIn Marketing Solutions",
+    "tagline": "LinkedIn's advertising platform for reaching B2B buyers with sponsored content, lead gen forms, and account targeting.",
+    "description": "LinkedIn Marketing Solutions is LinkedIn's advertising and marketing platform, including Campaign Manager, Matched Audiences, Lead Gen Forms, and Sponsored Content. It gives B2B marketers access to LinkedIn's 900M+ professional profiles for ad targeting based on job title, company, industry, seniority, and skills. For B2B companies, LinkedIn is often the highest-intent paid channel because users are in a professional context when they see your ads.",
+    "description_2": "The platform's biggest strength is targeting precision. No other ad platform lets you target by job title, company size, and industry with the same accuracy. Lead Gen Forms reduce friction by letting prospects submit their info without leaving LinkedIn. Matched Audiences lets you upload account lists or retarget website visitors within LinkedIn. The downside is cost. LinkedIn CPMs run $30-$80+ (compared to $5-$15 on Facebook/Google Display), so you need strong conversion rates to make the math work. It's most effective for mid-to-enterprise B2B with high customer lifetime values.",
+    "website": "https://business.linkedin.com/marketing-solutions",
+    "founded": 2005,
+    "hq": "Sunnyvale, CA",
+    "pricing": {
+      "model": "CPM/CPC auction-based",
+      "tiers": [
+        {
+          "name": "Self-Serve",
+          "price": "Variable",
+          "notes": "Minimum $10/day budget, CPM typically $30-$80+"
+        },
+        {
+          "name": "Managed Campaigns",
+          "price": "$25K+ quarterly",
+          "notes": "LinkedIn account team, premium placements"
+        }
+      ],
+      "notes": "LinkedIn ads are significantly more expensive per impression than other platforms. Average CPC ranges from $5-$12 for Sponsored Content. Lead Gen Forms tend to produce higher quality leads but at a higher cost per lead ($50-$200+ depending on targeting). Most B2B teams need $3K-$10K/month minimum to run meaningful campaigns."
+    },
+    "pros": [
+      "Most precise B2B targeting available: job title, company, seniority, industry",
+      "Lead Gen Forms capture contact info without users leaving LinkedIn",
+      "Matched Audiences lets you target specific account lists for ABM campaigns",
+      "Higher intent audience since users are in a professional context",
+      "Strong for brand awareness and thought leadership among decision-makers"
+    ],
+    "cons": [
+      "Expensive CPMs ($30-$80+) compared to Google Display or Facebook",
+      "Cost per lead is significantly higher than most other paid channels",
+      "Campaign Manager UI is clunky and less intuitive than Google or Meta Ads",
+      "Reporting and attribution capabilities are limited compared to Google Ads",
+      "Requires substantial budget ($3K+/month) to generate meaningful data"
+    ],
+    "best_for": "B2B marketers targeting mid-market and enterprise buyers with high customer lifetime values, especially for ABM campaigns",
+    "not_for": "Companies with low customer lifetime values, B2C marketers, or teams with limited paid media budgets under $3K/month",
+    "alternatives": [
+      "6sense",
+      "demandbase",
+      "hubspot"
+    ],
+    "faq": [
+      {
+        "q": "How much do LinkedIn Ads cost?",
+        "a": "CPMs typically range from $30-$80+, and CPC for Sponsored Content averages $5-$12. Cost per lead varies widely ($50-$200+) depending on your targeting and offer. Most B2B teams need at least $3K-$5K/month to get enough data for optimization. LinkedIn is 3-5x more expensive per impression than Facebook or Google Display."
+      },
+      {
+        "q": "Are LinkedIn Lead Gen Forms effective?",
+        "a": "They typically convert at higher rates than landing pages because the form pre-fills with LinkedIn profile data. Lead quality is generally good since you're capturing professional data. The trade-off: leads don't visit your website, so you lose the chance to pixel them for retargeting on other channels."
+      },
+      {
+        "q": "LinkedIn Ads vs Google Ads for B2B: which is better?",
+        "a": "Google Ads captures demand (people searching for your solution). LinkedIn Ads creates demand (putting your brand in front of decision-makers). For bottom-of-funnel, high-intent prospects, Google wins. For top-of-funnel awareness and ABM targeting by job title and company, LinkedIn wins. Most B2B teams use both."
+      }
+    ]
+  },
+  "smartlead": {
+    "display_name": "Smartlead",
+    "tagline": "Cold email infrastructure tool built for agencies and teams that need unlimited sending accounts and inbox rotation.",
+    "description": "Smartlead is a cold email platform focused on deliverability infrastructure. Its core pitch: unlimited email accounts, automatic inbox rotation, and built-in warmup at a price that undercuts most competitors. You can connect as many sending accounts as you want, and Smartlead automatically rotates between them to distribute volume and protect deliverability. The unified inbox pulls replies from all accounts into one view.",
+    "description_2": "Smartlead is built for a specific use case: teams and agencies sending high-volume cold email who've learned the hard way that deliverability is everything. It doesn't try to be an all-in-one sales platform. There's no built-in contact database, no phone dialer, no LinkedIn automation. It's purely email infrastructure. If you need data, you'll pair it with Apollo, Clay, or a similar tool. If you need multichannel sequences, look at lemlist or Outreach. But for the narrow problem of sending cold email at scale without landing in spam, Smartlead is purpose-built.",
+    "website": "https://www.smartlead.ai",
+    "founded": 2022,
+    "hq": "United States",
+    "pricing": {
+      "model": "Per workspace/month",
+      "tiers": [
+        {
+          "name": "Basic",
+          "price": "$39/mo",
+          "notes": "2,000 active leads, unlimited email accounts, unlimited warmup"
+        },
+        {
+          "name": "Popular",
+          "price": "$94/mo",
+          "notes": "30,000 active leads, unlimited accounts, custom CRM"
+        },
+        {
+          "name": "Pro",
+          "price": "$174/mo",
+          "notes": "150,000 active leads, API access, white-label options"
+        }
+      ],
+      "notes": "Pricing is per workspace, not per user. All team members are included. Unlimited email accounts and warmup are included on every tier. The main difference between tiers is the number of active leads you can manage simultaneously."
+    },
+    "pros": [
+      "Unlimited email accounts and warmup included on all plans",
+      "Automatic inbox rotation protects deliverability across high-volume campaigns",
+      "Affordable workspace pricing, no per-user fees",
+      "Unified inbox consolidates replies from all sending accounts",
+      "White-label options on the Pro tier are useful for agencies"
+    ],
+    "cons": [
+      "Email-only platform with no phone dialer, LinkedIn, or social outreach",
+      "No built-in contact database, you need a separate data provider",
+      "Newer company (founded 2022) with a shorter track record",
+      "UI and reporting aren't as polished as more established platforms",
+      "Deliverability management still requires knowledge of DNS, SPF, and DKIM setup"
+    ],
+    "best_for": "Agencies and outbound teams running high-volume cold email who need unlimited sending accounts and strong deliverability infrastructure",
+    "not_for": "Teams that want an all-in-one sales platform with data, CRM, and multichannel outreach",
+    "alternatives": [
+      "instantly",
+      "lemlist",
+      "apollo"
+    ],
+    "faq": [
+      {
+        "q": "Smartlead vs Instantly: which is better for cold email?",
+        "a": "They're very similar in positioning. Both offer unlimited email accounts and warmup. Instantly has a larger user base, a B2B lead database add-on, and more polished UI. Smartlead's Pro tier includes white-label features that agencies value. Pricing is comparable. Test both and choose based on UI preference and specific feature needs."
+      },
+      {
+        "q": "Do I need a separate data provider with Smartlead?",
+        "a": "Yes. Smartlead is purely email infrastructure. You'll need Apollo, Clay, ZoomInfo, or a similar tool to build your prospect lists. Most Smartlead users import leads from a separate data source and use Smartlead for the sending and warmup layer."
+      },
+      {
+        "q": "How many emails can I send with Smartlead?",
+        "a": "There's no hard limit on sends from Smartlead's side. The practical limit depends on how many sending accounts you connect and their individual sending limits (typically 30-50 emails/day per account). With 20 accounts, you could send 600-1,000 emails/day while staying within safe sending thresholds."
+      }
+    ]
+  },
+  "bombora": {
+    "display_name": "Bombora",
+    "tagline": "B2B intent data provider that tracks which companies are actively researching topics related to your product.",
+    "description": "Bombora is the largest B2B intent data cooperative. It aggregates content consumption signals from 5,000+ B2B media websites to identify which companies are researching specific topics. The flagship product, Company Surge, tells you when a company's research activity on a topic exceeds its historical baseline. If a company that normally reads 3 articles about \"CRM software\" suddenly reads 15 in a week, Bombora flags that surge as a buying signal.",
+    "description_2": "Bombora doesn't sell directly to sales reps. It's a data layer that feeds into other platforms: 6sense, Demandbase, HubSpot, Salesforce, and most major ABM and marketing tools integrate Bombora intent signals. The cooperative model is its moat. Because 5,000+ publishers contribute data, Bombora captures a breadth of research activity that single-source intent providers can't match. The limitation: it's company-level only. Bombora tells you \"Acme Corp is researching CRM software\" but not which individual at Acme is doing the research. You need a contact data provider to turn that company signal into actionable outreach.",
+    "website": "https://bombora.com",
+    "founded": 2014,
+    "hq": "New York, NY",
+    "pricing": {
+      "model": "Annual contract (custom enterprise pricing)",
+      "tiers": [
+        {
+          "name": "Standard",
+          "price": "~$25K-$40K/yr",
+          "notes": "Company Surge data, topic selection, CRM integration"
+        },
+        {
+          "name": "Enterprise",
+          "price": "~$50K-$75K+/yr",
+          "notes": "Full topic taxonomy, advanced analytics, multiple integrations"
+        }
+      ],
+      "notes": "Bombora doesn't publish pricing. Based on buyer reports, most contracts range from $25K-$75K/year depending on the number of topics, integrations, and data volume. Many companies access Bombora data through their ABM platform (6sense, Demandbase) rather than buying directly."
+    },
+    "pros": [
+      "Largest B2B intent data cooperative with signals from 5,000+ publisher sites",
+      "Company Surge algorithm effectively identifies accounts with above-normal research activity",
+      "Integrates with virtually every major ABM, MAP, and CRM platform",
+      "Cooperative model provides broader coverage than single-source intent providers",
+      "Helps prioritize outreach to accounts that are actively in-market"
+    ],
+    "cons": [
+      "Expensive enterprise pricing ($25K-$75K+/year) puts it out of reach for smaller teams",
+      "Company-level signals only, no identification of individual researchers",
+      "Requires an activation platform (CRM, ABM, SEP) to act on the data",
+      "Topic taxonomy can be broad, leading to false positives on intent signals",
+      "Signal latency means you're seeing research activity from days or weeks ago"
+    ],
+    "best_for": "Mid-market and enterprise B2B companies running ABM programs who want to prioritize outreach based on buyer research activity",
+    "not_for": "SMBs on tight budgets, teams without an ABM platform to activate intent data, or companies that need individual-level buyer identification",
+    "alternatives": [
+      "6sense",
+      "demandbase",
+      "zoominfo"
+    ],
+    "faq": [
+      {
+        "q": "How does Bombora collect intent data?",
+        "a": "Bombora operates a data cooperative of 5,000+ B2B media publishers. When someone at a company reads articles on these publisher sites, Bombora captures that content consumption signal (with publisher consent). It then aggregates this data at the company level and compares current activity to historical baselines to identify surges."
+      },
+      {
+        "q": "Bombora vs 6sense: what's the difference?",
+        "a": "Bombora is a data provider. It supplies intent signals. 6sense is a platform that uses intent data (including Bombora's) to orchestrate marketing and sales actions. Many 6sense customers use Bombora as one of their intent data sources. They're complementary, not competitors, though 6sense also has its own intent data."
+      },
+      {
+        "q": "Can Bombora tell me who at a company is researching my product?",
+        "a": "No. Bombora identifies company-level intent only. It can tell you that Acme Corp is researching \"CRM software\" but can't identify the specific person doing the research. You need a contact data provider (ZoomInfo, Apollo, Cognism) to find the right people at that company."
+      }
+    ]
+  },
+  "terminus": {
+    "display_name": "Terminus",
+    "tagline": "Multi-channel ABM platform for account-based advertising, email, chat, and web personalization.",
+    "description": "Terminus is an account-based marketing (ABM) platform that helps B2B marketers target specific accounts across display ads, email, chat, and web experiences. Originally known for its account-based advertising capabilities, Terminus expanded into a broader ABM orchestration platform. In 2023, Terminus was acquired by DemandScience, which has shifted the product's direction and market positioning.",
+    "description_2": "Before the acquisition, Terminus was a strong independent player in the ABM space alongside 6sense and Demandbase. Its display ad targeting and account-level analytics were well-regarded by mid-market B2B marketing teams. Post-acquisition, there's been restructuring and some uncertainty about the product roadmap. Existing customers report that core features still work, but the pace of innovation has slowed. New buyers should evaluate the current state carefully and consider whether 6sense or Demandbase might be safer long-term bets. That said, Terminus remains a functional ABM platform, and DemandScience's data assets could enhance its capabilities over time.",
+    "website": "https://terminus.com",
+    "founded": 2014,
+    "hq": "Atlanta, GA",
+    "pricing": {
+      "model": "Custom annual contracts",
+      "tiers": [
+        {
+          "name": "Starter",
+          "price": "Custom",
+          "notes": "Account-based advertising, basic account insights"
+        },
+        {
+          "name": "Growth",
+          "price": "Custom",
+          "notes": "Multi-channel ABM, email, chat, web personalization"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "notes": "Full platform, advanced analytics, custom integrations"
+        }
+      ],
+      "notes": "Terminus doesn't publish pricing. Based on buyer reports, plans typically start around $20K-$30K/year for advertising-focused packages and go up from there with additional channels. The acquisition by DemandScience may impact pricing and packaging. Get current quotes directly."
+    },
+    "pros": [
+      "Strong account-based display ad targeting with good reach and frequency controls",
+      "Multi-channel ABM covers ads, email, chat, and web personalization in one platform",
+      "Account-level analytics show engagement across all channels",
+      "Good Salesforce and HubSpot integrations for syncing account data",
+      "DemandScience acquisition brings additional data assets"
+    ],
+    "cons": [
+      "Acquisition by DemandScience has created uncertainty about the product roadmap",
+      "UI complexity means a significant onboarding and learning investment",
+      "Requires complementary tools for contact data and sales engagement",
+      "Innovation pace has slowed post-acquisition according to user reports",
+      "Less competitive with 6sense and Demandbase on AI and predictive capabilities"
+    ],
+    "best_for": "Mid-market B2B marketing teams running account-based programs who need multi-channel ad targeting and engagement tracking",
+    "not_for": "Companies that need an advanced ABM platform with strong AI/predictive features, or teams concerned about vendor stability post-acquisition",
+    "alternatives": [
+      "6sense",
+      "demandbase",
+      "rollworks"
+    ],
+    "faq": [
+      {
+        "q": "What happened to Terminus?",
+        "a": "Terminus was acquired by DemandScience in 2023. The product continues to operate, but there's been organizational restructuring. Existing customers report core features still work, though some have started evaluating alternatives. If you're considering Terminus, ask about the current product roadmap and DemandScience's plans."
+      },
+      {
+        "q": "Terminus vs 6sense: which ABM platform is better?",
+        "a": "6sense is currently the stronger platform with better AI, intent data, and predictive capabilities. Terminus was competitive before the acquisition but has fallen behind on innovation. For new ABM implementations, 6sense or Demandbase are typically the safer choices. Terminus may still be viable for teams that primarily need account-based advertising."
+      },
+      {
+        "q": "How much does Terminus cost?",
+        "a": "Pricing is custom and not published. Based on buyer reports, expect $20K-$50K/year depending on channels and features. Advertising-only packages are cheaper. Full multi-channel ABM costs more. Get a current quote since pricing may have changed post-acquisition."
+      }
+    ]
+  },
+  "common-room": {
+    "display_name": "Common Room",
+    "tagline": "Signal intelligence platform that captures buying signals from community, product usage, and social channels.",
+    "description": "Common Room aggregates signals from places most sales and marketing tools ignore: community forums, Slack/Discord channels, GitHub activity, social media engagement, product usage data, and more. It connects these signals to people and accounts, giving go-to-market teams visibility into who's engaging with their brand before those people ever fill out a form. Think of it as a signal aggregation layer that sits alongside your CRM and ABM tools.",
+    "description_2": "The platform was built for the community-led growth motion that's become common in developer tools, open-source companies, and product-led growth (PLG) businesses. If your buyers hang out in your Slack community, star your GitHub repo, or engage with your content on Twitter/X, Common Room captures those signals and scores them. It's a newer category and a newer company (founded 2020), so the product is still maturing. The value depends heavily on whether your company has active community channels that generate meaningful signal. If your buyers don't engage in public communities, Common Room won't have much to work with.",
+    "website": "https://www.commonroom.io",
+    "founded": 2020,
+    "hq": "Seattle, WA",
+    "pricing": {
+      "model": "Tiered plans",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "notes": "Limited contacts and integrations, basic signal tracking"
+        },
+        {
+          "name": "Team",
+          "price": "$500/mo",
+          "notes": "More contacts, CRM integrations, advanced signal scoring"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "notes": "Unlimited contacts, custom integrations, dedicated support"
+        }
+      ],
+      "notes": "The free tier is functional enough to test with a small community. The Team plan at $500/month is the starting point for most serious deployments. Enterprise pricing is custom and negotiated based on contact volume and integration needs."
+    },
+    "pros": [
+      "Captures buying signals from community channels that other tools miss entirely",
+      "Modern, clean UI that's easy to navigate and configure",
+      "Growing integration library covering Slack, Discord, GitHub, Twitter/X, and more",
+      "Person-level identification connects community activity to real contacts and accounts",
+      "AI-powered signal scoring helps prioritize high-intent community members"
+    ],
+    "cons": [
+      "Requires active community channels (Slack, Discord, GitHub) to generate valuable signals",
+      "Newer product (founded 2020) still maturing in features and stability",
+      "Less useful for companies without a community-led or PLG go-to-market motion",
+      "Signal quality depends heavily on the volume and type of community engagement",
+      "Smaller company with a narrower feature set than established ABM platforms"
+    ],
+    "best_for": "Developer-focused companies, open-source businesses, and PLG companies with active community channels who want to turn community engagement into pipeline",
+    "not_for": "Traditional B2B companies without active community channels, or teams that need a full ABM platform for display ads and account orchestration",
+    "alternatives": [
+      "6sense",
+      "warmly",
+      "rb2b"
+    ],
+    "faq": [
+      {
+        "q": "What kind of signals does Common Room capture?",
+        "a": "Common Room tracks activity across Slack/Discord communities, GitHub (stars, issues, PRs), Twitter/X mentions and engagement, LinkedIn activity, product usage data, and more. It connects this activity to individual people and companies, creating a unified view of who's engaging with your brand across channels."
+      },
+      {
+        "q": "Is Common Room an ABM platform?",
+        "a": "Not exactly. Common Room is a signal intelligence platform. It captures signals that ABM platforms miss (community, social, product usage) and can feed those signals into your ABM or CRM tools. It complements rather than replaces platforms like 6sense or Demandbase."
+      },
+      {
+        "q": "Do I need an active community for Common Room to be useful?",
+        "a": "Yes. Common Room's value is directly proportional to the signal volume from your community channels. If you have an active Slack community with hundreds of members, a popular GitHub repo, or strong social engagement, Common Room will surface actionable insights. If your community channels are quiet, the platform won't have enough data to be useful."
+      }
+    ]
+  },
+  "leadfeeder": {
+    "display_name": "Leadfeeder (Dealfront)",
+    "tagline": "Website visitor identification tool that reveals which companies are browsing your site.",
+    "description": "Leadfeeder identifies companies visiting your website using reverse IP lookup and connects that data to your CRM. It shows which companies visited, what pages they viewed, how long they stayed, and how they found you. For B2B sales and marketing teams, this turns anonymous website traffic into a list of warm accounts to target. In 2022, Leadfeeder merged with Echobot to form Dealfront, a broader go-to-market platform for European and international markets.",
+    "description_2": "The core value proposition is simple: your website already attracts potential buyers. Leadfeeder tells you who they are (at the company level) so your sales team can follow up. Setup takes about 10 minutes with a tracking script, and it integrates directly with Salesforce, HubSpot, Pipedrive, and other CRMs. The limitation is that reverse IP only identifies companies, not individuals. You'll know that someone at Acme Corp visited your pricing page, but not which person. Accuracy also varies since shared IP addresses (remote workers, VPNs, co-working spaces) can produce false matches. Despite these limits, it's a low-friction way to generate account-level buying signals.",
+    "website": "https://www.leadfeeder.com",
+    "founded": 2012,
+    "hq": "Helsinki, Finland",
+    "pricing": {
+      "model": "Monthly, based on identified companies",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "notes": "Last 7 days of data, limited features, up to 100 identified companies"
+        },
+        {
+          "name": "Paid",
+          "price": "From \u20ac99/mo",
+          "notes": "Unlimited data retention, CRM integrations, custom feeds, email alerts"
+        }
+      ],
+      "notes": "The free tier is limited but useful for testing. Paid pricing starts at \u20ac99/month and scales with the number of identified companies. Most mid-market deployments run \u20ac150-\u20ac300/month. Enterprise pricing through Dealfront's broader platform is custom."
+    },
+    "pros": [
+      "Easy setup (10 minutes with a tracking script) and minimal maintenance",
+      "Direct integrations with Salesforce, HubSpot, and Pipedrive for auto-syncing leads",
+      "Custom feeds let you filter visitors by industry, company size, or behavior",
+      "Affordable starting point for website visitor identification",
+      "Part of Dealfront, which adds European B2B data and compliance capabilities"
+    ],
+    "cons": [
+      "Company-level identification only, no individual visitor data",
+      "Accuracy varies due to VPNs, remote workers, and shared IP addresses",
+      "Merged into Dealfront, which may add complexity for users who just want visitor tracking",
+      "Free tier is very limited (7 days of data, 100 companies)",
+      "Less useful for websites with low traffic volumes (need 500+ monthly visitors for meaningful data)"
+    ],
+    "best_for": "B2B marketing and sales teams that want a simple, affordable way to identify which companies are visiting their website",
+    "not_for": "Teams that need individual-level visitor identification, websites with very low traffic, or companies requiring high-accuracy identification despite VPN and remote work trends",
+    "alternatives": [
+      "warmly",
+      "rb2b",
+      "6sense",
+      "clearbit"
+    ],
+    "faq": [
+      {
+        "q": "How accurate is Leadfeeder's company identification?",
+        "a": "Accuracy depends on the visitor's network. Direct office IP addresses are identified correctly about 80-90% of the time. Remote workers, VPN users, and co-working spaces reduce accuracy significantly. Expect to identify 10-30% of your total website traffic as named companies."
+      },
+      {
+        "q": "What's the difference between Leadfeeder and Dealfront?",
+        "a": "Dealfront is the parent company formed when Leadfeeder merged with Echobot in 2022. Leadfeeder's website visitor identification is now one product within Dealfront's broader go-to-market platform, which also includes B2B company data and sales intelligence. You can still use the visitor identification features on their own."
+      },
+      {
+        "q": "Can Leadfeeder identify individual visitors?",
+        "a": "No. Leadfeeder uses reverse IP lookup, which identifies companies, not people. If you need individual-level identification (specific LinkedIn profiles or email addresses), look at tools like RB2B or Warmly, which use different identification methods."
+      }
+    ]
+  },
+  "rb2b": {
+    "display_name": "RB2B",
+    "tagline": "Person-level website visitor identification that matches anonymous visitors to LinkedIn profiles.",
+    "description": "RB2B identifies individual people visiting your website, not just companies. Where tools like Leadfeeder use reverse IP to tell you \"someone from Acme Corp visited your pricing page,\" RB2B goes further and matches visitors to their LinkedIn profiles. You get the person's name, title, company, and LinkedIn URL. It pushes these notifications to Slack in real time, so sales reps can follow up while the visit is fresh.",
+    "description_2": "The company launched in 2023 and gained rapid traction by offering a generous free tier (200 identified profiles/month) and a viral Slack notification workflow that sales teams love. The technology works by matching first-party website data to identity resolution databases. There are important caveats: it only identifies US-based visitors, it only returns LinkedIn profile matches, and the privacy implications are debated. Some prospects may feel uncomfortable knowing they were identified from an anonymous website visit. Still, for B2B sales teams running outbound, knowing that a VP of Sales at a target account just viewed your case study page is an incredibly powerful trigger for personalized outreach.",
+    "website": "https://www.rb2b.com",
+    "founded": 2023,
+    "hq": "United States",
+    "pricing": {
+      "model": "Monthly, based on identified profiles",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "notes": "Up to 200 identified profiles/month, Slack integration"
+        },
+        {
+          "name": "Pro",
+          "price": "$199/mo",
+          "notes": "Unlimited identifications, advanced filtering, CRM integrations"
+        }
+      ],
+      "notes": "The free tier at 200 profiles/month is generous enough for smaller sites to run indefinitely. Pro at $199/month gives you unlimited identifications and deeper integrations. Annual billing options may be available. Pricing is straightforward compared to enterprise visitor identification tools."
+    },
+    "pros": [
+      "Person-level identification shows exactly who visited your site, not just the company",
+      "Real-time Slack notifications let reps follow up while interest is fresh",
+      "Generous free tier (200 profiles/month) makes it easy to test and prove value",
+      "Affordable Pro plan at $199/month compared to enterprise alternatives",
+      "Simple setup with a tracking pixel, no complex implementation needed"
+    ],
+    "cons": [
+      "US visitors only, no international coverage",
+      "Only returns LinkedIn profile matches, no email addresses or phone numbers",
+      "Very new company (founded 2023) with a limited track record",
+      "Privacy concerns around identifying anonymous website visitors without consent",
+      "Match rate varies depending on traffic quality and visitor demographics"
+    ],
+    "best_for": "B2B sales teams in the US that want person-level website visitor identification as a trigger for outbound outreach",
+    "not_for": "Companies with primarily international website traffic, teams that need email/phone data from visitors, or organizations with strict privacy requirements",
+    "alternatives": [
+      "warmly",
+      "leadfeeder",
+      "clearbit",
+      "6sense"
+    ],
+    "faq": [
+      {
+        "q": "How does RB2B identify individual visitors?",
+        "a": "RB2B uses identity resolution technology that matches first-party website visitor data (cookies, device fingerprints) against identity databases to find LinkedIn profile matches. It doesn't scrape LinkedIn. The match rate varies by traffic source and visitor demographics, typically identifying 15-30% of US-based visitors."
+      },
+      {
+        "q": "Is RB2B GDPR compliant?",
+        "a": "RB2B currently only identifies US-based visitors, which sidesteps GDPR. However, the practice of identifying anonymous website visitors raises privacy questions in any jurisdiction. Check with your legal team about compliance with state-level privacy laws (like CCPA in California) before deploying."
+      },
+      {
+        "q": "RB2B vs Leadfeeder: what's the difference?",
+        "a": "Leadfeeder identifies companies using reverse IP lookup. RB2B identifies individual people using identity resolution. Leadfeeder has broader coverage (including international) and is more established. RB2B provides much more actionable data (specific person, title, LinkedIn profile) but only works for US visitors."
+      }
+    ]
+  },
+  "mutiny": {
+    "display_name": "Mutiny",
+    "tagline": "AI-powered website personalization platform that tailors your site experience for ABM target accounts.",
+    "description": "Mutiny personalizes your website for different visitors based on their company, industry, firmographic data, or ABM target list membership. Instead of showing the same generic homepage to every visitor, Mutiny lets you display tailored headlines, CTAs, case studies, and content for specific accounts or segments. It's built specifically for B2B marketers running ABM programs who want their website to reinforce account-specific messaging.",
+    "description_2": "The platform uses a no-code visual editor, so marketers can create personalized experiences without engineering help. Mutiny identifies visitors using reverse IP and integrations with your ABM platform, then serves the right variant. It includes AI recommendations that suggest which segments to personalize and what changes to make. The ROI case is straightforward: personalized landing pages convert at 2-3x the rate of generic ones. The challenge is that Mutiny requires enough website traffic to make personalization meaningful (typically 10K+ monthly visitors) and it's expensive for smaller teams.",
+    "website": "https://www.mutinyhq.com",
+    "founded": 2018,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Custom annual contracts",
+      "tiers": [
+        {
+          "name": "Growth",
+          "price": "~$10K-$20K/yr",
+          "notes": "Core personalization, limited audiences, basic analytics"
+        },
+        {
+          "name": "Enterprise",
+          "price": "~$30K-$50K+/yr",
+          "notes": "Unlimited audiences, AI recommendations, advanced analytics, integrations"
+        }
+      ],
+      "notes": "Mutiny doesn't publish pricing. Based on buyer reports, plans range from $10K-$50K+/year. Pricing scales with traffic volume and the number of personalized experiences. Most mid-market implementations run $20K-$35K/year."
+    },
+    "pros": [
+      "No-code visual editor lets marketers personalize pages without engineering support",
+      "AI recommendations suggest high-impact personalization opportunities",
+      "Strong ABM use case: tailor your site for named accounts and target segments",
+      "Personalized experiences consistently convert 2-3x better than generic pages",
+      "Integrates with 6sense, Demandbase, Clearbit, and major ABM platforms for visitor identification"
+    ],
+    "cons": [
+      "Expensive for smaller teams ($10K-$50K+/year) relative to the scope of the product",
+      "Requires meaningful website traffic volume (10K+ monthly visitors) to see results",
+      "Limited to website personalization, doesn't extend to email, ads, or other channels",
+      "Visitor identification depends on reverse IP and third-party data, which has accuracy limits",
+      "ROI can be hard to measure without proper attribution infrastructure"
+    ],
+    "best_for": "B2B marketing teams running ABM programs with 10K+ monthly website visitors who want to personalize the site experience for target accounts",
+    "not_for": "Small businesses with low website traffic, teams without an ABM strategy, or companies looking for multi-channel personalization beyond the website",
+    "alternatives": [
+      "6sense",
+      "demandbase",
+      "terminus"
+    ],
+    "faq": [
+      {
+        "q": "How does Mutiny identify website visitors?",
+        "a": "Mutiny uses reverse IP lookup and integrations with ABM platforms (6sense, Demandbase, Clearbit) to identify the company or account behind each visit. It then serves personalized content based on that identification. It works at the company level, not the individual level."
+      },
+      {
+        "q": "Does Mutiny require engineering resources to set up?",
+        "a": "Minimal. You install a JavaScript snippet on your site (similar to Google Analytics), and then marketers use the no-code visual editor to create personalized experiences. No code changes to your website are needed for most use cases. Complex integrations or custom data sources may require some engineering support."
+      },
+      {
+        "q": "What kind of conversion improvement can I expect from Mutiny?",
+        "a": "Mutiny reports that personalized experiences convert at 2-3x the rate of generic pages. Real results depend on your traffic volume, the quality of your personalization, and how well-targeted your segments are. Start with high-intent pages (pricing, demo request) and your top-priority ABM accounts for the fastest impact."
+      }
+    ]
+  },
+  "amplemarket": {
+    "display_name": "Amplemarket",
+    "tagline": "AI-powered sales engagement platform that bundles prospecting data, multichannel outreach, and intelligence in one tool.",
+    "description": "Amplemarket combines three things that most sales teams buy separately: a B2B contact database, multichannel outreach sequences (email, phone, LinkedIn), and AI-powered personalization. It uses AI to help reps find the right prospects, write personalized messages, and optimize send times. The pitch is simple: instead of stitching together ZoomInfo + Outreach + a personalization tool, you get it all in one platform.",
+    "description_2": "The company was founded in 2019 with offices in San Francisco and Lisbon, and it's gained traction among growth-stage B2B companies. Amplemarket's AI features go beyond basic templates. The system analyzes prospect data to suggest personalized angles and can generate first drafts of outreach messages. Multichannel sequences coordinate email, LinkedIn, and phone touches automatically. The trade-off is that Amplemarket is still a newer player with less market presence than established tools like Outreach or Apollo. Custom pricing means you can't easily compare costs, and the contact database, while growing, isn't as large as ZoomInfo's or Apollo's.",
+    "website": "https://www.amplemarket.com",
+    "founded": 2019,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Custom pricing (annual contracts)",
+      "tiers": [
+        {
+          "name": "Growth",
+          "price": "Custom",
+          "notes": "Contact data, email sequences, basic AI features"
+        },
+        {
+          "name": "Professional",
+          "price": "Custom",
+          "notes": "Multichannel sequences, advanced AI personalization, analytics"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "notes": "Full platform, API access, dedicated support, custom integrations"
+        }
+      ],
+      "notes": "Amplemarket doesn't publish pricing. Based on buyer reports, expect $100-$150/user/month for most plans, with annual commitments. The all-in-one approach can be more cost-effective than buying data + SEP + personalization separately, but direct price comparison is difficult."
+    },
+    "pros": [
+      "All-in-one platform combines contact data, multichannel outreach, and AI personalization",
+      "AI-generated message drafts and send-time optimization save reps time",
+      "Built-in data means you don't need a separate ZoomInfo or Apollo subscription",
+      "Multichannel sequences coordinate email, LinkedIn, and phone touches",
+      "Modern, clean interface built for the AI-first sales workflow"
+    ],
+    "cons": [
+      "Newer player with less market presence and brand recognition than Outreach or SalesLoft",
+      "Custom pricing makes it hard to evaluate cost before a sales conversation",
+      "Contact database is growing but doesn't match ZoomInfo's or Apollo's scale yet",
+      "Smaller integration ecosystem than established SEPs",
+      "Limited track record at enterprise scale"
+    ],
+    "best_for": "Growth-stage B2B sales teams that want an all-in-one prospecting and outreach platform with AI features, without buying multiple point solutions",
+    "not_for": "Enterprise organizations that need deep CRM integration, proven at-scale reliability, or teams locked into existing data and engagement contracts",
+    "alternatives": [
+      "apollo",
+      "outreach-io",
+      "salesloft",
+      "instantly"
+    ],
+    "faq": [
+      {
+        "q": "How does Amplemarket compare to Apollo?",
+        "a": "Both are all-in-one platforms with data + outreach. Apollo has a larger, more established database (275M+ contacts) and transparent pricing ($49-$119/user/month). Amplemarket differentiates on AI personalization capabilities and multichannel coordination. Apollo is the safer, more proven choice. Amplemarket is worth evaluating if AI-powered personalization is a top priority."
+      },
+      {
+        "q": "Does Amplemarket replace Outreach or SalesLoft?",
+        "a": "It can, especially for mid-market teams. Amplemarket covers similar sequencing and multichannel functionality plus adds built-in data and AI personalization. For enterprise deployments with complex workflows and deep Salesforce integration needs, Outreach and SalesLoft are still more mature options."
+      },
+      {
+        "q": "How good is Amplemarket's contact data?",
+        "a": "The database is growing and covers standard B2B contacts (email, phone, company data). It's sufficient for most mid-market prospecting needs but doesn't match the scale or depth of ZoomInfo for enterprise-focused lists. If data breadth is your top priority, ZoomInfo or Apollo still lead."
+      }
+    ]
+  },
+  "nutshell": {
+    "display_name": "Nutshell",
+    "tagline": "Simple, affordable CRM built for small businesses that want pipeline management without the complexity.",
+    "description": "Nutshell is a CRM designed specifically for small businesses. It covers the fundamentals: contact management, pipeline tracking, email sequences, reporting, and team collaboration. Where it stands out is simplicity. You can be up and running in a day without needing a consultant or dedicated admin. The interface is clean, the learning curve is gentle, and the pricing is transparent. For small teams that have been managing deals in spreadsheets, Nutshell is a natural first step into proper CRM.",
+    "description_2": "Nutshell also includes built-in email marketing, which is unusual for a CRM at this price point. You can send newsletters, drip sequences, and targeted campaigns without needing a separate Mailchimp or Constant Contact subscription. It's not as powerful as HubSpot's marketing suite, but for small businesses that want basic email marketing alongside their CRM, it eliminates an extra tool and cost. The limitations show up at scale. If you need deep customization, complex multi-entity reporting, or a large integration ecosystem, you'll outgrow Nutshell. But for teams of 2-25 reps with straightforward sales processes, it's a focused, well-priced option.",
+    "website": "https://www.nutshell.com",
+    "founded": 2009,
+    "hq": "Ann Arbor, MI",
+    "pricing": {
+      "model": "Per user/month",
+      "tiers": [
+        {
+          "name": "Foundation",
+          "price": "$13/user/mo",
+          "notes": "Basic CRM, contact management, single pipeline"
+        },
+        {
+          "name": "Growth",
+          "price": "$25/user/mo",
+          "notes": "Email sequences, activity automation, multiple pipelines"
+        },
+        {
+          "name": "Pro",
+          "price": "$42/user/mo",
+          "notes": "Full reporting, AI-assisted email, pipeline automation"
+        },
+        {
+          "name": "Business",
+          "price": "$59/user/mo",
+          "notes": "Enhanced reporting, increased AI credits, audit logging"
+        },
+        {
+          "name": "Enterprise",
+          "price": "$79/user/mo",
+          "notes": "API access, custom integrations, dedicated support, unlimited pipelines"
+        }
+      ],
+      "notes": "All prices are billed annually. Monthly billing is available at higher rates. Email marketing add-on is separate. No mandatory onboarding fees. The pricing is transparent and predictable, which is refreshing compared to Salesforce or HubSpot's tiered complexity."
+    },
+    "pros": [
+      "Very easy to set up and use, most teams are running within a day",
+      "Built-in email marketing eliminates the need for a separate email tool",
+      "Transparent, affordable pricing with no hidden fees or mandatory onboarding",
+      "Good pipeline visualization and deal tracking for straightforward sales processes",
+      "Responsive customer support consistently praised by users"
+    ],
+    "cons": [
+      "Limited customization for complex sales processes or multi-entity orgs",
+      "Smaller integration ecosystem compared to Salesforce, HubSpot, or Zoho",
+      "Reporting is functional but not as deep as enterprise CRM options",
+      "Less suitable for teams larger than 25-30 reps who need advanced features",
+      "Lower brand recognition means fewer trained consultants and community resources"
+    ],
+    "best_for": "Small B2B businesses (2-25 people) that want a simple, affordable CRM with built-in email marketing and zero setup complexity",
+    "not_for": "Growing companies that need extensive customization, enterprise reporting, or plan to scale past 30+ sales reps",
+    "alternatives": [
+      "pipedrive",
+      "hubspot",
+      "zoho-crm",
+      "freshsales",
+      "copper"
+    ],
+    "faq": [
+      {
+        "q": "Nutshell vs Pipedrive: which is better for small businesses?",
+        "a": "Both target small teams and are easy to use. Pipedrive has stronger pipeline management and a slightly larger integration library. Nutshell includes built-in email marketing and tends to be a bit cheaper. If pipeline management is your priority, Pipedrive. If you want CRM + email marketing in one tool at a lower price, Nutshell."
+      },
+      {
+        "q": "Can Nutshell scale as my company grows?",
+        "a": "Nutshell works well up to about 25-30 reps. Beyond that, you'll likely need more customization, deeper reporting, and a broader integration ecosystem. Plan for a migration to HubSpot or Salesforce if you're on a trajectory to grow past that size. The upside is that Nutshell's clean data model makes migration relatively straightforward."
+      },
+      {
+        "q": "Does Nutshell include email marketing?",
+        "a": "Yes, Nutshell offers email marketing as part of its platform. You can send broadcasts, create drip campaigns, and build targeted email lists using CRM data. It's not as feature-rich as Mailchimp or HubSpot's Marketing Hub, but for basic email marketing alongside your CRM, it covers the essentials without an extra subscription."
+      }
+    ]
+  },
+  "rollworks": {
+    "display_name": "RollWorks",
+    "tagline": "ABM platform from NextRoll that makes account-based advertising accessible with a free entry point.",
+    "description": "RollWorks is an account-based marketing platform built by NextRoll (the company behind AdRoll). It combines account identification, intent data, account-based display advertising, and sales insights into a single platform. What makes RollWorks stand out in the ABM market is accessibility. While 6sense and Demandbase start at $30K+ per year, RollWorks offers a free tier and more attainable pricing that lets mid-market teams start running ABM without a massive budget commitment.",
+    "description_2": "RollWorks' strength is advertising. NextRoll's ad tech heritage gives it strong programmatic display ad capabilities for account targeting. You can target ads to specific companies on your ABM list across the web. It also integrates intent data to help identify which accounts are in-market. The platform includes basic sales insights and account scoring. Where it falls short compared to 6sense or Demandbase is in multi-channel orchestration, predictive AI, and reporting depth. RollWorks is an ABM on-ramp. If you're a B2B marketing team that wants to start with account-based advertising before committing to a full enterprise ABM suite, it's a practical first step.",
+    "website": "https://www.rollworks.com",
+    "founded": 2018,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Tiered plans",
+      "tiers": [
+        {
+          "name": "Starter",
+          "price": "$0",
+          "notes": "Account identification, basic intent signals, limited targeting"
+        },
+        {
+          "name": "Standard",
+          "price": "Custom",
+          "notes": "Account-based advertising, advanced targeting, CRM integrations"
+        },
+        {
+          "name": "Professional",
+          "price": "Custom",
+          "notes": "Full ABM orchestration, retargeting, advanced reporting"
+        },
+        {
+          "name": "Ultimate",
+          "price": "Custom",
+          "notes": "Enterprise features, machine learning scoring, dedicated support"
+        }
+      ],
+      "notes": "The Starter tier is genuinely free and lets you identify accounts and run basic targeting. Paid tiers are custom-priced but generally more affordable than 6sense or Demandbase. Most mid-market deployments run $15K-$40K/year for Standard or Professional."
+    },
+    "pros": [
+      "Free tier makes ABM accessible to teams that aren't ready for a $30K+ commitment",
+      "Strong account-based advertising powered by NextRoll's programmatic ad tech",
+      "Good intent data integration for identifying in-market accounts",
+      "Salesforce and HubSpot integrations for syncing account intelligence to your CRM",
+      "More affordable entry point than 6sense or Demandbase for getting started with ABM"
+    ],
+    "cons": [
+      "Primarily advertising-focused, less multi-channel than 6sense or Demandbase",
+      "Reporting and attribution aren't as deep as enterprise ABM platforms",
+      "Predictive AI and account scoring are less sophisticated than top-tier competitors",
+      "Custom pricing on paid tiers makes comparison shopping difficult",
+      "Brand awareness is lower than 6sense or Demandbase in the ABM market"
+    ],
+    "best_for": "Mid-market B2B marketing teams that want to start with ABM advertising without committing to enterprise-level pricing and complexity",
+    "not_for": "Enterprise marketing teams that need full multi-channel ABM orchestration, advanced predictive AI, and deep analytics",
+    "alternatives": [
+      "6sense",
+      "demandbase",
+      "terminus"
+    ],
+    "faq": [
+      {
+        "q": "RollWorks vs 6sense: how do they compare?",
+        "a": "6sense is the more complete ABM platform with stronger AI, deeper multi-channel orchestration, and more sophisticated predictive scoring. RollWorks is more accessible and affordable, with particular strength in programmatic advertising. Think of RollWorks as an ABM starting point and 6sense as the enterprise destination. Teams often start with RollWorks and graduate to 6sense as their ABM program matures."
+      },
+      {
+        "q": "Is the RollWorks free tier useful?",
+        "a": "Yes. The Starter tier gives you account identification and basic intent signals at no cost. It's a genuine way to test ABM concepts and identify which target accounts are visiting your site or showing intent. It won't give you the full advertising and orchestration capabilities, but it's a solid starting point."
+      },
+      {
+        "q": "Can RollWorks handle multi-channel ABM?",
+        "a": "RollWorks' core strength is display advertising. It has some email and sales insight features, but it's not as strong as 6sense or Demandbase for coordinating across ads, email, web personalization, and sales triggers simultaneously. If multi-channel ABM orchestration is your priority, evaluate the enterprise ABM platforms."
+      }
+    ]
+  },
+  "marketo": {
+    "display_name": "Marketo (Adobe)",
+    "tagline": "Enterprise marketing automation platform for demand gen teams running complex, multi-touch campaigns.",
+    "description": "Marketo is one of the original enterprise marketing automation platforms, now part of Adobe's Experience Cloud after being acquired in 2018 for $4.75 billion. It handles email marketing, lead scoring, nurture campaigns, landing pages, and attribution for B2B marketing teams. If your demand gen team runs multi-touch campaigns with branching logic and needs tight Salesforce integration, Marketo's been the go-to for over a decade.",
+    "description_2": "The platform's strength is its flexibility. Marketo's Smart Campaigns and engagement programs let you build complex, multi-step nurture flows with conditional logic that simpler tools can't match. Lead scoring is granular, with both demographic and behavioral scoring that feeds directly into Salesforce. The flip side: Marketo has a steep learning curve, and you'll likely need a dedicated admin or a certified consultant to get real value from it. Implementation typically takes 2-4 months. The Adobe acquisition hasn't changed the core product dramatically, but it's added integrations with Adobe Analytics, Adobe Target, and the broader Experience Cloud. Pricing has also crept up since the acquisition. For mid-market teams, HubSpot is often the more practical choice. Marketo earns its keep at the enterprise level where campaign complexity and data volume demand it.",
+    "website": "https://business.adobe.com/products/marketo/adobe-marketo-engage.html",
+    "founded": 2006,
+    "hq": "San Jose, CA",
+    "pricing": {
+      "model": "Custom annual contracts (based on database size)",
+      "tiers": [
+        {
+          "name": "Growth",
+          "price": "~$895/mo",
+          "notes": "Up to 20K marketable contacts, core MAP features"
+        },
+        {
+          "name": "Select",
+          "price": "~$1,795/mo",
+          "notes": "Up to 50K contacts, advanced analytics, A/B testing"
+        },
+        {
+          "name": "Prime",
+          "price": "~$3,195/mo",
+          "notes": "Up to 75K contacts, predictive audiences, advanced attribution"
+        },
+        {
+          "name": "Ultimate",
+          "price": "Custom",
+          "notes": "Unlimited contacts, sandbox, premium support"
+        }
+      ],
+      "notes": "Pricing is based on database size (marketable contacts), not users. Annual contracts are standard. Real all-in costs include implementation ($15K-$50K+), a dedicated admin ($80K-$120K salary), and consulting support. Budget $50K-$150K/year total for a mid-market deployment."
+    },
+    "pros": [
+      "Deep campaign logic with Smart Campaigns, engagement programs, and conditional branching",
+      "Best-in-class Salesforce integration with bidirectional sync and field mapping",
+      "Granular lead scoring combining demographic and behavioral data",
+      "Mature platform with a proven track record at enterprise scale",
+      "Large ecosystem of certified consultants and community resources"
+    ],
+    "cons": [
+      "Steep learning curve requires a dedicated admin or certified consultant",
+      "Expensive when you factor in implementation, admin headcount, and rising license costs",
+      "UI feels dated compared to HubSpot and more modern platforms",
+      "Reporting and analytics aren't as intuitive as competitors without add-ons",
+      "The Adobe acquisition has increased pricing complexity and upsell pressure"
+    ],
+    "best_for": "Enterprise B2B marketing teams running complex demand gen programs with large databases and tight Salesforce integration requirements",
+    "not_for": "Small to mid-market teams without a dedicated marketing ops resource, or companies looking for a quick-to-deploy platform with a gentle learning curve",
+    "alternatives": [
+      "hubspot",
+      "salesforce-marketing-cloud",
+      "pardot"
+    ],
+    "faq": [
+      {
+        "q": "Marketo vs HubSpot: which should I choose?",
+        "a": "HubSpot is easier to use, faster to implement, and more affordable. Marketo is more powerful for complex campaign logic and has deeper Salesforce integration. If you have a dedicated marketing ops person and run sophisticated multi-touch campaigns, Marketo is worth the investment. If you want to move fast without a specialist, HubSpot is the better fit."
+      },
+      {
+        "q": "How long does Marketo implementation take?",
+        "a": "Typical implementation takes 2-4 months. That includes CRM integration, lead scoring setup, template creation, and training. Complex enterprises with multiple business units and advanced attribution can take 6+ months. Budget for professional services or a certified consultant."
+      },
+      {
+        "q": "Do I need a dedicated Marketo admin?",
+        "a": "In practice, yes. Marketo's power comes from its flexibility, but that flexibility means someone needs to manage it. Most companies with Marketo have either a full-time marketing ops person or a certified consultant on retainer. Running Marketo without one leads to underutilization and messy data."
+      },
+      {
+        "q": "Has Adobe changed Marketo since the acquisition?",
+        "a": "The core product hasn't changed dramatically. Adobe's added integrations with its Experience Cloud (Analytics, Target, AEM) and rebranded it as \"Adobe Marketo Engage.\" The biggest changes are on the pricing and packaging side. License costs have increased, and there's more pressure to adopt the broader Adobe ecosystem."
+      }
+    ]
+  },
+  "g2": {
+    "display_name": "G2",
+    "tagline": "The largest B2B software review platform, now also a source of buyer intent data for sales and marketing teams.",
+    "description": "G2 is the world's largest B2B software review marketplace, with over 2 million reviews across 100,000+ products. Buyers use G2 to research and compare software before purchasing. For vendors, G2 serves two functions: it's a trust-building channel (reviews and badges on your website) and a buyer intent data source. G2's intent signals tell you which companies are researching your product category, reading your reviews, and comparing you to competitors.",
+    "description_2": "The intent data angle is where G2 has become interesting for sales and marketing teams. G2 Buyer Intent shows you when companies visit your G2 profile, compare you to competitors, or research your category. These are high-quality signals because they indicate active software evaluation. The data integrates with Salesforce, HubSpot, 6sense, and most major CRM and ABM platforms. The catch: G2's paid plans are expensive, and the intent data only captures activity on G2 itself. It doesn't tell you about research happening on other review sites or the broader web. Think of it as one signal source among several, not a complete picture of buyer intent.",
+    "website": "https://www.g2.com",
+    "founded": 2012,
+    "hq": "Chicago, IL",
+    "pricing": {
+      "model": "Custom annual contracts",
+      "tiers": [
+        {
+          "name": "Free Profile",
+          "price": "$0",
+          "notes": "Basic product listing, collect reviews, basic analytics"
+        },
+        {
+          "name": "Essentials",
+          "price": "Custom",
+          "notes": "Review management, badges, content licensing"
+        },
+        {
+          "name": "Pro",
+          "price": "Custom",
+          "notes": "Buyer Intent data, reference management, enhanced profile"
+        },
+        {
+          "name": "Power",
+          "price": "Custom",
+          "notes": "Advanced intent data, integrations, competitive intelligence"
+        }
+      ],
+      "notes": "G2 doesn't publish pricing. Based on buyer reports, paid plans range from $15K-$50K+/year depending on features and intent data access. The Buyer Intent add-on is typically the biggest cost driver. Many companies start with the free profile and only upgrade when they want intent data."
+    },
+    "pros": [
+      "Largest B2B review platform with high buyer trust and strong domain authority",
+      "Intent signals from G2 indicate active software evaluation, not just general research",
+      "Review badges and social proof content that actually influence buyer decisions",
+      "Direct integrations with Salesforce, HubSpot, 6sense, and major ABM platforms",
+      "Competitive intelligence shows how buyers compare you to alternatives"
+    ],
+    "cons": [
+      "Paid plans are expensive ($15K-$50K+/year) for what's essentially a review and intent platform",
+      "Intent data only covers activity on G2, not broader web research behavior",
+      "Review solicitation requires ongoing effort to maintain a competitive profile",
+      "ROI can be hard to attribute directly to G2 presence vs. organic buyer behavior",
+      "Vendor lock-in pressure to keep upgrading for more features and data"
+    ],
+    "best_for": "B2B software companies that want to build buyer trust through reviews and capture intent signals from active software evaluators",
+    "not_for": "Non-software companies, early-stage startups without enough customers for reviews, or teams looking for comprehensive intent data beyond G2's walled garden",
+    "alternatives": [
+      "trustradius",
+      "capterra",
+      "bombora"
+    ],
+    "faq": [
+      {
+        "q": "How does G2 Buyer Intent work?",
+        "a": "G2 tracks which companies visit your product profile, read reviews, compare you to competitors, and research your software category. It identifies the company behind the visit (not the individual) and pushes that intent signal to your CRM or ABM platform. You can then prioritize outreach to companies that are actively evaluating tools like yours."
+      },
+      {
+        "q": "Is G2's free profile worth it?",
+        "a": "Yes. The free profile lets you collect and display reviews, respond to reviewers, and access basic analytics. It's worth setting up even if you never upgrade to a paid plan. The reviews and G2 badges you can display on your website provide social proof that influences buyers. Intent data requires a paid plan."
+      },
+      {
+        "q": "G2 vs TrustRadius: which review platform matters more?",
+        "a": "G2 has more reviews, higher traffic, and stronger domain authority. TrustRadius is known for more detailed, in-depth reviews and doesn't gate content behind vendor payments. Most B2B companies prioritize G2 due to its larger audience, but having a presence on both doesn't hurt. If you're only going to invest in one, G2 is the higher-impact choice."
+      },
+      {
+        "q": "How many reviews do I need on G2 to be competitive?",
+        "a": "It depends on your category. In competitive categories (CRM, marketing automation), you'll want 50+ reviews to rank well in G2's Grid. In smaller categories, 15-25 reviews can put you in a leadership position. Focus on getting recent reviews since G2 weights recency. A steady stream of 5-10 new reviews per quarter keeps your profile competitive."
+      }
+    ]
+  },
+  "salesforce-marketing-cloud": {
+    "display_name": "Salesforce Marketing Cloud",
+    "tagline": "Enterprise marketing platform for email, SMS, social, advertising, and journey orchestration at scale.",
+    "description": "Salesforce Marketing Cloud (SFMC) is Salesforce's enterprise marketing platform. It's a suite of products covering email marketing (Email Studio), mobile messaging (Mobile Studio), social media (Social Studio), advertising (Advertising Studio), and cross-channel journey orchestration (Journey Builder). SFMC is built for large organizations that need to manage complex, multi-channel marketing programs at scale and want everything tied back to their Salesforce CRM data.",
+    "description_2": "Journey Builder is the centerpiece. It lets you design cross-channel customer journeys that respond to behavior in real time: someone opens an email, clicks a link, visits a page, and the journey branches accordingly across email, SMS, push, and ads. The power is in the orchestration, but it comes with real complexity. SFMC has a separate data architecture from Salesforce CRM (it uses its own relational data model called Data Extensions), which trips up many teams. Implementation typically requires a certified SFMC consultant or agency, and it's one of the most expensive marketing platforms on the market. For companies already deep in the Salesforce ecosystem that need enterprise-grade multi-channel marketing, SFMC is a natural fit. For everyone else, there are more approachable options.",
+    "website": "https://www.salesforce.com/marketing/",
+    "founded": 2000,
+    "hq": "San Francisco, CA",
+    "pricing": {
+      "model": "Custom annual contracts (modular pricing by studio)",
+      "tiers": [
+        {
+          "name": "Professional",
+          "price": "~$1,250/mo",
+          "notes": "Email Studio basics, Journey Builder, limited contacts"
+        },
+        {
+          "name": "Corporate",
+          "price": "~$3,750/mo",
+          "notes": "More contacts, Einstein AI features, advanced analytics"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "notes": "Full platform, all studios, unlimited journeys, dedicated support"
+        }
+      ],
+      "notes": "Pricing is modular. Each studio (Email, Mobile, Social, Advertising) can be purchased separately or bundled. Email Studio alone starts around $1,250/month. Adding Journey Builder, Mobile Studio, and other modules increases costs significantly. Real all-in enterprise deployments often run $100K-$300K+/year including implementation, consulting, and add-ons."
+    },
+    "pros": [
+      "True cross-channel orchestration across email, SMS, push, social, and ads in one platform",
+      "Journey Builder is one of the most powerful journey design tools available",
+      "Deep integration with Salesforce CRM for unified customer data across sales and marketing",
+      "Einstein AI adds predictive send times, engagement scoring, and content optimization",
+      "Scales to handle enterprise volumes (millions of contacts and messages)"
+    ],
+    "cons": [
+      "One of the most expensive marketing platforms, with real costs often 2-3x the listed price",
+      "Steep learning curve with a separate data model (Data Extensions) from Salesforce CRM",
+      "Implementation typically requires certified consultants and takes 3-6+ months",
+      "UI is fragmented across multiple studios that don't always feel connected",
+      "Overkill for mid-market teams that primarily need email marketing and basic automation"
+    ],
+    "best_for": "Large enterprises in the Salesforce ecosystem that need cross-channel marketing orchestration at scale with deep CRM integration",
+    "not_for": "Mid-market teams looking for quick-to-deploy marketing automation, companies not on Salesforce CRM, or teams without budget for implementation consulting",
+    "alternatives": [
+      "marketo",
+      "hubspot",
+      "braze"
+    ],
+    "faq": [
+      {
+        "q": "Salesforce Marketing Cloud vs Marketo: which is better?",
+        "a": "SFMC is stronger for cross-channel orchestration (email + SMS + push + ads) and makes the most sense for companies already on Salesforce CRM. Marketo is stronger for B2B demand gen with better lead scoring and simpler Salesforce integration. If you're B2B and primarily doing email-based nurture and scoring, Marketo's the better fit. If you need true multi-channel and you're a Salesforce shop, SFMC wins."
+      },
+      {
+        "q": "How long does SFMC implementation take?",
+        "a": "Plan for 3-6 months minimum. SFMC's data model is different from Salesforce CRM, which adds complexity. You'll need to set up Data Extensions, configure the CRM connector, build journey templates, and train your team. Most companies hire a certified SFMC consulting partner. Budget $50K-$150K+ for implementation services."
+      },
+      {
+        "q": "What's the difference between Marketing Cloud and Pardot?",
+        "a": "Pardot (now Marketing Cloud Account Engagement) is Salesforce's B2B marketing automation tool, similar to Marketo or HubSpot. Marketing Cloud (SFMC) is the enterprise multi-channel platform for email, SMS, social, and journey orchestration. Pardot is simpler and B2B-focused. SFMC is more powerful and handles both B2B and B2C use cases. Many large Salesforce customers use both."
+      },
+      {
+        "q": "Do I need a consultant for Salesforce Marketing Cloud?",
+        "a": "In practice, yes. SFMC's complexity, particularly the data model and Journey Builder configuration, means most teams need a certified SFMC partner for implementation. Even after go-live, many organizations keep a consultant on retainer or hire a dedicated SFMC specialist. Self-service implementation is possible but rare at the enterprise level."
+      }
+    ]
   }
 }
