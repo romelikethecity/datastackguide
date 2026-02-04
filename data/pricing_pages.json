@@ -3487,6 +3487,498 @@
           "a": "It depends on complexity. If your sales process is straightforward (pipeline stages, email sequences, basic reporting), Nutshell can handle 50 users on the Business or Enterprise tier. If you need advanced territory management, custom objects, or deep ERP integrations, you'll outgrow it. Nutshell is built for teams of 5-30."
         }
       ]
+    },
+    {
+      "slug": "rb2b-pricing",
+      "tool_slug": "rb2b",
+      "title": "RB2B Pricing (2026): What Person-Level Visitor ID Costs",
+      "meta_description": "RB2B pricing breakdown: free tier limits, Pro costs, and what B2B teams actually pay for person-level website visitor identification.",
+      "hook": "RB2B made waves by offering person-level visitor identification for free. The free tier is generous, but scaling requires Pro, and the real question is whether the data is accurate enough to justify the spend.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "Free forever",
+          "highlights": [
+            "Person-level visitor identification",
+            "LinkedIn profile matching",
+            "Slack notifications for new visitors",
+            "Basic visitor activity feed",
+            "Limited to US visitors"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$149/mo",
+          "billing": "Monthly or annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Free",
+            "Email addresses for identified visitors",
+            "CRM and Salesforce integration",
+            "Webhook support for custom workflows",
+            "Hot leads filtering and scoring",
+            "Team access and management"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Pro",
+            "Dedicated account manager",
+            "Custom integrations",
+            "Volume-based pricing",
+            "Advanced filtering and routing"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "US-only identification",
+          "range": "N/A",
+          "note": "RB2B only identifies US-based visitors. If you have significant international traffic, you're paying for a tool that covers a portion of your audience."
+        },
+        {
+          "item": "Data accuracy concerns",
+          "range": "N/A",
+          "note": "Person-level identification depends on cookie matching and third-party data. Match rates vary from 15-30% of US traffic. Not every identified visitor is a real prospect."
+        },
+        {
+          "item": "CRM integration (Pro required)",
+          "range": "$149/mo minimum",
+          "note": "Free tier only pushes to Slack. Getting identified visitors into your CRM or sequencer requires Pro."
+        },
+        {
+          "item": "Outreach tools",
+          "range": "Varies",
+          "note": "RB2B identifies visitors but doesn't include outreach. You'll need a separate tool (Apollo, Outreach, Salesloft) to act on the data."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Growth-stage B2B company with 10K monthly US visitors",
+        "line_items": [
+          {
+            "item": "RB2B Pro (monthly)",
+            "annual": "$1,788"
+          },
+          {
+            "item": "Outreach tool for identified leads",
+            "annual": "$6,000"
+          },
+          {
+            "item": "SDR time to work identified visitors",
+            "annual": "$15,000"
+          },
+          {
+            "item": "CRM (to store and route leads)",
+            "annual": "$3,000"
+          }
+        ],
+        "total": "$25,788/year",
+        "per_user_real": "~$2,150/mo all-in"
+      },
+      "bottom_line": "RB2B's free tier is a no-brainer for any B2B site with US traffic. Install it, connect Slack, and see who's visiting. The Pro tier makes sense when you have enough identified visitors to justify routing them into your CRM and outreach stack. The real cost isn't RB2B itself; it's the sales motion you build around the data.",
+      "faq": [
+        {
+          "q": "Is RB2B really free?",
+          "a": "The free tier is genuinely free with no credit card required. You get person-level visitor identification with LinkedIn profile matching and Slack notifications. The catch: no email addresses, no CRM integration, and US visitors only."
+        },
+        {
+          "q": "How does RB2B identify visitors?",
+          "a": "RB2B uses a combination of IP resolution, cookie matching, and third-party identity data to match anonymous website visitors to real people. Match rates vary, typically identifying 15-30% of US B2B traffic."
+        },
+        {
+          "q": "Is RB2B GDPR compliant?",
+          "a": "RB2B is US-only by design, which sidesteps GDPR for European visitors. For US visitors, it operates under existing US data privacy frameworks. If you sell to regulated industries, check with your legal team."
+        },
+        {
+          "q": "How does RB2B compare to Leadfeeder or 6sense?",
+          "a": "RB2B identifies individual people; Leadfeeder and 6sense primarily identify companies. RB2B's person-level data is more actionable for outbound sales, but the identification methodology is newer and less proven at scale."
+        }
+      ]
+    },
+    {
+      "slug": "monday-sales-crm-pricing",
+      "tool_slug": "monday-sales",
+      "title": "monday Sales CRM Pricing (2026): What It Actually Costs",
+      "meta_description": "monday Sales CRM pricing breakdown: real costs by tier, what's included, and how it compares to Salesforce and HubSpot.",
+      "hook": "monday Sales CRM is one of the cheapest CRMs on paper. It's also one of the most confusing to price because monday.com bundles, upsells, and seat minimums change what you actually pay.",
+      "tiers": [
+        {
+          "name": "Basic CRM",
+          "price": "$12/seat/mo",
+          "billing": "Annual (billed annually)",
+          "highlights": [
+            "Unlimited customizable pipelines",
+            "Unlimited contacts",
+            "Unlimited boards",
+            "Templates for lead and deal management",
+            "Mobile app"
+          ]
+        },
+        {
+          "name": "Standard CRM",
+          "price": "$17/seat/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Basic",
+            "Email integration and tracking",
+            "Activity management",
+            "Quotes and invoices",
+            "Custom automations (250/mo)",
+            "Merge duplicate data"
+          ]
+        },
+        {
+          "name": "Pro CRM",
+          "price": "$28/seat/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Standard",
+            "Sales forecasting",
+            "Email templates and mass emails",
+            "Custom automations (25K/mo)",
+            "Integrations (25K/mo)",
+            "Google Calendar sync"
+          ]
+        },
+        {
+          "name": "Enterprise CRM",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Pro",
+            "Lead scoring",
+            "Account management",
+            "Advanced analytics",
+            "Enterprise-grade security",
+            "HIPAA compliance",
+            "Custom automations (250K/mo)"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Seat minimums",
+          "range": "3 seats minimum",
+          "note": "You can't buy a single seat. The minimum is 3 seats on all plans, so the true entry price is $36/mo, not $12/mo."
+        },
+        {
+          "item": "Monthly vs annual billing",
+          "range": "18-20% markup",
+          "note": "Monthly billing costs significantly more. The published $12/seat price assumes annual billing. Monthly pricing is roughly $15/seat for Basic."
+        },
+        {
+          "item": "Automation and integration limits",
+          "range": "Plan-dependent",
+          "note": "Basic has no automations. Standard caps at 250/month. If you need heavy automation, you're pushed to Pro at $28/seat."
+        },
+        {
+          "item": "Missing features vs full CRMs",
+          "range": "N/A",
+          "note": "monday Sales CRM lacks native phone dialer, advanced reporting, territory management, and deep third-party integrations that Salesforce and HubSpot include. You may need add-ons."
+        },
+        {
+          "item": "monday.com Work OS confusion",
+          "range": "Varies",
+          "note": "monday Sales CRM is a product built on top of monday.com Work OS. If other teams use monday for project management, you might need separate products and billing."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "15-person sales team on Pro CRM",
+        "line_items": [
+          {
+            "item": "15 Pro CRM seats (annual)",
+            "annual": "$5,040"
+          },
+          {
+            "item": "Email integration (included)",
+            "annual": "$0"
+          },
+          {
+            "item": "Third-party integrations (Zapier for gaps)",
+            "annual": "$1,200"
+          },
+          {
+            "item": "Training and onboarding",
+            "annual": "$500"
+          },
+          {
+            "item": "Reporting add-on or BI tool",
+            "annual": "$2,400"
+          }
+        ],
+        "total": "$9,140/year",
+        "per_user_real": "$51/user/mo"
+      },
+      "bottom_line": "monday Sales CRM is genuinely affordable for small teams that need a visual, customizable pipeline without enterprise complexity. At $12-$28/seat, it undercuts HubSpot's paid tiers and Salesforce by a wide margin. The trade-off is feature depth: you won't get the reporting, automation, or ecosystem that full CRM platforms offer. It's a great first CRM, not a Salesforce replacement.",
+      "faq": [
+        {
+          "q": "Is monday Sales CRM different from monday.com?",
+          "a": "Yes. monday Sales CRM is a dedicated CRM product built on the monday.com Work OS platform. It has sales-specific features (pipelines, deal tracking, forecasting) that the standard monday.com project management product doesn't include. They share the same underlying infrastructure."
+        },
+        {
+          "q": "Can monday Sales CRM replace Salesforce?",
+          "a": "For small teams with simple sales processes, potentially. For mid-market or enterprise teams that need advanced reporting, territory management, CPQ, or deep third-party integrations, no. monday Sales CRM is built for simplicity, not enterprise complexity."
+        },
+        {
+          "q": "Is monday Sales CRM really $12/month?",
+          "a": "Per seat, with annual billing, and a 3-seat minimum. So the true minimum cost is $36/month. Monthly billing increases per-seat pricing by roughly 18-20%."
+        },
+        {
+          "q": "Does monday Sales CRM integrate with email?",
+          "a": "Starting from the Standard plan ($17/seat). Basic CRM doesn't include email integration. Standard and above include Gmail and Outlook sync, email tracking, and activity logging."
+        }
+      ]
+    },
+    {
+      "slug": "sap-sales-cloud-pricing",
+      "tool_slug": "sap-sales-cloud",
+      "title": "SAP Sales Cloud Pricing (2026): What Enterprise CRM Costs",
+      "meta_description": "SAP Sales Cloud pricing breakdown: per-user costs, implementation fees, and what large enterprises actually pay for SAP's CRM.",
+      "hook": "SAP Sales Cloud pricing starts at $73/user/month. Implementation costs 5-10x the license fees. If you're evaluating SAP CRM, the sticker price is the least of your concerns.",
+      "tiers": [
+        {
+          "name": "Standard",
+          "price": "$73/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Contact and account management",
+            "Opportunity management",
+            "Lead management",
+            "Sales forecasting",
+            "Mobile app"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "$98/user/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Standard",
+            "Advanced analytics",
+            "Territory management",
+            "Sales performance management",
+            "Guided selling",
+            "Configure, price, quote (CPQ)"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Professional",
+            "SAP AI integration",
+            "Custom development platform",
+            "Advanced compliance",
+            "Multi-entity support",
+            "Dedicated support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Implementation partner",
+          "range": "$200K-$1M+",
+          "note": "SAP implementations require certified partners (Deloitte, Accenture, etc.). Even mid-sized deployments run $200K-$500K. Large enterprises regularly exceed $1M."
+        },
+        {
+          "item": "SAP ecosystem tax",
+          "range": "Varies widely",
+          "note": "SAP Sales Cloud works best with other SAP products (S/4HANA, Marketing Cloud, Service Cloud). If you're not already an SAP shop, integration costs with non-SAP systems add up fast."
+        },
+        {
+          "item": "Customization and development",
+          "range": "$100K-$300K",
+          "note": "Enterprise deployments always require custom development. SAP's Business Technology Platform and extension capabilities are powerful but expensive to build on."
+        },
+        {
+          "item": "SAP administrator salary",
+          "range": "$110K-$170K/year",
+          "note": "SAP CRM requires specialized admins. SAP talent commands premium salaries and is harder to find than Salesforce admins."
+        },
+        {
+          "item": "Training",
+          "range": "$20K-$50K",
+          "note": "SAP's interface has a steep learning curve. Budget for formal training for both admins and end users."
+        },
+        {
+          "item": "Data migration",
+          "range": "$30K-$100K",
+          "note": "Migrating from another CRM to SAP Sales Cloud involves data mapping, cleansing, and validation that typically requires consultant involvement."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "200-person sales org on Professional tier",
+        "line_items": [
+          {
+            "item": "200 Professional licenses",
+            "annual": "$235,200"
+          },
+          {
+            "item": "Implementation partner (Year 1, amortized over 3 years)",
+            "annual": "$166,000"
+          },
+          {
+            "item": "SAP admin (1 FTE)",
+            "annual": "$140,000"
+          },
+          {
+            "item": "Custom development and extensions",
+            "annual": "$80,000"
+          },
+          {
+            "item": "Training (Year 1)",
+            "annual": "$35,000"
+          },
+          {
+            "item": "Integration middleware (non-SAP systems)",
+            "annual": "$40,000"
+          }
+        ],
+        "total": "$696,200/year",
+        "per_user_real": "$290/user/mo"
+      },
+      "bottom_line": "SAP Sales Cloud makes sense for companies already invested in the SAP ecosystem (S/4HANA, SAP Marketing Cloud) where CRM data flows naturally into ERP and back-office systems. For everyone else, the implementation costs, talent scarcity, and ecosystem lock-in make it a hard sell against Salesforce or even Dynamics 365. The license price is reasonable; the total cost of ownership is not.",
+      "faq": [
+        {
+          "q": "Is SAP Sales Cloud cheaper than Salesforce?",
+          "a": "Per-user license pricing is lower ($73-$98 vs $165-$330). Total cost of ownership is comparable or higher because SAP implementations are more expensive, SAP talent costs more, and the ecosystem requires deeper integration investment."
+        },
+        {
+          "q": "Who should use SAP Sales Cloud?",
+          "a": "Companies already running SAP ERP (S/4HANA or ECC) that want their CRM tightly integrated with finance, supply chain, and operations. If you're not an SAP shop, there's no compelling reason to start with CRM."
+        },
+        {
+          "q": "Can SAP Sales Cloud replace Salesforce?",
+          "a": "Functionally, yes. SAP Sales Cloud covers core CRM functionality (accounts, contacts, opportunities, forecasting). In terms of ecosystem, app marketplace, and third-party integration breadth, Salesforce is significantly ahead. Migration from Salesforce to SAP is possible but costly."
+        },
+        {
+          "q": "Does SAP Sales Cloud include CPQ?",
+          "a": "CPQ (Configure, Price, Quote) is included in the Professional tier at $98/user/month. This is notable because Salesforce charges $75/user/month extra for CPQ on top of CRM licensing."
+        }
+      ]
+    },
+    {
+      "slug": "orum-pricing",
+      "tool_slug": "orum",
+      "title": "Orum Pricing (2026): What an AI Sales Dialer Costs",
+      "meta_description": "Orum pricing breakdown: per-seat costs, contract terms, and what SDR teams actually pay for AI-powered parallel dialing.",
+      "hook": "Orum doesn't publish pricing. Most teams pay $200-$300 per user per month. For a 10-person SDR team, that's $24K-$36K per year just for a dialer.",
+      "tiers": [
+        {
+          "name": "Launch",
+          "price": "~$200/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "AI-powered parallel dialing",
+            "Voicemail detection",
+            "Call recording",
+            "CRM integration (Salesforce/HubSpot)",
+            "Basic analytics"
+          ]
+        },
+        {
+          "name": "Ascend",
+          "price": "~$250/user/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Launch",
+            "Up to 10 parallel lines",
+            "Sequencer integration (Outreach/Salesloft)",
+            "Advanced call analytics",
+            "Live listen-in for managers",
+            "Voicemail drop"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Ascend",
+            "Dedicated success manager",
+            "Custom integrations",
+            "Advanced reporting",
+            "Volume discounts",
+            "Multi-team management"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Annual contracts required",
+          "range": "12+ months",
+          "note": "Orum requires annual commitments. No monthly plans available. If your SDR team shrinks, you're still paying for unused seats."
+        },
+        {
+          "item": "Phone numbers and minutes",
+          "range": "Typically included",
+          "note": "Most plans include local presence dialing and standard minutes. International calling or high-volume usage may incur additional charges."
+        },
+        {
+          "item": "Sequencer integration",
+          "range": "Plan-dependent",
+          "note": "Full Outreach and Salesloft integration requires the Ascend tier. The Launch tier has basic CRM logging but limited sequencer depth."
+        },
+        {
+          "item": "Training and ramp time",
+          "range": "1-2 weeks",
+          "note": "SDRs need training on parallel dialing workflows. Expect 1-2 weeks before reps are fully productive. Orum provides onboarding, but team adoption varies."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "10-person SDR team on Ascend tier",
+        "line_items": [
+          {
+            "item": "10 Ascend seats (annual)",
+            "annual": "$30,000"
+          },
+          {
+            "item": "Outreach licenses (for sequences)",
+            "annual": "$18,000"
+          },
+          {
+            "item": "Salesforce CRM (for logging)",
+            "annual": "$19,800"
+          },
+          {
+            "item": "Phone data provider (for dial numbers)",
+            "annual": "$5,000"
+          },
+          {
+            "item": "SDR manager time for coaching",
+            "annual": "$12,000"
+          }
+        ],
+        "total": "$84,800/year",
+        "per_user_real": "$707/user/mo (full stack)"
+      },
+      "bottom_line": "Orum is expensive for a dialer at $200-$300/user/month. The ROI math works when your SDRs are making enough calls for parallel dialing to materially increase connect rates. For a 10-person SDR team, Orum typically pays for itself if it generates 2-3 additional meetings per rep per month. If your team makes fewer than 50 calls per day per rep, the parallel dialing premium is harder to justify.",
+      "faq": [
+        {
+          "q": "Does Orum publish pricing?",
+          "a": "No. Orum requires a demo and sales conversation for pricing. Based on market data, plans range from approximately $200-$300/user/month on annual contracts. Volume discounts are available for larger teams."
+        },
+        {
+          "q": "Is Orum worth it for a small team?",
+          "a": "Depends on call volume. For teams of 3-5 SDRs making 50+ calls/day each, Orum's parallel dialing increases live conversations by 3-5x, which typically justifies the cost. For teams with fewer reps or lower call targets, manual dialing or cheaper alternatives may suffice."
+        },
+        {
+          "q": "How does Orum pricing compare to Nooks?",
+          "a": "Similar range. Both charge $200-$300/user/month. Nooks includes a virtual sales floor at that price. Orum focuses more on raw dialing capability. The per-seat cost is comparable; the feature set differs."
+        },
+        {
+          "q": "Can I do a trial before committing?",
+          "a": "Orum offers paid pilots for teams that want to test before a full annual commitment. Free trials aren't standard, but negotiating a short pilot period (1-2 months) is possible for larger deals."
+        }
+      ]
     }
   ]
 }

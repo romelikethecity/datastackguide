@@ -2769,6 +2769,12 @@ Track what's working:
 - [x] 4 new best-of roundups: Best Sales Dialer Tools, Best B2B Intent Data Tools, Best CRM for Real Estate, Best RevOps Tools (26 roundups total)
 - [x] 5 new glossary terms: Churn Rate, ARR/MRR, Sales Velocity, Account Mapping, Buying Committee (35 terms total)
 - [x] Site now at 239 pages (up from 218)
+- [x] 4 new comparison pages: RollWorks vs Demandbase, Orum vs Nooks, Census vs Hightouch, Celigo vs Workato (33 comparisons total)
+- [x] 4 new pricing pages: RB2B, monday Sales CRM, SAP Sales Cloud, Orum (34 pricing pages total)
+- [x] 4 new alternatives pages: RollWorks, Common Room, Orum, monday Sales CRM (31 alternatives total)
+- [x] 4 new best-of roundups: Best Sales Coaching Tools, Best CPQ Tools, Best Partner Ecosystem Tools, Best Email Deliverability Tools (30 roundups total)
+- [x] 5 new glossary terms: Net Revenue Retention, Dark Funnel, Signal-Based Selling, Conversation Intelligence, Deal Desk (40 terms total)
+- [x] Site now at 260 pages (up from 239)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker

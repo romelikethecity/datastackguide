@@ -683,6 +683,108 @@
         "6sense"
       ],
       "category_slug": "crm"
+    },
+    {
+      "slug": "net-revenue-retention",
+      "term": "Net Revenue Retention (NRR)",
+      "short_definition": "The percentage of recurring revenue retained from existing customers over a period, including expansion, contraction, and churn.",
+      "full_definition": "Net revenue retention measures how much revenue you keep and grow from your existing customer base without counting new customer acquisition. It starts with your beginning-period recurring revenue and factors in upgrades (expansion), downgrades (contraction), and cancellations (churn). An NRR above 100% means your existing customers are spending more over time, even before adding new logos.",
+      "why_it_matters": "NRR is the single best metric for evaluating the health of a SaaS or subscription business. Companies with NRR above 120% can grow even with zero new customer acquisition. Investors obsess over it because high NRR indicates strong product-market fit, effective upselling, and low churn. In B2B data tools specifically, NRR signals whether a tool becomes more embedded (and more valuable) over time or whether customers outgrow it.",
+      "example": "A B2B data company starts Q1 with $1M in ARR from existing customers. During Q1, $80K in expansions (upgrades, additional seats), $20K in contractions (downgrades), and $30K in churned revenue. NRR = ($1M + $80K - $20K - $30K) / $1M = 103%. The existing customer base grew 3% without adding a single new customer.",
+      "related_terms": [
+        "arr-mrr",
+        "churn-rate",
+        "sales-pipeline"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "gong-engage"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "dark-funnel",
+      "term": "Dark Funnel",
+      "short_definition": "The buying activity and research that happens outside your trackable marketing channels, invisible to attribution tools.",
+      "full_definition": "The dark funnel refers to all the buying research and decision-making that happens in places your analytics can't see: private Slack communities, word-of-mouth recommendations, podcast mentions, offline conversations, dark social sharing (copied links without UTM parameters), and private browsing. When a prospect fills out a demo request form, they've often done 70-80% of their research in channels that won't show up in your attribution model.",
+      "why_it_matters": "The dark funnel challenges the way most B2B companies measure marketing effectiveness. If your attribution model only credits trackable touchpoints (paid ads, organic search, email clicks), you're undervaluing the channels that actually drive buying decisions. Communities, podcasts, peer recommendations, and private research shape purchasing behavior more than most companies realize. Understanding the dark funnel means accepting that you can't measure everything and adjusting your strategy accordingly.",
+      "example": "A VP of RevOps hears about a data enrichment tool in a private Slack community. They Google it, read reviews on G2 (in incognito mode), ask peers in their network, listen to a podcast episode featuring the founder, and then visit the website directly to book a demo. Your attribution model credits 'Direct Traffic' as the source. The actual decision was influenced by community, word-of-mouth, G2, and a podcast, none of which show up in analytics.",
+      "related_terms": [
+        "buyer-intent",
+        "buyer-journey",
+        "intent-data",
+        "gtm-strategy"
+      ],
+      "related_tools": [
+        "6sense",
+        "common-room",
+        "g2",
+        "bombora"
+      ],
+      "category_slug": "intent"
+    },
+    {
+      "slug": "signal-based-selling",
+      "term": "Signal-Based Selling",
+      "short_definition": "A sales approach that uses real-time buying signals to prioritize outreach and personalize messaging based on prospect behavior.",
+      "full_definition": "Signal-based selling replaces spray-and-pray outbound with data-driven prioritization. Instead of working through static lists, sales reps focus on accounts showing buying signals: website visits, job postings for related roles, technology changes, funding events, intent data surges, content consumption, and social engagement. The signals come from tools like 6sense, Bombora, Common Room, and LinkedIn, and they tell reps which accounts to call and what to say.",
+      "why_it_matters": "Cold outbound response rates have cratered below 1-2% for most B2B companies. Signal-based selling recovers response rates by ensuring reps reach out to prospects at the right time with relevant context. The shift from list-based to signal-based outbound is one of the biggest changes in B2B sales methodology in the past five years. Companies that adopt it consistently report 2-3x improvements in meeting booking rates.",
+      "example": "Your signal stack detects that Acme Corp posted 3 RevOps job openings, visited your pricing page twice this week, and showed intent data spikes for 'data enrichment tools' on Bombora. Your SDR gets an alert with this context and crafts a personalized outreach referencing Acme's hiring growth and the specific use case the intent data suggests. This converts at 5-10x the rate of a generic cold email.",
+      "related_terms": [
+        "buyer-intent",
+        "intent-data",
+        "sales-engagement",
+        "icp"
+      ],
+      "related_tools": [
+        "6sense",
+        "common-room",
+        "bombora",
+        "clay",
+        "rb2b"
+      ],
+      "category_slug": "intent"
+    },
+    {
+      "slug": "conversation-intelligence",
+      "term": "Conversation Intelligence",
+      "short_definition": "Technology that records, transcribes, and analyzes sales conversations to surface coaching insights and deal intelligence.",
+      "full_definition": "Conversation intelligence platforms automatically record and transcribe sales calls, demos, and meetings, then use AI to analyze the conversation for coaching insights. The analysis includes talk-to-listen ratio, question frequency, filler word usage, competitor mentions, pricing discussions, next step commitments, and sentiment patterns. Advanced platforms correlate conversation patterns with deal outcomes to identify what top reps do differently.",
+      "why_it_matters": "Before conversation intelligence, sales coaching was based on ride-alongs and anecdotal feedback. Managers could listen to a handful of calls per week. Now, every call is analyzed automatically, and coaching insights are data-driven. The technology also creates organizational knowledge: when a top rep leaves, their conversation patterns and techniques are captured in the system. For RevOps teams, conversation data enriches pipeline forecasting with qualitative signals.",
+      "example": "Gong analyzes 500 sales calls from your team and identifies that deals where reps ask 11-14 questions close at 2x the rate of deals where they ask fewer than 7. It also flags that your top closer spends 35% of the call listening, while struggling reps talk 70% of the time. The manager uses these insights to build a coaching program focused on discovery question frameworks.",
+      "related_terms": [
+        "sales-enablement",
+        "sales-velocity",
+        "sales-engagement"
+      ],
+      "related_tools": [
+        "gong-engage",
+        "zoominfo",
+        "salesloft",
+        "outreach-io"
+      ],
+      "category_slug": "list-building"
+    },
+    {
+      "slug": "deal-desk",
+      "term": "Deal Desk",
+      "short_definition": "A centralized function that manages complex deal approvals, pricing exceptions, and contract negotiations for non-standard sales transactions.",
+      "full_definition": "A deal desk is a cross-functional team (typically spanning sales ops, finance, and legal) that handles deals requiring special approval: non-standard pricing, custom terms, multi-year contracts, large discounts, or complex product configurations. The deal desk standardizes the approval process, ensures pricing consistency, and accelerates deal velocity by providing a single point of contact for reps who need exceptions. In practice, most deal desks manage the top 20-30% of deals by complexity.",
+      "why_it_matters": "Without a deal desk, complex deals bounce between sales, finance, and legal in email threads that add days or weeks to the sales cycle. Pricing becomes inconsistent as different reps negotiate different terms. Margin erosion happens silently because no one has visibility into the cumulative impact of discounts. A deal desk brings structure to chaos: standard approval workflows, pricing guardrails, and data on what terms win and what gives away too much.",
+      "example": "An enterprise AE closes a deal with a Fortune 500 account that requires custom payment terms (quarterly instead of annual), a 25% volume discount, and a custom SLA. Instead of emailing finance, legal, and their VP separately, they submit a deal desk request with the terms. The deal desk reviews against pricing guidelines, suggests counter-terms that protect margin, routes for VP approval, and returns an approved deal structure within 24 hours.",
+      "related_terms": [
+        "sales-pipeline",
+        "sales-velocity",
+        "sales-forecasting",
+        "arr-mrr"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot",
+        "dynamics-365"
+      ],
+      "category_slug": "crm"
     }
   ]
 }
