@@ -2736,6 +2736,12 @@ Track what's working:
 - [x] 4 new pricing pages: Outreach, Clay, 6sense, Cognism (11 pricing pages total)
 - [x] Fixed Gong entry (job_count 1→60, name Gong Engage→Gong)
 - [x] Site now at 142 pages (up from 103)
+- [x] 6 new tool pages with editorial content: SAP Sales Cloud, Airbyte, Tray, Celigo, Oracle CX, Definitive Healthcare (59 tools with editorial content)
+- [x] 3 new comparison pages: Freshsales vs Pipedrive, Lemlist vs Instantly, Seamless.AI vs ZoomInfo (17 comparisons total)
+- [x] 3 new pricing pages: Marketo, Demandbase, Bombora (14 pricing pages total)
+- [x] 2 new alternatives pages: Marketo Alternatives, Cognism Alternatives (13 alternatives total)
+- [x] 3 new best-of roundups: Best Visitor Identification Tools, Best Cold Email Tools, Best B2B Contact Databases (11 roundups total)
+- [x] Site now at 159 pages (up from 142)
 - [ ] Submit sitemap to Search Console
 - [ ] Share on LinkedIn
 - [ ] Post in RevGenius, Sales Hacker
