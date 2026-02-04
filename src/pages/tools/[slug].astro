@@ -222,12 +222,48 @@ const productSchema = {
     <!-- What It Does -->
     <section class="content-section" id="overview">
       <h2>What {content.display_name} Does</h2>
-      <p>{content.description}</p>
-      {content.description_2 && <p>{content.description_2}</p>}
+      {content.overview ? (
+        content.overview.map((para: string) => <p>{para}</p>)
+      ) : (
+        <>
+          <p>{content.description}</p>
+          {content.description_2 && <p>{content.description_2}</p>}
+        </>
+      )}
       {content.website && (
         <p><a href={content.website} target="_blank" rel="noopener noreferrer">Visit {content.display_name} →</a></p>
       )}
     </section>
+
+    <!-- Key Features -->
+    {content.key_features?.length > 0 && (
+      <section class="content-section" id="features">
+        <h2>{content.display_name} Key Features</h2>
+        <div class="features-list">
+          {content.key_features.map((feature: any) => (
+            <div class="feature-item">
+              <h3>{feature.name}</h3>
+              <p>{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Use Cases -->
+    {content.use_cases?.length > 0 && (
+      <section class="content-section" id="use-cases">
+        <h2>Who Uses {content.display_name}</h2>
+        <div class="use-cases-list">
+          {content.use_cases.map((uc: any) => (
+            <div class="use-case-item">
+              <h3>{uc.title}</h3>
+              <p>{uc.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
 
     <!-- Pricing -->
     <section class="content-section" id="pricing">
@@ -243,11 +279,15 @@ const productSchema = {
           ))}
         </div>
       )}
-      {content.pricing?.notes && (
+      {content.pricing_detail ? (
+        <div class="pricing-detail">
+          {content.pricing_detail.split('\n\n').map((para: string) => <p>{para}</p>)}
+        </div>
+      ) : content.pricing?.notes ? (
         <div class="pricing-notes">
           <p>{content.pricing.notes}</p>
         </div>
-      )}
+      ) : null}
     </section>
 
     <!-- Job Market Demand -->
@@ -364,6 +404,14 @@ const productSchema = {
       </section>
     )}
 
+    <!-- Data Quality -->
+    {content.data_quality && (
+      <section class="content-section" id="data-quality">
+        <h2>{content.display_name} Data Quality &amp; Coverage</h2>
+        {content.data_quality.split('\n\n').map((para: string) => <p>{para}</p>)}
+      </section>
+    )}
+
     <!-- Pros & Cons -->
     <section class="content-section" id="pros-cons">
       <h2>Pros &amp; Cons</h2>
@@ -449,6 +497,14 @@ const productSchema = {
             </details>
           ))}
         </div>
+      </section>
+    )}
+
+    <!-- Verdict -->
+    {content.verdict && (
+      <section class="content-section" id="verdict">
+        <h2>Our Verdict on {content.display_name}</h2>
+        {content.verdict.split('\n\n').map((para: string) => <p>{para}</p>)}
       </section>
     )}
 
@@ -585,6 +641,59 @@ const productSchema = {
 
   .content-section p:last-child {
     margin-bottom: 0;
+  }
+
+  /* Features */
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    margin-top: var(--space-4);
+  }
+
+  .feature-item h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+    color: var(--color-text);
+  }
+
+  .feature-item p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+
+  /* Use Cases */
+  .use-cases-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    margin-top: var(--space-4);
+  }
+
+  .use-case-item {
+    padding-left: var(--space-5);
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .use-case-item h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+  }
+
+  .use-case-item p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+
+  /* Pricing Detail */
+  .pricing-detail {
+    margin-top: var(--space-4);
+  }
+
+  .pricing-detail p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
   }
 
   /* Pricing */
