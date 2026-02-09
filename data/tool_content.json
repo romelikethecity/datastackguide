@@ -4284,6 +4284,10 @@
       {
         "q": "How popular is Freshsales in job postings?",
         "a": "Freshsales appears in 1 job posting in our dataset, reflecting its SMB focus. Enterprise companies hiring for RevOps and CRM roles overwhelmingly ask for Salesforce or HubSpot experience. Freshsales skills transfer well to other CRMs, though."
+      },
+      {
+        "q": "What is the difference between Freshsales and Freshsales Suite?",
+        "a": "Freshsales is the standalone CRM product. Freshsales Suite bundles Freshsales CRM with Freshmarketer (marketing automation) and Freshchat (live chat and messaging) at the same price tiers ($9-59/user/month). The Suite adds email marketing, web forms, landing pages, and chat-based engagement without requiring separate subscriptions. If you need both CRM and marketing automation, Freshsales Suite is significantly cheaper than buying Salesforce plus Pardot or HubSpot's paid marketing tiers."
       }
     ],
     "overview": [

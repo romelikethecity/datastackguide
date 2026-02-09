@@ -9,6 +9,8 @@ import cooccurrenceData from '../../../data/cooccurrence.json';
 import trendsData from '../../../data/trends.json';
 import toolDetailsData from '../../../data/tool_details.json';
 import toolContentData from '../../../data/tool_content.json';
+import comparisonsData from '../../../data/comparisons.json';
+import pricingPagesData from '../../../data/pricing_pages.json';
 
 // Only generate pages for tools that have editorial content
 const toolsWithContent = toolsData.tools.filter(
@@ -77,6 +79,25 @@ const alternativeTools = alternativeSlugs
 
 // Top co-occurring tools (limit to 8)
 const topCooc = cooc.slice(0, 8);
+
+// Find comparison pages for this tool
+const toolComparisons = comparisonsData.comparisons
+  .filter((comp: any) => comp.slug.includes(slug))
+  .map((comp: any) => {
+    const parts = comp.slug.split('-vs-');
+    const otherSlug = parts[0] === slug ? parts[1] : parts[0];
+    const otherTool = toolsData.tools.find((t: any) => t.slug === otherSlug);
+    const otherContent = (toolContentData as any)[otherSlug];
+    return {
+      slug: comp.slug,
+      title: comp.title,
+      otherName: otherContent?.display_name || otherTool?.name || otherSlug
+    };
+  })
+  .slice(0, 5);
+
+// Check if pricing page exists
+const hasPricingPage = pricingPagesData.pages.some((p: any) => p.slug === `${slug}-pricing`);
 
 // Company stage data
 const companyStages = details.company_stages || {};
@@ -505,6 +526,33 @@ const productSchema = {
       <section class="content-section" id="verdict">
         <h2>Our Verdict on {content.display_name}</h2>
         {content.verdict.split('\n\n').map((para: string) => <p>{para}</p>)}
+      </section>
+    )}
+
+    <!-- Compare & Pricing CTAs -->
+    {(toolComparisons.length > 0 || hasPricingPage) && (
+      <section class="content-section">
+        <div class="action-cards">
+          {hasPricingPage && (
+            <a href={`/pricing/${slug}-pricing/`} class="action-card card">
+              <span class="action-card-label text-sm text-muted">Pricing Deep-Dive</span>
+              <span class="action-card-title">See Full {content.display_name} Pricing →</span>
+              <span class="action-card-desc text-sm">Detailed breakdown of plans, hidden costs, and negotiation tips</span>
+            </a>
+          )}
+          {toolComparisons.length > 0 && (
+            <div class="action-card card">
+              <span class="action-card-label text-sm text-muted">Compare {content.display_name}</span>
+              <div class="comparison-links">
+                {toolComparisons.map((comp: any) => (
+                  <a href={`/compare/${comp.slug}/`} class="comparison-link">
+                    {content.display_name} vs {comp.otherName} →
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       </section>
     )}
 
@@ -1000,6 +1048,59 @@ const productSchema = {
     color: var(--color-text-secondary);
     line-height: 1.7;
     max-width: none;
+  }
+
+  /* Action Cards (Compare & Pricing) */
+  .action-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .action-card {
+    padding: var(--space-5);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 0.2s;
+  }
+
+  a.action-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .action-card-label {
+    display: block;
+    margin-bottom: var(--space-2);
+  }
+
+  .action-card-title {
+    display: block;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .action-card-desc {
+    display: block;
+    color: var(--color-text-secondary);
+  }
+
+  .comparison-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+  }
+
+  .comparison-link {
+    color: var(--color-primary);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: var(--text-sm);
+  }
+
+  .comparison-link:hover {
+    text-decoration: underline;
   }
 
   /* CTA */

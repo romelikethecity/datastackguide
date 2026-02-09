@@ -18,7 +18,11 @@
         "apollo",
         "clay"
       ],
-      "category_slug": "enrichment"
+      "category_slug": "enrichment",
+      "related_roundups": [
+        "best-data-enrichment-tools",
+        "best-data-enrichment-tools-for-smb"
+      ]
     },
     {
       "slug": "intent-data",
@@ -37,7 +41,10 @@
         "bombora",
         "warmly"
       ],
-      "category_slug": "intent"
+      "category_slug": "intent",
+      "related_roundups": [
+        "best-b2b-intent-data-tools"
+      ]
     },
     {
       "slug": "abm",
@@ -54,7 +61,11 @@
       "related_tools": [
         "6sense"
       ],
-      "category_slug": "abm"
+      "category_slug": "abm",
+      "related_roundups": [
+        "best-abm-platforms",
+        "best-abm-tools-for-mid-market"
+      ]
     },
     {
       "slug": "firmographic-data",
@@ -110,7 +121,10 @@
         "salesforce",
         "6sense"
       ],
-      "category_slug": "crm"
+      "category_slug": "crm",
+      "related_roundups": [
+        "best-lead-scoring-tools"
+      ]
     },
     {
       "slug": "data-hygiene",
@@ -127,7 +141,10 @@
         "demandtools",
         "verum"
       ],
-      "category_slug": "cleaning"
+      "category_slug": "cleaning",
+      "related_roundups": [
+        "best-data-quality-tools"
+      ]
     },
     {
       "slug": "data-validation",
@@ -162,7 +179,10 @@
         "salesforce",
         "hubspot"
       ],
-      "category_slug": "crm"
+      "category_slug": "crm",
+      "related_roundups": [
+        "best-revops-tools"
+      ]
     },
     {
       "slug": "sales-engagement",
@@ -180,7 +200,10 @@
         "apollo",
         "instantly"
       ],
-      "category_slug": "list-building"
+      "category_slug": "list-building",
+      "related_roundups": [
+        "best-sales-engagement-platforms"
+      ]
     },
     {
       "slug": "customer-data-platform",
@@ -239,7 +262,10 @@
         "linkedin-sales-navigator",
         "clearbit"
       ],
-      "category_slug": "enrichment"
+      "category_slug": "enrichment",
+      "related_roundups": [
+        "best-sales-intelligence-tools"
+      ]
     },
     {
       "slug": "buyer-intent",
@@ -281,7 +307,10 @@
         "boomi",
         "mulesoft"
       ],
-      "category_slug": "orchestration"
+      "category_slug": "orchestration",
+      "related_roundups": [
+        "best-data-integration-tools"
+      ]
     },
     {
       "slug": "sales-automation",
@@ -379,7 +408,11 @@
         "instantly",
         "lemlist"
       ],
-      "category_slug": "crm"
+      "category_slug": "crm",
+      "related_roundups": [
+        "best-cold-email-tools",
+        "best-sales-engagement-platforms"
+      ]
     },
     {
       "slug": "gtm-strategy",
@@ -540,7 +573,10 @@
         "gong-engage",
         "6sense"
       ],
-      "category_slug": "crm"
+      "category_slug": "crm",
+      "related_roundups": [
+        "best-revenue-intelligence-tools"
+      ]
     },
     {
       "slug": "crm-hygiene",
@@ -561,7 +597,10 @@
         "demandtools",
         "zoominfo"
       ],
-      "category_slug": "cleaning"
+      "category_slug": "cleaning",
+      "related_roundups": [
+        "best-data-quality-tools"
+      ]
     },
     {
       "slug": "multi-threading",
@@ -764,7 +803,10 @@
         "salesloft",
         "outreach-io"
       ],
-      "category_slug": "list-building"
+      "category_slug": "list-building",
+      "related_roundups": [
+        "best-conversation-intelligence-tools"
+      ]
     },
     {
       "slug": "deal-desk",

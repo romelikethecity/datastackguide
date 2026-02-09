@@ -5,6 +5,7 @@ import glossaryData from '../../../data/glossary.json';
 import toolsData from '../../../data/tools.json';
 import toolContentData from '../../../data/tool_content.json';
 import categoriesData from '../../../data/categories.json';
+import bestOfData from '../../../data/best_of.json';
 
 export function getStaticPaths() {
   return glossaryData.terms.map((term: any) => ({
@@ -49,6 +50,14 @@ const relatedTerms = (entry.related_terms || [])
   .map((slug: string) => {
     const term = glossaryData.terms.find((t: any) => t.slug === slug);
     return term ? { slug: term.slug, term: term.term } : null;
+  })
+  .filter(Boolean);
+
+// Build related roundups list
+const relatedRoundups = (entry.related_roundups || [])
+  .map((slug: string) => {
+    const roundup = bestOfData.roundups.find((r: any) => r.slug === slug);
+    return roundup ? { slug: roundup.slug, title: roundup.title } : null;
   })
   .filter(Boolean);
 
@@ -134,6 +143,23 @@ const schema = {
               )}
             </div>
           ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Best Of Roundups CTA -->
+    {relatedRoundups.length > 0 && (
+      <section class="content-section">
+        <div class="roundup-cta">
+          <h3>Find the Right {entry.term} Tool</h3>
+          <p>Not sure which tool fits your needs? Check out our curated recommendations:</p>
+          <div class="roundup-links">
+            {relatedRoundups.map((roundup: any) => (
+              <a href={`/best/${roundup.slug}/`} class="roundup-link">
+                {roundup.title} →
+              </a>
+            ))}
+          </div>
         </div>
       </section>
     )}
@@ -286,6 +312,44 @@ const schema = {
   .related-term-link:hover {
     color: var(--color-primary);
     border-color: var(--color-primary);
+  }
+
+  .roundup-cta {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+  }
+
+  .roundup-cta h3 {
+    margin-bottom: var(--space-2);
+    font-size: var(--text-lg);
+  }
+
+  .roundup-cta p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-4);
+    max-width: none;
+  }
+
+  .roundup-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .roundup-link {
+    display: inline-block;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .roundup-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
   }
 
   .related-section {
