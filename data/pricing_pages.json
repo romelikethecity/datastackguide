@@ -4901,7 +4901,7 @@
         },
         {
           "name": "PPC (Pay-Per-Click)",
-          "price": "$2–$100+/click",
+          "price": "$2\u2013$100+/click",
           "billing": "Monthly budget",
           "popular": true,
           "highlights": [
@@ -4931,7 +4931,7 @@
         },
         {
           "item": "Review management",
-          "range": "$500–$2K/year (time cost)",
+          "range": "$500\u2013$2K/year (time cost)",
           "note": "Active review solicitation and response management requires ongoing effort. Reviews directly impact your ranking and click-through rate."
         },
         {
@@ -4941,7 +4941,7 @@
         },
         {
           "item": "Landing page optimization",
-          "range": "$2K–$10K",
+          "range": "$2K\u2013$10K",
           "note": "Capterra traffic converts differently than organic. Most vendors need dedicated landing pages to maximize conversion from review site visitors."
         }
       ],
@@ -4954,27 +4954,27 @@
           },
           {
             "item": "Average CPC in CRM category",
-            "annual": "$35–$55/click"
+            "annual": "$35\u2013$55/click"
           },
           {
             "item": "Estimated clicks/month",
-            "annual": "~40–55 clicks"
+            "annual": "~40\u201355 clicks"
           },
           {
             "item": "Typical click-to-demo rate",
-            "annual": "5–15%"
+            "annual": "5\u201315%"
           },
           {
             "item": "Annual demos from Capterra",
-            "annual": "24–99"
+            "annual": "24\u201399"
           },
           {
             "item": "Cost per demo",
-            "annual": "$242–$1,000"
+            "annual": "$242\u2013$1,000"
           }
         ],
-        "total": "$24,000–$36,000/year",
-        "per_user_real": "$242–$1,000/demo"
+        "total": "$24,000\u2013$36,000/year",
+        "per_user_real": "$242\u2013$1,000/demo"
       },
       "bottom_line": "Capterra is a viable lead source for B2B software vendors, but cost efficiency varies dramatically by category. Niche categories with low competition can deliver cheap, qualified leads. Competitive categories like CRM, project management, and marketing automation have CPCs that make cost-per-demo comparable to LinkedIn ads. The free listing is worth claiming regardless; paid placement requires careful ROI tracking.",
       "faq": [
@@ -4993,6 +4993,446 @@
         {
           "q": "How do Capterra reviews affect pricing?",
           "a": "Reviews don't directly affect PPC pricing, but they heavily influence click-through rates. Vendors with 4.5+ star ratings and 50+ reviews get significantly more clicks at the same bid level. Investing in review collection is one of the highest-ROI activities on the platform."
+        }
+      ]
+    },
+    {
+      "slug": "g2-pricing",
+      "tool_slug": "g2",
+      "title": "G2 Pricing (2026): What It Actually Costs",
+      "meta_description": "G2 pricing breakdown: profile tiers, buyer intent data costs, and what software companies actually pay. Updated for 2026.",
+      "hook": "G2 has a free tier for basic profiles, but the real product is buyer intent data. That starts around $15K/year and scales quickly.",
+      "tiers": [
+        {
+          "name": "Free Profile",
+          "price": "$0",
+          "billing": "Free",
+          "highlights": [
+            "Claim your product profile",
+            "Collect reviews from customers",
+            "Basic analytics",
+            "Respond to reviews"
+          ]
+        },
+        {
+          "name": "Essentials",
+          "price": "~$5K-$10K/year",
+          "billing": "Annual",
+          "highlights": [
+            "Enhanced profile customization",
+            "Competitor comparisons",
+            "Review generation campaigns",
+            "Basic buyer intent signals"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "~$15K-$25K/year",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Full buyer intent data",
+            "Account-level research signals",
+            "CRM integration (Salesforce, HubSpot)",
+            "Content syndication"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "$30K-$75K+/year",
+          "billing": "Annual",
+          "highlights": [
+            "Advanced intent signals",
+            "API access",
+            "Custom reporting",
+            "Dedicated success manager",
+            "Multi-product profiles"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Review generation campaigns",
+          "range": "Add-on pricing",
+          "note": "G2 can run review campaigns for you, but it costs extra beyond basic profile tools."
+        },
+        {
+          "item": "Content syndication",
+          "range": "$10K-$25K+",
+          "note": "Displaying G2 badges and reviews on your website is often a separate product."
+        },
+        {
+          "item": "Multiple products",
+          "range": "Per-product fees",
+          "note": "If you have multiple products listed, each may require its own subscription."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market SaaS company wanting buyer intent data",
+        "total": "$32,000/year",
+        "line_items": [
+          {
+            "item": "G2 Pro subscription",
+            "annual": "$20,000"
+          },
+          {
+            "item": "Salesforce integration setup",
+            "annual": "Included"
+          },
+          {
+            "item": "Content syndication add-on",
+            "annual": "$12,000"
+          }
+        ],
+        "per_user_real": "See total"
+      },
+      "bottom_line": "G2's value is in the intent data. The free profile is fine for collecting reviews, but the real product is knowing which accounts are researching your category. At $15K-$30K/year for useful intent signals, it's a meaningful investment. Worth it if you're selling to mid-market+ and can act on the signals quickly.",
+      "faq": [
+        {
+          "q": "Is the free G2 profile worth it?",
+          "a": "Yes. Claim it, add your product info, and encourage customers to leave reviews. It's free and helps with visibility. The paid products are for intent data and enhanced marketing."
+        },
+        {
+          "q": "How does G2 buyer intent work?",
+          "a": "G2 tracks which companies are viewing your profile, comparing you to competitors, and reading reviews in your category. They package that into account-level intent signals you can push to your CRM."
+        },
+        {
+          "q": "G2 vs Capterra for buyer intent?",
+          "a": "G2 has more sophisticated intent data. Capterra (Gartner) is more of a lead-gen model where you pay per lead rather than for intent signals. Different models for different use cases."
+        }
+      ]
+    },
+    {
+      "slug": "zapier-pricing",
+      "tool_slug": "zapier",
+      "title": "Zapier Pricing (2026): What It Actually Costs",
+      "meta_description": "Zapier pricing breakdown: task limits, team features, and what companies actually pay for workflow automation. Updated for 2026.",
+      "hook": "Zapier's free tier is great for testing. But task limits mean most teams quickly need paid plans. Here's how the costs stack up.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "Free",
+          "highlights": [
+            "100 tasks/month",
+            "5 Zaps (workflows)",
+            "Single-step Zaps only",
+            "15-minute update time"
+          ]
+        },
+        {
+          "name": "Starter",
+          "price": "$19.99/mo",
+          "billing": "Monthly (annual available)",
+          "highlights": [
+            "750 tasks/month",
+            "20 Zaps",
+            "Multi-step Zaps",
+            "3 Premium apps"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "$49/mo",
+          "billing": "Monthly (annual available)",
+          "popular": true,
+          "highlights": [
+            "2,000 tasks/month",
+            "Unlimited Zaps",
+            "Unlimited Premium apps",
+            "Custom logic (Paths, Filters)",
+            "1-minute update time"
+          ]
+        },
+        {
+          "name": "Team",
+          "price": "$69/mo",
+          "billing": "Monthly (annual available)",
+          "highlights": [
+            "2,000 tasks/month (shared)",
+            "Unlimited users",
+            "Shared workspaces",
+            "Shared app connections",
+            "Premier support"
+          ]
+        },
+        {
+          "name": "Company",
+          "price": "$99/mo",
+          "billing": "Monthly (annual available)",
+          "highlights": [
+            "2,000 tasks/month (to start)",
+            "Advanced admin controls",
+            "SSO/SAML",
+            "Custom data retention",
+            "Dedicated success manager"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Task overages",
+          "range": "~$0.01-$0.05/task",
+          "note": "Exceed your task limit and you'll pay per additional task. Heavy users can blow through limits quickly."
+        },
+        {
+          "item": "Premium app access",
+          "range": "Requires Starter+",
+          "note": "Some integrations (Salesforce, HubSpot, etc.) count as Premium apps. Free tier only gets 3."
+        },
+        {
+          "item": "Additional tasks",
+          "range": "$10/mo per 1,000 tasks",
+          "note": "You can buy additional task bundles if you need more than your plan includes."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "5-person ops team running lead routing and data sync workflows",
+        "total": "~$1,010/year",
+        "line_items": [
+          {
+            "item": "Team plan",
+            "annual": "$69/mo ($828/year)"
+          },
+          {
+            "item": "Additional 3,000 tasks/mo",
+            "annual": "$30/mo ($360/year)"
+          },
+          {
+            "item": "Annual billing discount (15%)",
+            "annual": "-$178"
+          }
+        ],
+        "per_user_real": "See total"
+      },
+      "bottom_line": "Zapier is affordable for most teams. The Professional plan at $49/mo handles most use cases. The challenge is task limits: if you're syncing high-volume data, those 2,000 tasks disappear quickly. For heavy automation, compare total cost against dedicated iPaaS tools.",
+      "faq": [
+        {
+          "q": "What counts as a Zapier task?",
+          "a": "Each action step that runs successfully counts as a task. A 5-step Zap that runs once uses 5 tasks. Triggers don't count, only actions."
+        },
+        {
+          "q": "Is Zapier good for enterprise?",
+          "a": "It depends. Zapier is great for point solutions and quick automations. For complex, high-volume integrations, dedicated iPaaS tools (Workato, Tray.io) may be more appropriate."
+        },
+        {
+          "q": "Zapier vs Make (Integromat)?",
+          "a": "Make offers more tasks per dollar and more complex logic. Zapier has more integrations and is easier to use. Make wins on price; Zapier wins on simplicity."
+        }
+      ]
+    },
+    {
+      "slug": "fivetran-pricing",
+      "tool_slug": "fivetran",
+      "title": "Fivetran Pricing (2026): What It Actually Costs",
+      "meta_description": "Fivetran pricing breakdown: MAR-based billing, connector costs, and what companies actually pay for data integration. Updated for 2026.",
+      "hook": "Fivetran charges based on Monthly Active Rows (MAR). Simple concept, tricky to predict. Here's how to estimate your real cost.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "Free",
+          "highlights": [
+            "500,000 MAR/month",
+            "Limited connectors",
+            "Community support",
+            "Good for testing"
+          ]
+        },
+        {
+          "name": "Starter",
+          "price": "Starting ~$1/MAR credit",
+          "billing": "Pay-as-you-go",
+          "highlights": [
+            "All connectors available",
+            "Standard support",
+            "Basic transformations",
+            "No minimum commitment"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price": "Volume-based",
+          "billing": "Annual contract",
+          "popular": true,
+          "highlights": [
+            "Volume discounts",
+            "Faster sync frequency",
+            "Priority support",
+            "dbt Cloud integration"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual contract",
+          "highlights": [
+            "Highest volume discounts",
+            "Custom SLAs",
+            "Private deployment options",
+            "Dedicated success manager"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "MAR unpredictability",
+          "range": "Varies",
+          "note": "MAR counts rows that change each month. A CRM with high activity can burn through MAR faster than expected."
+        },
+        {
+          "item": "Connector pricing tiers",
+          "range": "1x to 2x credits",
+          "note": "Some connectors (especially database replication) cost more credits per MAR than others."
+        },
+        {
+          "item": "Historical backfills",
+          "range": "One-time MAR spike",
+          "note": "Initial sync of historical data can cause a large MAR spike in month one."
+        },
+        {
+          "item": "Warehouse compute",
+          "range": "Separate cost",
+          "note": "Fivetran loads data into your warehouse. You still pay Snowflake/BigQuery for storage and compute."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market company syncing Salesforce, HubSpot, and Stripe to Snowflake",
+        "total": "$15,000-$30,000/year",
+        "line_items": [
+          {
+            "item": "Estimated 5M MAR/month",
+            "annual": "$1,500-$3,000/mo"
+          },
+          {
+            "item": "Annual contract discount",
+            "annual": "-20%"
+          },
+          {
+            "item": "Typical annual spend",
+            "annual": "$15,000-$30,000"
+          }
+        ],
+        "per_user_real": "See total"
+      },
+      "bottom_line": "Fivetran is the leading ELT tool for a reason: it works reliably with minimal maintenance. But MAR-based pricing is hard to predict. A mid-market company typically pays $15K-$40K/year. Estimate conservatively and negotiate a pilot before committing.",
+      "faq": [
+        {
+          "q": "What is a Monthly Active Row (MAR)?",
+          "a": "A MAR is any row that Fivetran syncs or updates in a given month. If a CRM record changes 5 times in a month, it still counts as 1 MAR. Unchanged rows don't count."
+        },
+        {
+          "q": "Fivetran vs Airbyte?",
+          "a": "Airbyte is open-source and cheaper (or free if self-hosted). Fivetran is fully managed with better reliability and support. You're paying for reduced maintenance overhead."
+        },
+        {
+          "q": "Does Fivetran include the data warehouse?",
+          "a": "No. Fivetran loads data into your warehouse (Snowflake, BigQuery, Redshift, etc.). You pay your warehouse provider separately for storage and compute."
+        }
+      ]
+    },
+    {
+      "slug": "warmly-pricing",
+      "tool_slug": "warmly",
+      "title": "Warmly Pricing (2026): What It Actually Costs",
+      "meta_description": "Warmly pricing breakdown: visitor identification tiers, enrichment credits, and what companies actually pay. Updated for 2026.",
+      "hook": "Warmly identifies companies and contacts visiting your website. Pricing depends on traffic volume and how many visitors you want to reveal.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "Free",
+          "highlights": [
+            "Limited visitor reveals",
+            "Company identification",
+            "Basic intent signals",
+            "Slack notifications"
+          ]
+        },
+        {
+          "name": "Startup",
+          "price": "$700/mo",
+          "billing": "Monthly",
+          "highlights": [
+            "5,000 visitor reveals/mo",
+            "Contact enrichment",
+            "CRM integration",
+            "Slack + email alerts"
+          ]
+        },
+        {
+          "name": "Business",
+          "price": "$1,400/mo",
+          "billing": "Monthly",
+          "popular": true,
+          "highlights": [
+            "15,000 visitor reveals/mo",
+            "Advanced enrichment",
+            "Outreach integration",
+            "Custom routing rules"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Unlimited reveals",
+            "API access",
+            "Custom integrations",
+            "Dedicated support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Overage fees",
+          "range": "~$0.10-$0.20/reveal",
+          "note": "Exceed your monthly reveal limit and you'll pay per additional visitor identified."
+        },
+        {
+          "item": "Contact enrichment credits",
+          "range": "Varies by plan",
+          "note": "Revealing companies is one thing. Getting contact info for people at those companies may use additional credits."
+        },
+        {
+          "item": "High-traffic sites",
+          "range": "Enterprise pricing",
+          "note": "If you have 50K+ monthly visitors, you'll likely need custom Enterprise pricing."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "B2B SaaS with 20K monthly website visitors",
+        "total": "~$19,200/year",
+        "line_items": [
+          {
+            "item": "Business plan",
+            "annual": "$1,400/mo"
+          },
+          {
+            "item": "Occasional overages (2K reveals)",
+            "annual": "$200/mo"
+          },
+          {
+            "item": "Annual total",
+            "annual": "~$19,200"
+          }
+        ],
+        "per_user_real": "See total"
+      },
+      "bottom_line": "Warmly is in the website visitor identification space competing with Clearbit Reveal, RB2B, and others. At $700-$1,400/mo for core plans, it's a real budget item. The value depends on sales velocity: if reps can engage hot visitors within hours, the ROI is there. If signals sit untouched, it's expensive noise.",
+      "faq": [
+        {
+          "q": "How does Warmly identify visitors?",
+          "a": "Warmly uses IP matching, cookie data, and third-party data partnerships to identify companies and sometimes individuals visiting your website. Match rates vary (typically 20-40% of traffic)."
+        },
+        {
+          "q": "Warmly vs Clearbit Reveal?",
+          "a": "Similar functionality. Clearbit (HubSpot) is more established but pricing has changed since the acquisition. Warmly has been more aggressive on features and pricing. Compare both."
+        },
+        {
+          "q": "Do I need Warmly if I have ZoomInfo?",
+          "a": "ZoomInfo has its own website visitor identification (WebSights). If you're already on ZoomInfo, check if it's included or available as an add-on before buying a separate tool."
         }
       ]
     }

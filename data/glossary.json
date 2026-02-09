@@ -1120,6 +1120,257 @@
       ],
       "related_tools": [],
       "category_slug": "data-quality"
+    },
+    {
+      "slug": "etl",
+      "term": "ETL",
+      "short_definition": "Extract, Transform, Load. A process for moving data from source systems to a data warehouse.",
+      "full_definition": "ETL stands for Extract, Transform, Load. It's the traditional approach to data integration. First, you extract data from source systems (CRM, ERP, marketing tools). Then you transform it: clean, standardize, and reshape the data. Finally, you load it into a destination like a data warehouse. ETL tools handle the plumbing that connects your operational systems to your analytics infrastructure.",
+      "why_it_matters": "Without ETL, your data stays siloed in individual tools. Marketing can't see sales data. Finance can't reconcile across systems. ETL pipelines are the backbone of business intelligence. When people talk about 'data infrastructure,' they usually mean ETL plus a warehouse.",
+      "example": "Your sales team uses Salesforce, marketing uses HubSpot, and finance uses QuickBooks. An ETL tool extracts data from all three, transforms it into a common format, and loads it into Snowflake where analysts can query across all sources.",
+      "related_terms": [
+        "elt",
+        "reverse-etl",
+        "data-warehouse"
+      ],
+      "related_tools": [
+        "fivetran",
+        "zapier"
+      ],
+      "category_slug": "data-orchestration"
+    },
+    {
+      "slug": "elt",
+      "term": "ELT",
+      "short_definition": "Extract, Load, Transform. A modern approach where raw data is loaded first, then transformed in the warehouse.",
+      "full_definition": "ELT flips the traditional ETL order. Instead of transforming data before loading it, ELT extracts raw data, loads it directly into a cloud warehouse, then transforms it there. This approach gained popularity because cloud warehouses like Snowflake and BigQuery have enough compute power to handle transformations at scale.",
+      "why_it_matters": "ELT is faster to implement because you don't need to define transformations upfront. Load the raw data, then figure out how to transform it later. This is more flexible than ETL, but requires a warehouse with enough horsepower to handle the transformation workload.",
+      "example": "Fivetran extracts raw data from Salesforce and loads it directly into Snowflake. Then dbt runs transformation queries inside Snowflake to create clean, analytics-ready tables.",
+      "related_terms": [
+        "etl",
+        "data-warehouse",
+        "reverse-etl"
+      ],
+      "related_tools": [
+        "fivetran"
+      ],
+      "category_slug": "data-orchestration"
+    },
+    {
+      "slug": "cdp",
+      "term": "Customer Data Platform (CDP)",
+      "short_definition": "Software that unifies customer data from multiple sources into a single customer profile.",
+      "full_definition": "A Customer Data Platform collects data from your website, CRM, email, support tickets, and other touchpoints, then stitches it together into unified customer profiles. The goal is a single source of truth for who your customers are and what they've done. CDPs sit between your data sources and your activation tools (email, ads, personalization).",
+      "why_it_matters": "Without a CDP, your customer data is fragmented. Marketing sees email engagement. Sales sees CRM activity. Support sees tickets. Nobody has the full picture. CDPs solve identity resolution: connecting anonymous website visitors to known contacts to paying customers across devices and channels.",
+      "example": "A visitor browses your site anonymously, then fills out a form. Later they become a customer. A CDP stitches together the anonymous browsing, form submission, and purchase into one profile that marketing can use for personalization.",
+      "related_terms": [
+        "first-party-data",
+        "data-enrichment"
+      ],
+      "related_tools": [
+        "salesforce",
+        "hubspot"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "cold-email",
+      "term": "Cold Email",
+      "short_definition": "Unsolicited email outreach to prospects who haven't opted in to hear from you.",
+      "full_definition": "Cold email is outreach to people who don't know you and didn't ask to be contacted. It's a core tactic for B2B sales, especially at startups and SMBs without brand recognition. Done well, cold email is personalized, relevant, and provides value. Done poorly, it's spam that damages your sender reputation.",
+      "why_it_matters": "Cold email is one of the few scalable ways to reach decision-makers directly. Unlike ads, you're not competing for attention on a platform. Unlike inbound, you're not waiting for prospects to find you. But deliverability is a constant battle, and regulations (CAN-SPAM, GDPR) have real teeth.",
+      "example": "An SDR at a SaaS startup sends personalized emails to VP Sales at mid-market companies. The email references something specific about the prospect's company and offers a relevant insight, not just a generic pitch.",
+      "related_terms": [
+        "email-deliverability",
+        "email-warmup",
+        "sales-cadence"
+      ],
+      "related_tools": [
+        "instantly",
+        "apollo",
+        "salesloft"
+      ],
+      "category_slug": "list-building"
+    },
+    {
+      "slug": "email-deliverability",
+      "term": "Email Deliverability",
+      "short_definition": "The ability to get your emails into recipients' inboxes rather than spam folders.",
+      "full_definition": "Email deliverability measures whether your emails actually reach the inbox. It depends on sender reputation (domain and IP), email authentication (SPF, DKIM, DMARC), content quality, and recipient engagement. Poor deliverability means your emails go to spam or get blocked entirely.",
+      "why_it_matters": "You can have the best email content in the world, but if it lands in spam, nobody sees it. Deliverability is especially critical for cold email, where you're sending to people who haven't opted in. One bad campaign can tank your sender reputation for months.",
+      "example": "A company sends a cold email campaign to 10,000 purchased contacts. Half bounce, many recipients mark it as spam. Their domain reputation drops, and now even their legitimate emails to existing customers land in spam folders.",
+      "related_terms": [
+        "cold-email",
+        "email-warmup"
+      ],
+      "related_tools": [
+        "instantly"
+      ],
+      "category_slug": "list-building"
+    },
+    {
+      "slug": "email-warmup",
+      "term": "Email Warmup",
+      "short_definition": "The process of gradually building sender reputation for a new email domain or IP.",
+      "full_definition": "Email warmup is the process of establishing trust with email providers before sending at volume. New domains and IPs have no reputation, so sending thousands of emails immediately triggers spam filters. Warmup tools simulate normal email activity: sending, receiving, and engaging with emails to build a positive reputation.",
+      "why_it_matters": "Skip warmup, and your cold email campaigns die in spam folders. A properly warmed domain can send hundreds of emails per day with good deliverability. An unwarmed domain might get flagged after 50. Warmup takes 2-4 weeks but is essential for outbound sales.",
+      "example": "Before launching cold outreach, a sales team sets up Instantly to warm their new email domain. The tool sends and receives emails automatically for 3 weeks, building positive engagement signals that improve deliverability.",
+      "related_terms": [
+        "email-deliverability",
+        "cold-email"
+      ],
+      "related_tools": [
+        "instantly"
+      ],
+      "category_slug": "list-building"
+    },
+    {
+      "slug": "email-sequences",
+      "term": "Email Sequences",
+      "short_definition": "Automated series of emails sent to prospects over time based on triggers and timing rules.",
+      "full_definition": "Email sequences (also called drip campaigns or cadences) are automated series of emails that go out on a schedule. A typical sales sequence might be: Day 1 intro email, Day 3 follow-up, Day 7 value-add content, Day 14 breakup email. The sequence stops when the prospect replies, books a meeting, or unsubscribes.",
+      "why_it_matters": "Manual follow-up doesn't scale. Reps can't remember to email every prospect at the right time. Sequences automate the repetitive work so reps can focus on conversations. Most sales engagement platforms are built around sequence functionality.",
+      "example": "An SDR enrolls a prospect in a 5-touch sequence. The first email is personalized. If no reply, an automated follow-up goes out 3 days later. The sequence continues until the prospect responds or reaches the final step.",
+      "related_terms": [
+        "cold-email",
+        "sales-cadence"
+      ],
+      "related_tools": [
+        "salesloft",
+        "instantly",
+        "apollo"
+      ],
+      "category_slug": "list-building"
+    },
+    {
+      "slug": "first-party-data",
+      "term": "First-Party Data",
+      "short_definition": "Data you collect directly from your customers and website visitors.",
+      "full_definition": "First-party data is information you collect yourself: website behavior, email engagement, purchase history, form submissions, support interactions. You own it, and it's collected with user consent (explicit or implied). First-party data is more reliable and privacy-compliant than third-party data purchased from external providers.",
+      "why_it_matters": "With third-party cookies dying and privacy regulations tightening, first-party data is increasingly valuable. It's data you control, collected from people who've interacted with your brand. Building a first-party data strategy is essential for marketing in a post-cookie world.",
+      "example": "A SaaS company tracks which features users engage with, what content they read, and how they respond to emails. This first-party data feeds their lead scoring model and personalization engine.",
+      "related_terms": [
+        "third-party-data",
+        "cdp",
+        "data-privacy"
+      ],
+      "related_tools": [
+        "hubspot",
+        "salesforce"
+      ],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "third-party-data",
+      "term": "Third-Party Data",
+      "short_definition": "Data purchased or obtained from external providers who collected it from other sources.",
+      "full_definition": "Third-party data is information collected by someone else and sold or shared with you. Contact databases, firmographic data, intent signals, and demographic profiles are common examples. The data wasn't collected through your direct relationship with the individual. Quality and compliance vary widely by provider.",
+      "why_it_matters": "Third-party data fills gaps in your first-party data. You can't know what technology a prospect uses or what topics they're researching without external signals. But third-party data is under pressure from privacy regulations and the deprecation of third-party cookies.",
+      "example": "A sales team buys a list of contacts from ZoomInfo to fuel outbound prospecting. The data includes emails, phone numbers, and firmographics that the company didn't collect directly.",
+      "related_terms": [
+        "first-party-data",
+        "data-enrichment",
+        "data-privacy"
+      ],
+      "related_tools": [
+        "zoominfo",
+        "apollo",
+        "clearbit"
+      ],
+      "category_slug": "enrichment"
+    },
+    {
+      "slug": "data-privacy",
+      "term": "Data Privacy",
+      "short_definition": "The practice of handling personal data in compliance with regulations and user expectations.",
+      "full_definition": "Data privacy encompasses the laws, regulations, and best practices governing how companies collect, store, use, and share personal information. Key regulations include GDPR (Europe), CCPA (California), and various industry-specific rules. Privacy isn't just compliance; it's increasingly a competitive differentiator and trust signal.",
+      "why_it_matters": "Privacy violations carry real penalties: GDPR fines can reach 4% of global revenue. Beyond fines, privacy breaches damage brand trust. B2B companies handling customer data need clear policies on consent, data retention, and third-party sharing.",
+      "example": "A company updates its cold email practices after GDPR. They now document legitimate interest basis for outreach, honor opt-out requests within 30 days, and avoid purchasing contact lists without clear consent chains.",
+      "related_terms": [
+        "gdpr",
+        "first-party-data",
+        "third-party-data"
+      ],
+      "related_tools": [],
+      "category_slug": "data-quality"
+    },
+    {
+      "slug": "gdpr",
+      "term": "GDPR",
+      "short_definition": "General Data Protection Regulation. The EU law governing how companies handle personal data of EU residents.",
+      "full_definition": "GDPR (General Data Protection Regulation) is the European Union's comprehensive data protection law, effective since 2018. It applies to any company processing data of EU residents, regardless of where the company is based. Key requirements include lawful basis for processing, data subject rights (access, deletion, portability), and strict consent rules.",
+      "why_it_matters": "GDPR has teeth. Fines can reach \u20ac20 million or 4% of global annual revenue, whichever is higher. Even US companies selling to European customers must comply. GDPR also influenced other privacy laws worldwide, including CCPA. It's the de facto global standard for data protection.",
+      "example": "A US SaaS company serves European customers. They implement cookie consent banners, add data processing clauses to contracts, appoint a Data Protection Officer, and create processes to handle data access and deletion requests.",
+      "related_terms": [
+        "data-privacy",
+        "first-party-data"
+      ],
+      "related_tools": [],
+      "category_slug": "data-quality"
+    },
+    {
+      "slug": "marketing-attribution",
+      "term": "Marketing Attribution",
+      "short_definition": "The process of identifying which marketing touchpoints contributed to a conversion or sale.",
+      "full_definition": "Marketing attribution assigns credit to the channels, campaigns, and touchpoints that influenced a customer's decision to buy. Single-touch models (first-touch, last-touch) give all credit to one moment. Multi-touch models distribute credit across the journey. The goal is understanding what's actually driving revenue so you can allocate budget accordingly.",
+      "why_it_matters": "Without attribution, marketing spend is guesswork. Did that trade show drive pipeline, or was it the content syndication? Attribution helps answer those questions, though no model is perfect. B2B attribution is especially hard because buying cycles are long and involve multiple stakeholders.",
+      "example": "A prospect first clicks a LinkedIn ad, then downloads a whitepaper, attends a webinar, and finally books a demo after a Google search. Multi-touch attribution might give each touchpoint partial credit for the eventual deal.",
+      "related_terms": [
+        "first-party-data",
+        "intent-data"
+      ],
+      "related_tools": [
+        "hubspot",
+        "salesforce"
+      ],
+      "category_slug": "crm"
+    },
+    {
+      "slug": "reverse-etl",
+      "term": "Reverse ETL",
+      "short_definition": "The process of syncing data from a data warehouse back to operational tools like CRMs and marketing platforms.",
+      "full_definition": "Reverse ETL is the opposite of traditional ETL. Instead of extracting data from tools and loading it into a warehouse, reverse ETL takes data from your warehouse and pushes it to operational systems. This lets you use warehouse data to power personalization, lead scoring, and sales workflows in tools like Salesforce and HubSpot.",
+      "why_it_matters": "Your data warehouse is rich with insights, but they're trapped for analysts. Reverse ETL operationalizes that data. A lead score calculated in your warehouse can flow back to Salesforce for reps to act on. A product usage metric can trigger a marketing campaign in HubSpot.",
+      "example": "A product-led growth company calculates activation scores in their warehouse using product usage data. Reverse ETL syncs those scores to Salesforce, where sales reps prioritize outreach to highly-activated accounts.",
+      "related_terms": [
+        "etl",
+        "elt",
+        "data-warehouse"
+      ],
+      "related_tools": [
+        "fivetran"
+      ],
+      "category_slug": "data-orchestration"
+    },
+    {
+      "slug": "data-lineage",
+      "term": "Data Lineage",
+      "short_definition": "The tracking of data's origins, transformations, and movements through your systems.",
+      "full_definition": "Data lineage documents where data came from, how it was transformed, and where it went. It's the audit trail for your data infrastructure. When a number in a dashboard looks wrong, lineage helps you trace it back to the source. Lineage tools visualize data flows and flag when changes might break downstream dependencies.",
+      "why_it_matters": "Without lineage, debugging data issues is detective work. A bad number in a report could come from any of dozens of sources or transformations. Lineage makes the data supply chain visible. It's especially important for regulated industries where you need to prove where data came from.",
+      "example": "A finance team questions a revenue number in a dashboard. Data lineage shows the number originated in Stripe, was transformed by a dbt model, and aggregated in Looker. They trace the issue to a currency conversion bug in the dbt model.",
+      "related_terms": [
+        "etl",
+        "data-warehouse"
+      ],
+      "related_tools": [
+        "fivetran"
+      ],
+      "category_slug": "data-quality"
+    },
+    {
+      "slug": "data-catalog",
+      "term": "Data Catalog",
+      "short_definition": "An inventory of data assets in your organization with metadata, descriptions, and usage information.",
+      "full_definition": "A data catalog is like a library card system for your company's data. It indexes tables, columns, dashboards, and reports across your data infrastructure. Each asset gets metadata: what it contains, who owns it, how fresh it is, and who's using it. The goal is making data discoverable so people don't recreate what already exists.",
+      "why_it_matters": "Data teams waste time recreating analyses that already exist because they can't find them. Business users don't know what data is available. A data catalog solves the discovery problem. It's essential for organizations with multiple data teams or complex warehouse structures.",
+      "example": "A new analyst needs customer churn data. Instead of asking around, they search the data catalog, find an existing churn table, see its documentation and freshness, and start their analysis immediately.",
+      "related_terms": [
+        "data-lineage",
+        "data-warehouse"
+      ],
+      "related_tools": [],
+      "category_slug": "data-quality"
     }
   ]
 }
