@@ -27,6 +27,28 @@ const companyLinks = [
 
 <footer class="site-footer">
   <div class="container">
+    <div class="footer-newsletter">
+      <div class="newsletter-content">
+        <h3>Data Stack Weekly</h3>
+        <p>Tool reviews, pricing updates, and data ops tips. Every Tuesday.</p>
+      </div>
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/datastackguide"
+        method="post"
+        target="_blank"
+        class="newsletter-form"
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="you@company.com"
+          required
+          class="newsletter-input"
+        />
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="/assets/logos/logo-horizontal-dark-bg.svg" alt="DataStackGuide" width="180" height="40">
@@ -77,6 +99,70 @@ const companyLinks = [
     padding: var(--space-16) 0 var(--space-8);
     margin-top: var(--space-16);
     border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .footer-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+    padding-bottom: var(--space-10);
+    margin-bottom: var(--space-10);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .newsletter-content h3 {
+    color: var(--slate-100);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-1);
+  }
+
+  .newsletter-content p {
+    font-size: var(--text-sm);
+    color: var(--slate-400);
+    margin: 0;
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: var(--space-3);
+  }
+
+  .newsletter-input {
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--slate-100);
+    font-size: var(--text-sm);
+    min-width: 240px;
+  }
+
+  .newsletter-input::placeholder {
+    color: var(--slate-500);
+  }
+
+  .newsletter-input:focus {
+    outline: none;
+    border-color: var(--teal-500);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .newsletter-btn {
+    padding: var(--space-3) var(--space-5);
+    background: var(--teal-500);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    white-space: nowrap;
+  }
+
+  .newsletter-btn:hover {
+    background: var(--teal-600);
   }
 
   .footer-grid {
@@ -147,6 +233,21 @@ const companyLinks = [
   }
 
   @media (max-width: 768px) {
+    .footer-newsletter {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-4);
+    }
+
+    .newsletter-form {
+      width: 100%;
+    }
+
+    .newsletter-input {
+      flex: 1;
+      min-width: 0;
+    }
+
     .footer-grid {
       grid-template-columns: 1fr 1fr;
       gap: var(--space-8);
