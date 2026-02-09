@@ -5435,6 +5435,636 @@
           "a": "ZoomInfo has its own website visitor identification (WebSights). If you're already on ZoomInfo, check if it's included or available as an add-on before buying a separate tool."
         }
       ]
+    },
+    {
+      "slug": "clearbit-pricing",
+      "tool_slug": "clearbit",
+      "title": "Clearbit Pricing (2026): Plans & Real Costs",
+      "meta_description": "Clearbit pricing breakdown: what plans actually cost, API pricing, and hidden fees. Based on real buyer data.",
+      "hook": "Clearbit was acquired by HubSpot in 2023, but still operates independently. Pricing starts around $12K/year for most teams, with API costs adding up fast at scale.",
+      "tiers": [
+        {
+          "name": "Enrichment",
+          "price": "~$12K/year",
+          "billing": "Annual",
+          "highlights": [
+            "Company & contact enrichment",
+            "CRM integration (Salesforce, HubSpot)",
+            "Chrome extension",
+            "Basic API access"
+          ]
+        },
+        {
+          "name": "Prospector",
+          "price": "~$18K/year",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Enrichment",
+            "Prospecting search",
+            "List building",
+            "More API calls included"
+          ]
+        },
+        {
+          "name": "Platform",
+          "price": "~$30K+/year",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Prospector",
+            "Reveal (website visitor ID)",
+            "Forms enrichment",
+            "Custom integrations",
+            "Dedicated support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "API overage charges",
+          "range": "$0.02-0.10/call",
+          "note": "Each plan includes API call limits. Heavy users hit overages quickly."
+        },
+        {
+          "item": "Reveal add-on",
+          "range": "$12K-24K/year",
+          "note": "Website visitor identification is priced separately based on traffic volume."
+        },
+        {
+          "item": "Data refresh fees",
+          "range": "Included/varies",
+          "note": "Some plans charge for re-enriching stale records."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Growth-stage SaaS with 20K contacts to enrich",
+        "line_items": [
+          {
+            "item": "Prospector plan (base)",
+            "annual": "$18,000"
+          },
+          {
+            "item": "Reveal for website (50K visitors/mo)",
+            "annual": "$15,000"
+          },
+          {
+            "item": "API overage (estimated)",
+            "annual": "$3,000"
+          }
+        ],
+        "total": "$36,000/year",
+        "per_user_real": "N/A (contact-based)"
+      },
+      "bottom_line": "Clearbit is a premium enrichment tool that's now part of the HubSpot ecosystem. It's strongest for companies already on HubSpot who want native enrichment. If you're on Salesforce or need broader data coverage, ZoomInfo or Apollo may offer better value. Expect to pay $15K-40K/year depending on usage.",
+      "faq": [
+        {
+          "q": "Is Clearbit part of HubSpot now?",
+          "a": "Yes, HubSpot acquired Clearbit in late 2023. Clearbit still operates as a standalone product but has deeper HubSpot integrations. HubSpot customers may get bundled pricing."
+        },
+        {
+          "q": "How does Clearbit compare to ZoomInfo?",
+          "a": "ZoomInfo has a larger contact database and more features (intent data, engagement tools). Clearbit is simpler and often cheaper, with stronger firmographic enrichment. ZoomInfo is better for outbound-heavy teams; Clearbit suits inbound and product-led motions."
+        },
+        {
+          "q": "Can I use Clearbit with Salesforce?",
+          "a": "Yes, Clearbit has a native Salesforce integration for enriching leads and contacts. It works, but the HubSpot integration is now more feature-rich post-acquisition."
+        }
+      ]
+    },
+    {
+      "slug": "outreach-pricing",
+      "tool_slug": "outreach-io",
+      "title": "Outreach Pricing (2026): Plans & Real Costs",
+      "meta_description": "Outreach.io pricing breakdown: what tiers actually cost, per-seat pricing, and total cost of ownership for sales teams.",
+      "hook": "Outreach doesn't publish pricing, but plans typically start around $100/user/month with annual commitments. Enterprise deals often hit $130-150/user/month.",
+      "tiers": [
+        {
+          "name": "Standard",
+          "price": "~$100/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Email sequences",
+            "Task management",
+            "Basic analytics",
+            "CRM sync (Salesforce, HubSpot)",
+            "Chrome extension"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "~$120/user/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Standard",
+            "Advanced reporting",
+            "Team templates",
+            "A/B testing",
+            "Manager dashboards"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "~$140+/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Professional",
+            "Custom integrations",
+            "Advanced security (SSO, audit logs)",
+            "Dedicated CSM",
+            "Revenue intelligence add-ons"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Minimum seat count",
+          "range": "5-10 seats",
+          "note": "Outreach typically requires minimum commitments, especially for discounted pricing."
+        },
+        {
+          "item": "Implementation",
+          "range": "$5K-15K",
+          "note": "Outreach offers paid onboarding packages for complex rollouts."
+        },
+        {
+          "item": "Kaia (conversation intelligence)",
+          "range": "$30-50/user/mo",
+          "note": "AI meeting assistant and call recording is an add-on."
+        },
+        {
+          "item": "Data/dialer integrations",
+          "range": "Varies",
+          "note": "Phone dialer, data enrichment, and other integrations may add costs."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "25-rep SDR team on Professional tier",
+        "line_items": [
+          {
+            "item": "25 Professional licenses",
+            "annual": "$36,000"
+          },
+          {
+            "item": "Kaia add-on (25 users)",
+            "annual": "$12,000"
+          },
+          {
+            "item": "Implementation (Year 1)",
+            "annual": "$8,000"
+          },
+          {
+            "item": "Dialer integration",
+            "annual": "$6,000"
+          }
+        ],
+        "total": "$62,000/year",
+        "per_user_real": "$207/user/mo"
+      },
+      "bottom_line": "Outreach is the enterprise standard for sales engagement, but you'll pay for it. Budget $120-200/user/month all-in. For smaller teams or tighter budgets, Salesloft, Apollo, or Instantly offer similar core functionality at lower price points.",
+      "faq": [
+        {
+          "q": "How does Outreach compare to Salesloft?",
+          "a": "They're the two dominant players in sales engagement. Outreach is slightly more expensive and has stronger enterprise features. Salesloft has a reputation for better customer support and easier onboarding. Both work well; it often comes down to which demo you prefer."
+        },
+        {
+          "q": "Does Outreach require annual contracts?",
+          "a": "Yes, Outreach requires annual commitments. Monthly billing isn't available. Most contracts are 1-2 years with auto-renewal clauses."
+        },
+        {
+          "q": "Can I use Outreach without Salesforce?",
+          "a": "Yes, Outreach integrates with HubSpot, Microsoft Dynamics, and other CRMs. But the Salesforce integration is the most mature and feature-rich."
+        }
+      ]
+    },
+    {
+      "slug": "mulesoft-pricing",
+      "tool_slug": "mulesoft",
+      "title": "MuleSoft Pricing (2026): Plans & Real Costs",
+      "meta_description": "MuleSoft pricing breakdown: Anypoint Platform costs, vCore pricing, and total cost of ownership for enterprise integration.",
+      "hook": "MuleSoft is enterprise iPaaS with enterprise pricing. Expect $50K-200K/year minimum, scaling into the millions for large deployments.",
+      "tiers": [
+        {
+          "name": "Gold",
+          "price": "~$50K+/year",
+          "billing": "Annual",
+          "highlights": [
+            "Anypoint Platform access",
+            "API management",
+            "2 vCores included",
+            "Standard support",
+            "CloudHub deployment"
+          ]
+        },
+        {
+          "name": "Platinum",
+          "price": "~$100K+/year",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Gold",
+            "4+ vCores",
+            "Advanced API analytics",
+            "Premier support",
+            "Higher SLA"
+          ]
+        },
+        {
+          "name": "Titanium",
+          "price": "~$200K+/year",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Platinum",
+            "Unlimited vCores (negotiated)",
+            "Dedicated infrastructure",
+            "24/7 mission-critical support",
+            "Custom terms"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Additional vCores",
+          "range": "$12K-18K/vCore/year",
+          "note": "Processing capacity is priced per vCore. Complex integrations need more vCores."
+        },
+        {
+          "item": "Implementation consulting",
+          "range": "$100K-500K",
+          "note": "MuleSoft projects typically require certified implementation partners."
+        },
+        {
+          "item": "Developer training",
+          "range": "$5K-15K/person",
+          "note": "MuleSoft certifications and training for your integration team."
+        },
+        {
+          "item": "Connectors",
+          "range": "Included/varies",
+          "note": "Pre-built connectors are included, but custom connector development adds cost."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market company with 10 integrations",
+        "line_items": [
+          {
+            "item": "Platinum tier (base)",
+            "annual": "$120,000"
+          },
+          {
+            "item": "Additional vCores (6)",
+            "annual": "$84,000"
+          },
+          {
+            "item": "Implementation (Year 1)",
+            "annual": "$150,000"
+          },
+          {
+            "item": "Developer training (3 people)",
+            "annual": "$30,000"
+          }
+        ],
+        "total": "$384,000 (Year 1)",
+        "per_user_real": "N/A (platform-based)"
+      },
+      "bottom_line": "MuleSoft is powerful but expensive. It's built for enterprises with complex, mission-critical integrations. If you have 50+ integrations and a dedicated integration team, MuleSoft delivers. For simpler needs, Workato, Tray.io, or even Zapier offer better ROI.",
+      "faq": [
+        {
+          "q": "Is MuleSoft worth the cost?",
+          "a": "For large enterprises with complex integration needs, yes. MuleSoft's API-led connectivity approach scales well. For mid-market companies with simpler needs, alternatives like Workato or Boomi offer similar capabilities at 30-50% lower cost."
+        },
+        {
+          "q": "What's a vCore?",
+          "a": "A vCore is MuleSoft's unit of processing capacity. Each integration worker requires vCores to run. More complex or high-volume integrations need more vCores, which increases cost."
+        },
+        {
+          "q": "Is MuleSoft part of Salesforce?",
+          "a": "Yes, Salesforce acquired MuleSoft in 2018. There are native integrations between MuleSoft and Salesforce, though MuleSoft is platform-agnostic and works with any system."
+        }
+      ]
+    },
+    {
+      "slug": "demandtools-pricing",
+      "tool_slug": "demandtools",
+      "title": "DemandTools Pricing (2026): Plans & Real Costs",
+      "meta_description": "DemandTools pricing breakdown: what Validity's data quality tool costs, per-user pricing, and comparison to alternatives.",
+      "hook": "DemandTools by Validity is the gold standard for Salesforce data quality. Pricing starts around $3,000/year for small teams, scaling based on org size.",
+      "tiers": [
+        {
+          "name": "Essentials",
+          "price": "~$3K/year",
+          "billing": "Annual",
+          "highlights": [
+            "Dedupe & merge",
+            "Mass data operations",
+            "Import/export tools",
+            "Basic automation",
+            "For small Salesforce orgs"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "~$6K-12K/year",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Everything in Essentials",
+            "Advanced matching rules",
+            "Scheduled jobs",
+            "Cross-object deduplication",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "~$15K+/year",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Professional",
+            "Multiple Salesforce orgs",
+            "Custom matching algorithms",
+            "Dedicated success manager",
+            "Volume-based pricing"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Additional Validity products",
+          "range": "Varies",
+          "note": "DemandTools is part of Validity's suite. Email verification (BriteVerify) and email success (Everest) are separate products."
+        },
+        {
+          "item": "Training",
+          "range": "$0-2K",
+          "note": "Basic training included. Advanced workshops available for purchase."
+        },
+        {
+          "item": "Implementation support",
+          "range": "$0-5K",
+          "note": "Self-service for most. Complex matching rule setup may need consulting."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-size Salesforce org (50K records)",
+        "line_items": [
+          {
+            "item": "DemandTools Professional",
+            "annual": "$8,000"
+          },
+          {
+            "item": "BriteVerify (email validation)",
+            "annual": "$4,000"
+          },
+          {
+            "item": "Training workshop",
+            "annual": "$1,500"
+          }
+        ],
+        "total": "$13,500/year",
+        "per_user_real": "N/A (org-based licensing)"
+      },
+      "bottom_line": "DemandTools is the industry standard for Salesforce data quality. If you're on Salesforce and dealing with duplicate records, data imports, or mass updates, it pays for itself quickly. The main alternative is RingLead (now ZoomInfo), which offers similar functionality but at higher price points.",
+      "faq": [
+        {
+          "q": "Does DemandTools work with HubSpot?",
+          "a": "No, DemandTools is Salesforce-only. For HubSpot data quality, look at Insycle or Operations Hub's native deduplication features."
+        },
+        {
+          "q": "Is DemandTools part of Validity?",
+          "a": "Yes, Validity (formerly Return Path) owns DemandTools, BriteVerify, and Everest. They're often bundled together for email + data quality use cases."
+        },
+        {
+          "q": "How does DemandTools compare to RingLead?",
+          "a": "DemandTools is more affordable and focused on batch data operations. RingLead (now ZoomInfo Enrich) offers real-time duplicate prevention and enrichment. DemandTools is better for cleanup; RingLead is better for prevention at point of entry."
+        }
+      ]
+    },
+    {
+      "slug": "hightouch-pricing",
+      "tool_slug": "hightouch",
+      "title": "Hightouch Pricing (2026): Plans & Real Costs",
+      "meta_description": "Hightouch pricing breakdown: reverse ETL costs, row-based pricing, and total cost of ownership for data activation.",
+      "hook": "Hightouch uses row-based pricing for reverse ETL. Free tier syncs 10K rows/month, paid plans start at $350/month and scale with data volume.",
+      "tiers": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "billing": "N/A",
+          "highlights": [
+            "10K synced rows/month",
+            "Unlimited destinations",
+            "All connectors included",
+            "Community support",
+            "Good for testing"
+          ]
+        },
+        {
+          "name": "Starter",
+          "price": "$350/mo",
+          "billing": "Monthly or annual",
+          "highlights": [
+            "100K synced rows/month",
+            "Email support",
+            "Alerting & monitoring",
+            "Multiple workspaces"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$800+/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "500K+ synced rows/month",
+            "Priority support",
+            "SSO & audit logs",
+            "Custom SLAs",
+            "Customer success manager"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Unlimited rows (negotiated)",
+            "Dedicated infrastructure",
+            "HIPAA compliance",
+            "Premium support",
+            "Custom contracts"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Row overage",
+          "range": "~$0.003-0.01/row",
+          "note": "Exceeding your row limit incurs overage charges. Monitor usage closely."
+        },
+        {
+          "item": "Audiences (Customer Studio)",
+          "range": "Add-on pricing",
+          "note": "Visual audience builder for non-technical users is priced separately."
+        },
+        {
+          "item": "Data warehouse costs",
+          "range": "Varies",
+          "note": "Hightouch queries your warehouse. High-frequency syncs increase your Snowflake/BigQuery bill."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Growth company syncing 300K rows/month",
+        "line_items": [
+          {
+            "item": "Pro tier (500K rows)",
+            "annual": "$12,000"
+          },
+          {
+            "item": "Customer Studio add-on",
+            "annual": "$6,000"
+          },
+          {
+            "item": "Incremental warehouse costs",
+            "annual": "$2,400"
+          }
+        ],
+        "total": "$20,400/year",
+        "per_user_real": "N/A (row-based)"
+      },
+      "bottom_line": "Hightouch is one of the leading reverse ETL tools alongside Census. The free tier is generous for testing. Paid plans are reasonable for the value, especially compared to building custom sync pipelines. If you have a data warehouse and want to activate that data in SaaS tools, Hightouch is a solid choice.",
+      "faq": [
+        {
+          "q": "How does Hightouch compare to Census?",
+          "a": "Both are top-tier reverse ETL tools. Hightouch has a more generous free tier and slightly lower pricing. Census has stronger governance features and a more polished UI. Both work well; evaluate based on your specific connectors and use cases."
+        },
+        {
+          "q": "What's reverse ETL?",
+          "a": "Reverse ETL syncs data FROM your data warehouse TO your business tools (CRM, marketing automation, ad platforms). It's the opposite of traditional ETL which moves data into the warehouse."
+        },
+        {
+          "q": "Does Hightouch work with Snowflake?",
+          "a": "Yes, Hightouch integrates with Snowflake, BigQuery, Redshift, Databricks, and most major data warehouses. Snowflake is one of its most popular sources."
+        }
+      ]
+    },
+    {
+      "slug": "salesforce-marketing-cloud-pricing",
+      "tool_slug": "salesforce-marketing-cloud",
+      "title": "Salesforce Marketing Cloud Pricing (2026): Plans & Real Costs",
+      "meta_description": "Salesforce Marketing Cloud pricing breakdown: Studio costs, contact-based pricing, and total cost vs HubSpot and Marketo.",
+      "hook": "Marketing Cloud pricing is complex and expensive. Entry point is $1,250/month for basic email, but most companies spend $5K-20K/month when adding Journey Builder, SMS, and more contacts.",
+      "tiers": [
+        {
+          "name": "Email Studio Basic",
+          "price": "$400/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Email marketing only",
+            "Basic templates",
+            "Limited contacts",
+            "Standard reporting",
+            "Entry point"
+          ]
+        },
+        {
+          "name": "Marketing Cloud Engagement",
+          "price": "$1,250/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Email Studio",
+            "Journey Builder",
+            "Contact management",
+            "Basic automation",
+            "Starting at 10K contacts"
+          ]
+        },
+        {
+          "name": "Advanced Engagement",
+          "price": "$4,000+/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Everything in Engagement",
+            "Einstein AI features",
+            "Advanced Journey Builder",
+            "Mobile Studio (SMS, push)",
+            "Higher contact limits"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "$10K+/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Full platform access",
+            "Advertising Studio",
+            "Social Studio",
+            "Custom contact tiers",
+            "Premier support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Contact overage",
+          "range": "Varies by tier",
+          "note": "Each plan includes a contact limit. Overages are expensive. Budget for growth."
+        },
+        {
+          "item": "Additional Studios",
+          "range": "$1K-10K/mo each",
+          "note": "Mobile Studio, Social Studio, Advertising Studio are priced separately."
+        },
+        {
+          "item": "Implementation",
+          "range": "$25K-150K",
+          "note": "Marketing Cloud requires specialized implementation partners. Budget 2-4 months."
+        },
+        {
+          "item": "Data Extensions & SQL",
+          "range": "Learning curve",
+          "note": "Marketing Cloud's data model is complex. Expect to invest in training or hire specialists."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "B2B company with 100K contacts",
+        "line_items": [
+          {
+            "item": "Marketing Cloud Engagement (100K tier)",
+            "annual": "$36,000"
+          },
+          {
+            "item": "Mobile Studio (SMS)",
+            "annual": "$18,000"
+          },
+          {
+            "item": "Implementation (Year 1)",
+            "annual": "$50,000"
+          },
+          {
+            "item": "Marketing Cloud specialist (contract)",
+            "annual": "$80,000"
+          }
+        ],
+        "total": "$184,000 (Year 1)",
+        "per_user_real": "N/A (contact-based)"
+      },
+      "bottom_line": "Salesforce Marketing Cloud is powerful but complex and expensive. It makes sense for large enterprises already deep in the Salesforce ecosystem who need multi-channel marketing at scale. For most B2B companies, HubSpot or Marketo offer better value with lower implementation costs.",
+      "faq": [
+        {
+          "q": "Is Marketing Cloud the same as Pardot?",
+          "a": "No. Pardot (now Marketing Cloud Account Engagement) is B2B marketing automation. Marketing Cloud is the broader platform including Email Studio, Journey Builder, and B2C capabilities. Pardot is simpler and cheaper for B2B."
+        },
+        {
+          "q": "How does Marketing Cloud compare to HubSpot?",
+          "a": "Marketing Cloud is more powerful for enterprise multi-channel campaigns but costs 3-5x more and requires specialized skills. HubSpot is easier to use and better value for most B2B companies under 500 employees."
+        },
+        {
+          "q": "Do I need Marketing Cloud if I have Salesforce CRM?",
+          "a": "Not necessarily. Pardot (Account Engagement) is often sufficient for B2B marketing automation and integrates natively with Sales Cloud. Marketing Cloud is overkill unless you have B2C use cases or very complex journey requirements."
+        }
+      ]
     }
   ]
 }
