@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 import glossaryData from '../../../data/glossary.json';
 import categoriesData from '../../../data/categories.json';
 
@@ -18,18 +19,36 @@ const sortedTerms = [...glossaryData.terms].sort((a: any, b: any) => a.term.loca
 
 const title = 'B2B Data Glossary';
 const description = 'Definitions for B2B data terms: enrichment, intent data, ABM, RevOps, and more. Clear explanations without the jargon.';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Glossary' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": "B2B Data Glossary",
+    "numberOfItems": sortedTerms.length,
+    "itemListElement": sortedTerms.map((term: any, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": term.term,
+      "url": `https://datastackguide.com/glossary/${term.slug}/`
+    }))
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
 ---
 
 <BaseLayout
   title={title}
   description={description}
   canonicalPath="glossary/"
+  schemas={allSchemas}
 >
   <div class="container-narrow">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Glossary' }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="glossary-hero">
       <h1>B2B Data Glossary</h1>

@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleMeta from '../../components/ArticleMeta.astro';
 import AuthorBio from '../../components/AuthorBio.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 
 import toolsData from '../../../data/tools.json';
 import categoriesData from '../../../data/categories.json';
@@ -11,6 +13,8 @@ import toolDetailsData from '../../../data/tool_details.json';
 import toolContentData from '../../../data/tool_content.json';
 import comparisonsData from '../../../data/comparisons.json';
 import pricingPagesData from '../../../data/pricing_pages.json';
+import useCaseData from '../../../data/use_cases.json';
+import integrationsData from '../../../data/integrations.json';
 
 // Only generate pages for tools that have editorial content
 const toolsWithContent = toolsData.tools.filter(
@@ -99,6 +103,15 @@ const toolComparisons = comparisonsData.comparisons
 // Check if pricing page exists
 const hasPricingPage = pricingPagesData.pages.some((p: any) => p.slug === `${slug}-pricing`);
 
+// Cross-links: use cases and integrations involving this tool
+const relatedUseCases = useCaseData.use_cases
+  .filter((uc: any) => uc.category_slug === primaryCat || uc.recommended_tools?.some((rt: any) => rt.slug === slug))
+  .slice(0, 2);
+
+const relatedIntegrations = integrationsData.integrations
+  .filter((intg: any) => intg.tool_a === slug || intg.tool_b === slug)
+  .slice(0, 2);
+
 // Company stage data
 const companyStages = details.company_stages || {};
 const stageOrder = ['Seed/Series A', 'Series A/B', 'Series B/C', 'Series C/D', 'Late Stage', 'Enterprise/Public'];
@@ -133,61 +146,79 @@ const topTitles = details.top_titles || [];
 const topCompanies = details.top_companies || [];
 
 // SEO
-// Keep title under 53 chars (+ " | DataStackGuide" suffix = 70 max)
+// Keep title under 42 chars (+ " | DataStackGuide" suffix = 60 max)
 const fullTitle = `${content.display_name} Review: Pricing & Features (2026)`;
-const title = fullTitle.length <= 53 ? fullTitle : `${content.display_name} Review (2026)`;
-const metaDescription = `${content.display_name} review: pricing, features, pros/cons, and job demand data from ${totalJobs.toLocaleString()}+ postings. Honest analysis for B2B buyers.`;
-const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const title = fullTitle.length <= 42 ? fullTitle : `${content.display_name} Review (2026)`;
+let metaDescription = content.meta_description || `${content.display_name} review: pricing, features, pros/cons, and job demand data from ${totalJobs.toLocaleString()}+ postings. Honest analysis for B2B buyers.`;
+if (metaDescription.length > 160) metaDescription = metaDescription.slice(0, 157) + '...';
+const lastUpdated = new Date(content.date_modified || '2026-02-14').toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
-// FAQ Schema
-const faqSchema = content.faq?.length > 0 ? {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": content.faq.map((item: any) => ({
-    "@type": "Question",
-    "name": item.q,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": item.a
-    }
-  }))
-} : null;
+// Build all schemas for @graph consolidation
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Tools', href: '/tools/' },
+  { label: primaryCatName, href: `/categories/${primaryCat}/` },
+  { label: content.display_name }
+];
 
-// Product Schema
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": content.display_name,
-  "description": content.description,
-  "url": content.website,
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web",
-  "offers": content.pricing?.tiers?.[0] ? {
-    "@type": "Offer",
-    "description": `${content.pricing.tiers[0].name}: ${content.pricing.tiers[0].price}`
-  } : undefined
-};
+const allSchemas: object[] = [
+  // Product/SoftwareApplication schema
+  {
+    "@type": "SoftwareApplication",
+    "name": content.display_name,
+    "description": content.description,
+    "url": content.website,
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": content.pricing?.tiers?.[0] ? {
+      "@type": "Offer",
+      "description": `${content.pricing.tiers[0].name}: ${content.pricing.tiers[0].price}`
+    } : undefined,
+    "review": content.verdict ? {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "@id": "https://datastackguide.com/about/#rome"
+      },
+      "reviewBody": content.verdict.split('\n\n')[0],
+      "publisher": {
+        "@type": "Organization",
+        "name": "DataStackGuide"
+      }
+    } : undefined,
+    "datePublished": content.date_published || '2026-02-01',
+    "dateModified": content.date_modified || '2026-02-14'
+  },
+  // Breadcrumb schema
+  buildBreadcrumbSchema(breadcrumbItems)
+];
+
+// Add FAQ schema if present
+if (content.faq?.length > 0) {
+  allSchemas.push({
+    "@type": "FAQPage",
+    "mainEntity": content.faq.map((item: any) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  });
+}
 ---
 
 <BaseLayout
   title={title}
   description={metaDescription}
+  ogType="article"
   canonicalPath={`tools/${slug}/`}
-  schema={productSchema}
+  schemas={allSchemas}
 >
-  <Fragment slot="head">
-    {faqSchema && (
-      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-    )}
-  </Fragment>
 
   <div class="container">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Tools', href: '/tools/' },
-      { label: primaryCatName, href: `/categories/${primaryCat}/` },
-      { label: content.display_name }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <!-- Hero -->
     <section class="tool-hero">
@@ -201,7 +232,9 @@ const productSchema = {
             ))}
           </div>
           <h1>{content.display_name} Review: Pricing, Features &amp; What the Data Shows</h1>
+          <ArticleMeta />
           <p class="tool-tagline">{content.tagline}</p>
+          <p class="answer-summary">{content.display_name} is {content.description}{content.pricing?.tiers?.[0] ? `, starting at ${content.pricing.tiers[0].price}.` : '.'}{content.best_for ? ` Best for: ${content.best_for}.` : ''}</p>
         </div>
       </div>
 
@@ -253,6 +286,11 @@ const productSchema = {
       )}
       {content.website && (
         <p><a href={content.website} target="_blank" rel="noopener noreferrer">Visit {content.display_name} →</a></p>
+      )}
+      {tool.job_count > 0 && (
+        <p class="data-highlight">
+          As of {lastUpdated}, {content.display_name} appears in <strong>{tool.job_count.toLocaleString()} job postings</strong> across <strong>{tool.unique_companies?.toLocaleString() || '—'} companies</strong>{salaryRange && <Fragment>, with an average salary range of <strong>{salaryRange}</strong> for roles requiring the tool</Fragment>}.
+        </p>
       )}
     </section>
 
@@ -593,6 +631,22 @@ const productSchema = {
             </a>
           )
         ))}
+        {relatedUseCases.map((uc: any) => (
+          <a href={`/use-cases/${uc.slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Use Case</span>
+            <span>{uc.title}</span>
+          </a>
+        ))}
+        {relatedIntegrations.map((intg: any) => {
+          const intgNameA = (toolContentData as any)[intg.tool_a]?.display_name || intg.tool_a;
+          const intgNameB = (toolContentData as any)[intg.tool_b]?.display_name || intg.tool_b;
+          return (
+            <a href={`/integrations/${intg.slug}/`} class="related-link card">
+              <span class="related-link-label text-sm text-muted">Integration</span>
+              <span>{intgNameA} + {intgNameB}</span>
+            </a>
+          );
+        })}
         <a href="/tools/" class="related-link card">
           <span class="related-link-label text-sm text-muted">Browse</span>
           <span>All Data Tools</span>
@@ -927,7 +981,7 @@ const productSchema = {
   }
 
   .pros-card {
-    border-left: 4px solid #10B981;
+    border-left: 4px solid #059669;
   }
 
   .cons-card {
@@ -945,7 +999,7 @@ const productSchema = {
 
   .pro-item::before {
     content: '✓ ';
-    color: #10B981;
+    color: #059669;
     font-weight: 700;
   }
 

@@ -6,9 +6,10 @@ interface BreadcrumbItem {
 
 interface Props {
   items: BreadcrumbItem[];
+  noSchema?: boolean;
 }
 
-const { items } = Astro.props;
+const { items, noSchema = false } = Astro.props;
 
 const schema = {
   "@context": "https://schema.org",
@@ -37,7 +38,7 @@ const schema = {
   </ol>
 </nav>
 
-<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+{!noSchema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 
 <style>
   .breadcrumbs {

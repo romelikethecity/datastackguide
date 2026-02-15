@@ -1,11 +1,18 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleMeta from '../../components/ArticleMeta.astro';
 import AuthorBio from '../../components/AuthorBio.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 
 import comparisonsData from '../../../data/comparisons.json';
 import toolsData from '../../../data/tools.json';
 import toolContentData from '../../../data/tool_content.json';
+import alternativesData from '../../../data/alternatives.json';
+import guidesData from '../../../data/guides.json';
+import useCaseData from '../../../data/use_cases.json';
+import integrationsData from '../../../data/integrations.json';
+import pricingData from '../../../data/pricing_pages.json';
 
 export function getStaticPaths() {
   return comparisonsData.comparisons.map((comp: any) => ({
@@ -30,62 +37,99 @@ const contentB = (toolContentData as any)[comparison.tool_b];
 const nameA = contentA?.display_name || toolA?.name || comparison.tool_a;
 const nameB = contentB?.display_name || toolB?.name || comparison.tool_b;
 
-const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const lastUpdated = new Date(comparison.date_modified || '2026-02-14').toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
-// FAQ Schema
-const faqSchema = comparison.faq?.length > 0 ? {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": comparison.faq.map((item: any) => ({
-    "@type": "Question",
-    "name": item.q,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": item.a
-    }
-  }))
-} : null;
+// Build all schemas for @graph
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Compare', href: '/compare/' },
+  { label: `${nameA} vs ${nameB}` }
+];
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": comparison.title,
-  "description": comparison.meta_description,
-  "author": {
-    "@type": "Person",
-    "@id": "https://datastackguide.com/about/#rome"
+const allSchemas: object[] = [
+  {
+    "@type": "Article",
+    "headline": comparison.title,
+    "description": comparison.meta_description,
+    "author": {
+      "@type": "Person",
+      "@id": "https://datastackguide.com/about/#rome"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://datastackguide.com/#organization",
+      "name": "DataStackGuide",
+      "url": "https://datastackguide.com"
+    },
+    "datePublished": comparison.date_published || '2026-02-01',
+    "dateModified": comparison.date_modified || '2026-02-14'
   },
-  "publisher": {
-    "@type": "Organization",
-    "name": "DataStackGuide",
-    "url": "https://datastackguide.com"
-  }
-};
+  buildBreadcrumbSchema(breadcrumbItems)
+];
+
+if (comparison.faq?.length > 0) {
+  allSchemas.push({
+    "@type": "FAQPage",
+    "mainEntity": comparison.faq.map((item: any) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  });
+}
+
+// Cross-links: alternatives, guides, use cases, integrations for these tools
+const toolSlugs = new Set([comparison.tool_a, comparison.tool_b]);
+const toolCats = new Set([toolA?.primary_category, toolB?.primary_category].filter(Boolean));
+
+const relatedAlternatives = alternativesData.alternatives
+  .filter((a: any) => toolSlugs.has(a.tool_slug))
+  .slice(0, 2);
+
+const relatedGuides = guidesData.guides
+  .filter((g: any) => g.related_categories?.some((c: string) => toolCats.has(c)))
+  .slice(0, 2);
+
+const relatedUseCases = useCaseData.use_cases
+  .filter((uc: any) => toolCats.has(uc.category_slug))
+  .slice(0, 2);
+
+const relatedIntegration = integrationsData.integrations
+  .find((intg: any) =>
+    (intg.tool_a === comparison.tool_a && intg.tool_b === comparison.tool_b) ||
+    (intg.tool_a === comparison.tool_b && intg.tool_b === comparison.tool_a)
+  );
+
+const pricingA = pricingData.pages.find((p: any) => p.tool_slug === comparison.tool_a);
+const pricingB = pricingData.pages.find((p: any) => p.tool_slug === comparison.tool_b);
+
+// Keep title under 42 chars (+ " | DataStackGuide" suffix = 60 max)
+const shortCompTitle = `${nameA} vs ${nameB} (2026)`;
+const minCompTitle = `${nameA} vs ${nameB}`;
+const rawCompTitle = comparison.title.length <= 42 ? comparison.title : shortCompTitle.length <= 42 ? shortCompTitle : minCompTitle;
+const compTitle = rawCompTitle.length <= 42 ? rawCompTitle : rawCompTitle.slice(0, 39) + '...';
 ---
 
 <BaseLayout
-  title={comparison.title}
+  title={compTitle}
   description={comparison.meta_description}
+  ogType="article"
   canonicalPath={`compare/${comparison.slug}/`}
+  schemas={allSchemas}
 >
-  <Fragment slot="head">
-    {faqSchema && (
-      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-    )}
-    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
-  </Fragment>
 
   <div class="container-narrow">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Compare', href: '/compare/' },
-      { label: `${nameA} vs ${nameB}` }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <!-- Hero -->
     <section class="comp-hero">
       <h1>{comparison.title}</h1>
+      <ArticleMeta />
       <p class="comp-hook">{comparison.hook}</p>
+      <p class="answer-summary">The key difference between {nameA} and {nameB}: {comparison.short_version}</p>
     </section>
 
     <!-- Short Version -->
@@ -118,6 +162,13 @@ const articleSchema = {
             </div>
           ))}
         </div>
+      </section>
+    )}
+
+    <!-- Evidence Block -->
+    {toolA && toolB && (
+      <section class="content-section">
+        <p class="data-highlight">In our dataset of <strong>{totalJobs.toLocaleString()}+ job postings</strong>, {nameA} appears in <strong>{toolA.job_count.toLocaleString()} postings</strong> while {nameB} appears in <strong>{toolB.job_count.toLocaleString()}</strong>. {toolA.job_count > toolB.job_count ? `${nameA} has ${Math.round(((toolA.job_count - toolB.job_count) / toolB.job_count) * 100)}% higher adoption in hiring data.` : toolB.job_count > toolA.job_count ? `${nameB} has ${Math.round(((toolB.job_count - toolA.job_count) / toolA.job_count) * 100)}% higher adoption in hiring data.` : 'Both tools show equal adoption.'}</p>
       </section>
     )}
 
@@ -292,9 +343,48 @@ const articleSchema = {
             <span>{nameB}</span>
           </a>
         )}
-        <a href="/tools/" class="related-link card">
+        {pricingA && (
+          <a href={`/pricing/${pricingA.slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Pricing</span>
+            <span>{nameA} Pricing</span>
+          </a>
+        )}
+        {pricingB && (
+          <a href={`/pricing/${pricingB.slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Pricing</span>
+            <span>{nameB} Pricing</span>
+          </a>
+        )}
+        {relatedAlternatives.map((alt: any) => {
+          const altToolName = (toolContentData as any)[alt.tool_slug]?.display_name || alt.tool_slug;
+          return (
+            <a href={`/alternatives/${alt.slug}/`} class="related-link card">
+              <span class="related-link-label text-sm text-muted">Alternatives</span>
+              <span>{altToolName} Alternatives</span>
+            </a>
+          );
+        })}
+        {relatedIntegration && (
+          <a href={`/integrations/${relatedIntegration.slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Integration</span>
+            <span>{nameA} + {nameB}</span>
+          </a>
+        )}
+        {relatedUseCases.map((uc: any) => (
+          <a href={`/use-cases/${uc.slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Use Case</span>
+            <span>{uc.title}</span>
+          </a>
+        ))}
+        {relatedGuides.map((g: any) => (
+          <a href={`/guides/${g.slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Guide</span>
+            <span>{g.title}</span>
+          </a>
+        ))}
+        <a href="/compare/" class="related-link card">
           <span class="related-link-label text-sm text-muted">Browse</span>
-          <span>All Data Tools</span>
+          <span>All Comparisons</span>
         </a>
       </div>
     </section>

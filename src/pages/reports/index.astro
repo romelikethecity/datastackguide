@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 import toolsData from '../../../data/tools.json';
 
 const totalJobs = toolsData.total_jobs_analyzed;
@@ -8,18 +9,44 @@ const totalCompanies = toolsData.total_companies;
 
 const title = 'B2B Data Reports';
 const description = `Data-driven reports on B2B tool adoption, salaries, and market trends. Based on analysis of ${totalJobs.toLocaleString()}+ job postings.`;
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Reports' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": "B2B Data Reports",
+    "numberOfItems": 2,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Most In-Demand B2B Data Tools (2026)",
+        "url": "https://datastackguide.com/reports/most-in-demand-tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "B2B Data Tools Salary Report",
+        "url": "https://datastackguide.com/reports/salary-report/"
+      }
+    ]
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
 ---
 
 <BaseLayout
   title={title}
   description={description}
   canonicalPath="reports/"
+  schemas={allSchemas}
 >
   <div class="container-narrow">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Reports' }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="reports-hero">
       <h1>Reports</h1>

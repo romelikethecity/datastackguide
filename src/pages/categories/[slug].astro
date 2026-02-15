@@ -2,9 +2,18 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ToolCard from '../../components/ToolCard.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 
 import categoriesData from '../../../data/categories.json';
 import marketData from '../../../data/market_signals.json';
+import toolsData from '../../../data/tools.json';
+import toolContentData from '../../../data/tool_content.json';
+import comparisonsData from '../../../data/comparisons.json';
+import alternativesData from '../../../data/alternatives.json';
+import bestOfData from '../../../data/best_of.json';
+import guidesData from '../../../data/guides.json';
+import glossaryData from '../../../data/glossary.json';
+import useCaseData from '../../../data/use_cases.json';
 
 export function getStaticPaths() {
   return categoriesData.categories.map((cat: any) => ({
@@ -25,34 +34,90 @@ const relatedCategories = categoriesData.categories
   .filter((c: any) => c.slug !== category.slug)
   .slice(0, 4);
 
-const description = `Compare ${category.tool_count}+ ${category.name.toLowerCase()} tools with real pricing, reviews, and job demand data from ${totalJobs.toLocaleString()}+ postings.`;
+// Hub-and-spoke: gather all related content for this category
+const catToolSlugs = new Set(category.tools.map((t: any) => t.slug));
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": `${category.name} Tools`,
-  "numberOfItems": category.tool_count,
-  "itemListElement": category.tools.slice(0, 20).map((tool: any, i: number) => ({
-    "@type": "ListItem",
-    "position": i + 1,
-    "name": tool.name,
-    "url": `https://datastackguide.com/tools/${tool.slug}/`
-  }))
-};
+const relatedComparisons = (comparisonsData as any).comparisons
+  .filter((c: any) => {
+    const toolA = toolsData.tools.find((t: any) => t.slug === c.tool_a);
+    const toolB = toolsData.tools.find((t: any) => t.slug === c.tool_b);
+    return catToolSlugs.has(c.tool_a) || catToolSlugs.has(c.tool_b)
+      || toolA?.primary_category === category.slug || toolB?.primary_category === category.slug;
+  })
+  .slice(0, 6);
+
+const relatedAlternatives = alternativesData.alternatives
+  .filter((a: any) => catToolSlugs.has(a.tool_slug))
+  .slice(0, 6);
+
+const relatedBestOf = bestOfData.roundups
+  .filter((r: any) => r.category_slug === category.slug)
+  .slice(0, 6);
+
+const relatedGuides = guidesData.guides
+  .filter((g: any) => g.related_categories?.includes(category.slug))
+  .slice(0, 4);
+
+const relatedGlossary = glossaryData.terms
+  .filter((t: any) => t.category_slug === category.slug)
+  .slice(0, 8);
+
+const relatedUseCases = useCaseData.use_cases
+  .filter((uc: any) => uc.category_slug === category.slug)
+  .slice(0, 4);
+
+const hasSpokes = relatedComparisons.length > 0 || relatedAlternatives.length > 0
+  || relatedBestOf.length > 0 || relatedGuides.length > 0
+  || relatedGlossary.length > 0 || relatedUseCases.length > 0;
+
+let description = category.meta_description || `Compare ${category.tool_count}+ ${category.name.toLowerCase()} tools with real pricing, reviews, and job demand data from ${totalJobs.toLocaleString()}+ postings.`;
+if (description.length < 120) description += ` See which ${category.name.toLowerCase()} tools companies actually use.`;
+if (description.length > 160) description = description.slice(0, 157) + '...';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Categories', href: '/categories/' },
+  { label: category.name }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": `${category.name} Tools`,
+    "numberOfItems": category.tool_count,
+    "itemListElement": category.tools.slice(0, 20).map((tool: any, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": tool.name,
+      "url": `https://datastackguide.com/tools/${tool.slug}/`
+    }))
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
+
+if (category.faq?.length > 0) {
+  allSchemas.push({
+    "@type": "FAQPage",
+    "mainEntity": category.faq.map((item: any) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  });
+}
 ---
 
 <BaseLayout
-  title={`${category.name} Tools`}
+  title={`${category.name} Tools Compared`}
   description={description}
   canonicalPath={`categories/${category.slug}/`}
-  schema={schema}
+  schemas={allSchemas}
 >
   <div class="container">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Categories', href: '/categories/' },
-      { label: category.name }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="page-hero">
       <div class="category-header">
@@ -68,6 +133,7 @@ const schema = {
         <span class="badge">{category.tool_count} tools</span>
         <span class="text-sm text-muted">Data from {totalJobs.toLocaleString()}+ job postings</span>
       </div>
+      <p class="data-highlight">DataStackGuide tracks <strong>{category.tool_count} {category.name.toLowerCase()} tools</strong> across <strong>{totalJobs.toLocaleString()}+ analyzed job postings</strong>. Rankings are based on real hiring data, not vendor input.</p>
     </section>
 
     <!-- Tool Grid -->
@@ -110,6 +176,104 @@ const schema = {
           <h3>Need healthcare-specific data?</h3>
           <p>Provyx provides NPI-verified provider data across 40+ specialties. Pay-per-record, no contracts.</p>
           <a href="https://getprovyx.com" class="btn" target="_blank" rel="noopener">Learn about Provyx →</a>
+        </div>
+      </section>
+    )}
+
+    <!-- FAQ -->
+    {category.faq?.length > 0 && (
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {category.faq.map((item: any) => (
+            <details class="faq-item">
+              <summary class="faq-question">{item.q}</summary>
+              <p class="faq-answer">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Hub Content: Related Resources -->
+    {hasSpokes && (
+      <section class="hub-section">
+        <h2>Explore {category.name}</h2>
+        <p class="hub-intro">Comparisons, guides, and resources for {category.name.toLowerCase()} tools.</p>
+
+        <div class="hub-grid">
+          {relatedComparisons.length > 0 && (
+            <div class="hub-group">
+              <h3 class="hub-group-label">Comparisons</h3>
+              <div class="hub-links">
+                {relatedComparisons.map((c: any) => {
+                  const nameA = (toolContentData as any)[c.tool_a]?.display_name || c.tool_a;
+                  const nameB = (toolContentData as any)[c.tool_b]?.display_name || c.tool_b;
+                  return (
+                    <a href={`/compare/${c.slug}/`} class="hub-link">{nameA} vs {nameB}</a>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {relatedAlternatives.length > 0 && (
+            <div class="hub-group">
+              <h3 class="hub-group-label">Alternatives</h3>
+              <div class="hub-links">
+                {relatedAlternatives.map((a: any) => {
+                  const name = (toolContentData as any)[a.tool_slug]?.display_name || a.tool_slug;
+                  return (
+                    <a href={`/alternatives/${a.slug}/`} class="hub-link">{name} Alternatives</a>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {relatedBestOf.length > 0 && (
+            <div class="hub-group">
+              <h3 class="hub-group-label">Best Of</h3>
+              <div class="hub-links">
+                {relatedBestOf.map((r: any) => (
+                  <a href={`/best/${r.slug}/`} class="hub-link">{r.title}</a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {relatedUseCases.length > 0 && (
+            <div class="hub-group">
+              <h3 class="hub-group-label">Use Cases</h3>
+              <div class="hub-links">
+                {relatedUseCases.map((uc: any) => (
+                  <a href={`/use-cases/${uc.slug}/`} class="hub-link">{uc.title}</a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {relatedGuides.length > 0 && (
+            <div class="hub-group">
+              <h3 class="hub-group-label">Guides</h3>
+              <div class="hub-links">
+                {relatedGuides.map((g: any) => (
+                  <a href={`/guides/${g.slug}/`} class="hub-link">{g.title}</a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {relatedGlossary.length > 0 && (
+            <div class="hub-group">
+              <h3 class="hub-group-label">Glossary</h3>
+              <div class="hub-links">
+                {relatedGlossary.map((t: any) => (
+                  <a href={`/glossary/${t.slug}/`} class="hub-link">{t.term}</a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
     )}
@@ -205,6 +369,112 @@ const schema = {
   .cta-box p {
     color: var(--color-text-secondary);
     margin-bottom: var(--space-5);
+  }
+
+  .faq-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .faq-section h2 {
+    margin-bottom: var(--space-6);
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    max-width: 720px;
+  }
+
+  .faq-item {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .faq-question {
+    padding: var(--space-4) var(--space-5);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-question::before {
+    content: '+';
+    display: inline-block;
+    width: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .faq-item[open] .faq-question::before {
+    content: '−';
+  }
+
+  .faq-answer {
+    padding: 0 var(--space-5) var(--space-5) calc(var(--space-5) + 20px);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+  }
+
+  /* Hub & Spoke */
+  .hub-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .hub-section h2 {
+    margin-bottom: var(--space-2);
+  }
+
+  .hub-intro {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+  }
+
+  .hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .hub-group-label {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .hub-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .hub-link {
+    font-size: var(--text-sm);
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--color-border-subtle);
+    transition: color 0.2s;
+  }
+
+  .hub-link:hover {
+    color: var(--color-primary);
+  }
+
+  .hub-link:last-child {
+    border-bottom: none;
   }
 
   .related-section {

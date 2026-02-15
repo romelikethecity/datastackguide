@@ -25,11 +25,31 @@ function getCategoryName(catSlug: string): string {
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "DataStackGuide",
-  "url": "https://datastackguide.com",
-  "logo": "https://datastackguide.com/assets/icons/icon.svg",
-  "description": "Compare 200+ B2B data enrichment, validation, and intent tools. Real pricing, honest reviews, job market demand data."
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://datastackguide.com/#organization",
+      "name": "DataStackGuide",
+      "url": "https://datastackguide.com",
+      "logo": "https://datastackguide.com/assets/icons/icon.svg",
+      "description": "Compare 200+ B2B data enrichment, validation, and intent tools. Real pricing, honest reviews, job market demand data."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://datastackguide.com/#website",
+      "name": "DataStackGuide",
+      "url": "https://datastackguide.com",
+      "publisher": { "@id": "https://datastackguide.com/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://datastackguide.com/tools/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
 };
 ---
 
@@ -125,11 +145,56 @@ const schema = {
     </div>
   </section>
 
+  <!-- Explore -->
+  <section class="section">
+    <div class="container">
+      <h2>Explore</h2>
+      <div class="explore-grid">
+        <a href="/compare/" class="explore-card card">
+          <strong>Compare Tools</strong>
+          <p>Side-by-side comparisons with real pricing and job demand data.</p>
+        </a>
+        <a href="/best/" class="explore-card card">
+          <strong>Best-Of Roundups</strong>
+          <p>Curated picks for every category, use case, and budget.</p>
+        </a>
+        <a href="/guides/" class="explore-card card">
+          <strong>Guides</strong>
+          <p>Frameworks for evaluating tools and building tech stacks.</p>
+        </a>
+        <a href="/glossary/" class="explore-card card">
+          <strong>Glossary</strong>
+          <p>Clear definitions for B2B data terms without the jargon.</p>
+        </a>
+        <a href="/use-cases/" class="explore-card card">
+          <strong>Use Cases</strong>
+          <p>Tool recommendations by role, team size, and workflow.</p>
+        </a>
+        <a href="/reports/" class="explore-card card">
+          <strong>Reports</strong>
+          <p>Data-driven analysis of tool adoption and salary trends.</p>
+        </a>
+        <a href="/pricing/" class="explore-card card">
+          <strong>Pricing</strong>
+          <p>Published plans, hidden costs, and what you'll actually pay.</p>
+        </a>
+        <a href="/alternatives/" class="explore-card card">
+          <strong>Alternatives</strong>
+          <p>Side-by-side alternatives for every major B2B data tool.</p>
+        </a>
+        <a href="/integrations/" class="explore-card card">
+          <strong>Integrations</strong>
+          <p>How popular tools work together, based on real job data.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Methodology -->
   <section class="section section-alt">
     <div class="container-narrow">
       <div class="methodology">
-        <h3>How we get our data</h3>
+        <h2>How we get our data</h2>
         <p>We analyze {totalJobs.toLocaleString()}+ job postings across {totalCompanies.toLocaleString()}+ companies to measure real-world tool adoption. When companies hire for roles that require specific tools, it shows what they're actually using, not what they claim to use.</p>
         <p>Every tool page includes job demand data, salary correlations, and co-occurrence insights you won't find anywhere else. No pay-to-play. No vendor-sponsored rankings.</p>
       </div>
@@ -248,8 +313,36 @@ const schema = {
     text-align: center;
   }
 
-  .methodology h3 {
+  .methodology h2 {
     margin-bottom: var(--space-4);
+  }
+
+  .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .explore-card {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 0.2s;
+  }
+
+  .explore-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .explore-card strong {
+    display: block;
+    margin-bottom: var(--space-1);
+  }
+
+  .explore-card p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.5;
   }
 
   .methodology p {

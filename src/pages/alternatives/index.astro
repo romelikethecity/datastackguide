@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 
 import alternativesData from '../../../data/alternatives.json';
 import toolContentData from '../../../data/tool_content.json';
@@ -11,18 +12,36 @@ function getToolName(slug: string): string {
   const content = (toolContentData as any)[slug];
   return content?.display_name || slug;
 }
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Alternatives' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": "B2B Data Tool Alternatives",
+    "numberOfItems": alternatives.length,
+    "itemListElement": alternatives.map((alt: any, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": `${getToolName(alt.tool_slug)} Alternatives`,
+      "url": `https://datastackguide.com/alternatives/${alt.slug}/`
+    }))
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
 ---
 
 <BaseLayout
   title="Tool Alternatives"
   description="Find alternatives to popular B2B data tools. Compare pricing, features, and fit for your team's needs and budget."
   canonicalPath="alternatives/"
+  schemas={allSchemas}
 >
   <div class="container">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Alternatives' }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="page-hero">
       <h1>Tool Alternatives</h1>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 import toolsData from '../../../data/tools.json';
 
 const totalJobs = toolsData.total_jobs_analyzed;
@@ -10,29 +11,33 @@ const totalTools = toolsData.tool_count;
 const title = 'Our Methodology';
 const description = `How DataStackGuide measures B2B tool adoption. We analyze ${totalJobs.toLocaleString()}+ job postings across ${totalCompanies.toLocaleString()} companies to track real-world demand.`;
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "DataStackGuide Methodology: How We Measure Tool Adoption",
-  "description": description,
-  "author": {
-    "@type": "Organization",
-    "name": "DataStackGuide"
-  }
-};
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Methodology' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "Article",
+    "headline": "DataStackGuide Methodology: How We Measure Tool Adoption",
+    "description": description,
+    "author": { "@type": "Person", "@id": "https://datastackguide.com/about/#rome" },
+    "publisher": { "@type": "Organization", "@id": "https://datastackguide.com/#organization", "name": "DataStackGuide" },
+    "datePublished": "2026-02-01",
+    "dateModified": "2026-02-14"
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
 ---
 
 <BaseLayout
   title={title}
   description={description}
   canonicalPath="methodology/"
-  schema={schema}
+  schemas={allSchemas}
 >
   <div class="container-narrow">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Methodology' }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="meth-hero">
       <h1>How We Get Our Data</h1>

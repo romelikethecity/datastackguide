@@ -1,0 +1,494 @@
+{
+  "integrations": [
+    {
+      "slug": "salesforce-hubspot",
+      "tool_a": "salesforce",
+      "tool_b": "hubspot",
+      "cooccurrence_count": 165,
+      "title": "Salesforce + HubSpot Integration Guide",
+      "meta_description": "How to integrate Salesforce and HubSpot. Setup guide, common workflows, data sync considerations, and when you need both CRM and marketing automation platforms.",
+      "overview": "Salesforce and HubSpot appear together in 165 job postings \u2014 the most common tool pairing in our dataset. The typical setup uses Salesforce as the CRM system of record and HubSpot for marketing automation, content management, and lead nurturing. The native integration syncs contacts, companies, deals, and engagement data bidirectionally.",
+      "how_they_work_together": [
+        {
+          "workflow": "Lead handoff",
+          "description": "Marketing qualifies leads in HubSpot using content engagement and scoring, then syncs MQLs to Salesforce for sales follow-up. Lead status and lifecycle stage sync back to HubSpot for closed-loop reporting."
+        },
+        {
+          "workflow": "Contact sync",
+          "description": "Bidirectional sync keeps contact records, company data, and deal stages consistent across both platforms. Custom field mappings ensure CRM data appears in marketing segmentation."
+        },
+        {
+          "workflow": "Revenue attribution",
+          "description": "HubSpot tracks marketing touchpoints (ads, content, email campaigns) and syncs attribution data to Salesforce opportunities. Sales sees which marketing activities influenced their deals."
+        },
+        {
+          "workflow": "Campaign management",
+          "description": "Salesforce campaign members sync with HubSpot lists. Marketing can trigger nurture sequences based on Salesforce deal stage changes or sales activities."
+        }
+      ],
+      "setup_considerations": [
+        "The native HubSpot-Salesforce connector handles most use cases without middleware. Custom objects and complex field mappings may require HubSpot Operations Hub or a tool like Workato.",
+        "Decide which system owns each data field to avoid sync conflicts. Common pattern: HubSpot owns marketing fields (lead source, campaign attribution), Salesforce owns sales fields (deal stage, close date, revenue).",
+        "Sync frequency matters for large databases. Real-time sync works for under 100K contacts. Larger databases may need scheduled batch syncs to avoid API limit issues.",
+        "Plan your lifecycle stage mapping before connecting. HubSpot's lifecycle stages (subscriber, lead, MQL, SQL, opportunity, customer) should map cleanly to Salesforce's lead status and opportunity stages."
+      ],
+      "faq": [
+        {
+          "q": "Do I need both Salesforce and HubSpot?",
+          "a": "Not always. HubSpot's CRM can replace Salesforce for teams under 50 reps. But companies often keep Salesforce as the sales CRM while using HubSpot for marketing. The combination makes sense when marketing needs HubSpot's content tools and sales needs Salesforce's customization depth."
+        },
+        {
+          "q": "How much does the Salesforce-HubSpot integration cost?",
+          "a": "The native connector is included in HubSpot Marketing Hub Professional ($800/month) and above. There's no additional cost for basic contact and deal syncing. Custom object sync requires Operations Hub Professional ($800/month)."
+        },
+        {
+          "q": "What breaks most often in the Salesforce-HubSpot sync?",
+          "a": "Duplicate records, field mapping conflicts, and API rate limits are the three most common issues. Set up deduplication rules before enabling sync, and audit field mappings quarterly to catch drift."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "salesforce-zoominfo",
+      "tool_a": "salesforce",
+      "tool_b": "zoominfo",
+      "cooccurrence_count": 70,
+      "title": "Salesforce + ZoomInfo Integration Guide",
+      "meta_description": "How to integrate ZoomInfo with Salesforce CRM. Enrich CRM records, automate prospecting workflows, and keep contact data fresh with the ZoomInfo-Salesforce connector.",
+      "overview": "Salesforce and ZoomInfo appear together in 70 job postings, making it one of the most common CRM-enrichment pairings. ZoomInfo feeds contact data, company intelligence, and intent signals directly into Salesforce records. The integration eliminates manual data entry and keeps CRM records current with verified contact information.",
+      "how_they_work_together": [
+        {
+          "workflow": "CRM enrichment",
+          "description": "ZoomInfo automatically enriches new and existing Salesforce records with verified emails, direct dials, company firmographics, and technographic data. Enrichment runs on schedule or triggered by record creation."
+        },
+        {
+          "workflow": "Prospecting to CRM",
+          "description": "Sales reps find prospects in ZoomInfo's database and push contacts directly into Salesforce as leads or contacts. Records arrive pre-enriched with all available data fields."
+        },
+        {
+          "workflow": "Intent-driven workflows",
+          "description": "ZoomInfo's intent data feeds into Salesforce, triggering alerts and task creation when target accounts show buying signals. Sales reps see intent topics directly on account records."
+        },
+        {
+          "workflow": "Data hygiene",
+          "description": "ZoomInfo flags stale records (job changes, company closures) in Salesforce and updates them automatically. This keeps bounce rates low and ensures outreach reaches the right people."
+        }
+      ],
+      "setup_considerations": [
+        "ZoomInfo's Salesforce managed package installs custom objects and fields. Plan which standard and custom fields you want enriched before installation to avoid data overwrites.",
+        "Set enrichment rules carefully \u2014 decide whether ZoomInfo data should overwrite existing CRM data or only fill empty fields. Most teams use 'fill empty fields' to preserve manually entered data.",
+        "ZoomInfo credits are consumed on enrichment. Set up enrichment filters (e.g., only enrich accounts with revenue > $10M) to avoid burning credits on records outside your ICP.",
+        "The integration requires Salesforce API access, which is included in Enterprise edition but may need to be purchased separately for Professional edition."
+      ],
+      "faq": [
+        {
+          "q": "Does ZoomInfo work with Salesforce Professional edition?",
+          "a": "Yes, but you need API access enabled, which Salesforce charges extra for on Professional edition (typically $25/user/month). Enterprise and Unlimited editions include API access."
+        },
+        {
+          "q": "How many Salesforce records can ZoomInfo enrich?",
+          "a": "Depends on your ZoomInfo plan and credit allocation. Most enterprise contracts include bulk enrichment for your existing database (often 100K-500K records) plus ongoing enrichment credits for new records."
+        },
+        {
+          "q": "Can ZoomInfo replace manual data entry in Salesforce?",
+          "a": "For contact and company data, largely yes. ZoomInfo can auto-fill name, title, email, phone, company, industry, revenue, and employee count. Reps still need to enter deal-specific data like opportunity details and notes."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "salesforce-gong",
+      "tool_a": "salesforce",
+      "tool_b": "gong",
+      "cooccurrence_count": 46,
+      "title": "Salesforce + Gong Integration Guide",
+      "meta_description": "How to integrate Gong with Salesforce. Sync call intelligence to CRM records, automate deal insights, and improve forecasting with conversation data.",
+      "overview": "Salesforce and Gong appear together in 46 job postings. Gong records and analyzes sales calls, then pushes conversation intelligence into Salesforce opportunity and contact records. The integration gives sales managers deal insights without requiring reps to manually log call notes.",
+      "how_they_work_together": [
+        {
+          "workflow": "Call logging",
+          "description": "Gong automatically logs calls, emails, and meetings to the corresponding Salesforce opportunity and contact records. No manual data entry required from reps."
+        },
+        {
+          "workflow": "Deal intelligence",
+          "description": "Gong analyzes conversations for deal risk signals (competitor mentions, objections, stalled timelines) and surfaces them on Salesforce opportunity records. Managers see deal health without listening to every call."
+        },
+        {
+          "workflow": "Forecasting",
+          "description": "Gong's AI-driven forecast data syncs to Salesforce, adding conversation-based insights to traditional pipeline metrics. This helps identify deals that are at risk despite positive CRM stage progression."
+        },
+        {
+          "workflow": "Coaching",
+          "description": "Call recordings and AI-generated summaries are accessible from Salesforce records, making it easy for managers to review specific conversations during coaching sessions and deal reviews."
+        }
+      ],
+      "setup_considerations": [
+        "Gong needs calendar and email integration to match conversations to the right Salesforce records. Ensure your team uses connected calendars (Google or Outlook) with Salesforce sync enabled.",
+        "Set up opportunity matching rules so Gong associates calls with the correct deals. This typically uses contact-to-opportunity relationships in Salesforce.",
+        "Gong creates custom fields on Salesforce opportunity records for deal warnings and engagement scores. Plan where these appear in your page layouts before activation.",
+        "Recording consent varies by state and country. Configure Gong's recording notifications and consent capture for your team's jurisdictions before rolling out."
+      ],
+      "faq": [
+        {
+          "q": "Does Gong replace Salesforce activity logging?",
+          "a": "For calls and meetings, yes. Gong automatically logs activities with AI-generated summaries that are more detailed and accurate than manual rep notes. Reps still need to update deal stages, next steps, and forecasts manually."
+        },
+        {
+          "q": "How long does the Salesforce-Gong integration take to set up?",
+          "a": "Basic setup takes 1-2 hours \u2014 install the managed package, connect calendars, and configure field mappings. Full rollout with custom dashboards, coaching workflows, and forecast integration typically takes 2-4 weeks."
+        },
+        {
+          "q": "Can managers see Gong data without leaving Salesforce?",
+          "a": "Yes. Gong embeds call recordings, AI summaries, and deal risk scores directly in Salesforce opportunity page layouts. Managers can review key moments from calls without switching to the Gong app."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "salesforce-linkedin-sales-navigator",
+      "tool_a": "salesforce",
+      "tool_b": "linkedin-sales-navigator",
+      "cooccurrence_count": 43,
+      "title": "Salesforce + LinkedIn Sales Navigator Integration",
+      "meta_description": "How to integrate LinkedIn Sales Navigator with Salesforce. Sync leads, enrich CRM data with LinkedIn profiles, and streamline prospecting workflows.",
+      "overview": "Salesforce and LinkedIn Sales Navigator appear together in 43 job postings. The integration connects LinkedIn's professional network data with Salesforce CRM records, letting reps research prospects, send InMails, and track social selling activity without leaving Salesforce.",
+      "how_they_work_together": [
+        {
+          "workflow": "Profile matching",
+          "description": "Sales Navigator automatically matches Salesforce leads and contacts to LinkedIn profiles. Reps see profile photos, headlines, and recent activity directly on CRM records."
+        },
+        {
+          "workflow": "Lead recommendations",
+          "description": "Sales Navigator suggests new contacts at target accounts based on your Salesforce account list. Recommended leads can be saved and synced back to Salesforce as new records."
+        },
+        {
+          "workflow": "InMail from CRM",
+          "description": "Reps send InMails and connection requests from within Salesforce. Activity is logged to the contact record, keeping all outreach history in one place."
+        },
+        {
+          "workflow": "Account mapping",
+          "description": "Sales Navigator pulls your Salesforce account list to identify buying committee members, org changes, and account insights. Account-level alerts surface job changes and company news."
+        }
+      ],
+      "setup_considerations": [
+        "The integration requires LinkedIn Sales Navigator Team or Enterprise (not Professional). Team costs $149.99/user/month; Enterprise requires custom pricing.",
+        "CRM sync is one-directional for new leads: Sales Navigator can write leads to Salesforce, but Salesforce changes don't write back to LinkedIn. Plan your data flow accordingly.",
+        "LinkedIn data (profile info, InMail history) stays in LinkedIn's system \u2014 it doesn't enrich Salesforce fields like email or phone. Use a separate enrichment tool for contact data.",
+        "Matching accuracy depends on email addresses. Ensure Salesforce records have valid work emails for best LinkedIn profile matching rates."
+      ],
+      "faq": [
+        {
+          "q": "Does Sales Navigator add contact data to Salesforce?",
+          "a": "Not directly. The integration shows LinkedIn profile information alongside Salesforce records but doesn't enrich CRM fields with emails or phone numbers. You still need a separate enrichment tool (ZoomInfo, Apollo, etc.) for contact data."
+        },
+        {
+          "q": "Which Sales Navigator plan works with Salesforce?",
+          "a": "Team ($149.99/user/month) or Enterprise (custom pricing). The Professional plan ($99.99/user/month) does not include CRM integration."
+        },
+        {
+          "q": "Can Sales Navigator replace a data enrichment tool?",
+          "a": "No. Sales Navigator provides LinkedIn profile data (title, company, connections) but doesn't provide email addresses, direct phone numbers, or company firmographics. It complements enrichment tools rather than replacing them."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "salesforce-salesloft",
+      "tool_a": "salesforce",
+      "tool_b": "salesloft",
+      "cooccurrence_count": 39,
+      "title": "Salesforce + Salesloft Integration Guide",
+      "meta_description": "How to integrate Salesloft with Salesforce. Sync cadences, automate activity logging, and connect your sales engagement platform with your CRM.",
+      "overview": "Salesforce and Salesloft appear together in 39 job postings. Salesloft handles multi-channel sales cadences (email, phone, social) while Salesforce serves as the system of record. The integration syncs activities, cadence enrollment, and engagement data bidirectionally.",
+      "how_they_work_together": [
+        {
+          "workflow": "Cadence enrollment from CRM",
+          "description": "Reps add Salesforce leads and contacts to Salesloft cadences directly from CRM. Contact data flows to Salesloft, and cadence progress syncs back to Salesforce."
+        },
+        {
+          "workflow": "Activity logging",
+          "description": "Every Salesloft touchpoint \u2014 emails sent, calls made, replies received \u2014 logs automatically to the corresponding Salesforce record. Managers see complete activity history without relying on rep data entry."
+        },
+        {
+          "workflow": "Pipeline creation tracking",
+          "description": "Salesloft tracks which cadences and touchpoints generated pipeline. This attribution data syncs to Salesforce opportunities, showing which outbound sequences create revenue."
+        },
+        {
+          "workflow": "Lead routing",
+          "description": "New Salesforce leads can trigger automatic Salesloft cadence enrollment based on lead source, territory, or score. This ensures inbound leads get immediate outreach."
+        }
+      ],
+      "setup_considerations": [
+        "Map Salesloft person fields to Salesforce lead/contact fields before enabling sync. Mismatched field mappings cause data quality issues that are painful to fix retroactively.",
+        "Decide whether Salesloft activities create Salesforce tasks, events, or both. Most teams use tasks for emails and events for calls/meetings to keep the activity timeline clean.",
+        "Salesloft's Salesforce managed package requires admin installation. The connector needs specific Salesforce API permissions and custom field access.",
+        "If you have Salesforce validation rules or triggers, test them with Salesloft sync before rolling out. Strict validation rules can block Salesloft from updating records."
+      ],
+      "faq": [
+        {
+          "q": "Is Salesloft better than Salesforce's built-in email tools?",
+          "a": "For outbound sales, yes. Salesforce's native email capabilities are basic \u2014 no multi-step cadences, limited templates, no A/B testing. Salesloft is purpose-built for outbound sequences with call tasks, social touches, and detailed engagement analytics."
+        },
+        {
+          "q": "How much does Salesloft cost on top of Salesforce?",
+          "a": "Salesloft pricing starts around $125/user/month for the base plan. Enterprise plans with advanced analytics and coaching features run $165+/user/month. This is on top of your Salesforce licensing."
+        },
+        {
+          "q": "Can Salesloft replace Salesforce for activity tracking?",
+          "a": "No. Salesloft tracks outbound engagement activities, but Salesforce remains the system of record for deals, pipeline, forecasting, and reporting. They serve complementary functions."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "zoominfo-linkedin-sales-navigator",
+      "tool_a": "zoominfo",
+      "tool_b": "linkedin-sales-navigator",
+      "cooccurrence_count": 31,
+      "title": "ZoomInfo + LinkedIn Sales Navigator: Using Both Together",
+      "meta_description": "How to use ZoomInfo and LinkedIn Sales Navigator together for prospecting. When to use each tool and how to build an efficient outbound workflow.",
+      "overview": "ZoomInfo and LinkedIn Sales Navigator appear together in 31 job postings. Rather than a direct integration, these tools complement each other in the prospecting workflow: LinkedIn Sales Navigator for account research and social selling, ZoomInfo for verified contact data and enrichment.",
+      "how_they_work_together": [
+        {
+          "workflow": "Research + data",
+          "description": "Use Sales Navigator to identify decision-makers at target accounts through LinkedIn's social graph. Then use ZoomInfo to get their verified email addresses and direct phone numbers for outreach."
+        },
+        {
+          "workflow": "Account validation",
+          "description": "Cross-reference ZoomInfo's company data (revenue, employee count, technographics) with LinkedIn's company pages and employee counts. Discrepancies often indicate data staleness in one source."
+        },
+        {
+          "workflow": "Multi-channel outbound",
+          "description": "Start with a LinkedIn connection request via Sales Navigator, then follow up with email (from ZoomInfo data) and phone (ZoomInfo direct dials). Multi-channel sequences convert 3-5x better than single-channel."
+        },
+        {
+          "workflow": "Job change alerts",
+          "description": "Both tools track job changes, but from different angles. Sales Navigator shows real-time LinkedIn updates; ZoomInfo updates its database periodically. Using both catches changes faster."
+        }
+      ],
+      "setup_considerations": [
+        "These tools don't have a native integration \u2014 they're used separately in the prospecting workflow. Your CRM (Salesforce or HubSpot) is the integration point that connects data from both sources.",
+        "Budget for both tools is significant: LinkedIn Sales Navigator Team at $150/user/month plus ZoomInfo starting at $15K/year. Most companies justify the cost for outbound-heavy teams.",
+        "Train reps on when to use each tool. Common pattern: start in Sales Navigator for account research and persona identification, switch to ZoomInfo for contact data and enrichment.",
+        "ZoomInfo's Chrome extension works on LinkedIn pages, letting reps pull contact data directly from LinkedIn profiles. This bridges the workflow gap between the two platforms."
+      ],
+      "faq": [
+        {
+          "q": "Do I need both ZoomInfo and LinkedIn Sales Navigator?",
+          "a": "For enterprise outbound teams, yes. Sales Navigator provides the best account research and social selling capabilities. ZoomInfo provides the best contact data (emails, direct dials). Neither fully replaces the other. For budget-constrained teams, start with Sales Navigator and add a lower-cost data tool like Apollo or Lusha."
+        },
+        {
+          "q": "Which tool should reps open first?",
+          "a": "Start in Sales Navigator to identify the right people at target accounts, understand their roles, and check for mutual connections. Switch to ZoomInfo to pull verified contact data before starting outreach. This research-first approach produces better targeting than cold-blasting ZoomInfo lists."
+        },
+        {
+          "q": "Can Apollo replace both tools?",
+          "a": "Partially. Apollo combines prospecting data with LinkedIn-like search filters and built-in sequencing. It's a strong single-tool alternative for teams that can't budget $30K+/year for ZoomInfo and Sales Navigator. The trade-off is slightly lower data accuracy and no LinkedIn social selling features."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "salesforce-marketo",
+      "tool_a": "salesforce",
+      "tool_b": "marketo",
+      "cooccurrence_count": 30,
+      "title": "Salesforce + Marketo Integration Guide",
+      "meta_description": "How to integrate Marketo with Salesforce CRM. Lead scoring, nurture programs, campaign sync, and best practices for the Salesforce-Marketo connector.",
+      "overview": "Salesforce and Marketo appear together in 30 job postings. Marketo (now Adobe Marketo Engage) is the enterprise standard for B2B marketing automation, and its Salesforce integration is one of the most mature in the market. The native sync handles leads, contacts, opportunities, campaigns, and custom objects bidirectionally.",
+      "how_they_work_together": [
+        {
+          "workflow": "Lead scoring and handoff",
+          "description": "Marketo scores leads based on behavior (email opens, page visits, form fills) and demographics (title, company size, industry). When scores hit threshold, leads sync to Salesforce with score data and are assigned to sales reps."
+        },
+        {
+          "workflow": "Nurture programs",
+          "description": "Marketo runs multi-stream nurture programs that adapt based on Salesforce data. Deal stage changes, sales activities, and opportunity updates trigger nurture adjustments without manual intervention."
+        },
+        {
+          "workflow": "Campaign attribution",
+          "description": "Marketo campaign membership syncs to Salesforce campaigns, providing multi-touch attribution data on opportunities. Marketing can show which programs influenced pipeline and closed revenue."
+        },
+        {
+          "workflow": "Sales alerts",
+          "description": "Marketo sends real-time alerts to sales reps when leads take high-intent actions (pricing page visit, demo request, competitor comparison). Alerts appear in Salesforce and via email."
+        }
+      ],
+      "setup_considerations": [
+        "The Marketo-Salesforce sync is complex. Budget 4-6 weeks for initial setup including field mapping, scoring model configuration, and lifecycle stage alignment.",
+        "Marketo syncs everything by default \u2014 scope the sync to relevant records using smart lists to avoid syncing test records, partners, or irrelevant contacts.",
+        "Duplicate management is critical. Marketo and Salesforce handle duplicates differently, and the sync can create duplicates if merge rules aren't aligned.",
+        "Marketo requires a dedicated Salesforce API user with specific permissions. This user counts against your Salesforce license count."
+      ],
+      "faq": [
+        {
+          "q": "Is Marketo better than HubSpot with Salesforce?",
+          "a": "For enterprise use cases with complex scoring, multi-product nurturing, and large databases (100K+ contacts), Marketo is more capable. HubSpot is easier to set up and manage, making it better for teams without dedicated marketing ops. The Marketo-Salesforce sync is also more mature and handles custom objects natively."
+        },
+        {
+          "q": "How much does the Marketo-Salesforce stack cost?",
+          "a": "Marketo starts at roughly $900/month for the Growth tier (up to 10K contacts). Enterprise tiers for 100K+ contacts run $2,000-$4,000/month. Add Salesforce Enterprise at $165/user/month. Total for a 20-person team with 50K contacts: roughly $60K-$80K/year."
+        },
+        {
+          "q": "Does Marketo work with Salesforce Lightning?",
+          "a": "Yes. Marketo's Sales Insight package embeds in both Classic and Lightning. Lightning users get the Marketo tab on lead, contact, and opportunity records with engagement history, scores, and best-bet rankings."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "hubspot-apollo",
+      "tool_a": "hubspot",
+      "tool_b": "apollo",
+      "cooccurrence_count": 21,
+      "title": "HubSpot + Apollo Integration Guide",
+      "meta_description": "How to integrate Apollo with HubSpot CRM. Sync prospecting data, automate enrichment, and build an efficient outbound sales workflow.",
+      "overview": "HubSpot and Apollo appear together in 21 job postings. This is a popular pairing for growth-stage companies: HubSpot handles CRM and marketing automation, Apollo handles prospecting and outbound sequences. The integration syncs contacts bidirectionally so reps can prospect in Apollo and manage deals in HubSpot.",
+      "how_they_work_together": [
+        {
+          "workflow": "Prospect-to-CRM pipeline",
+          "description": "Reps find prospects in Apollo's database and add them to sequences. Engaged prospects sync to HubSpot as contacts with full enrichment data (title, company, email, phone) already populated."
+        },
+        {
+          "workflow": "CRM enrichment",
+          "description": "Apollo enriches existing HubSpot contacts with missing data fields \u2014 filling in direct dials, company information, and technographic data for records that entered through marketing channels."
+        },
+        {
+          "workflow": "Sequence tracking",
+          "description": "Apollo outbound activities (emails, calls, LinkedIn touches) sync to HubSpot contact timelines. Marketing and sales see the complete engagement history in one place."
+        },
+        {
+          "workflow": "List-based prospecting",
+          "description": "Export HubSpot lists (e.g., contacts at companies in your ICP without deals) to Apollo for outbound prospecting. Apollo finds additional contacts at the same companies and starts sequences."
+        }
+      ],
+      "setup_considerations": [
+        "Apollo's HubSpot integration is native and takes about 15 minutes to set up. Map fields carefully \u2014 Apollo's default mappings may not match your HubSpot custom properties.",
+        "Set sync direction rules: decide whether Apollo should overwrite HubSpot data or only fill empty fields. Most teams prefer 'fill empty fields' to preserve marketing data.",
+        "Apollo's free tier syncs with HubSpot but limits you to 50 email credits/month. Paid plans ($49/user/month) remove most limitations.",
+        "If you're using HubSpot's built-in sequences, plan how Apollo sequences and HubSpot sequences coexist to avoid double-emailing prospects."
+      ],
+      "faq": [
+        {
+          "q": "Why use Apollo if HubSpot has prospecting tools?",
+          "a": "HubSpot's prospecting features (as of 2026) are improving but still behind Apollo's data depth. Apollo's database of 275M+ contacts with built-in email verification, phone numbers, and advanced search filters is deeper than HubSpot's built-in data tools."
+        },
+        {
+          "q": "Can Apollo replace HubSpot for outbound?",
+          "a": "For pure outbound email sequences, yes. Apollo has solid sequencing with A/B testing and analytics. But HubSpot provides the CRM, marketing automation, content management, and reporting that Apollo doesn't cover. Most teams use both."
+        },
+        {
+          "q": "How much does the HubSpot + Apollo stack cost?",
+          "a": "HubSpot CRM is free. Apollo's paid plans start at $49/user/month. A 5-person team gets a functional outbound stack for about $250/month total. Compare that to Salesforce + ZoomInfo, which starts at $25K+/year."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "salesforce-6sense",
+      "tool_a": "salesforce",
+      "tool_b": "6sense",
+      "cooccurrence_count": 17,
+      "title": "Salesforce + 6sense Integration Guide",
+      "meta_description": "How to integrate 6sense with Salesforce. Push intent data and buying stage predictions into CRM records for account-based sales and marketing workflows.",
+      "overview": "Salesforce and 6sense appear together in 17 job postings. 6sense uses AI to identify accounts that are actively researching solutions, predicts their buying stage, and pushes these insights into Salesforce. The integration turns intent signals into actionable CRM data for both sales and marketing teams.",
+      "how_they_work_together": [
+        {
+          "workflow": "Intent-to-CRM alerts",
+          "description": "6sense detects research activity from target accounts and pushes buying stage predictions (awareness, consideration, decision, purchase) directly to Salesforce account records. Sales reps see which accounts are heating up."
+        },
+        {
+          "workflow": "Dynamic account scoring",
+          "description": "6sense's AI model scores accounts based on fit, intent, and engagement signals. These scores appear on Salesforce account records and can trigger workflow rules, task creation, and territory assignments."
+        },
+        {
+          "workflow": "Contact discovery",
+          "description": "6sense identifies members of the buying committee at in-market accounts and creates new contact records in Salesforce with enriched data. This saves reps the manual work of finding decision-makers."
+        },
+        {
+          "workflow": "Campaign targeting",
+          "description": "6sense segments sync to Salesforce campaigns and reports, letting marketing teams target in-market accounts with personalized outreach across email, ads, and direct mail."
+        }
+      ],
+      "setup_considerations": [
+        "6sense's Salesforce integration requires a managed package installation and dedicated API user. Budget 2-3 weeks for initial setup and tuning.",
+        "Define your Ideal Customer Profile (ICP) in 6sense before connecting to Salesforce. The AI model's predictions are only as good as the ICP definition it's working from.",
+        "6sense creates custom fields on Salesforce account and contact records. Plan page layout changes to surface intent data where reps actually look (not buried in custom fields).",
+        "Intent data is only useful if sales acts on it. Build Salesforce dashboard components that highlight accounts in 'decision' or 'purchase' stages so reps prioritize them daily."
+      ],
+      "faq": [
+        {
+          "q": "How accurate is 6sense's buying stage prediction?",
+          "a": "6sense claims 85%+ accuracy on buying stage predictions for accounts that match your ICP. Real-world accuracy depends on your ICP definition quality and the volume of intent signals available for your market. Niche markets with less web content generate fewer signals."
+        },
+        {
+          "q": "What's the difference between 6sense and Bombora intent data?",
+          "a": "Bombora provides raw intent data (which accounts are researching specific topics). 6sense builds on intent data \u2014 it uses Bombora's data among other sources, adds AI predictions for buying stage, and provides an orchestration layer for acting on signals. 6sense is a platform; Bombora is a data feed."
+        },
+        {
+          "q": "How much does 6sense cost with Salesforce?",
+          "a": "6sense pricing typically ranges from $30K-$60K/year depending on the number of accounts tracked and features included. The Salesforce integration is included in all plans. Total stack cost with Salesforce Enterprise: $50K-$100K/year for a mid-size team."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "hubspot-zoominfo",
+      "tool_a": "hubspot",
+      "tool_b": "zoominfo",
+      "cooccurrence_count": 19,
+      "title": "HubSpot + ZoomInfo Integration Guide",
+      "meta_description": "How to integrate ZoomInfo with HubSpot CRM. Enrich contacts, automate prospecting workflows, and keep your HubSpot data accurate with ZoomInfo's database.",
+      "overview": "HubSpot and ZoomInfo appear together in 19 job postings. The integration brings ZoomInfo's contact database and enrichment capabilities into HubSpot's CRM and marketing platform. Reps prospect in ZoomInfo and push enriched contacts directly into HubSpot workflows.",
+      "how_they_work_together": [
+        {
+          "workflow": "Contact enrichment",
+          "description": "ZoomInfo enriches HubSpot contact and company records with verified emails, direct dials, firmographic data, and technographic details. Enrichment can run on new records automatically or on-demand for existing records."
+        },
+        {
+          "workflow": "Prospecting workflow",
+          "description": "Reps search ZoomInfo's database for prospects matching your ICP, then push selected contacts directly into HubSpot with all enrichment data pre-populated. No manual data entry required."
+        },
+        {
+          "workflow": "List building",
+          "description": "Build targeted prospect lists in ZoomInfo using advanced filters (industry, revenue, tech stack, intent signals), then export directly to HubSpot lists for email campaigns or sales sequences."
+        },
+        {
+          "workflow": "Data refresh",
+          "description": "ZoomInfo periodically refreshes HubSpot records to catch job changes, company updates, and contact information changes. This keeps your database current without manual maintenance."
+        }
+      ],
+      "setup_considerations": [
+        "ZoomInfo's HubSpot integration is native and simpler to set up than the Salesforce version. Basic configuration takes about 30 minutes.",
+        "HubSpot's free CRM works with ZoomInfo, but most teams need Marketing Hub Professional ($800/month) or Sales Hub Professional ($100/user/month) to get full value from enriched data in workflows.",
+        "Set up enrichment filters to avoid burning ZoomInfo credits on records outside your target market. Filter by company size, industry, or geography.",
+        "ZoomInfo can create new HubSpot contacts on export. Set lifecycle stage and lead status defaults to ensure new records enter your workflow correctly."
+      ],
+      "faq": [
+        {
+          "q": "Is ZoomInfo worth it if I already have HubSpot?",
+          "a": "If your team does outbound prospecting, yes. HubSpot's built-in data tools are improving but don't match ZoomInfo's database size, direct dial coverage, or intent data. If you're purely inbound, you may not need ZoomInfo's prospecting features."
+        },
+        {
+          "q": "Can I use ZoomInfo's free Chrome extension with HubSpot?",
+          "a": "ZoomInfo's Chrome extension (ZoomInfo Lite) provides limited data and doesn't integrate with HubSpot. The full integration requires a paid ZoomInfo plan starting at $15K/year."
+        },
+        {
+          "q": "How does ZoomInfo compare to HubSpot's built-in enrichment?",
+          "a": "HubSpot's Breeze Intelligence (formerly Clearbit, acquired 2023) provides basic enrichment for company and contact data. ZoomInfo offers deeper coverage including direct dials, mobile numbers, org charts, and intent data. For enterprise-level data needs, ZoomInfo covers more ground."
+        }
+      ],
+      "date_published": "2026-02-01",
+      "date_modified": "2026-02-14"
+    }
+  ]
+}

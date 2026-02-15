@@ -36,14 +36,15 @@
   --slate-950: #020617;
 
   /* ---- Semantic Colors ---- */
-  --color-primary: var(--teal-500);
-  --color-primary-hover: var(--teal-600);
-  --color-primary-active: var(--teal-700);
+  --color-primary: var(--teal-600);
+  --color-primary-hover: var(--teal-700);
+  --color-primary-active: var(--teal-800);
   --color-primary-subtle: var(--teal-50);
+  --color-primary-decorative: var(--teal-500);
 
   --color-text: var(--slate-900);
   --color-text-secondary: var(--slate-600);
-  --color-text-muted: var(--slate-400);
+  --color-text-muted: var(--slate-500);
 
   --color-bg: var(--slate-50);
   --color-bg-card: #FFFFFF;
@@ -128,6 +129,29 @@
   padding: 0;
 }
 
+/* ---- Accessibility ---- */
+.skip-link {
+  position: fixed;
+  top: -40px;
+  left: 0;
+  z-index: 1000;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--text-sm);
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 /* ---- Base Typography ---- */
 body {
   font-family: var(--font-body);
@@ -188,6 +212,43 @@ img {
 .text-sm { font-size: var(--text-sm); }
 .text-xs { font-size: var(--text-xs); }
 .mono { font-family: var(--font-mono); font-size: var(--text-sm); }
+
+.answer-summary {
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-top: var(--space-3);
+  max-width: 720px;
+}
+
+.data-highlight {
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  padding: var(--space-4);
+  background: var(--color-primary-subtle);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  margin: var(--space-4) 0;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+}
+
+.article-meta a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.article-meta a:hover {
+  color: var(--color-primary);
+}
 
 .sr-only {
   position: absolute;

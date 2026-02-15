@@ -2,22 +2,41 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CategoryCard from '../../components/CategoryCard.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 
 import categoriesData from '../../../data/categories.json';
 
 const categories = categoriesData.categories;
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Categories' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": "B2B Data Tool Categories",
+    "numberOfItems": categories.length,
+    "itemListElement": categories.map((cat: any, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": cat.name,
+      "url": `https://datastackguide.com/categories/${cat.slug}/`
+    }))
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
 ---
 
 <BaseLayout
   title="Data Tool Categories"
   description="Browse B2B data tools by category: enrichment, cleaning, validation, intent data, ABM, orchestration, and more. Compare tools with real pricing and job demand data."
   canonicalPath="categories/"
+  schemas={allSchemas}
 >
   <div class="container">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Categories' }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="page-hero">
       <h1>Data Tool Categories</h1>

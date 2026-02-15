@@ -1,10 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleMeta from '../../components/ArticleMeta.astro';
 import AuthorBio from '../../components/AuthorBio.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 import pricingData from '../../../data/pricing_pages.json';
 import toolsData from '../../../data/tools.json';
 import toolContentData from '../../../data/tool_content.json';
+import comparisonsData from '../../../data/comparisons.json';
+import alternativesData from '../../../data/alternatives.json';
 
 export function getStaticPaths() {
   return pricingData.pages.map((page: any) => ({
@@ -23,43 +27,82 @@ const toolData = toolsData.tools.find((t: any) => t.slug === page.tool_slug);
 const toolContent = (toolContentData as any)[page.tool_slug];
 const toolName = toolContent?.display_name || toolData?.name || page.tool_slug;
 
-const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const lastUpdated = new Date(page.date_modified || '2026-02-14').toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
-const faqSchema = page.faq?.length > 0 ? {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": page.faq.map((item: any) => ({
-    "@type": "Question",
-    "name": item.q,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": item.a
-    }
-  }))
-} : null;
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Pricing' },
+  { label: `${toolName} Pricing` }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "SoftwareApplication",
+    "name": toolName,
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": page.tiers.map((tier: any) => ({
+      "@type": "Offer",
+      "name": tier.name,
+      "description": `${tier.name}: ${tier.price} (${tier.billing})`,
+      "priceCurrency": "USD"
+    })),
+    "datePublished": page.date_published || '2026-02-01',
+    "dateModified": page.date_modified || '2026-02-14'
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
+
+if (page.faq?.length > 0) {
+  allSchemas.push({
+    "@type": "FAQPage",
+    "mainEntity": page.faq.map((item: any) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  });
+}
+
+// Cross-links: comparisons and alternatives involving this tool
+function getToolDisplayName(slug: string): string {
+  const c = (toolContentData as any)[slug];
+  return c?.display_name || slug;
+}
+
+const relatedComparisons = (comparisonsData as any).comparisons
+  .filter((c: any) => c.tool_a === page.tool_slug || c.tool_b === page.tool_slug)
+  .slice(0, 3);
+
+const relatedAlternative = alternativesData.alternatives
+  .find((a: any) => a.tool_slug === page.tool_slug);
+
+// Keep title under 42 chars (+ " | DataStackGuide" suffix = 60 max)
+const shortPricingTitle = `${toolName} Pricing (2026)`;
+const minPricingTitle = `${toolName} Pricing`;
+const pricingTitle = page.title.length <= 42 ? page.title : shortPricingTitle.length <= 42 ? shortPricingTitle : minPricingTitle;
 ---
 
 <BaseLayout
-  title={page.title}
+  title={pricingTitle}
   description={page.meta_description}
+  ogType="article"
   canonicalPath={`pricing/${page.slug}/`}
+  schemas={allSchemas}
 >
-  <Fragment slot="head">
-    {faqSchema && (
-      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-    )}
-  </Fragment>
-
   <div class="container-narrow">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Pricing' },
-      { label: `${toolName} Pricing` }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="pricing-hero">
       <h1>{page.title}</h1>
+      <ArticleMeta />
       <p class="pricing-hook">{page.hook}</p>
+      {page.tiers?.[0] && (
+        <p class="answer-summary">{toolName} pricing starts at <strong>{page.tiers[0].price}</strong> ({page.tiers[0].billing}) for the {page.tiers[0].name} plan.</p>
+      )}
     </section>
 
     <!-- Pricing Tiers -->
@@ -165,10 +208,18 @@ const faqSchema = page.faq?.length > 0 ? {
             <span>{toolName}</span>
           </a>
         )}
-        <a href="/compare/" class="related-link card">
-          <span class="related-link-label text-sm text-muted">Browse</span>
-          <span>Tool Comparisons</span>
-        </a>
+        {relatedAlternative && (
+          <a href={`/alternatives/${relatedAlternative.slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Alternatives</span>
+            <span>{toolName} Alternatives</span>
+          </a>
+        )}
+        {relatedComparisons.map((comp: any) => (
+          <a href={`/compare/${comp.slug}/`} class="related-link card">
+            <span class="related-link-label text-sm text-muted">Comparison</span>
+            <span>{getToolDisplayName(comp.tool_a)} vs {getToolDisplayName(comp.tool_b)}</span>
+          </a>
+        ))}
         <a href="/tools/" class="related-link card">
           <span class="related-link-label text-sm text-muted">Browse</span>
           <span>All Data Tools</span>

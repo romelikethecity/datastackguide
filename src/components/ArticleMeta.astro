@@ -1,0 +1,20 @@
+---
+interface Props {
+  date?: string;
+}
+
+const { date } = Astro.props;
+const displayDate = date || 'February 2026';
+---
+
+<div class="article-meta">
+  <span>By <a href="/about/">Rome Thorndike</a></span>
+  <span class="article-meta-sep">·</span>
+  <span>Updated {displayDate}</span>
+</div>
+
+<style>
+  .article-meta-sep {
+    color: var(--color-text-muted);
+  }
+</style>

@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
+import useCaseData from '../../../data/use_cases.json';
+import categoriesData from '../../../data/categories.json';
+import toolsData from '../../../data/tools.json';
+
+const totalJobs = toolsData.total_jobs_analyzed;
+
+function getCategoryName(slug: string): string {
+  const cat = categoriesData.categories.find((c: any) => c.slug === slug);
+  return cat?.name || slug;
+}
+
+function getCategoryColor(slug: string): string {
+  const cat = categoriesData.categories.find((c: any) => c.slug === slug);
+  return cat?.color || '#14B8A6';
+}
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Use Cases' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": "B2B Data Tool Use Cases",
+    "numberOfItems": useCaseData.use_cases.length,
+    "itemListElement": useCaseData.use_cases.map((uc: any, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": uc.title,
+      "url": `https://datastackguide.com/use-cases/${uc.slug}/`
+    }))
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
+---
+
+<BaseLayout
+  title="B2B Data Tool Use Cases & Buying Guides"
+  description="Find the right B2B data tools for your team. Use-case guides for startups, enterprise, healthcare, sales, marketing, and RevOps teams."
+  canonicalPath="use-cases/"
+  schemas={allSchemas}
+>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbItems} noSchema />
+
+    <section class="page-hero">
+      <h1>Use Cases & Buying Guides</h1>
+      <p>Tool recommendations for specific teams, company sizes, and industries. Each guide includes buying criteria, tool comparisons, and pricing context based on real adoption data from {totalJobs.toLocaleString()}+ job postings.</p>
+    </section>
+
+    <section class="uc-grid-section">
+      <div class="uc-grid">
+        {useCaseData.use_cases.map((uc: any) => {
+          const catColor = getCategoryColor(uc.category_slug);
+          const catName = getCategoryName(uc.category_slug);
+          return (
+            <a href={`/use-cases/${uc.slug}/`} class="uc-card card">
+              <span class="uc-card-cat" style={`background: ${catColor}15; color: ${catColor};`}>{catName}</span>
+              <h2>{uc.title}</h2>
+              <p class="uc-card-persona">{uc.persona}</p>
+              <p class="uc-card-desc">{uc.intro.slice(0, 120)}...</p>
+              <span class="uc-card-tools text-sm text-muted">{uc.recommended_tools.length} tools compared</span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: var(--space-8) 0 var(--space-6);
+  }
+
+  .page-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .page-hero p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 640px;
+  }
+
+  .uc-grid-section {
+    padding-bottom: var(--space-16);
+  }
+
+  .uc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .uc-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 0.2s;
+  }
+
+  .uc-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .uc-card h2 {
+    font-size: var(--text-lg);
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .uc-card-cat {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    align-self: flex-start;
+  }
+
+  .uc-card-persona {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .uc-card-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .uc-card-tools {
+    margin-top: auto;
+  }
+
+  @media (max-width: 768px) {
+    .uc-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

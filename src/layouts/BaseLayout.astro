@@ -8,7 +8,9 @@ interface Props {
   description: string;
   canonicalPath?: string;
   ogImage?: string;
+  ogType?: string;
   schema?: object;
+  schemas?: object[];
 }
 
 const {
@@ -16,8 +18,15 @@ const {
   description,
   canonicalPath = '',
   ogImage = '/assets/og-templates/og-default.png',
-  schema
+  ogType = 'website',
+  schema,
+  schemas
 } = Astro.props;
+
+// Consolidate schemas into a single @graph when using schemas array
+const graphSchema = schemas && schemas.length > 0
+  ? { "@context": "https://schema.org", "@graph": schemas }
+  : null;
 
 const siteUrl = 'https://datastackguide.com';
 const canonicalUrl = `${siteUrl}/${canonicalPath}`.replace(/\/+$/, '/');
@@ -58,12 +67,15 @@ const pageTitle = `${title} | DataStackGuide`;
   </noscript>
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content={ogType}>
   <meta property="og:url" content={canonicalUrl}>
   <meta property="og:title" content={pageTitle}>
   <meta property="og:description" content={description}>
   <meta property="og:site_name" content="DataStackGuide">
   <meta property="og:image" content={fullOgImage}>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -71,7 +83,10 @@ const pageTitle = `${title} | DataStackGuide`;
   <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content={fullOgImage}>
 
-  {schema && (
+  {graphSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
+  )}
+  {!graphSchema && schema && (
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   )}
 
@@ -87,9 +102,10 @@ const pageTitle = `${title} | DataStackGuide`;
   <slot name="head" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <Nav />
 
-  <main>
+  <main id="main-content">
     <slot />
   </main>
 

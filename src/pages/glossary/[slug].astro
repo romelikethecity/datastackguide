@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 import glossaryData from '../../../data/glossary.json';
 import toolsData from '../../../data/tools.json';
 import toolContentData from '../../../data/tool_content.json';
@@ -64,40 +65,48 @@ const relatedRoundups = (entry.related_roundups || [])
 const catName = getCategoryName(entry.category_slug);
 const catColor = getCategoryColor(entry.category_slug);
 
-// Keep title under 53 chars (+ " | DataStackGuide" suffix = 70 max)
+// Keep title under 42 chars (+ " | DataStackGuide" suffix = 60 max)
 const fullTitle = `What is ${entry.term}? Definition & Guide`;
 const shortTitle = `${entry.term}: Definition & Guide`;
 const minTitle = `${entry.term} Explained`;
-const title = fullTitle.length <= 53 ? fullTitle : shortTitle.length <= 53 ? shortTitle : minTitle.length <= 53 ? minTitle : entry.term;
-const description = `${entry.term} definition: ${entry.short_definition} Learn what it means, why it matters, and which tools to use.`;
+const rawTitle = fullTitle.length <= 42 ? fullTitle : shortTitle.length <= 42 ? shortTitle : minTitle.length <= 42 ? minTitle : entry.term;
+const title = rawTitle.length <= 42 ? rawTitle : rawTitle.slice(0, 39) + '...';
+let description = entry.meta_description || `${entry.term} definition: ${entry.short_definition} Learn what it means, why it matters, and which tools to use.`;
+if (description.length < 120) description += ` Compare top tools and see real adoption data.`;
+if (description.length > 160) description = description.slice(0, 157) + '...';
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "DefinedTerm",
-  "name": entry.term,
-  "description": entry.short_definition
-};
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Glossary', href: '/glossary/' },
+  { label: entry.term }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "DefinedTerm",
+    "name": entry.term,
+    "description": entry.short_definition
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
 ---
 
 <BaseLayout
   title={title}
   description={description}
+  ogType="article"
   canonicalPath={`glossary/${entry.slug}/`}
-  schema={schema}
+  schemas={allSchemas}
 >
   <div class="container-narrow">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Glossary', href: '/glossary/' },
-      { label: entry.term }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="glossary-hero">
       <a href={`/categories/${entry.category_slug}/`} class="cat-badge" style={`background: ${catColor}15; color: ${catColor};`}>
         {catName}
       </a>
       <h1>What is {entry.term}?</h1>
-      <p class="glossary-tldr">{entry.short_definition}</p>
+      <p class="answer-summary"><strong>{entry.term}</strong> is {entry.short_definition}</p>
     </section>
 
     <section class="content-section">

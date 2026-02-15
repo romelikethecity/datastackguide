@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
+import pricingData from '../../../data/pricing_pages.json';
+import toolsData from '../../../data/tools.json';
+import toolContentData from '../../../data/tool_content.json';
+
+function getToolName(toolSlug: string): string {
+  const content = (toolContentData as any)[toolSlug];
+  const tool = toolsData.tools.find((t: any) => t.slug === toolSlug);
+  return content?.display_name || tool?.name || toolSlug;
+}
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Pricing' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": "B2B Data Tool Pricing Guides",
+    "numberOfItems": pricingData.pages.length,
+    "itemListElement": pricingData.pages.map((p: any, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": `${getToolName(p.tool_slug)} Pricing`,
+      "url": `https://datastackguide.com/pricing/${p.slug}/`
+    }))
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
+---
+
+<BaseLayout
+  title="B2B Data Tool Pricing (2026)"
+  description="Real pricing for 50+ B2B data tools. Published plans, hidden costs, and what you'll actually pay. Updated for 2026."
+  canonicalPath="pricing/"
+  schemas={allSchemas}
+>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbItems} noSchema />
+
+    <section class="page-hero">
+      <h1>Pricing Guides</h1>
+      <p>Published plans, hidden costs, and real-world cost examples for every major B2B data tool. No guesswork.</p>
+    </section>
+
+    <section class="pricing-grid-section">
+      <div class="pricing-grid">
+        {pricingData.pages.map((page: any) => {
+          const toolName = getToolName(page.tool_slug);
+          const tierCount = page.tiers?.length || 0;
+          return (
+            <a href={`/pricing/${page.slug}/`} class="pricing-card card">
+              <h2>{toolName}</h2>
+              <p class="pricing-card-hook">{page.hook.slice(0, 100)}...</p>
+              <span class="pricing-card-meta text-sm text-muted">{tierCount} plans compared</span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: var(--space-8) 0 var(--space-6);
+  }
+
+  .page-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .page-hero p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 640px;
+  }
+
+  .pricing-grid-section {
+    padding-bottom: var(--space-16);
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-5);
+  }
+
+  .pricing-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 0.2s;
+  }
+
+  .pricing-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .pricing-card h2 {
+    font-size: var(--text-base);
+    margin: 0;
+  }
+
+  .pricing-card-hook {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .pricing-card-meta {
+    margin-top: auto;
+  }
+
+  @media (max-width: 768px) {
+    .pricing-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

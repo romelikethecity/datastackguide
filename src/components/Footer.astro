@@ -1,5 +1,13 @@
 ---
+import comparisonsData from '../../data/comparisons.json';
+import toolContentData from '../../data/tool_content.json';
+
 const currentYear = new Date().getFullYear();
+
+function getToolName(slug: string): string {
+  const content = (toolContentData as any)[slug];
+  return content?.display_name || slug;
+}
 
 const categoryLinks = [
   { href: '/categories/enrichment/', label: 'Data Enrichment' },
@@ -10,13 +18,18 @@ const categoryLinks = [
   { href: '/categories/healthcare/', label: 'Healthcare Data' },
 ];
 
+const topComparisons = (comparisonsData as any).comparisons.slice(0, 6);
+
 const resourceLinks = [
-  { href: '/compare/', label: 'Tool Comparisons' },
+  { href: '/tools/', label: 'All Tools' },
+  { href: '/best/', label: 'Best Of' },
   { href: '/alternatives/', label: 'Alternatives' },
-  { href: '/reports/', label: 'Reports' },
+  { href: '/pricing/', label: 'Pricing' },
+  { href: '/use-cases/', label: 'Use Cases' },
+  { href: '/integrations/', label: 'Integrations' },
   { href: '/guides/', label: 'Guides' },
   { href: '/glossary/', label: 'Glossary' },
-  { href: '/about/', label: 'About' },
+  { href: '/reports/', label: 'Reports' },
 ];
 
 const companyLinks = [
@@ -38,7 +51,9 @@ const companyLinks = [
         target="_blank"
         class="newsletter-form"
       >
+        <label for="footer-email" class="sr-only">Email address</label>
         <input
+          id="footer-email"
           type="email"
           name="email"
           placeholder="you@company.com"
@@ -51,7 +66,7 @@ const companyLinks = [
 
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="/assets/logos/logo-horizontal-dark-bg.svg" alt="DataStackGuide" width="180" height="40">
+        <img src="/assets/logos/logo-horizontal-dark-bg.svg" alt="DataStackGuide" width="180" height="40" loading="lazy">
         <p>Compare 200+ B2B data tools. Real pricing. Honest reviews. Job market demand data from 23,000+ postings.</p>
       </div>
 
@@ -61,6 +76,16 @@ const companyLinks = [
           {categoryLinks.map(link => (
             <li><a href={link.href}>{link.label}</a></li>
           ))}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Compare</h4>
+        <ul>
+          {topComparisons.map((comp: any) => (
+            <li><a href={`/compare/${comp.slug}/`}>{getToolName(comp.tool_a)} vs {getToolName(comp.tool_b)}</a></li>
+          ))}
+          <li><a href="/compare/">View all →</a></li>
         </ul>
       </div>
 
@@ -165,9 +190,21 @@ const companyLinks = [
     background: var(--teal-600);
   }
 
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
   .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     gap: var(--space-10);
     margin-bottom: var(--space-12);
   }

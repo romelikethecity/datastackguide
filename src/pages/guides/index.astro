@@ -1,22 +1,41 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 import guidesData from '../../../data/guides.json';
 
 const title = 'B2B Data Guides';
 const description = 'Practical guides for B2B data teams: choosing data providers, building RevOps tech stacks, and more.';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Guides' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": "B2B Data Guides",
+    "numberOfItems": guidesData.guides.length,
+    "itemListElement": guidesData.guides.map((guide: any, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": guide.title,
+      "url": `https://datastackguide.com/guides/${guide.slug}/`
+    }))
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
 ---
 
 <BaseLayout
   title={title}
   description={description}
   canonicalPath="guides/"
+  schemas={allSchemas}
 >
   <div class="container-narrow">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Guides' }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="guides-hero">
       <h1>Guides</h1>

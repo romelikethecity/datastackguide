@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ToolCard from '../../components/ToolCard.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 
 import toolsData from '../../../data/tools.json';
 import categoriesData from '../../../data/categories.json';
@@ -18,18 +19,36 @@ function getCategoryName(catSlug: string): string {
   const cat = categories.find((c: any) => c.slug === catSlug);
   return cat?.name || catSlug;
 }
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'All Tools' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": "B2B Data Tools",
+    "numberOfItems": tools.length,
+    "itemListElement": tools.slice(0, 50).map((tool: any, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": tool.name,
+      "url": `https://datastackguide.com/tools/${tool.slug}/`
+    }))
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
 ---
 
 <BaseLayout
   title="All Data Tools"
   description="Browse all B2B data tools: enrichment, cleaning, validation, intent data, ABM, and more. Compare pricing, features, and job market demand."
   canonicalPath="tools/"
+  schemas={allSchemas}
 >
   <div class="container">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'All Tools' }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="page-hero">
       <h1>All Data Tools</h1>

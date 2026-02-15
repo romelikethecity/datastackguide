@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleMeta from '../../components/ArticleMeta.astro';
 import AuthorBio from '../../components/AuthorBio.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
 import guidesData from '../../../data/guides.json';
 import toolsData from '../../../data/tools.json';
 import toolContentData from '../../../data/tool_content.json';
@@ -40,34 +42,60 @@ const relatedTools = (guide.related_tools || [])
   })
   .filter(Boolean);
 
-const lastUpdated = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const lastUpdated = new Date(guide.date_modified || '2026-02-14').toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": guide.title,
-  "description": guide.meta_description,
-  "author": { "@type": "Organization", "name": "DataStackGuide" }
-};
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Guides', href: '/guides/' },
+  { label: guide.title }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "Article",
+    "headline": guide.title,
+    "description": guide.meta_description,
+    "author": { "@type": "Person", "@id": "https://datastackguide.com/about/#rome" },
+    "publisher": { "@type": "Organization", "@id": "https://datastackguide.com/#organization", "name": "DataStackGuide" },
+    "datePublished": guide.date_published || '2026-02-01',
+    "dateModified": guide.date_modified || '2026-02-14'
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
+
+if (guide.faq?.length > 0) {
+  allSchemas.push({
+    "@type": "FAQPage",
+    "mainEntity": guide.faq.map((item: any) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  });
+}
+// Keep title under 42 chars (+ " | DataStackGuide" suffix = 60 max)
+const guideTitle = guide.title.length <= 42 ? guide.title : guide.title.slice(0, 39) + '...';
 ---
 
 <BaseLayout
-  title={guide.title}
+  title={guideTitle}
   description={guide.meta_description}
+  ogType="article"
   canonicalPath={`guides/${guide.slug}/`}
-  schema={schema}
+  schemas={allSchemas}
 >
   <div class="container-narrow">
-    <Breadcrumbs items={[
-      { label: 'Home', href: '/' },
-      { label: 'Guides', href: '/guides/' },
-      { label: guide.title }
-    ]} />
+    <Breadcrumbs items={breadcrumbItems} noSchema />
 
     <section class="guide-hero">
       <span class="guide-badge mono">GUIDE</span>
       <h1>{guide.title}</h1>
+      <ArticleMeta />
       <p class="guide-intro">{guide.intro}</p>
+      <p class="answer-summary">{guide.meta_description}</p>
     </section>
 
     <!-- Table of Contents -->
@@ -127,6 +155,21 @@ const schema = {
             <a href={`/categories/${catSlug}/`} class="cat-link card">
               {getCategoryName(catSlug)}
             </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- FAQ -->
+    {guide.faq?.length > 0 && (
+      <section class="content-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {guide.faq.map((item: any) => (
+            <details class="faq-item">
+              <summary>{item.q}</summary>
+              <p>{item.a}</p>
+            </details>
           ))}
         </div>
       </section>
@@ -284,6 +327,52 @@ const schema = {
   .cat-link:hover {
     color: var(--color-primary);
     border-color: var(--color-primary);
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .faq-item {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .faq-item summary {
+    padding: var(--space-4) var(--space-5);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+
+  .faq-item[open] summary::after {
+    content: '−';
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item p {
+    padding: 0 var(--space-5) var(--space-5);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    max-width: none;
   }
 
   .related-section {

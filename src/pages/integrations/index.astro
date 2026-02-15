@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { buildBreadcrumbSchema } from '../../utils/schema';
+import integrationsData from '../../../data/integrations.json';
+import toolsData from '../../../data/tools.json';
+import toolContentData from '../../../data/tool_content.json';
+
+const totalJobs = toolsData.total_jobs_analyzed;
+
+function getToolName(slug: string): string {
+  const content = (toolContentData as any)[slug];
+  const tool = toolsData.tools.find((t: any) => t.slug === slug);
+  return content?.display_name || tool?.name || slug;
+}
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Integrations' }
+];
+
+const allSchemas: object[] = [
+  {
+    "@type": "ItemList",
+    "name": "B2B Data Tool Integrations",
+    "numberOfItems": integrationsData.integrations.length,
+    "itemListElement": integrationsData.integrations.map((intg: any, i: number) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": intg.title,
+      "url": `https://datastackguide.com/integrations/${intg.slug}/`
+    }))
+  },
+  buildBreadcrumbSchema(breadcrumbItems)
+];
+---
+
+<BaseLayout
+  title="B2B Data Tool Integrations"
+  description="Integration guides for the most common B2B data tool pairings. Setup guides, workflows, and best practices based on real co-occurrence data from job postings."
+  canonicalPath="integrations/"
+  schemas={allSchemas}
+>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbItems} noSchema />
+
+    <section class="page-hero">
+      <h1>Tool Integration Guides</h1>
+      <p>How the most commonly paired B2B data tools work together. Each guide covers setup, key workflows, and practical considerations based on co-occurrence data from {totalJobs.toLocaleString()}+ job postings.</p>
+    </section>
+
+    <section class="intg-grid-section">
+      <div class="intg-grid">
+        {integrationsData.integrations
+          .sort((a: any, b: any) => b.cooccurrence_count - a.cooccurrence_count)
+          .map((intg: any) => {
+            const nameA = getToolName(intg.tool_a);
+            const nameB = getToolName(intg.tool_b);
+            return (
+              <a href={`/integrations/${intg.slug}/`} class="intg-card card">
+                <div class="intg-card-tools">
+                  <span class="intg-card-tool">{nameA}</span>
+                  <span class="intg-card-plus">+</span>
+                  <span class="intg-card-tool">{nameB}</span>
+                </div>
+                <p class="intg-card-desc">{intg.overview.slice(0, 140)}...</p>
+                <span class="intg-card-stat mono text-sm text-muted">{intg.cooccurrence_count} job co-mentions</span>
+              </a>
+            );
+          })}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: var(--space-8) 0 var(--space-6);
+  }
+
+  .page-hero h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .page-hero p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 640px;
+  }
+
+  .intg-grid-section {
+    padding-bottom: var(--space-16);
+  }
+
+  .intg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .intg-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 0.2s;
+  }
+
+  .intg-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .intg-card-tools {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .intg-card-tool {
+    font-weight: 600;
+    font-size: var(--text-sm);
+    padding: var(--space-1) var(--space-3);
+    background: var(--color-primary-subtle);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary);
+  }
+
+  .intg-card-plus {
+    color: var(--color-text-muted);
+  }
+
+  .intg-card-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .intg-card-stat {
+    margin-top: auto;
+  }
+
+  @media (max-width: 768px) {
+    .intg-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
