@@ -4512,7 +4512,7 @@
         },
         {
           "name": "PPC (Pay-Per-Click)",
-          "price": "$2\u2013$100+/click",
+          "price": "$2–$100+/click",
           "billing": "Monthly budget",
           "popular": true,
           "highlights": [
@@ -4542,7 +4542,7 @@
         },
         {
           "item": "Review management",
-          "range": "$500\u2013$2K/year (time cost)",
+          "range": "$500–$2K/year (time cost)",
           "note": "Active review solicitation and response management requires ongoing effort. Reviews directly impact your ranking and click-through rate."
         },
         {
@@ -4552,7 +4552,7 @@
         },
         {
           "item": "Landing page optimization",
-          "range": "$2K\u2013$10K",
+          "range": "$2K–$10K",
           "note": "Capterra traffic converts differently than organic. Most vendors need dedicated landing pages to maximize conversion from review site visitors."
         }
       ],
@@ -4565,27 +4565,27 @@
           },
           {
             "item": "Average CPC in CRM category",
-            "annual": "$35\u2013$55/click"
+            "annual": "$35–$55/click"
           },
           {
             "item": "Estimated clicks/month",
-            "annual": "~40\u201355 clicks"
+            "annual": "~40–55 clicks"
           },
           {
             "item": "Typical click-to-demo rate",
-            "annual": "5\u201315%"
+            "annual": "5–15%"
           },
           {
             "item": "Annual demos from Capterra",
-            "annual": "24\u201399"
+            "annual": "24–99"
           },
           {
             "item": "Cost per demo",
-            "annual": "$242\u2013$1,000"
+            "annual": "$242–$1,000"
           }
         ],
-        "total": "$24,000\u2013$36,000/year",
-        "per_user_real": "$242\u2013$1,000/demo"
+        "total": "$24,000–$36,000/year",
+        "per_user_real": "$242–$1,000/demo"
       },
       "bottom_line": "Capterra is a viable lead source for B2B software vendors, but cost efficiency varies dramatically by category. Niche categories with low competition can deliver cheap, qualified leads. Competitive categories like CRM, project management, and marketing automation have CPCs that make cost-per-demo comparable to LinkedIn ads. The free listing is worth claiming regardless; paid placement requires careful ROI tracking.",
       "faq": [
@@ -6648,6 +6648,386 @@
       ],
       "date_published": "2026-02-01",
       "date_modified": "2026-02-14"
+    },
+    {
+      "slug": "tableau-pricing",
+      "tool_slug": "tableau",
+      "title": "Tableau Pricing (2026): What It Actually Costs",
+      "meta_description": "Tableau pricing breakdown: Viewer, Explorer, and Creator tiers. Real costs for Cloud, Server, and enterprise deployments. Updated for 2026.",
+      "hook": "Tableau lists $15-$75/user/month on their pricing page. The real cost depends on your mix of Creators, Explorers, and Viewers, plus add-ons that most teams eventually need.",
+      "tiers": [
+        {
+          "name": "Viewer",
+          "price": "$15/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "View and interact with published dashboards",
+            "Filter, drill, and export data",
+            "Subscribe to dashboard email alerts",
+            "Mobile app access"
+          ]
+        },
+        {
+          "name": "Explorer",
+          "price": "$42/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Edit existing workbooks",
+            "Create from published data sources",
+            "Web authoring capabilities",
+            "All Viewer features"
+          ]
+        },
+        {
+          "name": "Creator",
+          "price": "$75/user/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Full Tableau Desktop authoring",
+            "Tableau Prep for data preparation",
+            "Connect to any data source",
+            "Publish to Server/Cloud",
+            "All Explorer features"
+          ]
+        },
+        {
+          "name": "Data Management Add-on",
+          "price": "$5.50/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Catalog (data discovery)",
+            "Data quality warnings",
+            "Lineage tracking",
+            "Virtual connections"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Tableau included with Salesforce?",
+          "a": "Not automatically. Tableau is a separate purchase from Salesforce CRM. However, enterprise agreements often bundle both products at a discount. CRM Analytics (formerly Einstein Analytics) is the Salesforce-native analytics tool and is included in some CRM tiers."
+        },
+        {
+          "q": "How much does a typical Tableau deployment cost?",
+          "a": "A mid-market deployment with 5 Creators, 20 Explorers, and 100 Viewers on Tableau Cloud costs approximately $3,615/month or $43,380/year before add-ons. Enterprise deployments with Data Management and Advanced Management add-ons run 30-50% higher."
+        },
+        {
+          "q": "Can I use Tableau for free?",
+          "a": "Tableau Public is free but all your dashboards are publicly visible. Tableau Desktop offers a 14-day free trial. There is no free tier for private, commercial use."
+        }
+      ]
+    },
+    {
+      "slug": "power-bi-pricing",
+      "tool_slug": "power-bi",
+      "title": "Power BI Pricing (2026): What It Actually Costs",
+      "meta_description": "Power BI pricing breakdown: Pro at $10/user/mo, Premium Per User, and Premium Capacity options. Real costs for Microsoft BI. Updated for 2026.",
+      "hook": "Power BI Pro at $10/user/month is the most affordable enterprise BI license on the market. But Premium features, capacity pricing, and Azure consumption costs can push the real number higher.",
+      "tiers": [
+        {
+          "name": "Power BI Pro",
+          "price": "$10/user/mo",
+          "billing": "Monthly or Annual",
+          "popular": true,
+          "highlights": [
+            "Full report authoring and sharing",
+            "1 GB max dataset size",
+            "8 daily data refreshes",
+            "Included in Microsoft 365 E5"
+          ]
+        },
+        {
+          "name": "Premium Per User (PPU)",
+          "price": "$20/user/mo",
+          "billing": "Monthly or Annual",
+          "highlights": [
+            "100 GB max dataset size",
+            "48 daily data refreshes",
+            "Paginated reports",
+            "AI features and dataflows",
+            "Deployment pipelines"
+          ]
+        },
+        {
+          "name": "Premium Per Capacity (P1)",
+          "price": "$4,995/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Dedicated cloud compute resources",
+            "Unlimited free viewers",
+            "Larger dataset sizes",
+            "XMLA endpoint access",
+            "Autoscale option"
+          ]
+        },
+        {
+          "name": "Power BI Embedded",
+          "price": "Usage-based",
+          "billing": "Azure consumption",
+          "highlights": [
+            "Embed in custom applications",
+            "Azure capacity pricing",
+            "No named user licenses needed",
+            "White-label capabilities"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Power BI free with Microsoft 365?",
+          "a": "Power BI Pro is included with Microsoft 365 E5 subscriptions at no additional cost. Other M365 plans do not include Power BI. Power BI Desktop (the authoring application) is a free download for anyone."
+        },
+        {
+          "q": "When should I upgrade to Premium?",
+          "a": "Consider Premium Per User ($20/user/month) when you need datasets larger than 1 GB, paginated reports, or AI features. Consider Premium Per Capacity ($4,995/month) when you have 250+ report viewers, since it eliminates per-user viewer costs."
+        },
+        {
+          "q": "How does Power BI pricing compare to Tableau?",
+          "a": "Power BI Pro ($10/user/month) is 7.5x cheaper than Tableau Creator ($75/user/month). Even Premium Per User ($20/month) is less than half of Tableau Explorer ($42/month). The cost advantage narrows at enterprise scale with Premium Capacity, but Power BI remains significantly cheaper in most deployments."
+        }
+      ]
+    },
+    {
+      "slug": "looker-pricing",
+      "tool_slug": "looker",
+      "title": "Looker Pricing (2026): What It Actually Costs",
+      "meta_description": "Looker pricing breakdown: custom enterprise pricing, typical contract ranges, and Looker Studio Pro alternative. Updated for 2026.",
+      "hook": "Looker does not publish pricing. Based on market data, expect $5,000-$50,000+/month depending on user count and deployment complexity. Google Cloud credits can sometimes apply.",
+      "tiers": [
+        {
+          "name": "Looker Core",
+          "price": "Custom",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Full LookML modeling",
+            "Explores and dashboards",
+            "Embedded analytics",
+            "API access",
+            "Git integration"
+          ]
+        },
+        {
+          "name": "Looker Modeler",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Semantic layer only",
+            "Use with Looker Studio or other BI tools",
+            "Metric definitions without full Looker"
+          ]
+        },
+        {
+          "name": "Looker Studio Pro",
+          "price": "$9/user/mo",
+          "billing": "Monthly",
+          "highlights": [
+            "Enhanced Looker Studio (formerly Data Studio)",
+            "Team content management",
+            "Admin controls and governance",
+            "Not full Looker platform"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does Looker not publish pricing?",
+          "a": "Like most enterprise software, Looker uses custom pricing based on deployment size, user count, and support requirements. This allows Google Cloud to bundle Looker with other GCP services and negotiate enterprise agreements. It also makes direct price comparison with Tableau and Power BI more difficult."
+        },
+        {
+          "q": "What is a typical Looker contract?",
+          "a": "Small deployments (10-25 users) typically start at $5,000-$8,000/month. Mid-market (50-200 users) runs $12,000-$25,000/month. Enterprise with embedded analytics can exceed $50,000/month. Annual contracts are standard. Google Cloud committed spend may apply."
+        },
+        {
+          "q": "Is Looker Studio the same as Looker?",
+          "a": "No. Looker Studio (formerly Google Data Studio) is a free dashboarding tool. Looker is a full enterprise BI platform with LookML modeling. Looker Studio Pro ($9/user/month) adds governance features to the free tool but is still a different product from Looker Core."
+        }
+      ]
+    },
+    {
+      "slug": "clari-pricing",
+      "tool_slug": "clari",
+      "title": "Clari Pricing (2026): What It Actually Costs",
+      "meta_description": "Clari pricing breakdown: custom enterprise pricing for forecasting, pipeline inspection, and conversation intelligence. Updated for 2026.",
+      "hook": "Clari does not publish pricing. Based on market data, the core platform runs $50-$100/user/month for sales teams. The ROI case centers on forecast accuracy improvement and activity capture.",
+      "tiers": [
+        {
+          "name": "Clari Forecast",
+          "price": "Custom",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "AI-powered revenue forecasting",
+            "Pipeline analytics",
+            "Historical trending",
+            "Salesforce integration"
+          ]
+        },
+        {
+          "name": "Clari Inspect",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Deal-level risk signals",
+            "Activity timelines",
+            "Stakeholder mapping",
+            "Next step tracking"
+          ]
+        },
+        {
+          "name": "Clari Align",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Mutual action plans",
+            "Buyer collaboration workspace",
+            "Milestone tracking",
+            "Document sharing"
+          ]
+        },
+        {
+          "name": "Clari Copilot",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Call recording and transcription",
+            "AI conversation analysis",
+            "CRM activity sync",
+            "Coaching insights"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does Clari cost per user?",
+          "a": "Based on market reports, Clari's core forecasting platform runs $50-$100/user/month. The full suite (Forecast, Inspect, Align, Copilot) costs more. Enterprise agreements are negotiated individually. Implementation costs typically add $10,000-$30,000."
+        },
+        {
+          "q": "Does Clari charge for all CRM users?",
+          "a": "Clari typically licenses to sales team members who need forecasting and pipeline visibility: reps, managers, and revenue operations. Executive viewers may have lighter-weight access. The exact licensing model depends on your contract."
+        },
+        {
+          "q": "What is the ROI of Clari?",
+          "a": "Clari's ROI case is forecast accuracy improvement (15-25% better than spreadsheets) and time savings from automated activity capture. A VP Sales spending 10 hours/week on manual forecasting can reclaim most of that time. The math works best for teams with 50+ reps."
+        }
+      ]
+    },
+    {
+      "slug": "braze-pricing",
+      "tool_slug": "braze",
+      "title": "Braze Pricing (2026): What It Actually Costs",
+      "meta_description": "Braze pricing breakdown: MAU-based pricing model, typical contract ranges by company size. Updated for 2026.",
+      "hook": "Braze charges by monthly active users (MAUs), not seats or email volume. This model scales with your audience. Companies with 100K MAUs might pay $50K-$80K/year, while those with millions pay significantly more.",
+      "tiers": [
+        {
+          "name": "Growth",
+          "price": "~$50K/year",
+          "billing": "Annual",
+          "highlights": [
+            "Core messaging channels (email, push, SMS)",
+            "Canvas journey builder",
+            "Basic segmentation",
+            "Standard support"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "Custom",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Advanced analytics and reporting",
+            "Predictive suite (churn, purchase likelihood)",
+            "Content Cards",
+            "Currents data streaming"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Custom integrations",
+            "Dedicated customer success manager",
+            "SLA guarantees",
+            "Advanced security and compliance"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How does Braze MAU pricing work?",
+          "a": "A monthly active user (MAU) is anyone who opens your app or visits your website in a given month. You pay based on your peak MAU count. If you have 500K users but only 200K are active monthly, you pay for 200K. MAU tiers are negotiated at contract signing."
+        },
+        {
+          "q": "Is Braze more expensive than Marketo?",
+          "a": "It depends on your use case. Braze is priced on MAUs while Marketo is priced on database size (contacts). For companies with large, active user bases, Braze can be more expensive. For B2B companies with smaller contact databases, Marketo is typically comparable or higher per contact."
+        },
+        {
+          "q": "What channels does Braze pricing include?",
+          "a": "Email and push notifications are included in the base platform price. SMS and MMS have per-message costs on top of the platform fee. WhatsApp and other messaging channels have separate pricing. The total cost depends on your channel mix and message volume."
+        }
+      ]
+    },
+    {
+      "slug": "gainsight-pricing",
+      "tool_slug": "gainsight",
+      "title": "Gainsight Pricing (2026): What It Actually Costs",
+      "meta_description": "Gainsight pricing breakdown: custom pricing for CS teams, typical contract ranges, and PX add-on costs. Updated for 2026.",
+      "hook": "Gainsight does not publish pricing. Based on market data, the platform starts around $2,500/month for small CS teams and scales to $15,000+/month for enterprise deployments. Implementation and admin costs add significantly to the total.",
+      "tiers": [
+        {
+          "name": "Essentials",
+          "price": "~$2,500/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Health scores",
+            "Timeline",
+            "Calls to Action",
+            "Basic reporting",
+            "Salesforce sync"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Journey Orchestrator",
+            "Advanced analytics",
+            "Bi-directional Salesforce sync",
+            "Renewal Center",
+            "Surveys"
+          ]
+        },
+        {
+          "name": "Enterprise+",
+          "price": "Custom",
+          "billing": "Annual",
+          "highlights": [
+            "Gainsight PX included",
+            "Custom integrations",
+            "Dedicated CSM",
+            "Premium support SLA"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How much does Gainsight cost for a small CS team?",
+          "a": "Gainsight Essentials starts around $2,500/month based on market data. A team of 5-10 CSMs typically pays $2,500-$4,000/month. This does not include implementation services, which run $15,000-$30,000 for a standard deployment."
+        },
+        {
+          "q": "Is Gainsight PX included?",
+          "a": "Gainsight PX (product analytics) is a separate product with its own pricing based on monthly tracked users (MTUs). It can be bundled with Gainsight CS at a 15-25% discount. Many companies start with CS only and add PX after proving initial value."
+        },
+        {
+          "q": "What are the hidden costs of Gainsight?",
+          "a": "Beyond licensing, plan for: implementation services ($15K-$50K), a dedicated Gainsight admin (internal hire or contractor), and ongoing configuration as your CS processes evolve. Total first-year cost is typically 2-3x the annual license fee."
+        }
+      ]
     }
   ]
 }

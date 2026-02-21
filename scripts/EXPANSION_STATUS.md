@@ -1,31 +1,34 @@
 # Tool Expansion Status
 
-## What exists
-- `data/tool_content.json` — 6/60 tools expanded (salesforce, hubspot, zoominfo, dynamics-365, linkedin-sales-navigator, salesloft)
-- 54 tools remaining
-- ZoomInfo is the quality template (overview, key_features, use_cases, pricing_detail, data_quality, verdict)
-- `[slug].astro` template already renders all expanded fields
+## Current state (Feb 2026)
 
-## Scripts created (need debugging)
-- `scripts/extract_tool_context.py` — WORKS. Extracts job market data, pricing, co-occurrence for any slug
-- `scripts/expand_prompt_template.md` — Writing instructions and quality standards
-- `scripts/batch_expand.sh` — Calls `claude -p` per batch. Had issues: mktemp syntax, stdin piping, permission flags
-- `scripts/expand_all.sh` — Loops batch_expand.sh
-- `CLAUDE.md` — Project context for Claude Code
+- All 60 tools expanded with full review content (overview, key_features, use_cases, pricing_detail, verdict)
+- 718 em-dashes removed across all tools (AI writing tell)
+- 72 banned word instances fixed (genuinely, actually, robust, leverage, etc.)
+- 22 broken tool slug references cleaned up (18 best-of picks, 3 comparisons, 1 integration)
+- 4 thin roundup pages removed (<3 picks after broken ref cleanup)
+- 3 orphan tools removed from tools.json (bombora-intent, groove-clari, ringlead-revops)
+- 119 new FAQ entries added (all tools now have 4-6 FAQs)
+- 19 new alternatives pages generated (58 total, up from 39)
+- Build: 401 pages, clean
 
-## What went wrong
-1. `mktemp` macOS syntax didn't support `.md` extension — fixed
-2. Prompt too large for CLI arg — switched to stdin pipe — fixed
-3. `--allowedTools` comma syntax wrong + hung on permissions — switched to `--dangerously-skip-permissions` — NOT YET TESTED
+## Remaining work
 
-## Current batch_expand.sh claude invocation
-```bash
-cat "$PROMPT_FILE" | claude -p \
-    --dangerously-skip-permissions \
-    --max-turns 25
-```
+### Feature description depth (Priority 6)
+18 batch-expanded tools have avg <300 chars per feature description vs. 485-char manual standard:
+- salesforce-marketing-cloud (164), amplemarket (167), rb2b (169), rollworks (169)
+- capterra (172), nutshell (172), definitive-healthcare (175), marketo (176)
+- terminus (177), g2 (177), common-room (177), tray (178)
+- celigo (180), leadfeeder (181), oracle-cx (182), mutiny (183)
+- airbyte (183), sap-sales-cloud (185)
 
-## What needs to happen
-1. Test that the `claude -p --dangerously-skip-permissions` invocation actually works end-to-end for 1 tool
-2. If it works, run `./scripts/expand_all.sh 3` and let it go
-3. If not, consider alternative: single Python script that Claude runs within one session to expand tools in groups
+These need manual expansion with real research to avoid AI tells.
+
+## Scripts
+
+All quality scripts are in `scripts/`:
+- `fix_em_dashes.py` - idempotent, run after any content changes
+- `fix_banned_words.py` - idempotent, run after any content changes
+- `fix_broken_refs.py` - removes dead references
+- `generate_faqs.py` - fills tools to 5 FAQs using real data
+- `generate_alternatives.py` - creates alternatives pages from tool_content data

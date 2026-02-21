@@ -8,7 +8,7 @@
       "meta_description": "Compare list building and prospecting tools: pricing, features, and job demand data. See which list building tools companies actually use in 2026.",
       "color": "#F97316",
       "icon": "📋",
-      "tool_count": 20,
+      "tool_count": 21,
       "tools": [
         {
           "name": "Zoominfo",
@@ -149,6 +149,13 @@
           "job_count": 0,
           "description": "NPI-verified healthcare provider data across 40+ specialties. Pay-per-record, no contracts.",
           "is_service": true
+        },
+        {
+          "name": "Clari",
+          "slug": "clari",
+          "job_count": 48,
+          "description": "Revenue operations platform for pipeline management and forecasting.",
+          "is_service": false
         }
       ],
       "faq": [
@@ -1061,6 +1068,10 @@
         {
           "q": "What is the difference between data cleaning and data enrichment?",
           "a": "Data cleaning fixes problems in existing data (duplicates, errors, formatting). Data enrichment adds new data points to existing records (appending emails, phone numbers, firmographics). Most companies need both."
+        },
+        {
+          "q": "How often should I clean my B2B data?",
+          "a": "Monthly monitoring with quarterly deep cleans is the standard. Set up automated rules for email verification and duplicate detection that run daily. Do manual audits every 90 days. B2B data decays at roughly 25-30% per year, so cleaning frequency should match your data volume."
         }
       ],
       "date_published": "2026-02-01",
@@ -1102,6 +1113,10 @@
         {
           "q": "Is healthcare data subject to special regulations?",
           "a": "Yes. HIPAA regulates protected health information (PHI). However, publicly available provider data (NPI numbers, practice addresses, specialties) is not PHI. Most B2B healthcare data tools work with non-PHI public records."
+        },
+        {
+          "q": "Do healthcare data tools comply with HIPAA?",
+          "a": "Most healthcare data tools provide practice-level and provider-level data (NPI, specialty, practice address), which is public information and not protected health information (PHI). Tools that handle patient data require HIPAA compliance. Verify with each vendor whether they sign a Business Associate Agreement if your use case involves PHI."
         }
       ],
       "date_published": "2026-02-01",
@@ -1114,7 +1129,7 @@
       "meta_description": "Compare marketing automation platforms: pricing, features, and job demand data. See which marketing tools B2B teams actually use in 2026.",
       "color": "#EC4899",
       "icon": "📧",
-      "tool_count": 3,
+      "tool_count": 4,
       "tools": [
         {
           "name": "Marketo",
@@ -1136,6 +1151,13 @@
           "job_count": 432,
           "description": "Marketing automation included in HubSpot's CRM platform with email, workflows, and landing pages.",
           "is_service": false
+        },
+        {
+          "name": "Braze",
+          "slug": "braze",
+          "job_count": 52,
+          "description": "Customer engagement platform for cross-channel messaging and lifecycle marketing.",
+          "is_service": false
         }
       ],
       "faq": [
@@ -1150,6 +1172,10 @@
         {
           "q": "How does marketing automation relate to CRM?",
           "a": "Marketing automation feeds qualified leads to CRM. Most platforms integrate directly with Salesforce or HubSpot CRM. The automation platform handles lead nurturing and scoring; the CRM handles opportunity management and sales pipeline."
+        },
+        {
+          "q": "When should a company invest in marketing automation?",
+          "a": "When you have more than 1,000 contacts in your database, run more than 2 email campaigns per month, and need lead scoring to prioritize follow-up. Below these thresholds, a CRM with basic email features is sufficient. The investment only pays off when you have enough volume to benefit from automation."
         }
       ],
       "date_published": "2026-02-01",
@@ -1191,10 +1217,104 @@
         {
           "q": "Are G2 and Capterra reviews trustworthy?",
           "a": "Both platforms verify reviewers, but incentivized reviews (gift cards for reviews) are common. Look at review volume, recency, and consistency of themes rather than individual scores. Negative reviews are often the most informative."
+        },
+        {
+          "q": "How do vendors influence review platform ratings?",
+          "a": "Vendors incentivize reviews with gift cards ($25-50 per review), run review campaigns targeting satisfied customers, and invest in paid placements on review sites. This skews ratings upward. Focus on recent negative reviews and reviews that mention specific use cases for the most balanced perspective."
         }
       ],
       "date_published": "2026-02-01",
       "date_modified": "2026-02-14"
+    },
+    {
+      "name": "Analytics & BI",
+      "slug": "analytics",
+      "description": "Visualize data, build dashboards, and deliver business intelligence across the organization.",
+      "meta_description": "Compare analytics and BI tools: pricing, features, and job demand data. See which business intelligence platforms teams rely on in 2026.",
+      "color": "#8B5CF6",
+      "icon": "📊",
+      "tool_count": 3,
+      "tools": [
+        {
+          "name": "Tableau",
+          "slug": "tableau",
+          "job_count": 412,
+          "description": "Visual analytics platform for business intelligence and data exploration.",
+          "is_service": false
+        },
+        {
+          "name": "Power BI",
+          "slug": "power-bi",
+          "job_count": 358,
+          "description": "Microsoft's business intelligence platform for reporting and data visualization.",
+          "is_service": false
+        },
+        {
+          "name": "Looker",
+          "slug": "looker",
+          "job_count": 195,
+          "description": "Google Cloud's code-first BI platform with a semantic modeling layer.",
+          "is_service": false
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is business intelligence (BI)?",
+          "a": "Business intelligence is the process of turning raw data into actionable insights through visualization, reporting, and analysis. BI tools connect to databases and data warehouses, let users build interactive dashboards, and distribute insights across the organization. Modern BI platforms range from drag-and-drop tools (Tableau, Power BI) to code-first platforms (Looker)."
+        },
+        {
+          "q": "Which BI tool is cheapest?",
+          "a": "Power BI Pro at $10/user/month is the most affordable enterprise BI tool. Power BI Desktop is free for local use. Looker Studio (formerly Data Studio) is free for basic dashboards. Tableau's cheapest option is $15/user/month for Viewer access, with Creator licenses at $75/user/month."
+        },
+        {
+          "q": "Do I need a data warehouse for BI tools?",
+          "a": "Not necessarily. BI tools can connect directly to databases, spreadsheets, and cloud applications. However, a data warehouse (Snowflake, BigQuery, Redshift) provides better performance, data consolidation, and governance for serious analytics deployments. Most companies adopt a warehouse as their BI usage matures."
+        },
+        {
+          "q": "Tableau vs Power BI: which should I choose?",
+          "a": "Choose Power BI if your organization runs Microsoft 365 and wants affordable company-wide BI. Choose Tableau if you need deeper visual analytics and more flexible data exploration. Power BI costs 5-7x less per user. Tableau handles complex analytical workflows better. Most teams choose based on their existing technology ecosystem."
+        }
+      ],
+      "date_published": "2026-02-20",
+      "date_modified": "2026-02-20"
+    },
+    {
+      "name": "Customer Success",
+      "slug": "customer-success",
+      "description": "Manage post-sale customer relationships, track health scores, and drive retention and expansion.",
+      "meta_description": "Compare customer success platforms: pricing, features, and job demand data. See which CS tools teams rely on for retention in 2026.",
+      "color": "#10B981",
+      "icon": "🤝",
+      "tool_count": 1,
+      "tools": [
+        {
+          "name": "Gainsight",
+          "slug": "gainsight",
+          "job_count": 44,
+          "description": "Customer success platform for retention, expansion, and health scoring.",
+          "is_service": false
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is customer success software?",
+          "a": "Customer success software helps post-sale teams manage customer relationships systematically. Core features include health scores (risk indicators), lifecycle automation (onboarding, renewal reminders), and activity tracking. These tools replace spreadsheet-based customer tracking with structured workflows and data-driven prioritization."
+        },
+        {
+          "q": "When does a company need customer success software?",
+          "a": "Most B2B SaaS companies adopt CS software when they reach 5-10 CSMs managing named accounts. Below that threshold, CRM tasks and spreadsheets usually suffice. The tipping point is when manual tracking starts missing renewal risks or expansion opportunities due to scale."
+        },
+        {
+          "q": "How does customer success software differ from CRM?",
+          "a": "CRMs manage the sales pipeline (pre-sale). Customer success platforms manage the post-sale relationship: onboarding, adoption, health monitoring, renewal, and expansion. Some CRMs (Salesforce, HubSpot) have CS features, but dedicated CS platforms like Gainsight offer deeper health scoring, lifecycle automation, and CS-specific analytics."
+        },
+        {
+          "q": "What is a customer health score?",
+          "a": "A health score is a composite metric that indicates the likelihood of a customer renewing or expanding. It combines signals like product usage frequency, support ticket volume, NPS survey responses, executive engagement, and contract value. Green, yellow, and red scores help CSMs prioritize their attention across a large portfolio."
+        }
+      ],
+      "date_published": "2026-02-20",
+      "date_modified": "2026-02-20"
     }
   ]
 }

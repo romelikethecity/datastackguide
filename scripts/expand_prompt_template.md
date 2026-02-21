@@ -55,7 +55,7 @@ For each tool slug listed below, add these fields to its object in `data/tool_co
 - **Be honest.** Every tool has weaknesses. State them directly. The site's credibility depends on not sounding like vendor marketing.
 - **Use the provided data.** Reference job posting counts, salary ranges, co-occurring tools, company stages, and department distribution from the brief. These are real data points from 23,000+ analyzed job postings.
 - **Write for a B2B buyer evaluating tools.** The reader is a RevOps leader, VP of Sales, or marketing ops manager comparing options. They want facts and honest trade-offs, not hype.
-- **Em dashes, not parenthetical asides.** Match the existing editorial voice: direct, opinionated, no fluff.
+- **NO em-dashes.** Em-dashes are the #1 AI writing tell. Use periods, commas, or restructure sentences instead. Also avoid: genuinely, truly, really, actually, robust, leverage, synergy, holistic, cutting-edge, "continues to". See `docs/writing-style-guide.md` for the full list.
 
 ### Implementation
 

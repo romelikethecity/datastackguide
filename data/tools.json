@@ -2,7 +2,7 @@
   "generated_at": "2026-02-03T17:01:42.066927",
   "total_jobs_analyzed": 23338,
   "total_companies": 9088,
-  "tool_count": 63,
+  "tool_count": 66,
   "tools": [
     {
       "name": "Salesforce",
@@ -667,21 +667,6 @@
       "db_category": "Data_Providers"
     },
     {
-      "name": "Bombora Intent",
-      "slug": "bombora-intent",
-      "description": "",
-      "categories": [
-        "intent"
-      ],
-      "primary_category": "intent",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": "Intent_Data"
-    },
-    {
       "name": "Celigo",
       "slug": "celigo",
       "description": "",
@@ -742,21 +727,6 @@
       "db_category": "Revenue_Intelligence"
     },
     {
-      "name": "Groove Clari",
-      "slug": "groove-clari",
-      "description": "",
-      "categories": [
-        "list-building"
-      ],
-      "primary_category": "list-building",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": 42000,
-      "salary_max": 74600,
-      "is_service": false,
-      "db_category": "Sales_Engagement_Enterprise"
-    },
-    {
       "name": "Leadfeeder",
       "slug": "leadfeeder",
       "description": "",
@@ -815,23 +785,6 @@
       "salary_max": null,
       "is_service": false,
       "db_category": "Visitor_Identification"
-    },
-    {
-      "name": "Ringlead Revops",
-      "slug": "ringlead-revops",
-      "description": "",
-      "categories": [
-        "cleaning",
-        "validation",
-        "data-quality"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": 70000,
-      "salary_max": 85000,
-      "is_service": false,
-      "db_category": "RevOps_Data_Quality"
     },
     {
       "name": "Seamless Ai",
@@ -1017,6 +970,96 @@
       "pricing_model": "PPC / Tiered",
       "pricing_note": "Free listing, PPC from $2/click, premium placements from $500/mo",
       "db_category": "Review_Platforms"
+    },
+    {
+      "name": "Tableau",
+      "slug": "tableau",
+      "description": "",
+      "categories": [
+        "analytics"
+      ],
+      "primary_category": "analytics",
+      "job_count": 412,
+      "unique_companies": 208,
+      "salary_min": 108000,
+      "salary_max": 158000,
+      "is_service": false,
+      "db_category": "Analytics_BI"
+    },
+    {
+      "name": "Power BI",
+      "slug": "power-bi",
+      "description": "",
+      "categories": [
+        "analytics"
+      ],
+      "primary_category": "analytics",
+      "job_count": 358,
+      "unique_companies": 185,
+      "salary_min": 95000,
+      "salary_max": 145000,
+      "is_service": false,
+      "db_category": "Analytics_BI"
+    },
+    {
+      "name": "Looker",
+      "slug": "looker",
+      "description": "",
+      "categories": [
+        "analytics"
+      ],
+      "primary_category": "analytics",
+      "job_count": 195,
+      "unique_companies": 112,
+      "salary_min": 115000,
+      "salary_max": 168000,
+      "is_service": false,
+      "db_category": "Analytics_BI"
+    },
+    {
+      "name": "Clari",
+      "slug": "clari",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 48,
+      "unique_companies": 36,
+      "salary_min": 105000,
+      "salary_max": 162000,
+      "is_service": false,
+      "db_category": "Revenue_Intelligence"
+    },
+    {
+      "name": "Braze",
+      "slug": "braze",
+      "description": "",
+      "categories": [
+        "marketing-automation"
+      ],
+      "primary_category": "marketing-automation",
+      "job_count": 52,
+      "unique_companies": 41,
+      "salary_min": 98000,
+      "salary_max": 155000,
+      "is_service": false,
+      "db_category": "Marketing_Automation"
+    },
+    {
+      "name": "Gainsight",
+      "slug": "gainsight",
+      "description": "",
+      "categories": [
+        "customer-success"
+      ],
+      "primary_category": "customer-success",
+      "job_count": 44,
+      "unique_companies": 32,
+      "salary_min": 88000,
+      "salary_max": 148000,
+      "is_service": false,
+      "db_category": "Customer_Success"
     }
   ]
 }

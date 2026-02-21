@@ -1,4 +1,4 @@
-# DataStackGuide — Claude Code Project Instructions
+# DataStackGuide: Claude Code Project Instructions
 
 ## Project Overview
 
@@ -24,7 +24,7 @@ DataStackGuide is a static site built with Astro that reviews B2B data tools (CR
 
 ### Status
 
-6 of 60 tools are fully expanded with rich review content. The remaining 54 have base fields only (`description`, `description_2`, `pricing`, `pros`, `cons`, `faq`).
+All 60 tools are expanded with review content (overview, key_features, use_cases, pricing_detail, verdict). 18 tools have shorter-than-ideal feature descriptions (avg <300 chars vs 485-char target). See Priority 6 in the content scaling plan.
 
 ### Expanded fields
 
@@ -45,7 +45,7 @@ Use the ZoomInfo entry as the template. Key standards:
 - Use cases: 4-8 sentences with specific personas and workflows
 - Pricing: Real dollar amounts, hidden costs, negotiation tips
 - Verdict: Honest recommendation with trade-offs and job market data
-- Voice: Direct, opinionated, em-dashes, no fluff or superlatives
+- Voice: Direct, opinionated, no fluff or superlatives. NO em-dashes (AI writing tell per style guide).
 
 ### How to expand a tool
 
@@ -67,9 +67,25 @@ Use the ZoomInfo entry as the template. Key standards:
 
 ## Editorial Voice
 
-- Direct and opinionated — state clear recommendations
-- Use em dashes (—) for asides, not parentheses
+See `docs/writing-style-guide.md` for the full style guide. Key rules:
+
+- Direct and opinionated. State clear recommendations.
+- **NO em-dashes.** Use periods, commas, or restructure. Em-dashes are the #1 AI writing tell.
+- **NO banned words:** genuinely, truly, really, actually, robust, leverage, synergy, holistic, cutting-edge, game-changer, paradigm shift, "continues to", "in today's market"
+- **NO false reframes:** "This isn't X, it's Y" constructions
+- **NO unearned declarations:** "The pattern here is clear:", "Here's the thing:", "What this means:"
 - Reference specific numbers: pricing, database sizes, accuracy percentages
-- Acknowledge weaknesses honestly — the site's value is being trustworthy
+- Acknowledge weaknesses honestly. The site's value is being trustworthy.
 - Reference job posting data from our analysis when discussing demand
 - Write for B2B buyers (RevOps, VP Sales, Marketing Ops) comparing tools
+- Use contractions. Vary sentence length. Let data speak for itself.
+
+## Content Quality Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `scripts/fix_em_dashes.py` | Remove em-dashes from tool_content.json |
+| `scripts/fix_banned_words.py` | Remove banned words/phrases |
+| `scripts/fix_broken_refs.py` | Remove broken tool slug references |
+| `scripts/generate_faqs.py` | Add data-driven FAQs to tools with <5 |
+| `scripts/generate_alternatives.py` | Create alternatives pages for tools without one |
