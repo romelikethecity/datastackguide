@@ -30,7 +30,7 @@ const allSchemas: object[] = [
     "@type": "ItemList",
     "name": "B2B Data Tools",
     "numberOfItems": tools.length,
-    "itemListElement": tools.slice(0, 50).map((tool: any, i: number) => ({
+    "itemListElement": tools.map((tool: any, i: number) => ({
       "@type": "ListItem",
       "position": i + 1,
       "name": tool.name,

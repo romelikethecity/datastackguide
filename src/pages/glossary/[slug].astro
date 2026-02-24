@@ -89,6 +89,29 @@ const allSchemas: object[] = [
   },
   buildBreadcrumbSchema(breadcrumbItems)
 ];
+
+// Build FAQPage schema from existing content
+if (entry.full_definition && entry.why_it_matters) {
+  const faqItems: { q: string; a: string }[] = [
+    { q: `What is ${entry.term}?`, a: entry.short_definition },
+    { q: `Why does ${entry.term} matter?`, a: entry.why_it_matters.split('. ').slice(0, 2).join('. ') + '.' },
+  ];
+  if (relatedTools.length > 0) {
+    const toolNames = relatedTools.slice(0, 5).map((t: any) => t.name).join(', ');
+    faqItems.push({ q: `What tools support ${entry.term}?`, a: `Popular ${entry.term} tools include ${toolNames}. See our full reviews for pricing and feature comparisons.` });
+  }
+  allSchemas.push({
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map((item) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  });
+}
 ---
 
 <BaseLayout

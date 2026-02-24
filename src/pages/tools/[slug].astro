@@ -15,6 +15,7 @@ import comparisonsData from '../../../data/comparisons.json';
 import pricingPagesData from '../../../data/pricing_pages.json';
 import useCaseData from '../../../data/use_cases.json';
 import integrationsData from '../../../data/integrations.json';
+import alternativesData from '../../../data/alternatives.json';
 
 // Only generate pages for tools that have editorial content
 const toolsWithContent = toolsData.tools.filter(
@@ -102,6 +103,7 @@ const toolComparisons = comparisonsData.comparisons
 
 // Check if pricing page exists
 const hasPricingPage = pricingPagesData.pages.some((p: any) => p.slug === `${slug}-pricing`);
+const hasAlternativesPage = alternativesData.alternatives.some((a: any) => a.slug === `${slug}-alternatives`);
 
 // Cross-links: use cases and integrations involving this tool
 const relatedUseCases = useCaseData.use_cases
@@ -541,6 +543,9 @@ if (content.faq?.length > 0) {
             </tbody>
           </table>
         </div>
+        {hasAlternativesPage && (
+          <a href={`/alternatives/${slug}-alternatives/`} class="cta-link">See all {content.display_name} alternatives &rarr;</a>
+        )}
       </section>
     )}
 
@@ -1055,6 +1060,19 @@ if (content.faq?.length > 0) {
 
   .alternatives-table tr:hover td {
     background: var(--color-primary-subtle);
+  }
+
+  .cta-link {
+    display: inline-block;
+    margin-top: var(--space-4);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .cta-link:hover {
+    text-decoration: underline;
   }
 
   /* FAQ */

@@ -4512,7 +4512,7 @@
         },
         {
           "name": "PPC (Pay-Per-Click)",
-          "price": "$2–$100+/click",
+          "price": "$2\u2013$100+/click",
           "billing": "Monthly budget",
           "popular": true,
           "highlights": [
@@ -4542,7 +4542,7 @@
         },
         {
           "item": "Review management",
-          "range": "$500–$2K/year (time cost)",
+          "range": "$500\u2013$2K/year (time cost)",
           "note": "Active review solicitation and response management requires ongoing effort. Reviews directly impact your ranking and click-through rate."
         },
         {
@@ -4552,7 +4552,7 @@
         },
         {
           "item": "Landing page optimization",
-          "range": "$2K–$10K",
+          "range": "$2K\u2013$10K",
           "note": "Capterra traffic converts differently than organic. Most vendors need dedicated landing pages to maximize conversion from review site visitors."
         }
       ],
@@ -4565,27 +4565,27 @@
           },
           {
             "item": "Average CPC in CRM category",
-            "annual": "$35–$55/click"
+            "annual": "$35\u2013$55/click"
           },
           {
             "item": "Estimated clicks/month",
-            "annual": "~40–55 clicks"
+            "annual": "~40\u201355 clicks"
           },
           {
             "item": "Typical click-to-demo rate",
-            "annual": "5–15%"
+            "annual": "5\u201315%"
           },
           {
             "item": "Annual demos from Capterra",
-            "annual": "24–99"
+            "annual": "24\u201399"
           },
           {
             "item": "Cost per demo",
-            "annual": "$242–$1,000"
+            "annual": "$242\u2013$1,000"
           }
         ],
-        "total": "$24,000–$36,000/year",
-        "per_user_real": "$242–$1,000/demo"
+        "total": "$24,000\u2013$36,000/year",
+        "per_user_real": "$242\u2013$1,000/demo"
       },
       "bottom_line": "Capterra is a viable lead source for B2B software vendors, but cost efficiency varies dramatically by category. Niche categories with low competition can deliver cheap, qualified leads. Competitive categories like CRM, project management, and marketing automation have CPCs that make cost-per-demo comparable to LinkedIn ads. The free listing is worth claiming regardless; paid placement requires careful ROI tracking.",
       "faq": [
@@ -7028,6 +7028,554 @@
           "a": "Beyond licensing, plan for: implementation services ($15K-$50K), a dedicated Gainsight admin (internal hire or contractor), and ongoing configuration as your CS processes evolve. Total first-year cost is typically 2-3x the annual license fee."
         }
       ]
+    },
+    {
+      "slug": "trustradius-pricing",
+      "tool_slug": "trustradius",
+      "title": "TrustRadius Pricing (2026): What Vendors Actually Pay",
+      "meta_description": "TrustRadius pricing for vendors: listing costs, intent data packages, and how it compares to G2 and Capterra for B2B review platform spend.",
+      "hook": "TrustRadius offers a free basic listing, but the features that matter (intent data, TrustQuotes, enhanced profiles) require paid plans that start around $15K/year.",
+      "tiers": [
+        {
+          "name": "Free Listing",
+          "price": "Free",
+          "billing": "N/A",
+          "highlights": [
+            "Basic product profile",
+            "Collect verified reviews",
+            "Category listing",
+            "Limited analytics"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price": "Custom (~$15K+/year)",
+          "billing": "Annual",
+          "highlights": [
+            "Enhanced profile with media",
+            "TrustQuotes for your website",
+            "Basic buyer intent signals",
+            "Review syndication"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "Custom (~$30K+/year)",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Full buyer intent data",
+            "Salesforce and HubSpot integration",
+            "Competitive benchmarking",
+            "Advanced analytics dashboard"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom (~$50K+/year)",
+          "billing": "Annual",
+          "highlights": [
+            "ABM platform integrations (6sense, Demandbase)",
+            "Custom intent segments",
+            "API access",
+            "Dedicated customer success manager"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Review generation campaigns",
+          "range": "$5K-$10K/year internal effort",
+          "note": "Soliciting verified reviews from customers requires coordinated outreach, incentives, and follow-up. Budget for CS team time."
+        },
+        {
+          "item": "ABM platform integration",
+          "range": "$25K-$80K/year additional",
+          "note": "TrustRadius intent data is most valuable when layered with 6sense or Demandbase, which are separate purchases."
+        },
+        {
+          "item": "Content creation for profile",
+          "range": "$2K-$5K one-time",
+          "note": "Enhanced profiles benefit from custom videos, case study highlights, and competitive positioning content."
+        },
+        {
+          "item": "Multi-year lock-in",
+          "range": "2-3 year contracts typical",
+          "note": "Discounts for multi-year commitments but early termination is difficult. Factor in the commitment horizon."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market SaaS vendor with 500 employees",
+        "line_items": [
+          {
+            "item": "TrustRadius Professional plan",
+            "annual": "$30,000"
+          },
+          {
+            "item": "Review generation campaigns (internal effort)",
+            "annual": "$7,500"
+          },
+          {
+            "item": "Profile content creation (amortized)",
+            "annual": "$2,500"
+          },
+          {
+            "item": "ABM integration setup (Year 1)",
+            "annual": "$5,000"
+          }
+        ],
+        "total": "$45,000/year",
+        "per_user_real": "N/A (vendor-level cost)"
+      },
+      "bottom_line": "TrustRadius is cheaper than G2 at comparable tiers but the buyer audience is smaller. The intent data is more specific (actual product research behavior) but narrower in coverage. Worth it for vendors selling to careful, research-heavy buyers. Less ROI for companies whose buyers don't actively research on review platforms.",
+      "faq": [
+        {
+          "q": "Is TrustRadius cheaper than G2?",
+          "a": "Generally yes. TrustRadius Professional ($30K-ish) provides similar features to G2's mid-tier offerings. G2's comparable packages typically run $35K-$60K+/year. The cost difference reflects G2's larger buyer audience and stronger brand recognition."
+        },
+        {
+          "q": "Can I use TrustRadius for free as a vendor?",
+          "a": "Yes. The free listing includes a basic profile and the ability to collect verified reviews. However, you won't have access to intent data, TrustQuotes, CRM integration, or enhanced profile features that drive the most value."
+        },
+        {
+          "q": "What's the ROI of TrustRadius for vendors?",
+          "a": "ROI depends on your sales cycle and buyer behavior. Companies with long sales cycles and research-heavy buyers see the most value from intent data and TrustQuotes. A typical mid-market vendor converting 2-3 additional deals per year from TrustRadius intent signals would justify the $25K-$35K annual cost."
+        }
+      ],
+      "date_published": "2026-02-20",
+      "date_modified": "2026-02-20"
+    },
+    {
+      "slug": "chili-piper-pricing",
+      "tool_slug": "chili-piper",
+      "title": "Chili Piper Pricing (2026): Plans, Costs, and What You Actually Need",
+      "meta_description": "Chili Piper pricing breakdown: Concierge, Distro, and Handoff costs per user. What mid-market teams actually pay for inbound conversion.",
+      "hook": "Chili Piper's pricing starts at $150/user/month for Concierge (instant booking). Most teams need Concierge + Distro, pushing real costs to $200+/user/month.",
+      "tiers": [
+        {
+          "name": "Instant Booker",
+          "price": "$15/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Basic scheduling links",
+            "Calendar integration",
+            "Meeting reminders",
+            "No form integration"
+          ]
+        },
+        {
+          "name": "Concierge",
+          "price": "$150/user/mo",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Instant booking from forms",
+            "Lead qualification logic",
+            "Salesforce routing",
+            "Custom booking flows"
+          ]
+        },
+        {
+          "name": "Distro",
+          "price": "$75/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Inbound lead routing",
+            "Round-robin assignment",
+            "Account-based routing",
+            "Salesforce-native rules"
+          ]
+        },
+        {
+          "name": "Handoff",
+          "price": "$75/user/mo",
+          "billing": "Annual",
+          "highlights": [
+            "Meeting-to-meeting transitions",
+            "Multi-stage booking",
+            "Rep-to-rep scheduling",
+            "Automated follow-up booking"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Concierge + Distro bundle",
+          "range": "$225/user/mo",
+          "note": "Most teams need both products. Concierge alone handles booking but not intelligent routing."
+        },
+        {
+          "item": "Salesforce admin setup",
+          "range": "$5K-$15K one-time",
+          "note": "Complex routing rules require Salesforce admin expertise to configure lead assignment, territory checks, and custom field routing."
+        },
+        {
+          "item": "Linear per-user scaling",
+          "range": "10 reps = $22K+/year",
+          "note": "Per-user pricing means costs scale linearly. A 30-person team on Concierge alone costs $54K/year."
+        },
+        {
+          "item": "Implementation and training",
+          "range": "2-4 weeks RevOps time",
+          "note": "Mapping existing routing logic to Chili Piper's system requires RevOps planning and testing."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "15-person sales team using Concierge + Distro",
+        "line_items": [
+          {
+            "item": "15 Concierge licenses",
+            "annual": "$27,000"
+          },
+          {
+            "item": "15 Distro licenses",
+            "annual": "$13,500"
+          },
+          {
+            "item": "Salesforce routing setup (Year 1)",
+            "annual": "$10,000"
+          },
+          {
+            "item": "RevOps implementation time",
+            "annual": "$5,000"
+          }
+        ],
+        "total": "$55,500/year (Year 1)",
+        "per_user_real": "$225/user/mo ongoing"
+      },
+      "bottom_line": "Chili Piper is expensive per-seat but the ROI math is straightforward: if you convert 20 more meetings per month at a $5K average pipeline value, that's $100K in monthly pipeline from a tool costing $3K-$5K/month. High-volume inbound teams recover the cost quickly. Low-volume teams (<20 inbound leads/month) should use Calendly instead.",
+      "faq": [
+        {
+          "q": "Is Chili Piper worth the price?",
+          "a": "For teams processing 50+ inbound demo requests monthly, almost always yes. The typical form-to-meeting conversion lift (30% to 60%+) generates enough incremental pipeline to cover the cost within 1-2 months. For teams with fewer than 20 monthly inbound requests, the math is harder to justify."
+        },
+        {
+          "q": "Can I just use Concierge without Distro?",
+          "a": "Yes, but you'll miss the routing intelligence. Concierge alone handles instant booking but routes based on simple round-robin. Distro adds territory-based routing, account ownership checks, and complex assignment logic. Most teams with 10+ reps and defined territories need both."
+        },
+        {
+          "q": "How does Chili Piper pricing compare to Calendly?",
+          "a": "Calendly Teams costs $16/user/month vs. Chili Piper Concierge at $150/user/month. The 10x price difference reflects fundamentally different products: Calendly is a scheduling tool, Chili Piper is a demand conversion platform with lead routing, qualification, and CRM integration built in."
+        }
+      ],
+      "date_published": "2026-02-20",
+      "date_modified": "2026-02-20"
+    },
+    {
+      "slug": "leandata-pricing",
+      "tool_slug": "leandata",
+      "title": "LeanData Pricing (2026): What Revenue Teams Actually Pay",
+      "meta_description": "LeanData pricing for lead routing and matching: plan costs, implementation fees, and what mid-market Salesforce teams actually spend.",
+      "hook": "LeanData's pricing is org-based (not per-user), typically starting at $30K/year for mid-market companies. Enterprise implementations with matching and deduplication run $50K-$100K+.",
+      "tiers": [
+        {
+          "name": "Routing",
+          "price": "Custom (~$25K+/year)",
+          "billing": "Annual",
+          "highlights": [
+            "Visual FlowBuilder routing",
+            "Round-robin assignment",
+            "Salesforce-native logic",
+            "Basic reporting"
+          ]
+        },
+        {
+          "name": "Matching + Routing",
+          "price": "Custom (~$40K+/year)",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Lead-to-account matching",
+            "Fuzzy matching algorithm",
+            "Visual routing flows",
+            "Audit trail and reporting"
+          ]
+        },
+        {
+          "name": "Full Platform",
+          "price": "Custom (~$60K+/year)",
+          "billing": "Annual",
+          "highlights": [
+            "Matching + routing + deduplication",
+            "Merge rules and automation",
+            "Advanced analytics",
+            "Priority support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Implementation partner",
+          "range": "$10K-$30K one-time",
+          "note": "Complex routing logic migration from native Salesforce rules to LeanData FlowBuilder typically requires a certified partner."
+        },
+        {
+          "item": "Salesforce admin configuration",
+          "range": "2-6 weeks",
+          "note": "Initial FlowBuilder setup requires deep Salesforce expertise to model territories, named accounts, and edge cases."
+        },
+        {
+          "item": "CRM data cleanup",
+          "range": "$5K-$15K",
+          "note": "Matching quality depends on CRM data quality. Deduplication and data standardization before implementation improves accuracy."
+        },
+        {
+          "item": "Annual price increases",
+          "range": "5-10%/year",
+          "note": "Renewal price increases of 5-10% are common. Lock in multi-year pricing during initial negotiation."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market company with 50 sales reps, complex territories",
+        "line_items": [
+          {
+            "item": "LeanData Matching + Routing",
+            "annual": "$45,000"
+          },
+          {
+            "item": "Implementation partner (Year 1, amortized)",
+            "annual": "$15,000"
+          },
+          {
+            "item": "CRM data cleanup (Year 1)",
+            "annual": "$8,000"
+          },
+          {
+            "item": "Salesforce admin time (ongoing)",
+            "annual": "$5,000"
+          }
+        ],
+        "total": "$73,000 (Year 1), $50,000/year ongoing",
+        "per_user_real": "$75/user/mo (org-wide cost spread across 50 reps)"
+      },
+      "bottom_line": "LeanData is expensive but it solves a problem that costs more money than the tool itself. If misrouted leads, duplicate accounts, and manual routing are eating your team's time and pipeline, LeanData pays for itself through recovered revenue. If your routing is simple (one territory, round-robin only), native Salesforce assignment rules are sufficient.",
+      "faq": [
+        {
+          "q": "Is LeanData pricing per-user or per-org?",
+          "a": "Per-org (per Salesforce instance), not per-user. This means the cost doesn't scale linearly with team size, which makes it more cost-effective for larger teams. A 50-person team and a 200-person team might pay similar amounts."
+        },
+        {
+          "q": "Do I need an implementation partner for LeanData?",
+          "a": "Not required but recommended for companies with complex routing logic. LeanData's FlowBuilder is drag-and-drop, but translating your existing routing rules (territories, named accounts, partner leads, customer expansion) into flowcharts takes Salesforce expertise. Most mid-market companies spend 4-8 weeks on implementation."
+        },
+        {
+          "q": "How does LeanData pricing compare to Chili Piper Distro?",
+          "a": "Different pricing models: LeanData is per-org ($30K-$60K+/year) while Chili Piper Distro is per-user ($75/user/month). For small teams (<15 reps), Chili Piper Distro can be cheaper. For larger teams (50+ reps), LeanData's flat pricing is more economical. LeanData also includes matching and deduplication that Chili Piper doesn't offer."
+        }
+      ],
+      "date_published": "2026-02-20",
+      "date_modified": "2026-02-20"
+    },
+    {
+      "slug": "highspot-pricing",
+      "tool_slug": "highspot",
+      "title": "Highspot Pricing (2026): What Sales Enablement Actually Costs",
+      "meta_description": "Highspot pricing breakdown: per-user costs, implementation fees, and how it compares to Seismic and Showpad for sales enablement.",
+      "hook": "Highspot pricing is not publicly listed but typically runs $75-$150/user/month depending on features. A 50-person sales team should budget $50K-$100K/year.",
+      "tiers": [
+        {
+          "name": "Essential",
+          "price": "Custom (~$75/user/mo)",
+          "billing": "Annual",
+          "highlights": [
+            "Content management and search",
+            "Basic analytics",
+            "CRM integration",
+            "Content sharing"
+          ]
+        },
+        {
+          "name": "Professional",
+          "price": "Custom (~$100/user/mo)",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Digital sales rooms",
+            "Sales plays and playbooks",
+            "Advanced content analytics",
+            "Buyer engagement tracking"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom (~$150/user/mo)",
+          "billing": "Annual",
+          "highlights": [
+            "Training and coaching platform",
+            "Certifications and assessments",
+            "Custom integrations",
+            "Dedicated customer success"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Content migration",
+          "range": "$10K-$25K",
+          "note": "Moving content from SharePoint, Google Drive, or Box requires taxonomy design, metadata tagging, and quality review."
+        },
+        {
+          "item": "Content governance design",
+          "range": "1-2 months marketing ops time",
+          "note": "Taxonomy, permissions, and content lifecycle management need upfront design to avoid Highspot becoming another dumping ground."
+        },
+        {
+          "item": "Adjacent team licenses",
+          "range": "$75-$150/user/mo per team",
+          "note": "Extending Highspot to marketing, CS, or partner teams multiplies licensing costs quickly."
+        },
+        {
+          "item": "Professional services",
+          "range": "$15K-$30K Year 1",
+          "note": "Implementation, content migration, and training are typically delivered by Highspot professional services at additional cost."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "60-person sales team on Professional plan",
+        "line_items": [
+          {
+            "item": "60 Professional licenses",
+            "annual": "$72,000"
+          },
+          {
+            "item": "Implementation services (Year 1)",
+            "annual": "$20,000"
+          },
+          {
+            "item": "Content migration and taxonomy",
+            "annual": "$15,000"
+          },
+          {
+            "item": "Training and onboarding",
+            "annual": "$5,000"
+          }
+        ],
+        "total": "$112,000 (Year 1), $75,000/year ongoing",
+        "per_user_real": "$100/user/mo"
+      },
+      "bottom_line": "Highspot is a premium tool with premium pricing. It's worth it for sales orgs with 50+ reps, active content creation programs, and the discipline to maintain content governance. For smaller teams or teams without dedicated sales enablement staff, Notion, Google Drive, or a simpler tool like Guru provides 70% of the value at 20% of the cost.",
+      "faq": [
+        {
+          "q": "Is Highspot cheaper than Seismic?",
+          "a": "They're in the same pricing range ($75-$150/user/month), though specific quotes vary. Seismic tends to be slightly more expensive at the enterprise tier due to more customization options. Both require annual contracts and have similar implementation costs."
+        },
+        {
+          "q": "Is there a Highspot free tier?",
+          "a": "No. Highspot is enterprise software with custom pricing and annual contracts. There is no free tier, freemium model, or self-serve signup. A sales conversation is required to get pricing."
+        },
+        {
+          "q": "How many users do I need for Highspot to be worthwhile?",
+          "a": "Most companies find ROI with 30-50+ sales reps. Below that threshold, the per-user cost and implementation effort are harder to justify. Smaller teams can use Google Drive or Notion with good folder structure and get 70% of the content management value for free."
+        }
+      ],
+      "date_published": "2026-02-20",
+      "date_modified": "2026-02-20"
+    },
+    {
+      "slug": "churnzero-pricing",
+      "tool_slug": "churnzero",
+      "title": "ChurnZero Pricing (2026): What SaaS CS Teams Actually Pay",
+      "meta_description": "ChurnZero pricing for customer success teams: plan costs, implementation fees, and how it compares to Gainsight and Totango.",
+      "hook": "ChurnZero pricing is account-based, typically starting at $12K-$15K/year for small implementations. Mid-market SaaS companies with 500-3,000 accounts should budget $30K-$60K/year.",
+      "tiers": [
+        {
+          "name": "Startup",
+          "price": "Custom (~$12K+/year)",
+          "billing": "Annual",
+          "highlights": [
+            "Health scoring",
+            "Basic playbooks",
+            "CRM integration",
+            "Up to 500 accounts"
+          ]
+        },
+        {
+          "name": "Growth",
+          "price": "Custom (~$30K+/year)",
+          "billing": "Annual",
+          "popular": true,
+          "highlights": [
+            "Advanced playbooks",
+            "Product usage tracking",
+            "In-app messaging",
+            "Renewal forecasting"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom (~$60K+/year)",
+          "billing": "Annual",
+          "highlights": [
+            "Custom dashboards",
+            "Advanced segmentation",
+            "API access",
+            "Dedicated CS manager",
+            "Multi-product support"
+          ]
+        }
+      ],
+      "hidden_costs": [
+        {
+          "item": "Product usage tracking setup",
+          "range": "2-4 weeks engineering time",
+          "note": "JavaScript snippet or API integration required to send product usage events to ChurnZero. This is the biggest implementation variable."
+        },
+        {
+          "item": "Health score calibration",
+          "range": "2-4 weeks CS ops time",
+          "note": "Designing meaningful health scores requires selecting metrics, setting weights, and iterating based on actual churn correlation."
+        },
+        {
+          "item": "CRM data cleanup",
+          "range": "$3K-$8K",
+          "note": "Health score accuracy depends on clean account and contact data in Salesforce or HubSpot. Garbage in, garbage out."
+        },
+        {
+          "item": "CSM training",
+          "range": "1-2 weeks",
+          "note": "CSMs need training on playbook creation, health score interpretation, and in-app messaging to realize full value."
+        }
+      ],
+      "real_cost_example": {
+        "scenario": "Mid-market SaaS with 1,500 accounts and 8 CSMs",
+        "line_items": [
+          {
+            "item": "ChurnZero Growth plan",
+            "annual": "$40,000"
+          },
+          {
+            "item": "Implementation services",
+            "annual": "$10,000"
+          },
+          {
+            "item": "Engineering time for usage tracking (Year 1)",
+            "annual": "$8,000"
+          },
+          {
+            "item": "Health score design and calibration",
+            "annual": "$5,000"
+          }
+        ],
+        "total": "$63,000 (Year 1), $42,000/year ongoing",
+        "per_user_real": "N/A (account-based pricing)"
+      },
+      "bottom_line": "ChurnZero offers the best price-to-capability ratio in customer success platforms. If you're a SaaS company with 100-5,000 accounts and want product-usage-driven health scores without Gainsight's complexity and cost, ChurnZero is the clear choice. For enterprise companies with 10,000+ accounts, multiple product lines, and 30+ CSMs, Gainsight's deeper customization may justify its premium.",
+      "faq": [
+        {
+          "q": "Is ChurnZero cheaper than Gainsight?",
+          "a": "Yes, typically 40-60% less expensive for comparable implementations. A ChurnZero deployment that costs $35K-$45K/year would cost $70K-$100K+/year with Gainsight. The cost difference reflects Gainsight's deeper enterprise customization, larger partner ecosystem, and more sophisticated journey orchestration."
+        },
+        {
+          "q": "Is ChurnZero pricing per-user or per-account?",
+          "a": "ChurnZero pricing is primarily based on the number of customer accounts you're managing, not the number of CSM users. This means adding more CSMs doesn't dramatically increase costs, which is favorable for growing CS teams."
+        },
+        {
+          "q": "What's the minimum viable ChurnZero implementation?",
+          "a": "At minimum, you need CRM integration (Salesforce or HubSpot) and basic health scoring. This takes 2-3 weeks and costs $12K-$15K/year. Adding product usage tracking (the biggest value driver) requires engineering resources and extends setup by 2-4 weeks. Most companies start with CRM-based health scores and add usage tracking within 3-6 months."
+        }
+      ],
+      "date_published": "2026-02-20",
+      "date_modified": "2026-02-20"
     }
   ]
 }

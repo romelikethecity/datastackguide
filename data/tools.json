@@ -1060,6 +1060,84 @@
       "salary_max": 148000,
       "is_service": false,
       "db_category": "Customer_Success"
+    },
+    {
+      "name": "TrustRadius",
+      "slug": "trustradius",
+      "description": "",
+      "categories": [
+        "review-platforms",
+        "intent"
+      ],
+      "primary_category": "review-platforms",
+      "job_count": 19,
+      "unique_companies": 14,
+      "salary_min": 65000,
+      "salary_max": 145000,
+      "is_service": false,
+      "db_category": "Review_Platform"
+    },
+    {
+      "name": "Chili Piper",
+      "slug": "chili-piper",
+      "description": "",
+      "categories": [
+        "list-building",
+        "orchestration"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 16,
+      "unique_companies": 12,
+      "salary_min": 70000,
+      "salary_max": 155000,
+      "is_service": false,
+      "db_category": "Demand_Conversion"
+    },
+    {
+      "name": "LeanData",
+      "slug": "leandata",
+      "description": "",
+      "categories": [
+        "orchestration",
+        "data-quality"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 15,
+      "unique_companies": 11,
+      "salary_min": 75000,
+      "salary_max": 160000,
+      "is_service": false,
+      "db_category": "Revenue_Orchestration"
+    },
+    {
+      "name": "Highspot",
+      "slug": "highspot",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 13,
+      "unique_companies": 10,
+      "salary_min": 70000,
+      "salary_max": 150000,
+      "is_service": false,
+      "db_category": "Sales_Enablement"
+    },
+    {
+      "name": "ChurnZero",
+      "slug": "churnzero",
+      "description": "",
+      "categories": [
+        "customer-success"
+      ],
+      "primary_category": "customer-success",
+      "job_count": 11,
+      "unique_companies": 8,
+      "salary_min": 65000,
+      "salary_max": 140000,
+      "is_service": false,
+      "db_category": "Customer_Success"
     }
   ]
 }
