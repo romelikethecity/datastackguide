@@ -83,6 +83,31 @@ const schema = {
     </div>
   </section>
 
+  <!-- Newsletter CTA + Social Proof -->
+  <section class="section newsletter-hero-section">
+    <div class="container">
+      <NewsletterCTA variant="banner" heading="This data changes every week" subtext="Get the latest tool demand trends, pricing shifts, and stack recommendations delivered every Tuesday. Free." />
+
+      <div class="logo-bar">
+        <p class="logo-bar-label">Tracking hiring data from {totalCompanies.toLocaleString()}+ companies including</p>
+        <div class="logo-bar-row">
+          <img src="https://logo.clearbit.com/salesforce.com" alt="Salesforce" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/amazon.com" alt="Amazon" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/deloitte.com" alt="Deloitte" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/brex.com" alt="Brex" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/jpmorganchase.com" alt="JPMorgan Chase" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/klaviyo.com" alt="Klaviyo" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/globalpayments.com" alt="Global Payments" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/thermofisher.com" alt="Thermo Fisher" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/apollo.io" alt="Apollo" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/statestreet.com" alt="State Street" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/knowbe4.com" alt="KnowBe4" width="36" height="36" loading="lazy" />
+          <img src="https://logo.clearbit.com/launchdarkly.com" alt="LaunchDarkly" width="36" height="36" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Categories -->
   <section class="section">
     <div class="container">
@@ -127,13 +152,6 @@ const schema = {
       <div class="section-cta">
         <a href="/tools/" class="btn-outline">View all tools →</a>
       </div>
-    </div>
-  </section>
-
-  <!-- Newsletter CTA -->
-  <section class="section">
-    <div class="container">
-      <NewsletterCTA variant="banner" heading="This data changes every week" subtext="Get the latest tool demand trends, pricing shifts, and stack recommendations delivered every Tuesday. Free." />
     </div>
   </section>
 
@@ -255,6 +273,43 @@ const schema = {
   .stat-label {
     font-size: var(--text-sm);
     color: var(--teal-200);
+  }
+
+  .newsletter-hero-section {
+    padding: var(--space-10) 0 var(--space-12);
+    background: var(--slate-900);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .logo-bar {
+    margin-top: var(--space-8);
+    text-align: center;
+  }
+
+  .logo-bar-label {
+    font-size: var(--text-sm);
+    color: var(--slate-400);
+    margin-bottom: var(--space-4);
+  }
+
+  .logo-bar-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .logo-bar-row img {
+    border-radius: 6px;
+    filter: grayscale(100%) brightness(0.7);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+
+  .logo-bar-row img:hover {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
   }
 
   .section {
@@ -381,6 +436,15 @@ const schema = {
     .hero-stats {
       flex-direction: column;
       gap: var(--space-4);
+    }
+
+    .logo-bar-row {
+      gap: var(--space-4);
+    }
+
+    .logo-bar-row img {
+      width: 28px;
+      height: 28px;
     }
   }
 </style>
