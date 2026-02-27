@@ -21,6 +21,10 @@ echo "=========================================="
 echo "Data Stack Weekly — $(date)"
 echo "=========================================="
 
+# Pull latest code
+echo "[0/3] Pulling latest..."
+git pull --rebase --autostash 2>&1 || echo "Warning: git pull failed, running with current code"
+
 # Load .env if present
 if [ -f .env ]; then
     set -a
