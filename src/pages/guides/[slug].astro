@@ -55,6 +55,7 @@ const allSchemas: object[] = [
     "@type": "Article",
     "headline": guide.title,
     "description": guide.meta_description,
+    "image": "https://datastackguide.com/assets/og-templates/og-default.png",
     "author": { "@type": "Person", "@id": "https://datastackguide.com/about/#rome" },
     "publisher": { "@type": "Organization", "@id": "https://datastackguide.com/#organization", "name": "DataStackGuide" },
     "datePublished": guide.date_published || '2026-02-01',
@@ -86,6 +87,8 @@ const guideTitle = guide.title.length <= 42 ? guide.title : guide.title.slice(0,
   ogType="article"
   canonicalPath={`guides/${guide.slug}/`}
   schemas={allSchemas}
+  datePublished={guide.date_published || '2026-02-01'}
+  dateModified={guide.date_modified || '2026-02-14'}
 >
   <div class="container-narrow">
     <Breadcrumbs items={breadcrumbItems} noSchema />

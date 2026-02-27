@@ -62,6 +62,7 @@ const allSchemas: object[] = [
     "@type": "Article",
     "headline": useCase.title,
     "description": useCase.meta_description,
+    "image": "https://datastackguide.com/assets/og-templates/og-default.png",
     "author": { "@type": "Person", "@id": "https://datastackguide.com/about/#rome" },
     "publisher": { "@type": "Organization", "@id": "https://datastackguide.com/#organization", "name": "DataStackGuide" },
     "datePublished": useCase.date_published || '2026-02-01',
@@ -95,6 +96,8 @@ const ucTitle = useCase.title.length <= 42 ? useCase.title : shortUcTitle.length
   ogType="article"
   canonicalPath={`use-cases/${useCase.slug}/`}
   schemas={allSchemas}
+  datePublished={useCase.date_published || '2026-02-01'}
+  dateModified={useCase.date_modified || '2026-02-14'}
 >
   <div class="container-narrow">
     <Breadcrumbs items={breadcrumbItems} noSchema />

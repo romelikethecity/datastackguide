@@ -61,6 +61,7 @@ const allSchemas: object[] = [
     "@type": "Article",
     "headline": roundup.title,
     "description": roundup.meta_description,
+    "image": "https://datastackguide.com/assets/og-templates/og-default.png",
     "author": {
       "@type": "Person",
       "@id": "https://datastackguide.com/about/#rome"
@@ -113,6 +114,8 @@ const bestTitle = roundup.title.length <= 42 ? roundup.title : shortRoundupTitle
   ogType="article"
   canonicalPath={`best/${roundup.slug}/`}
   schemas={allSchemas}
+  datePublished={roundup.date_published || '2026-02-01'}
+  dateModified={roundup.date_modified || '2026-02-14'}
 >
 
   <div class="container-narrow">

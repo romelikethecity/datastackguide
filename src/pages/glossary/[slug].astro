@@ -64,6 +64,7 @@ const relatedRoundups = (entry.related_roundups || [])
 
 const catName = getCategoryName(entry.category_slug);
 const catColor = getCategoryColor(entry.category_slug);
+const lastUpdated = new Date(entry.date_modified || '2026-02-14').toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
 // Keep title under 42 chars (+ " | DataStackGuide" suffix = 60 max)
 const fullTitle = `What is ${entry.term}? Definition & Guide`;
@@ -86,6 +87,7 @@ const allSchemas: object[] = [
     "@type": "Article",
     "headline": `What is ${entry.term}?`,
     "description": description,
+    "image": "https://datastackguide.com/assets/og-templates/og-default.png",
     "author": {
       "@type": "Person",
       "@id": "https://datastackguide.com/about/#rome"
@@ -107,28 +109,8 @@ const allSchemas: object[] = [
   buildBreadcrumbSchema(breadcrumbItems)
 ];
 
-// Build FAQPage schema from existing content
-if (entry.full_definition && entry.why_it_matters) {
-  const faqItems: { q: string; a: string }[] = [
-    { q: `What is ${entry.term}?`, a: entry.short_definition },
-    { q: `Why does ${entry.term} matter?`, a: entry.why_it_matters.split('. ').slice(0, 2).join('. ') + '.' },
-  ];
-  if (relatedTools.length > 0) {
-    const toolNames = relatedTools.slice(0, 5).map((t: any) => t.name).join(', ');
-    faqItems.push({ q: `What tools support ${entry.term}?`, a: `Popular ${entry.term} tools include ${toolNames}. See our full reviews for pricing and feature comparisons.` });
-  }
-  allSchemas.push({
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map((item) => ({
-      "@type": "Question",
-      "name": item.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.a
-      }
-    }))
-  });
-}
+// NOTE: Auto-generated FAQ schema removed (thin content that duplicates page content).
+// Only add FAQPage schema when glossary terms have dedicated, substantive FAQ data.
 ---
 
 <BaseLayout
@@ -137,6 +119,8 @@ if (entry.full_definition && entry.why_it_matters) {
   ogType="article"
   canonicalPath={`glossary/${entry.slug}/`}
   schemas={allSchemas}
+  datePublished={entry.date_published || '2026-02-01'}
+  dateModified={entry.date_modified || '2026-02-14'}
 >
   <div class="container-narrow">
     <Breadcrumbs items={breadcrumbItems} noSchema />
@@ -245,6 +229,7 @@ if (entry.full_definition && entry.why_it_matters) {
     </section>
 
     <div class="page-footer-info">
+      <p class="text-sm text-muted">Last updated: {lastUpdated}</p>
       <div class="disclosure">
         <p>DataStackGuide is independently operated. Our data comes from analyzing {totalJobs.toLocaleString()}+ real job postings. <a href="/about/">Learn more about us.</a></p>
       </div>

@@ -41,6 +41,7 @@ const allSchemas: object[] = [
     "@type": "Article",
     "headline": page.title,
     "description": page.meta_description,
+    "image": "https://datastackguide.com/assets/og-templates/og-default.png",
     "author": {
       "@type": "Person",
       "@id": "https://datastackguide.com/about/#rome"
@@ -105,6 +106,8 @@ const altTitle = page.title.length <= 42 ? page.title : shortAltTitle.length <= 
   ogType="article"
   canonicalPath={`alternatives/${page.slug}/`}
   schemas={allSchemas}
+  datePublished={page.date_published || '2026-02-01'}
+  dateModified={page.date_modified || '2026-02-14'}
 >
 
   <div class="container-narrow">

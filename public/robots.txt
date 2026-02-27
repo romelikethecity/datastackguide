@@ -2,22 +2,27 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
+# Allow AI bots for citation opportunities (AEO/GEO)
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Block low-value scrapers
+User-agent: CCBot
 Disallow: /
 
 User-agent: Bytespider

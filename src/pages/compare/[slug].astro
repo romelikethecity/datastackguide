@@ -52,6 +52,7 @@ const allSchemas: object[] = [
     "@type": "Article",
     "headline": comparison.title,
     "description": comparison.meta_description,
+    "image": "https://datastackguide.com/assets/og-templates/og-default.png",
     "author": {
       "@type": "Person",
       "@id": "https://datastackguide.com/about/#rome"
@@ -120,6 +121,8 @@ const compTitle = rawCompTitle.length <= 42 ? rawCompTitle : rawCompTitle.slice(
   ogType="article"
   canonicalPath={`compare/${comparison.slug}/`}
   schemas={allSchemas}
+  datePublished={comparison.date_published || '2026-02-01'}
+  dateModified={comparison.date_modified || '2026-02-14'}
 >
 
   <div class="container-narrow">

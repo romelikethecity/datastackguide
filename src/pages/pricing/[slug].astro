@@ -40,6 +40,7 @@ const allSchemas: object[] = [
     "@type": "Article",
     "headline": page.title,
     "description": page.meta_description,
+    "image": "https://datastackguide.com/assets/og-templates/og-default.png",
     "author": {
       "@type": "Person",
       "@id": "https://datastackguide.com/about/#rome"
@@ -107,6 +108,8 @@ const pricingTitle = page.title.length <= 42 ? page.title : shortPricingTitle.le
   ogType="article"
   canonicalPath={`pricing/${page.slug}/`}
   schemas={allSchemas}
+  datePublished={page.date_published || '2026-02-01'}
+  dateModified={page.date_modified || '2026-02-14'}
 >
   <div class="container-narrow">
     <Breadcrumbs items={breadcrumbItems} noSchema />
