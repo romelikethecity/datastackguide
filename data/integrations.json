@@ -46,8 +46,8 @@
           "a": "Duplicate records, field mapping conflicts, and API rate limits are the three most common issues. Set up deduplication rules before enabling sync, and audit field mappings quarterly to catch drift."
         }
       ],
-      "date_published": "2026-02-01",
-      "date_modified": "2026-02-14"
+      "date_published": "2026-02-14",
+      "date_modified": "2026-02-18"
     },
     {
       "slug": "salesforce-zoominfo",
@@ -95,8 +95,8 @@
           "a": "For contact and company data, largely yes. ZoomInfo can auto-fill name, title, email, phone, company, industry, revenue, and employee count. Reps still need to enter deal-specific data like opportunity details and notes."
         }
       ],
-      "date_published": "2026-02-01",
-      "date_modified": "2026-02-14"
+      "date_published": "2026-02-14",
+      "date_modified": "2026-02-22"
     },
     {
       "slug": "salesforce-linkedin-sales-navigator",
@@ -144,8 +144,8 @@
           "a": "No. Sales Navigator provides LinkedIn profile data (title, company, connections) but doesn't provide email addresses, direct phone numbers, or company firmographics. It complements enrichment tools rather than replacing them."
         }
       ],
-      "date_published": "2026-02-01",
-      "date_modified": "2026-02-14"
+      "date_published": "2026-02-14",
+      "date_modified": "2026-02-24"
     },
     {
       "slug": "salesforce-salesloft",
@@ -193,8 +193,8 @@
           "a": "No. Salesloft tracks outbound engagement activities, but Salesforce remains the system of record for deals, pipeline, forecasting, and reporting. They serve complementary functions."
         }
       ],
-      "date_published": "2026-02-01",
-      "date_modified": "2026-02-14"
+      "date_published": "2026-02-14",
+      "date_modified": "2026-02-18"
     },
     {
       "slug": "zoominfo-linkedin-sales-navigator",
@@ -242,8 +242,8 @@
           "a": "Partially. Apollo combines prospecting data with LinkedIn-like search filters and built-in sequencing. It's a strong single-tool alternative for teams that can't budget $30K+/year for ZoomInfo and Sales Navigator. The trade-off is slightly lower data accuracy and no LinkedIn social selling features."
         }
       ],
-      "date_published": "2026-02-01",
-      "date_modified": "2026-02-14"
+      "date_published": "2026-02-14",
+      "date_modified": "2026-02-18"
     },
     {
       "slug": "salesforce-marketo",
@@ -291,8 +291,8 @@
           "a": "Yes. Marketo's Sales Insight package embeds in both Classic and Lightning. Lightning users get the Marketo tab on lead, contact, and opportunity records with engagement history, scores, and best-bet rankings."
         }
       ],
-      "date_published": "2026-02-01",
-      "date_modified": "2026-02-14"
+      "date_published": "2026-02-14",
+      "date_modified": "2026-02-24"
     },
     {
       "slug": "hubspot-apollo",
@@ -340,8 +340,8 @@
           "a": "HubSpot CRM is free. Apollo's paid plans start at $49/user/month. A 5-person team gets a functional outbound stack for about $250/month total. Compare that to Salesforce + ZoomInfo, which starts at $25K+/year."
         }
       ],
-      "date_published": "2026-02-01",
-      "date_modified": "2026-02-14"
+      "date_published": "2026-02-14",
+      "date_modified": "2026-02-18"
     },
     {
       "slug": "salesforce-6sense",
@@ -389,8 +389,8 @@
           "a": "6sense pricing typically ranges from $30K-$60K/year depending on the number of accounts tracked and features included. The Salesforce integration is included in all plans. Total stack cost with Salesforce Enterprise: $50K-$100K/year for a mid-size team."
         }
       ],
-      "date_published": "2026-02-01",
-      "date_modified": "2026-02-14"
+      "date_published": "2026-02-14",
+      "date_modified": "2026-02-17"
     },
     {
       "slug": "hubspot-zoominfo",
@@ -438,8 +438,8 @@
           "a": "HubSpot's Breeze Intelligence (formerly Clearbit, acquired 2023) provides basic enrichment for company and contact data. ZoomInfo offers deeper coverage including direct dials, mobile numbers, org charts, and intent data. For enterprise-level data needs, ZoomInfo covers more ground."
         }
       ],
-      "date_published": "2026-02-01",
-      "date_modified": "2026-02-14"
+      "date_published": "2026-02-15",
+      "date_modified": "2026-02-21"
     },
     {
       "slug": "salesforce-salesforce-marketing-cloud",
@@ -486,8 +486,8 @@
           "a": "We found 26 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Salesforce Marketing Cloud in 28. The co-occurrence rate suggests this is a well-established pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-15",
+      "date_modified": "2026-02-24"
     },
     {
       "slug": "salesforce-g2",
@@ -530,8 +530,8 @@
           "a": "We found 23 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and G2 in 42. The co-occurrence rate suggests this is a well-established pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-15",
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "hubspot-marketo",
@@ -578,8 +578,8 @@
           "a": "We found 19 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Marketo (Adobe) in 36. The co-occurrence rate suggests this is a well-established pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-15",
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "hubspot-linkedin-sales-navigator",
@@ -626,8 +626,8 @@
           "a": "We found 18 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and LinkedIn Sales Navigator in 61. The co-occurrence rate suggests this is a well-established pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-15",
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "salesforce-dynamics-365",
@@ -670,8 +670,8 @@
           "a": "We found 16 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Microsoft Dynamics 365 in 65. The co-occurrence rate suggests this is a well-established pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-15",
+      "date_modified": "2026-02-25"
     },
     {
       "slug": "salesforce-apollo",
@@ -718,8 +718,8 @@
           "a": "We found 15 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Apollo.io in 37. The co-occurrence rate suggests this is a well-established pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-15",
+      "date_modified": "2026-02-21"
     },
     {
       "slug": "salesforce-clay",
@@ -766,8 +766,8 @@
           "a": "We found 14 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Clay in 26. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-15",
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "zoominfo-salesloft",
@@ -810,8 +810,8 @@
           "a": "We found 14 job postings mentioning both tools together. ZoomInfo appears in 85 total postings and Salesloft in 43. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-16",
+      "date_modified": "2026-02-22"
     },
     {
       "slug": "salesforce-instantly",
@@ -858,8 +858,8 @@
           "a": "We found 11 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Instantly in 38. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-16",
+      "date_modified": "2026-02-21"
     },
     {
       "slug": "hubspot-instantly",
@@ -906,8 +906,8 @@
           "a": "We found 9 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Instantly in 38. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-16",
+      "date_modified": "2026-02-19"
     },
     {
       "slug": "hubspot-salesforce-marketing-cloud",
@@ -954,8 +954,8 @@
           "a": "We found 9 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Salesforce Marketing Cloud in 28. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-16",
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "hubspot-salesloft",
@@ -1002,8 +1002,8 @@
           "a": "We found 9 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Salesloft in 43. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-16",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "salesforce-zapier",
@@ -1050,8 +1050,8 @@
           "a": "We found 9 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Zapier in 17. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-16",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "hubspot-zapier",
@@ -1098,8 +1098,8 @@
           "a": "We found 8 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Zapier in 17. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-16",
+      "date_modified": "2026-02-24"
     },
     {
       "slug": "salesforce-demandbase",
@@ -1146,8 +1146,8 @@
           "a": "We found 8 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Demandbase in 8. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-16",
+      "date_modified": "2026-02-19"
     },
     {
       "slug": "salesforce-zoho-crm",
@@ -1190,8 +1190,8 @@
           "a": "We found 8 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Zoho CRM in 20. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-17",
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "linkedin-sales-navigator-apollo",
@@ -1234,8 +1234,8 @@
           "a": "We found 8 job postings mentioning both tools together. LinkedIn Sales Navigator appears in 61 total postings and Apollo.io in 37. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-17",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "linkedin-sales-navigator-salesloft",
@@ -1278,8 +1278,8 @@
           "a": "We found 8 job postings mentioning both tools together. LinkedIn Sales Navigator appears in 61 total postings and Salesloft in 43. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-17",
+      "date_modified": "2026-02-25"
     },
     {
       "slug": "marketo-6sense",
@@ -1322,8 +1322,8 @@
           "a": "We found 8 job postings mentioning both tools together. Marketo (Adobe) appears in 36 total postings and 6sense in 22. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-17",
+      "date_modified": "2026-02-24"
     },
     {
       "slug": "marketo-salesforce-marketing-cloud",
@@ -1366,8 +1366,8 @@
           "a": "We found 8 job postings mentioning both tools together. Marketo (Adobe) appears in 36 total postings and Salesforce Marketing Cloud in 28. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-17",
+      "date_modified": "2026-02-22"
     },
     {
       "slug": "hubspot-clay",
@@ -1414,8 +1414,8 @@
           "a": "We found 7 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Clay in 26. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-17",
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "salesforce-linkedin-marketing",
@@ -1462,8 +1462,8 @@
           "a": "We found 7 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and LinkedIn Marketing Solutions in 9. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-17",
+      "date_modified": "2026-02-21"
     },
     {
       "slug": "hubspot-dynamics-365",
@@ -1506,8 +1506,8 @@
           "a": "We found 6 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Microsoft Dynamics 365 in 65. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-18",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "hubspot-zoho-crm",
@@ -1550,8 +1550,8 @@
           "a": "We found 6 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Zoho CRM in 20. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-18",
+      "date_modified": "2026-02-22"
     },
     {
       "slug": "zoominfo-apollo",
@@ -1594,8 +1594,8 @@
           "a": "We found 6 job postings mentioning both tools together. ZoomInfo appears in 85 total postings and Apollo.io in 37. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-18",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "salesloft-6sense",
@@ -1638,8 +1638,8 @@
           "a": "We found 6 job postings mentioning both tools together. Salesloft appears in 43 total postings and 6sense in 22. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-18",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "salesloft-apollo",
@@ -1682,8 +1682,8 @@
           "a": "We found 6 job postings mentioning both tools together. Salesloft appears in 43 total postings and Apollo.io in 37. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-18",
+      "date_modified": "2026-02-22"
     },
     {
       "slug": "marketo-linkedin-marketing",
@@ -1726,8 +1726,8 @@
           "a": "We found 6 job postings mentioning both tools together. Marketo (Adobe) appears in 36 total postings and LinkedIn Marketing Solutions in 9. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-18",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "hubspot-6sense",
@@ -1774,8 +1774,8 @@
           "a": "We found 5 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and 6sense in 22. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-18",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "hubspot-pipedrive",
@@ -1818,8 +1818,8 @@
           "a": "We found 5 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Pipedrive in 9. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-18",
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "salesforce-orum",
@@ -1866,8 +1866,8 @@
           "a": "We found 5 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Orum in 6. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-19",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "salesforce-outreach-io",
@@ -1914,8 +1914,8 @@
           "a": "We found 5 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Outreach in 7. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-19",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "salesforce-pipedrive",
@@ -1958,8 +1958,8 @@
           "a": "We found 5 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Pipedrive in 9. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-19",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "zoominfo-clay",
@@ -2002,8 +2002,8 @@
           "a": "We found 5 job postings mentioning both tools together. ZoomInfo appears in 85 total postings and Clay in 26. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-19",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "zoominfo-marketo",
@@ -2046,8 +2046,8 @@
           "a": "We found 5 job postings mentioning both tools together. ZoomInfo appears in 85 total postings and Marketo (Adobe) in 36. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-19",
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "dynamics-365-salesloft",
@@ -2094,8 +2094,8 @@
           "a": "We found 5 job postings mentioning both tools together. Microsoft Dynamics 365 appears in 65 total postings and Salesloft in 43. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-19",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "marketo-zapier",
@@ -2138,8 +2138,8 @@
           "a": "We found 5 job postings mentioning both tools together. Marketo (Adobe) appears in 36 total postings and Zapier in 17. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-19",
+      "date_modified": "2026-02-25"
     },
     {
       "slug": "6sense-demandbase",
@@ -2182,8 +2182,8 @@
           "a": "We found 5 job postings mentioning both tools together. 6sense appears in 22 total postings and Demandbase in 8. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-19",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "dynamics-365-6sense",
@@ -2231,7 +2231,7 @@
         }
       ],
       "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "tableau-power-bi",
@@ -2275,7 +2275,7 @@
         }
       ],
       "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "salesforce-tableau",
@@ -2319,7 +2319,7 @@
         }
       ],
       "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_modified": "2026-02-25"
     },
     {
       "slug": "salesforce-power-bi",
@@ -2363,7 +2363,7 @@
         }
       ],
       "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_modified": "2026-02-24"
     },
     {
       "slug": "tableau-looker",
@@ -2407,7 +2407,7 @@
         }
       ],
       "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "power-bi-looker",
@@ -2451,7 +2451,7 @@
         }
       ],
       "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "salesforce-looker",
@@ -2495,7 +2495,7 @@
         }
       ],
       "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_modified": "2026-02-23"
     },
     {
       "slug": "salesforce-clari",
@@ -2542,8 +2542,8 @@
           "a": "We found 16 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Clari in 48. The co-occurrence rate suggests this is a well-established pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-21",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "hubspot-tableau",
@@ -2586,8 +2586,8 @@
           "a": "We found 14 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Tableau in 412. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-21",
+      "date_modified": "2026-02-24"
     },
     {
       "slug": "hubspot-looker",
@@ -2630,8 +2630,8 @@
           "a": "We found 11 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Looker in 195. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-21",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "hubspot-power-bi",
@@ -2674,8 +2674,8 @@
           "a": "We found 11 job postings mentioning both tools together. HubSpot CRM appears in 432 total postings and Power BI in 358. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-21",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "salesforce-gainsight",
@@ -2718,8 +2718,8 @@
           "a": "We found 10 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Gainsight in 44. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-21",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "power-bi-dynamics-365",
@@ -2762,8 +2762,8 @@
           "a": "We found 9 job postings mentioning both tools together. Power BI appears in 358 total postings and Microsoft Dynamics 365 in 65. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-21",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "salesforce-braze",
@@ -2810,8 +2810,8 @@
           "a": "We found 8 job postings mentioning both tools together. Salesforce CRM appears in 1694 total postings and Braze in 52. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-21",
+      "date_modified": "2026-02-24"
     },
     {
       "slug": "tableau-marketo",
@@ -2854,8 +2854,8 @@
           "a": "We found 8 job postings mentioning both tools together. Tableau appears in 412 total postings and Marketo (Adobe) in 36. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-21",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "braze-g2",
@@ -2898,8 +2898,8 @@
           "a": "We found 7 job postings mentioning both tools together. Braze appears in 52 total postings and G2 in 42. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-22",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "zoominfo-clari",
@@ -2942,8 +2942,8 @@
           "a": "We found 6 job postings mentioning both tools together. ZoomInfo appears in 85 total postings and Clari in 48. The co-occurrence rate suggests this is a growing pairing in B2B tech stacks."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-22",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "salesforce-trustradius",
@@ -3003,8 +3003,8 @@
           "a": "TrustRadius tends to attract more enterprise and mid-market buyers, while G2 skews toward SMB. Running both gives broader buyer coverage. The Salesforce integration works similarly for both platforms, so the marginal effort is low if you already have one review platform connected."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-22",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "salesforce-churnzero",
@@ -3064,8 +3064,8 @@
           "a": "ChurnZero requires Salesforce Professional edition or higher with API access enabled. Professional edition users need the API add-on ($25/user/month). Enterprise and Unlimited editions include API access by default."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-22",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "salesforce-leandata",
@@ -3125,8 +3125,8 @@
           "a": "Yes. LeanData routes leads after they land in Salesforce, regardless of the source. Leads synced from HubSpot, web forms, third-party enrichment tools, or manual entry all flow through LeanData's routing engine identically."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-22",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "salesforce-chili-piper",
@@ -3186,8 +3186,8 @@
           "a": "Yes, but you need API access enabled on Salesforce Professional, which is an add-on. Chili Piper writes leads, contacts, events, and tasks to Salesforce via API, so this access is mandatory for the integration to function."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-22",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "salesforce-highspot",
@@ -3247,8 +3247,8 @@
           "a": "Yes. Highspot has integrations for both Salesforce and HubSpot CRM. The feature set is comparable across both CRM platforms, though the Salesforce integration has been available longer and tends to be more mature."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-22",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "hubspot-chili-piper",
@@ -3308,8 +3308,8 @@
           "a": "If no reps have available time slots during the prospect's preferred window, Chili Piper shows the next available time across all qualified reps. You can also configure it to offer a callback request or drop into a standard thank-you page flow for off-hours submissions."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-22",
+      "date_modified": "2026-02-25"
     },
     {
       "slug": "hubspot-highspot",
@@ -3369,8 +3369,8 @@
           "a": "The technical connection takes a few hours. The real time investment is content migration, tagging, and governance setup, which typically takes 4-8 weeks for a library of 200+ assets. Plan for at least two weeks of pilot testing with a small rep group before full rollout."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-23",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "hubspot-churnzero",
@@ -3430,8 +3430,8 @@
           "a": "The CRM integration takes 1-2 weeks to configure. Product usage tracking setup adds another 2-4 weeks depending on engineering resources. Most teams start seeing actionable health scores and churn predictions within 60-90 days of initial data flowing in."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-23",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "hubspot-leandata",
@@ -3491,8 +3491,8 @@
           "a": "Yes, and this is a common scenario. LeanData supports both CRMs, so you can maintain routing logic during migration. However, the routing flows need to be rebuilt for HubSpot's data model since Salesforce leads/contacts are structured differently than HubSpot contacts."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-23",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "zoominfo-leandata",
@@ -3552,8 +3552,8 @@
           "a": "Yes. LeanData routes based on CRM fields, regardless of which enrichment tool populated them. Apollo, Clearbit, or any enrichment provider that writes to your CRM fields will work with LeanData's routing engine. The key is ensuring enrichment fires before routing."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-23",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "zoominfo-highspot",
@@ -3613,8 +3613,8 @@
           "a": "For teams under 10 reps, the combined cost of ZoomInfo and Highspot (likely $30K-50K/year together) may be hard to justify. Smaller teams can get similar results with Apollo for data and Google Drive or Notion for content management. The ZoomInfo-Highspot combination pays off when personalization at scale becomes a bottleneck."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-23",
+      "date_modified": "2026-02-27"
     },
     {
       "slug": "g2-trustradius",
@@ -3674,8 +3674,8 @@
           "a": "Yes. Both platforms offer Salesforce and HubSpot integrations for pushing intent data into CRM records. You can also feed both into ABM platforms like 6sense or Demandbase. Set up deduplication rules to prevent the same account from being double-counted when they research on both platforms."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-23",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "clay-leandata",
@@ -3735,8 +3735,8 @@
           "a": "For teams under 10 reps, probably yes. Clay's value shines at scale (building lists of hundreds or thousands of prospects). LeanData is most useful when routing complexity exceeds what basic CRM assignment rules can handle. A small team can usually manage with a simpler enrichment tool and native CRM routing until they hit 15-20 reps."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-23",
+      "date_modified": "2026-02-26"
     },
     {
       "slug": "gainsight-churnzero",
@@ -3796,8 +3796,8 @@
           "a": "Employers want CS leaders who understand the category, not just one vendor's tool. Experience with both platforms signals that a candidate can evaluate, implement, and optimize CS operations regardless of which specific tool the company uses. It also indicates the candidate can manage a platform migration if needed."
         }
       ],
-      "date_published": "2026-02-20",
-      "date_modified": "2026-02-20"
+      "date_published": "2026-02-24",
+      "date_modified": "2026-02-27"
     }
   ]
 }

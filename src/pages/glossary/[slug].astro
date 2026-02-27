@@ -83,6 +83,23 @@ const breadcrumbItems = [
 
 const allSchemas: object[] = [
   {
+    "@type": "Article",
+    "headline": `What is ${entry.term}?`,
+    "description": description,
+    "author": {
+      "@type": "Person",
+      "@id": "https://datastackguide.com/about/#rome"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://datastackguide.com/#organization",
+      "name": "DataStackGuide",
+      "url": "https://datastackguide.com"
+    },
+    "datePublished": entry.date_published || '2026-02-01',
+    "dateModified": entry.date_modified || '2026-02-14'
+  },
+  {
     "@type": "DefinedTerm",
     "name": entry.term,
     "description": entry.short_definition

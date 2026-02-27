@@ -66,6 +66,47 @@ const trendPoints = months.map((month: string) => {
   return { month, mentions: entry?.mentions || 0 };
 }).filter((p: any) => p.mentions > 0);
 
+// Calculate trend direction from last 2 data points
+// Requires both months to have 100+ mentions (full-scale dataset) to avoid
+// misleading % from dataset size changes between scraping phases
+let trendLabel = '';
+let trendDirection = '';
+if (trendPoints.length >= 1) {
+  const latest = trendPoints[trendPoints.length - 1].mentions;
+  const prev = trendPoints.length >= 2 ? trendPoints[trendPoints.length - 2].mentions : 0;
+  if (prev >= 100 && latest >= 100) {
+    const pctChange = Math.round(((latest - prev) / prev) * 100);
+    if (pctChange > 10) {
+      trendLabel = `+${pctChange}% MoM`;
+      trendDirection = 'up';
+    } else if (pctChange < -10) {
+      trendLabel = `${pctChange}% MoM`;
+      trendDirection = 'down';
+    } else {
+      trendLabel = 'Stable';
+      trendDirection = 'stable';
+    }
+  }
+}
+
+// Seniority distribution
+const seniority = details.seniority || {};
+const seniorityGroups = [
+  { label: 'VP+', keys: ['vp', 'svp', 'evp', 'c_level', 'head_of', 'head'] },
+  { label: 'Director', keys: ['director'] },
+  { label: 'Manager', keys: ['manager', 'senior_manager'] },
+  { label: 'Senior IC', keys: ['senior', 'lead'] },
+  { label: 'Mid-Level', keys: ['mid', 'specialist', 'analyst'] },
+  { label: 'Entry', keys: ['entry', 'associate'] },
+];
+const seniorityBars = seniorityGroups
+  .map(g => ({
+    label: g.label,
+    count: g.keys.reduce((sum: number, k: string) => sum + ((seniority as any)[k] || 0), 0)
+  }))
+  .filter(s => s.count > 0);
+const totalSeniorityJobs = seniorityBars.reduce((sum: number, s: any) => sum + s.count, 0);
+
 // Get alternative tools info
 const alternativeSlugs = content.alternatives || [];
 const alternativeTools = alternativeSlugs
@@ -273,6 +314,14 @@ if (content.faq?.length > 0) {
             <span class="fact-value">{salaryRange}</span>
           </div>
         )}
+        {trendLabel && (
+          <div class="fact">
+            <span class="fact-label">Demand Trend</span>
+            <span class={`fact-value trend-${trendDirection}`}>
+              {trendDirection === 'up' && '▲ '}{trendDirection === 'down' && '▼ '}{trendDirection === 'stable' && '● '}{trendLabel}
+            </span>
+          </div>
+        )}
       </div>
     </section>
 
@@ -403,6 +452,27 @@ if (content.faq?.length > 0) {
               </div>
             </div>
           )}
+
+          <!-- Seniority Distribution -->
+          {seniorityBars.length > 0 && totalSeniorityJobs > 10 && (
+            <div class="demand-card card">
+              <h3>Seniority Level</h3>
+              <div class="bar-chart">
+                {seniorityBars.map((s: any) => {
+                  const pct = Math.round((s.count / totalSeniorityJobs) * 100);
+                  return (
+                    <div class="bar-row">
+                      <span class="bar-label">{s.label}</span>
+                      <div class="bar-track">
+                        <div class="bar-fill" style={`width: ${pct}%; background: ${primaryCatColor};`}></div>
+                      </div>
+                      <span class="bar-value mono">{pct}%</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
 
         <!-- Additional stats row -->
@@ -417,8 +487,8 @@ if (content.faq?.length > 0) {
             <div class="stat-item stat-titles">
               <span class="stat-label">Top Job Titles</span>
               <ul>
-                {topTitles.slice(0, 3).map((t: any) => (
-                  <li class="text-sm">{t.title}</li>
+                {topTitles.slice(0, 5).map((t: any) => (
+                  <li class="text-sm">{t.title} <span class="text-muted">({t.count})</span></li>
                 ))}
               </ul>
             </div>
@@ -427,10 +497,13 @@ if (content.faq?.length > 0) {
             <div class="stat-item stat-companies">
               <span class="stat-label">Top Hiring Companies</span>
               <ul>
-                {topCompanies.slice(0, 5).map((c: any) => (
+                {topCompanies.slice(0, 10).map((c: any) => (
                   <li class="text-sm">{c.name} <span class="text-muted">({c.jobs})</span></li>
                 ))}
               </ul>
+              {tool.unique_companies > 10 && (
+                <li class="text-sm text-muted">...and {(tool.unique_companies - 10).toLocaleString()} more</li>
+              )}
             </div>
           )}
         </div>
@@ -731,6 +804,18 @@ if (content.faq?.length > 0) {
   .fact-value {
     font-weight: 700;
     font-size: var(--text-lg);
+  }
+
+  .fact-value.trend-up {
+    color: #059669;
+  }
+
+  .fact-value.trend-down {
+    color: #EF4444;
+  }
+
+  .fact-value.trend-stable {
+    color: var(--color-text-secondary);
   }
 
   /* Content Sections */

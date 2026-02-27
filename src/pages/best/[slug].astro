@@ -58,6 +58,23 @@ const breadcrumbItems = [
 
 const allSchemas: object[] = [
   {
+    "@type": "Article",
+    "headline": roundup.title,
+    "description": roundup.meta_description,
+    "author": {
+      "@type": "Person",
+      "@id": "https://datastackguide.com/about/#rome"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://datastackguide.com/#organization",
+      "name": "DataStackGuide",
+      "url": "https://datastackguide.com"
+    },
+    "datePublished": roundup.date_published || '2026-02-01',
+    "dateModified": roundup.date_modified || '2026-02-14'
+  },
+  {
     "@type": "ItemList",
     "name": roundup.title,
     "numberOfItems": roundup.picks.length,
