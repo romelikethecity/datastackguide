@@ -5,7 +5,6 @@ const navLinks = [
   { href: '/compare/', label: 'Compare' },
   { href: '/use-cases/', label: 'Use Cases' },
   { href: '/reports/', label: 'Reports' },
-  { href: '/newsletter/', label: 'Newsletter' },
   { href: '/about/', label: 'About' },
 ];
 ---
@@ -23,11 +22,14 @@ const navLinks = [
         <span class="nav-toggle-bar"></span>
       </button>
 
-      <ul class="nav-links">
-        {navLinks.map(link => (
-          <li><a href={link.href}>{link.label}</a></li>
-        ))}
-      </ul>
+      <div class="nav-right">
+        <ul class="nav-links">
+          {navLinks.map(link => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+        <a href="/newsletter/" class="nav-subscribe">Subscribe</a>
+      </div>
     </nav>
   </div>
 </header>
@@ -52,6 +54,12 @@ const navLinks = [
     display: block;
   }
 
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
   .nav-links {
     display: flex;
     list-style: none;
@@ -73,6 +81,27 @@ const navLinks = [
   .nav-links a:hover {
     color: #fff;
     background: rgba(255, 255, 255, 0.06);
+  }
+
+  .nav-subscribe {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-2) var(--space-4);
+    background: var(--gradient-brand);
+    color: white;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    margin-left: var(--space-2);
+  }
+
+  .nav-subscribe:hover {
+    background: var(--teal-600);
+    box-shadow: var(--shadow-teal);
+    transform: translateY(-1px);
   }
 
   .nav-toggle {
@@ -99,7 +128,7 @@ const navLinks = [
       display: flex;
     }
 
-    .nav-links {
+    .nav-right {
       display: none;
       position: absolute;
       top: 72px;
@@ -109,13 +138,26 @@ const navLinks = [
       background: var(--slate-900);
       border-top: 1px solid rgba(255, 255, 255, 0.06);
       padding: var(--space-4) var(--space-6);
+      align-items: stretch;
     }
 
-    .nav-links.open {
+    .nav-right.open {
       display: flex;
     }
 
+    .nav-links {
+      flex-direction: column;
+    }
+
     .nav-links a {
+      padding: var(--space-3) var(--space-4);
+    }
+
+    .nav-subscribe {
+      margin-left: 0;
+      margin-top: var(--space-3);
+      text-align: center;
+      justify-content: center;
       padding: var(--space-3) var(--space-4);
     }
   }
@@ -123,12 +165,12 @@ const navLinks = [
 
 <script>
   const toggle = document.querySelector('.nav-toggle');
-  const links = document.querySelector('.nav-links');
-  if (toggle && links) {
+  const navRight = document.querySelector('.nav-right');
+  if (toggle && navRight) {
     toggle.addEventListener('click', () => {
       const expanded = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
+      navRight.classList.toggle('open');
     });
   }
 </script>

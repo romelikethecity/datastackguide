@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ArticleMeta from '../../components/ArticleMeta.astro';
 import AuthorBio from '../../components/AuthorBio.astro';
+import NewsletterCTA from '../../components/NewsletterCTA.astro';
 import { buildBreadcrumbSchema } from '../../utils/schema';
 import bestOfData from '../../../data/best_of.json';
 import toolsData from '../../../data/tools.json';
@@ -201,6 +202,8 @@ const bestTitle = roundup.title.length <= 42 ? roundup.title : shortRoundupTitle
         <p>{roundup.methodology}</p>
       </section>
     )}
+
+    <NewsletterCTA heading="Rankings shift every week" subtext="Stay current on tool demand, pricing changes, and stack recommendations from 23,000+ job postings. Free every Tuesday." />
 
     <!-- FAQ -->
     {roundup.faq?.length > 0 && (

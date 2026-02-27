@@ -324,6 +324,21 @@ img {
   border-color: var(--color-primary);
 }
 
+/* ---- Newsletter Success ---- */
+.subscribe-success {
+  color: var(--teal-400);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  margin: 0;
+  padding: var(--space-2) 0;
+}
+
+.nl-form-msg {
+  font-size: var(--text-sm);
+  margin-top: var(--space-2);
+  min-height: 1.2em;
+}
+
 /* ---- Badge ---- */
 .badge {
   display: inline-flex;

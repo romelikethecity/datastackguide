@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import ToolCard from '../components/ToolCard.astro';
+import NewsletterCTA from '../components/NewsletterCTA.astro';
 
 import categoriesData from '../../data/categories.json';
 import marketData from '../../data/market_signals.json';
@@ -126,6 +127,13 @@ const schema = {
       <div class="section-cta">
         <a href="/tools/" class="btn-outline">View all tools →</a>
       </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section">
+    <div class="container">
+      <NewsletterCTA variant="banner" heading="This data changes every week" subtext="Get the latest tool demand trends, pricing shifts, and stack recommendations delivered every Tuesday. Free." />
     </div>
   </section>
 

@@ -78,12 +78,7 @@ const schema = {
       <h1>Data Stack Weekly</h1>
       <p class="nl-hero-sub">Tool demand trends, pricing shifts, and stack recommendations — sourced from {totalJobs.toLocaleString()}+ job postings across {totalTools}+ B2B data tools. Every Tuesday.</p>
 
-      <form
-        action="https://buttondown.com/api/emails/embed-subscribe/datastackguide"
-        method="post"
-        target="_blank"
-        class="nl-hero-form"
-      >
+      <form class="nl-hero-form" data-newsletter-form>
         <label for="nl-hero-email" class="sr-only">Email address</label>
         <input
           id="nl-hero-email"
@@ -94,6 +89,7 @@ const schema = {
           class="nl-hero-input"
         />
         <button type="submit" class="nl-hero-btn">Subscribe — It's Free</button>
+        <div data-newsletter-msg class="nl-form-msg"></div>
       </form>
       <p class="nl-hero-trust">Join 1,200+ data ops professionals. Free every Tuesday. Unsubscribe anytime.</p>
     </div>
@@ -240,12 +236,7 @@ const schema = {
     <div class="container-narrow">
       <h2>Get data stack intelligence every Tuesday</h2>
       <p>No fluff. No sponsored content. Sourced from real job postings and pricing data.</p>
-      <form
-        action="https://buttondown.com/api/emails/embed-subscribe/datastackguide"
-        method="post"
-        target="_blank"
-        class="nl-bottom-form"
-      >
+      <form class="nl-bottom-form" data-newsletter-form>
         <label for="nl-bottom-email" class="sr-only">Email address</label>
         <input
           id="nl-bottom-email"
@@ -256,6 +247,7 @@ const schema = {
           class="nl-bottom-input"
         />
         <button type="submit" class="btn">Subscribe — It's Free</button>
+        <div data-newsletter-msg class="nl-form-msg"></div>
       </form>
       <p class="nl-hero-trust">Free every Tuesday. Unsubscribe anytime. No spam, ever.</p>
     </div>

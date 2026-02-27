@@ -7,91 +7,132 @@ interface Props {
 
 const {
   variant = 'inline',
-  heading = 'Get tool intel every Tuesday',
-  subtext = 'Demand trends, pricing shifts, and stack recommendations from 23,000+ job postings.'
+  heading = 'Get the data behind the tools',
+  subtext = 'Weekly demand trends, pricing shifts, and stack picks from 23,000+ job postings. Free every Tuesday.'
 } = Astro.props;
 ---
 
 <aside class={`nl-cta nl-cta-${variant}`}>
-  <div class="nl-cta-content">
-    <h3>{heading}</h3>
-    <p>{subtext}</p>
+  <div class="nl-cta-inner">
+    <div class="nl-cta-content">
+      <div class="nl-cta-badge">Free weekly newsletter</div>
+      <h3>{heading}</h3>
+      <p>{subtext}</p>
+    </div>
+    <form class="nl-cta-form" data-newsletter-form>
+      <div class="nl-cta-field">
+        <label for={`nl-cta-email-${variant}`} class="sr-only">Email address</label>
+        <input
+          id={`nl-cta-email-${variant}`}
+          type="email"
+          name="email"
+          placeholder="you@company.com"
+          required
+          class="nl-cta-input"
+        />
+        <button type="submit" class="nl-cta-btn">Subscribe Free</button>
+      </div>
+      <div data-newsletter-msg class="nl-cta-msg"></div>
+    </form>
   </div>
-  <form
-    action="https://buttondown.com/api/emails/embed-subscribe/datastackguide"
-    method="post"
-    target="_blank"
-    class="nl-cta-form"
-  >
-    <label for={`nl-cta-email-${variant}`} class="sr-only">Email address</label>
-    <input
-      id={`nl-cta-email-${variant}`}
-      type="email"
-      name="email"
-      placeholder="you@company.com"
-      required
-      class="nl-cta-input"
-    />
-    <button type="submit" class="nl-cta-btn">Subscribe Free</button>
-  </form>
 </aside>
 
 <style>
   .nl-cta {
     border-radius: var(--radius-lg);
-    padding: var(--space-6);
+    position: relative;
+    overflow: hidden;
   }
 
-  /* Inline: card-style, fits inside content flow */
+  /* Inline: strong card with gradient border */
   .nl-cta-inline {
-    background: var(--color-primary-subtle);
-    border: 1px solid rgba(20, 184, 166, 0.15);
+    background: linear-gradient(135deg, var(--teal-950), var(--slate-900));
+    border: 1px solid var(--teal-800);
     margin: var(--space-10) 0;
+    box-shadow: 0 0 40px rgba(20, 184, 166, 0.08);
   }
 
-  /* Banner: full-width accent bar */
+  .nl-cta-inline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-brand);
+  }
+
+  /* Banner: full-width accent strip */
   .nl-cta-banner {
-    background: linear-gradient(135deg, var(--slate-800), var(--slate-900));
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: linear-gradient(135deg, var(--teal-950), var(--slate-900));
+    border: 1px solid var(--teal-800);
     margin: var(--space-12) 0;
+  }
+
+  .nl-cta-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-brand);
+  }
+
+  .nl-cta-inner {
+    padding: var(--space-8);
+  }
+
+  .nl-cta-banner .nl-cta-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--space-8);
   }
 
+  .nl-cta-badge {
+    display: inline-block;
+    padding: 2px var(--space-3);
+    background: rgba(20, 184, 166, 0.15);
+    color: var(--teal-400);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(20, 184, 166, 0.25);
+    margin-bottom: var(--space-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
   .nl-cta h3 {
-    font-size: var(--text-lg);
-    margin-bottom: var(--space-1);
-  }
-
-  .nl-cta-inline h3 {
-    color: var(--color-text);
-  }
-
-  .nl-cta-banner h3 {
-    color: var(--slate-100);
+    font-size: var(--text-xl);
+    color: var(--slate-50);
+    margin-bottom: var(--space-2);
+    letter-spacing: -0.02em;
   }
 
   .nl-cta p {
     font-size: var(--text-sm);
     line-height: 1.6;
+    color: var(--slate-400);
     margin: 0;
   }
 
-  .nl-cta-inline p {
-    color: var(--color-text-secondary);
-  }
-
-  .nl-cta-banner p {
-    color: var(--slate-400);
-  }
-
   .nl-cta-inline .nl-cta-content {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-5);
   }
 
   .nl-cta-form {
+    min-width: 0;
+  }
+
+  .nl-cta-banner .nl-cta-form {
+    flex-shrink: 0;
+    min-width: 340px;
+  }
+
+  .nl-cta-field {
     display: flex;
     gap: var(--space-3);
   }
@@ -99,51 +140,65 @@ const {
   .nl-cta-input {
     flex: 1;
     min-width: 0;
-    padding: var(--space-2) var(--space-4);
-    border: 1px solid var(--color-border);
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid rgba(20, 184, 166, 0.3);
     border-radius: var(--radius-md);
-    background: var(--color-bg-card);
-    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--slate-100);
     font-size: var(--text-sm);
     font-family: var(--font-body);
   }
 
-  .nl-cta-banner .nl-cta-input {
-    border-color: rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--slate-100);
-  }
-
   .nl-cta-input::placeholder {
-    color: var(--color-text-muted);
-  }
-
-  .nl-cta-banner .nl-cta-input::placeholder {
     color: var(--slate-500);
   }
 
   .nl-cta-input:focus {
     outline: none;
-    border-color: var(--teal-500);
+    border-color: var(--teal-400);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
   }
 
   .nl-cta-btn {
-    padding: var(--space-2) var(--space-5);
+    padding: var(--space-3) var(--space-6);
     background: var(--gradient-brand);
     color: white;
     border: none;
     border-radius: var(--radius-md);
     font-size: var(--text-sm);
-    font-weight: 600;
+    font-weight: 700;
     font-family: var(--font-body);
     cursor: pointer;
     white-space: nowrap;
-    transition: all 0.15s ease;
+    transition: all 0.2s ease;
+    letter-spacing: 0.01em;
   }
 
   .nl-cta-btn:hover {
-    background: var(--teal-700);
-    box-shadow: var(--shadow-teal);
+    background: var(--teal-600);
+    box-shadow: var(--shadow-teal), 0 0 20px rgba(20, 184, 166, 0.2);
+    transform: translateY(-1px);
+  }
+
+  .nl-cta-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .nl-cta-msg {
+    font-size: var(--text-sm);
+    margin-top: var(--space-2);
+    min-height: 1.2em;
+  }
+
+  :global(.subscribe-success) {
+    color: var(--teal-400) !important;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    margin: 0;
+    padding: var(--space-3) 0;
   }
 
   .sr-only {
@@ -159,19 +214,28 @@ const {
   }
 
   @media (max-width: 768px) {
-    .nl-cta-banner {
+    .nl-cta-banner .nl-cta-inner {
       flex-direction: column;
       align-items: flex-start;
     }
 
-    .nl-cta-form {
+    .nl-cta-banner .nl-cta-form {
       width: 100%;
+      min-width: 0;
+    }
+
+    .nl-cta-field {
       flex-direction: column;
     }
 
     .nl-cta-btn {
       width: 100%;
       text-align: center;
+      padding: var(--space-3) var(--space-4);
+    }
+
+    .nl-cta h3 {
+      font-size: var(--text-lg);
     }
   }
 </style>

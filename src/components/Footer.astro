@@ -45,12 +45,7 @@ const companyLinks = [
         <h3>Data Stack Weekly</h3>
         <p>Tool demand trends, pricing shifts, and stack picks from 23,000+ job postings. <a href="/newsletter/" style="color: var(--teal-400);">See a sample →</a></p>
       </div>
-      <form
-        action="https://buttondown.com/api/emails/embed-subscribe/datastackguide"
-        method="post"
-        target="_blank"
-        class="newsletter-form"
-      >
+      <form class="newsletter-form" data-newsletter-form>
         <label for="footer-email" class="sr-only">Email address</label>
         <input
           id="footer-email"
@@ -60,7 +55,8 @@ const companyLinks = [
           required
           class="newsletter-input"
         />
-        <button type="submit" class="newsletter-btn">Subscribe</button>
+        <button type="submit" class="newsletter-btn">Subscribe Free</button>
+        <div data-newsletter-msg class="newsletter-msg"></div>
       </form>
     </div>
 
@@ -188,6 +184,17 @@ const companyLinks = [
 
   .newsletter-btn:hover {
     background: var(--teal-600);
+  }
+
+  .newsletter-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  .newsletter-msg {
+    font-size: var(--text-xs);
+    margin-top: var(--space-1);
+    min-height: 1em;
   }
 
   .sr-only {
