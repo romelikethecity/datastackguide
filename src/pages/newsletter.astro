@@ -1,0 +1,727 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import marketData from '../../data/market_signals.json';
+import trendsData from '../../data/trends.json';
+import cooccurrenceData from '../../data/cooccurrence.json';
+
+const topTools = marketData.top_tools.slice(0, 5);
+const totalJobs = marketData.total_jobs_analyzed;
+const totalTools = marketData.total_tools_tracked;
+
+// Get latest two months for trend comparison
+const months = Object.keys(trendsData.trends).sort().reverse();
+const latestMonth = months[0];
+const prevMonth = months[1];
+const latestData = trendsData.trends[latestMonth] || [];
+const prevData = trendsData.trends[prevMonth] || [];
+
+// Build lookup for previous month
+const prevLookup: Record<string, number> = {};
+prevData.forEach((t: any) => { prevLookup[t.slug] = t.mentions; });
+
+// Top 5 from latest month with trend
+const trendTools = latestData.slice(0, 8).map((t: any) => {
+  const prev = prevLookup[t.slug] || 0;
+  const change = prev > 0 ? Math.round(((t.mentions - prev) / prev) * 100) : 0;
+  return { ...t, prev, change };
+});
+
+// Find fastest grower (>10 mentions, highest % change)
+const grower = [...latestData]
+  .filter((t: any) => t.mentions > 10 && prevLookup[t.slug])
+  .map((t: any) => {
+    const prev = prevLookup[t.slug] || 1;
+    return { ...t, change: Math.round(((t.mentions - prev) / prev) * 100) };
+  })
+  .sort((a: any, b: any) => b.change - a.change)[0];
+
+// Top cooccurrence pair
+const coKeys = Object.keys(cooccurrenceData.cooccurrence);
+let topPair = { toolA: '', toolB: '', count: 0 };
+coKeys.forEach(key => {
+  const pairs = (cooccurrenceData as any).cooccurrence[key];
+  if (pairs && pairs.length > 0 && pairs[0].count > topPair.count) {
+    topPair = { toolA: key, toolB: pairs[0].slug, count: pairs[0].count };
+  }
+});
+
+// Format month name
+function formatMonth(m: string) {
+  const [year, month] = m.split('-');
+  const names = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return `${names[parseInt(month) - 1]} ${year}`;
+}
+
+function toolDisplayName(slug: string) {
+  return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+}
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Data Stack Weekly Newsletter",
+  "description": "Weekly B2B data tool intelligence. Tool demand trends, pricing updates, and stack recommendations from 23,000+ job postings.",
+  "url": "https://datastackguide.com/newsletter/"
+};
+---
+
+<BaseLayout
+  title="Data Stack Weekly Newsletter"
+  description="Weekly B2B data tool intelligence. Tool demand trends, pricing updates, and stack recommendations from 23,000+ job postings."
+  canonicalPath="newsletter"
+  schema={schema}
+>
+  <!-- Hero -->
+  <section class="nl-hero">
+    <div class="container">
+      <div class="nl-hero-badge">Free weekly newsletter</div>
+      <h1>Data Stack Weekly</h1>
+      <p class="nl-hero-sub">Tool demand trends, pricing shifts, and stack recommendations — sourced from {totalJobs.toLocaleString()}+ job postings across {totalTools}+ B2B data tools. Every Tuesday.</p>
+
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/datastackguide"
+        method="post"
+        target="_blank"
+        class="nl-hero-form"
+      >
+        <label for="nl-hero-email" class="sr-only">Email address</label>
+        <input
+          id="nl-hero-email"
+          type="email"
+          name="email"
+          placeholder="you@company.com"
+          required
+          class="nl-hero-input"
+        />
+        <button type="submit" class="nl-hero-btn">Subscribe — It's Free</button>
+      </form>
+      <p class="nl-hero-trust">Join 1,200+ data ops professionals. Free every Tuesday. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- What You Get -->
+  <section class="nl-pillars">
+    <div class="container">
+      <h2>Every issue covers</h2>
+      <div class="nl-pillars-grid">
+        <div class="nl-pillar-card">
+          <div class="nl-pillar-icon">📊</div>
+          <h3>Tool Demand</h3>
+          <p>Which tools are gaining (and losing) traction in real job postings this week.</p>
+        </div>
+        <div class="nl-pillar-card">
+          <div class="nl-pillar-icon">💰</div>
+          <h3>Pricing Alerts</h3>
+          <p>Price changes, new tiers, and contract gotchas across the data tool landscape.</p>
+        </div>
+        <div class="nl-pillar-card">
+          <div class="nl-pillar-icon">🔗</div>
+          <h3>Stack Combos</h3>
+          <p>The tool pairings that companies actually use together — from cooccurrence data.</p>
+        </div>
+        <div class="nl-pillar-card">
+          <div class="nl-pillar-icon">📈</div>
+          <h3>Market Signals</h3>
+          <p>Emerging tools, category shifts, and hiring patterns worth paying attention to.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Preview -->
+  <section class="nl-preview">
+    <div class="container">
+      <h2>Here's what a typical issue looks like</h2>
+      <div class="nl-email-mock">
+        <!-- Email chrome -->
+        <div class="nl-email-toolbar">
+          <div class="nl-email-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="nl-email-subject">Data Stack Weekly — {formatMonth(latestMonth)} Edition</span>
+        </div>
+
+        <!-- Email body -->
+        <div class="nl-email-body">
+          <div class="nl-email-header">
+            <div class="nl-email-brand">DATA STACK WEEKLY</div>
+            <div class="nl-email-date">{formatMonth(latestMonth)} · datastackguide.com</div>
+          </div>
+
+          <!-- Signal strip -->
+          <div class="nl-signal-strip">
+            <div class="nl-signal">
+              <span class="nl-signal-value mono">{totalTools}+</span>
+              <span class="nl-signal-label">Tools Tracked</span>
+            </div>
+            <div class="nl-signal">
+              <span class="nl-signal-value mono">{totalJobs.toLocaleString()}</span>
+              <span class="nl-signal-label">Jobs Analyzed</span>
+            </div>
+            <div class="nl-signal">
+              <span class="nl-signal-value mono">{marketData.total_companies.toLocaleString()}</span>
+              <span class="nl-signal-label">Companies</span>
+            </div>
+          </div>
+
+          <!-- Tool demand table -->
+          <div class="nl-email-section">
+            <h4 class="nl-section-title">🔥 Tool Demand This Week</h4>
+            <table class="nl-demand-table">
+              <thead>
+                <tr>
+                  <th>Tool</th>
+                  <th class="right">Mentions</th>
+                  <th class="right">vs Prev</th>
+                  <th class="right">Trend</th>
+                </tr>
+              </thead>
+              <tbody>
+                {trendTools.slice(0, 5).map((t: any, i: number) => (
+                  <tr>
+                    <td>
+                      <span class="nl-rank">{i + 1}</span>
+                      {t.tool}
+                    </td>
+                    <td class="right mono">{t.mentions.toLocaleString()}</td>
+                    <td class="right mono">{t.prev > 0 ? t.prev.toLocaleString() : '—'}</td>
+                    <td class={`right mono ${t.change > 0 ? 'up' : t.change < 0 ? 'down' : ''}`}>
+                      {t.change > 0 ? `▲ ${t.change}%` : t.change < 0 ? `▼ ${Math.abs(t.change)}%` : '—'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Trending alert -->
+          {grower && (
+            <div class="nl-email-section">
+              <h4 class="nl-section-title">🚀 Trending Tool</h4>
+              <div class="nl-trending-card">
+                <div class="nl-trending-name">{grower.tool}</div>
+                <div class="nl-trending-stat">
+                  <span class="nl-trending-change up mono">▲ {grower.change}%</span>
+                  <span class="nl-trending-detail">{prevLookup[grower.slug]} → {grower.mentions} mentions</span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <!-- Stack spotlight -->
+          <div class="nl-email-section">
+            <h4 class="nl-section-title">🔗 Stack of the Week</h4>
+            <div class="nl-stack-card">
+              <div class="nl-stack-pair">
+                <span class="nl-stack-tool">{toolDisplayName(topPair.toolA)}</span>
+                <span class="nl-stack-plus">+</span>
+                <span class="nl-stack-tool">{toolDisplayName(topPair.toolB)}</span>
+              </div>
+              <div class="nl-stack-detail">Found together in {topPair.count} job postings — the most common pairing in our dataset.</div>
+            </div>
+          </div>
+
+          <!-- Gradient fade + CTA -->
+          <div class="nl-email-fade">
+            <div class="nl-email-cta-overlay">
+              <p>Plus: salary snapshots, new tool alerts, and more...</p>
+              <a href="#nl-bottom-form" class="btn">Get This Every Tuesday →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="nl-bottom" id="nl-bottom-form">
+    <div class="container-narrow">
+      <h2>Get data stack intelligence every Tuesday</h2>
+      <p>No fluff. No sponsored content. Sourced from real job postings and pricing data.</p>
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/datastackguide"
+        method="post"
+        target="_blank"
+        class="nl-bottom-form"
+      >
+        <label for="nl-bottom-email" class="sr-only">Email address</label>
+        <input
+          id="nl-bottom-email"
+          type="email"
+          name="email"
+          placeholder="you@company.com"
+          required
+          class="nl-bottom-input"
+        />
+        <button type="submit" class="btn">Subscribe — It's Free</button>
+      </form>
+      <p class="nl-hero-trust">Free every Tuesday. Unsubscribe anytime. No spam, ever.</p>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* Hero */
+  .nl-hero {
+    background: linear-gradient(180deg, var(--slate-900) 0%, var(--slate-950) 100%);
+    padding: var(--space-16) 0 var(--space-12);
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .nl-hero-badge {
+    display: inline-block;
+    padding: var(--space-1) var(--space-4);
+    background: rgba(20, 184, 166, 0.1);
+    color: var(--teal-400);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(20, 184, 166, 0.2);
+    margin-bottom: var(--space-6);
+  }
+
+  .nl-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--slate-50);
+    margin-bottom: var(--space-4);
+    letter-spacing: -0.03em;
+  }
+
+  .nl-hero-sub {
+    font-size: var(--text-lg);
+    color: var(--slate-400);
+    max-width: 600px;
+    margin: 0 auto var(--space-8);
+    line-height: 1.6;
+  }
+
+  .nl-hero-form {
+    display: flex;
+    gap: var(--space-3);
+    max-width: 460px;
+    margin: 0 auto var(--space-4);
+  }
+
+  .nl-hero-input {
+    flex: 1;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--slate-100);
+    font-size: var(--text-base);
+    font-family: var(--font-body);
+  }
+
+  .nl-hero-input::placeholder {
+    color: var(--slate-500);
+  }
+
+  .nl-hero-input:focus {
+    outline: none;
+    border-color: var(--teal-500);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .nl-hero-btn {
+    padding: var(--space-3) var(--space-6);
+    background: var(--gradient-brand);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    font-weight: 600;
+    font-family: var(--font-body);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+  }
+
+  .nl-hero-btn:hover {
+    background: var(--teal-700);
+    box-shadow: var(--shadow-teal);
+    transform: translateY(-1px);
+  }
+
+  .nl-hero-trust {
+    font-size: var(--text-sm);
+    color: var(--slate-500);
+    margin: 0;
+  }
+
+  /* Pillars */
+  .nl-pillars {
+    padding: var(--space-16) 0;
+  }
+
+  .nl-pillars h2 {
+    text-align: center;
+    margin-bottom: var(--space-10);
+    color: var(--color-text);
+  }
+
+  .nl-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+  }
+
+  .nl-pillar-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+
+  .nl-pillar-card:hover {
+    border-color: var(--teal-500);
+    box-shadow: var(--shadow-md);
+  }
+
+  .nl-pillar-icon {
+    font-size: 1.75rem;
+    margin-bottom: var(--space-3);
+  }
+
+  .nl-pillar-card h3 {
+    font-size: var(--text-base);
+    color: var(--color-text);
+    margin-bottom: var(--space-2);
+  }
+
+  .nl-pillar-card p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Email Preview */
+  .nl-preview {
+    padding: var(--space-16) 0;
+    background: var(--color-bg);
+  }
+
+  .nl-preview h2 {
+    text-align: center;
+    margin-bottom: var(--space-10);
+    color: var(--color-text);
+  }
+
+  .nl-email-mock {
+    max-width: 640px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+
+  .nl-email-toolbar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+    background: var(--slate-800);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .nl-email-dots {
+    display: flex;
+    gap: 6px;
+  }
+
+  .nl-email-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .nl-email-dots .red { background: #ff5f57; }
+  .nl-email-dots .yellow { background: #ffbd2e; }
+  .nl-email-dots .green { background: #28c840; }
+
+  .nl-email-subject {
+    font-size: var(--text-sm);
+    color: var(--slate-400);
+    font-weight: 500;
+  }
+
+  .nl-email-body {
+    background: var(--slate-900);
+    position: relative;
+  }
+
+  .nl-email-header {
+    padding: var(--space-6) var(--space-6) var(--space-4);
+    border-bottom: 2px solid var(--teal-600);
+  }
+
+  .nl-email-brand {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--teal-400);
+    letter-spacing: 0.15em;
+    margin-bottom: var(--space-1);
+  }
+
+  .nl-email-date {
+    font-size: var(--text-xs);
+    color: var(--slate-500);
+  }
+
+  /* Signal strip */
+  .nl-signal-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    padding: var(--space-5) var(--space-6);
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .nl-signal {
+    text-align: center;
+  }
+
+  .nl-signal-value {
+    display: block;
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--slate-100);
+  }
+
+  .nl-signal-label {
+    font-size: var(--text-xs);
+    color: var(--slate-500);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Email sections */
+  .nl-email-section {
+    padding: var(--space-5) var(--space-6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .nl-section-title {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--slate-200);
+    margin-bottom: var(--space-4);
+  }
+
+  /* Demand table */
+  .nl-demand-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+  }
+
+  .nl-demand-table thead th {
+    text-align: left;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--slate-500);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .nl-demand-table td {
+    padding: var(--space-2) 0;
+    color: var(--slate-300);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  }
+
+  .nl-demand-table .right,
+  .nl-demand-table th.right {
+    text-align: right;
+  }
+
+  .nl-rank {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    background: rgba(20, 184, 166, 0.15);
+    color: var(--teal-400);
+    border-radius: var(--radius-sm);
+    margin-right: var(--space-2);
+  }
+
+  .up { color: #34d399; }
+  .down { color: #f87171; }
+
+  /* Trending card */
+  .nl-trending-card {
+    background: rgba(20, 184, 166, 0.06);
+    border: 1px solid rgba(20, 184, 166, 0.15);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+  }
+
+  .nl-trending-name {
+    font-weight: 600;
+    color: var(--slate-100);
+    margin-bottom: var(--space-2);
+  }
+
+  .nl-trending-stat {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .nl-trending-change {
+    font-weight: 700;
+    font-size: var(--text-sm);
+  }
+
+  .nl-trending-detail {
+    font-size: var(--text-sm);
+    color: var(--slate-400);
+  }
+
+  /* Stack card */
+  .nl-stack-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+  }
+
+  .nl-stack-pair {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-2);
+  }
+
+  .nl-stack-tool {
+    padding: var(--space-1) var(--space-3);
+    background: rgba(20, 184, 166, 0.1);
+    border: 1px solid rgba(20, 184, 166, 0.2);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    color: var(--teal-300);
+    font-size: var(--text-sm);
+  }
+
+  .nl-stack-plus {
+    color: var(--slate-500);
+    font-weight: 600;
+  }
+
+  .nl-stack-detail {
+    font-size: var(--text-sm);
+    color: var(--slate-400);
+    line-height: 1.5;
+  }
+
+  /* Gradient fade */
+  .nl-email-fade {
+    position: relative;
+    padding: var(--space-16) var(--space-6) var(--space-8);
+    background: linear-gradient(180deg, transparent 0%, var(--slate-900) 40%);
+  }
+
+  .nl-email-cta-overlay {
+    text-align: center;
+  }
+
+  .nl-email-cta-overlay p {
+    font-size: var(--text-sm);
+    color: var(--slate-400);
+    margin-bottom: var(--space-4);
+  }
+
+  /* Bottom CTA */
+  .nl-bottom {
+    padding: var(--space-16) 0;
+    text-align: center;
+  }
+
+  .nl-bottom h2 {
+    color: var(--color-text);
+    margin-bottom: var(--space-3);
+  }
+
+  .nl-bottom > .container-narrow > p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+  }
+
+  .nl-bottom-form {
+    display: flex;
+    gap: var(--space-3);
+    max-width: 460px;
+    margin: 0 auto var(--space-4);
+  }
+
+  .nl-bottom-input {
+    flex: 1;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-bg-card);
+    color: var(--color-text);
+    font-size: var(--text-base);
+    font-family: var(--font-body);
+  }
+
+  .nl-bottom-input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .nl-bottom-input:focus {
+    outline: none;
+    border-color: var(--teal-500);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nl-pillars-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .nl-hero-form,
+    .nl-bottom-form {
+      flex-direction: column;
+    }
+
+    .nl-hero-btn,
+    .nl-bottom-form .btn {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .nl-signal-strip {
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+    }
+
+    .nl-demand-table th:nth-child(3),
+    .nl-demand-table td:nth-child(3) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .nl-pillars-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

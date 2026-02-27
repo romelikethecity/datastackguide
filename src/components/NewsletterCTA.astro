@@ -1,0 +1,177 @@
+---
+interface Props {
+  variant?: 'inline' | 'banner';
+  heading?: string;
+  subtext?: string;
+}
+
+const {
+  variant = 'inline',
+  heading = 'Get tool intel every Tuesday',
+  subtext = 'Demand trends, pricing shifts, and stack recommendations from 23,000+ job postings.'
+} = Astro.props;
+---
+
+<aside class={`nl-cta nl-cta-${variant}`}>
+  <div class="nl-cta-content">
+    <h3>{heading}</h3>
+    <p>{subtext}</p>
+  </div>
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/datastackguide"
+    method="post"
+    target="_blank"
+    class="nl-cta-form"
+  >
+    <label for={`nl-cta-email-${variant}`} class="sr-only">Email address</label>
+    <input
+      id={`nl-cta-email-${variant}`}
+      type="email"
+      name="email"
+      placeholder="you@company.com"
+      required
+      class="nl-cta-input"
+    />
+    <button type="submit" class="nl-cta-btn">Subscribe Free</button>
+  </form>
+</aside>
+
+<style>
+  .nl-cta {
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+  }
+
+  /* Inline: card-style, fits inside content flow */
+  .nl-cta-inline {
+    background: var(--color-primary-subtle);
+    border: 1px solid rgba(20, 184, 166, 0.15);
+    margin: var(--space-10) 0;
+  }
+
+  /* Banner: full-width accent bar */
+  .nl-cta-banner {
+    background: linear-gradient(135deg, var(--slate-800), var(--slate-900));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    margin: var(--space-12) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+  }
+
+  .nl-cta h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-1);
+  }
+
+  .nl-cta-inline h3 {
+    color: var(--color-text);
+  }
+
+  .nl-cta-banner h3 {
+    color: var(--slate-100);
+  }
+
+  .nl-cta p {
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .nl-cta-inline p {
+    color: var(--color-text-secondary);
+  }
+
+  .nl-cta-banner p {
+    color: var(--slate-400);
+  }
+
+  .nl-cta-inline .nl-cta-content {
+    margin-bottom: var(--space-4);
+  }
+
+  .nl-cta-form {
+    display: flex;
+    gap: var(--space-3);
+  }
+
+  .nl-cta-input {
+    flex: 1;
+    min-width: 0;
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-bg-card);
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    font-family: var(--font-body);
+  }
+
+  .nl-cta-banner .nl-cta-input {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--slate-100);
+  }
+
+  .nl-cta-input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .nl-cta-banner .nl-cta-input::placeholder {
+    color: var(--slate-500);
+  }
+
+  .nl-cta-input:focus {
+    outline: none;
+    border-color: var(--teal-500);
+  }
+
+  .nl-cta-btn {
+    padding: var(--space-2) var(--space-5);
+    background: var(--gradient-brand);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    font-family: var(--font-body);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+  }
+
+  .nl-cta-btn:hover {
+    background: var(--teal-700);
+    box-shadow: var(--shadow-teal);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  @media (max-width: 768px) {
+    .nl-cta-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nl-cta-form {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .nl-cta-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
