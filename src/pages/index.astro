@@ -91,16 +91,18 @@ const schema = {
       <div class="logo-bar">
         <p class="logo-bar-label">Tracking hiring data from {totalCompanies.toLocaleString()}+ companies including</p>
         <div class="logo-bar-row">
-          <span class="company-name">Salesforce</span>
-          <span class="company-name">Amazon</span>
-          <span class="company-name">Deloitte</span>
-          <span class="company-name">Brex</span>
-          <span class="company-name">JPMorgan Chase</span>
-          <span class="company-name">Klaviyo</span>
-          <span class="company-name">Apollo</span>
-          <span class="company-name">Thermo Fisher</span>
-          <span class="company-name">KnowBe4</span>
-          <span class="company-name">LaunchDarkly</span>
+          <img src="/assets/logos/companies/google.png" alt="Google" class="logo-icon" title="Google" />
+          <img src="/assets/logos/companies/amazon.png" alt="Amazon" class="logo-icon" title="Amazon" />
+          <img src="/assets/logos/companies/meta.png" alt="Meta" class="logo-icon" title="Meta" />
+          <img src="/assets/logos/companies/brex.png" alt="Brex" class="logo-icon" title="Brex" />
+          <img src="/assets/logos/companies/rippling.png" alt="Rippling" class="logo-icon" title="Rippling" />
+          <img src="/assets/logos/companies/adobe.png" alt="Adobe" class="logo-icon" title="Adobe" />
+          <img src="/assets/logos/companies/intuit.png" alt="Intuit" class="logo-icon" title="Intuit" />
+          <img src="/assets/logos/companies/paypal.png" alt="PayPal" class="logo-icon" title="PayPal" />
+          <img src="/assets/logos/companies/twilio.png" alt="Twilio" class="logo-icon" title="Twilio" />
+          <img src="/assets/logos/companies/spacex.png" alt="SpaceX" class="logo-icon" title="SpaceX" />
+          <img src="/assets/logos/companies/apple.png" alt="Apple" class="logo-icon" title="Apple" />
+          <img src="/assets/logos/companies/microsoft.png" alt="Microsoft" class="logo-icon" title="Microsoft" />
         </div>
       </div>
 
@@ -322,16 +324,19 @@ const schema = {
     flex-wrap: wrap;
   }
 
-  .company-name {
-    font-size: var(--text-sm);
-    font-weight: 600;
-    color: var(--slate-500);
-    transition: color 0.3s ease;
-    white-space: nowrap;
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    filter: grayscale(100%) brightness(0.7);
+    opacity: 0.5;
+    transition: all 0.3s ease;
   }
 
-  .company-name:hover {
-    color: var(--slate-200);
+  .logo-icon:hover {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    box-shadow: 0 0 16px rgba(20, 184, 166, 0.3);
   }
 
   .testimonials {
@@ -505,6 +510,11 @@ const schema = {
 
     .logo-bar-row {
       gap: var(--space-3);
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
     }
   }
 </style>
