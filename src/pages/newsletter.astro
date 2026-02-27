@@ -124,6 +124,36 @@ const schema = {
     </div>
   </section>
 
+  <!-- Testimonials -->
+  <section class="nl-testimonials">
+    <div class="container">
+      <h2>What readers are saying</h2>
+      <div class="nl-testimonial-grid">
+        <div class="nl-testimonial-card">
+          <p class="nl-testimonial-quote">"Saved me hours of vendor research. The job demand data shows what companies actually use, not what vendors claim."</p>
+          <div class="nl-testimonial-author">
+            <span class="nl-testimonial-name">VP of Revenue Operations</span>
+            <span class="nl-testimonial-role">Series B SaaS</span>
+          </div>
+        </div>
+        <div class="nl-testimonial-card">
+          <p class="nl-testimonial-quote">"I used to spend half a day comparing enrichment tools. Now I check DataStackGuide every Tuesday and know exactly what's trending."</p>
+          <div class="nl-testimonial-author">
+            <span class="nl-testimonial-name">Head of Data</span>
+            <span class="nl-testimonial-role">Mid-Market Fintech</span>
+          </div>
+        </div>
+        <div class="nl-testimonial-card">
+          <p class="nl-testimonial-quote">"The pricing breakdowns alone are worth subscribing for. Every other comparison site is pay-to-play."</p>
+          <div class="nl-testimonial-author">
+            <span class="nl-testimonial-name">Sales Ops Manager</span>
+            <span class="nl-testimonial-role">Enterprise Tech</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Email Preview -->
   <section class="nl-preview">
     <div class="container">
@@ -392,6 +422,55 @@ const schema = {
     color: var(--color-text-secondary);
     line-height: 1.6;
     margin: 0;
+  }
+
+  /* Testimonials */
+  .nl-testimonials {
+    padding: var(--space-16) 0;
+  }
+
+  .nl-testimonials h2 {
+    text-align: center;
+    margin-bottom: var(--space-10);
+    color: var(--color-text);
+  }
+
+  .nl-testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+
+  .nl-testimonial-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+  }
+
+  .nl-testimonial-quote {
+    font-size: var(--text-sm);
+    color: var(--slate-300);
+    line-height: 1.7;
+    margin: 0 0 var(--space-4);
+    font-style: italic;
+  }
+
+  .nl-testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .nl-testimonial-name {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--slate-200);
+  }
+
+  .nl-testimonial-role {
+    font-size: var(--text-xs);
+    color: var(--slate-500);
   }
 
   /* Email Preview */
@@ -684,6 +763,10 @@ const schema = {
 
   /* Responsive */
   @media (max-width: 768px) {
+    .nl-testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+
     .nl-pillars-grid {
       grid-template-columns: 1fr 1fr;
     }
