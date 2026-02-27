@@ -72,34 +72,42 @@ def build_email_data():
     prev_data = trends["trends"][prev_month] if prev_month else []
     prev_lookup = {t["slug"]: t["mentions"] for t in prev_data}
 
+    # Check if previous month has comparable coverage (>50% of current tool count)
+    # If not, trends are artifacts of data coverage differences, not real growth
+    trends_reliable = len(prev_data) >= len(latest_data) * 0.5
+
     # Top 10 tools with trend
     top_tools = []
     for t in latest_data[:10]:
         prev_val = prev_lookup.get(t["slug"], 0)
-        change = round(((t["mentions"] - prev_val) / prev_val) * 100) if prev_val > 0 else 0
+        if trends_reliable and prev_val > 0:
+            change = round(((t["mentions"] - prev_val) / prev_val) * 100)
+        else:
+            change = 0
         top_tools.append({
             "name": t["tool"],
             "slug": t["slug"],
             "mentions": t["mentions"],
-            "prev": prev_val,
+            "prev": prev_val if trends_reliable else 0,
             "change": change,
         })
 
-    # Fastest growers (>10 mentions, >20% growth)
+    # Fastest growers (only when trends are reliable)
     growers = []
-    for t in latest_data:
-        if t["mentions"] > 10 and t["slug"] in prev_lookup and prev_lookup[t["slug"]] > 0:
-            prev_val = prev_lookup[t["slug"]]
-            change = round(((t["mentions"] - prev_val) / prev_val) * 100)
-            if change > 20:
-                growers.append({
-                    "name": t["tool"],
-                    "slug": t["slug"],
-                    "mentions": t["mentions"],
-                    "prev": prev_val,
-                    "change": change,
-                })
-    growers.sort(key=lambda x: x["change"], reverse=True)
+    if trends_reliable:
+        for t in latest_data:
+            if t["mentions"] > 10 and t["slug"] in prev_lookup and prev_lookup[t["slug"]] > 0:
+                prev_val = prev_lookup[t["slug"]]
+                change = round(((t["mentions"] - prev_val) / prev_val) * 100)
+                if change > 20:
+                    growers.append({
+                        "name": t["tool"],
+                        "slug": t["slug"],
+                        "mentions": t["mentions"],
+                        "prev": prev_val,
+                        "change": change,
+                    })
+        growers.sort(key=lambda x: x["change"], reverse=True)
 
     # Top 5 cooccurrence pairs (deduplicated)
     all_pairs = []
@@ -344,35 +352,40 @@ def generate_html(data):
     # ── Section 7: Stack Combos ──
     pair_cards = ""
     for i, pair in enumerate(data["top_pairs"]):
-        pair_cards += f'''<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;{"border-bottom:1px solid #1e293b;" if i < len(data["top_pairs"]) - 1 else ""}">
-          <div>
+        border = "border-bottom:1px solid #1e293b;" if i < len(data["top_pairs"]) - 1 else ""
+        pair_cards += f'''<tr>
+          <td style="padding:10px 0;{border}">
             <span style="{S_PILL}">{pair["tool_a"]}</span>
             <span style="color:#64748b;margin:0 4px;font-size:12px;">+</span>
             <span style="{S_PILL}">{pair["tool_b"]}</span>
-          </div>
-          <span style="{S_MONO}font-size:13px;color:#94a3b8;">{pair["count"]}</span>
-        </div>'''
+          </td>
+          <td style="padding:10px 0;{border}{S_MONO}font-size:13px;color:#94a3b8;text-align:right;white-space:nowrap;">{pair["count"]} posts</td>
+        </tr>'''
 
     stacks_html = f'''<tr><td style="{S_SECTION_PAD}{S_DIVIDER}">
       <h3 style="{S_SECTION_TITLE}">🔗 Most Common Stack Combos</h3>
       <div style="{S_CARD}">
-        {pair_cards}
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+          {pair_cards}
+        </table>
       </div>
       <div style="font-size:11px;color:#475569;margin-top:8px;">Tools found together in the same job posting</div>
     </td></tr>'''
 
     # ── Section 8: Category Landscape ──
-    cat_items = ""
+    cat_rows = ""
     for c in data["categories"]:
-        cat_items += f'''<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.03);">
-          <span style="font-size:13px;color:#cbd5e1;">{c["name"]}</span>
-          <span style="{S_MONO}font-size:13px;color:#2dd4bf;">{c["count"]} tools</span>
-        </div>'''
+        cat_rows += f'''<tr>
+          <td style="padding:6px 0;font-size:13px;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.03);">{c["name"]}</td>
+          <td style="padding:6px 0;{S_MONO}font-size:13px;color:#2dd4bf;text-align:right;border-bottom:1px solid rgba(255,255,255,0.03);">{c["count"]} tools</td>
+        </tr>'''
 
     categories_html = f'''<tr><td style="{S_SECTION_PAD}{S_DIVIDER}">
       <h3 style="{S_SECTION_TITLE}">🗂️ Category Landscape</h3>
       <div style="{S_CARD}">
-        {cat_items}
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+          {cat_rows}
+        </table>
       </div>
     </td></tr>'''
 
@@ -504,8 +517,12 @@ def send_email(html, subject):
         })
         print(f"Broadcast created: {broadcast}")
 
+        # Extract broadcast ID — SDK may return dict or object
+        broadcast_id = broadcast.get("id") if isinstance(broadcast, dict) else getattr(broadcast, "id", str(broadcast))
+        print(f"Broadcast ID: {broadcast_id}")
+
         # Send the broadcast
-        send_result = resend.Broadcasts.send(broadcast["id"])
+        send_result = resend.Broadcasts.send({"broadcast_id": broadcast_id})
         print(f"Broadcast sent: {send_result}")
     except Exception as e:
         print(f"Error sending email: {e}")
