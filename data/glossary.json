@@ -246,28 +246,6 @@
       "date_modified": "2026-02-11"
     },
     {
-      "slug": "customer-data-platform",
-      "term": "Customer Data Platform (CDP)",
-      "short_definition": "A platform that unifies customer data from multiple sources into a single, persistent profile.",
-      "meta_description": "What is a Customer Data Platform? Software that unifies customer data into a single profile. See CDP tools and real adoption data.",
-      "full_definition": "A customer data platform collects first-party data from your website, CRM, email tools, support tickets, and other touchpoints, then stitches it together into one record per person. Unlike a data warehouse, a CDP is built for activation. It's designed so marketing and sales teams can segment audiences and trigger campaigns without writing SQL or waiting on an analyst.",
-      "why_it_matters": "Without a CDP, customer data lives in silos. Marketing sees email engagement, sales sees CRM activity, and support sees tickets, but nobody has the full picture. That fragmentation leads to duplicate outreach, conflicting messages, and missed upsell signals. A CDP gives every team the same unified view so they can act on it.",
-      "example": "A B2B SaaS company connects HubSpot, Intercom, Stripe, and their product database to Hightouch. When a free-tier user hits a usage threshold and also opens a pricing email, the CDP creates a unified signal that triggers a sales alert and moves the account into a targeted ad audience.",
-      "related_terms": [
-        "data-enrichment",
-        "data-validation"
-      ],
-      "related_tools": [
-        "hightouch",
-        "census-data",
-        "salesforce",
-        "hubspot"
-      ],
-      "category_slug": "enrichment",
-      "date_published": "2026-02-09",
-      "date_modified": "2026-02-15"
-    },
-    {
       "slug": "reverse-etl",
       "term": "Reverse ETL",
       "short_definition": "The process of syncing data from a data warehouse back into operational business tools like CRMs and marketing platforms.",
@@ -596,7 +574,7 @@
       "related_terms": [
         "reverse-etl",
         "data-orchestration",
-        "customer-data-platform"
+        "cdp"
       ],
       "related_tools": [
         "fivetran",
@@ -1120,7 +1098,7 @@
       "why_it_matters": "Traditional CDPs (Segment, mParticle, Treasure Data) require you to copy all your customer data into their platform. This creates data duplication, sync issues, and vendor lock-in. Composable CDPs flip this by treating your warehouse as the single source of truth. Your data stays in one place. You avoid paying a CDP vendor to store data you already have. And your data team maintains control over data models and transformations.",
       "example": "Instead of sending all your customer events to Segment ($120K+/year), you land them in Snowflake, build audience segments with dbt, and use Hightouch to sync those segments to HubSpot, Facebook Ads, and Intercom. The warehouse already has the data. Hightouch activates it. Total cost: Snowflake + Hightouch, often 50-70% less than a traditional CDP.",
       "related_terms": [
-        "customer-data-platform",
+        "cdp",
         "reverse-etl",
         "data-warehouse"
       ],
@@ -1266,11 +1244,11 @@
     {
       "slug": "pipeline-velocity",
       "term": "Pipeline Velocity",
-      "short_definition": "A metric that measures how fast revenue moves through your sales pipeline, calculated as (opportunities × win rate × average deal size) / sales cycle length.",
+      "short_definition": "A metric that measures how fast revenue moves through your sales pipeline, calculated as (opportunities \u00d7 win rate \u00d7 average deal size) / sales cycle length.",
       "meta_description": "What is pipeline velocity? A metric measuring how fast revenue moves through your sales funnel. See related tools and real adoption data.",
-      "full_definition": "Pipeline velocity combines four factors into one number: the number of qualified opportunities in your pipeline, your win rate, your average deal size, and the average length of your sales cycle. The formula is (Opportunities × Win Rate × Avg Deal Size) / Sales Cycle Days. It gives you a dollar-per-day figure that represents how much revenue your pipeline generates daily.",
+      "full_definition": "Pipeline velocity combines four factors into one number: the number of qualified opportunities in your pipeline, your win rate, your average deal size, and the average length of your sales cycle. The formula is (Opportunities \u00d7 Win Rate \u00d7 Avg Deal Size) / Sales Cycle Days. It gives you a dollar-per-day figure that represents how much revenue your pipeline generates daily.",
       "why_it_matters": "Pipeline velocity is one of the best single metrics for sales performance. It accounts for both volume (how many deals) and efficiency (how fast they close). Improving any of the four inputs increases velocity. It's more useful than pipeline coverage alone because it factors in speed and conversion, not just total dollar amount sitting in the funnel.",
-      "example": "Your team has 50 qualified opportunities, a 25% win rate, $40K average deal size, and 60-day sales cycle. Pipeline velocity = (50 × 0.25 × $40,000) / 60 = $8,333/day. If you shorten the sales cycle to 45 days without changing anything else, velocity jumps to $11,111/day.",
+      "example": "Your team has 50 qualified opportunities, a 25% win rate, $40K average deal size, and 60-day sales cycle. Pipeline velocity = (50 \u00d7 0.25 \u00d7 $40,000) / 60 = $8,333/day. If you shorten the sales cycle to 45 days without changing anything else, velocity jumps to $11,111/day.",
       "related_terms": [
         "sales-velocity",
         "sales-forecasting",
@@ -1326,7 +1304,7 @@
       "example": "A SaaS company and a media publisher set up a Snowflake Clean Room. The SaaS company loads their CRM account list. The publisher loads their subscriber data. The clean room matches records and returns aggregate overlap metrics (\"340 of your target accounts are active subscribers\") without either party accessing the other's full dataset.",
       "related_terms": [
         "zero-party-data",
-        "customer-data-platform",
+        "cdp",
         "data-governance"
       ],
       "related_tools": [
@@ -1461,7 +1439,7 @@
       "slug": "etl",
       "term": "ETL",
       "short_definition": "Extract, Transform, Load. A process for moving data from source systems to a data warehouse.",
-      "meta_description": "What is ETL? Extract, Transform, Load — moving data from source systems to a warehouse. See ETL tools, pricing, and job demand data.",
+      "meta_description": "What is ETL? Extract, Transform, Load \u2014 moving data from source systems to a warehouse. See ETL tools, pricing, and job demand data.",
       "full_definition": "ETL stands for Extract, Transform, Load. It's the traditional approach to data integration. First, you extract data from source systems (CRM, ERP, marketing tools). Then you transform it: clean, standardize, and reshape the data. Finally, you load it into a destination like a data warehouse. ETL tools handle the plumbing that connects your operational systems to your analytics infrastructure.",
       "why_it_matters": "Without ETL, your data stays siloed in individual tools. Marketing can't see sales data. Finance can't reconcile across systems. ETL pipelines are the backbone of business intelligence. When people talk about 'data infrastructure,' they usually mean ETL plus a warehouse.",
       "example": "Your sales team uses Salesforce, marketing uses HubSpot, and finance uses QuickBooks. An ETL tool extracts data from all three, transforms it into a common format, and loads it into Snowflake where analysts can query across all sources.",
@@ -1482,7 +1460,7 @@
       "slug": "elt",
       "term": "ELT",
       "short_definition": "Extract, Load, Transform. A modern approach where raw data is loaded first, then transformed in the warehouse.",
-      "meta_description": "What is ELT? Extract, Load, Transform — loading raw data into a warehouse first, then transforming it. See related tools and data.",
+      "meta_description": "What is ELT? Extract, Load, Transform \u2014 loading raw data into a warehouse first, then transforming it. See related tools and data.",
       "full_definition": "ELT flips the traditional ETL order. Instead of transforming data before loading it, ELT extracts raw data, loads it directly into a cloud warehouse, then transforms it there. This approach gained popularity because cloud warehouses like Snowflake and BigQuery have enough compute power to handle transformations at scale.",
       "why_it_matters": "ELT is faster to implement because you don't need to define transformations upfront. Load the raw data, then figure out how to transform it later. This is more flexible than ETL, but requires a warehouse with enough horsepower to handle the transformation workload.",
       "example": "Fivetran extracts raw data from Salesforce and loads it directly into Snowflake. Then dbt runs transformation queries inside Snowflake to create clean, analytics-ready tables.",
@@ -1704,7 +1682,7 @@
       "short_definition": "General Data Protection Regulation. The EU law governing how companies handle personal data of EU residents.",
       "meta_description": "What is GDPR? The EU data protection law governing how companies handle personal data of EU residents. See related tools and compliance.",
       "full_definition": "GDPR (General Data Protection Regulation) is the European Union's sweeping data protection law, effective since 2018. It applies to any company processing data of EU residents, regardless of where the company is based. Key requirements include lawful basis for processing, data subject rights (access, deletion, portability), and strict consent rules.",
-      "why_it_matters": "GDPR has teeth. Fines can reach €20 million or 4% of global annual revenue, whichever is higher. Even US companies selling to European customers must comply. GDPR also influenced other privacy laws worldwide, including CCPA. It's the de facto global standard for data protection.",
+      "why_it_matters": "GDPR has teeth. Fines can reach \u20ac20 million or 4% of global annual revenue, whichever is higher. Even US companies selling to European customers must comply. GDPR also influenced other privacy laws worldwide, including CCPA. It's the de facto global standard for data protection.",
       "example": "A US SaaS company serves European customers. They implement cookie consent banners, add data processing clauses to contracts, appoint a Data Protection Officer, and create processes to handle data access and deletion requests.",
       "related_terms": [
         "data-privacy",

@@ -26,6 +26,8 @@ export default defineConfig({
         '/compare/airbyte-vs-stitch/',
         '/compare/demandtools-vs-ringlead/',
         '/integrations/salesforce-gong/',
+        '/glossary/customer-data-platform/',
+        '/use-cases/website-visitor-identification/',
       ];
       const path = page.replace('https://datastackguide.com', '');
       return !redirectSources.includes(path);
@@ -79,5 +81,7 @@ export default defineConfig({
     '/compare/airbyte-vs-stitch/': '/compare/airbyte-vs-fivetran/',
     '/compare/demandtools-vs-ringlead/': '/compare/demandtools-vs-clay/',
     '/integrations/salesforce-gong/': '/tools/gong-engage/',
+    '/glossary/customer-data-platform/': '/glossary/cdp/',
+    '/use-cases/website-visitor-identification/': '/use-cases/visitor-identification-for-b2b/',
   }
 });
