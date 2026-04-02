@@ -96,10 +96,10 @@ const relatedComparisons = (comparisonsData as any).comparisons
 const relatedAlternative = alternativesData.alternatives
   .find((a: any) => a.tool_slug === page.tool_slug);
 
-// Keep title under 42 chars (+ " | DataStackGuide" suffix = 60 max)
+// Keep title under 45 chars (+ " | DataStackGuide" suffix = ~63 max)
 const shortPricingTitle = `${toolName} Pricing (2026)`;
 const minPricingTitle = `${toolName} Pricing`;
-const pricingTitle = page.title.length <= 42 ? page.title : shortPricingTitle.length <= 42 ? shortPricingTitle : minPricingTitle;
+const pricingTitle = page.title.length <= 45 ? page.title : shortPricingTitle.length <= 45 ? shortPricingTitle : minPricingTitle;
 ---
 
 <BaseLayout

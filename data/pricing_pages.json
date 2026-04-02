@@ -379,8 +379,8 @@
     {
       "slug": "apollo-pricing",
       "tool_slug": "apollo",
-      "title": "Apollo.io Pricing (2026): Plans, Credits & Real Costs",
-      "meta_description": "Apollo.io pricing breakdown: free tier, paid plans, credit system, and what you'll actually spend. Honest analysis for B2B buyers.",
+      "title": "Apollo.io Pricing 2026 - All Plans",
+      "meta_description": "Apollo.io free tier gives 10K credits/mo. Basic is $49/user, Professional $79, Organization $119. See what credits actually buy and hidden costs to watch for.",
       "hook": "Apollo is one of the best values in B2B sales tools. A generous free tier, paid plans starting at $49/user/month, and an all-in-one feature set that replaces 2-3 separate tools.",
       "tiers": [
         {
@@ -2443,8 +2443,8 @@
     {
       "slug": "linkedin-sales-navigator-pricing",
       "tool_slug": "linkedin-sales-navigator",
-      "title": "LinkedIn Sales Navigator Pricing (2026): Real Costs",
-      "meta_description": "LinkedIn Sales Navigator pricing breakdown: Core, Advanced, and Advanced Plus plans with real costs. What each tier includes and whether it's worth the spend.",
+      "title": "Sales Navigator Pricing 2026 - Plans",
+      "meta_description": "Sales Navigator Core is $99.99/mo. Advanced is $149.99/mo. Advanced Plus is custom. Monthly vs annual pricing and what each tier unlocks.",
       "hook": "LinkedIn Sales Navigator is one of the few sales tools where the listed price is close to what you actually pay. No implementation fees, no surprise add-ons. The question is which tier you need.",
       "tiers": [
         {
@@ -4013,8 +4013,8 @@
     {
       "slug": "make-pricing",
       "tool_slug": "make",
-      "title": "Make (Integromat) Pricing (2026): Plans & Costs",
-      "meta_description": "Make pricing breakdown: all tiers compared, operation limits, and what teams actually pay. Formerly Integromat. Updated for 2026.",
+      "title": "Make.com Pricing 2026 - Plans & Costs",
+      "meta_description": "Make.com Core starts at $10.59/mo for 10K operations. Pro is $18.82/mo. Teams $34.12/mo. How operations pricing works and what each plan includes.",
       "hook": "Make (formerly Integromat) is the power user's Zapier alternative. More flexible, more complex, and cheaper at scale. But operation-based pricing can surprise you if automations run hot.",
       "tiers": [
         {
@@ -4512,7 +4512,7 @@
         },
         {
           "name": "PPC (Pay-Per-Click)",
-          "price": "$2–$100+/click",
+          "price": "$2\u2013$100+/click",
           "billing": "Monthly budget",
           "popular": true,
           "highlights": [
@@ -4542,7 +4542,7 @@
         },
         {
           "item": "Review management",
-          "range": "$500–$2K/year (time cost)",
+          "range": "$500\u2013$2K/year (time cost)",
           "note": "Active review solicitation and response management requires ongoing effort. Reviews directly impact your ranking and click-through rate."
         },
         {
@@ -4552,7 +4552,7 @@
         },
         {
           "item": "Landing page optimization",
-          "range": "$2K–$10K",
+          "range": "$2K\u2013$10K",
           "note": "Capterra traffic converts differently than organic. Most vendors need dedicated landing pages to maximize conversion from review site visitors."
         }
       ],
@@ -4565,27 +4565,27 @@
           },
           {
             "item": "Average CPC in CRM category",
-            "annual": "$35–$55/click"
+            "annual": "$35\u2013$55/click"
           },
           {
             "item": "Estimated clicks/month",
-            "annual": "~40–55 clicks"
+            "annual": "~40\u201355 clicks"
           },
           {
             "item": "Typical click-to-demo rate",
-            "annual": "5–15%"
+            "annual": "5\u201315%"
           },
           {
             "item": "Annual demos from Capterra",
-            "annual": "24–99"
+            "annual": "24\u201399"
           },
           {
             "item": "Cost per demo",
-            "annual": "$242–$1,000"
+            "annual": "$242\u2013$1,000"
           }
         ],
-        "total": "$24,000–$36,000/year",
-        "per_user_real": "$242–$1,000/demo"
+        "total": "$24,000\u2013$36,000/year",
+        "per_user_real": "$242\u2013$1,000/demo"
       },
       "bottom_line": "Capterra is a viable lead source for B2B software vendors, but cost efficiency varies dramatically by category. Niche categories with low competition can deliver cheap, qualified leads. Competitive categories like CRM, project management, and marketing automation have CPCs that make cost-per-demo comparable to LinkedIn ads. The free listing is worth claiming regardless; paid placement requires careful ROI tracking.",
       "faq": [
@@ -6337,8 +6337,8 @@
     {
       "slug": "smartlead-pricing",
       "tool_slug": "smartlead",
-      "title": "Smartlead Pricing (2026): Plans & Real Costs",
-      "meta_description": "Smartlead pricing breakdown: cold email platform costs, sender account limits, and comparison to Instantly. What outbound teams actually pay in 2026.",
+      "title": "Smartlead Pricing 2026 - Plans & Costs",
+      "meta_description": "Smartlead Basic is $39/mo for 2K leads. Pro is $94/mo. Custom is $174/mo. See email account limits, lead credits, and add-on costs per plan.",
       "hook": "Smartlead is a cold email platform competing with Instantly. Pricing starts at $39/month with generous email sending limits.",
       "tiers": [
         {
@@ -6795,8 +6795,8 @@
     {
       "slug": "looker-pricing",
       "tool_slug": "looker",
-      "title": "Looker Pricing (2026): What It Actually Costs",
-      "meta_description": "Looker pricing breakdown: custom enterprise pricing, typical contract ranges, and Looker Studio Pro alternative. Updated for 2026.",
+      "title": "Looker Studio Pricing 2026 - Plans",
+      "meta_description": "Looker Studio is free. Looker Studio Pro costs $9/user/project/month. Data Control features and what the paid tier adds over the free version.",
       "hook": "Looker does not publish pricing. Based on market data, expect $5,000-$50,000+/month depending on user count and deployment complexity. Google Cloud credits can sometimes apply.",
       "tiers": [
         {
