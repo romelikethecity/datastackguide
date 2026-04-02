@@ -2,7 +2,7 @@
   "generated_at": "2026-02-03T17:01:42.066927",
   "total_jobs_analyzed": 23338,
   "total_companies": 9088,
-  "tool_count": 66,
+  "tool_count": 75,
   "tools": [
     {
       "name": "Salesforce",
@@ -1138,6 +1138,85 @@
       "salary_max": 140000,
       "is_service": false,
       "db_category": "Customer_Success"
+    },
+    {
+      "name": "Reltio",
+      "slug": "reltio",
+      "description": "Cloud-native master data management platform for enterprise data unification and governance.",
+      "categories": [
+        "cleaning",
+        "data-quality"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.reltio.com",
+      "pricing_model": "Enterprise",
+      "pricing_note": "Custom pricing, typically $50K+/year",
+      "db_category": null
+    },
+    {
+      "name": "Informatica CDQ",
+      "slug": "informatica-cdq",
+      "description": "Enterprise data quality and governance platform for complex multi-system data pipelines.",
+      "categories": [
+        "cleaning",
+        "data-quality",
+        "orchestration"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.informatica.com",
+      "pricing_model": "Enterprise",
+      "pricing_note": "Custom pricing",
+      "db_category": null
+    },
+    {
+      "name": "Openprise",
+      "slug": "openprise",
+      "description": "RevOps data automation platform for cleaning, enriching, and orchestrating B2B data.",
+      "categories": [
+        "cleaning",
+        "data-quality",
+        "orchestration"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.openprisetech.com",
+      "pricing_model": "Enterprise",
+      "pricing_note": "Custom pricing",
+      "db_category": null
+    },
+    {
+      "name": "Syncari",
+      "slug": "syncari",
+      "description": "Autonomous data management platform that syncs, cleans, and unifies data across GTM systems.",
+      "categories": [
+        "cleaning",
+        "data-quality",
+        "orchestration"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://syncari.com",
+      "pricing_model": "Tiered",
+      "pricing_note": "Starting at $2K+/month",
+      "db_category": null
     }
   ]
 }
