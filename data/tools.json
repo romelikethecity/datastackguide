@@ -2,7 +2,7 @@
   "generated_at": "2026-02-03T17:01:42.066927",
   "total_jobs_analyzed": 23338,
   "total_companies": 9088,
-  "tool_count": 83,
+  "tool_count": 90,
   "tools": [
     {
       "name": "Salesforce",
@@ -1342,6 +1342,136 @@
       "salary_max": 0,
       "is_service": false,
       "db_category": "Data_Quality"
+    },
+    {
+      "name": "Ribbon Health",
+      "slug": "ribbon-health",
+      "description": "Provider directory API for health tech products. Clean REST endpoints for provider search, insurance networks, and facility data.",
+      "categories": [
+        "healthcare",
+        "enrichment"
+      ],
+      "primary_category": "healthcare",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.ribbonhealth.com",
+      "pricing_model": "Usage-based",
+      "pricing_note": "Per-API-call pricing",
+      "db_category": null
+    },
+    {
+      "name": "NPPES",
+      "slug": "nppes",
+      "description": "CMS's public National Provider Identifier registry. 7M+ provider records, downloadable bulk files. Free but requires your own parsing.",
+      "categories": [
+        "healthcare"
+      ],
+      "primary_category": "healthcare",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://npiregistry.cms.hhs.gov",
+      "pricing_model": "Free",
+      "pricing_note": "Public government data",
+      "db_category": null
+    },
+    {
+      "name": "CMS Open Data",
+      "slug": "cms-open-data",
+      "description": "Medicare claims, provider performance, and hospital comparison datasets from the Centers for Medicare and Medicaid Services.",
+      "categories": [
+        "healthcare"
+      ],
+      "primary_category": "healthcare",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://data.cms.gov",
+      "pricing_model": "Free",
+      "pricing_note": "Public government data",
+      "db_category": null
+    },
+    {
+      "name": "Doximity",
+      "slug": "doximity",
+      "description": "Professional network for physicians with verified profiles. API access is partnership-gated and limited to approved use cases.",
+      "categories": [
+        "healthcare",
+        "enrichment"
+      ],
+      "primary_category": "healthcare",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.doximity.com",
+      "pricing_model": "Partnership",
+      "pricing_note": "Partnership-gated access",
+      "db_category": null
+    },
+    {
+      "name": "Redox",
+      "slug": "redox",
+      "description": "Healthcare data integration platform for connecting to EHR systems. The standard for bidirectional clinical data flows.",
+      "categories": [
+        "healthcare",
+        "ipaas"
+      ],
+      "primary_category": "healthcare",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.redoxengine.com",
+      "pricing_model": "Custom",
+      "pricing_note": "Custom pricing per connection",
+      "db_category": null
+    },
+    {
+      "name": "Mirth Connect",
+      "slug": "mirth-connect",
+      "description": "Open-source HL7/FHIR integration engine by NextGen Healthcare. The workhorse of healthcare data interchange.",
+      "categories": [
+        "healthcare",
+        "ipaas"
+      ],
+      "primary_category": "healthcare",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.nextgen.com/products-and-services/integration-engine",
+      "pricing_model": "Freemium",
+      "pricing_note": "Free open source / Enterprise pricing",
+      "db_category": null
+    },
+    {
+      "name": "Healthjump",
+      "slug": "healthjump",
+      "description": "Data extraction platform for practice management systems. Pulls structured data from PMS and EHR systems for analytics and integration.",
+      "categories": [
+        "healthcare"
+      ],
+      "primary_category": "healthcare",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.healthjump.com",
+      "pricing_model": "Custom",
+      "pricing_note": "Custom pricing per practice",
+      "db_category": null
     }
   ]
 }
