@@ -2,7 +2,7 @@
   "generated_at": "2026-02-03T17:01:42.066927",
   "total_jobs_analyzed": 23338,
   "total_companies": 9088,
-  "tool_count": 75,
+  "tool_count": 83,
   "tools": [
     {
       "name": "Salesforce",
@@ -1217,6 +1217,131 @@
       "pricing_model": "Tiered",
       "pricing_note": "Starting at $2K+/month",
       "db_category": null
+    },
+    {
+      "name": "Tamr",
+      "slug": "tamr",
+      "description": "",
+      "categories": [
+        "cleaning",
+        "enrichment"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Quality"
+    },
+    {
+      "name": "Dedupe.io",
+      "slug": "dedupe-io",
+      "description": "",
+      "categories": [
+        "cleaning"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Quality"
+    },
+    {
+      "name": "Cloudingo",
+      "slug": "cloudingo",
+      "description": "",
+      "categories": [
+        "cleaning"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Quality"
+    },
+    {
+      "name": "People Data Labs",
+      "slug": "people-data-labs",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "FullContact",
+      "slug": "fullcontact",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Hunter.io",
+      "slug": "hunter-io",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Snov.io",
+      "slug": "snov-io",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "list-building"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Insycle",
+      "slug": "insycle",
+      "description": "",
+      "categories": [
+        "cleaning"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Quality"
     }
   ]
 }
