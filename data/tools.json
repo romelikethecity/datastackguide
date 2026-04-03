@@ -2,7 +2,7 @@
   "generated_at": "2026-02-03T17:01:42.066927",
   "total_jobs_analyzed": 23338,
   "total_companies": 9088,
-  "tool_count": 104,
+  "tool_count": 130,
   "tools": [
     {
       "name": "Salesforce",
@@ -1704,6 +1704,402 @@
       "salary_max": null,
       "is_service": false,
       "db_category": null
+    },
+    {
+      "name": "SQLMesh",
+      "slug": "sqlmesh",
+      "description": "",
+      "categories": [
+        "data-transformation"
+      ],
+      "primary_category": "data-transformation",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Transformation"
+    },
+    {
+      "name": "Apache Airflow",
+      "slug": "airflow",
+      "description": "",
+      "categories": [
+        "orchestration"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Orchestration"
+    },
+    {
+      "name": "Dagster",
+      "slug": "dagster",
+      "description": "",
+      "categories": [
+        "orchestration"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Orchestration"
+    },
+    {
+      "name": "Metabase",
+      "slug": "metabase",
+      "description": "",
+      "categories": [
+        "bi",
+        "analytics"
+      ],
+      "primary_category": "bi",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "BI_OpenSource"
+    },
+    {
+      "name": "Atlan",
+      "slug": "atlan",
+      "description": "",
+      "categories": [
+        "data-catalog",
+        "data-governance"
+      ],
+      "primary_category": "data-catalog",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Catalog"
+    },
+    {
+      "name": "Alation",
+      "slug": "alation",
+      "description": "",
+      "categories": [
+        "data-catalog",
+        "data-governance"
+      ],
+      "primary_category": "data-catalog",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Catalog"
+    },
+    {
+      "name": "DataHub",
+      "slug": "datahub",
+      "description": "",
+      "categories": [
+        "data-catalog"
+      ],
+      "primary_category": "data-catalog",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Catalog"
+    },
+    {
+      "name": "Collibra",
+      "slug": "collibra",
+      "description": "",
+      "categories": [
+        "data-catalog",
+        "data-governance"
+      ],
+      "primary_category": "data-governance",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Governance"
+    },
+    {
+      "name": "Select Star",
+      "slug": "select-star",
+      "description": "",
+      "categories": [
+        "data-catalog"
+      ],
+      "primary_category": "data-catalog",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Catalog"
+    },
+    {
+      "name": "Castor",
+      "slug": "castor",
+      "description": "",
+      "categories": [
+        "data-catalog"
+      ],
+      "primary_category": "data-catalog",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Catalog"
+    },
+    {
+      "name": "OpenMetadata",
+      "slug": "openmetadata",
+      "description": "",
+      "categories": [
+        "data-catalog"
+      ],
+      "primary_category": "data-catalog",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Catalog"
+    },
+    {
+      "name": "Census",
+      "slug": "census",
+      "description": "",
+      "categories": [
+        "reverse-etl"
+      ],
+      "primary_category": "reverse-etl",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
+    },
+    {
+      "name": "Polytomic",
+      "slug": "polytomic",
+      "description": "",
+      "categories": [
+        "reverse-etl"
+      ],
+      "primary_category": "reverse-etl",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
+    },
+    {
+      "name": "RudderStack",
+      "slug": "rudderstack",
+      "description": "",
+      "categories": [
+        "reverse-etl",
+        "cdp"
+      ],
+      "primary_category": "reverse-etl",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
+    },
+    {
+      "name": "GrowthLoop",
+      "slug": "growthloop",
+      "description": "",
+      "categories": [
+        "reverse-etl"
+      ],
+      "primary_category": "reverse-etl",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
+    },
+    {
+      "name": "Omnata",
+      "slug": "omnata",
+      "description": "",
+      "categories": [
+        "reverse-etl"
+      ],
+      "primary_category": "reverse-etl",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
+    },
+    {
+      "name": "Pinecone",
+      "slug": "pinecone",
+      "description": "",
+      "categories": [
+        "vector-database"
+      ],
+      "primary_category": "vector-database",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Vector_Database"
+    },
+    {
+      "name": "Weaviate",
+      "slug": "weaviate",
+      "description": "",
+      "categories": [
+        "vector-database"
+      ],
+      "primary_category": "vector-database",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Vector_Database"
+    },
+    {
+      "name": "Milvus",
+      "slug": "milvus",
+      "description": "",
+      "categories": [
+        "vector-database"
+      ],
+      "primary_category": "vector-database",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Vector_Database"
+    },
+    {
+      "name": "Qdrant",
+      "slug": "qdrant",
+      "description": "",
+      "categories": [
+        "vector-database"
+      ],
+      "primary_category": "vector-database",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Vector_Database"
+    },
+    {
+      "name": "Chroma",
+      "slug": "chroma",
+      "description": "",
+      "categories": [
+        "vector-database"
+      ],
+      "primary_category": "vector-database",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Vector_Database"
+    },
+    {
+      "name": "pgvector",
+      "slug": "pgvector",
+      "description": "",
+      "categories": [
+        "vector-database"
+      ],
+      "primary_category": "vector-database",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Vector_Database"
+    },
+    {
+      "name": "LanceDB",
+      "slug": "lancedb",
+      "description": "",
+      "categories": [
+        "vector-database"
+      ],
+      "primary_category": "vector-database",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Vector_Database"
+    },
+    {
+      "name": "Immuta",
+      "slug": "immuta",
+      "description": "",
+      "categories": [
+        "data-governance"
+      ],
+      "primary_category": "data-governance",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Governance"
+    },
+    {
+      "name": "Privacera",
+      "slug": "privacera",
+      "description": "",
+      "categories": [
+        "data-governance"
+      ],
+      "primary_category": "data-governance",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Governance"
+    },
+    {
+      "name": "BigID",
+      "slug": "bigid",
+      "description": "",
+      "categories": [
+        "data-governance",
+        "data-privacy"
+      ],
+      "primary_category": "data-governance",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": 0,
+      "salary_max": 0,
+      "is_service": false,
+      "db_category": "Data_Governance"
     }
   ]
 }
