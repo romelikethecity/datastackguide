@@ -2,7 +2,7 @@
   "generated_at": "2026-02-03T17:01:42.066927",
   "total_jobs_analyzed": 23338,
   "total_companies": 9088,
-  "tool_count": 90,
+  "tool_count": 92,
   "tools": [
     {
       "name": "Salesforce",
@@ -1471,6 +1471,45 @@
       "website": "https://www.healthjump.com",
       "pricing_model": "Custom",
       "pricing_note": "Custom pricing per practice",
+      "db_category": null
+    },
+    {
+      "name": "Snowflake",
+      "slug": "snowflake",
+      "description": "Cloud data platform built for SQL analytics and BI. Separates compute from storage, scales automatically, and handles semi-structured data natively. The dominant choice for analytics-first data teams.",
+      "categories": [
+        "data-warehouse",
+        "analytics"
+      ],
+      "primary_category": "data-warehouse",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.snowflake.com",
+      "pricing_model": "Usage-based",
+      "pricing_note": "Credit-based pricing, varies by cloud provider and tier",
+      "db_category": null
+    },
+    {
+      "name": "Databricks",
+      "slug": "databricks",
+      "description": "Unified analytics platform combining data engineering, data science, and ML on a lakehouse architecture. Built on Apache Spark. The dominant choice for ML-first and data science teams.",
+      "categories": [
+        "data-platform",
+        "ml",
+        "analytics"
+      ],
+      "primary_category": "data-platform",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "website": "https://www.databricks.com",
+      "pricing_model": "Usage-based",
+      "pricing_note": "DBU-based pricing, varies by workload type and tier",
       "db_category": null
     }
   ]
