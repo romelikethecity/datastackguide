@@ -2,7 +2,7 @@
   "generated_at": "2026-02-03T17:01:42.066927",
   "total_jobs_analyzed": 23338,
   "total_companies": 9088,
-  "tool_count": 92,
+  "tool_count": 104,
   "tools": [
     {
       "name": "Salesforce",
@@ -1510,6 +1510,199 @@
       "website": "https://www.databricks.com",
       "pricing_model": "Usage-based",
       "pricing_note": "DBU-based pricing, varies by workload type and tier",
+      "db_category": null
+    },
+    {
+      "name": "Stitch",
+      "slug": "stitch",
+      "description": "",
+      "categories": [
+        "integration",
+        "etl"
+      ],
+      "primary_category": "integration",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Matillion",
+      "slug": "matillion",
+      "description": "",
+      "categories": [
+        "integration",
+        "etl"
+      ],
+      "primary_category": "integration",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Hevo Data",
+      "slug": "hevo",
+      "description": "",
+      "categories": [
+        "integration",
+        "etl"
+      ],
+      "primary_category": "integration",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "dbt",
+      "slug": "dbt",
+      "description": "",
+      "categories": [
+        "integration",
+        "etl",
+        "analytics"
+      ],
+      "primary_category": "integration",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Meltano",
+      "slug": "meltano",
+      "description": "",
+      "categories": [
+        "integration",
+        "etl"
+      ],
+      "primary_category": "integration",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Monte Carlo",
+      "slug": "monte-carlo",
+      "description": "",
+      "categories": [
+        "data-quality",
+        "observability"
+      ],
+      "primary_category": "data-quality",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Soda",
+      "slug": "soda",
+      "description": "",
+      "categories": [
+        "data-quality",
+        "observability"
+      ],
+      "primary_category": "data-quality",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Metaplane",
+      "slug": "metaplane",
+      "description": "",
+      "categories": [
+        "data-quality",
+        "observability"
+      ],
+      "primary_category": "data-quality",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Elementary",
+      "slug": "elementary",
+      "description": "",
+      "categories": [
+        "data-quality",
+        "observability"
+      ],
+      "primary_category": "data-quality",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Great Expectations",
+      "slug": "great-expectations",
+      "description": "",
+      "categories": [
+        "data-quality",
+        "observability"
+      ],
+      "primary_category": "data-quality",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Datafold",
+      "slug": "datafold",
+      "description": "",
+      "categories": [
+        "data-quality",
+        "observability"
+      ],
+      "primary_category": "data-quality",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": null
+    },
+    {
+      "name": "Bigeye",
+      "slug": "bigeye",
+      "description": "",
+      "categories": [
+        "data-quality",
+        "observability"
+      ],
+      "primary_category": "data-quality",
+      "job_count": 0,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
       "db_category": null
     }
   ]
