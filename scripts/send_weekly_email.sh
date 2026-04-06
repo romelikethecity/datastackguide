@@ -53,6 +53,13 @@ echo "[3/3] Saving market snapshot..."
 python3 scripts/generate_weekly_email.py --save-snapshot
 echo "Snapshot saved."
 
+# Push updated snapshot so git reset --hard doesn't lose it
+DATE=$(date +%Y-%m-%d)
+if [ -f "data/previous_market_snapshot.json" ]; then
+    git add data/previous_market_snapshot.json
+    git diff --staged --quiet || git commit -m "Update weekly email snapshot ($DATE)" && git push 2>/dev/null || true
+fi
+
 echo ""
 echo "=========================================="
 echo "All done! $(date)"
