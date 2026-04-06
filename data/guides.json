@@ -989,7 +989,7 @@
         },
         {
           "heading": "Sequencing Logic: Which Provider Goes First",
-          "content": "The sequencing order matters because it directly affects cost and accuracy. Place your highest-accuracy, lowest-cost provider first. This provider fills the majority of records cheaply and accurately. Downstream providers handle the harder-to-find records at a potentially higher per-record cost.\n\nFor US-focused B2B data, a common sequence is: Apollo (lowest cost, solid coverage for tech and mid-market) then ZoomInfo (broader coverage, higher cost) then Cognism or Seamless.ai (fills remaining gaps, especially for direct dials). For European markets, start with Cognism (strongest GDPR-compliant European data) then ZoomInfo (US and global coverage) then a regional provider.\n\nBeyond simple \"found or not found\" logic, sophisticated waterfalls use confidence scoring. If Provider A returns an email with 80% confidence, you might still query Provider B to validate it. If both providers return the same email, confidence rises to 95%+. If they disagree, you flag the record for manual review or query a third provider as a tiebreaker. Clay automates this logic natively, allowing you to build enrichment waterfalls with conditional branching, confidence thresholds, and multi-provider validation in a visual workflow.\n\nCost optimization tip: negotiate volume-based pricing with your providers based on the actual volume they'll process, not your total list size. If your waterfall sends only 30% of records to Provider B, your contract should reflect that volume. Most providers will negotiate if you can provide reliable volume estimates."
+          "content": "The sequencing order matters because it directly affects cost and accuracy. Place your highest-accuracy, lowest-cost provider first. This provider fills the majority of records cheaply and accurately. Downstream providers handle the harder-to-find records at a potentially higher per-record cost.\n\nFor US-focused B2B data, a common sequence is: Apollo (lowest cost, solid coverage for tech and mid-market) then ZoomInfo (broader coverage, higher cost) then Cognism or smooth.ai (fills remaining gaps, especially for direct dials). For European markets, start with Cognism (strongest GDPR-compliant European data) then ZoomInfo (US and global coverage) then a regional provider.\n\nBeyond simple \"found or not found\" logic, sophisticated waterfalls use confidence scoring. If Provider A returns an email with 80% confidence, you might still query Provider B to validate it. If both providers return the same email, confidence rises to 95%+. If they disagree, you flag the record for manual review or query a third provider as a tiebreaker. Clay automates this logic natively, allowing you to build enrichment waterfalls with conditional branching, confidence thresholds, and multi-provider validation in a visual workflow.\n\nCost optimization tip: negotiate volume-based pricing with your providers based on the actual volume they'll process, not your total list size. If your waterfall sends only 30% of records to Provider B, your contract should reflect that volume. Most providers will negotiate if you can provide reliable volume estimates."
         },
         {
           "heading": "Cost Optimization: Getting the Most From Your Enrichment Budget",
@@ -1005,7 +1005,7 @@
         "apollo",
         "clay",
         "clearbit",
-        "seamless-ai"
+        "smooth-ai"
       ],
       "related_categories": [
         "enrichment",
@@ -1095,7 +1095,7 @@
         },
         {
           "heading": "Select 2-4 Vendors and Request Matched Tests",
-          "content": "Don't test more than four providers. The comparison becomes unmanageable, and you'll spend more time analyzing results than making a decision. Pick two serious contenders and one dark horse.\n\nWhen you contact vendors, be direct: you're running a competitive evaluation with a specific timeline. Most providers have a formal bakeoff process. ZoomInfo, Apollo, Cognism, and Seamless.ai all offer free data tests. Some will push back and try to funnel you into a demo-first process. Push through this. You don't need another demo. You need matched data.\n\nSend each vendor the same test file on the same day. This eliminates any time-based data freshness advantage. Request results within 5 business days. Vendors who can't turn around a 500-record test in a week are showing you what their support responsiveness will look like post-sale.\n\nAsk each vendor to return the same fields: direct dial phone, mobile phone, work email, personal email, job title, company size, industry, and LinkedIn URL. Standardize the request so you're comparing identical outputs."
+          "content": "Don't test more than four providers. The comparison becomes unmanageable, and you'll spend more time analyzing results than making a decision. Pick two serious contenders and one dark horse.\n\nWhen you contact vendors, be direct: you're running a competitive evaluation with a specific timeline. Most providers have a formal bakeoff process. ZoomInfo, Apollo, Cognism, and smooth.ai all offer free data tests. Some will push back and try to funnel you into a demo-first process. Push through this. You don't need another demo. You need matched data.\n\nSend each vendor the same test file on the same day. This eliminates any time-based data freshness advantage. Request results within 5 business days. Vendors who can't turn around a 500-record test in a week are showing you what their support responsiveness will look like post-sale.\n\nAsk each vendor to return the same fields: direct dial phone, mobile phone, work email, personal email, job title, company size, industry, and LinkedIn URL. Standardize the request so you're comparing identical outputs."
         },
         {
           "heading": "Score Results Across Five Dimensions",
@@ -1122,7 +1122,7 @@
         "zoominfo",
         "apollo",
         "cognism",
-        "seamless-ai",
+        "smooth-ai",
         "clearbit"
       ],
       "related_categories": [
@@ -1142,7 +1142,7 @@
         },
         {
           "q": "Will data vendors participate in a bakeoff for free?",
-          "a": "Yes. Every major provider (ZoomInfo, Apollo, Cognism, Seamless.ai, Clearbit) offers free data tests for qualified prospects. It's standard practice. If a vendor refuses to test against your data, treat that as a disqualifying signal."
+          "a": "Yes. Every major provider (ZoomInfo, Apollo, Cognism, smooth.ai, Clearbit) offers free data tests for qualified prospects. It's standard practice. If a vendor refuses to test against your data, treat that as a disqualifying signal."
         },
         {
           "q": "Should I tell vendors they're in a competitive bakeoff?",
@@ -1241,7 +1241,7 @@
         },
         {
           "heading": "Track ROI Quarterly, Not Just at Purchase",
-          "content": "The biggest mistake teams make is calculating ROI once to justify the purchase and never revisiting it. Data tool performance changes over time. Match rates shift. Usage patterns evolve. New team members may not adopt the tool fully.\n\nSet up a quarterly ROI dashboard with four metrics: tool utilization (what percentage of licensed seats are active?), data quality impact (match rate, accuracy on a quarterly spot check), time savings (resurvey reps twice a year), and pipeline attribution (conversion rate changes correlated with tool usage).\n\nUtilization is the silent ROI killer. A $50K tool used by 60% of your team is delivering $30K in value. Low utilization is usually a training problem, not a tool problem. If you see utilization below 75%, invest in training before you blame the product.\n\nBring your quarterly ROI data to renewal negotiations. If the tool delivered $300K in value on a $50K contract, you have leverage to maintain pricing. If it delivered $60K in value, you have grounds to renegotiate or switch. Either way, the data puts you in control of the conversation instead of relying on the vendor's renewal pitch."
+          "content": "The biggest mistake teams make is calculating ROI once to justify the purchase and never revisiting it. Data tool performance changes over time. Match rates shift. Usage patterns evolve. New team members may not adopt the tool fully.\n\nSet up a quarterly ROI dashboard with four metrics: tool use (what percentage of licensed seats are active?), data quality impact (match rate, accuracy on a quarterly spot check), time savings (resurvey reps twice a year), and pipeline attribution (conversion rate changes correlated with tool usage).\n\nUtilization is the silent ROI killer. A $50K tool used by 60% of your team is delivering $30K in value. Low use is usually a training problem, not a tool problem. If you see use below 75%, invest in training before you blame the product.\n\nBring your quarterly ROI data to renewal negotiations. If the tool delivered $300K in value on a $50K contract, you have leverage to maintain pricing. If it delivered $60K in value, you have grounds to renegotiate or switch. Either way, the data puts you in control of the conversation instead of relying on the vendor's renewal pitch."
         },
         {
           "heading": "ROI Benchmarks by Tool Category",
@@ -1473,7 +1473,7 @@
       "sections": [
         {
           "heading": "Understand How Data Providers Price (And Where the Margin Hides)",
-          "content": "Most B2B data providers use one of three pricing models, and each one has different negotiation leverage points.\n\nPer-seat pricing (ZoomInfo, LinkedIn Sales Nav) charges by user. The list price is the starting point for negotiation, not the expected close price. ZoomInfo's list price for Professional Plus is roughly $15K/seat/year. Most deals close at $8K-$12K/seat depending on volume. The more seats you buy, the steeper the discount. But the discount curve flattens after 20 seats. Going from 5 to 10 seats might drop per-seat cost by 25%. Going from 20 to 30 might drop it by 5%.\n\nCredit-based pricing (Apollo, Seamless.ai, Lusha) charges per lookup or export. The negotiation here is on credit volume: buying more credits upfront gets a lower per-credit rate. Apollo's standard credits are roughly $0.05-0.10 per export depending on tier. Negotiating an annual commit of 50K credits vs. 10K credits can drop the per-credit rate by 30-40%.\n\nPlatform-plus-credits hybrid (ZoomInfo, Cognism) charges a platform fee plus usage credits. You're negotiating two variables: the platform fee and the credit rate. Some buyers focus on the platform fee and ignore the credit rate, which is where the surprise costs hit at the end of the year. Negotiate both, and insist on a credit overage rate cap written into the contract."
+          "content": "Most B2B data providers use one of three pricing models, and each one has different negotiation leverage points.\n\nPer-seat pricing (ZoomInfo, LinkedIn Sales Nav) charges by user. The list price is the starting point for negotiation, not the expected close price. ZoomInfo's list price for Professional Plus is roughly $15K/seat/year. Most deals close at $8K-$12K/seat depending on volume. The more seats you buy, the steeper the discount. But the discount curve flattens after 20 seats. Going from 5 to 10 seats might drop per-seat cost by 25%. Going from 20 to 30 might drop it by 5%.\n\nCredit-based pricing (Apollo, smooth.ai, Lusha) charges per lookup or export. The negotiation here is on credit volume: buying more credits upfront gets a lower per-credit rate. Apollo's standard credits are roughly $0.05-0.10 per export depending on tier. Negotiating an annual commit of 50K credits vs. 10K credits can drop the per-credit rate by 30-40%.\n\nPlatform-plus-credits hybrid (ZoomInfo, Cognism) charges a platform fee plus usage credits. You're negotiating two variables: the platform fee and the credit rate. Some buyers focus on the platform fee and ignore the credit rate, which is where the surprise costs hit at the end of the year. Negotiate both, and insist on a credit overage rate cap written into the contract."
         },
         {
           "heading": "Time Your Purchase for Maximum Leverage",
@@ -1489,7 +1489,7 @@
         },
         {
           "heading": "Handle the Renewal Conversation 90 Days Early",
-          "content": "The worst time to negotiate a renewal is the week before your contract expires. You have no leverage, no time to evaluate alternatives, and the provider knows it.\n\nStart the renewal conversation 90 days before expiration. This gives you enough time to run a mini-bakeoff with a competitor, gather internal usage data, and negotiate from a position of strength.\n\nPull your utilization data first. What percentage of seats are active? What's your average credit usage per month? What features do you use regularly? If you're paying for 20 seats but only 12 are active, you should be renewing for 12 seats at a lower total price, not auto-renewing for 20. Usage data is the foundation of every renewal negotiation.\n\nGet a competitive quote before talking to your incumbent. Even if you're happy with your current provider, having an alternative quote on hand changes the dynamic. You don't need to run a full bakeoff. A quick pricing conversation with one competitor gives you a reference point. If your incumbent quotes $100K and a competitor quotes $70K for similar coverage, that $30K gap is your negotiating leverage.\n\nAsk for a flat or reduced renewal rate, not just a match. Providers expect to raise prices 5-15% on renewal. Your counter should be flat pricing at minimum, with a case for a reduction based on: you're buying fewer seats, your utilization has been lower than expected, competitive alternatives are cheaper, or you're willing to sign a longer term for a rate lock.\n\nDon't bluff about leaving if you're not willing to leave. Providers call bluffs. If you say you're evaluating alternatives but aren't, the vendor will test your commitment by holding firm. Only use competitive leverage you can back up."
+          "content": "The worst time to negotiate a renewal is the week before your contract expires. You have no leverage, no time to evaluate alternatives, and the provider knows it.\n\nStart the renewal conversation 90 days before expiration. This gives you enough time to run a mini-bakeoff with a competitor, gather internal usage data, and negotiate from a position of strength.\n\nPull your use data first. What percentage of seats are active? What's your average credit usage per month? What features do you use regularly? If you're paying for 20 seats but only 12 are active, you should be renewing for 12 seats at a lower total price, not auto-renewing for 20. Usage data is the foundation of every renewal negotiation.\n\nGet a competitive quote before talking to your incumbent. Even if you're happy with your current provider, having an alternative quote on hand changes the dynamic. You don't need to run a full bakeoff. A quick pricing conversation with one competitor gives you a reference point. If your incumbent quotes $100K and a competitor quotes $70K for similar coverage, that $30K gap is your negotiating leverage.\n\nAsk for a flat or reduced renewal rate, not just a match. Providers expect to raise prices 5-15% on renewal. Your counter should be flat pricing at minimum, with a case for a reduction based on: you're buying fewer seats, your use has been lower than expected, competitive alternatives are cheaper, or you're willing to sign a longer term for a rate lock.\n\nDon't bluff about leaving if you're not willing to leave. Providers call bluffs. If you say you're evaluating alternatives but aren't, the vendor will test your commitment by holding firm. Only use competitive leverage you can back up."
         },
         {
           "heading": "Compare Total Cost of Ownership Across Providers",
@@ -1500,7 +1500,7 @@
         "zoominfo",
         "apollo",
         "cognism",
-        "seamless-ai",
+        "smooth-ai",
         "linkedin-sales-navigator"
       ],
       "related_categories": [
@@ -1826,7 +1826,7 @@
         "clay",
         "lusha",
         "cognism",
-        "seamless-ai"
+        "smooth-ai"
       ],
       "related_categories": [
         "enrichment",
