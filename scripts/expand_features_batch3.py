@@ -140,7 +140,7 @@ UPDATES = {
             "competent but still maturing compared to Salesforce Einstein."
         ),
         3: (
-            "Seamless integration with Oracle ERP Cloud, Oracle Database, and Oracle Cloud "
+            "Smooth integration with Oracle ERP Cloud, Oracle Database, and Oracle Cloud "
             "Infrastructure for unified customer, financial, and operational data without "
             "middleware. Sales reps see real-time order status, inventory levels, and billing "
             "history in the CRM. Finance teams get a clean data path from opportunity to "

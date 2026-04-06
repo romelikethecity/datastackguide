@@ -130,7 +130,7 @@ def fix_thin_alternatives():
                 "price": "$1,500/tenant/mo",
                 "best_for": "Microsoft-stack enterprises wanting native marketing automation",
                 "key_difference": "Native integration with Microsoft 365, Teams, and Dynamics CRM",
-                "coverage": "Full marketing automation suite including email, events, forms, and customer journeys. Deeply integrated with Dynamics CRM, Power BI, and Microsoft 365. Event management features are genuinely strong. Weaker ecosystem of third-party integrations vs. SFMC.",
+                "coverage": "Full marketing automation suite including email, events, forms, and customer journeys. Deeply integrated with Dynamics CRM, Power BI, and Microsoft 365. Event management features are strong. Weaker ecosystem of third-party integrations vs. SFMC.",
                 "verdict": "The natural SFMC alternative for Microsoft-stack companies. Lower total cost of ownership when you're already paying for Dynamics CRM. Less mature than SFMC for complex multi-channel orchestration."
             }
         ],
@@ -151,7 +151,7 @@ def fix_thin_alternatives():
                 "best_for": "PLG companies tracking customer engagement across community and product channels",
                 "key_difference": "Aggregates engagement signals from community, product, and social channels instead of traditional CS workflows",
                 "coverage": "Unified view of customer engagement across Slack, Discord, GitHub, Twitter, product usage, and CRM. Identifies champions, tracks sentiment, and surfaces expansion signals. Best for developer-first and PLG companies where community activity correlates with retention.",
-                "verdict": "The modern alternative for PLG customer success. Common Room tracks engagement where it actually happens (community, product, social) rather than relying on NPS surveys and health score formulas."
+                "verdict": "The modern alternative for PLG customer success. Common Room tracks engagement where it happens (community, product, social) rather than relying on NPS surveys and health score formulas."
             }
         ]
     }

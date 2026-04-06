@@ -38,18 +38,18 @@ def stagger_dates(items, start: date, end: date, slug_key="slug"):
 def fix_pricing_meta_descriptions(pages):
     """Fix pricing pages with meta_description under 120 chars."""
     fixes = {
-        "census-pricing": "Census pricing breakdown: reverse ETL costs, sync-based pricing, and how it compares to Hightouch. What data teams actually pay in 2026.",
-        "smartlead-pricing": "Smartlead pricing breakdown: cold email platform costs, sender account limits, and comparison to Instantly. What outbound teams actually pay in 2026.",
+        "census-pricing": "Census pricing breakdown: reverse ETL costs, sync-based pricing, and how it compares to Hightouch. What data teams pay in 2026.",
+        "smartlead-pricing": "Smartlead pricing breakdown: cold email platform costs, sender account limits, and comparison to Instantly. What outbound teams pay in 2026.",
         "gong-engage-pricing": "Gong Engage pricing breakdown: sales engagement costs, per-seat pricing, and how it compares to Salesloft and Outreach. Updated for 2026.",
         "gong-pricing": "Gong Engage pricing breakdown: sales engagement costs, per-seat pricing, and how it compares to Salesloft and Outreach. Updated for 2026.",
-        "braze-pricing": "Braze pricing breakdown: MAU-based pricing model, typical contract ranges by company size, and what marketing teams actually pay. Updated for 2026.",
-        "clearbit-pricing": "Clearbit pricing breakdown: what plans actually cost, API pricing, and hidden fees. Based on real buyer data. Updated with 2026 pricing changes.",
+        "braze-pricing": "Braze pricing breakdown: MAU-based pricing model, typical contract ranges by company size, and what marketing teams pay. Updated for 2026.",
+        "clearbit-pricing": "Clearbit pricing breakdown: what plans cost, API pricing, and hidden fees. Based on real buyer data. Updated with 2026 pricing changes.",
         "sugarcrm-pricing": "SugarCRM pricing breakdown: what each edition costs, user minimums, and total cost comparison to Salesforce and HubSpot. Updated for 2026.",
-        "workato-pricing": "Workato pricing breakdown: enterprise iPaaS costs, recipe-based pricing, and comparison to MuleSoft and Tray.io. What IT teams actually pay in 2026.",
-        "linkedin-marketing-pricing": "LinkedIn Marketing pricing breakdown: ad costs, Campaign Manager pricing, and what B2B marketers actually pay. CPM, CPC, and budget benchmarks for 2026.",
-        "airbyte-pricing": "Airbyte pricing breakdown: self-hosted (free) vs Cloud costs, row-based pricing, and what data teams actually pay for ELT pipelines. Updated for 2026.",
+        "workato-pricing": "Workato pricing breakdown: enterprise iPaaS costs, recipe-based pricing, and comparison to MuleSoft and Tray.io. What IT teams pay in 2026.",
+        "linkedin-marketing-pricing": "LinkedIn Marketing pricing breakdown: ad costs, Campaign Manager pricing, and what B2B marketers pay. CPM, CPC, and budget benchmarks for 2026.",
+        "airbyte-pricing": "Airbyte pricing breakdown: self-hosted (free) vs Cloud costs, row-based pricing, and what data teams pay for ELT pipelines. Updated for 2026.",
         "hightouch-pricing": "Hightouch pricing breakdown: reverse ETL costs, row-based pricing, and total cost of ownership for data activation teams. Updated with 2026 rates.",
-        "outreach-pricing": "Outreach.io pricing breakdown: what tiers actually cost, per-seat pricing, and total cost of ownership for sales teams. Updated for 2026.",
+        "outreach-pricing": "Outreach.io pricing breakdown: what tiers cost, per-seat pricing, and total cost of ownership for sales teams. Updated for 2026.",
     }
 
     fixed = 0

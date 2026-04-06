@@ -372,7 +372,7 @@
       "setup_considerations": [
         "6sense's Salesforce integration requires a managed package installation and dedicated API user. Budget 2-3 weeks for initial setup and tuning.",
         "Define your Ideal Customer Profile (ICP) in 6sense before connecting to Salesforce. The AI model's predictions are only as good as the ICP definition it's working from.",
-        "6sense creates custom fields on Salesforce account and contact records. Plan page layout changes to surface intent data where reps actually look (not buried in custom fields).",
+        "6sense creates custom fields on Salesforce account and contact records. Plan page layout changes to surface intent data where reps look (not buried in custom fields).",
         "Intent data is only useful if sales acts on it. Build Salesforce dashboard components that highlight accounts in 'decision' or 'purchase' stages so reps prioritize them daily."
       ],
       "faq": [

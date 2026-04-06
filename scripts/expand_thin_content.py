@@ -31,7 +31,7 @@ ROUNDUP_EXPANSIONS = {
             "problems in revenue operations: duplicate records, field decay (titles and emails going "
             "stale), incomplete enrichment, and formatting inconsistencies. We also weighted job "
             "posting demand, because tools that show up in hiring requirements are tools companies "
-            "actually depend on."
+            "depend on."
         ),
         "picks": {
             "ringlead": {
@@ -319,7 +319,7 @@ ROUNDUP_EXPANSIONS = {
                 "summary": (
                     "Clearbit's API (now Breeze, under HubSpot) is the gold standard for real-time "
                     "enrichment. Sub-200ms response times, clean JSON responses, and documentation that "
-                    "developers actually enjoy reading. The company-level data is particularly strong: "
+                    "developers enjoy reading. The company-level data is particularly strong: "
                     "firmographics, technographics, and employee count are reliable across segments. "
                     "Contact-level data is thinner, especially for phone numbers. Since the HubSpot "
                     "acquisition, standalone API access has gotten murkier, but the endpoints still work "
@@ -859,13 +859,13 @@ ROUNDUP_EXPANSIONS = {
             "cms-open-data": {
                 "summary": (
                     "CMS Open Data provides free access to Medicare claims data, hospital quality metrics, "
-                    "provider utilization statistics, and payment information through public APIs. The "
+                    "provider usage statistics, and payment information through public APIs. The "
                     "data is incredibly valuable for understanding provider behavior: how many procedures "
                     "they perform, what they bill for, and how their quality metrics compare. It's "
                     "updated quarterly. For analytics teams building healthcare intelligence products, "
                     "CMS data is an essential free input."
                 ),
-                "best_for": "Analytics teams and researchers who need Medicare claims data, quality metrics, and utilization patterns for healthcare intelligence",
+                "best_for": "Analytics teams and researchers who need Medicare claims data, quality metrics, and usage patterns for healthcare intelligence",
                 "caveat": "Medicare-only coverage (no commercial insurance data). Quarterly updates mean the data is always 3-6 months behind. The raw datasets require significant processing and healthcare domain knowledge."
             },
             "ribbon-health": {
@@ -888,7 +888,7 @@ ROUNDUP_EXPANSIONS = {
                     "EHR systems and pharmacy networks, covering prescribing patterns, clinical "
                     "workflows, and patient demographics at an aggregated level. For life sciences "
                     "companies and healthcare technology vendors, Veradigm data provides insights into "
-                    "how providers actually practice, not just where they're located."
+                    "how providers practice, not just where they're located."
                 ),
                 "best_for": "Life sciences companies and health tech vendors who need clinical and prescribing data to understand provider behavior and market dynamics",
                 "caveat": "Enterprise pricing with complex data licensing agreements. The clinical focus means it's less useful for basic provider directory or sales targeting use cases."
@@ -1107,7 +1107,7 @@ ROUNDUP_EXPANSIONS = {
             "We evaluated these tools on detection accuracy (catching real issues without flooding "
             "teams with false alerts), integration breadth (warehouses, orchestrators, BI tools), "
             "setup complexity, and pricing transparency. The best observability tool is one your team "
-            "actually responds to, so alert quality matters more than alert quantity."
+            "responds to, so alert quality matters more than alert quantity."
         ),
         "picks": {
             "monte-carlo": {
@@ -1222,7 +1222,7 @@ ROUNDUP_EXPANSIONS = {
                     "Alation pioneered the data catalog category and remains the leader for enterprise "
                     "deployments. The search-driven interface makes finding datasets intuitive, and the "
                     "behavioral analysis automatically identifies popular tables, trusted datasets, and "
-                    "common query patterns. Alation tracks how data is actually used, not just how it's "
+                    "common query patterns. Alation tracks how data is used, not just how it's "
                     "documented. The governance features (stewardship, business glossary, policy "
                     "management) make it a platform for data governance, not just discovery."
                 ),
@@ -1310,7 +1310,7 @@ ROUNDUP_EXPANSIONS = {
             "Reverse ETL tools move data from your warehouse back into operational tools like CRMs, "
             "marketing platforms, and customer success software. The idea is simple: your warehouse "
             "has the richest, most complete data in your organization, so why not use it to power "
-            "the tools your teams actually work in? Instead of building custom integrations for every "
+            "the tools your teams work in? Instead of building custom integrations for every "
             "tool, reverse ETL provides a standard sync layer between your warehouse and your "
             "operational stack."
         ),
@@ -1534,14 +1534,14 @@ ROUNDUP_EXPANSIONS = {
             "alation": {
                 "summary": (
                     "Alation approaches governance through data discovery and behavioral analysis. "
-                    "The platform tracks how data is actually used (queries, popularity, trust "
+                    "The platform tracks how data is used (queries, popularity, trust "
                     "indicators) and combines that with traditional governance features like business "
                     "glossary, stewardship, and policy management. The search-driven interface makes "
                     "governance accessible because people use the catalog for discovery, and governance "
                     "is embedded in that experience. For organizations that want governance adoption "
                     "driven by utility rather than mandate, Alation's approach works."
                 ),
-                "best_for": "Organizations that want governance embedded in a data catalog that people actually use for discovery, driving adoption through utility rather than top-down mandates",
+                "best_for": "Organizations that want governance embedded in a data catalog that people use for discovery, driving adoption through utility rather than top-down mandates",
                 "caveat": "Not as deep on pure governance workflows (approvals, certifications, compliance chains) as Collibra. The catalog-first approach means governance features are secondary to discovery."
             },
             "privacera": {
@@ -1808,7 +1808,7 @@ COMPARISON_EXPANSIONS = {
             ),
             "user_sentiment": (
                 "Data engineers who've tried SQLMesh praise the virtual environments and faster "
-                "development loops. The incremental processing is genuinely smarter than dbt's "
+                "development loops. The incremental processing is smarter than dbt's "
                 "approach. The complaints are smaller community, fewer integrations, and the "
                 "learning curve of migrating from dbt. The compatibility layer helps, but "
                 "it's not perfect."

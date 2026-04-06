@@ -24,17 +24,17 @@ for g in data['guides']:
 
     # ---- Fix banned words ----
     for s in g['sections']:
-        s['content'] = s['content'].replace('Setup is genuinely simple.', 'Setup is simple.')
-        s['content'] = s['content'].replace("they don't actually need", "they don't need")
-        s['content'] = s['content'].replace('For teams with truly no budget,', 'For teams with zero budget,')
-        s['content'] = s['content'].replace('what was actually said in meetings', 'what was said in meetings')
-        if s['heading'] == 'What Small Teams Actually Need from ETL':
+        s['content'] = s['content'].replace('Setup is simple.', 'Setup is simple.')
+        s['content'] = s['content'].replace("they don't need", "they don't need")
+        s['content'] = s['content'].replace('For teams with no budget,', 'For teams with zero budget,')
+        s['content'] = s['content'].replace('what was said in meetings', 'what was said in meetings')
+        if s['heading'] == 'What Small Teams Need from ETL':
             s['heading'] = 'What Small Teams Need from ETL'
 
     for f in g.get('faq', []):
-        f['q'] = f['q'].replace('Is Airbyte really free?', 'Is Airbyte free to use?')
+        f['q'] = f['q'].replace('Is Airbyte free?', 'Is Airbyte free to use?')
         f['a'] = f['a'].replace(
-            "its explicit relational model actually maps more cleanly",
+            "its explicit relational model maps more cleanly",
             "its explicit relational model maps more cleanly"
         )
 
@@ -162,7 +162,7 @@ with open('data/guides.json', 'w') as f:
     json.dump(data, f, indent=2)
 
 # Final verification
-banned = ['genuinely','truly','really','actually','robust','leverage','synergy','holistic','cutting-edge','game-changer','paradigm shift','continues to',"in today's market"]
+banned = ['genuinely','truly','really','actually','robust','leverage','synergy','comprehensive','cutting-edge','game-changer','paradigm shift','continues to',"in today's market"]
 
 print("\n=== FINAL VERIFICATION ===")
 all_pass = True

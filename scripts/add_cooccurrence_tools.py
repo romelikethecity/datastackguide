@@ -264,7 +264,7 @@ NEW_TOOL_CONTENT = {
     "highspot": {
         "display_name": "Highspot",
         "meta_description": "Highspot review: sales enablement platform for content management, training, and buyer engagement analytics.",
-        "overview": "Highspot is a sales enablement platform that organizes sales content, delivers training, and tracks how buyers engage with shared materials. The platform solves the 'I can't find the right deck' problem that plagues every sales org above 20 reps. Highspot's AI-powered search surfaces relevant case studies, battle cards, and presentations based on deal context, and its analytics show which content actually moves deals forward versus what sales teams think works.",
+        "overview": "Highspot is a sales enablement platform that organizes sales content, delivers training, and tracks how buyers engage with shared materials. The platform solves the 'I can't find the right deck' problem that plagues every sales org above 20 reps. Highspot's AI-powered search surfaces relevant case studies, battle cards, and presentations based on deal context, and its analytics show which content moves deals forward versus what sales teams think works.",
         "key_features": [
             {
                 "name": "Smart Content Management",
@@ -280,7 +280,7 @@ NEW_TOOL_CONTENT = {
             },
             {
                 "name": "Training and Coaching",
-                "description": "Built-in LMS for onboarding, product training, and certification. Courses combine video, quizzes, and practice exercises. Training completion data correlates with rep performance metrics to identify which training programs actually improve outcomes."
+                "description": "Built-in LMS for onboarding, product training, and certification. Courses combine video, quizzes, and practice exercises. Training completion data correlates with rep performance metrics to identify which training programs improve outcomes."
             },
             {
                 "name": "Content Analytics",
@@ -292,7 +292,7 @@ NEW_TOOL_CONTENT = {
             }
         ],
         "pros": [
-            "AI search actually works: reps find relevant content in seconds instead of browsing shared drives",
+            "AI search works: reps find relevant content in seconds instead of browsing shared drives",
             "Digital sales rooms provide buyer engagement analytics that help reps prioritize follow-up",
             "Content analytics create a feedback loop between marketing output and sales outcomes",
             "Strong training/LMS capabilities reduce the need for a separate onboarding tool"
@@ -303,7 +303,7 @@ NEW_TOOL_CONTENT = {
             "ROI is harder to measure than tools with direct pipeline attribution",
             "Initial setup and content migration from existing systems is time-intensive"
         ],
-        "verdict": "Highspot is the market leader in sales enablement for a reason: the search works, the analytics are actionable, and the platform consolidates content management, training, and buyer engagement into one tool. The ROI comes from rep efficiency (finding content faster), marketing alignment (creating content that actually gets used), and deal intelligence (knowing what buyers care about). Worth the premium for teams with 50+ reps and active content creation programs.",
+        "verdict": "Highspot is the market leader in sales enablement for a reason: the search works, the analytics are actionable, and the platform consolidates content management, training, and buyer engagement into one tool. The ROI comes from rep efficiency (finding content faster), marketing alignment (creating content that gets used), and deal intelligence (knowing what buyers care about). Worth the premium for teams with 50+ reps and active content creation programs.",
         "use_cases": [
             "Enterprise sales teams with 50+ reps who need consistent content access across territories",
             "Product marketing teams measuring which content drives revenue, not just downloads",
@@ -322,7 +322,7 @@ NEW_TOOL_CONTENT = {
     "churnzero": {
         "display_name": "ChurnZero",
         "meta_description": "ChurnZero review: customer success platform for churn prediction, health scoring, and automated engagement. How it compares to Gainsight.",
-        "overview": "ChurnZero is a customer success platform built for SaaS companies that need to monitor account health, predict churn risk, and automate customer engagement without building internal tooling. The platform ingests product usage data, support tickets, and CRM activity to generate health scores that actually reflect reality (not just NPS surveys). ChurnZero's strength is making customer success operational: automated playbooks trigger based on health score changes, usage drops, or renewal timelines.",
+        "overview": "ChurnZero is a customer success platform built for SaaS companies that need to monitor account health, predict churn risk, and automate customer engagement without building internal tooling. The platform ingests product usage data, support tickets, and CRM activity to generate health scores that reflect reality (not just NPS surveys). ChurnZero's strength is making customer success operational: automated playbooks trigger based on health score changes, usage drops, or renewal timelines.",
         "key_features": [
             {
                 "name": "Real-Time Health Scores",
@@ -361,7 +361,7 @@ NEW_TOOL_CONTENT = {
             "Reporting and dashboards are functional but not as polished as dedicated BI tools",
             "Limited ecosystem compared to Gainsight: fewer third-party integrations and consulting partners"
         ],
-        "verdict": "ChurnZero is the best customer success platform for mid-market SaaS companies that want real product-usage-driven health scores without the complexity and cost of Gainsight. The automated playbooks are genuinely useful (not just workflow theater), the in-app messaging drives measurable feature adoption, and the renewal forecasting gives CS leaders visibility they can't get from Salesforce alone. If you're a SaaS company with 100-5,000 customers and 3-15 CSMs, ChurnZero hits the sweet spot of capability versus complexity.",
+        "verdict": "ChurnZero is the best customer success platform for mid-market SaaS companies that want real product-usage-driven health scores without the complexity and cost of Gainsight. The automated playbooks are useful (not just workflow theater), the in-app messaging drives measurable feature adoption, and the renewal forecasting gives CS leaders visibility they can't get from Salesforce alone. If you're a SaaS company with 100-5,000 customers and 3-15 CSMs, ChurnZero hits the sweet spot of capability versus complexity.",
         "use_cases": [
             "Mid-market SaaS companies with 100-5,000 accounts needing proactive churn prevention",
             "CS leaders building tiered engagement models based on product usage and account value",
@@ -386,7 +386,7 @@ NEW_PRICING_PAGES = [
     {
         "slug": "trustradius-pricing",
         "tool_slug": "trustradius",
-        "title": "TrustRadius Pricing (2026): What Vendors Actually Pay",
+        "title": "TrustRadius Pricing (2026): What Vendors Pay",
         "meta_description": "TrustRadius pricing for vendors: listing costs, intent data packages, and how it compares to G2 and Capterra for B2B review platform spend.",
         "hook": "TrustRadius offers a free basic listing, but the features that matter (intent data, TrustQuotes, enhanced profiles) require paid plans that start around $15K/year.",
         "tiers": [
@@ -414,8 +414,8 @@ NEW_PRICING_PAGES = [
     {
         "slug": "chili-piper-pricing",
         "tool_slug": "chili-piper",
-        "title": "Chili Piper Pricing (2026): Plans, Costs, and What You Actually Need",
-        "meta_description": "Chili Piper pricing breakdown: Concierge, Distro, and Handoff costs per user. What mid-market teams actually pay for inbound conversion.",
+        "title": "Chili Piper Pricing (2026): Plans, Costs, and What You Need",
+        "meta_description": "Chili Piper pricing breakdown: Concierge, Distro, and Handoff costs per user. What mid-market teams pay for inbound conversion.",
         "hook": "Chili Piper's pricing starts at $150/user/month for Concierge (instant booking). Most teams need Concierge + Distro, pushing real costs to $200+/user/month.",
         "tiers": [
             {"name": "Instant Booker", "price": "$15/user/mo", "billing": "Annual", "highlights": ["Basic scheduling links", "Calendar integration", "Meeting reminders", "No form integration"]},
@@ -442,8 +442,8 @@ NEW_PRICING_PAGES = [
     {
         "slug": "leandata-pricing",
         "tool_slug": "leandata",
-        "title": "LeanData Pricing (2026): What Revenue Teams Actually Pay",
-        "meta_description": "LeanData pricing for lead routing and matching: plan costs, implementation fees, and what mid-market Salesforce teams actually spend.",
+        "title": "LeanData Pricing (2026): What Revenue Teams Pay",
+        "meta_description": "LeanData pricing for lead routing and matching: plan costs, implementation fees, and what mid-market Salesforce teams spend.",
         "hook": "LeanData's pricing is org-based (not per-user), typically starting at $30K/year for mid-market companies. Enterprise implementations with matching and deduplication run $50K-$100K+.",
         "tiers": [
             {"name": "Routing", "price": "Custom (~$25K+/year)", "billing": "Annual", "highlights": ["Visual FlowBuilder routing", "Round-robin assignment", "Salesforce-native logic", "Basic reporting"]},
@@ -469,7 +469,7 @@ NEW_PRICING_PAGES = [
     {
         "slug": "highspot-pricing",
         "tool_slug": "highspot",
-        "title": "Highspot Pricing (2026): What Sales Enablement Actually Costs",
+        "title": "Highspot Pricing (2026): What Sales Enablement Costs",
         "meta_description": "Highspot pricing breakdown: per-user costs, implementation fees, and how it compares to Seismic and Showpad for sales enablement.",
         "hook": "Highspot pricing is not publicly listed but typically runs $75-$150/user/month depending on features. A 50-person sales team should budget $50K-$100K/year.",
         "tiers": [
@@ -496,7 +496,7 @@ NEW_PRICING_PAGES = [
     {
         "slug": "churnzero-pricing",
         "tool_slug": "churnzero",
-        "title": "ChurnZero Pricing (2026): What SaaS CS Teams Actually Pay",
+        "title": "ChurnZero Pricing (2026): What SaaS CS Teams Pay",
         "meta_description": "ChurnZero pricing for customer success teams: plan costs, implementation fees, and how it compares to Gainsight and Totango.",
         "hook": "ChurnZero pricing is account-based, typically starting at $12K-$15K/year for small implementations. Mid-market SaaS companies with 500-3,000 accounts should budget $30K-$60K/year.",
         "tiers": [
@@ -598,7 +598,7 @@ NEW_ALTERNATIVES = [
         "methodology": "We compared sales enablement platforms based on content management capability, analytics depth, training features, and real pricing for teams of 25-100 reps.",
         "alternatives_list": [
             {"slug": "gong-engage", "name": "Gong", "price": "Custom (~$1,200/user/year)", "best_for": "Teams wanting conversation intelligence alongside content analytics", "key_difference": "AI-powered conversation analytics that Highspot doesn't offer", "coverage": "Gong captures and analyzes sales calls, emails, and meetings to surface coaching opportunities and deal risks. Content engagement tracking is a secondary feature. Stronger for coaching and deal intelligence than content management. Doesn't replace Highspot for content organization but provides complementary buyer engagement data.", "verdict": "Not a direct Highspot replacement but addresses the coaching and conversation analytics gap. Many enterprise teams use both: Highspot for content management and Gong for conversation intelligence."},
-            {"slug": "hubspot", "name": "HubSpot Sales Hub", "price": "Free CRM; Sales Hub from $90/user/mo", "best_for": "HubSpot-native teams wanting basic enablement without a separate platform", "key_difference": "Sales content, playbooks, and sequences built into HubSpot CRM at no additional cost", "coverage": "HubSpot Sales Hub includes document tracking, playbooks, sequences, and a content library. Not as deep as Highspot for content management or analytics, but sufficient for teams under 30 reps. No training/LMS capabilities. Content search is basic compared to Highspot's AI-powered discovery.", "verdict": "Good enough for HubSpot-native teams under 30 reps. Upgrade to Highspot when content volume exceeds what folder-based organization can handle and you need analytics on what content actually drives revenue."},
+            {"slug": "hubspot", "name": "HubSpot Sales Hub", "price": "Free CRM; Sales Hub from $90/user/mo", "best_for": "HubSpot-native teams wanting basic enablement without a separate platform", "key_difference": "Sales content, playbooks, and sequences built into HubSpot CRM at no additional cost", "coverage": "HubSpot Sales Hub includes document tracking, playbooks, sequences, and a content library. Not as deep as Highspot for content management or analytics, but sufficient for teams under 30 reps. No training/LMS capabilities. Content search is basic compared to Highspot's AI-powered discovery.", "verdict": "Good enough for HubSpot-native teams under 30 reps. Upgrade to Highspot when content volume exceeds what folder-based organization can handle and you need analytics on what content drives revenue."},
             {"slug": "salesforce", "name": "Salesforce (Content & Enablement)", "price": "Included with Sales Cloud", "best_for": "Salesforce shops wanting basic content sharing without additional tools", "key_difference": "Built into Salesforce at no additional cost", "coverage": "Salesforce Content and Files provide basic document storage and sharing within the CRM. No content analytics, no training, no buyer engagement tracking, and rudimentary search. Functional for storing collateral but doesn't address the 'finding the right content' problem that Highspot solves.", "verdict": "A placeholder, not a real enablement solution. Use Salesforce Content if your team is under 10 reps and content volume is low. Any serious sales enablement effort outgrows native Salesforce immediately."},
             {"slug": "clari", "name": "Clari", "price": "Custom pricing", "best_for": "Revenue leaders wanting deal inspection and forecasting rather than content management", "key_difference": "Revenue intelligence and forecasting instead of content enablement", "coverage": "Clari focuses on pipeline analytics, deal inspection, and revenue forecasting. No content management, no training, and no buyer engagement tracking. Solves a different problem than Highspot: Clari tells you which deals are at risk, Highspot helps reps find the right content to send.", "verdict": "Not a Highspot replacement but an adjacent tool for revenue leaders. Clari + Highspot is a common pairing for enterprise revenue orgs that want both deal intelligence and content enablement."}
         ],

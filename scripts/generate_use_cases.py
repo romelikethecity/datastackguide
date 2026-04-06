@@ -89,7 +89,7 @@ NEW_USE_CASES = [
         "faq": [
             {"q": "When should a startup switch from spreadsheets to a CRM?",
              "a": "When you have more than 2 salespeople or more than 50 active deals. Before that, spreadsheets work fine. The trigger is usually losing track of follow-ups or lacking visibility into team pipeline."},
-            {"q": "Is HubSpot's free CRM actually free?",
+            {"q": "Is HubSpot's free CRM free?",
              "a": "Yes, for core CRM features (contact management, pipeline, email tracking, meetings). No user limit. The paid tiers ($45-$1,200/month per seat) add sequences, custom reports, and automation. Most startups outgrow the free tier within 12-18 months."},
             {"q": "Should a startup just start with Salesforce?",
              "a": "Not unless you have a dedicated admin and $50K+ annual budget for the platform. Salesforce is over-built for teams under 20 reps. You'll spend more time configuring than selling. Start simpler and migrate when complexity justifies it."},
@@ -188,7 +188,7 @@ NEW_USE_CASES = [
         "bottom_line": "ZoomInfo for US enterprise with budget. Apollo for growth teams that want data plus outreach in one platform. Cognism for international and EMEA-focused teams. Test each provider against your actual ICP before signing an annual contract. Ask for a trial with your target accounts, not their demo data.",
         "faq": [
             {"q": "How much does a B2B contact database cost?",
-             "a": "Apollo's free tier works for low-volume teams. Paid options range from $49/user/month (Apollo Basic) to $15K-50K/year (ZoomInfo). Cognism and Seamless AI fall in between. Your cost depends on how many contacts you need and whether you need phone-verified data."},
+             "a": "Apollo's free tier works for low-volume teams. Paid options range from $49/user/month (Apollo Basic) to $15K-50K/year (ZoomInfo). Cognism and Smooth AI fall in between. Your cost depends on how many contacts you need and whether you need phone-verified data."},
             {"q": "Which contact database has the best accuracy?",
              "a": "For US enterprise: ZoomInfo (85-90% email accuracy). For EMEA/international: Cognism Diamond Data. For breadth at low cost: Apollo (80-85%). No database is 100% accurate. Budget for email verification as an additional step."},
             {"q": "Should I use one database or multiple?",
@@ -264,7 +264,7 @@ NEW_USE_CASES = [
     {
         "slug": "review-platforms-for-buyers",
         "title": "G2 vs Capterra: Which Review Platform Matters for B2B Buyers (2026)",
-        "meta_description": "How B2B buyers should use G2 and Capterra for software evaluation. Review quality, vendor influence, and what the ratings actually mean.",
+        "meta_description": "How B2B buyers should use G2 and Capterra for software evaluation. Review quality, vendor influence, and what the ratings mean.",
         "persona": "B2B software buyers and procurement teams evaluating vendors",
         "category_slug": "review-platforms",
         "intro": "G2 and Capterra dominate B2B software reviews, but they serve different audiences and have different incentive structures. G2 skews toward mid-market and enterprise buyers with more detailed reviews. Capterra (owned by Gartner) casts a wider net with more SMB-focused reviews. Neither platform is unbiased. Understanding how vendors influence ratings helps you extract real signal from the noise.",

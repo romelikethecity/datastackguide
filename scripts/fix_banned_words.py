@@ -23,10 +23,10 @@ def fix_banned_words(text):
 
     # "actually" is trickier - sometimes it means "in fact" which is fine
     # But most uses are filler. Remove when it's modifying a verb/adjective.
-    # "can actually exceed" → "can exceed"
-    # "are actually engaging" → "are engaging"
-    # "actually need" → "need"
-    # "actually trust" → "trust"
+    # "can exceed" → "can exceed"
+    # "are engaging" → "are engaging"
+    # "need" → "need"
+    # "trust" → "trust"
     text = re.sub(r'\bactually\s+', '', text, flags=re.IGNORECASE)
 
     # "robust" → context-dependent replacement

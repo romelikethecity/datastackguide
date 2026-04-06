@@ -45,7 +45,7 @@ NEW_GUIDES = [
         "date_modified": "2026-03-29",
         "faq": [
             {
-                "q": "Is Airbyte really free?",
+                "q": "Is Airbyte free?",
                 "a": "Airbyte's open-source (self-hosted) version has no license cost. You pay for infrastructure (typically $200-$500/month on cloud providers) and engineering time to maintain it. Airbyte Cloud is a paid managed service but costs roughly 40-60% less than Fivetran for equivalent data volumes."
             },
             {
@@ -282,7 +282,7 @@ NEW_GUIDES = [
             },
             {
                 "q": "Is Salesforce's data model harder to extract to a warehouse?",
-                "a": "Salesforce has more objects and relationships, so the initial ETL setup takes longer. However, its explicit relational model actually maps more cleanly to warehouse schemas. Tools like Fivetran handle the extraction automatically for both CRMs."
+                "a": "Salesforce has more objects and relationships, so the initial ETL setup takes longer. However, its explicit relational model maps more cleanly to warehouse schemas. Tools like Fivetran handle the extraction automatically for both CRMs."
             },
             {
                 "q": "What does a CRM migration from HubSpot to Salesforce cost?",
@@ -380,7 +380,7 @@ NEW_GUIDES = [
             },
             {
                 "heading": "Integration and Data Flow",
-                "content": "Clearbit integrates natively with HubSpot (owned by the same company), Salesforce, Marketo, and Slack. The Salesforce integration pushes enriched data directly to contact and account records. The API is REST-based and well-documented for custom implementations.\n\nClay integrates with CRMs (Salesforce, HubSpot), outreach tools (Outreach, Salesloft, Lemlist, Instantly), and data warehouses. Clay can pull records from your CRM, enrich them, and push updated data back. It can also push to outreach tools, creating a seamless prospecting pipeline.\n\nFor data teams that want enrichment data in their warehouse, both tools can feed warehouse pipelines. Clay's CSV export and API make it straightforward to route enriched data to any destination. Clearbit's webhooks and API serve the same purpose.\n\nThe integration difference that matters most is the outbound workflow. Clay connects enrichment directly to outreach execution. With Clearbit, you enrich data and then manually (or via another tool) route it to your outreach platform. Clay eliminates a step."
+                "content": "Clearbit integrates natively with HubSpot (owned by the same company), Salesforce, Marketo, and Slack. The Salesforce integration pushes enriched data directly to contact and account records. The API is REST-based and well-documented for custom implementations.\n\nClay integrates with CRMs (Salesforce, HubSpot), outreach tools (Outreach, Salesloft, Lemlist, Instantly), and data warehouses. Clay can pull records from your CRM, enrich them, and push updated data back. It can also push to outreach tools, creating a smooth prospecting pipeline.\n\nFor data teams that want enrichment data in their warehouse, both tools can feed warehouse pipelines. Clay's CSV export and API make it straightforward to route enriched data to any destination. Clearbit's webhooks and API serve the same purpose.\n\nThe integration difference that matters most is the outbound workflow. Clay connects enrichment directly to outreach execution. With Clearbit, you enrich data and then manually (or via another tool) route it to your outreach platform. Clay eliminates a step."
             },
             {
                 "heading": "Our Verdict: Clay for Outbound, Clearbit for Passive Enrichment",
@@ -430,7 +430,7 @@ NEW_GUIDES = [
             },
             {
                 "heading": "3. Conversation Intelligence: Gong",
-                "content": "Gong records, transcribes, and analyzes sales calls, then pushes insights back to CRM records. Deal risk scoring, competitor mentions, and next-step extraction flow automatically into Salesforce or HubSpot opportunity records.\n\nThe integration transforms CRM opportunities from static pipeline entries into living records enriched with conversation data. Revenue leaders can inspect deals based on what was actually said in meetings, not what the rep chose to log.\n\nGong appears in more RevOps job postings than any other conversation intelligence tool. Its adoption signals that the market considers it table stakes for serious revenue teams.\n\nBest for: Teams where deal inspection, coaching, and revenue forecasting accuracy are priorities. Most valuable for companies with complex, multi-touch sales cycles."
+                "content": "Gong records, transcribes, and analyzes sales calls, then pushes insights back to CRM records. Deal risk scoring, competitor mentions, and next-step extraction flow automatically into Salesforce or HubSpot opportunity records.\n\nThe integration transforms CRM opportunities from static pipeline entries into living records enriched with conversation data. Revenue leaders can inspect deals based on what was said in meetings, not what the rep chose to log.\n\nGong appears in more RevOps job postings than any other conversation intelligence tool. Its adoption signals that the market considers it table stakes for serious revenue teams.\n\nBest for: Teams where deal inspection, coaching, and revenue forecasting accuracy are priorities. Most valuable for companies with complex, multi-touch sales cycles."
             },
             {
                 "heading": "4. Data Warehouse Sync: Fivetran",
@@ -479,12 +479,12 @@ NEW_GUIDES = [
         "intro": "Small teams (under 50 people, 0-1 data engineers) need ETL tools that work without heavy configuration or ongoing maintenance. The enterprise ETL market is crowded, but most options are built for data teams of 5+. Here's what works when you don't have a dedicated data engineer and can't afford to spend $50,000/year on data infrastructure.",
         "sections": [
             {
-                "heading": "What Small Teams Actually Need from ETL",
+                "heading": "What Small Teams Need from ETL",
                 "content": "Small teams need three things from an ETL tool: reliable data movement with minimal babysitting, affordable pricing that scales with usage, and connectors for the specific tools they use (typically CRM, marketing automation, and a few SaaS apps).\n\nWhat small teams don't need: 500+ connectors they'll never use, enterprise governance features, complex transformation capabilities, or dedicated support engineers. These features increase cost and complexity without delivering value at small scale.\n\nThe ideal ETL tool for a small team sets up in under an hour, runs without daily attention, costs under $500/month, and handles 5-15 data sources reliably. That's a narrow slice of the market, but several tools fit well."
             },
             {
                 "heading": "1. Fivetran (Best Overall for Small Teams)",
-                "content": "Fivetran's free tier covers the basics: a limited number of connectors and Monthly Active Rows sufficient for small-scale operations. The managed service means zero maintenance. Connectors auto-update, schema changes propagate, and sync failures are handled with automatic retries.\n\nSetup is genuinely simple. Connect your source (OAuth for most SaaS tools), point to your destination (Snowflake, BigQuery, or a data warehouse), and syncs start flowing. A non-technical founder or ops person can do this without engineering help.\n\nThe pricing concern with Fivetran is scaling. As data volumes grow, the per-MAR pricing can jump quickly. Small teams should monitor MAR usage monthly and consider whether they're syncing tables they don't actually need.\n\nFivetran's connector quality is the best in the market. For small teams that can't afford to troubleshoot broken connectors, this reliability justifies the premium over cheaper alternatives."
+                "content": "Fivetran's free tier covers the basics: a limited number of connectors and Monthly Active Rows sufficient for small-scale operations. The managed service means zero maintenance. Connectors auto-update, schema changes propagate, and sync failures are handled with automatic retries.\n\nSetup is simple. Connect your source (OAuth for most SaaS tools), point to your destination (Snowflake, BigQuery, or a data warehouse), and syncs start flowing. A non-technical founder or ops person can do this without engineering help.\n\nThe pricing concern with Fivetran is scaling. As data volumes grow, the per-MAR pricing can jump quickly. Small teams should monitor MAR usage monthly and consider whether they're syncing tables they don't need.\n\nFivetran's connector quality is the best in the market. For small teams that can't afford to troubleshoot broken connectors, this reliability justifies the premium over cheaper alternatives."
             },
             {
                 "heading": "2. Airbyte Cloud (Best for Budget-Conscious Teams)",
@@ -500,7 +500,7 @@ NEW_GUIDES = [
             },
             {
                 "heading": "5. Google Sheets + Apps Script (Best for Zero Budget)",
-                "content": "For teams with truly no budget, Google Sheets with custom Apps Script can handle basic data consolidation. Pull API data from CRM and marketing tools into Sheets, transform with formulas or simple scripts, and use Sheets as your lightweight data warehouse.\n\nThis approach has obvious limitations: performance degrades above 50,000 rows, there's no automated schema change handling, and debugging breaks requires JavaScript knowledge. But for a startup with 3 people who need basic consolidated reporting, it's free and functional.\n\nSeveral open-source tools bridge the gap between Sheets and a real data warehouse. Meltano (open-source, based on Singer taps) can run on a small server and feed data into a PostgreSQL database that costs $10-$20/month on a cloud provider.\n\nDon't stay on the Google Sheets approach longer than necessary. Once you have more than 5 data sources or more than 50,000 records, invest in a real ETL tool. The cost of manual data management and error-prone spreadsheets exceeds the $100-$300/month for a proper tool."
+                "content": "For teams with no budget, Google Sheets with custom Apps Script can handle basic data consolidation. Pull API data from CRM and marketing tools into Sheets, transform with formulas or simple scripts, and use Sheets as your lightweight data warehouse.\n\nThis approach has obvious limitations: performance degrades above 50,000 rows, there's no automated schema change handling, and debugging breaks requires JavaScript knowledge. But for a startup with 3 people who need basic consolidated reporting, it's free and functional.\n\nSeveral open-source tools bridge the gap between Sheets and a real data warehouse. Meltano (open-source, based on Singer taps) can run on a small server and feed data into a PostgreSQL database that costs $10-$20/month on a cloud provider.\n\nDon't stay on the Google Sheets approach longer than necessary. Once you have more than 5 data sources or more than 50,000 records, invest in a real ETL tool. The cost of manual data management and error-prone spreadsheets exceeds the $100-$300/month for a proper tool."
             },
             {
                 "heading": "Choosing Your Data Destination",

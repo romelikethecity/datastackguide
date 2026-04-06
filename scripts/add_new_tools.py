@@ -517,7 +517,7 @@ TOOL_CONTENT = {
         "use_cases": [
             {"title": "At-risk account management", "description": "CS operations teams configure health score rules that flag accounts showing churn signals: declining login frequency, increasing support ticket volume, negative survey responses, or stakeholder departures. When health drops to yellow or red, Gainsight creates CTAs with intervention playbooks. CSMs follow structured workflows to diagnose the issue, schedule executive check-ins, and document recovery plans. The systematic approach catches at-risk accounts months before renewal."},
             {"title": "Scaled onboarding automation", "description": "Companies with high customer volume use Journey Orchestrator to automate onboarding touchpoints. Welcome emails, training invitations, milestone check-ins, and adoption nudges send automatically based on time-since-purchase and product usage milestones. CSMs only intervene when customers fall behind the expected onboarding trajectory. This model lets a single CSM support 50-100 accounts during onboarding versus 15-20 with manual processes."},
-            {"title": "QBR and executive reporting", "description": "CS leaders use Gainsight dashboards for quarterly business reviews with customers and internal executive reporting. Customer-facing QBR slides auto-populate with usage data, health trends, and support history. Internal reports show portfolio health, NRR trends, and CSM capacity utilization. The data-driven approach replaces anecdotal CS reporting with metrics that finance and executive teams can act on."}
+            {"title": "QBR and executive reporting", "description": "CS leaders use Gainsight dashboards for quarterly business reviews with customers and internal executive reporting. Customer-facing QBR slides auto-populate with usage data, health trends, and support history. Internal reports show portfolio health, NRR trends, and CSM capacity usage. The data-driven approach replaces anecdotal CS reporting with metrics that finance and executive teams can act on."}
         ],
         "pricing_detail": "Gainsight does not publish pricing. Based on market data and customer reports:\n\nEssentials tier for small CS teams (5-10 CSMs) starts around $2,500-$4,000/month. Enterprise tier with Journey Orchestrator and advanced analytics runs $5,000-$15,000/month depending on team size and data volume. Enterprise+ with PX, custom integrations, and premium support can exceed $20,000/month.\n\nImplementation services are typically quoted at $15,000-$50,000 depending on complexity. Many companies hire Gainsight-certified consultants for the initial build. Ongoing admin costs (internal headcount or contractor) should be factored into total cost of ownership.\n\nGainsight PX is priced separately based on monthly tracked users (MTUs). Bundling CS and PX together typically earns a 15-25% discount versus purchasing separately.",
         "verdict": "Gainsight is the enterprise standard for customer success management. The health scoring framework, Calls to Action system, and Journey Orchestrator create a structured approach to post-sale customer management that spreadsheets and CRM tasks cannot replicate. If you have 10+ CSMs and take customer retention seriously, Gainsight delivers.\n\nThe investment is substantial. Between licensing ($30,000-$180,000/year), implementation, and ongoing admin, Gainsight is a platform-level commitment. Smaller teams should evaluate ChurnZero or Vitally, which offer simpler implementations at lower price points. Gainsight's depth becomes a liability if you do not have the resources to configure and maintain it.\n\nGainsight appears in 44 job postings in our dataset, reflecting steady demand for structured customer success operations. It pairs most frequently with Salesforce, confirming its position as the CS system of record in Salesforce-centric organizations.",
@@ -536,7 +536,7 @@ PRICING_PAGES = [
     {
         "slug": "tableau-pricing",
         "tool_slug": "tableau",
-        "title": "Tableau Pricing (2026): What It Actually Costs",
+        "title": "Tableau Pricing (2026): What It Costs",
         "meta_description": "Tableau pricing breakdown: Viewer, Explorer, and Creator tiers. Real costs for Cloud, Server, and enterprise deployments. Updated for 2026.",
         "hook": "Tableau lists $15-$75/user/month on their pricing page. The real cost depends on your mix of Creators, Explorers, and Viewers, plus add-ons that most teams eventually need.",
         "tiers": [
@@ -554,7 +554,7 @@ PRICING_PAGES = [
     {
         "slug": "power-bi-pricing",
         "tool_slug": "power-bi",
-        "title": "Power BI Pricing (2026): What It Actually Costs",
+        "title": "Power BI Pricing (2026): What It Costs",
         "meta_description": "Power BI pricing breakdown: Pro at $10/user/mo, Premium Per User, and Premium Capacity options. Real costs for Microsoft BI. Updated for 2026.",
         "hook": "Power BI Pro at $10/user/month is the most affordable enterprise BI license on the market. But Premium features, capacity pricing, and Azure consumption costs can push the real number higher.",
         "tiers": [
@@ -572,7 +572,7 @@ PRICING_PAGES = [
     {
         "slug": "looker-pricing",
         "tool_slug": "looker",
-        "title": "Looker Pricing (2026): What It Actually Costs",
+        "title": "Looker Pricing (2026): What It Costs",
         "meta_description": "Looker pricing breakdown: custom enterprise pricing, typical contract ranges, and Looker Studio Pro alternative. Updated for 2026.",
         "hook": "Looker does not publish pricing. Based on market data, expect $5,000-$50,000+/month depending on user count and deployment complexity. Google Cloud credits can sometimes apply.",
         "tiers": [
@@ -589,7 +589,7 @@ PRICING_PAGES = [
     {
         "slug": "clari-pricing",
         "tool_slug": "clari",
-        "title": "Clari Pricing (2026): What It Actually Costs",
+        "title": "Clari Pricing (2026): What It Costs",
         "meta_description": "Clari pricing breakdown: custom enterprise pricing for forecasting, pipeline inspection, and conversation intelligence. Updated for 2026.",
         "hook": "Clari does not publish pricing. Based on market data, the core platform runs $50-$100/user/month for sales teams. The ROI case centers on forecast accuracy improvement and activity capture.",
         "tiers": [
@@ -607,7 +607,7 @@ PRICING_PAGES = [
     {
         "slug": "braze-pricing",
         "tool_slug": "braze",
-        "title": "Braze Pricing (2026): What It Actually Costs",
+        "title": "Braze Pricing (2026): What It Costs",
         "meta_description": "Braze pricing breakdown: MAU-based pricing model, typical contract ranges by company size. Updated for 2026.",
         "hook": "Braze charges by monthly active users (MAUs), not seats or email volume. This model scales with your audience. Companies with 100K MAUs might pay $50K-$80K/year, while those with millions pay significantly more.",
         "tiers": [
@@ -624,7 +624,7 @@ PRICING_PAGES = [
     {
         "slug": "gainsight-pricing",
         "tool_slug": "gainsight",
-        "title": "Gainsight Pricing (2026): What It Actually Costs",
+        "title": "Gainsight Pricing (2026): What It Costs",
         "meta_description": "Gainsight pricing breakdown: custom pricing for CS teams, typical contract ranges, and PX add-on costs. Updated for 2026.",
         "hook": "Gainsight does not publish pricing. Based on market data, the platform starts around $2,500/month for small CS teams and scales to $15,000+/month for enterprise deployments. Implementation and admin costs add significantly to the total.",
         "tiers": [

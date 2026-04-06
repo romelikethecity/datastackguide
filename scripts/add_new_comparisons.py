@@ -50,7 +50,7 @@ NEW_COMPARISONS = [
         "deep_dive_a": {
             "selling_pitch": "Tableau sells itself as the gold standard in visual analytics. The drag-and-drop interface, VizQL engine, and community ecosystem are advantages that no competitor has fully replicated. Salesforce's $15.7B acquisition bet on Tableau becoming the analytics layer for enterprise CRM.",
             "real_cost": "Creator licenses at $75/user/month are the starting point for anyone building content. A team of 10 Creators plus 50 Explorers ($42/user/mo) plus 200 Viewers ($15/user/mo) on Tableau Cloud runs $51,000/year before add-ons. Data Management ($5.50/user/mo) and Advanced Management ($4.25/user/mo) are common extras. Enterprise agreements with Salesforce bundling can reduce this 20-30%.",
-            "user_sentiment": "Analysts love the visual exploration depth. The ability to drag, drop, and discover patterns interactively is genuinely superior to any competitor. Complaints center on price and the resource-heavy Desktop client. Organizations that invest in training see strong ROI; those that deploy and forget see expensive shelfware.",
+            "user_sentiment": "Analysts love the visual exploration depth. The ability to drag, drop, and discover patterns interactively is superior to any competitor. Complaints center on price and the resource-heavy Desktop client. Organizations that invest in training see strong ROI; those that deploy and forget see expensive shelfware.",
             "pros": [
                 "Deepest visual analytics capabilities on the market",
                 "Level-of-detail expressions solve complex calculations visually",

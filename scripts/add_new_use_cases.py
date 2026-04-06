@@ -246,7 +246,7 @@ NEW_USE_CASES = [
             },
             {
                 "criteria": "Time and revenue tracking integration",
-                "why": "Agency profitability depends on utilization rates and project margins. A CRM that integrates with your time tracking or PSA tool gives you visibility into whether the clients you're winning are profitable, not just numerous."
+                "why": "Agency profitability depends on usage rates and project margins. A CRM that integrates with your time tracking or PSA tool gives you visibility into whether the clients you're winning are profitable, not just numerous."
             }
         ],
         "recommended_tools": [

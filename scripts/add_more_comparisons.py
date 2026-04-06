@@ -164,7 +164,7 @@ NEW_COMPARISONS = [
         "deep_dive_a": {
             "selling_pitch": "Real-time customer engagement platform built for modern marketing teams who need speed, personalization, and cross-channel orchestration without enterprise complexity.",
             "real_cost": "Pricing is based on monthly active users (MAUs). Expect $50K/year for startups scaling to 500K MAUs, $100-300K/year for enterprise deployments. Implementation is faster than SFMC (4-8 weeks typical). Developer resources needed for SDK integration. Total first-year cost including implementation: $70-350K.",
-            "user_sentiment": "Marketers consistently praise Braze's speed and ease of use. The Canvas flow builder, Liquid personalization, and real-time triggering are standout features. Complaints: pricing scales aggressively with MAUs, reporting could be deeper, and the Salesforce CRM integration isn't as seamless as native SFMC.",
+            "user_sentiment": "Marketers consistently praise Braze's speed and ease of use. The Canvas flow builder, Liquid personalization, and real-time triggering are standout features. Complaints: pricing scales aggressively with MAUs, reporting could be deeper, and the Salesforce CRM integration isn't as smooth as native SFMC.",
             "pros": ["Sub-second real-time messaging on user events", "Best-in-class mobile SDK for push and in-app messages", "Modern API and developer experience", "Faster campaign execution (30-50% vs SFMC per user reports)"],
             "cons": ["Pricing scales steeply with monthly active users", "Salesforce CRM integration requires connector setup", "Less mature for complex B2B lifecycle marketing", "Smaller partner ecosystem than Salesforce"]
         },
@@ -269,7 +269,7 @@ NEW_COMPARISONS = [
         "tool_b": "salesforce",
         "title": "Clari vs Salesforce (2026) Compared",
         "meta_description": "Clari vs Salesforce forecasting: when native CRM reporting is enough vs when you need dedicated revenue intelligence. Pricing and ROI analysis.",
-        "hook": "Every company using Salesforce already has forecasting. The question is whether your forecasts are actually accurate.",
+        "hook": "Every company using Salesforce already has forecasting. The question is whether your forecasts are accurate.",
         "short_version": "Salesforce's native forecasting relies on reps' subjective assessments of deal stage and close probability. Clari captures engagement signals automatically (emails, meetings, contacts involved) and uses AI to predict deal outcomes. If your forecast accuracy is within 10% of actual results, Salesforce native is working. If you're consistently missing by 20%+ and blaming it on rep data hygiene, Clari addresses the root cause by removing human input from the equation.",
         "stats": [
             {"label": "Starting Price", "tool_a": "$Custom (est. $50-80/user/mo)", "tool_b": "$25/user/mo"},
@@ -462,7 +462,7 @@ NEW_COMPARISONS = [
         "title": "G2 vs 6sense (2026) Compared",
         "meta_description": "G2 buyer intent vs 6sense intent data: which identifies in-market accounts better? Compare data sources, accuracy, and pricing for B2B intent.",
         "hook": "Both promise to tell you which accounts are 'in-market.' The difference is where they get their signals and what you can do with them.",
-        "short_version": "G2's intent data comes from its own review platform: it tells you which companies are researching your category or comparing you to competitors on G2.com. 6sense aggregates intent signals from across the web (publisher networks, B2B media sites, search behavior, website visits). G2 intent is narrower but higher-fidelity (someone comparing you on G2 is genuinely evaluating). 6sense intent is broader but noisier (content consumption doesn't always mean buying). Most enterprise ABM teams use both as complementary signals.",
+        "short_version": "G2's intent data comes from its own review platform: it tells you which companies are researching your category or comparing you to competitors on G2.com. 6sense aggregates intent signals from across the web (publisher networks, B2B media sites, search behavior, website visits). G2 intent is narrower but higher-fidelity (someone comparing you on G2 is evaluating). 6sense intent is broader but noisier (content consumption doesn't always mean buying). Most enterprise ABM teams use both as complementary signals.",
         "stats": [
             {"label": "Starting Price", "tool_a": "$Custom (est. $30K+/yr for intent)", "tool_b": "$Custom (est. $60K+/yr)"},
             {"label": "Intent Source", "tool_a": "G2.com review platform", "tool_b": "Web-wide publisher network"},
@@ -548,7 +548,7 @@ NEW_COMPARISONS = [
         "deep_dive_a": {
             "selling_pitch": "Revenue intelligence platform that records, transcribes, and analyzes every customer interaction to drive coaching, deal execution, and competitive intelligence.",
             "real_cost": "Per-user pricing estimated at $100-150/user/mo with annual contracts. Platform fee may apply on top. For a 50-person sales org: $75-100K/year. This is on top of your existing CRM cost. Implementation takes 2-4 weeks (fast by enterprise standards). ROI measured in win rate improvement, faster ramp times, and deal visibility.",
-            "user_sentiment": "Sales leaders and enablement teams consistently rank Gong as their most impactful sales tool. The coaching insights and competitive intelligence are highly valued. Complaints: it's expensive (especially on top of CRM costs), some reps feel surveilled, and the AI suggestions can be generic. But the deal intelligence and coaching data are genuinely unique.",
+            "user_sentiment": "Sales leaders and enablement teams consistently rank Gong as their most impactful sales tool. The coaching insights and competitive intelligence are highly valued. Complaints: it's expensive (especially on top of CRM costs), some reps feel surveilled, and the AI suggestions can be generic. But the deal intelligence and coaching data are unique.",
             "pros": ["AI conversation analysis identifies coaching opportunities automatically", "Competitive intelligence from real customer conversations", "Deal risk scoring based on actual buyer engagement patterns", "Faster rep ramp times (30-40% reduction per customer reports)"],
             "cons": ["$100-150/user/mo is expensive on top of CRM costs", "Some reps feel monitored (cultural resistance)", "Requires phone-heavy sales motion to generate enough data", "No CRM included, must layer on top of existing platform"]
         },
@@ -589,7 +589,7 @@ NEW_COMPARISONS = [
         "tool_b": "6sense",
         "title": "LinkedIn Marketing vs 6sense (2026) Compared",
         "meta_description": "LinkedIn Marketing vs 6sense for B2B advertising: direct platform vs ABM orchestration. Compare targeting, ROI, and when to use each.",
-        "hook": "LinkedIn is where B2B buyers are. 6sense is what tells you which ones are actually buying. The question is whether you need the targeting intelligence or just the ad platform.",
+        "hook": "LinkedIn is where B2B buyers are. 6sense is what tells you which ones are buying. The question is whether you need the targeting intelligence or just the ad platform.",
         "short_version": "LinkedIn Marketing Solutions gives you direct access to LinkedIn's professional audience with native ad formats (Sponsored Content, InMail, Lead Gen Forms). 6sense uses intent data to identify in-market accounts and orchestrates display advertising to them across the web (including LinkedIn as a channel). LinkedIn is the ad platform. 6sense is the intelligence layer that tells you who to target. For basic LinkedIn campaigns, you don't need 6sense. For ABM programs where targeting precision drives ROI, 6sense's intent data makes your LinkedIn spend dramatically more efficient.",
         "stats": [
             {"label": "Starting Price", "tool_a": "$10/day minimum ad spend", "tool_b": "$Custom (est. $60K+/yr platform)"},
