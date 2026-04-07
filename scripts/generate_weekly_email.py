@@ -63,24 +63,28 @@ def build_email_data():
     tool_content = load_json("tool_content.json")
     categories = load_json("categories.json")
 
-    # Latest two months from trends
+    # Latest month from trends
     months = sorted(trends["trends"].keys(), reverse=True)
     latest_month = months[0]
-    prev_month = months[1] if len(months) > 1 else None
-
     latest_data = trends["trends"][latest_month]
-    prev_data = trends["trends"][prev_month] if prev_month else []
-    prev_lookup = {t["slug"]: t["mentions"] for t in prev_data}
 
-    # Check if previous month has comparable coverage (>50% of current tool count)
-    # If not, trends are artifacts of data coverage differences, not real growth
-    trends_reliable = len(prev_data) >= len(latest_data) * 0.5
+    # Load previous snapshot for week-over-week comparison
+    prev_snapshot = load_previous_snapshot()
+    if prev_snapshot and "top_tools" in prev_snapshot:
+        prev_lookup = {t["slug"]: t["mentions"] for t in prev_snapshot["top_tools"]}
+        has_prev = True
+    else:
+        # Fallback: compare months from trends.json (with reliability check)
+        prev_month = months[1] if len(months) > 1 else None
+        prev_data = trends["trends"][prev_month] if prev_month else []
+        prev_lookup = {t["slug"]: t["mentions"] for t in prev_data}
+        has_prev = len(prev_data) >= len(latest_data) * 0.5
 
     # Top 10 tools with trend
     top_tools = []
     for t in latest_data[:10]:
         prev_val = prev_lookup.get(t["slug"], 0)
-        if trends_reliable and prev_val > 0:
+        if has_prev and prev_val > 0:
             change = round(((t["mentions"] - prev_val) / prev_val) * 100)
         else:
             change = 0
@@ -88,13 +92,13 @@ def build_email_data():
             "name": t["tool"],
             "slug": t["slug"],
             "mentions": t["mentions"],
-            "prev": prev_val if trends_reliable else 0,
+            "prev": prev_val if has_prev else 0,
             "change": change,
         })
 
-    # Fastest growers (only when trends are reliable)
+    # Fastest growers (only when previous data is available)
     growers = []
-    if trends_reliable:
+    if has_prev:
         for t in latest_data:
             if t["mentions"] > 10 and t["slug"] in prev_lookup and prev_lookup[t["slug"]] > 0:
                 prev_val = prev_lookup[t["slug"]]
@@ -548,8 +552,12 @@ def main():
     data = build_email_data()
 
     if args.save_snapshot:
+        # Save all tools from latest trends (not just top 10) so next week can compare any tool
+        trends = json.load(open(Path(__file__).resolve().parent.parent / "data" / "trends.json"))
+        all_months = sorted(trends["trends"].keys(), reverse=True)
+        all_tools = trends["trends"][all_months[0]] if all_months else []
         save_snapshot({
-            "top_tools": data["top_tools"],
+            "top_tools": all_tools,
             "total_jobs": data["total_jobs"],
             "saved_at": data["generated_at"],
         })
