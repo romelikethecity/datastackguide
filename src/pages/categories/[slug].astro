@@ -159,6 +159,58 @@ if (category.faq?.length > 0) {
       )}
     </section>
 
+    <!-- How to Choose -->
+    <section class="content-section">
+      <h2>How to Choose a {category.name} Tool</h2>
+      <p>With {category.tool_count} tools in the {category.name.toLowerCase()} category, choosing the right one comes down to a few practical questions. Here is what matters most when evaluating your options.</p>
+      <div class="choose-grid">
+        <div class="choose-item">
+          <h3>Match to Your Team Size</h3>
+          <p>Tools built for enterprise teams (50+ users) have different feature sets, pricing models, and support structures than those built for small teams. A 5-person startup does not need the same {category.name.toLowerCase()} platform as a Fortune 500 company. Start with tools that match your current team size, not where you hope to be in three years.</p>
+        </div>
+        <div class="choose-item">
+          <h3>Check Integration Compatibility</h3>
+          <p>The best {category.name.toLowerCase()} tool is one that connects to what you already use. Before evaluating features, confirm that the tool integrates natively with your CRM, data warehouse, and other core systems. Integration through middleware (Zapier, Workato) is acceptable but adds cost and complexity.</p>
+        </div>
+        <div class="choose-item">
+          <h3>Compare Real Pricing</h3>
+          <p>Published pricing rarely tells the full story. Ask each vendor about implementation fees, overage charges, seat minimums, and what features require higher-tier plans. Get at least two competing quotes and compare total annual cost, not just the per-user monthly rate.</p>
+        </div>
+        <div class="choose-item">
+          <h3>Test With Your Own Data</h3>
+          <p>Generic demos show the best-case scenario. Ask for a trial or proof-of-concept with your actual data. How well the tool handles your specific records, formats, and edge cases is far more predictive of long-term success than any demo or feature list.</p>
+        </div>
+        <div class="choose-item">
+          <h3>Look at Hiring Trends</h3>
+          <p>Job postings reveal which tools companies are actually investing in. When you see a tool mentioned across hundreds of job postings, it means companies are hiring for it, training teams on it, and building processes around it. That is a stronger signal than marketing claims.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Building Your Stack -->
+    <section class="content-section">
+      <h2>Building Your {category.name} Stack</h2>
+      <p>{category.name} tools rarely work in isolation. They connect to other parts of your data and sales technology stack. Understanding these connections helps you make better purchasing decisions and avoid gaps in your workflow.</p>
+      <div class="stack-guide">
+        <div class="stack-guide-item">
+          <h3>Start With One Core Tool</h3>
+          <p>Resist the urge to buy multiple {category.name.toLowerCase()} tools at once. Pick the one that covers your most pressing need, implement it properly, and get your team using it consistently. Only add a second tool when you hit a clear limitation that the first tool cannot address.</p>
+        </div>
+        <div class="stack-guide-item">
+          <h3>Plan Your Data Flow</h3>
+          <p>Map out where data enters your {category.name.toLowerCase()} tools, where it gets processed, and where the output goes. Common patterns include CRM to enrichment to sales engagement, or data warehouse to {category.name.toLowerCase()} tools back to CRM. A clear data flow prevents duplicates, conflicts, and orphaned records.</p>
+        </div>
+        <div class="stack-guide-item">
+          <h3>Budget for the Full Stack</h3>
+          <p>Your {category.name.toLowerCase()} tool is one part of a larger budget. Account for the CRM, integration middleware, sales engagement platform, and any data sources that feed into the workflow. Most B2B teams spend 3x to 5x their core tool cost on the surrounding stack.</p>
+        </div>
+        <div class="stack-guide-item">
+          <h3>Review Quarterly</h3>
+          <p>Tools change. Vendors ship new features, raise prices, or get acquired. Your own requirements evolve as your team grows. Set a quarterly calendar reminder to review whether your {category.name.toLowerCase()} stack still fits. Catching mismatches early saves you from expensive mid-contract migrations.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Block -->
     {(category.slug === 'enrichment' || category.slug === 'cleaning' || category.slug === 'validation' || category.slug === 'list-building') && (
       <section class="cta-section">
@@ -348,6 +400,64 @@ if (category.faq?.length > 0) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--space-6);
+  }
+
+  /* How to Choose & Building Your Stack */
+  .content-section {
+    padding: var(--space-8) 0;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .content-section h2 {
+    margin-bottom: var(--space-5);
+  }
+
+  .content-section p {
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+    max-width: 720px;
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .choose-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    margin-top: var(--space-4);
+  }
+
+  .choose-item,
+  .stack-guide-item {
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .choose-item h3,
+  .stack-guide-item h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+    color: var(--color-primary);
+  }
+
+  .choose-item p,
+  .stack-guide-item p {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: none;
+  }
+
+  .stack-guide {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    margin-top: var(--space-4);
   }
 
   .cta-section {

@@ -151,6 +151,90 @@ const ucTitle = useCase.title.length <= 42 ? useCase.title : shortUcTitle.length
       ))}
     </section>
 
+    <!-- Getting Started -->
+    <section class="content-section">
+      <h2>Getting Started</h2>
+      <p>If you are new to this area, here is a practical path forward for {useCase.persona.toLowerCase()}.</p>
+      <div class="steps-list">
+        <div class="step-item">
+          <span class="step-number">1</span>
+          <div class="step-content">
+            <h3>Audit Your Current Setup</h3>
+            <p>Before buying any new tools, document what you already have. List every tool your team uses for this workflow, identify where data lives, and note the manual steps that slow things down. Most teams discover they already own tools with untapped features that partially solve the problem.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <span class="step-number">2</span>
+          <div class="step-content">
+            <h3>Define Success Metrics</h3>
+            <p>Pick two or three metrics that will tell you whether a new tool is working. Avoid vanity metrics. Focus on outcomes like time saved per week, conversion rate changes, or error reduction. Having clear targets makes vendor evaluation much easier.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <span class="step-number">3</span>
+          <div class="step-content">
+            <h3>Run a Focused Pilot</h3>
+            <p>Test your top choice with a small team or a single use case for 30 to 60 days. Don't roll out to the entire organization at once. A pilot limits your risk and gives you real data to support a broader rollout or a switch to a different tool.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <span class="step-number">4</span>
+          <div class="step-content">
+            <h3>Plan for Integration</h3>
+            <p>Check that your chosen tool connects to your existing CRM, data warehouse, and communication platforms before signing a contract. Integration gaps create data silos, and fixing them after purchase is more expensive than preventing them during evaluation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics to Track -->
+    <section class="content-section">
+      <h2>Key Metrics to Track</h2>
+      <p>These are the numbers that tell you whether your investment is paying off. Track them monthly and share results with stakeholders.</p>
+      <div class="metrics-grid">
+        <div class="metric-card card">
+          <h3>Time to Value</h3>
+          <p>How long from purchase to seeing measurable results. Most B2B tools should show impact within 30 to 90 days. If you're past 90 days with no clear improvement, revisit your implementation or consider alternatives.</p>
+        </div>
+        <div class="metric-card card">
+          <h3>Adoption Rate</h3>
+          <p>What percentage of your team actively uses the tool each week. Below 60% adoption usually means the tool is too complex, doesn't fit the workflow, or wasn't properly rolled out. Address adoption before blaming the tool.</p>
+        </div>
+        <div class="metric-card card">
+          <h3>Process Efficiency</h3>
+          <p>Measure time spent on the specific workflow this tool addresses. Compare against your pre-implementation baseline. A well-chosen tool should reduce manual effort by at least 30% within the first quarter.</p>
+        </div>
+        <div class="metric-card card">
+          <h3>Data Quality Impact</h3>
+          <p>Track error rates, duplicate records, and data completeness before and after implementation. Better tooling should produce cleaner outputs. If data quality stays flat, the tool may not be configured correctly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Common Pitfalls -->
+    <section class="content-section">
+      <h2>Common Pitfalls</h2>
+      <p>These mistakes come up repeatedly when {useCase.persona.toLowerCase()} evaluate and implement new tools. Avoiding them saves time and money.</p>
+      <div class="pitfalls-list">
+        <div class="pitfall-item">
+          <h3>Buying Based on Features Alone</h3>
+          <p>A feature list is not a use case. The tool with the longest feature list is rarely the best fit for your specific situation. Focus on the three or four capabilities that matter most to your workflow and evaluate depth in those areas rather than breadth across the board.</p>
+        </div>
+        <div class="pitfall-item">
+          <h3>Underestimating Onboarding Time</h3>
+          <p>Vendors love to say their product is "easy to set up." In practice, data migration, integration configuration, workflow design, and team training take weeks. Build onboarding time into your project plan and don't expect full productivity from day one.</p>
+        </div>
+        <div class="pitfall-item">
+          <h3>Skipping the Competitive Evaluation</h3>
+          <p>Signing with the first vendor that gives a good demo is a common and expensive mistake. Always evaluate at least two alternatives. Run each through the same test scenario and compare results side by side. The difference between tools is often larger than their marketing suggests.</p>
+        </div>
+        <div class="pitfall-item">
+          <h3>Ignoring Total Cost</h3>
+          <p>The subscription price is just the starting point. Factor in implementation fees, integration middleware, training time, and ongoing administration. A tool that costs $100 per user per month may actually cost $200 per user per month once you add everything up.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Bottom Line -->
     <section class="content-section">
       <h2>The Bottom Line</h2>
@@ -323,6 +407,102 @@ const ucTitle = useCase.title.length <= 42 ? useCase.title : shortUcTitle.length
 
   .rec-tool p {
     max-width: 720px;
+  }
+
+  /* Getting Started Steps */
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+  }
+
+  .step-item {
+    display: flex;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #fff;
+    font-weight: 700;
+    font-size: var(--text-sm);
+    flex-shrink: 0;
+  }
+
+  .step-content h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+    color: var(--color-primary);
+  }
+
+  .step-content p {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: none;
+  }
+
+  /* Key Metrics */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+  }
+
+  .metric-card h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+    color: var(--color-primary);
+  }
+
+  .metric-card p {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: none;
+  }
+
+  /* Common Pitfalls */
+  .pitfalls-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    margin-top: var(--space-4);
+  }
+
+  .pitfall-item {
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .pitfall-item h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+    color: var(--color-primary);
+  }
+
+  .pitfall-item p {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: none;
   }
 
   /* Bottom Line */

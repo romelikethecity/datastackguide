@@ -152,6 +152,76 @@ const allSchemas: object[] = [
       </section>
     )}
 
+    <!-- Best Practices -->
+    <section class="content-section">
+      <h2>Best Practices for {entry.term}</h2>
+      <div class="practices-list">
+        <div class="practice-item">
+          <h3>Start with Clear Requirements</h3>
+          <p>Before adopting any {entry.term.toLowerCase()} tooling, document what specific problems you need to solve. Teams that skip this step end up with tools that don't match their actual workflow. Write down your current pain points, the volume of data you handle, and the outcomes you expect.</p>
+        </div>
+        <div class="practice-item">
+          <h3>Evaluate Against Your Existing Stack</h3>
+          <p>The best {entry.term.toLowerCase()} solution is one that connects to what you already use. Check integration support with your CRM, data warehouse, and other tools before committing. A standalone tool that doesn't sync with your existing systems creates more work than it saves.</p>
+        </div>
+        <div class="practice-item">
+          <h3>Measure Before and After</h3>
+          <p>Set baseline metrics before you implement any changes to your {entry.term.toLowerCase()} process. Track data quality, time spent on manual tasks, and downstream conversion rates. Without a baseline, you can't prove ROI or identify regressions.</p>
+        </div>
+        <div class="practice-item">
+          <h3>Build Internal Documentation</h3>
+          <p>Document how {entry.term.toLowerCase()} fits into your data operations. Include which fields are affected, which systems are involved, and who owns the process. When team members leave or tools change, this documentation prevents knowledge loss.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Common Mistakes -->
+    <section class="content-section">
+      <h2>Common Mistakes with {entry.term}</h2>
+      <div class="mistakes-list">
+        <div class="mistake-item">
+          <h3>Treating It as a One-Time Project</h3>
+          <p>{entry.term} requires ongoing attention. Data decays, requirements shift, and tools update their capabilities. Teams that set up a {entry.term.toLowerCase()} process and never revisit it end up with stale or broken workflows within 6 to 12 months.</p>
+        </div>
+        <div class="mistake-item">
+          <h3>Ignoring Data Quality Upstream</h3>
+          <p>No amount of {entry.term.toLowerCase()} tooling fixes bad data at the source. If your input data is full of duplicates, formatting errors, or outdated records, the output will carry those same problems forward. Clean your source data first.</p>
+        </div>
+        <div class="mistake-item">
+          <h3>Over-Investing in Tools Before Process</h3>
+          <p>Buying an expensive platform before you have a defined process for {entry.term.toLowerCase()} wastes money. Start with a clear workflow, test it manually or with basic tools, and then invest in automation once you know exactly what you need.</p>
+        </div>
+        <div class="mistake-item">
+          <h3>Not Auditing Results Regularly</h3>
+          <p>Automated {entry.term.toLowerCase()} processes can drift over time. Schedule quarterly audits to check accuracy rates, coverage gaps, and whether the output still matches your team's needs. Catching issues early prevents compounding errors.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Connects to Your Stack -->
+    <section class="content-section">
+      <h2>How {entry.term} Connects to Your Stack</h2>
+      <p>{entry.term} rarely operates in isolation. It sits within a broader data and sales technology stack, and understanding where it fits helps you choose the right tools and build effective workflows.</p>
+      <div class="stack-connections">
+        <div class="stack-item">
+          <h3>CRM Systems</h3>
+          <p>Your CRM is the central repository where {entry.term.toLowerCase()} data gets stored and used. Whether you run Salesforce, HubSpot, or another platform, the {entry.term.toLowerCase()} tools you choose should write data directly into CRM records without manual import steps.</p>
+        </div>
+        <div class="stack-item">
+          <h3>Data Warehouses</h3>
+          <p>For teams with analytics infrastructure, {entry.term.toLowerCase()} data often needs to flow into a data warehouse like Snowflake or BigQuery. This lets analysts build reports that combine {entry.term.toLowerCase()} signals with revenue data, usage metrics, and other business intelligence.</p>
+        </div>
+        <div class="stack-item">
+          <h3>Sales Engagement Platforms</h3>
+          <p>Outreach tools like Salesloft and Outreach rely on accurate data to personalize sequences. {entry.term} feeds these platforms with the information sales reps need to write relevant messages and target the right prospects at the right time.</p>
+        </div>
+        <div class="stack-item">
+          <h3>Marketing Automation</h3>
+          <p>Marketing platforms use {entry.term.toLowerCase()} data for segmentation, lead scoring, and campaign targeting. The more complete and accurate your data, the better your marketing automation performs across email, ads, and content personalization.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Related Tools -->
     {relatedTools.length > 0 && (
       <section class="content-section">
@@ -407,6 +477,42 @@ const allSchemas: object[] = [
 
   .related-link:hover {
     color: var(--color-primary);
+  }
+
+  /* Best Practices & Common Mistakes */
+  .practices-list,
+  .mistakes-list,
+  .stack-connections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .practice-item,
+  .mistake-item,
+  .stack-item {
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .practice-item h3,
+  .mistake-item h3,
+  .stack-item h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+    color: var(--color-primary);
+  }
+
+  .practice-item p,
+  .mistake-item p,
+  .stack-item p {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: none;
   }
 
   .page-footer-info {

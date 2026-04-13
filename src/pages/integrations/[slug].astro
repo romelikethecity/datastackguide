@@ -149,6 +149,50 @@ const intgTitle = integration.title.length <= 42 ? integration.title : shortIntg
       </section>
     )}
 
+    <!-- When This Integration Matters Most -->
+    <section class="content-section">
+      <h2>When This Integration Matters Most</h2>
+      <p>Not every team needs to connect {nameA} and {nameB}. This integration is most valuable in specific situations where the combination solves a problem that neither tool handles alone.</p>
+      <div class="scenario-list">
+        <div class="scenario-item">
+          <h3>Growing Teams Scaling Operations</h3>
+          <p>When your team outgrows manual processes, connecting {nameA} and {nameB} eliminates the data entry and copy-paste work that slows down scaling. Teams under 5 people can usually manage without this integration. Once you pass 10 users across both platforms, the manual overhead becomes unsustainable.</p>
+        </div>
+        <div class="scenario-item">
+          <h3>Data Consistency Across Departments</h3>
+          <p>If multiple teams rely on data from both {nameA} and {nameB}, an integration ensures everyone works from the same source of truth. Without it, you get conflicting reports, duplicated effort, and finger-pointing about which system has the correct information.</p>
+        </div>
+        <div class="scenario-item">
+          <h3>Reporting That Spans Both Systems</h3>
+          <p>When leadership asks for end-to-end metrics that require data from both {nameA} and {nameB}, manual exports and spreadsheet stitching break down quickly. An active integration keeps the data flowing so reports stay current without weekly data pulls.</p>
+        </div>
+        <div class="scenario-item">
+          <h3>Workflow Automation</h3>
+          <p>If you want actions in {nameA} to trigger responses in {nameB} (or vice versa), a direct integration is the most reliable approach. Middleware solutions like Zapier or Workato work as alternatives, but native connections reduce failure points and latency.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alternatives to Consider -->
+    <section class="content-section">
+      <h2>Alternatives to Consider</h2>
+      <p>The {nameA} + {nameB} pairing is popular, but it is not the only option. Depending on your budget, team size, and existing tools, these alternatives may fit better.</p>
+      <div class="alt-list">
+        <div class="alt-item">
+          <h3>Middleware Instead of Native Integration</h3>
+          <p>If the native {nameA}-{nameB} connector doesn't cover your use case, platforms like Workato, Tray.io, or Zapier can bridge the gap. Middleware gives you more control over field mappings, sync triggers, and error handling. The trade-off is added cost and another system to maintain.</p>
+        </div>
+        <div class="alt-item">
+          <h3>Consolidating to One Platform</h3>
+          <p>Sometimes the best integration is no integration at all. If the overlap between {nameA} and {nameB} is significant, evaluate whether one platform can replace the other. Fewer tools means fewer sync issues, lower licensing costs, and simpler onboarding for new hires.</p>
+        </div>
+        <div class="alt-item">
+          <h3>Using a Data Warehouse as the Hub</h3>
+          <p>For teams with analytics infrastructure, a data warehouse (Snowflake, BigQuery, Redshift) can serve as the central hub. Both {nameA} and {nameB} export data to the warehouse, and reverse ETL tools push the joined data back into each system. This approach works well when you need to combine data from more than two sources.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ -->
     {integration.faq?.length > 0 && (
       <section class="content-section">
@@ -383,6 +427,39 @@ const intgTitle = integration.title.length <= 42 ? integration.title : shortIntg
     padding: 0 var(--space-5) var(--space-5);
     color: var(--color-text-secondary);
     line-height: 1.7;
+    max-width: none;
+  }
+
+  /* Scenarios & Alternatives */
+  .scenario-list,
+  .alt-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    margin-top: var(--space-4);
+  }
+
+  .scenario-item,
+  .alt-item {
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .scenario-item h3,
+  .alt-item h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+    color: var(--color-primary);
+  }
+
+  .scenario-item p,
+  .alt-item p {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
     max-width: none;
   }
 

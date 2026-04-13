@@ -190,6 +190,62 @@ const pricingTitle = page.title.length <= 45 ? page.title : shortPricingTitle.le
       </section>
     )}
 
+    <!-- How to Negotiate -->
+    <section class="content-section">
+      <h2>How to Negotiate {toolName} Pricing</h2>
+      <p>Published pricing is rarely the final price for B2B software. Here are tactics that work when negotiating with {toolName} sales teams.</p>
+      <div class="negotiate-list">
+        <div class="negotiate-item">
+          <h3>Time Your Purchase</h3>
+          <p>End of quarter (March, June, September, December) is when sales reps have the most pressure to close deals. Contact {toolName} in the last two weeks of a quarter and you will almost always get a better offer than the listed price. End of fiscal year is even better.</p>
+        </div>
+        <div class="negotiate-item">
+          <h3>Get Competing Quotes</h3>
+          <p>Before talking to {toolName}'s sales team, get quotes from at least two competitors. Having a real alternative on the table gives you negotiating power. Mention the competitor and their pricing during your call. Sales reps have authority to match or beat competitor offers.</p>
+        </div>
+        <div class="negotiate-item">
+          <h3>Negotiate on Terms, Not Just Price</h3>
+          <p>If {toolName} won't budge on the per-user price, negotiate on other terms. Ask for additional seats at no cost, extended contract length at a lower annual rate, free onboarding or training, or inclusion of add-on features that would normally cost extra.</p>
+        </div>
+        <div class="negotiate-item">
+          <h3>Start with a Shorter Contract</h3>
+          <p>Annual contracts get better per-month pricing than monthly billing, but avoid multi-year commitments on your first purchase. Sign a one-year deal, prove the tool's value to your organization, and then negotiate a multi-year renewal at a discount once you have internal buy-in.</p>
+        </div>
+        <div class="negotiate-item">
+          <h3>Ask About Startup or Growth Pricing</h3>
+          <p>Many vendors including {toolName} offer discounted pricing for startups, non-profits, or companies under a certain revenue threshold. These programs are rarely advertised on the pricing page. Ask directly whether any special pricing programs apply to your company.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Total Cost of Ownership -->
+    <section class="content-section">
+      <h2>Total Cost of Ownership</h2>
+      <p>The subscription price is just one piece of what {toolName} actually costs. Factor in these additional expenses when building your budget.</p>
+      <div class="tco-list">
+        <div class="tco-item">
+          <h3>Implementation and Onboarding</h3>
+          <p>Getting {toolName} set up properly takes time and often money. Some vendors charge for professional services, others include basic onboarding. Either way, your team will spend hours configuring the platform, migrating data, and building initial workflows. Budget for 2 to 8 weeks of reduced productivity during rollout.</p>
+        </div>
+        <div class="tco-item">
+          <h3>Training and Adoption</h3>
+          <p>A tool only delivers value if people actually use it. Plan for training sessions, documentation, and the learning curve that comes with any new platform. Under-investing in training is the most common reason B2B software purchases fail to deliver expected ROI.</p>
+        </div>
+        <div class="tco-item">
+          <h3>Integration Costs</h3>
+          <p>Connecting {toolName} to your CRM, data warehouse, and other tools may require middleware (Workato, Zapier) or custom development. Native integrations are free, but complex data flows between systems can add $200 to $2,000 per month in middleware costs.</p>
+        </div>
+        <div class="tco-item">
+          <h3>Ongoing Administration</h3>
+          <p>Someone on your team needs to own the {toolName} instance. That means managing users, updating configurations, troubleshooting issues, and staying current with new features. For complex platforms, this can be a part-time or full-time role. For simpler tools, budget a few hours per month.</p>
+        </div>
+        <div class="tco-item">
+          <h3>Switching Costs</h3>
+          <p>If {toolName} doesn't work out, migrating to another platform has real costs. Data export, re-implementation, retraining, and lost productivity during the transition. Factor in switching costs when deciding between a cheaper option that might not scale and a pricier one that covers your needs long-term.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Bottom Line -->
     <section class="content-section">
       <h2>The Bottom Line</h2>
@@ -456,6 +512,39 @@ const pricingTitle = page.title.length <= 45 ? page.title : shortPricingTitle.le
     font-size: var(--text-xl);
     font-weight: 800;
     color: var(--color-primary);
+  }
+
+  /* Negotiate & TCO */
+  .negotiate-list,
+  .tco-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    margin-top: var(--space-4);
+  }
+
+  .negotiate-item,
+  .tco-item {
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .negotiate-item h3,
+  .tco-item h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+    color: var(--color-primary);
+  }
+
+  .negotiate-item p,
+  .tco-item p {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: none;
   }
 
   /* Bottom Line */
