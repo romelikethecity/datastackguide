@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /api/
 
 # AI/LLM crawlers - explicitly allowed for AI search citations
 User-agent: GPTBot
@@ -44,12 +43,5 @@ Allow: /
 
 User-agent: Meta-ExternalAgent
 Allow: /
-
-# Block low-value scrapers
-User-agent: Bytespider
-Disallow: /
-
-User-agent: Amazonbot
-Disallow: /
 
 Sitemap: https://datastackguide.com/sitemap-index.xml
