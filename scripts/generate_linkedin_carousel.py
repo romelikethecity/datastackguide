@@ -385,6 +385,129 @@ def create_slide_6_cta(market):
     return img
 
 
+def generate_post_text(output_dir, market, trends, cooccurrence):
+    """Generate a LinkedIn post text file with rotating hooks and key stats."""
+
+    total_tools = market.get("total_tools_tracked", 0)
+    total_jobs = market.get("total_jobs_analyzed", 0)
+    total_companies = market.get("total_companies", 0)
+    top_tools = market.get("top_tools", [])
+
+    # Top tool by demand
+    top_tool_name = top_tools[0]["name"] if top_tools else "Salesforce"
+    top_tool_jobs = top_tools[0]["job_count"] if top_tools else 0
+
+    # Fastest growing tool (same logic as slide 3)
+    months = sorted(trends.get("trends", {}).keys(), reverse=True)
+    latest_list = trends["trends"].get(months[0], []) if months else []
+    prev_list = trends["trends"].get(months[1], []) if len(months) > 1 else []
+    prev_lookup = {t["slug"]: t["mentions"] for t in prev_list}
+
+    grower_name = None
+    grower_change = 0
+    for t in latest_list:
+        if t["mentions"] > 10 and t["slug"] in prev_lookup and prev_lookup[t["slug"]] > 0:
+            change = round(((t["mentions"] - prev_lookup[t["slug"]]) / prev_lookup[t["slug"]]) * 100)
+            if change > grower_change:
+                grower_change = change
+                grower_name = t["tool"]
+
+    # Top co-occurrence pair
+    top_pair = None
+    best_count = 0
+    seen = set()
+    for key, pairs in cooccurrence.get("cooccurrence", {}).items():
+        for p in pairs[:3]:
+            pair_key = tuple(sorted([key, p["slug"]]))
+            if pair_key not in seen:
+                seen.add(pair_key)
+                if p["count"] > best_count:
+                    best_count = p["count"]
+                    display_a = " ".join(w.capitalize() for w in key.split("-"))
+                    top_pair = (display_a, p["tool"], p["count"])
+
+    # Count how many tools in latest month had 50+ mentions
+    hot_tools_count = sum(1 for t in latest_list if t["mentions"] >= 50)
+
+    # --- Build candidate hooks ---
+    candidates = []
+
+    # Hook 1: total jobs analyzed
+    candidates.append(
+        f"We analyzed {total_jobs:,} job postings to find out which B2B data tools actually matter."
+    )
+
+    # Hook 2: top tool dominance
+    if top_tool_jobs > 0:
+        candidates.append(
+            f"{top_tool_name} appeared in {top_tool_jobs:,} job postings last month. Nothing else comes close."
+        )
+
+    # Hook 3: fastest grower
+    if grower_name and grower_change > 0:
+        candidates.append(
+            f"{grower_name} job mentions jumped {grower_change}% month over month. Here's what's driving it."
+        )
+
+    # Hook 4: tool count
+    candidates.append(
+        f"{total_tools}+ B2B data tools. {total_jobs:,} job postings. Here's what the hiring data says."
+    )
+
+    # Ensure at least 3 candidates (fallback)
+    if len(candidates) < 3:
+        candidates.append(
+            f"The B2B data stack is shifting fast. We tracked {total_tools}+ tools to prove it."
+        )
+
+    # Pick hook using week number
+    week_num = datetime.now().isocalendar()[1]
+    hook = candidates[week_num % len(candidates)]
+
+    # --- Build bullet points ---
+    bullets = []
+
+    # Bullet: top 3 tools by demand
+    if len(latest_list) >= 3:
+        top3 = [t["tool"] for t in latest_list[:3]]
+        bullets.append(f"Top 3 by demand: {top3[0]}, {top3[1]}, {top3[2]}")
+
+    # Bullet: total companies hiring
+    bullets.append(f"{total_companies:,} companies hiring across {total_tools}+ tools")
+
+    # Bullet: fastest grower
+    if grower_name and grower_change > 0:
+        bullets.append(f"Fastest grower: {grower_name} ({grower_change}% MoM)")
+
+    # Bullet: top pairing
+    if top_pair:
+        bullets.append(f"Most common pairing: {top_pair[0]} + {top_pair[1]} ({top_pair[2]} postings)")
+
+    # Bullet: hot tools count
+    if hot_tools_count > 0:
+        bullets.append(f"{hot_tools_count} tools with 50+ job mentions this month")
+
+    # Trim to 3-4 bullets
+    bullets = bullets[:4]
+
+    # --- Assemble post ---
+    lines = [hook, ""]
+    for b in bullets:
+        lines.append(f"  {b}")
+    lines.append("")
+    lines.append("Swipe for the full breakdown \u2193")
+    lines.append("")
+    lines.append("#DataStack #DataEngineering #Analytics #DataOps #ModernDataStack")
+
+    post_text = "\n".join(lines)
+
+    # Save
+    post_path = Path(output_dir) / "post.txt"
+    with open(post_path, "w") as f:
+        f.write(post_text)
+    print(f"Saved post text: {post_path}")
+
+
 def main():
     import argparse
     parser = argparse.ArgumentParser(description="Generate LinkedIn carousel slides")
@@ -424,7 +547,10 @@ def main():
     images[0].save(pdf_path, "PDF", resolution=150, save_all=True, append_images=images[1:])
     print(f"Saved PDF: {pdf_path}")
 
-    print(f"\nDone! {len(slides)} slides + 1 PDF in {output_dir}/")
+    # Generate LinkedIn post text
+    generate_post_text(output_dir, market, trends, cooccurrence)
+
+    print(f"\nDone! {len(slides)} slides + 1 PDF + post.txt in {output_dir}/")
 
 
 if __name__ == "__main__":
