@@ -271,7 +271,7 @@
       "slug": "sales-intelligence",
       "term": "Sales Intelligence",
       "short_definition": "Technology and data that helps sales teams identify, target, and engage the right buyers at the right time.",
-      "meta_description": "Sales intelligence in 2026: data platforms that surface ICP accounts, buying signals, and decision-makers. Top tools, typical pricing, and hiring demand.",
+      "meta_description": "Top 7 sales intelligence platforms of 2026: Compare features, pricing, and data accuracy. Find the best tools to target ideal customers right now.",
       "full_definition": "Sales intelligence platforms combine contact databases, firmographic data, technographic signals, and buying intent into a single workflow. They're designed to answer three questions: who should I sell to, what do I know about them, and when is the right time to reach out? The best platforms layer multiple data types so reps aren't just cold-calling from a list. They're reaching out with context.",
       "why_it_matters": "Reps spend roughly 40% of their time researching prospects and finding contact info. That's time they aren't selling. Sales intelligence tools compress hours of manual research into seconds. More importantly, they surface signals that reps would never find on their own, like technology changes, hiring surges, or funding rounds that indicate buying windows.",
       "example": "An AE targeting mid-market fintech companies uses ZoomInfo to build a list of CFOs at companies with 200-500 employees that recently raised Series B funding. Apollo flags three of those accounts as showing intent around 'payment processing solutions.' The AE writes personalized outreach referencing the funding round and the specific pain point.",
@@ -292,7 +292,8 @@
         "best-sales-intelligence-tools"
       ],
       "date_published": "2026-02-09",
-      "date_modified": "2026-04-15"
+      "date_modified": "2026-04-15",
+      "title": "Sales Intelligence in 2026: Tools & Best Practices"
     },
     {
       "slug": "buyer-intent",
@@ -1219,7 +1220,7 @@
       "slug": "revenue-attribution",
       "term": "Revenue Attribution",
       "short_definition": "The process of connecting closed revenue back to the marketing and sales touchpoints that influenced the deal.",
-      "meta_description": "Revenue attribution in 2026: models that tie closed deals to the exact marketing and sales touches. First-touch, last-touch, W-shaped, and top tools.",
+      "meta_description": "Updated for 2026: Compare revenue attribution models like first-touch vs. multi-touch. See 5 top tools for tying revenue to marketing. Data-driven insights.",
       "full_definition": "Revenue attribution answers a straightforward question: which marketing campaigns and sales activities contributed to this deal closing? It goes beyond lead attribution (which channel generated the lead) to track the full buyer journey across multiple touchpoints. Common models include first-touch, last-touch, linear, time-decay, and data-driven or algorithmic attribution. Each model distributes credit differently, and no single model is perfect.",
       "why_it_matters": "Without attribution, marketing can't prove ROI and sales can't identify which activities move deals forward. It determines budget allocation. Teams that can attribute revenue to specific channels and campaigns make better investment decisions. Teams that can't end up funding whatever the loudest executive believes is working.",
       "example": "A $100K deal closes. Revenue attribution shows the buyer first found you through an SEO blog post, attended a webinar, received three outbound emails from the SDR, saw two LinkedIn ads, and had a final demo from the AE. How much credit does each touchpoint get? That's the attribution question.",
@@ -1239,16 +1240,17 @@
         "best-data-quality-tools"
       ],
       "date_published": "2026-02-12",
-      "date_modified": "2026-04-15"
+      "date_modified": "2026-04-15",
+      "title": "Revenue Attribution Models in 2026: Top Methods Compared"
     },
     {
       "slug": "pipeline-velocity",
       "term": "Pipeline Velocity",
-      "short_definition": "A metric that measures how fast revenue moves through your sales pipeline, calculated as (opportunities \u00d7 win rate \u00d7 average deal size) / sales cycle length.",
+      "short_definition": "A metric that measures how fast revenue moves through your sales pipeline, calculated as (opportunities × win rate × average deal size) / sales cycle length.",
       "meta_description": "What is pipeline velocity? A metric measuring how fast revenue moves through your sales funnel. See related tools and real adoption data.",
-      "full_definition": "Pipeline velocity combines four factors into one number: the number of qualified opportunities in your pipeline, your win rate, your average deal size, and the average length of your sales cycle. The formula is (Opportunities \u00d7 Win Rate \u00d7 Avg Deal Size) / Sales Cycle Days. It gives you a dollar-per-day figure that represents how much revenue your pipeline generates daily.",
+      "full_definition": "Pipeline velocity combines four factors into one number: the number of qualified opportunities in your pipeline, your win rate, your average deal size, and the average length of your sales cycle. The formula is (Opportunities × Win Rate × Avg Deal Size) / Sales Cycle Days. It gives you a dollar-per-day figure that represents how much revenue your pipeline generates daily.",
       "why_it_matters": "Pipeline velocity is one of the best single metrics for sales performance. It accounts for both volume (how many deals) and efficiency (how fast they close). Improving any of the four inputs increases velocity. It's more useful than pipeline coverage alone because it factors in speed and conversion, not just total dollar amount sitting in the funnel.",
-      "example": "Your team has 50 qualified opportunities, a 25% win rate, $40K average deal size, and 60-day sales cycle. Pipeline velocity = (50 \u00d7 0.25 \u00d7 $40,000) / 60 = $8,333/day. If you shorten the sales cycle to 45 days without changing anything else, velocity jumps to $11,111/day.",
+      "example": "Your team has 50 qualified opportunities, a 25% win rate, $40K average deal size, and 60-day sales cycle. Pipeline velocity = (50 × 0.25 × $40,000) / 60 = $8,333/day. If you shorten the sales cycle to 45 days without changing anything else, velocity jumps to $11,111/day.",
       "related_terms": [
         "sales-velocity",
         "sales-forecasting",
@@ -1439,7 +1441,7 @@
       "slug": "etl",
       "term": "ETL",
       "short_definition": "Extract, Transform, Load. A process for moving data from source systems to a data warehouse.",
-      "meta_description": "What is ETL? Extract, Transform, Load \u2014 moving data from source systems to a warehouse. See ETL tools, pricing, and job demand data.",
+      "meta_description": "What is ETL? Extract, Transform, Load — moving data from source systems to a warehouse. See ETL tools, pricing, and job demand data.",
       "full_definition": "ETL stands for Extract, Transform, Load. It's the traditional approach to data integration. First, you extract data from source systems (CRM, ERP, marketing tools). Then you transform it: clean, standardize, and reshape the data. Finally, you load it into a destination like a data warehouse. ETL tools handle the plumbing that connects your operational systems to your analytics infrastructure.",
       "why_it_matters": "Without ETL, your data stays siloed in individual tools. Marketing can't see sales data. Finance can't reconcile across systems. ETL pipelines are the backbone of business intelligence. When people talk about 'data infrastructure,' they usually mean ETL plus a warehouse.",
       "example": "Your sales team uses Salesforce, marketing uses HubSpot, and finance uses QuickBooks. An ETL tool extracts data from all three, transforms it into a common format, and loads it into Snowflake where analysts can query across all sources.",
@@ -1460,7 +1462,7 @@
       "slug": "elt",
       "term": "ELT",
       "short_definition": "Extract, Load, Transform. A modern approach where raw data is loaded first, then transformed in the warehouse.",
-      "meta_description": "What is ELT? Extract, Load, Transform \u2014 loading raw data into a warehouse first, then transforming it. See related tools and data.",
+      "meta_description": "What is ELT? Extract, Load, Transform — loading raw data into a warehouse first, then transforming it. See related tools and data.",
       "full_definition": "ELT flips the traditional ETL order. Instead of transforming data before loading it, ELT extracts raw data, loads it directly into a cloud warehouse, then transforms it there. This approach gained popularity because cloud warehouses like Snowflake and BigQuery have enough compute power to handle transformations at scale.",
       "why_it_matters": "ELT is faster to implement because you don't need to define transformations upfront. Load the raw data, then figure out how to transform it later. This is more flexible than ETL, but requires a warehouse with enough horsepower to handle the transformation workload.",
       "example": "Fivetran extracts raw data from Salesforce and loads it directly into Snowflake. Then dbt runs transformation queries inside Snowflake to create clean, analytics-ready tables.",
@@ -1682,7 +1684,7 @@
       "short_definition": "General Data Protection Regulation. The EU law governing how companies handle personal data of EU residents.",
       "meta_description": "What is GDPR? The EU data protection law governing how companies handle personal data of EU residents. See related tools and compliance.",
       "full_definition": "GDPR (General Data Protection Regulation) is the European Union's sweeping data protection law, effective since 2018. It applies to any company processing data of EU residents, regardless of where the company is based. Key requirements include lawful basis for processing, data subject rights (access, deletion, portability), and strict consent rules.",
-      "why_it_matters": "GDPR has teeth. Fines can reach \u20ac20 million or 4% of global annual revenue, whichever is higher. Even US companies selling to European customers must comply. GDPR also influenced other privacy laws worldwide, including CCPA. It's the de facto global standard for data protection.",
+      "why_it_matters": "GDPR has teeth. Fines can reach €20 million or 4% of global annual revenue, whichever is higher. Even US companies selling to European customers must comply. GDPR also influenced other privacy laws worldwide, including CCPA. It's the de facto global standard for data protection.",
       "example": "A US SaaS company serves European customers. They implement cookie consent banners, add data processing clauses to contracts, appoint a Data Protection Officer, and create processes to handle data access and deletion requests.",
       "related_terms": [
         "data-privacy",
