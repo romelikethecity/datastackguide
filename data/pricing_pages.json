@@ -4512,7 +4512,7 @@
         },
         {
           "name": "PPC (Pay-Per-Click)",
-          "price": "$2\u2013$100+/click",
+          "price": "$2–$100+/click",
           "billing": "Monthly budget",
           "popular": true,
           "highlights": [
@@ -4542,7 +4542,7 @@
         },
         {
           "item": "Review management",
-          "range": "$500\u2013$2K/year (time cost)",
+          "range": "$500–$2K/year (time cost)",
           "note": "Active review solicitation and response management requires ongoing effort. Reviews directly impact your ranking and click-through rate."
         },
         {
@@ -4552,7 +4552,7 @@
         },
         {
           "item": "Landing page optimization",
-          "range": "$2K\u2013$10K",
+          "range": "$2K–$10K",
           "note": "Capterra traffic converts differently than organic. Most vendors need dedicated landing pages to maximize conversion from review site visitors."
         }
       ],
@@ -4565,27 +4565,27 @@
           },
           {
             "item": "Average CPC in CRM category",
-            "annual": "$35\u2013$55/click"
+            "annual": "$35–$55/click"
           },
           {
             "item": "Estimated clicks/month",
-            "annual": "~40\u201355 clicks"
+            "annual": "~40–55 clicks"
           },
           {
             "item": "Typical click-to-demo rate",
-            "annual": "5\u201315%"
+            "annual": "5–15%"
           },
           {
             "item": "Annual demos from Capterra",
-            "annual": "24\u201399"
+            "annual": "24–99"
           },
           {
             "item": "Cost per demo",
-            "annual": "$242\u2013$1,000"
+            "annual": "$242–$1,000"
           }
         ],
-        "total": "$24,000\u2013$36,000/year",
-        "per_user_real": "$242\u2013$1,000/demo"
+        "total": "$24,000–$36,000/year",
+        "per_user_real": "$242–$1,000/demo"
       },
       "bottom_line": "Capterra is a viable lead source for B2B software vendors, but cost efficiency varies dramatically by category. Niche categories with low competition can deliver cheap, qualified leads. Competitive categories like CRM, project management, and marketing automation have CPCs that make cost-per-demo comparable to LinkedIn ads. The free listing is worth claiming regardless; paid placement requires careful ROI tracking.",
       "faq": [
@@ -6545,7 +6545,7 @@
       "slug": "workato-pricing",
       "tool_slug": "workato-ipaas",
       "title": "Workato Pricing (2026): Plans & Real Costs",
-      "meta_description": "Workato pricing breakdown: enterprise iPaaS costs, recipe-based pricing, and comparison to MuleSoft and Tray.io. What IT teams pay in 2026.",
+      "meta_description": "Workato pricing in 2026: plans from $10K to $100K+/year, recipe-based billing, and hidden costs. Side-by-side comparison with MuleSoft and Tray.io.",
       "hook": "Workato is enterprise integration without the MuleSoft price tag. Plans start around $10K/year for small deployments, scaling to $100K+ for enterprise.",
       "tiers": [
         {
@@ -6647,7 +6647,7 @@
         }
       ],
       "date_published": "2026-02-12",
-      "date_modified": "2026-02-15"
+      "date_modified": "2026-04-15"
     },
     {
       "slug": "tableau-pricing",
