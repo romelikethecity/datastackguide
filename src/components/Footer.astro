@@ -32,19 +32,12 @@ const resourceLinks = [
   { href: '/reports/', label: 'Reports' },
 ];
 
-const companyLinks = [
-  { href: 'https://veruminc.com', label: 'Verum', external: true },
-  { href: 'https://getprovyx.com', label: 'Provyx', external: true },
-  { href: 'https://b2bsalestools.com', label: 'B2B Sales Tools', external: true },
-  { href: 'https://therevopsreport.com', label: 'RevOps Report', external: true },
-  { href: 'https://thecroreport.com', label: 'The CRO Report', external: true },
-  { href: 'https://theaimarketpulse.com', label: 'AI Market Pulse', external: true },
-];
-
 const relatedLinks = [
   { href: 'https://theaimarketpulse.com', label: 'AI Market Pulse', external: true },
   { href: 'https://gtmepulse.com', label: 'GTME Pulse', external: true },
   { href: 'https://therevopsreport.com', label: 'The RevOps Report', external: true },
+  { href: 'https://thecroreport.com', label: 'The CRO Report', external: true },
+  { href: 'https://b2bsalestools.com', label: 'B2B Sales Tools', external: true },
   { href: 'https://thegtmindex.com', label: 'The GTM Index', external: true },
 ];
 ---
@@ -106,17 +99,6 @@ const relatedLinks = [
       </div>
 
       <div class="footer-col">
-        <h4>Our Properties</h4>
-        <ul>
-          {companyLinks.map(link => (
-            <li>
-              <a href={link.href} target="_blank" rel="noopener">{link.label}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div class="footer-col">
         <h4>Related Sites</h4>
         <ul>
           {relatedLinks.map(link => (
@@ -129,7 +111,6 @@ const relatedLinks = [
     </div>
 
     <div class="footer-bottom">
-      <p class="disclosure">DataStackGuide is operated by the team behind <a href="https://veruminc.com" target="_blank" rel="noopener">Verum</a> and <a href="https://getprovyx.com" target="_blank" rel="noopener">Provyx</a>. We include our services where relevant but maintain editorial independence in our reviews.</p>
       <p class="copyright">&copy; {currentYear} DataStackGuide. All rights reserved.</p>
     </div>
   </div>
@@ -233,7 +214,7 @@ const relatedLinks = [
 
   .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     gap: var(--space-10);
     margin-bottom: var(--space-12);
   }
