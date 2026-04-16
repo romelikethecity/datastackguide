@@ -6723,8 +6723,8 @@
     {
       "slug": "power-bi-pricing",
       "tool_slug": "power-bi",
-      "title": "Power BI Pricing (2026): What It Costs",
-      "meta_description": "Power BI pricing breakdown: Pro at $10/user/mo, Premium Per User, and Premium Capacity options. Real costs for Microsoft BI. Updated for 2026.",
+      "title": "Power BI Pricing (2026): Pro, PPU, and Premium Capacity",
+      "meta_description": "Power BI pricing in 2026: Pro at $10/user/mo, PPU at $20/user/mo, Premium Capacity from $4,995/mo. Real Microsoft BI costs and hidden Fabric fees.",
       "hook": "Power BI Pro at $10/user/month is the most affordable enterprise BI license on the market. But Premium features, capacity pricing, and Azure consumption costs can push the real number higher.",
       "tiers": [
         {
@@ -6790,7 +6790,7 @@
         }
       ],
       "date_published": "2026-02-12",
-      "date_modified": "2026-02-21"
+      "date_modified": "2026-04-15"
     },
     {
       "slug": "looker-pricing",
