@@ -53,6 +53,28 @@ echo "[3/3] Saving market snapshot..."
 python3 scripts/generate_weekly_email.py --save-snapshot
 echo "Snapshot saved."
 
+
+# Email carousel PDF to Rome
+CAROUSEL_PDF="$PROJECT_DIR/carousel_output/data-stack-weekly-carousel.pdf"
+DATE_STAMP=$(date +%Y-%m-%d)
+if [ -f "$CAROUSEL_PDF" ] && [ -n "$RESEND_API_KEY" ]; then
+    echo "[$(date)] Emailing carousel PDF to rome@veruminc.com..."
+    PDF_B64=$(base64 -w 0 "$CAROUSEL_PDF")
+    curl -s -X POST "https://api.resend.com/emails" \
+        -H "Authorization: Bearer $RESEND_API_KEY" \
+        -H "Content-Type: application/json" \
+        -d "{
+            \"from\": \"Data Stack Weekly <newsletter@datastackguide.com>\",
+            \"to\": [\"rome@veruminc.com\"],
+            \"subject\": \"Data Stack Carousel - $DATE_STAMP\",
+            \"text\": \"This weeks LinkedIn carousel is attached.\",
+            \"attachments\": [{
+                \"filename\": \"datastack-carousel-$DATE_STAMP.pdf\",
+                \"content\": \"$PDF_B64\"
+            }]
+        }" > /dev/null && echo "[$(date)] PDF emailed." || echo "[$(date)] PDF email failed."
+fi
+
 # Push updated snapshot so git reset --hard doesn't lose it
 DATE=$(date +%Y-%m-%d)
 if [ -f "data/previous_market_snapshot.json" ]; then
