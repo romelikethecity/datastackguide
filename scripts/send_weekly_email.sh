@@ -35,6 +35,13 @@ fi
 # Create logs directory
 mkdir -p logs
 
+# 0.5. Refresh data from Postgres
+echo ""
+echo "[0.5/3] Refreshing data from Postgres..."
+export DATABASE_URL="${DATABASE_URL:-postgresql://rome:scraper@localhost/scraper}"
+/home/rome/scrapers/venv/bin/python3 scripts/extract_data.py
+echo "Data refresh done."
+
 # 1. Generate LinkedIn carousel
 echo ""
 echo "[1/3] Generating LinkedIn carousel..."
@@ -64,13 +71,13 @@ if [ -f "$CAROUSEL_PDF" ] && [ -n "$RESEND_API_KEY" ]; then
         -H "Authorization: Bearer $RESEND_API_KEY" \
         -H "Content-Type: application/json" \
         -d "{
-            \"from\": \"Data Stack Weekly <newsletter@datastackguide.com>\",
-            \"to\": [\"rome@veruminc.com\"],
-            \"subject\": \"Data Stack Carousel - $DATE_STAMP\",
-            \"text\": \"This weeks LinkedIn carousel is attached.\",
-            \"attachments\": [{
-                \"filename\": \"datastack-carousel-$DATE_STAMP.pdf\",
-                \"content\": \"$PDF_B64\"
+            "from": "Data Stack Weekly <newsletter@datastackguide.com>",
+            "to": ["rome@veruminc.com"],
+            "subject": "Data Stack Carousel - $DATE_STAMP",
+            "text": "This weeks LinkedIn carousel is attached.",
+            "attachments": [{
+                "filename": "datastack-carousel-$DATE_STAMP.pdf",
+                "content": "$PDF_B64"
             }]
         }" > /dev/null && echo "[$(date)] PDF emailed." || echo "[$(date)] PDF email failed."
 fi
