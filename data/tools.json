@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-03T17:01:42.066927",
-  "total_jobs_analyzed": 23338,
-  "total_companies": 9088,
-  "tool_count": 130,
+  "generated_at": "2026-04-29T15:24:59.289044",
+  "total_jobs_analyzed": 1172946,
+  "total_companies": 113894,
+  "tool_count": 110,
   "tools": [
     {
       "name": "Salesforce",
@@ -12,10 +12,10 @@
         "crm"
       ],
       "primary_category": "crm",
-      "job_count": 1694,
-      "unique_companies": 1047,
-      "salary_min": 111977,
-      "salary_max": 156458,
+      "job_count": 23755,
+      "unique_companies": 7642,
+      "salary_min": 101399,
+      "salary_max": 151412,
       "is_service": false,
       "db_category": "CRM_Enterprise"
     },
@@ -27,12 +27,59 @@
         "crm"
       ],
       "primary_category": "crm",
-      "job_count": 432,
-      "unique_companies": 301,
-      "salary_min": 107611,
-      "salary_max": 141695,
+      "job_count": 4965,
+      "unique_companies": 2930,
+      "salary_min": 93327,
+      "salary_max": 127850,
       "is_service": false,
       "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "Warmly",
+      "slug": "warmly",
+      "description": "",
+      "categories": [
+        "intent"
+      ],
+      "primary_category": "intent",
+      "job_count": 1749,
+      "unique_companies": 707,
+      "salary_min": 51670,
+      "salary_max": 69530,
+      "is_service": false,
+      "db_category": "Visitor_Identification"
+    },
+    {
+      "name": "Dynamics 365",
+      "slug": "dynamics-365",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 1360,
+      "unique_companies": 713,
+      "salary_min": 103665,
+      "salary_max": 158419,
+      "is_service": false,
+      "db_category": "CRM_Enterprise"
+    },
+    {
+      "name": "Demandtools",
+      "slug": "demandtools",
+      "description": "",
+      "categories": [
+        "cleaning",
+        "validation",
+        "data-quality"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 1062,
+      "unique_companies": 491,
+      "salary_min": 100079,
+      "salary_max": 138211,
+      "is_service": false,
+      "db_category": "RevOps_Data_Quality"
     },
     {
       "name": "Zoominfo",
@@ -46,27 +93,42 @@
         "contact-databases"
       ],
       "primary_category": "enrichment",
-      "job_count": 85,
-      "unique_companies": 69,
-      "salary_min": 95476,
-      "salary_max": 123633,
+      "job_count": 988,
+      "unique_companies": 466,
+      "salary_min": 96052,
+      "salary_max": 129272,
       "is_service": false,
       "db_category": "Data_Providers"
     },
     {
-      "name": "Dynamics 365",
-      "slug": "dynamics-365",
+      "name": "Tray",
+      "slug": "tray",
       "description": "",
       "categories": [
-        "crm"
+        "orchestration"
       ],
-      "primary_category": "crm",
-      "job_count": 65,
-      "unique_companies": 45,
-      "salary_min": 122465,
-      "salary_max": 160353,
+      "primary_category": "orchestration",
+      "job_count": 845,
+      "unique_companies": 199,
+      "salary_min": 58203,
+      "salary_max": 75328,
       "is_service": false,
-      "db_category": "CRM_Enterprise"
+      "db_category": "Integration_iPaaS"
+    },
+    {
+      "name": "Mulesoft",
+      "slug": "mulesoft",
+      "description": "",
+      "categories": [
+        "orchestration"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 784,
+      "unique_companies": 279,
+      "salary_min": 124031,
+      "salary_max": 197073,
+      "is_service": false,
+      "db_category": "Integration_iPaaS"
     },
     {
       "name": "Linkedin Sales Navigator",
@@ -80,27 +142,27 @@
         "contact-databases"
       ],
       "primary_category": "enrichment",
-      "job_count": 61,
-      "unique_companies": 53,
-      "salary_min": 91728,
-      "salary_max": 118100,
+      "job_count": 623,
+      "unique_companies": 386,
+      "salary_min": 97583,
+      "salary_max": 132517,
       "is_service": false,
       "db_category": "Data_Providers"
     },
     {
-      "name": "Salesloft",
-      "slug": "salesloft",
+      "name": "Copper",
+      "slug": "copper",
       "description": "",
       "categories": [
-        "list-building"
+        "crm"
       ],
-      "primary_category": "list-building",
-      "job_count": 43,
-      "unique_companies": 34,
-      "salary_min": 86869,
-      "salary_max": 106847,
+      "primary_category": "crm",
+      "job_count": 609,
+      "unique_companies": 266,
+      "salary_min": 86998,
+      "salary_max": 122931,
       "is_service": false,
-      "db_category": "Sales_Engagement_Enterprise"
+      "db_category": "CRM_MidMarket"
     },
     {
       "name": "Instantly",
@@ -110,10 +172,10 @@
         "list-building"
       ],
       "primary_category": "list-building",
-      "job_count": 38,
-      "unique_companies": 24,
-      "salary_min": 162271,
-      "salary_max": 224522,
+      "job_count": 530,
+      "unique_companies": 213,
+      "salary_min": 115955,
+      "salary_max": 171537,
       "is_service": false,
       "db_category": "Sales_Engagement_Growth"
     },
@@ -125,44 +187,12 @@
         "list-building"
       ],
       "primary_category": "list-building",
-      "job_count": 37,
-      "unique_companies": 25,
-      "salary_min": 145566,
-      "salary_max": 173307,
+      "job_count": 514,
+      "unique_companies": 263,
+      "salary_min": 112927,
+      "salary_max": 151657,
       "is_service": false,
       "db_category": "Sales_Engagement_Growth"
-    },
-    {
-      "name": "Demandtools",
-      "slug": "demandtools",
-      "description": "",
-      "categories": [
-        "cleaning",
-        "validation",
-        "data-quality"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 32,
-      "unique_companies": 26,
-      "salary_min": 134939,
-      "salary_max": 181116,
-      "is_service": false,
-      "db_category": "RevOps_Data_Quality"
-    },
-    {
-      "name": "Warmly",
-      "slug": "warmly",
-      "description": "",
-      "categories": [
-        "intent"
-      ],
-      "primary_category": "intent",
-      "job_count": 31,
-      "unique_companies": 10,
-      "salary_min": 132073,
-      "salary_max": 186536,
-      "is_service": false,
-      "db_category": "Visitor_Identification"
     },
     {
       "name": "Clay",
@@ -174,42 +204,27 @@
         "contact-databases"
       ],
       "primary_category": "enrichment",
-      "job_count": 26,
-      "unique_companies": 15,
-      "salary_min": 118129,
-      "salary_max": 162773,
+      "job_count": 504,
+      "unique_companies": 281,
+      "salary_min": 126156,
+      "salary_max": 170957,
       "is_service": false,
       "db_category": "Data_Enrichment"
     },
     {
-      "name": "6Sense",
-      "slug": "6sense",
+      "name": "Linkedin Marketing",
+      "slug": "linkedin-marketing",
       "description": "",
       "categories": [
         "abm"
       ],
       "primary_category": "abm",
-      "job_count": 22,
-      "unique_companies": 16,
-      "salary_min": 134295,
-      "salary_max": 182076,
+      "job_count": 498,
+      "unique_companies": 111,
+      "salary_min": 84524,
+      "salary_max": 108577,
       "is_service": false,
-      "db_category": "ABM_Platforms"
-    },
-    {
-      "name": "Zoho Crm",
-      "slug": "zoho-crm",
-      "description": "",
-      "categories": [
-        "crm"
-      ],
-      "primary_category": "crm",
-      "job_count": 20,
-      "unique_companies": 19,
-      "salary_min": 86570,
-      "salary_max": 143098,
-      "is_service": false,
-      "db_category": "CRM_MidMarket"
+      "db_category": "ABM_Advertising"
     },
     {
       "name": "Zapier",
@@ -219,27 +234,87 @@
         "orchestration"
       ],
       "primary_category": "orchestration",
-      "job_count": 17,
-      "unique_companies": 11,
-      "salary_min": 100636,
-      "salary_max": 131477,
+      "job_count": 488,
+      "unique_companies": 331,
+      "salary_min": 119646,
+      "salary_max": 158418,
       "is_service": false,
       "db_category": "Integration_iPaaS"
     },
     {
-      "name": "Copper",
-      "slug": "copper",
+      "name": "Salesloft",
+      "slug": "salesloft",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 477,
+      "unique_companies": 261,
+      "salary_min": 89462,
+      "salary_max": 118580,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Enterprise"
+    },
+    {
+      "name": "6Sense",
+      "slug": "6sense",
+      "description": "",
+      "categories": [
+        "abm"
+      ],
+      "primary_category": "abm",
+      "job_count": 461,
+      "unique_companies": 176,
+      "salary_min": 120477,
+      "salary_max": 165505,
+      "is_service": false,
+      "db_category": "ABM_Platforms"
+    },
+    {
+      "name": "Oracle Cx",
+      "slug": "oracle-cx",
       "description": "",
       "categories": [
         "crm"
       ],
       "primary_category": "crm",
-      "job_count": 12,
-      "unique_companies": 10,
-      "salary_min": 128114,
-      "salary_max": 159387,
+      "job_count": 398,
+      "unique_companies": 24,
+      "salary_min": 101906,
+      "salary_max": 266635,
+      "is_service": false,
+      "db_category": "CRM_Enterprise"
+    },
+    {
+      "name": "Zoho Crm",
+      "slug": "zoho-crm",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 347,
+      "unique_companies": 232,
+      "salary_min": 78413,
+      "salary_max": 131222,
       "is_service": false,
       "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "N8N",
+      "slug": "n8n",
+      "description": "",
+      "categories": [
+        "orchestration"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 285,
+      "unique_companies": 192,
+      "salary_min": 124043,
+      "salary_max": 169605,
+      "is_service": false,
+      "db_category": "Integration_iPaaS"
     },
     {
       "name": "Fivetran",
@@ -250,57 +325,57 @@
         "data-quality"
       ],
       "primary_category": "orchestration",
-      "job_count": 11,
-      "unique_companies": 8,
-      "salary_min": 156393,
-      "salary_max": 210616,
+      "job_count": 270,
+      "unique_companies": 129,
+      "salary_min": 152976,
+      "salary_max": 196290,
       "is_service": false,
       "db_category": "Reverse_ETL"
     },
     {
-      "name": "Mulesoft",
-      "slug": "mulesoft",
+      "name": "Workato Ipaas",
+      "slug": "workato-ipaas",
       "description": "",
       "categories": [
         "orchestration"
       ],
       "primary_category": "orchestration",
-      "job_count": 10,
-      "unique_companies": 8,
-      "salary_min": 161539,
-      "salary_max": 213024,
+      "job_count": 234,
+      "unique_companies": 113,
+      "salary_min": 123497,
+      "salary_max": 198363,
       "is_service": false,
       "db_category": "Integration_iPaaS"
     },
     {
-      "name": "Linkedin Marketing",
-      "slug": "linkedin-marketing",
-      "description": "",
-      "categories": [
-        "abm"
-      ],
-      "primary_category": "abm",
-      "job_count": 9,
-      "unique_companies": 6,
-      "salary_min": 108464,
-      "salary_max": 135247,
-      "is_service": false,
-      "db_category": "ABM_Advertising"
-    },
-    {
-      "name": "Pipedrive",
-      "slug": "pipedrive",
+      "name": "Monday Sales",
+      "slug": "monday-sales",
       "description": "",
       "categories": [
         "crm"
       ],
       "primary_category": "crm",
-      "job_count": 9,
-      "unique_companies": 6,
-      "salary_min": 92110,
-      "salary_max": 110920,
+      "job_count": 197,
+      "unique_companies": 94,
+      "salary_min": 60057,
+      "salary_max": 82513,
       "is_service": false,
       "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "Boomi",
+      "slug": "boomi",
+      "description": "",
+      "categories": [
+        "orchestration"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 178,
+      "unique_companies": 136,
+      "salary_min": 133417,
+      "salary_max": 183285,
+      "is_service": false,
+      "db_category": "Integration_iPaaS"
     },
     {
       "name": "Demandbase",
@@ -310,12 +385,89 @@
         "abm"
       ],
       "primary_category": "abm",
-      "job_count": 8,
-      "unique_companies": 7,
-      "salary_min": 163575,
-      "salary_max": 240050,
+      "job_count": 128,
+      "unique_companies": 87,
+      "salary_min": 112203,
+      "salary_max": 153064,
       "is_service": false,
       "db_category": "ABM_Platforms"
+    },
+    {
+      "name": "Census Data",
+      "slug": "census-data",
+      "description": "",
+      "categories": [
+        "orchestration",
+        "data-quality"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 126,
+      "unique_companies": 63,
+      "salary_min": 66934,
+      "salary_max": 84183,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
+    },
+    {
+      "name": "Pipedrive",
+      "slug": "pipedrive",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 97,
+      "unique_companies": 76,
+      "salary_min": 72888,
+      "salary_max": 315368,
+      "is_service": false,
+      "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "Nutshell",
+      "slug": "nutshell",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 88,
+      "unique_companies": 45,
+      "salary_min": 104126,
+      "salary_max": 137041,
+      "is_service": false,
+      "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "Outreach Io",
+      "slug": "outreach-io",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 82,
+      "unique_companies": 60,
+      "salary_min": 96082,
+      "salary_max": 124480,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Enterprise"
+    },
+    {
+      "name": "Airbyte",
+      "slug": "airbyte",
+      "description": "",
+      "categories": [
+        "orchestration",
+        "data-quality"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 74,
+      "unique_companies": 29,
+      "salary_min": 167213,
+      "salary_max": 207015,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
     },
     {
       "name": "Nooks",
@@ -325,12 +477,92 @@
         "list-building"
       ],
       "primary_category": "list-building",
-      "job_count": 8,
-      "unique_companies": 5,
-      "salary_min": 88714,
-      "salary_max": 102000,
+      "job_count": 55,
+      "unique_companies": 24,
+      "salary_min": 122826,
+      "salary_max": 174096,
       "is_service": false,
       "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Hightouch",
+      "slug": "hightouch",
+      "description": "",
+      "categories": [
+        "orchestration",
+        "data-quality"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 50,
+      "unique_companies": 33,
+      "salary_min": 140588,
+      "salary_max": 189698,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
+    },
+    {
+      "name": "Celigo",
+      "slug": "celigo",
+      "description": "",
+      "categories": [
+        "orchestration"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 47,
+      "unique_companies": 30,
+      "salary_min": 120057,
+      "salary_max": 150006,
+      "is_service": false,
+      "db_category": "Integration_iPaaS"
+    },
+    {
+      "name": "Dnb Hoovers",
+      "slug": "dnb-hoovers",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 42,
+      "unique_companies": 29,
+      "salary_min": 84563,
+      "salary_max": 127687,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Streak",
+      "slug": "streak",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 42,
+      "unique_companies": 25,
+      "salary_min": 123747,
+      "salary_max": 176790,
+      "is_service": false,
+      "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "Make",
+      "slug": "make",
+      "description": "",
+      "categories": [
+        "orchestration"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 40,
+      "unique_companies": 32,
+      "salary_min": 96539,
+      "salary_max": 123388,
+      "is_service": false,
+      "db_category": "Integration_iPaaS"
     },
     {
       "name": "Clearbit",
@@ -344,73 +576,61 @@
         "contact-databases"
       ],
       "primary_category": "enrichment",
-      "job_count": 7,
-      "unique_companies": 1,
-      "salary_min": 158000,
-      "salary_max": 207000,
+      "job_count": 38,
+      "unique_companies": 19,
+      "salary_min": 130604,
+      "salary_max": 173009,
       "is_service": false,
       "db_category": "Data_Providers"
     },
     {
-      "name": "Monday Sales",
-      "slug": "monday-sales",
+      "name": "Seamless Ai",
+      "slug": "seamless-ai",
       "description": "",
       "categories": [
-        "crm"
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
       ],
-      "primary_category": "crm",
-      "job_count": 7,
-      "unique_companies": 5,
-      "salary_min": 89240,
-      "salary_max": 110707,
+      "primary_category": "enrichment",
+      "job_count": 33,
+      "unique_companies": 21,
+      "salary_min": 97412,
+      "salary_max": 150610,
       "is_service": false,
-      "db_category": "CRM_MidMarket"
+      "db_category": "Data_Providers"
     },
     {
-      "name": "Outreach Io",
-      "slug": "outreach-io",
+      "name": "Lavender",
+      "slug": "lavender",
       "description": "",
       "categories": [
         "list-building"
       ],
       "primary_category": "list-building",
-      "job_count": 7,
-      "unique_companies": 6,
-      "salary_min": 125000,
-      "salary_max": 147500,
+      "job_count": 29,
+      "unique_companies": 14,
+      "salary_min": 138534,
+      "salary_max": 183903,
       "is_service": false,
-      "db_category": "Sales_Engagement_Enterprise"
+      "db_category": "Sales_Engagement_Growth"
     },
     {
-      "name": "Census Data",
-      "slug": "census-data",
+      "name": "Terminus",
+      "slug": "terminus",
       "description": "",
       "categories": [
-        "orchestration",
-        "data-quality"
+        "abm"
       ],
-      "primary_category": "orchestration",
-      "job_count": 6,
-      "unique_companies": 3,
-      "salary_min": 85000,
-      "salary_max": 110000,
+      "primary_category": "abm",
+      "job_count": 25,
+      "unique_companies": 17,
+      "salary_min": 100791,
+      "salary_max": 136430,
       "is_service": false,
-      "db_category": "Reverse_ETL"
-    },
-    {
-      "name": "N8N",
-      "slug": "n8n",
-      "description": "",
-      "categories": [
-        "orchestration"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 6,
-      "unique_companies": 3,
-      "salary_min": 137500,
-      "salary_max": 178750,
-      "is_service": false,
-      "db_category": "Integration_iPaaS"
+      "db_category": "ABM_Platforms"
     },
     {
       "name": "Orum",
@@ -420,232 +640,27 @@
         "list-building"
       ],
       "primary_category": "list-building",
-      "job_count": 6,
-      "unique_companies": 4,
-      "salary_min": 62560,
-      "salary_max": 93120,
+      "job_count": 22,
+      "unique_companies": 11,
+      "salary_min": 120333,
+      "salary_max": 175667,
       "is_service": false,
       "db_category": "Sales_Engagement_Growth"
     },
     {
-      "name": "Boomi",
-      "slug": "boomi",
+      "name": "Bombora Intent",
+      "slug": "bombora-intent",
       "description": "",
       "categories": [
-        "orchestration"
+        "intent"
       ],
-      "primary_category": "orchestration",
-      "job_count": 5,
-      "unique_companies": 5,
-      "salary_min": 233100,
-      "salary_max": 331000,
+      "primary_category": "intent",
+      "job_count": 22,
+      "unique_companies": 18,
+      "salary_min": 130651,
+      "salary_max": 176094,
       "is_service": false,
-      "db_category": "Integration_iPaaS"
-    },
-    {
-      "name": "Sugarcrm",
-      "slug": "sugarcrm",
-      "description": "",
-      "categories": [
-        "crm"
-      ],
-      "primary_category": "crm",
-      "job_count": 5,
-      "unique_companies": 2,
-      "salary_min": 100000,
-      "salary_max": 116000,
-      "is_service": false,
-      "db_category": "CRM_Enterprise"
-    },
-    {
-      "name": "Workato Ipaas",
-      "slug": "workato-ipaas",
-      "description": "",
-      "categories": [
-        "orchestration"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 5,
-      "unique_companies": 3,
-      "salary_min": 120998,
-      "salary_max": 151248,
-      "is_service": false,
-      "db_category": "Integration_iPaaS"
-    },
-    {
-      "name": "Cognism",
-      "slug": "cognism",
-      "description": "",
-      "categories": [
-        "enrichment",
-        "validation",
-        "technographic",
-        "list-building",
-        "contact-databases"
-      ],
-      "primary_category": "enrichment",
-      "job_count": 4,
-      "unique_companies": 3,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": "Data_Providers"
-    },
-    {
-      "name": "Make",
-      "slug": "make",
-      "description": "",
-      "categories": [
-        "orchestration"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 4,
-      "unique_companies": 3,
-      "salary_min": 62240,
-      "salary_max": 70360,
-      "is_service": false,
-      "db_category": "Integration_iPaaS"
-    },
-    {
-      "name": "Hightouch",
-      "slug": "hightouch",
-      "description": "",
-      "categories": [
-        "orchestration",
-        "data-quality"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 3,
-      "unique_companies": 2,
-      "salary_min": 181000,
-      "salary_max": 231000,
-      "is_service": false,
-      "db_category": "Reverse_ETL"
-    },
-    {
-      "name": "Leadiq",
-      "slug": "leadiq",
-      "description": "",
-      "categories": [
-        "enrichment",
-        "validation",
-        "technographic",
-        "list-building",
-        "contact-databases"
-      ],
-      "primary_category": "enrichment",
-      "job_count": 3,
-      "unique_companies": 3,
-      "salary_min": 90000,
-      "salary_max": 102500,
-      "is_service": false,
-      "db_category": "Data_Providers"
-    },
-    {
-      "name": "Sap Sales Cloud",
-      "slug": "sap-sales-cloud",
-      "description": "",
-      "categories": [
-        "crm"
-      ],
-      "primary_category": "crm",
-      "job_count": 3,
-      "unique_companies": 1,
-      "salary_min": 175100,
-      "salary_max": 279200,
-      "is_service": false,
-      "db_category": "CRM_Enterprise"
-    },
-    {
-      "name": "Tray",
-      "slug": "tray",
-      "description": "",
-      "categories": [
-        "orchestration"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 3,
-      "unique_companies": 2,
-      "salary_min": 88225,
-      "salary_max": 103800,
-      "is_service": false,
-      "db_category": "Integration_iPaaS"
-    },
-    {
-      "name": "Airbyte",
-      "slug": "airbyte",
-      "description": "",
-      "categories": [
-        "orchestration",
-        "data-quality"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 2,
-      "unique_companies": 1,
-      "salary_min": 70000,
-      "salary_max": 95000,
-      "is_service": false,
-      "db_category": "Reverse_ETL"
-    },
-    {
-      "name": "Amplemarket",
-      "slug": "amplemarket",
-      "description": "",
-      "categories": [
-        "list-building"
-      ],
-      "primary_category": "list-building",
-      "job_count": 2,
-      "unique_companies": 2,
-      "salary_min": 67500,
-      "salary_max": 107500,
-      "is_service": false,
-      "db_category": "Sales_Engagement_Growth"
-    },
-    {
-      "name": "Lemlist",
-      "slug": "lemlist",
-      "description": "",
-      "categories": [
-        "list-building"
-      ],
-      "primary_category": "list-building",
-      "job_count": 2,
-      "unique_companies": 2,
-      "salary_min": 90000,
-      "salary_max": 150000,
-      "is_service": false,
-      "db_category": "Sales_Engagement_Growth"
-    },
-    {
-      "name": "Oracle Cx",
-      "slug": "oracle-cx",
-      "description": "",
-      "categories": [
-        "crm"
-      ],
-      "primary_category": "crm",
-      "job_count": 2,
-      "unique_companies": 2,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": "CRM_Enterprise"
-    },
-    {
-      "name": "Rollworks",
-      "slug": "rollworks",
-      "description": "",
-      "categories": [
-        "abm"
-      ],
-      "primary_category": "abm",
-      "job_count": 2,
-      "unique_companies": 2,
-      "salary_min": 250000,
-      "salary_max": 275000,
-      "is_service": false,
-      "db_category": "ABM_Platforms"
+      "db_category": "Intent_Data"
     },
     {
       "name": "Bombora",
@@ -659,27 +674,27 @@
         "contact-databases"
       ],
       "primary_category": "enrichment",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": null,
-      "salary_max": null,
+      "job_count": 22,
+      "unique_companies": 18,
+      "salary_min": 130651,
+      "salary_max": 176094,
       "is_service": false,
       "db_category": "Data_Providers"
     },
     {
-      "name": "Celigo",
-      "slug": "celigo",
+      "name": "Gong Engage",
+      "slug": "gong-engage",
       "description": "",
       "categories": [
-        "orchestration"
+        "list-building"
       ],
-      "primary_category": "orchestration",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": 110000,
-      "salary_max": 125000,
+      "primary_category": "list-building",
+      "job_count": 21,
+      "unique_companies": 14,
+      "salary_min": 96296,
+      "salary_max": 122074,
       "is_service": false,
-      "db_category": "Integration_iPaaS"
+      "db_category": "Sales_Engagement_Enterprise"
     },
     {
       "name": "Common Room",
@@ -689,12 +704,110 @@
         "intent"
       ],
       "primary_category": "intent",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": 250000,
-      "salary_max": 275000,
+      "job_count": 20,
+      "unique_companies": 12,
+      "salary_min": 125336,
+      "salary_max": 160801,
       "is_service": false,
       "db_category": "ABM_Signals"
+    },
+    {
+      "name": "Snaplogic",
+      "slug": "snaplogic",
+      "description": "",
+      "categories": [
+        "orchestration"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 19,
+      "unique_companies": 14,
+      "salary_min": 139525,
+      "salary_max": 187642,
+      "is_service": false,
+      "db_category": "Integration_iPaaS"
+    },
+    {
+      "name": "Mutiny",
+      "slug": "mutiny",
+      "description": "",
+      "categories": [
+        "intent"
+      ],
+      "primary_category": "intent",
+      "job_count": 19,
+      "unique_companies": 5,
+      "salary_min": 166538,
+      "salary_max": 216423,
+      "is_service": false,
+      "db_category": "ABM_Signals"
+    },
+    {
+      "name": "Usergems",
+      "slug": "usergems",
+      "description": "",
+      "categories": [
+        "intent"
+      ],
+      "primary_category": "intent",
+      "job_count": 17,
+      "unique_companies": 6,
+      "salary_min": 116762,
+      "salary_max": 179562,
+      "is_service": false,
+      "db_category": "ABM_Signals"
+    },
+    {
+      "name": "Cognism",
+      "slug": "cognism",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 16,
+      "unique_companies": 14,
+      "salary_min": 96984,
+      "salary_max": 115593,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Smartlead",
+      "slug": "smartlead",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 15,
+      "unique_companies": 9,
+      "salary_min": 103493,
+      "salary_max": 134837,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Lusha",
+      "slug": "lusha",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 15,
+      "unique_companies": 13,
+      "salary_min": 114366,
+      "salary_max": 143115,
+      "is_service": false,
+      "db_category": "Data_Providers"
     },
     {
       "name": "Freshsales",
@@ -704,27 +817,737 @@
         "crm"
       ],
       "primary_category": "crm",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": 159120,
-      "salary_max": 196560,
+      "job_count": 14,
+      "unique_companies": 10,
+      "salary_min": 138431,
+      "salary_max": 171118,
       "is_service": false,
       "db_category": "CRM_MidMarket"
     },
     {
-      "name": "Gong",
-      "slug": "gong-engage",
-      "description": "Revenue intelligence platform that records and analyzes sales conversations to improve deal outcomes.",
+      "name": "Close",
+      "slug": "close",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 14,
+      "unique_companies": 6,
+      "salary_min": 76250,
+      "salary_max": 125000,
+      "is_service": false,
+      "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "Amplemarket",
+      "slug": "amplemarket",
+      "description": "",
       "categories": [
         "list-building"
       ],
       "primary_category": "list-building",
-      "job_count": 60,
-      "unique_companies": 48,
-      "salary_min": 95000,
-      "salary_max": 140000,
+      "job_count": 13,
+      "unique_companies": 10,
+      "salary_min": 96250,
+      "salary_max": 138125,
       "is_service": false,
-      "db_category": "Revenue_Intelligence"
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Lemlist",
+      "slug": "lemlist",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 13,
+      "unique_companies": 10,
+      "salary_min": 61250,
+      "salary_max": 85000,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Keap",
+      "slug": "keap",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 13,
+      "unique_companies": 10,
+      "salary_min": 71873,
+      "salary_max": 105782,
+      "is_service": false,
+      "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "Leadiq",
+      "slug": "leadiq",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 12,
+      "unique_companies": 8,
+      "salary_min": 151250,
+      "salary_max": 180000,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Sugarcrm",
+      "slug": "sugarcrm",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 12,
+      "unique_companies": 9,
+      "salary_min": 92349,
+      "salary_max": 112997,
+      "is_service": false,
+      "db_category": "CRM_Enterprise"
+    },
+    {
+      "name": "Salesintel",
+      "slug": "salesintel",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 10,
+      "unique_companies": 5,
+      "salary_min": 119460,
+      "salary_max": 140870,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Insightly",
+      "slug": "insightly",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 10,
+      "unique_companies": 6,
+      "salary_min": 62920,
+      "salary_max": 71352,
+      "is_service": false,
+      "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "Hunter Campaigns",
+      "slug": "hunter-campaigns",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 10,
+      "unique_companies": 9,
+      "salary_min": 75600,
+      "salary_max": 110000,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Mixmax",
+      "slug": "mixmax",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 8,
+      "unique_companies": 4,
+      "salary_min": 133137,
+      "salary_max": 163240,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Phoneburner",
+      "slug": "phoneburner",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 8,
+      "unique_companies": 5,
+      "salary_min": 69140,
+      "salary_max": 112050,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Rollworks",
+      "slug": "rollworks",
+      "description": "",
+      "categories": [
+        "abm"
+      ],
+      "primary_category": "abm",
+      "job_count": 8,
+      "unique_companies": 6,
+      "salary_min": 190000,
+      "salary_max": 217500,
+      "is_service": false,
+      "db_category": "ABM_Platforms"
+    },
+    {
+      "name": "Ringlead Revops",
+      "slug": "ringlead-revops",
+      "description": "",
+      "categories": [
+        "cleaning",
+        "validation",
+        "data-quality"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 8,
+      "unique_companies": 5,
+      "salary_min": 115152,
+      "salary_max": 165949,
+      "is_service": false,
+      "db_category": "RevOps_Data_Quality"
+    },
+    {
+      "name": "Rudderstack",
+      "slug": "rudderstack",
+      "description": "",
+      "categories": [
+        "orchestration",
+        "data-quality"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 7,
+      "unique_companies": 7,
+      "salary_min": 123665,
+      "salary_max": 164253,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
+    },
+    {
+      "name": "Adroll",
+      "slug": "adroll",
+      "description": "",
+      "categories": [
+        "abm"
+      ],
+      "primary_category": "abm",
+      "job_count": 6,
+      "unique_companies": 5,
+      "salary_min": 71667,
+      "salary_max": 88333,
+      "is_service": false,
+      "db_category": "ABM_Advertising"
+    },
+    {
+      "name": "Connectandsell",
+      "slug": "connectandsell",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 5,
+      "unique_companies": 3,
+      "salary_min": 78000,
+      "salary_max": 180700,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Mailshake",
+      "slug": "mailshake",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 4,
+      "unique_companies": 2,
+      "salary_min": 71667,
+      "salary_max": 118333,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Discoverorg",
+      "slug": "discoverorg",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 4,
+      "unique_companies": 3,
+      "salary_min": 171333,
+      "salary_max": 222000,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Nimble Crm",
+      "slug": "nimble-crm",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 4,
+      "unique_companies": 1,
+      "salary_min": 133750,
+      "salary_max": 152000,
+      "is_service": false,
+      "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "N Rich",
+      "slug": "n-rich",
+      "description": "",
+      "categories": [
+        "abm"
+      ],
+      "primary_category": "abm",
+      "job_count": 4,
+      "unique_companies": 3,
+      "salary_min": 91667,
+      "salary_max": 117667,
+      "is_service": false,
+      "db_category": "ABM_Platforms"
+    },
+    {
+      "name": "Influ2",
+      "slug": "influ2",
+      "description": "",
+      "categories": [
+        "abm"
+      ],
+      "primary_category": "abm",
+      "job_count": 3,
+      "unique_companies": 3,
+      "salary_min": 124000,
+      "salary_max": 144000,
+      "is_service": false,
+      "db_category": "ABM_Advertising"
+    },
+    {
+      "name": "Hunter Io",
+      "slug": "hunter-io",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 3,
+      "unique_companies": 2,
+      "salary_min": 49920,
+      "salary_max": 60320,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "G2 Buyer Intent",
+      "slug": "g2-buyer-intent",
+      "description": "",
+      "categories": [
+        "intent"
+      ],
+      "primary_category": "intent",
+      "job_count": 3,
+      "unique_companies": 3,
+      "salary_min": 157500,
+      "salary_max": 182500,
+      "is_service": false,
+      "db_category": "Intent_Data"
+    },
+    {
+      "name": "G2 Intent",
+      "slug": "g2-intent",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 3,
+      "unique_companies": 3,
+      "salary_min": 157500,
+      "salary_max": 182500,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Justcall",
+      "slug": "justcall",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 3,
+      "unique_companies": 3,
+      "salary_min": 40000,
+      "salary_max": 45000,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Intellimize",
+      "slug": "intellimize",
+      "description": "",
+      "categories": [
+        "intent"
+      ],
+      "primary_category": "intent",
+      "job_count": 3,
+      "unique_companies": 1,
+      "salary_min": 142000,
+      "salary_max": 186167,
+      "is_service": false,
+      "db_category": "ABM_Signals"
+    },
+    {
+      "name": "Polytomic",
+      "slug": "polytomic",
+      "description": "",
+      "categories": [
+        "orchestration",
+        "data-quality"
+      ],
+      "primary_category": "orchestration",
+      "job_count": 2,
+      "unique_companies": 0,
+      "salary_min": 120000,
+      "salary_max": 220000,
+      "is_service": false,
+      "db_category": "Reverse_ETL"
+    },
+    {
+      "name": "Rb2B",
+      "slug": "rb2b",
+      "description": "",
+      "categories": [
+        "intent"
+      ],
+      "primary_category": "intent",
+      "job_count": 2,
+      "unique_companies": 2,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": "Visitor_Identification"
+    },
+    {
+      "name": "Regie Ai",
+      "slug": "regie-ai",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 2,
+      "unique_companies": 1,
+      "salary_min": 126000,
+      "salary_max": 234000,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Reply Io",
+      "slug": "reply-io",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 2,
+      "unique_companies": 1,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Rocketreach",
+      "slug": "rocketreach",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 2,
+      "unique_companies": 1,
+      "salary_min": 50000,
+      "salary_max": 70000,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Kixie",
+      "slug": "kixie",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 2,
+      "unique_companies": 2,
+      "salary_min": 180000,
+      "salary_max": 205000,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Insideview",
+      "slug": "insideview",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 2,
+      "unique_companies": 1,
+      "salary_min": 85000,
+      "salary_max": 120000,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Groove Clari",
+      "slug": "groove-clari",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 2,
+      "unique_companies": 1,
+      "salary_min": 42000,
+      "salary_max": 74500,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Enterprise"
+    },
+    {
+      "name": "Vanillasoft",
+      "slug": "vanillasoft",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 2,
+      "unique_companies": 2,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Builtwith",
+      "slug": "builtwith",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 2,
+      "unique_companies": 1,
+      "salary_min": 93000,
+      "salary_max": 125000,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Wappalyzer",
+      "slug": "wappalyzer",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 2,
+      "unique_companies": 1,
+      "salary_min": 33000,
+      "salary_max": 55000,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Zendesk Sell",
+      "slug": "zendesk-sell",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 35360,
+      "salary_max": 47840,
+      "is_service": false,
+      "db_category": "CRM_MidMarket"
+    },
+    {
+      "name": "Triblio",
+      "slug": "triblio",
+      "description": "",
+      "categories": [
+        "abm"
+      ],
+      "primary_category": "abm",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 41600,
+      "salary_max": 93600,
+      "is_service": false,
+      "db_category": "ABM_Platforms"
+    },
+    {
+      "name": "Contactout",
+      "slug": "contactout",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 190000,
+      "salary_max": 230000,
+      "is_service": false,
+      "db_category": "Data_Providers"
+    },
+    {
+      "name": "Keyplay",
+      "slug": "keyplay",
+      "description": "",
+      "categories": [
+        "intent"
+      ],
+      "primary_category": "intent",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 160000,
+      "salary_max": 230000,
+      "is_service": false,
+      "db_category": "ABM_Signals"
+    },
+    {
+      "name": "Zerobounce",
+      "slug": "zerobounce",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "technographic",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 40000,
+      "salary_max": 46000,
+      "is_service": false,
+      "db_category": "Data_Enrichment"
+    },
+    {
+      "name": "Cloudingo",
+      "slug": "cloudingo",
+      "description": "",
+      "categories": [
+        "cleaning",
+        "validation",
+        "data-quality"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 163000,
+      "salary_max": 263000,
+      "is_service": false,
+      "db_category": "RevOps_Data_Quality"
+    },
+    {
+      "name": "Clearout",
+      "slug": "clearout",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "technographic",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 190000,
+      "salary_max": 240000,
+      "is_service": false,
+      "db_category": "Data_Enrichment"
+    },
+    {
+      "name": "Agile Crm",
+      "slug": "agile-crm",
+      "description": "",
+      "categories": [
+        "crm"
+      ],
+      "primary_category": "crm",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 47840,
+      "salary_max": 58240,
+      "is_service": false,
+      "db_category": "CRM_MidMarket"
     },
     {
       "name": "Leadfeeder",
@@ -742,8 +1565,8 @@
       "db_category": "Visitor_Identification"
     },
     {
-      "name": "Mutiny",
-      "slug": "mutiny",
+      "name": "Lead Forensics",
+      "slug": "lead-forensics",
       "description": "",
       "categories": [
         "intent"
@@ -751,63 +1574,95 @@
       "primary_category": "intent",
       "job_count": 1,
       "unique_companies": 1,
-      "salary_min": 250000,
-      "salary_max": 275000,
-      "is_service": false,
-      "db_category": "ABM_Signals"
-    },
-    {
-      "name": "Nutshell",
-      "slug": "nutshell",
-      "description": "",
-      "categories": [
-        "crm"
-      ],
-      "primary_category": "crm",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": "CRM_MidMarket"
-    },
-    {
-      "name": "Rb2B",
-      "slug": "rb2b",
-      "description": "",
-      "categories": [
-        "intent"
-      ],
-      "primary_category": "intent",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": null,
-      "salary_max": null,
+      "salary_min": 75000,
+      "salary_max": 90000,
       "is_service": false,
       "db_category": "Visitor_Identification"
     },
     {
-      "name": "Smooth Ai",
-      "slug": "smooth-ai",
+      "name": "Prospeo",
+      "slug": "prospeo",
       "description": "",
       "categories": [
         "enrichment",
-        "validation",
         "technographic",
-        "list-building",
         "contact-databases"
       ],
       "primary_category": "enrichment",
       "job_count": 1,
       "unique_companies": 1,
-      "salary_min": 223250,
-      "salary_max": 325000,
+      "salary_min": null,
+      "salary_max": null,
       "is_service": false,
-      "db_category": "Data_Providers"
+      "db_category": "Data_Enrichment"
     },
     {
-      "name": "Smartlead",
-      "slug": "smartlead",
+      "name": "Openprise",
+      "slug": "openprise",
+      "description": "",
+      "categories": [
+        "cleaning",
+        "validation",
+        "data-quality"
+      ],
+      "primary_category": "cleaning",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": 160000,
+      "salary_max": 200000,
+      "is_service": false,
+      "db_category": "RevOps_Data_Quality"
+    },
+    {
+      "name": "Woodpecker",
+      "slug": "woodpecker",
+      "description": "",
+      "categories": [
+        "list-building"
+      ],
+      "primary_category": "list-building",
+      "job_count": 1,
+      "unique_companies": 0,
+      "salary_min": 36000,
+      "salary_max": 120000,
+      "is_service": false,
+      "db_category": "Sales_Engagement_Growth"
+    },
+    {
+      "name": "Metadata Io",
+      "slug": "metadata-io",
+      "description": "",
+      "categories": [
+        "abm"
+      ],
+      "primary_category": "abm",
+      "job_count": 1,
+      "unique_companies": 1,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": "ABM_Advertising"
+    },
+    {
+      "name": "Neverbounce",
+      "slug": "neverbounce",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "technographic",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 1,
+      "unique_companies": 0,
+      "salary_min": 36000,
+      "salary_max": 120000,
+      "is_service": false,
+      "db_category": "Data_Enrichment"
+    },
+    {
+      "name": "Yesware",
+      "slug": "yesware",
       "description": "",
       "categories": [
         "list-building"
@@ -816,24 +1671,41 @@
       "job_count": 1,
       "unique_companies": 1,
       "salary_min": null,
-      "salary_max": 160000,
+      "salary_max": null,
       "is_service": false,
       "db_category": "Sales_Engagement_Growth"
     },
     {
-      "name": "Terminus",
-      "slug": "terminus",
+      "name": "Factors Ai",
+      "slug": "factors-ai",
       "description": "",
       "categories": [
-        "abm"
+        "intent"
       ],
-      "primary_category": "abm",
+      "primary_category": "intent",
       "job_count": 1,
       "unique_companies": 1,
-      "salary_min": 138000,
-      "salary_max": 179200,
+      "salary_min": 170790,
+      "salary_max": 296800,
       "is_service": false,
-      "db_category": "ABM_Platforms"
+      "db_category": "ABM_Signals"
+    },
+    {
+      "name": "Fullenrich",
+      "slug": "fullenrich",
+      "description": "",
+      "categories": [
+        "enrichment",
+        "technographic",
+        "contact-databases"
+      ],
+      "primary_category": "enrichment",
+      "job_count": 1,
+      "unique_companies": 0,
+      "salary_min": null,
+      "salary_max": null,
+      "is_service": false,
+      "db_category": "Data_Enrichment"
     },
     {
       "name": "Verum",
@@ -897,1209 +1769,6 @@
       "pricing_model": "Enterprise",
       "pricing_note": "Custom pricing",
       "db_category": null
-    },
-    {
-      "name": "Marketo",
-      "slug": "marketo",
-      "description": "Enterprise B2B marketing automation platform, now part of Adobe Experience Cloud.",
-      "categories": [
-        "marketing-automation"
-      ],
-      "primary_category": "marketing-automation",
-      "job_count": 36,
-      "unique_companies": 28,
-      "salary_min": 105000,
-      "salary_max": 148000,
-      "is_service": false,
-      "website": "https://business.adobe.com/products/marketo/adobe-marketo.html",
-      "pricing_model": "Tiered",
-      "pricing_note": "From ~$895/mo (Growth), custom enterprise pricing",
-      "db_category": "Marketing_Automation_Enterprise"
-    },
-    {
-      "name": "G2",
-      "slug": "g2",
-      "description": "B2B software review platform and buyer intent data provider.",
-      "categories": [
-        "intent",
-        "review-platforms"
-      ],
-      "primary_category": "intent",
-      "job_count": 42,
-      "unique_companies": 30,
-      "salary_min": 98000,
-      "salary_max": 140000,
-      "is_service": false,
-      "website": "https://www.g2.com",
-      "pricing_model": "Tiered",
-      "pricing_note": "Free profile, Marketing Solutions from ~$10K/year",
-      "db_category": "Review_Platforms"
-    },
-    {
-      "name": "Salesforce Marketing Cloud",
-      "slug": "salesforce-marketing-cloud",
-      "description": "Enterprise multi-channel marketing automation platform for email, SMS, social, and advertising.",
-      "categories": [
-        "marketing-automation"
-      ],
-      "primary_category": "marketing-automation",
-      "job_count": 28,
-      "unique_companies": 22,
-      "salary_min": 110000,
-      "salary_max": 155000,
-      "is_service": false,
-      "website": "https://www.salesforce.com/products/marketing-cloud/overview/",
-      "pricing_model": "Tiered",
-      "pricing_note": "From ~$1,250/mo, custom enterprise pricing",
-      "db_category": "Marketing_Automation_Enterprise"
-    },
-    {
-      "name": "Capterra",
-      "slug": "capterra",
-      "description": "B2B software review and comparison platform owned by Gartner, connecting buyers with software vendors.",
-      "categories": [
-        "review-platforms"
-      ],
-      "primary_category": "review-platforms",
-      "job_count": 1,
-      "unique_companies": 1,
-      "salary_min": 95000,
-      "salary_max": 135000,
-      "is_service": false,
-      "website": "https://www.capterra.com",
-      "pricing_model": "PPC / Tiered",
-      "pricing_note": "Free listing, PPC from $2/click, premium placements from $500/mo",
-      "db_category": "Review_Platforms"
-    },
-    {
-      "name": "Tableau",
-      "slug": "tableau",
-      "description": "",
-      "categories": [
-        "analytics"
-      ],
-      "primary_category": "analytics",
-      "job_count": 412,
-      "unique_companies": 208,
-      "salary_min": 108000,
-      "salary_max": 158000,
-      "is_service": false,
-      "db_category": "Analytics_BI"
-    },
-    {
-      "name": "Power BI",
-      "slug": "power-bi",
-      "description": "",
-      "categories": [
-        "analytics"
-      ],
-      "primary_category": "analytics",
-      "job_count": 358,
-      "unique_companies": 185,
-      "salary_min": 95000,
-      "salary_max": 145000,
-      "is_service": false,
-      "db_category": "Analytics_BI"
-    },
-    {
-      "name": "Looker",
-      "slug": "looker",
-      "description": "",
-      "categories": [
-        "analytics"
-      ],
-      "primary_category": "analytics",
-      "job_count": 195,
-      "unique_companies": 112,
-      "salary_min": 115000,
-      "salary_max": 168000,
-      "is_service": false,
-      "db_category": "Analytics_BI"
-    },
-    {
-      "name": "Clari",
-      "slug": "clari",
-      "description": "",
-      "categories": [
-        "list-building"
-      ],
-      "primary_category": "list-building",
-      "job_count": 48,
-      "unique_companies": 36,
-      "salary_min": 105000,
-      "salary_max": 162000,
-      "is_service": false,
-      "db_category": "Revenue_Intelligence"
-    },
-    {
-      "name": "Braze",
-      "slug": "braze",
-      "description": "",
-      "categories": [
-        "marketing-automation"
-      ],
-      "primary_category": "marketing-automation",
-      "job_count": 52,
-      "unique_companies": 41,
-      "salary_min": 98000,
-      "salary_max": 155000,
-      "is_service": false,
-      "db_category": "Marketing_Automation"
-    },
-    {
-      "name": "Gainsight",
-      "slug": "gainsight",
-      "description": "",
-      "categories": [
-        "customer-success"
-      ],
-      "primary_category": "customer-success",
-      "job_count": 44,
-      "unique_companies": 32,
-      "salary_min": 88000,
-      "salary_max": 148000,
-      "is_service": false,
-      "db_category": "Customer_Success"
-    },
-    {
-      "name": "TrustRadius",
-      "slug": "trustradius",
-      "description": "",
-      "categories": [
-        "review-platforms",
-        "intent"
-      ],
-      "primary_category": "review-platforms",
-      "job_count": 19,
-      "unique_companies": 14,
-      "salary_min": 65000,
-      "salary_max": 145000,
-      "is_service": false,
-      "db_category": "Review_Platform"
-    },
-    {
-      "name": "Chili Piper",
-      "slug": "chili-piper",
-      "description": "",
-      "categories": [
-        "list-building",
-        "orchestration"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 16,
-      "unique_companies": 12,
-      "salary_min": 70000,
-      "salary_max": 155000,
-      "is_service": false,
-      "db_category": "Demand_Conversion"
-    },
-    {
-      "name": "LeanData",
-      "slug": "leandata",
-      "description": "",
-      "categories": [
-        "orchestration",
-        "data-quality"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 15,
-      "unique_companies": 11,
-      "salary_min": 75000,
-      "salary_max": 160000,
-      "is_service": false,
-      "db_category": "Revenue_Orchestration"
-    },
-    {
-      "name": "Highspot",
-      "slug": "highspot",
-      "description": "",
-      "categories": [
-        "list-building"
-      ],
-      "primary_category": "list-building",
-      "job_count": 13,
-      "unique_companies": 10,
-      "salary_min": 70000,
-      "salary_max": 150000,
-      "is_service": false,
-      "db_category": "Sales_Enablement"
-    },
-    {
-      "name": "ChurnZero",
-      "slug": "churnzero",
-      "description": "",
-      "categories": [
-        "customer-success"
-      ],
-      "primary_category": "customer-success",
-      "job_count": 11,
-      "unique_companies": 8,
-      "salary_min": 65000,
-      "salary_max": 140000,
-      "is_service": false,
-      "db_category": "Customer_Success"
-    },
-    {
-      "name": "Reltio",
-      "slug": "reltio",
-      "description": "Cloud-native master data management platform for enterprise data unification and governance.",
-      "categories": [
-        "cleaning",
-        "data-quality"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.reltio.com",
-      "pricing_model": "Enterprise",
-      "pricing_note": "Custom pricing, typically $50K+/year",
-      "db_category": null
-    },
-    {
-      "name": "Informatica CDQ",
-      "slug": "informatica-cdq",
-      "description": "Enterprise data quality and governance platform for complex multi-system data pipelines.",
-      "categories": [
-        "cleaning",
-        "data-quality",
-        "orchestration"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.informatica.com",
-      "pricing_model": "Enterprise",
-      "pricing_note": "Custom pricing",
-      "db_category": null
-    },
-    {
-      "name": "Openprise",
-      "slug": "openprise",
-      "description": "RevOps data automation platform for cleaning, enriching, and orchestrating B2B data.",
-      "categories": [
-        "cleaning",
-        "data-quality",
-        "orchestration"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.openprisetech.com",
-      "pricing_model": "Enterprise",
-      "pricing_note": "Custom pricing",
-      "db_category": null
-    },
-    {
-      "name": "Syncari",
-      "slug": "syncari",
-      "description": "Autonomous data management platform that syncs, cleans, and unifies data across GTM systems.",
-      "categories": [
-        "cleaning",
-        "data-quality",
-        "orchestration"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://syncari.com",
-      "pricing_model": "Tiered",
-      "pricing_note": "Starting at $2K+/month",
-      "db_category": null
-    },
-    {
-      "name": "Tamr",
-      "slug": "tamr",
-      "description": "",
-      "categories": [
-        "cleaning",
-        "enrichment"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Quality"
-    },
-    {
-      "name": "Dedupe.io",
-      "slug": "dedupe-io",
-      "description": "",
-      "categories": [
-        "cleaning"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Quality"
-    },
-    {
-      "name": "Cloudingo",
-      "slug": "cloudingo",
-      "description": "",
-      "categories": [
-        "cleaning"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Quality"
-    },
-    {
-      "name": "People Data Labs",
-      "slug": "people-data-labs",
-      "description": "",
-      "categories": [
-        "enrichment",
-        "contact-databases"
-      ],
-      "primary_category": "enrichment",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Providers"
-    },
-    {
-      "name": "FullContact",
-      "slug": "fullcontact",
-      "description": "",
-      "categories": [
-        "enrichment",
-        "validation"
-      ],
-      "primary_category": "enrichment",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Providers"
-    },
-    {
-      "name": "Hunter.io",
-      "slug": "hunter-io",
-      "description": "",
-      "categories": [
-        "enrichment",
-        "validation"
-      ],
-      "primary_category": "enrichment",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Providers"
-    },
-    {
-      "name": "Snov.io",
-      "slug": "snov-io",
-      "description": "",
-      "categories": [
-        "enrichment",
-        "list-building"
-      ],
-      "primary_category": "enrichment",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Providers"
-    },
-    {
-      "name": "Insycle",
-      "slug": "insycle",
-      "description": "",
-      "categories": [
-        "cleaning"
-      ],
-      "primary_category": "cleaning",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Quality"
-    },
-    {
-      "name": "Ribbon Health",
-      "slug": "ribbon-health",
-      "description": "Provider directory API for health tech products. Clean REST endpoints for provider search, insurance networks, and facility data.",
-      "categories": [
-        "healthcare",
-        "enrichment"
-      ],
-      "primary_category": "healthcare",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.ribbonhealth.com",
-      "pricing_model": "Usage-based",
-      "pricing_note": "Per-API-call pricing",
-      "db_category": null
-    },
-    {
-      "name": "NPPES",
-      "slug": "nppes",
-      "description": "CMS's public National Provider Identifier registry. 7M+ provider records, downloadable bulk files. Free but requires your own parsing.",
-      "categories": [
-        "healthcare"
-      ],
-      "primary_category": "healthcare",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://npiregistry.cms.hhs.gov",
-      "pricing_model": "Free",
-      "pricing_note": "Public government data",
-      "db_category": null
-    },
-    {
-      "name": "CMS Open Data",
-      "slug": "cms-open-data",
-      "description": "Medicare claims, provider performance, and hospital comparison datasets from the Centers for Medicare and Medicaid Services.",
-      "categories": [
-        "healthcare"
-      ],
-      "primary_category": "healthcare",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://data.cms.gov",
-      "pricing_model": "Free",
-      "pricing_note": "Public government data",
-      "db_category": null
-    },
-    {
-      "name": "Doximity",
-      "slug": "doximity",
-      "description": "Professional network for physicians with verified profiles. API access is partnership-gated and limited to approved use cases.",
-      "categories": [
-        "healthcare",
-        "enrichment"
-      ],
-      "primary_category": "healthcare",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.doximity.com",
-      "pricing_model": "Partnership",
-      "pricing_note": "Partnership-gated access",
-      "db_category": null
-    },
-    {
-      "name": "Redox",
-      "slug": "redox",
-      "description": "Healthcare data integration platform for connecting to EHR systems. The standard for bidirectional clinical data flows.",
-      "categories": [
-        "healthcare",
-        "ipaas"
-      ],
-      "primary_category": "healthcare",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.redoxengine.com",
-      "pricing_model": "Custom",
-      "pricing_note": "Custom pricing per connection",
-      "db_category": null
-    },
-    {
-      "name": "Mirth Connect",
-      "slug": "mirth-connect",
-      "description": "Open-source HL7/FHIR integration engine by NextGen Healthcare. The workhorse of healthcare data interchange.",
-      "categories": [
-        "healthcare",
-        "ipaas"
-      ],
-      "primary_category": "healthcare",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.nextgen.com/products-and-services/integration-engine",
-      "pricing_model": "Freemium",
-      "pricing_note": "Free open source / Enterprise pricing",
-      "db_category": null
-    },
-    {
-      "name": "Healthjump",
-      "slug": "healthjump",
-      "description": "Data extraction platform for practice management systems. Pulls structured data from PMS and EHR systems for analytics and integration.",
-      "categories": [
-        "healthcare"
-      ],
-      "primary_category": "healthcare",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.healthjump.com",
-      "pricing_model": "Custom",
-      "pricing_note": "Custom pricing per practice",
-      "db_category": null
-    },
-    {
-      "name": "Snowflake",
-      "slug": "snowflake",
-      "description": "Cloud data platform built for SQL analytics and BI. Separates compute from storage, scales automatically, and handles semi-structured data natively. The dominant choice for analytics-first data teams.",
-      "categories": [
-        "data-warehouse",
-        "analytics"
-      ],
-      "primary_category": "data-warehouse",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.snowflake.com",
-      "pricing_model": "Usage-based",
-      "pricing_note": "Credit-based pricing, varies by cloud provider and tier",
-      "db_category": null
-    },
-    {
-      "name": "Databricks",
-      "slug": "databricks",
-      "description": "Unified analytics platform combining data engineering, data science, and ML on a lakehouse architecture. Built on Apache Spark. The dominant choice for ML-first and data science teams.",
-      "categories": [
-        "data-platform",
-        "ml",
-        "analytics"
-      ],
-      "primary_category": "data-platform",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "website": "https://www.databricks.com",
-      "pricing_model": "Usage-based",
-      "pricing_note": "DBU-based pricing, varies by workload type and tier",
-      "db_category": null
-    },
-    {
-      "name": "Stitch",
-      "slug": "stitch",
-      "description": "",
-      "categories": [
-        "integration",
-        "etl"
-      ],
-      "primary_category": "integration",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Matillion",
-      "slug": "matillion",
-      "description": "",
-      "categories": [
-        "integration",
-        "etl"
-      ],
-      "primary_category": "integration",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Hevo Data",
-      "slug": "hevo",
-      "description": "",
-      "categories": [
-        "integration",
-        "etl"
-      ],
-      "primary_category": "integration",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "dbt",
-      "slug": "dbt",
-      "description": "",
-      "categories": [
-        "integration",
-        "etl",
-        "analytics"
-      ],
-      "primary_category": "integration",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Meltano",
-      "slug": "meltano",
-      "description": "",
-      "categories": [
-        "integration",
-        "etl"
-      ],
-      "primary_category": "integration",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Monte Carlo",
-      "slug": "monte-carlo",
-      "description": "",
-      "categories": [
-        "data-quality",
-        "observability"
-      ],
-      "primary_category": "data-quality",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Soda",
-      "slug": "soda",
-      "description": "",
-      "categories": [
-        "data-quality",
-        "observability"
-      ],
-      "primary_category": "data-quality",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Metaplane",
-      "slug": "metaplane",
-      "description": "",
-      "categories": [
-        "data-quality",
-        "observability"
-      ],
-      "primary_category": "data-quality",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Elementary",
-      "slug": "elementary",
-      "description": "",
-      "categories": [
-        "data-quality",
-        "observability"
-      ],
-      "primary_category": "data-quality",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Great Expectations",
-      "slug": "great-expectations",
-      "description": "",
-      "categories": [
-        "data-quality",
-        "observability"
-      ],
-      "primary_category": "data-quality",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Datafold",
-      "slug": "datafold",
-      "description": "",
-      "categories": [
-        "data-quality",
-        "observability"
-      ],
-      "primary_category": "data-quality",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "Bigeye",
-      "slug": "bigeye",
-      "description": "",
-      "categories": [
-        "data-quality",
-        "observability"
-      ],
-      "primary_category": "data-quality",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": null,
-      "salary_max": null,
-      "is_service": false,
-      "db_category": null
-    },
-    {
-      "name": "SQLMesh",
-      "slug": "sqlmesh",
-      "description": "",
-      "categories": [
-        "data-transformation"
-      ],
-      "primary_category": "data-transformation",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Transformation"
-    },
-    {
-      "name": "Apache Airflow",
-      "slug": "airflow",
-      "description": "",
-      "categories": [
-        "orchestration"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Orchestration"
-    },
-    {
-      "name": "Dagster",
-      "slug": "dagster",
-      "description": "",
-      "categories": [
-        "orchestration"
-      ],
-      "primary_category": "orchestration",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Orchestration"
-    },
-    {
-      "name": "Metabase",
-      "slug": "metabase",
-      "description": "",
-      "categories": [
-        "bi",
-        "analytics"
-      ],
-      "primary_category": "bi",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "BI_OpenSource"
-    },
-    {
-      "name": "Atlan",
-      "slug": "atlan",
-      "description": "",
-      "categories": [
-        "data-catalog",
-        "data-governance"
-      ],
-      "primary_category": "data-catalog",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Catalog"
-    },
-    {
-      "name": "Alation",
-      "slug": "alation",
-      "description": "",
-      "categories": [
-        "data-catalog",
-        "data-governance"
-      ],
-      "primary_category": "data-catalog",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Catalog"
-    },
-    {
-      "name": "DataHub",
-      "slug": "datahub",
-      "description": "",
-      "categories": [
-        "data-catalog"
-      ],
-      "primary_category": "data-catalog",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Catalog"
-    },
-    {
-      "name": "Collibra",
-      "slug": "collibra",
-      "description": "",
-      "categories": [
-        "data-catalog",
-        "data-governance"
-      ],
-      "primary_category": "data-governance",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Governance"
-    },
-    {
-      "name": "Select Star",
-      "slug": "select-star",
-      "description": "",
-      "categories": [
-        "data-catalog"
-      ],
-      "primary_category": "data-catalog",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Catalog"
-    },
-    {
-      "name": "Castor",
-      "slug": "castor",
-      "description": "",
-      "categories": [
-        "data-catalog"
-      ],
-      "primary_category": "data-catalog",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Catalog"
-    },
-    {
-      "name": "OpenMetadata",
-      "slug": "openmetadata",
-      "description": "",
-      "categories": [
-        "data-catalog"
-      ],
-      "primary_category": "data-catalog",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Catalog"
-    },
-    {
-      "name": "Census",
-      "slug": "census",
-      "description": "",
-      "categories": [
-        "reverse-etl"
-      ],
-      "primary_category": "reverse-etl",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Reverse_ETL"
-    },
-    {
-      "name": "Polytomic",
-      "slug": "polytomic",
-      "description": "",
-      "categories": [
-        "reverse-etl"
-      ],
-      "primary_category": "reverse-etl",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Reverse_ETL"
-    },
-    {
-      "name": "RudderStack",
-      "slug": "rudderstack",
-      "description": "",
-      "categories": [
-        "reverse-etl",
-        "cdp"
-      ],
-      "primary_category": "reverse-etl",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Reverse_ETL"
-    },
-    {
-      "name": "GrowthLoop",
-      "slug": "growthloop",
-      "description": "",
-      "categories": [
-        "reverse-etl"
-      ],
-      "primary_category": "reverse-etl",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Reverse_ETL"
-    },
-    {
-      "name": "Omnata",
-      "slug": "omnata",
-      "description": "",
-      "categories": [
-        "reverse-etl"
-      ],
-      "primary_category": "reverse-etl",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Reverse_ETL"
-    },
-    {
-      "name": "Pinecone",
-      "slug": "pinecone",
-      "description": "",
-      "categories": [
-        "vector-database"
-      ],
-      "primary_category": "vector-database",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Vector_Database"
-    },
-    {
-      "name": "Weaviate",
-      "slug": "weaviate",
-      "description": "",
-      "categories": [
-        "vector-database"
-      ],
-      "primary_category": "vector-database",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Vector_Database"
-    },
-    {
-      "name": "Milvus",
-      "slug": "milvus",
-      "description": "",
-      "categories": [
-        "vector-database"
-      ],
-      "primary_category": "vector-database",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Vector_Database"
-    },
-    {
-      "name": "Qdrant",
-      "slug": "qdrant",
-      "description": "",
-      "categories": [
-        "vector-database"
-      ],
-      "primary_category": "vector-database",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Vector_Database"
-    },
-    {
-      "name": "Chroma",
-      "slug": "chroma",
-      "description": "",
-      "categories": [
-        "vector-database"
-      ],
-      "primary_category": "vector-database",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Vector_Database"
-    },
-    {
-      "name": "pgvector",
-      "slug": "pgvector",
-      "description": "",
-      "categories": [
-        "vector-database"
-      ],
-      "primary_category": "vector-database",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Vector_Database"
-    },
-    {
-      "name": "LanceDB",
-      "slug": "lancedb",
-      "description": "",
-      "categories": [
-        "vector-database"
-      ],
-      "primary_category": "vector-database",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Vector_Database"
-    },
-    {
-      "name": "Immuta",
-      "slug": "immuta",
-      "description": "",
-      "categories": [
-        "data-governance"
-      ],
-      "primary_category": "data-governance",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Governance"
-    },
-    {
-      "name": "Privacera",
-      "slug": "privacera",
-      "description": "",
-      "categories": [
-        "data-governance"
-      ],
-      "primary_category": "data-governance",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Governance"
-    },
-    {
-      "name": "BigID",
-      "slug": "bigid",
-      "description": "",
-      "categories": [
-        "data-governance",
-        "data-privacy"
-      ],
-      "primary_category": "data-governance",
-      "job_count": 0,
-      "unique_companies": 0,
-      "salary_min": 0,
-      "salary_max": 0,
-      "is_service": false,
-      "db_category": "Data_Governance"
     }
   ]
 }

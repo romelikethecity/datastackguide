@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-02-03T17:01:42.119071",
-  "total_jobs_analyzed": 23338,
-  "total_companies": 9088,
-  "total_tools_tracked": 59,
+  "generated_at": "2026-04-29T15:25:03.080798",
+  "total_jobs_analyzed": 1172946,
+  "total_companies": 113894,
+  "total_tools_tracked": 110,
   "top_tools": [
     {
       "name": "Salesforce",
       "slug": "salesforce",
-      "job_count": 1694,
+      "job_count": 23755,
       "categories": [
         "crm"
       ]
@@ -15,71 +15,31 @@
     {
       "name": "Hubspot",
       "slug": "hubspot",
-      "job_count": 432,
+      "job_count": 4965,
       "categories": [
         "crm"
       ]
     },
     {
-      "name": "Zoominfo",
-      "slug": "zoominfo",
-      "job_count": 85,
+      "name": "Warmly",
+      "slug": "warmly",
+      "job_count": 1749,
       "categories": [
-        "enrichment",
-        "validation",
-        "technographic",
-        "list-building",
-        "contact-databases"
+        "intent"
       ]
     },
     {
       "name": "Dynamics 365",
       "slug": "dynamics-365",
-      "job_count": 65,
+      "job_count": 1360,
       "categories": [
         "crm"
       ]
     },
     {
-      "name": "Linkedin Sales Navigator",
-      "slug": "linkedin-sales-navigator",
-      "job_count": 61,
-      "categories": [
-        "enrichment",
-        "validation",
-        "technographic",
-        "list-building",
-        "contact-databases"
-      ]
-    },
-    {
-      "name": "Salesloft",
-      "slug": "salesloft",
-      "job_count": 43,
-      "categories": [
-        "list-building"
-      ]
-    },
-    {
-      "name": "Instantly",
-      "slug": "instantly",
-      "job_count": 38,
-      "categories": [
-        "list-building"
-      ]
-    },
-    {
-      "name": "Apollo",
-      "slug": "apollo",
-      "job_count": 37,
-      "categories": [
-        "list-building"
-      ]
-    },
-    {
       "name": "Demandtools",
       "slug": "demandtools",
-      "job_count": 32,
+      "job_count": 1062,
       "categories": [
         "cleaning",
         "validation",
@@ -87,17 +47,73 @@
       ]
     },
     {
-      "name": "Warmly",
-      "slug": "warmly",
-      "job_count": 31,
+      "name": "Zoominfo",
+      "slug": "zoominfo",
+      "job_count": 988,
       "categories": [
-        "intent"
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ]
+    },
+    {
+      "name": "Tray",
+      "slug": "tray",
+      "job_count": 845,
+      "categories": [
+        "orchestration"
+      ]
+    },
+    {
+      "name": "Mulesoft",
+      "slug": "mulesoft",
+      "job_count": 784,
+      "categories": [
+        "orchestration"
+      ]
+    },
+    {
+      "name": "Linkedin Sales Navigator",
+      "slug": "linkedin-sales-navigator",
+      "job_count": 623,
+      "categories": [
+        "enrichment",
+        "validation",
+        "technographic",
+        "list-building",
+        "contact-databases"
+      ]
+    },
+    {
+      "name": "Copper",
+      "slug": "copper",
+      "job_count": 609,
+      "categories": [
+        "crm"
+      ]
+    },
+    {
+      "name": "Instantly",
+      "slug": "instantly",
+      "job_count": 530,
+      "categories": [
+        "list-building"
+      ]
+    },
+    {
+      "name": "Apollo",
+      "slug": "apollo",
+      "job_count": 514,
+      "categories": [
+        "list-building"
       ]
     },
     {
       "name": "Clay",
       "slug": "clay",
-      "job_count": 26,
+      "job_count": 504,
       "categories": [
         "enrichment",
         "technographic",
@@ -105,76 +121,59 @@
       ]
     },
     {
-      "name": "6Sense",
-      "slug": "6sense",
-      "job_count": 22,
+      "name": "Linkedin Marketing",
+      "slug": "linkedin-marketing",
+      "job_count": 498,
       "categories": [
         "abm"
-      ]
-    },
-    {
-      "name": "Zoho Crm",
-      "slug": "zoho-crm",
-      "job_count": 20,
-      "categories": [
-        "crm"
       ]
     },
     {
       "name": "Zapier",
       "slug": "zapier",
-      "job_count": 17,
+      "job_count": 488,
       "categories": [
         "orchestration"
       ]
     },
     {
-      "name": "Copper",
-      "slug": "copper",
-      "job_count": 12,
+      "name": "Salesloft",
+      "slug": "salesloft",
+      "job_count": 477,
+      "categories": [
+        "list-building"
+      ]
+    },
+    {
+      "name": "6Sense",
+      "slug": "6sense",
+      "job_count": 461,
+      "categories": [
+        "abm"
+      ]
+    },
+    {
+      "name": "Oracle Cx",
+      "slug": "oracle-cx",
+      "job_count": 398,
       "categories": [
         "crm"
       ]
     },
     {
-      "name": "Fivetran",
-      "slug": "fivetran",
-      "job_count": 11,
+      "name": "Zoho Crm",
+      "slug": "zoho-crm",
+      "job_count": 347,
       "categories": [
-        "orchestration",
-        "data-quality"
+        "crm"
       ]
     },
     {
-      "name": "Mulesoft",
-      "slug": "mulesoft",
-      "job_count": 10,
+      "name": "N8N",
+      "slug": "n8n",
+      "job_count": 285,
       "categories": [
         "orchestration"
-      ]
-    },
-    {
-      "name": "Linkedin Marketing",
-      "slug": "linkedin-marketing",
-      "job_count": 9,
-      "categories": [
-        "abm"
-      ]
-    },
-    {
-      "name": "Pipedrive",
-      "slug": "pipedrive",
-      "job_count": 9,
-      "categories": [
-        "crm"
-      ]
-    },
-    {
-      "name": "Demandbase",
-      "slug": "demandbase",
-      "job_count": 8,
-      "categories": [
-        "abm"
       ]
     }
   ]

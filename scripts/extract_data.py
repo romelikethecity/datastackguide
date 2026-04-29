@@ -1,22 +1,25 @@
 #!/usr/bin/env python3
 """
-DataStackGuide — Data extraction from jobs.db to JSON.
-Reads the SQLite database and produces JSON files consumed by Astro at build time.
+DataStackGuide — Data extraction from PostgreSQL to JSON.
+Reads the production database and produces JSON files consumed by Astro at build time.
 
 Usage:
     python3 scripts/extract_data.py
-    python3 scripts/extract_data.py --db /path/to/jobs.db
+    DATABASE_URL=postgresql://user:pw@host/db python3 scripts/extract_data.py
 """
 
-import sqlite3
+import os
 import json
 import sys
+import psycopg2
 from datetime import datetime
 from pathlib import Path
 from collections import defaultdict
 
-# Default DB path — override with --db flag
-DEFAULT_DB = "/Users/rome/Documents/projects/scrapers/master/data/jobs.db"
+DEFAULT_DB_URL = os.environ.get(
+    "DATABASE_URL",
+    "postgresql://rome:scraper@localhost/scraper",
+)
 OUTPUT_DIR = Path(__file__).parent.parent / "data"
 
 # ── Site category taxonomy ──
@@ -156,12 +159,12 @@ MANUAL_TOOLS = [
 ]
 
 
-def get_db_path():
-    """Get DB path from args or default."""
+def get_db_url():
+    """Get DB URL from args, env, or default."""
     for i, arg in enumerate(sys.argv):
         if arg == "--db" and i + 1 < len(sys.argv):
             return sys.argv[i + 1]
-    return DEFAULT_DB
+    return DEFAULT_DB_URL
 
 
 def slugify(name):
@@ -320,12 +323,12 @@ def extract_trends(conn):
     cursor = conn.cursor()
     cursor.execute("""
         SELECT
-            strftime('%Y-%m', j.date_posted) as month,
+            to_char(j.date_posted, 'YYYY-MM') as month,
             jt.tool_name,
             COUNT(*) as mentions
         FROM job_tools jt
         JOIN jobs j ON jt.job_id = j.id
-        WHERE j.date_posted >= date('now', '-12 months')
+        WHERE j.date_posted >= (NOW() - INTERVAL '12 months')
           AND jt.tool_category NOT IN ('AI_languages', 'AI_infrastructure', 'AI_techniques', '_none')
         GROUP BY month, jt.tool_name
         HAVING COUNT(*) >= 2
@@ -390,7 +393,7 @@ def extract_tool_details(conn, tools):
             SELECT j.company_stage, COUNT(DISTINCT jt.job_id) as cnt
             FROM job_tools jt
             JOIN jobs j ON jt.job_id = j.id
-            WHERE jt.tool_name = ? AND j.company_stage IS NOT NULL AND j.company_stage != 'Unknown'
+            WHERE jt.tool_name = %s AND j.company_stage IS NOT NULL AND j.company_stage != 'Unknown'
             GROUP BY j.company_stage
             ORDER BY cnt DESC
         """, (tool_name,))
@@ -401,7 +404,7 @@ def extract_tool_details(conn, tools):
             SELECT j.seniority_tier, COUNT(DISTINCT jt.job_id) as cnt
             FROM job_tools jt
             JOIN jobs j ON jt.job_id = j.id
-            WHERE jt.tool_name = ? AND j.seniority_tier IS NOT NULL AND j.seniority_tier != 'unknown'
+            WHERE jt.tool_name = %s AND j.seniority_tier IS NOT NULL AND j.seniority_tier != 'unknown'
             GROUP BY j.seniority_tier
             ORDER BY cnt DESC
         """, (tool_name,))
@@ -412,7 +415,7 @@ def extract_tool_details(conn, tools):
             SELECT j.function_category, COUNT(DISTINCT jt.job_id) as cnt
             FROM job_tools jt
             JOIN jobs j ON jt.job_id = j.id
-            WHERE jt.tool_name = ? AND j.function_category IS NOT NULL
+            WHERE jt.tool_name = %s AND j.function_category IS NOT NULL
             GROUP BY j.function_category
             ORDER BY cnt DESC
         """, (tool_name,))
@@ -423,7 +426,7 @@ def extract_tool_details(conn, tools):
             SELECT j.company_name_normalized, COUNT(DISTINCT jt.job_id) as cnt
             FROM job_tools jt
             JOIN jobs j ON jt.job_id = j.id
-            WHERE jt.tool_name = ? AND j.company_name_normalized IS NOT NULL
+            WHERE jt.tool_name = %s AND j.company_name_normalized IS NOT NULL
             GROUP BY j.company_name_normalized
             ORDER BY cnt DESC
             LIMIT 10
@@ -433,11 +436,11 @@ def extract_tool_details(conn, tools):
         # Remote vs onsite
         cursor.execute("""
             SELECT
-                SUM(CASE WHEN j.is_remote = 1 THEN 1 ELSE 0 END) as remote,
-                SUM(CASE WHEN j.is_remote = 0 OR j.is_remote IS NULL THEN 1 ELSE 0 END) as onsite
+                SUM(CASE WHEN j.is_remote = true THEN 1 ELSE 0 END) as remote,
+                SUM(CASE WHEN j.is_remote = false OR j.is_remote IS NULL THEN 1 ELSE 0 END) as onsite
             FROM job_tools jt
             JOIN jobs j ON jt.job_id = j.id
-            WHERE jt.tool_name = ?
+            WHERE jt.tool_name = %s
         """, (tool_name,))
         row = cursor.fetchone()
         remote_split = {"remote": row[0] or 0, "onsite": row[1] or 0}
@@ -447,7 +450,7 @@ def extract_tool_details(conn, tools):
             SELECT j.title, COUNT(*) as cnt
             FROM job_tools jt
             JOIN jobs j ON jt.job_id = j.id
-            WHERE jt.tool_name = ?
+            WHERE jt.tool_name = %s
             GROUP BY j.title
             ORDER BY cnt DESC
             LIMIT 5
@@ -481,10 +484,11 @@ def get_total_companies(conn):
 
 
 def main():
-    db_path = get_db_path()
-    print(f"Connecting to {db_path}...")
+    db_url = get_db_url()
+    # Mask password in log
+    print(f"Connecting to {db_url.split('@')[-1] if '@' in db_url else db_url}...")
 
-    conn = sqlite3.connect(db_path)
+    conn = psycopg2.connect(db_url)
     OUTPUT_DIR.mkdir(exist_ok=True)
     (OUTPUT_DIR / "reports").mkdir(exist_ok=True)
 

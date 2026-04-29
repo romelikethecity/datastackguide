@@ -1,410 +1,1125 @@
 {
-  "generated_at": "2026-02-03T17:01:42.093923",
+  "generated_at": "2026-04-29T15:25:00.244246",
   "trends": {
-    "2026-01": [
+    "2026-04": [
       {
         "tool": "Salesforce",
         "slug": "salesforce",
-        "mentions": 1504
-      },
-      {
-        "tool": "Hubspot",
-        "slug": "hubspot",
-        "mentions": 383
-      },
-      {
-        "tool": "Tableau",
-        "slug": "tableau",
-        "mentions": 322
+        "mentions": 13836
       },
       {
         "tool": "Power Bi",
         "slug": "power-bi",
-        "mentions": 302
+        "mentions": 5266
       },
       {
-        "tool": "Anthropic",
-        "slug": "anthropic",
-        "mentions": 285
-      },
-      {
-        "tool": "Catalyst",
-        "slug": "catalyst",
-        "mentions": 112
-      },
-      {
-        "tool": "Zoominfo",
-        "slug": "zoominfo",
-        "mentions": 78
-      },
-      {
-        "tool": "Cohere",
-        "slug": "cohere",
-        "mentions": 69
-      },
-      {
-        "tool": "Gemini",
-        "slug": "gemini",
-        "mentions": 64
+        "tool": "Tableau",
+        "slug": "tableau",
+        "mentions": 4166
       },
       {
         "tool": "Claude",
         "slug": "claude",
-        "mentions": 61
+        "mentions": 3026
       },
       {
-        "tool": "Looker",
-        "slug": "looker",
-        "mentions": 60
-      },
-      {
-        "tool": "Linkedin Sales Navigator",
-        "slug": "linkedin-sales-navigator",
-        "mentions": 57
-      },
-      {
-        "tool": "Gong",
-        "slug": "gong",
-        "mentions": 56
-      },
-      {
-        "tool": "Dynamics 365",
-        "slug": "dynamics-365",
-        "mentions": 56
-      },
-      {
-        "tool": "Salesloft",
-        "slug": "salesloft",
-        "mentions": 43
-      },
-      {
-        "tool": "G2",
-        "slug": "g2",
-        "mentions": 40
-      },
-      {
-        "tool": "Apollo",
-        "slug": "apollo",
-        "mentions": 36
-      },
-      {
-        "tool": "Marketo",
-        "slug": "marketo",
-        "mentions": 33
-      },
-      {
-        "tool": "Pytorch",
-        "slug": "pytorch",
-        "mentions": 31
-      },
-      {
-        "tool": "Instantly",
-        "slug": "instantly",
-        "mentions": 31
-      },
-      {
-        "tool": "Warmly",
-        "slug": "warmly",
-        "mentions": 30
+        "tool": "Hubspot",
+        "slug": "hubspot",
+        "mentions": 2942
       },
       {
         "tool": "Openai",
         "slug": "openai",
-        "mentions": 30
+        "mentions": 1751
       },
       {
-        "tool": "Hubspot Marketing",
-        "slug": "hubspot-marketing",
-        "mentions": 30
+        "tool": "Pytorch",
+        "slug": "pytorch",
+        "mentions": 1614
       },
       {
-        "tool": "Demandtools",
-        "slug": "demandtools",
-        "mentions": 30
+        "tool": "Gemini",
+        "slug": "gemini",
+        "mentions": 1586
       },
       {
-        "tool": "Salesforce Marketing Cloud",
-        "slug": "salesforce-marketing-cloud",
-        "mentions": 28
-      },
-      {
-        "tool": "Docusign",
-        "slug": "docusign",
-        "mentions": 26
-      },
-      {
-        "tool": "Chroma",
-        "slug": "chroma",
-        "mentions": 26
-      },
-      {
-        "tool": "Clay",
-        "slug": "clay",
-        "mentions": 25
-      },
-      {
-        "tool": "Tensorflow",
-        "slug": "tensorflow",
-        "mentions": 23
-      },
-      {
-        "tool": "Mailchimp",
-        "slug": "mailchimp",
-        "mentions": 22
-      },
-      {
-        "tool": "6Sense",
-        "slug": "6sense",
-        "mentions": 21
-      },
-      {
-        "tool": "Postal",
-        "slug": "postal",
-        "mentions": 20
-      },
-      {
-        "tool": "Reveal",
-        "slug": "reveal",
-        "mentions": 19
-      },
-      {
-        "tool": "Klaviyo",
-        "slug": "klaviyo",
-        "mentions": 19
-      },
-      {
-        "tool": "Zoho Crm",
-        "slug": "zoho-crm",
-        "mentions": 18
-      },
-      {
-        "tool": "Braze",
-        "slug": "braze",
-        "mentions": 18
+        "tool": "Catalyst",
+        "slug": "catalyst",
+        "mentions": 1383
       },
       {
         "tool": "Langchain",
         "slug": "langchain",
-        "mentions": 17
+        "mentions": 1324
       },
       {
-        "tool": "Clari",
-        "slug": "clari",
-        "mentions": 17
+        "tool": "Tensorflow",
+        "slug": "tensorflow",
+        "mentions": 1320
       },
       {
-        "tool": "Walnut",
-        "slug": "walnut",
-        "mentions": 16
+        "tool": "Anthropic",
+        "slug": "anthropic",
+        "mentions": 1231
+      },
+      {
+        "tool": "Warmly",
+        "slug": "warmly",
+        "mentions": 1227
+      },
+      {
+        "tool": "Looker",
+        "slug": "looker",
+        "mentions": 866
+      },
+      {
+        "tool": "Dynamics 365",
+        "slug": "dynamics-365",
+        "mentions": 790
       },
       {
         "tool": "Transformers",
         "slug": "transformers",
-        "mentions": 16
+        "mentions": 732
       },
       {
-        "tool": "Zapier",
-        "slug": "zapier",
-        "mentions": 14
+        "tool": "Zoominfo",
+        "slug": "zoominfo",
+        "mentions": 646
       },
       {
-        "tool": "Spiff",
-        "slug": "spiff",
-        "mentions": 14
+        "tool": "Demandtools",
+        "slug": "demandtools",
+        "mentions": 624
       },
       {
-        "tool": "Second Nature Training",
-        "slug": "second-nature-training",
-        "mentions": 14
-      },
-      {
-        "tool": "Concord",
-        "slug": "concord",
-        "mentions": 14
-      },
-      {
-        "tool": "Copper",
-        "slug": "copper",
-        "mentions": 12
-      },
-      {
-        "tool": "Artisan",
-        "slug": "artisan",
-        "mentions": 12
-      },
-      {
-        "tool": "Trustradius",
-        "slug": "trustradius",
-        "mentions": 11
-      },
-      {
-        "tool": "Ironclad",
-        "slug": "ironclad",
-        "mentions": 11
-      },
-      {
-        "tool": "Fivetran",
-        "slug": "fivetran",
-        "mentions": 11
+        "tool": "Tray",
+        "slug": "tray",
+        "mentions": 566
       },
       {
         "tool": "Hugging Face",
         "slug": "hugging-face",
-        "mentions": 10
+        "mentions": 522
       },
       {
-        "tool": "Scikit Learn",
-        "slug": "scikit-learn",
-        "mentions": 9
+        "tool": "Crewai",
+        "slug": "crewai",
+        "mentions": 425
+      },
+      {
+        "tool": "Mailchimp",
+        "slug": "mailchimp",
+        "mentions": 421
+      },
+      {
+        "tool": "Marketo",
+        "slug": "marketo",
+        "mentions": 411
+      },
+      {
+        "tool": "Gong",
+        "slug": "gong",
+        "mentions": 410
+      },
+      {
+        "tool": "Salesforce Marketing Cloud",
+        "slug": "salesforce-marketing-cloud",
+        "mentions": 408
+      },
+      {
+        "tool": "Llamaindex",
+        "slug": "llamaindex",
+        "mentions": 395
+      },
+      {
+        "tool": "Pinecone",
+        "slug": "pinecone",
+        "mentions": 387
       },
       {
         "tool": "Mulesoft",
         "slug": "mulesoft",
-        "mentions": 9
+        "mentions": 386
       },
       {
-        "tool": "Metabase",
-        "slug": "metabase",
-        "mentions": 9
+        "tool": "Docusign",
+        "slug": "docusign",
+        "mentions": 386
       },
       {
-        "tool": "Jax",
-        "slug": "jax",
-        "mentions": 9
+        "tool": "Postal",
+        "slug": "postal",
+        "mentions": 384
       },
       {
-        "tool": "Highspot",
-        "slug": "highspot",
-        "mentions": 9
-      },
-      {
-        "tool": "Gainsight",
-        "slug": "gainsight",
-        "mentions": 9
-      },
-      {
-        "tool": "Seismic",
-        "slug": "seismic",
-        "mentions": 8
-      },
-      {
-        "tool": "Pipedrive",
-        "slug": "pipedrive",
-        "mentions": 8
-      },
-      {
-        "tool": "Optimizely",
-        "slug": "optimizely",
-        "mentions": 8
-      },
-      {
-        "tool": "Nooks",
-        "slug": "nooks",
-        "mentions": 8
-      },
-      {
-        "tool": "Llama",
-        "slug": "llama",
-        "mentions": 8
-      },
-      {
-        "tool": "Linkedin Marketing",
-        "slug": "linkedin-marketing",
-        "mentions": 8
-      },
-      {
-        "tool": "Intercom Fin",
-        "slug": "intercom-fin",
-        "mentions": 8
+        "tool": "Linkedin Sales Navigator",
+        "slug": "linkedin-sales-navigator",
+        "mentions": 382
       },
       {
         "tool": "Intercom",
         "slug": "intercom",
-        "mentions": 8
+        "mentions": 361
       },
       {
-        "tool": "Calendly",
-        "slug": "calendly",
-        "mentions": 8
+        "tool": "Copper",
+        "slug": "copper",
+        "mentions": 339
       },
       {
-        "tool": "Xactly",
-        "slug": "xactly",
-        "mentions": 7
+        "tool": "Instantly",
+        "slug": "instantly",
+        "mentions": 325
       },
       {
-        "tool": "Outreach Io",
-        "slug": "outreach-io",
-        "mentions": 7
+        "tool": "6Sense",
+        "slug": "6sense",
+        "mentions": 321
       },
       {
-        "tool": "Monday Sales",
-        "slug": "monday-sales",
-        "mentions": 7
+        "tool": "Linkedin Marketing",
+        "slug": "linkedin-marketing",
+        "mentions": 320
       },
       {
-        "tool": "Demandbase",
-        "slug": "demandbase",
-        "mentions": 7
+        "tool": "G2",
+        "slug": "g2",
+        "mentions": 316
       },
       {
-        "tool": "Clearbit",
-        "slug": "clearbit",
-        "mentions": 7
+        "tool": "Apollo",
+        "slug": "apollo",
+        "mentions": 312
       },
       {
-        "tool": "Churnzero",
-        "slug": "churnzero",
-        "mentions": 7
+        "tool": "Zapier",
+        "slug": "zapier",
+        "mentions": 311
       },
       {
-        "tool": "Chorus",
-        "slug": "chorus",
-        "mentions": 7
+        "tool": "Reveal",
+        "slug": "reveal",
+        "mentions": 304
       },
       {
-        "tool": "Arcade",
-        "slug": "arcade",
-        "mentions": 7
+        "tool": "Gainsight",
+        "slug": "gainsight",
+        "mentions": 285
       },
       {
-        "tool": "Orum",
-        "slug": "orum",
-        "mentions": 6
+        "tool": "Salesloft",
+        "slug": "salesloft",
+        "mentions": 284
+      },
+      {
+        "tool": "Semrush",
+        "slug": "semrush",
+        "mentions": 280
+      },
+      {
+        "tool": "Autogen",
+        "slug": "autogen",
+        "mentions": 279
+      },
+      {
+        "tool": "Weaviate",
+        "slug": "weaviate",
+        "mentions": 275
+      },
+      {
+        "tool": "Concord",
+        "slug": "concord",
+        "mentions": 274
+      },
+      {
+        "tool": "Clay",
+        "slug": "clay",
+        "mentions": 274
+      },
+      {
+        "tool": "Hubspot Marketing",
+        "slug": "hubspot-marketing",
+        "mentions": 263
+      },
+      {
+        "tool": "Walnut",
+        "slug": "walnut",
+        "mentions": 248
+      },
+      {
+        "tool": "Seismic",
+        "slug": "seismic",
+        "mentions": 215
+      },
+      {
+        "tool": "Klaviyo",
+        "slug": "klaviyo",
+        "mentions": 207
+      },
+      {
+        "tool": "Semantic Kernel",
+        "slug": "semantic-kernel",
+        "mentions": 207
+      },
+      {
+        "tool": "Atrium",
+        "slug": "atrium",
+        "mentions": 205
+      },
+      {
+        "tool": "Zoho Crm",
+        "slug": "zoho-crm",
+        "mentions": 197
+      },
+      {
+        "tool": "Jax",
+        "slug": "jax",
+        "mentions": 183
+      },
+      {
+        "tool": "Keras",
+        "slug": "keras",
+        "mentions": 181
+      },
+      {
+        "tool": "Artisan",
+        "slug": "artisan",
+        "mentions": 176
+      },
+      {
+        "tool": "Fivetran",
+        "slug": "fivetran",
+        "mentions": 172
+      },
+      {
+        "tool": "Second Nature Training",
+        "slug": "second-nature-training",
+        "mentions": 171
       },
       {
         "tool": "N8N",
         "slug": "n8n",
-        "mentions": 6
+        "mentions": 171
+      },
+      {
+        "tool": "Drift Ai",
+        "slug": "drift-ai",
+        "mentions": 160
+      },
+      {
+        "tool": "Braze",
+        "slug": "braze",
+        "mentions": 159
+      },
+      {
+        "tool": "Llama",
+        "slug": "llama",
+        "mentions": 155
+      },
+      {
+        "tool": "Oracle Cx",
+        "slug": "oracle-cx",
+        "mentions": 154
       },
       {
         "tool": "Amplitude",
         "slug": "amplitude",
-        "mentions": 6
+        "mentions": 152
       },
       {
-        "tool": "Allego Training",
-        "slug": "allego-training",
-        "mentions": 6
+        "tool": "Ironclad",
+        "slug": "ironclad",
+        "mentions": 148
       },
       {
-        "tool": "Allego",
-        "slug": "allego",
-        "mentions": 6
-      },
-      {
-        "tool": "Workato Ipaas",
-        "slug": "workato-ipaas",
-        "mentions": 5
+        "tool": "Arcade",
+        "slug": "arcade",
+        "mentions": 145
       },
       {
         "tool": "Workato",
         "slug": "workato",
-        "mentions": 5
+        "mentions": 139
+      },
+      {
+        "tool": "Workato Ipaas",
+        "slug": "workato-ipaas",
+        "mentions": 139
+      },
+      {
+        "tool": "Drip",
+        "slug": "drip",
+        "mentions": 136
+      },
+      {
+        "tool": "Eloqua",
+        "slug": "eloqua",
+        "mentions": 126
+      },
+      {
+        "tool": "Monday Sales",
+        "slug": "monday-sales",
+        "mentions": 121
+      },
+      {
+        "tool": "Clari",
+        "slug": "clari",
+        "mentions": 120
+      },
+      {
+        "tool": "Qdrant",
+        "slug": "qdrant",
+        "mentions": 119
+      },
+      {
+        "tool": "Mixpanel",
+        "slug": "mixpanel",
+        "mentions": 117
+      },
+      {
+        "tool": "Optimizely",
+        "slug": "optimizely",
+        "mentions": 115
+      },
+      {
+        "tool": "Loom",
+        "slug": "loom",
+        "mentions": 110
+      },
+      {
+        "tool": "Domo",
+        "slug": "domo",
+        "mentions": 108
+      },
+      {
+        "tool": "Boomi",
+        "slug": "boomi",
+        "mentions": 97
+      },
+      {
+        "tool": "Intercom Fin",
+        "slug": "intercom-fin",
+        "mentions": 78
+      },
+      {
+        "tool": "Faiss",
+        "slug": "faiss",
+        "mentions": 77
+      },
+      {
+        "tool": "Distribution Engine",
+        "slug": "distribution-engine",
+        "mentions": 77
+      },
+      {
+        "tool": "Pgvector",
+        "slug": "pgvector",
+        "mentions": 73
+      },
+      {
+        "tool": "Milvus",
+        "slug": "milvus",
+        "mentions": 71
+      },
+      {
+        "tool": "Census Data",
+        "slug": "census-data",
+        "mentions": 70
+      },
+      {
+        "tool": "Salesforce Cpq",
+        "slug": "salesforce-cpq",
+        "mentions": 69
+      },
+      {
+        "tool": "Demandbase",
+        "slug": "demandbase",
+        "mentions": 68
+      },
+      {
+        "tool": "Heap",
+        "slug": "heap",
+        "mentions": 67
+      },
+      {
+        "tool": "Highspot",
+        "slug": "highspot",
+        "mentions": 63
+      },
+      {
+        "tool": "Spiff",
+        "slug": "spiff",
+        "mentions": 62
+      },
+      {
+        "tool": "Vitally",
+        "slug": "vitally",
+        "mentions": 59
+      },
+      {
+        "tool": "Calendly",
+        "slug": "calendly",
+        "mentions": 58
+      },
+      {
+        "tool": "Iterable",
+        "slug": "iterable",
+        "mentions": 57
+      },
+      {
+        "tool": "Trustpilot",
+        "slug": "trustpilot",
+        "mentions": 57
+      },
+      {
+        "tool": "Churnzero",
+        "slug": "churnzero",
+        "mentions": 56
+      },
+      {
+        "tool": "Pipedrive",
+        "slug": "pipedrive",
+        "mentions": 53
+      },
+      {
+        "tool": "Capterra",
+        "slug": "capterra",
+        "mentions": 52
+      },
+      {
+        "tool": "Nutshell",
+        "slug": "nutshell",
+        "mentions": 52
+      },
+      {
+        "tool": "Mistral",
+        "slug": "mistral",
+        "mentions": 50
+      },
+      {
+        "tool": "Pendo Plg",
+        "slug": "pendo-plg",
+        "mentions": 49
+      },
+      {
+        "tool": "Metabase",
+        "slug": "metabase",
+        "mentions": 49
+      },
+      {
+        "tool": "Xactly",
+        "slug": "xactly",
+        "mentions": 49
+      },
+      {
+        "tool": "Cohere",
+        "slug": "cohere",
+        "mentions": 49
+      },
+      {
+        "tool": "Pendo",
+        "slug": "pendo",
+        "mentions": 49
+      },
+      {
+        "tool": "Leandata",
+        "slug": "leandata",
+        "mentions": 49
+      },
+      {
+        "tool": "Conga Cpq",
+        "slug": "conga-cpq",
+        "mentions": 48
+      },
+      {
+        "tool": "Clari Forecast",
+        "slug": "clari-forecast",
+        "mentions": 46
+      },
+      {
+        "tool": "Activecampaign",
+        "slug": "activecampaign",
+        "mentions": 45
       },
       {
         "tool": "Thoughtspot",
         "slug": "thoughtspot",
+        "mentions": 44
+      },
+      {
+        "tool": "Haystack",
+        "slug": "haystack",
+        "mentions": 44
+      },
+      {
+        "tool": "Totango",
+        "slug": "totango",
+        "mentions": 42
+      },
+      {
+        "tool": "Palette",
+        "slug": "palette",
+        "mentions": 41
+      },
+      {
+        "tool": "Hotjar",
+        "slug": "hotjar",
+        "mentions": 40
+      },
+      {
+        "tool": "Outreach Io",
+        "slug": "outreach-io",
+        "mentions": 40
+      },
+      {
+        "tool": "Fathom",
+        "slug": "fathom",
+        "mentions": 39
+      },
+      {
+        "tool": "Chroma",
+        "slug": "chroma",
+        "mentions": 38
+      },
+      {
+        "tool": "Airbyte",
+        "slug": "airbyte",
+        "mentions": 38
+      },
+      {
+        "tool": "Pfl",
+        "slug": "pfl",
+        "mentions": 36
+      },
+      {
+        "tool": "Aviso",
+        "slug": "aviso",
+        "mentions": 35
+      },
+      {
+        "tool": "Showpad",
+        "slug": "showpad",
+        "mentions": 34
+      },
+      {
+        "tool": "Chorus",
+        "slug": "chorus",
+        "mentions": 33
+      },
+      {
+        "tool": "Planhat",
+        "slug": "planhat",
+        "mentions": 32
+      },
+      {
+        "tool": "Streak",
+        "slug": "streak",
+        "mentions": 32
+      },
+      {
+        "tool": "Posthog",
+        "slug": "posthog",
+        "mentions": 31
+      },
+      {
+        "tool": "Adobe Sign",
+        "slug": "adobe-sign",
+        "mentions": 30
+      },
+      {
+        "tool": "Nooks",
+        "slug": "nooks",
+        "mentions": 30
+      },
+      {
+        "tool": "Hightouch",
+        "slug": "hightouch",
+        "mentions": 26
+      },
+      {
+        "tool": "Captivateiq",
+        "slug": "captivateiq",
+        "mentions": 26
+      },
+      {
+        "tool": "Make",
+        "slug": "make",
+        "mentions": 25
+      },
+      {
+        "tool": "Celigo",
+        "slug": "celigo",
+        "mentions": 25
+      },
+      {
+        "tool": "Pandadoc",
+        "slug": "pandadoc",
+        "mentions": 25
+      },
+      {
+        "tool": "Fullstory",
+        "slug": "fullstory",
+        "mentions": 25
+      },
+      {
+        "tool": "Lavender",
+        "slug": "lavender",
+        "mentions": 24
+      },
+      {
+        "tool": "Customer Io",
+        "slug": "customer-io",
+        "mentions": 23
+      },
+      {
+        "tool": "Dnb Hoovers",
+        "slug": "dnb-hoovers",
+        "mentions": 23
+      },
+      {
+        "tool": "Otter Ai",
+        "slug": "otter-ai",
+        "mentions": 22
+      },
+      {
+        "tool": "Qualified",
+        "slug": "qualified",
+        "mentions": 22
+      },
+      {
+        "tool": "Rocketlane",
+        "slug": "rocketlane",
+        "mentions": 22
+      },
+      {
+        "tool": "Varicent",
+        "slug": "varicent",
+        "mentions": 22
+      },
+      {
+        "tool": "Dealhub Cpq",
+        "slug": "dealhub-cpq",
+        "mentions": 21
+      },
+      {
+        "tool": "Walkme",
+        "slug": "walkme",
+        "mentions": 21
+      },
+      {
+        "tool": "Vwo",
+        "slug": "vwo",
+        "mentions": 20
+      },
+      {
+        "tool": "Clearbit",
+        "slug": "clearbit",
+        "mentions": 19
+      },
+      {
+        "tool": "Bombora Intent",
+        "slug": "bombora-intent",
+        "mentions": 18
+      },
+      {
+        "tool": "Fireflies",
+        "slug": "fireflies",
+        "mentions": 18
+      },
+      {
+        "tool": "Terminus",
+        "slug": "terminus",
+        "mentions": 18
+      },
+      {
+        "tool": "Bombora",
+        "slug": "bombora",
+        "mentions": 18
+      },
+      {
+        "tool": "Similarweb",
+        "slug": "similarweb",
+        "mentions": 18
+      },
+      {
+        "tool": "Forethought",
+        "slug": "forethought",
+        "mentions": 17
+      },
+      {
+        "tool": "Gartner Peer",
+        "slug": "gartner-peer",
+        "mentions": 16
+      },
+      {
+        "tool": "Vidyard",
+        "slug": "vidyard",
+        "mentions": 15
+      },
+      {
+        "tool": "Chili Piper Routing",
+        "slug": "chili-piper-routing",
+        "mentions": 15
+      },
+      {
+        "tool": "Snappy",
+        "slug": "snappy",
+        "mentions": 15
+      },
+      {
+        "tool": "Chili Piper",
+        "slug": "chili-piper",
+        "mentions": 15
+      },
+      {
+        "tool": "Mindtickle",
+        "slug": "mindtickle",
+        "mentions": 14
+      },
+      {
+        "tool": "Gong Engage",
+        "slug": "gong-engage",
+        "mentions": 14
+      },
+      {
+        "tool": "Seamless Ai",
+        "slug": "seamless-ai",
+        "mentions": 14
+      },
+      {
+        "tool": "Mindtickle Training",
+        "slug": "mindtickle-training",
+        "mentions": 14
+      },
+      {
+        "tool": "Crossbeam",
+        "slug": "crossbeam",
+        "mentions": 13
+      },
+      {
+        "tool": "Chameleon",
+        "slug": "chameleon",
+        "mentions": 13
+      },
+      {
+        "tool": "Mutiny",
+        "slug": "mutiny",
+        "mentions": 13
+      },
+      {
+        "tool": "Mutiny Web",
+        "slug": "mutiny-web",
+        "mentions": 13
+      },
+      {
+        "tool": "Klue",
+        "slug": "klue",
+        "mentions": 13
+      },
+      {
+        "tool": "Koala",
+        "slug": "koala",
+        "mentions": 12
+      },
+      {
+        "tool": "Cognism",
+        "slug": "cognism",
+        "mentions": 12
+      },
+      {
+        "tool": "People Ai",
+        "slug": "people-ai",
+        "mentions": 12
+      },
+      {
+        "tool": "Oracle Cpq",
+        "slug": "oracle-cpq",
+        "mentions": 12
+      },
+      {
+        "tool": "Common Room",
+        "slug": "common-room",
+        "mentions": 12
+      },
+      {
+        "tool": "Snaplogic",
+        "slug": "snaplogic",
+        "mentions": 12
+      },
+      {
+        "tool": "Gong Forecast",
+        "slug": "gong-forecast",
+        "mentions": 12
+      },
+      {
+        "tool": "Bigtincan",
+        "slug": "bigtincan",
+        "mentions": 11
+      },
+      {
+        "tool": "Piper Qualified",
+        "slug": "piper-qualified",
+        "mentions": 11
+      },
+      {
+        "tool": "Clientsuccess",
+        "slug": "clientsuccess",
+        "mentions": 11
+      },
+      {
+        "tool": "Freshsales",
+        "slug": "freshsales",
+        "mentions": 11
+      },
+      {
+        "tool": "Crayon",
+        "slug": "crayon",
+        "mentions": 11
+      },
+      {
+        "tool": "Orum",
+        "slug": "orum",
+        "mentions": 10
+      },
+      {
+        "tool": "Tray Io",
+        "slug": "tray-io",
+        "mentions": 10
+      },
+      {
+        "tool": "Close",
+        "slug": "close",
+        "mentions": 10
+      },
+      {
+        "tool": "Brainshark",
+        "slug": "brainshark",
+        "mentions": 10
+      },
+      {
+        "tool": "Brainshark Training",
+        "slug": "brainshark-training",
+        "mentions": 10
+      },
+      {
+        "tool": "Trustradius",
+        "slug": "trustradius",
+        "mentions": 10
+      },
+      {
+        "tool": "Sisense",
+        "slug": "sisense",
+        "mentions": 9
+      },
+      {
+        "tool": "Impartner",
+        "slug": "impartner",
+        "mentions": 9
+      },
+      {
+        "tool": "Dspy",
+        "slug": "dspy",
+        "mentions": 9
+      },
+      {
+        "tool": "Smartlead",
+        "slug": "smartlead",
+        "mentions": 9
+      },
+      {
+        "tool": "Allego Training",
+        "slug": "allego-training",
+        "mentions": 9
+      },
+      {
+        "tool": "Amplemarket",
+        "slug": "amplemarket",
+        "mentions": 9
+      },
+      {
+        "tool": "Allego",
+        "slug": "allego",
+        "mentions": 9
+      },
+      {
+        "tool": "Brevo",
+        "slug": "brevo",
+        "mentions": 8
+      },
+      {
+        "tool": "Insightly",
+        "slug": "insightly",
+        "mentions": 8
+      },
+      {
+        "tool": "Lusha",
+        "slug": "lusha",
+        "mentions": 8
+      },
+      {
+        "tool": "Mode",
+        "slug": "mode",
+        "mentions": 8
+      },
+      {
+        "tool": "Grain Video",
+        "slug": "grain-video",
+        "mentions": 8
+      },
+      {
+        "tool": "Cognigy",
+        "slug": "cognigy",
+        "mentions": 8
+      },
+      {
+        "tool": "11X",
+        "slug": "11x",
+        "mentions": 8
+      },
+      {
+        "tool": "Usemotion",
+        "slug": "usemotion",
+        "mentions": 8
+      },
+      {
+        "tool": "Leadiq",
+        "slug": "leadiq",
+        "mentions": 8
+      },
+      {
+        "tool": "Pros Cpq",
+        "slug": "pros-cpq",
+        "mentions": 8
+      },
+      {
+        "tool": "Salesintel",
+        "slug": "salesintel",
+        "mentions": 8
+      },
+      {
+        "tool": "Ada Support",
+        "slug": "ada-support",
+        "mentions": 8
+      },
+      {
+        "tool": "Usergems",
+        "slug": "usergems",
+        "mentions": 8
+      },
+      {
+        "tool": "Aligned",
+        "slug": "aligned",
+        "mentions": 7
+      },
+      {
+        "tool": "Allbound",
+        "slug": "allbound",
+        "mentions": 7
+      },
+      {
+        "tool": "Mediafly",
+        "slug": "mediafly",
+        "mentions": 7
+      },
+      {
+        "tool": "Sendoso",
+        "slug": "sendoso",
+        "mentions": 7
+      },
+      {
+        "tool": "Partnerstack",
+        "slug": "partnerstack",
+        "mentions": 7
+      },
+      {
+        "tool": "Unbounce",
+        "slug": "unbounce",
+        "mentions": 6
+      },
+      {
+        "tool": "Dynamic Yield",
+        "slug": "dynamic-yield",
+        "mentions": 6
+      },
+      {
+        "tool": "Workramp Training",
+        "slug": "workramp-training",
+        "mentions": 6
+      },
+      {
+        "tool": "Keap",
+        "slug": "keap",
+        "mentions": 6
+      },
+      {
+        "tool": "Workramp",
+        "slug": "workramp",
+        "mentions": 6
+      },
+      {
+        "tool": "Guru App",
+        "slug": "guru-app",
+        "mentions": 6
+      },
+      {
+        "tool": "Hunter Campaigns",
+        "slug": "hunter-campaigns",
+        "mentions": 6
+      },
+      {
+        "tool": "Rollworks",
+        "slug": "rollworks",
+        "mentions": 6
+      },
+      {
+        "tool": "Lemlist",
+        "slug": "lemlist",
+        "mentions": 6
+      },
+      {
+        "tool": "Performio",
+        "slug": "performio",
+        "mentions": 6
+      },
+      {
+        "tool": "Arrows",
+        "slug": "arrows",
+        "mentions": 5
+      },
+      {
+        "tool": "Sap Cpq",
+        "slug": "sap-cpq",
+        "mentions": 5
+      },
+      {
+        "tool": "Adroll",
+        "slug": "adroll",
+        "mentions": 5
+      },
+      {
+        "tool": "Ringlead Revops",
+        "slug": "ringlead-revops",
+        "mentions": 5
+      },
+      {
+        "tool": "Ringlead",
+        "slug": "ringlead",
+        "mentions": 5
+      },
+      {
+        "tool": "Reprise",
+        "slug": "reprise",
+        "mentions": 5
+      },
+      {
+        "tool": "Impact",
+        "slug": "impact",
+        "mentions": 5
+      },
+      {
+        "tool": "Trainual",
+        "slug": "trainual",
         "mentions": 5
       },
       {
@@ -413,148 +1128,1330 @@
         "mentions": 5
       },
       {
-        "tool": "Salesforce Cpq",
-        "slug": "salesforce-cpq",
+        "tool": "Phoneburner",
+        "slug": "phoneburner",
         "mentions": 5
       },
       {
-        "tool": "Loom",
-        "slug": "loom",
+        "tool": "Doodle",
+        "slug": "doodle",
         "mentions": 5
       },
       {
-        "tool": "Llamaindex",
-        "slug": "llamaindex",
+        "tool": "Dooly",
+        "slug": "dooly",
         "mentions": 5
       },
       {
-        "tool": "Leandata",
-        "slug": "leandata",
+        "tool": "Convertkit",
+        "slug": "convertkit",
         "mentions": 5
       },
       {
-        "tool": "Iterable",
-        "slug": "iterable",
-        "mentions": 5
-      },
-      {
-        "tool": "Eloqua",
-        "slug": "eloqua",
-        "mentions": 5
-      },
-      {
-        "tool": "Boomi",
-        "slug": "boomi",
-        "mentions": 5
-      },
-      {
-        "tool": "Semrush",
-        "slug": "semrush",
+        "tool": "Quotapath",
+        "slug": "quotapath",
         "mentions": 4
       },
       {
-        "tool": "Mixpanel",
-        "slug": "mixpanel",
+        "tool": "Bombbomb",
+        "slug": "bombbomb",
         "mentions": 4
       },
       {
-        "tool": "Heap",
-        "slug": "heap",
+        "tool": "Gpt 4",
+        "slug": "gpt-4",
         "mentions": 4
       },
       {
-        "tool": "Drip",
-        "slug": "drip",
+        "tool": "Connectwise Cpq",
+        "slug": "connectwise-cpq",
         "mentions": 4
       },
       {
-        "tool": "Drift Ai",
-        "slug": "drift-ai",
+        "tool": "Agentforce Sdr",
+        "slug": "agentforce-sdr",
         "mentions": 4
       },
       {
-        "tool": "Dealhub Cpq",
-        "slug": "dealhub-cpq",
+        "tool": "Instapage",
+        "slug": "instapage",
         "mentions": 4
       },
       {
-        "tool": "Cognism",
-        "slug": "cognism",
+        "tool": "Appcues",
+        "slug": "appcues",
         "mentions": 4
       },
       {
-        "tool": "Census Data",
-        "slug": "census-data",
+        "tool": "Userflow",
+        "slug": "userflow",
         "mentions": 4
+      },
+      {
+        "tool": "Zuora Cpq",
+        "slug": "zuora-cpq",
+        "mentions": 4
+      },
+      {
+        "tool": "Mailshake",
+        "slug": "mailshake",
+        "mentions": 4
+      },
+      {
+        "tool": "Everstage",
+        "slug": "everstage",
+        "mentions": 4
+      },
+      {
+        "tool": "Guidecx",
+        "slug": "guidecx",
+        "mentions": 4
+      },
+      {
+        "tool": "Discoverorg",
+        "slug": "discoverorg",
+        "mentions": 3
+      },
+      {
+        "tool": "Lessonly",
+        "slug": "lessonly",
+        "mentions": 3
+      },
+      {
+        "tool": "Lessonly Training",
+        "slug": "lessonly-training",
+        "mentions": 3
+      },
+      {
+        "tool": "Juro",
+        "slug": "juro",
+        "mentions": 3
+      },
+      {
+        "tool": "Logrocket",
+        "slug": "logrocket",
+        "mentions": 3
+      },
+      {
+        "tool": "Mixmax",
+        "slug": "mixmax",
+        "mentions": 3
+      },
+      {
+        "tool": "N Rich",
+        "slug": "n-rich",
+        "mentions": 3
+      },
+      {
+        "tool": "G2 Intent",
+        "slug": "g2-intent",
+        "mentions": 3
+      },
+      {
+        "tool": "G2 Buyer Intent",
+        "slug": "g2-buyer-intent",
+        "mentions": 3
+      },
+      {
+        "tool": "Default Gtm",
+        "slug": "default-gtm",
+        "mentions": 3
+      },
+      {
+        "tool": "Acuity",
+        "slug": "acuity",
+        "mentions": 3
+      },
+      {
+        "tool": "Rudderstack",
+        "slug": "rudderstack",
+        "mentions": 3
+      },
+      {
+        "tool": "Vendavo",
+        "slug": "vendavo",
+        "mentions": 3
+      },
+      {
+        "tool": "Whatfix",
+        "slug": "whatfix",
+        "mentions": 3
+      },
+      {
+        "tool": "Spekit",
+        "slug": "spekit",
+        "mentions": 2
+      },
+      {
+        "tool": "Signnow",
+        "slug": "signnow",
+        "mentions": 2
+      },
+      {
+        "tool": "Rocketreach",
+        "slug": "rocketreach",
+        "mentions": 2
+      },
+      {
+        "tool": "Regie Ai",
+        "slug": "regie-ai",
+        "mentions": 2
+      },
+      {
+        "tool": "Rb2B",
+        "slug": "rb2b",
+        "mentions": 2
+      },
+      {
+        "tool": "Justcall",
+        "slug": "justcall",
+        "mentions": 2
+      },
+      {
+        "tool": "Wingman",
+        "slug": "wingman",
+        "mentions": 2
+      },
+      {
+        "tool": "Qwilr",
+        "slug": "qwilr",
+        "mentions": 2
+      },
+      {
+        "tool": "Consensus Demo",
+        "slug": "consensus-demo",
+        "mentions": 2
+      },
+      {
+        "tool": "Avoma",
+        "slug": "avoma",
+        "mentions": 2
+      },
+      {
+        "tool": "Polytomic",
+        "slug": "polytomic",
+        "mentions": 2
+      },
+      {
+        "tool": "Databox",
+        "slug": "databox",
+        "mentions": 2
+      },
+      {
+        "tool": "Kompyte",
+        "slug": "kompyte",
+        "mentions": 2
+      },
+      {
+        "tool": "Influ2",
+        "slug": "influ2",
+        "mentions": 2
+      },
+      {
+        "tool": "Insideview",
+        "slug": "insideview",
+        "mentions": 2
+      },
+      {
+        "tool": "Storylane",
+        "slug": "storylane",
+        "mentions": 2
+      }
+    ],
+    "2026-03": [
+      {
+        "tool": "Salesforce",
+        "slug": "salesforce",
+        "mentions": 9429
+      },
+      {
+        "tool": "Power Bi",
+        "slug": "power-bi",
+        "mentions": 3512
+      },
+      {
+        "tool": "Tableau",
+        "slug": "tableau",
+        "mentions": 2950
+      },
+      {
+        "tool": "Hubspot",
+        "slug": "hubspot",
+        "mentions": 1934
+      },
+      {
+        "tool": "Claude",
+        "slug": "claude",
+        "mentions": 1608
+      },
+      {
+        "tool": "Openai",
+        "slug": "openai",
+        "mentions": 1094
+      },
+      {
+        "tool": "Gemini",
+        "slug": "gemini",
+        "mentions": 922
+      },
+      {
+        "tool": "Pytorch",
+        "slug": "pytorch",
+        "mentions": 856
+      },
+      {
+        "tool": "Langchain",
+        "slug": "langchain",
+        "mentions": 827
+      },
+      {
+        "tool": "Catalyst",
+        "slug": "catalyst",
+        "mentions": 776
+      },
+      {
+        "tool": "Tensorflow",
+        "slug": "tensorflow",
+        "mentions": 726
+      },
+      {
+        "tool": "Looker",
+        "slug": "looker",
+        "mentions": 644
+      },
+      {
+        "tool": "Dynamics 365",
+        "slug": "dynamics-365",
+        "mentions": 550
+      },
+      {
+        "tool": "Anthropic",
+        "slug": "anthropic",
+        "mentions": 518
+      },
+      {
+        "tool": "Warmly",
+        "slug": "warmly",
+        "mentions": 500
+      },
+      {
+        "tool": "Transformers",
+        "slug": "transformers",
+        "mentions": 407
+      },
+      {
+        "tool": "Demandtools",
+        "slug": "demandtools",
+        "mentions": 389
+      },
+      {
+        "tool": "Mulesoft",
+        "slug": "mulesoft",
+        "mentions": 387
+      },
+      {
+        "tool": "Marketo",
+        "slug": "marketo",
+        "mentions": 352
+      },
+      {
+        "tool": "Zoominfo",
+        "slug": "zoominfo",
+        "mentions": 327
+      },
+      {
+        "tool": "Hugging Face",
+        "slug": "hugging-face",
+        "mentions": 274
+      },
+      {
+        "tool": "Gong",
+        "slug": "gong",
+        "mentions": 264
+      },
+      {
+        "tool": "Salesforce Marketing Cloud",
+        "slug": "salesforce-marketing-cloud",
+        "mentions": 256
+      },
+      {
+        "tool": "G2",
+        "slug": "g2",
+        "mentions": 252
+      },
+      {
+        "tool": "Docusign",
+        "slug": "docusign",
+        "mentions": 247
+      },
+      {
+        "tool": "Oracle Cx",
+        "slug": "oracle-cx",
+        "mentions": 242
+      },
+      {
+        "tool": "Llama",
+        "slug": "llama",
+        "mentions": 242
+      },
+      {
+        "tool": "Postal",
+        "slug": "postal",
+        "mentions": 240
       },
       {
         "tool": "Tray",
         "slug": "tray",
-        "mentions": 3
+        "mentions": 237
       },
       {
-        "tool": "Similarweb",
-        "slug": "similarweb",
-        "mentions": 3
+        "tool": "Linkedin Sales Navigator",
+        "slug": "linkedin-sales-navigator",
+        "mentions": 230
       },
       {
-        "tool": "Sap Sales Cloud",
-        "slug": "sap-sales-cloud",
-        "mentions": 3
+        "tool": "Clay",
+        "slug": "clay",
+        "mentions": 224
       },
       {
-        "tool": "Posthog",
-        "slug": "posthog",
-        "mentions": 3
+        "tool": "Copper",
+        "slug": "copper",
+        "mentions": 222
       },
       {
-        "tool": "Pfl",
-        "slug": "pfl",
-        "mentions": 3
+        "tool": "Walnut",
+        "slug": "walnut",
+        "mentions": 215
       },
       {
-        "tool": "Leadiq",
-        "slug": "leadiq",
-        "mentions": 3
+        "tool": "Oracle Cpq",
+        "slug": "oracle-cpq",
+        "mentions": 210
       },
       {
-        "tool": "Hightouch",
-        "slug": "hightouch",
-        "mentions": 3
+        "tool": "Mailchimp",
+        "slug": "mailchimp",
+        "mentions": 208
       },
       {
-        "tool": "Gong Forecast",
-        "slug": "gong-forecast",
-        "mentions": 3
+        "tool": "Instantly",
+        "slug": "instantly",
+        "mentions": 201
       },
       {
-        "tool": "Gartner Peer",
-        "slug": "gartner-peer",
-        "mentions": 3
+        "tool": "Hubspot Marketing",
+        "slug": "hubspot-marketing",
+        "mentions": 198
       },
       {
-        "tool": "Domo",
-        "slug": "domo",
-        "mentions": 3
+        "tool": "Apollo",
+        "slug": "apollo",
+        "mentions": 194
+      },
+      {
+        "tool": "Pinecone",
+        "slug": "pinecone",
+        "mentions": 190
+      },
+      {
+        "tool": "Semrush",
+        "slug": "semrush",
+        "mentions": 189
+      },
+      {
+        "tool": "Salesloft",
+        "slug": "salesloft",
+        "mentions": 183
+      },
+      {
+        "tool": "Intercom",
+        "slug": "intercom",
+        "mentions": 175
+      },
+      {
+        "tool": "Linkedin Marketing",
+        "slug": "linkedin-marketing",
+        "mentions": 174
+      },
+      {
+        "tool": "Zapier",
+        "slug": "zapier",
+        "mentions": 171
+      },
+      {
+        "tool": "Llamaindex",
+        "slug": "llamaindex",
+        "mentions": 168
+      },
+      {
+        "tool": "Salesforce Cpq",
+        "slug": "salesforce-cpq",
+        "mentions": 162
+      },
+      {
+        "tool": "Reveal",
+        "slug": "reveal",
+        "mentions": 158
+      },
+      {
+        "tool": "Keras",
+        "slug": "keras",
+        "mentions": 152
+      },
+      {
+        "tool": "Crewai",
+        "slug": "crewai",
+        "mentions": 151
+      },
+      {
+        "tool": "Autogen",
+        "slug": "autogen",
+        "mentions": 148
       },
       {
         "tool": "Conga Cpq",
         "slug": "conga-cpq",
-        "mentions": 3
+        "mentions": 147
       },
       {
-        "tool": "Clari Forecast",
-        "slug": "clari-forecast",
-        "mentions": 3
+        "tool": "Zoho Crm",
+        "slug": "zoho-crm",
+        "mentions": 143
+      },
+      {
+        "tool": "Faiss",
+        "slug": "faiss",
+        "mentions": 139
+      },
+      {
+        "tool": "Gainsight",
+        "slug": "gainsight",
+        "mentions": 133
+      },
+      {
+        "tool": "Sap Cpq",
+        "slug": "sap-cpq",
+        "mentions": 131
+      },
+      {
+        "tool": "6Sense",
+        "slug": "6sense",
+        "mentions": 130
+      },
+      {
+        "tool": "Seismic",
+        "slug": "seismic",
+        "mentions": 117
+      },
+      {
+        "tool": "Klaviyo",
+        "slug": "klaviyo",
+        "mentions": 115
+      },
+      {
+        "tool": "Concord",
+        "slug": "concord",
+        "mentions": 114
+      },
+      {
+        "tool": "N8N",
+        "slug": "n8n",
+        "mentions": 112
+      },
+      {
+        "tool": "Chroma",
+        "slug": "chroma",
+        "mentions": 108
+      },
+      {
+        "tool": "Jax",
+        "slug": "jax",
+        "mentions": 104
+      },
+      {
+        "tool": "Braze",
+        "slug": "braze",
+        "mentions": 100
+      },
+      {
+        "tool": "Semantic Kernel",
+        "slug": "semantic-kernel",
+        "mentions": 98
+      },
+      {
+        "tool": "Drift Ai",
+        "slug": "drift-ai",
+        "mentions": 96
+      },
+      {
+        "tool": "Second Nature Training",
+        "slug": "second-nature-training",
+        "mentions": 95
+      },
+      {
+        "tool": "Fivetran",
+        "slug": "fivetran",
+        "mentions": 94
+      },
+      {
+        "tool": "Workato Ipaas",
+        "slug": "workato-ipaas",
+        "mentions": 92
+      },
+      {
+        "tool": "Workato",
+        "slug": "workato",
+        "mentions": 92
+      },
+      {
+        "tool": "Drip",
+        "slug": "drip",
+        "mentions": 85
+      },
+      {
+        "tool": "Weaviate",
+        "slug": "weaviate",
+        "mentions": 84
+      },
+      {
+        "tool": "Amplitude",
+        "slug": "amplitude",
+        "mentions": 82
+      },
+      {
+        "tool": "Clari",
+        "slug": "clari",
+        "mentions": 79
+      },
+      {
+        "tool": "Atrium",
+        "slug": "atrium",
+        "mentions": 78
+      },
+      {
+        "tool": "Boomi",
+        "slug": "boomi",
+        "mentions": 76
+      },
+      {
+        "tool": "Monday Sales",
+        "slug": "monday-sales",
+        "mentions": 75
+      },
+      {
+        "tool": "Domo",
+        "slug": "domo",
+        "mentions": 74
+      },
+      {
+        "tool": "Ironclad",
+        "slug": "ironclad",
+        "mentions": 73
+      },
+      {
+        "tool": "Artisan",
+        "slug": "artisan",
+        "mentions": 72
+      },
+      {
+        "tool": "Arcade",
+        "slug": "arcade",
+        "mentions": 66
+      },
+      {
+        "tool": "Optimizely",
+        "slug": "optimizely",
+        "mentions": 65
+      },
+      {
+        "tool": "Capterra",
+        "slug": "capterra",
+        "mentions": 57
+      },
+      {
+        "tool": "Demandbase",
+        "slug": "demandbase",
+        "mentions": 57
+      },
+      {
+        "tool": "Intercom Fin",
+        "slug": "intercom-fin",
+        "mentions": 56
+      },
+      {
+        "tool": "Census Data",
+        "slug": "census-data",
+        "mentions": 55
+      },
+      {
+        "tool": "Eloqua",
+        "slug": "eloqua",
+        "mentions": 54
+      },
+      {
+        "tool": "Loom",
+        "slug": "loom",
+        "mentions": 52
+      },
+      {
+        "tool": "Pendo Plg",
+        "slug": "pendo-plg",
+        "mentions": 50
+      },
+      {
+        "tool": "Pendo",
+        "slug": "pendo",
+        "mentions": 50
+      },
+      {
+        "tool": "Highspot",
+        "slug": "highspot",
+        "mentions": 49
+      },
+      {
+        "tool": "Pgvector",
+        "slug": "pgvector",
+        "mentions": 48
+      },
+      {
+        "tool": "Calendly",
+        "slug": "calendly",
+        "mentions": 48
+      },
+      {
+        "tool": "Mixpanel",
+        "slug": "mixpanel",
+        "mentions": 45
+      },
+      {
+        "tool": "Outreach Io",
+        "slug": "outreach-io",
+        "mentions": 42
+      },
+      {
+        "tool": "Pipedrive",
+        "slug": "pipedrive",
+        "mentions": 42
+      },
+      {
+        "tool": "Milvus",
+        "slug": "milvus",
+        "mentions": 42
+      },
+      {
+        "tool": "Xactly",
+        "slug": "xactly",
+        "mentions": 39
+      },
+      {
+        "tool": "Mistral",
+        "slug": "mistral",
+        "mentions": 37
+      },
+      {
+        "tool": "Iterable",
+        "slug": "iterable",
+        "mentions": 36
+      },
+      {
+        "tool": "Churnzero",
+        "slug": "churnzero",
+        "mentions": 36
+      },
+      {
+        "tool": "Airbyte",
+        "slug": "airbyte",
+        "mentions": 35
+      },
+      {
+        "tool": "Gartner Peer",
+        "slug": "gartner-peer",
+        "mentions": 33
+      },
+      {
+        "tool": "Spiff",
+        "slug": "spiff",
+        "mentions": 33
+      },
+      {
+        "tool": "Nutshell",
+        "slug": "nutshell",
+        "mentions": 33
+      },
+      {
+        "tool": "Unbounce",
+        "slug": "unbounce",
+        "mentions": 32
+      },
+      {
+        "tool": "Distribution Engine",
+        "slug": "distribution-engine",
+        "mentions": 29
       },
       {
         "tool": "Chili Piper Routing",
         "slug": "chili-piper-routing",
-        "mentions": 3
+        "mentions": 29
+      },
+      {
+        "tool": "Trustpilot",
+        "slug": "trustpilot",
+        "mentions": 29
       },
       {
         "tool": "Chili Piper",
         "slug": "chili-piper",
+        "mentions": 29
+      },
+      {
+        "tool": "Captivateiq",
+        "slug": "captivateiq",
+        "mentions": 28
+      },
+      {
+        "tool": "Aviso",
+        "slug": "aviso",
+        "mentions": 26
+      },
+      {
+        "tool": "Nooks",
+        "slug": "nooks",
+        "mentions": 25
+      },
+      {
+        "tool": "Thoughtspot",
+        "slug": "thoughtspot",
+        "mentions": 25
+      },
+      {
+        "tool": "Pfl",
+        "slug": "pfl",
+        "mentions": 25
+      },
+      {
+        "tool": "Vitally",
+        "slug": "vitally",
+        "mentions": 24
+      },
+      {
+        "tool": "Chorus",
+        "slug": "chorus",
+        "mentions": 23
+      },
+      {
+        "tool": "Hightouch",
+        "slug": "hightouch",
+        "mentions": 23
+      },
+      {
+        "tool": "Celigo",
+        "slug": "celigo",
+        "mentions": 22
+      },
+      {
+        "tool": "Haystack",
+        "slug": "haystack",
+        "mentions": 22
+      },
+      {
+        "tool": "Qdrant",
+        "slug": "qdrant",
+        "mentions": 22
+      },
+      {
+        "tool": "Leandata",
+        "slug": "leandata",
+        "mentions": 22
+      },
+      {
+        "tool": "Varicent",
+        "slug": "varicent",
+        "mentions": 21
+      },
+      {
+        "tool": "Cohere",
+        "slug": "cohere",
+        "mentions": 21
+      },
+      {
+        "tool": "Heap",
+        "slug": "heap",
+        "mentions": 21
+      },
+      {
+        "tool": "Hotjar",
+        "slug": "hotjar",
+        "mentions": 21
+      },
+      {
+        "tool": "Clari Forecast",
+        "slug": "clari-forecast",
+        "mentions": 21
+      },
+      {
+        "tool": "Showpad",
+        "slug": "showpad",
+        "mentions": 20
+      },
+      {
+        "tool": "Planhat",
+        "slug": "planhat",
+        "mentions": 20
+      },
+      {
+        "tool": "Posthog",
+        "slug": "posthog",
+        "mentions": 20
+      },
+      {
+        "tool": "Metabase",
+        "slug": "metabase",
+        "mentions": 19
+      },
+      {
+        "tool": "Clearbit",
+        "slug": "clearbit",
+        "mentions": 19
+      },
+      {
+        "tool": "Seamless Ai",
+        "slug": "seamless-ai",
+        "mentions": 19
+      },
+      {
+        "tool": "Totango",
+        "slug": "totango",
+        "mentions": 18
+      },
+      {
+        "tool": "Dnb Hoovers",
+        "slug": "dnb-hoovers",
+        "mentions": 18
+      },
+      {
+        "tool": "Fathom",
+        "slug": "fathom",
+        "mentions": 18
+      },
+      {
+        "tool": "Activecampaign",
+        "slug": "activecampaign",
+        "mentions": 17
+      },
+      {
+        "tool": "Vwo",
+        "slug": "vwo",
+        "mentions": 16
+      },
+      {
+        "tool": "Dspy",
+        "slug": "dspy",
+        "mentions": 15
+      },
+      {
+        "tool": "Make",
+        "slug": "make",
+        "mentions": 15
+      },
+      {
+        "tool": "Pandadoc",
+        "slug": "pandadoc",
+        "mentions": 15
+      },
+      {
+        "tool": "Cognigy",
+        "slug": "cognigy",
+        "mentions": 14
+      },
+      {
+        "tool": "Vendavo",
+        "slug": "vendavo",
+        "mentions": 14
+      },
+      {
+        "tool": "Chameleon",
+        "slug": "chameleon",
+        "mentions": 14
+      },
+      {
+        "tool": "Palette",
+        "slug": "palette",
+        "mentions": 14
+      },
+      {
+        "tool": "Orum",
+        "slug": "orum",
+        "mentions": 12
+      },
+      {
+        "tool": "Fullstory",
+        "slug": "fullstory",
+        "mentions": 11
+      },
+      {
+        "tool": "Aligned",
+        "slug": "aligned",
+        "mentions": 11
+      },
+      {
+        "tool": "Dealhub Cpq",
+        "slug": "dealhub-cpq",
+        "mentions": 11
+      },
+      {
+        "tool": "Otter Ai",
+        "slug": "otter-ai",
+        "mentions": 11
+      },
+      {
+        "tool": "Allego",
+        "slug": "allego",
+        "mentions": 10
+      },
+      {
+        "tool": "Default Gtm",
+        "slug": "default-gtm",
+        "mentions": 10
+      },
+      {
+        "tool": "Streak",
+        "slug": "streak",
+        "mentions": 10
+      },
+      {
+        "tool": "Similarweb",
+        "slug": "similarweb",
+        "mentions": 10
+      },
+      {
+        "tool": "Allego Training",
+        "slug": "allego-training",
+        "mentions": 10
+      },
+      {
+        "tool": "Customer Io",
+        "slug": "customer-io",
+        "mentions": 10
+      },
+      {
+        "tool": "Mindtickle Training",
+        "slug": "mindtickle-training",
+        "mentions": 9
+      },
+      {
+        "tool": "Sendoso",
+        "slug": "sendoso",
+        "mentions": 9
+      },
+      {
+        "tool": "Adobe Sign",
+        "slug": "adobe-sign",
+        "mentions": 9
+      },
+      {
+        "tool": "Usergems",
+        "slug": "usergems",
+        "mentions": 9
+      },
+      {
+        "tool": "Qualified",
+        "slug": "qualified",
+        "mentions": 9
+      },
+      {
+        "tool": "Mindtickle",
+        "slug": "mindtickle",
+        "mentions": 9
+      },
+      {
+        "tool": "Vidyard",
+        "slug": "vidyard",
+        "mentions": 8
+      },
+      {
+        "tool": "Rocketlane",
+        "slug": "rocketlane",
+        "mentions": 8
+      },
+      {
+        "tool": "Piper Qualified",
+        "slug": "piper-qualified",
+        "mentions": 8
+      },
+      {
+        "tool": "Doodle",
+        "slug": "doodle",
+        "mentions": 7
+      },
+      {
+        "tool": "Forethought",
+        "slug": "forethought",
+        "mentions": 7
+      },
+      {
+        "tool": "Gong Engage",
+        "slug": "gong-engage",
+        "mentions": 7
+      },
+      {
+        "tool": "Gong Forecast",
+        "slug": "gong-forecast",
+        "mentions": 7
+      },
+      {
+        "tool": "Terminus",
+        "slug": "terminus",
+        "mentions": 7
+      },
+      {
+        "tool": "Sugarcrm",
+        "slug": "sugarcrm",
+        "mentions": 7
+      },
+      {
+        "tool": "Lusha",
+        "slug": "lusha",
+        "mentions": 7
+      },
+      {
+        "tool": "Common Room",
+        "slug": "common-room",
+        "mentions": 7
+      },
+      {
+        "tool": "Lemlist",
+        "slug": "lemlist",
+        "mentions": 7
+      },
+      {
+        "tool": "Zuora Cpq",
+        "slug": "zuora-cpq",
+        "mentions": 6
+      },
+      {
+        "tool": "Agentforce Sdr",
+        "slug": "agentforce-sdr",
+        "mentions": 6
+      },
+      {
+        "tool": "Bigtincan",
+        "slug": "bigtincan",
+        "mentions": 6
+      },
+      {
+        "tool": "Crossbeam",
+        "slug": "crossbeam",
+        "mentions": 6
+      },
+      {
+        "tool": "Impartner",
+        "slug": "impartner",
+        "mentions": 6
+      },
+      {
+        "tool": "Klue",
+        "slug": "klue",
+        "mentions": 6
+      },
+      {
+        "tool": "Sisense",
+        "slug": "sisense",
+        "mentions": 6
+      },
+      {
+        "tool": "Smartlead",
+        "slug": "smartlead",
+        "mentions": 6
+      },
+      {
+        "tool": "Snaplogic",
+        "slug": "snaplogic",
+        "mentions": 6
+      },
+      {
+        "tool": "Walkme",
+        "slug": "walkme",
+        "mentions": 6
+      },
+      {
+        "tool": "Mutiny",
+        "slug": "mutiny",
+        "mentions": 5
+      },
+      {
+        "tool": "Instapage",
+        "slug": "instapage",
+        "mentions": 5
+      },
+      {
+        "tool": "Mixmax",
+        "slug": "mixmax",
+        "mentions": 5
+      },
+      {
+        "tool": "Tray Io",
+        "slug": "tray-io",
+        "mentions": 5
+      },
+      {
+        "tool": "Hubspot Conversations",
+        "slug": "hubspot-conversations",
+        "mentions": 5
+      },
+      {
+        "tool": "Crayon",
+        "slug": "crayon",
+        "mentions": 5
+      },
+      {
+        "tool": "Mutiny Web",
+        "slug": "mutiny-web",
+        "mentions": 5
+      },
+      {
+        "tool": "Lavender",
+        "slug": "lavender",
+        "mentions": 5
+      },
+      {
+        "tool": "Koala",
+        "slug": "koala",
+        "mentions": 5
+      },
+      {
+        "tool": "Trustradius",
+        "slug": "trustradius",
+        "mentions": 5
+      },
+      {
+        "tool": "Amplemarket",
+        "slug": "amplemarket",
+        "mentions": 4
+      },
+      {
+        "tool": "Mode",
+        "slug": "mode",
+        "mentions": 4
+      },
+      {
+        "tool": "Connectandsell",
+        "slug": "connectandsell",
+        "mentions": 4
+      },
+      {
+        "tool": "Bombora Intent",
+        "slug": "bombora-intent",
+        "mentions": 4
+      },
+      {
+        "tool": "Brevo",
+        "slug": "brevo",
+        "mentions": 4
+      },
+      {
+        "tool": "Acuity",
+        "slug": "acuity",
+        "mentions": 4
+      },
+      {
+        "tool": "Leadiq",
+        "slug": "leadiq",
+        "mentions": 4
+      },
+      {
+        "tool": "Spekit",
+        "slug": "spekit",
+        "mentions": 4
+      },
+      {
+        "tool": "Keap",
+        "slug": "keap",
+        "mentions": 4
+      },
+      {
+        "tool": "Bombora",
+        "slug": "bombora",
+        "mentions": 4
+      },
+      {
+        "tool": "Guru App",
+        "slug": "guru-app",
+        "mentions": 3
+      },
+      {
+        "tool": "Nimble Crm",
+        "slug": "nimble-crm",
+        "mentions": 3
+      },
+      {
+        "tool": "Ringlead",
+        "slug": "ringlead",
+        "mentions": 3
+      },
+      {
+        "tool": "Ringlead Revops",
+        "slug": "ringlead-revops",
+        "mentions": 3
+      },
+      {
+        "tool": "Rudderstack",
+        "slug": "rudderstack",
+        "mentions": 3
+      },
+      {
+        "tool": "Lessonly Training",
+        "slug": "lessonly-training",
+        "mentions": 3
+      },
+      {
+        "tool": "Lessonly",
+        "slug": "lessonly",
+        "mentions": 3
+      },
+      {
+        "tool": "Intellimize Web",
+        "slug": "intellimize-web",
+        "mentions": 3
+      },
+      {
+        "tool": "Intellimize",
+        "slug": "intellimize",
+        "mentions": 3
+      },
+      {
+        "tool": "Snappy",
+        "slug": "snappy",
+        "mentions": 3
+      },
+      {
+        "tool": "Hunter Campaigns",
+        "slug": "hunter-campaigns",
+        "mentions": 3
+      },
+      {
+        "tool": "Freshsales",
+        "slug": "freshsales",
+        "mentions": 3
+      },
+      {
+        "tool": "Fireflies",
+        "slug": "fireflies",
+        "mentions": 3
+      },
+      {
+        "tool": "Dynamic Yield",
+        "slug": "dynamic-yield",
+        "mentions": 3
+      },
+      {
+        "tool": "Usemotion",
+        "slug": "usemotion",
+        "mentions": 3
+      },
+      {
+        "tool": "Cognism",
+        "slug": "cognism",
         "mentions": 3
       },
       {
@@ -563,93 +2460,58 @@
         "mentions": 3
       },
       {
-        "tool": "Activecampaign",
-        "slug": "activecampaign",
+        "tool": "Consensus Demo",
+        "slug": "consensus-demo",
         "mentions": 3
       },
       {
-        "tool": "Walkme",
-        "slug": "walkme",
+        "tool": "Wingman",
+        "slug": "wingman",
+        "mentions": 3
+      },
+      {
+        "tool": "Phoneburner",
+        "slug": "phoneburner",
+        "mentions": 3
+      },
+      {
+        "tool": "Partnerstack",
+        "slug": "partnerstack",
+        "mentions": 3
+      },
+      {
+        "tool": "Juro",
+        "slug": "juro",
         "mentions": 2
       },
       {
-        "tool": "Vwo",
-        "slug": "vwo",
+        "tool": "Ada Support",
+        "slug": "ada-support",
         "mentions": 2
       },
       {
-        "tool": "Vendavo",
-        "slug": "vendavo",
+        "tool": "Saleshood Training",
+        "slug": "saleshood-training",
         "mentions": 2
       },
       {
-        "tool": "Trustpilot",
-        "slug": "trustpilot",
+        "tool": "11X",
+        "slug": "11x",
         "mentions": 2
       },
       {
-        "tool": "Showpad",
-        "slug": "showpad",
+        "tool": "Userpilot",
+        "slug": "userpilot",
         "mentions": 2
       },
       {
-        "tool": "Rollworks",
-        "slug": "rollworks",
+        "tool": "Builtwith",
+        "slug": "builtwith",
         "mentions": 2
       },
       {
-        "tool": "Pinecone",
-        "slug": "pinecone",
-        "mentions": 2
-      },
-      {
-        "tool": "Palette",
-        "slug": "palette",
-        "mentions": 2
-      },
-      {
-        "tool": "Otter Ai",
-        "slug": "otter-ai",
-        "mentions": 2
-      },
-      {
-        "tool": "Oracle Cx",
-        "slug": "oracle-cx",
-        "mentions": 2
-      },
-      {
-        "tool": "Mistral",
-        "slug": "mistral",
-        "mentions": 2
-      },
-      {
-        "tool": "Make",
-        "slug": "make",
-        "mentions": 2
-      },
-      {
-        "tool": "Lemlist",
-        "slug": "lemlist",
-        "mentions": 2
-      },
-      {
-        "tool": "Keras",
-        "slug": "keras",
-        "mentions": 2
-      },
-      {
-        "tool": "Haystack",
-        "slug": "haystack",
-        "mentions": 2
-      },
-      {
-        "tool": "Gpt 4",
-        "slug": "gpt-4",
-        "mentions": 2
-      },
-      {
-        "tool": "Captivateiq",
-        "slug": "captivateiq",
+        "tool": "Connectwise Cpq",
+        "slug": "connectwise-cpq",
         "mentions": 2
       },
       {
@@ -658,18 +2520,677 @@
         "mentions": 2
       },
       {
-        "tool": "Amplemarket",
-        "slug": "amplemarket",
+        "tool": "Appcues",
+        "slug": "appcues",
         "mentions": 2
       },
       {
-        "tool": "Airbyte",
-        "slug": "airbyte",
+        "tool": "Close",
+        "slug": "close",
         "mentions": 2
       },
       {
-        "tool": "Acuity",
-        "slug": "acuity",
+        "tool": "Salesintel",
+        "slug": "salesintel",
+        "mentions": 2
+      },
+      {
+        "tool": "Saleshood",
+        "slug": "saleshood",
+        "mentions": 2
+      },
+      {
+        "tool": "Wappalyzer",
+        "slug": "wappalyzer",
+        "mentions": 2
+      },
+      {
+        "tool": "Hunter Io",
+        "slug": "hunter-io",
+        "mentions": 2
+      },
+      {
+        "tool": "Reply Io",
+        "slug": "reply-io",
+        "mentions": 2
+      },
+      {
+        "tool": "Guidecx",
+        "slug": "guidecx",
+        "mentions": 2
+      },
+      {
+        "tool": "Reprise",
+        "slug": "reprise",
+        "mentions": 2
+      },
+      {
+        "tool": "Forma Ai",
+        "slug": "forma-ai",
+        "mentions": 2
+      },
+      {
+        "tool": "Trainual",
+        "slug": "trainual",
+        "mentions": 2
+      },
+      {
+        "tool": "Relevance Ai",
+        "slug": "relevance-ai",
+        "mentions": 2
+      },
+      {
+        "tool": "People Ai",
+        "slug": "people-ai",
+        "mentions": 2
+      },
+      {
+        "tool": "Insightly",
+        "slug": "insightly",
+        "mentions": 2
+      },
+      {
+        "tool": "Dooly",
+        "slug": "dooly",
+        "mentions": 2
+      }
+    ],
+    "2026-02": [
+      {
+        "tool": "Salesforce",
+        "slug": "salesforce",
+        "mentions": 272
+      },
+      {
+        "tool": "Tableau",
+        "slug": "tableau",
+        "mentions": 177
+      },
+      {
+        "tool": "Power Bi",
+        "slug": "power-bi",
+        "mentions": 72
+      },
+      {
+        "tool": "Hubspot",
+        "slug": "hubspot",
+        "mentions": 56
+      },
+      {
+        "tool": "Tensorflow",
+        "slug": "tensorflow",
+        "mentions": 39
+      },
+      {
+        "tool": "Pytorch",
+        "slug": "pytorch",
+        "mentions": 34
+      },
+      {
+        "tool": "Tray",
+        "slug": "tray",
+        "mentions": 29
+      },
+      {
+        "tool": "Catalyst",
+        "slug": "catalyst",
+        "mentions": 27
+      },
+      {
+        "tool": "Transformers",
+        "slug": "transformers",
+        "mentions": 23
+      },
+      {
+        "tool": "Looker",
+        "slug": "looker",
+        "mentions": 18
+      },
+      {
+        "tool": "Walnut",
+        "slug": "walnut",
+        "mentions": 16
+      },
+      {
+        "tool": "Langchain",
+        "slug": "langchain",
+        "mentions": 16
+      },
+      {
+        "tool": "Openai",
+        "slug": "openai",
+        "mentions": 16
+      },
+      {
+        "tool": "Demandtools",
+        "slug": "demandtools",
+        "mentions": 14
+      },
+      {
+        "tool": "Warmly",
+        "slug": "warmly",
+        "mentions": 13
+      },
+      {
+        "tool": "Claude",
+        "slug": "claude",
+        "mentions": 13
+      },
+      {
+        "tool": "Marketo",
+        "slug": "marketo",
+        "mentions": 12
+      },
+      {
+        "tool": "Dynamics 365",
+        "slug": "dynamics-365",
+        "mentions": 10
+      },
+      {
+        "tool": "Hugging Face",
+        "slug": "hugging-face",
+        "mentions": 9
+      },
+      {
+        "tool": "G2",
+        "slug": "g2",
+        "mentions": 9
+      },
+      {
+        "tool": "Anthropic",
+        "slug": "anthropic",
+        "mentions": 8
+      },
+      {
+        "tool": "Faiss",
+        "slug": "faiss",
+        "mentions": 8
+      },
+      {
+        "tool": "Captivateiq",
+        "slug": "captivateiq",
+        "mentions": 8
+      },
+      {
+        "tool": "Llamaindex",
+        "slug": "llamaindex",
+        "mentions": 8
+      },
+      {
+        "tool": "Postal",
+        "slug": "postal",
+        "mentions": 8
+      },
+      {
+        "tool": "Copper",
+        "slug": "copper",
+        "mentions": 8
+      },
+      {
+        "tool": "Zoominfo",
+        "slug": "zoominfo",
+        "mentions": 8
+      },
+      {
+        "tool": "Salesforce Marketing Cloud",
+        "slug": "salesforce-marketing-cloud",
+        "mentions": 7
+      },
+      {
+        "tool": "Reveal",
+        "slug": "reveal",
+        "mentions": 7
+      },
+      {
+        "tool": "Autogen",
+        "slug": "autogen",
+        "mentions": 7
+      },
+      {
+        "tool": "Hubspot Marketing",
+        "slug": "hubspot-marketing",
+        "mentions": 7
+      },
+      {
+        "tool": "Pinecone",
+        "slug": "pinecone",
+        "mentions": 7
+      },
+      {
+        "tool": "Weaviate",
+        "slug": "weaviate",
+        "mentions": 7
+      },
+      {
+        "tool": "Salesloft",
+        "slug": "salesloft",
+        "mentions": 7
+      },
+      {
+        "tool": "6Sense",
+        "slug": "6sense",
+        "mentions": 7
+      },
+      {
+        "tool": "Jax",
+        "slug": "jax",
+        "mentions": 6
+      },
+      {
+        "tool": "Docusign",
+        "slug": "docusign",
+        "mentions": 6
+      },
+      {
+        "tool": "Gemini",
+        "slug": "gemini",
+        "mentions": 6
+      },
+      {
+        "tool": "Atrium",
+        "slug": "atrium",
+        "mentions": 6
+      },
+      {
+        "tool": "Linkedin Sales Navigator",
+        "slug": "linkedin-sales-navigator",
+        "mentions": 6
+      },
+      {
+        "tool": "Mulesoft",
+        "slug": "mulesoft",
+        "mentions": 6
+      },
+      {
+        "tool": "Salesforce Cpq",
+        "slug": "salesforce-cpq",
+        "mentions": 5
+      },
+      {
+        "tool": "Apollo",
+        "slug": "apollo",
+        "mentions": 5
+      },
+      {
+        "tool": "Crewai",
+        "slug": "crewai",
+        "mentions": 5
+      },
+      {
+        "tool": "Zoho Crm",
+        "slug": "zoho-crm",
+        "mentions": 5
+      },
+      {
+        "tool": "Seismic",
+        "slug": "seismic",
+        "mentions": 5
+      },
+      {
+        "tool": "Iterable",
+        "slug": "iterable",
+        "mentions": 4
+      },
+      {
+        "tool": "Gainsight",
+        "slug": "gainsight",
+        "mentions": 4
+      },
+      {
+        "tool": "Clay",
+        "slug": "clay",
+        "mentions": 4
+      },
+      {
+        "tool": "Llama",
+        "slug": "llama",
+        "mentions": 4
+      },
+      {
+        "tool": "Zapier",
+        "slug": "zapier",
+        "mentions": 4
+      },
+      {
+        "tool": "Xactly",
+        "slug": "xactly",
+        "mentions": 4
+      },
+      {
+        "tool": "Mailchimp",
+        "slug": "mailchimp",
+        "mentions": 3
+      },
+      {
+        "tool": "Nutshell",
+        "slug": "nutshell",
+        "mentions": 3
+      },
+      {
+        "tool": "Semantic Kernel",
+        "slug": "semantic-kernel",
+        "mentions": 3
+      },
+      {
+        "tool": "Semrush",
+        "slug": "semrush",
+        "mentions": 3
+      },
+      {
+        "tool": "Varicent",
+        "slug": "varicent",
+        "mentions": 3
+      },
+      {
+        "tool": "Loom",
+        "slug": "loom",
+        "mentions": 3
+      },
+      {
+        "tool": "Amplitude",
+        "slug": "amplitude",
+        "mentions": 3
+      },
+      {
+        "tool": "Braze",
+        "slug": "braze",
+        "mentions": 3
+      },
+      {
+        "tool": "Fivetran",
+        "slug": "fivetran",
+        "mentions": 3
+      },
+      {
+        "tool": "Gong",
+        "slug": "gong",
+        "mentions": 3
+      },
+      {
+        "tool": "Highspot",
+        "slug": "highspot",
+        "mentions": 3
+      },
+      {
+        "tool": "Intercom",
+        "slug": "intercom",
+        "mentions": 2
+      },
+      {
+        "tool": "Instantly",
+        "slug": "instantly",
+        "mentions": 2
+      },
+      {
+        "tool": "Oracle Cx",
+        "slug": "oracle-cx",
+        "mentions": 2
+      },
+      {
+        "tool": "Close",
+        "slug": "close",
+        "mentions": 2
+      },
+      {
+        "tool": "Demandbase",
+        "slug": "demandbase",
+        "mentions": 2
+      },
+      {
+        "tool": "Drift Ai",
+        "slug": "drift-ai",
+        "mentions": 2
+      },
+      {
+        "tool": "Artisan",
+        "slug": "artisan",
+        "mentions": 2
+      },
+      {
+        "tool": "Boomi",
+        "slug": "boomi",
+        "mentions": 2
+      }
+    ],
+    "2026-01": [
+      {
+        "tool": "Salesforce",
+        "slug": "salesforce",
+        "mentions": 105
+      },
+      {
+        "tool": "Tableau",
+        "slug": "tableau",
+        "mentions": 51
+      },
+      {
+        "tool": "Power Bi",
+        "slug": "power-bi",
+        "mentions": 39
+      },
+      {
+        "tool": "Copper",
+        "slug": "copper",
+        "mentions": 38
+      },
+      {
+        "tool": "Pytorch",
+        "slug": "pytorch",
+        "mentions": 32
+      },
+      {
+        "tool": "Tensorflow",
+        "slug": "tensorflow",
+        "mentions": 29
+      },
+      {
+        "tool": "Catalyst",
+        "slug": "catalyst",
+        "mentions": 26
+      },
+      {
+        "tool": "Demandtools",
+        "slug": "demandtools",
+        "mentions": 19
+      },
+      {
+        "tool": "Openai",
+        "slug": "openai",
+        "mentions": 19
+      },
+      {
+        "tool": "Langchain",
+        "slug": "langchain",
+        "mentions": 18
+      },
+      {
+        "tool": "Transformers",
+        "slug": "transformers",
+        "mentions": 16
+      },
+      {
+        "tool": "Walnut",
+        "slug": "walnut",
+        "mentions": 11
+      },
+      {
+        "tool": "Hugging Face",
+        "slug": "hugging-face",
+        "mentions": 11
+      },
+      {
+        "tool": "Salesforce Marketing Cloud",
+        "slug": "salesforce-marketing-cloud",
+        "mentions": 10
+      },
+      {
+        "tool": "Hubspot",
+        "slug": "hubspot",
+        "mentions": 10
+      },
+      {
+        "tool": "Tray",
+        "slug": "tray",
+        "mentions": 10
+      },
+      {
+        "tool": "Claude",
+        "slug": "claude",
+        "mentions": 9
+      },
+      {
+        "tool": "Vitally",
+        "slug": "vitally",
+        "mentions": 8
+      },
+      {
+        "tool": "Anthropic",
+        "slug": "anthropic",
+        "mentions": 7
+      },
+      {
+        "tool": "Pgvector",
+        "slug": "pgvector",
+        "mentions": 5
+      },
+      {
+        "tool": "Warmly",
+        "slug": "warmly",
+        "mentions": 5
+      },
+      {
+        "tool": "Crewai",
+        "slug": "crewai",
+        "mentions": 5
+      },
+      {
+        "tool": "Drift Ai",
+        "slug": "drift-ai",
+        "mentions": 5
+      },
+      {
+        "tool": "Gemini",
+        "slug": "gemini",
+        "mentions": 5
+      },
+      {
+        "tool": "Keras",
+        "slug": "keras",
+        "mentions": 5
+      },
+      {
+        "tool": "Llama",
+        "slug": "llama",
+        "mentions": 5
+      },
+      {
+        "tool": "Marketo",
+        "slug": "marketo",
+        "mentions": 5
+      },
+      {
+        "tool": "Weaviate",
+        "slug": "weaviate",
+        "mentions": 4
+      },
+      {
+        "tool": "Llamaindex",
+        "slug": "llamaindex",
+        "mentions": 4
+      },
+      {
+        "tool": "Mulesoft",
+        "slug": "mulesoft",
+        "mentions": 4
+      },
+      {
+        "tool": "Pinecone",
+        "slug": "pinecone",
+        "mentions": 4
+      },
+      {
+        "tool": "Autogen",
+        "slug": "autogen",
+        "mentions": 3
+      },
+      {
+        "tool": "Linkedin Sales Navigator",
+        "slug": "linkedin-sales-navigator",
+        "mentions": 3
+      },
+      {
+        "tool": "Dynamics 365",
+        "slug": "dynamics-365",
+        "mentions": 3
+      },
+      {
+        "tool": "Optimizely",
+        "slug": "optimizely",
+        "mentions": 3
+      },
+      {
+        "tool": "Haystack",
+        "slug": "haystack",
+        "mentions": 2
+      },
+      {
+        "tool": "Salesloft",
+        "slug": "salesloft",
+        "mentions": 2
+      },
+      {
+        "tool": "Mailchimp",
+        "slug": "mailchimp",
+        "mentions": 2
+      },
+      {
+        "tool": "Dspy",
+        "slug": "dspy",
+        "mentions": 2
+      },
+      {
+        "tool": "Domo",
+        "slug": "domo",
+        "mentions": 2
+      },
+      {
+        "tool": "Chroma",
+        "slug": "chroma",
+        "mentions": 2
+      },
+      {
+        "tool": "Walkme",
+        "slug": "walkme",
+        "mentions": 2
+      },
+      {
+        "tool": "Captivateiq",
+        "slug": "captivateiq",
+        "mentions": 2
+      },
+      {
+        "tool": "Boomi",
+        "slug": "boomi",
+        "mentions": 2
+      },
+      {
+        "tool": "G2",
+        "slug": "g2",
+        "mentions": 2
+      },
+      {
+        "tool": "Intercom Fin",
+        "slug": "intercom-fin",
+        "mentions": 2
+      },
+      {
+        "tool": "Reveal",
+        "slug": "reveal",
+        "mentions": 2
+      },
+      {
+        "tool": "Hubspot Marketing",
+        "slug": "hubspot-marketing",
         "mentions": 2
       }
     ],
@@ -677,37 +3198,62 @@
       {
         "tool": "Salesforce",
         "slug": "salesforce",
-        "mentions": 95
-      },
-      {
-        "tool": "Hubspot",
-        "slug": "hubspot",
-        "mentions": 22
+        "mentions": 31
       },
       {
         "tool": "Tableau",
         "slug": "tableau",
-        "mentions": 20
+        "mentions": 30
+      },
+      {
+        "tool": "Pytorch",
+        "slug": "pytorch",
+        "mentions": 22
+      },
+      {
+        "tool": "Tensorflow",
+        "slug": "tensorflow",
+        "mentions": 19
+      },
+      {
+        "tool": "Jax",
+        "slug": "jax",
+        "mentions": 19
       },
       {
         "tool": "Power Bi",
         "slug": "power-bi",
-        "mentions": 12
+        "mentions": 14
       },
       {
-        "tool": "Zoominfo",
-        "slug": "zoominfo",
+        "tool": "Openai",
+        "slug": "openai",
+        "mentions": 9
+      },
+      {
+        "tool": "Langchain",
+        "slug": "langchain",
+        "mentions": 9
+      },
+      {
+        "tool": "Vidyard",
+        "slug": "vidyard",
         "mentions": 6
       },
       {
-        "tool": "Reveal",
-        "slug": "reveal",
-        "mentions": 5
+        "tool": "Autogen",
+        "slug": "autogen",
+        "mentions": 6
       },
       {
-        "tool": "Docusign",
-        "slug": "docusign",
-        "mentions": 5
+        "tool": "Crewai",
+        "slug": "crewai",
+        "mentions": 6
+      },
+      {
+        "tool": "Demandtools",
+        "slug": "demandtools",
+        "mentions": 6
       },
       {
         "tool": "Catalyst",
@@ -720,63 +3266,48 @@
         "mentions": 5
       },
       {
-        "tool": "Gartner Peer",
-        "slug": "gartner-peer",
-        "mentions": 4
+        "tool": "Llama",
+        "slug": "llama",
+        "mentions": 5
       },
       {
-        "tool": "Zapier",
-        "slug": "zapier",
+        "tool": "Drift Ai",
+        "slug": "drift-ai",
         "mentions": 3
       },
       {
-        "tool": "Marketo",
-        "slug": "marketo",
-        "mentions": 3
-      },
-      {
-        "tool": "Gong",
-        "slug": "gong",
-        "mentions": 3
-      },
-      {
-        "tool": "Fathom",
-        "slug": "fathom",
-        "mentions": 3
-      },
-      {
-        "tool": "Chorus",
-        "slug": "chorus",
-        "mentions": 3
-      },
-      {
-        "tool": "Postal",
-        "slug": "postal",
+        "tool": "Amplitude",
+        "slug": "amplitude",
         "mentions": 2
       },
       {
-        "tool": "Make",
-        "slug": "make",
+        "tool": "Hubspot",
+        "slug": "hubspot",
         "mentions": 2
       },
       {
-        "tool": "Linkedin Sales Navigator",
-        "slug": "linkedin-sales-navigator",
+        "tool": "Hugging Face",
+        "slug": "hugging-face",
         "mentions": 2
       },
       {
-        "tool": "G2",
-        "slug": "g2",
+        "tool": "Mistral",
+        "slug": "mistral",
         "mentions": 2
       },
       {
-        "tool": "Dynamics 365",
-        "slug": "dynamics-365",
+        "tool": "Salesforce Marketing Cloud",
+        "slug": "salesforce-marketing-cloud",
         "mentions": 2
       },
       {
-        "tool": "Chroma",
-        "slug": "chroma",
+        "tool": "Walkme",
+        "slug": "walkme",
+        "mentions": 2
+      },
+      {
+        "tool": "Warmly",
+        "slug": "warmly",
         "mentions": 2
       }
     ],
@@ -784,46 +3315,76 @@
       {
         "tool": "Salesforce",
         "slug": "salesforce",
-        "mentions": 61
+        "mentions": 13
       },
       {
-        "tool": "Hubspot",
-        "slug": "hubspot",
-        "mentions": 20
+        "tool": "Tensorflow",
+        "slug": "tensorflow",
+        "mentions": 13
+      },
+      {
+        "tool": "Pytorch",
+        "slug": "pytorch",
+        "mentions": 11
       },
       {
         "tool": "Power Bi",
         "slug": "power-bi",
-        "mentions": 8
-      },
-      {
-        "tool": "Dynamics 365",
-        "slug": "dynamics-365",
-        "mentions": 6
-      },
-      {
-        "tool": "Gartner Peer",
-        "slug": "gartner-peer",
-        "mentions": 4
+        "mentions": 9
       },
       {
         "tool": "Tableau",
         "slug": "tableau",
+        "mentions": 8
+      },
+      {
+        "tool": "Hubspot",
+        "slug": "hubspot",
+        "mentions": 6
+      },
+      {
+        "tool": "Transformers",
+        "slug": "transformers",
+        "mentions": 5
+      },
+      {
+        "tool": "Jax",
+        "slug": "jax",
+        "mentions": 4
+      },
+      {
+        "tool": "Catalyst",
+        "slug": "catalyst",
+        "mentions": 4
+      },
+      {
+        "tool": "Demandtools",
+        "slug": "demandtools",
+        "mentions": 4
+      },
+      {
+        "tool": "Marketo",
+        "slug": "marketo",
         "mentions": 3
       },
       {
-        "tool": "Chili Piper Routing",
-        "slug": "chili-piper-routing",
-        "mentions": 3
+        "tool": "Apollo",
+        "slug": "apollo",
+        "mentions": 2
       },
       {
-        "tool": "Chili Piper",
-        "slug": "chili-piper",
-        "mentions": 3
+        "tool": "Gong",
+        "slug": "gong",
+        "mentions": 2
       },
       {
-        "tool": "Instantly",
-        "slug": "instantly",
+        "tool": "Dynamics 365",
+        "slug": "dynamics-365",
+        "mentions": 2
+      },
+      {
+        "tool": "Braze",
+        "slug": "braze",
         "mentions": 2
       }
     ],
@@ -831,22 +3392,42 @@
       {
         "tool": "Salesforce",
         "slug": "salesforce",
-        "mentions": 24
+        "mentions": 23
       },
       {
         "tool": "Tableau",
         "slug": "tableau",
-        "mentions": 5
+        "mentions": 18
       },
       {
-        "tool": "Hubspot",
-        "slug": "hubspot",
-        "mentions": 5
+        "tool": "G2",
+        "slug": "g2",
+        "mentions": 11
       },
       {
-        "tool": "Instantly",
-        "slug": "instantly",
+        "tool": "Power Bi",
+        "slug": "power-bi",
+        "mentions": 7
+      },
+      {
+        "tool": "Catalyst",
+        "slug": "catalyst",
+        "mentions": 4
+      },
+      {
+        "tool": "Zoominfo",
+        "slug": "zoominfo",
         "mentions": 3
+      },
+      {
+        "tool": "Highspot",
+        "slug": "highspot",
+        "mentions": 3
+      },
+      {
+        "tool": "Anthropic",
+        "slug": "anthropic",
+        "mentions": 2
       },
       {
         "tool": "Demandtools",
@@ -854,23 +3435,154 @@
         "mentions": 2
       },
       {
-        "tool": "Census Data",
-        "slug": "census-data",
+        "tool": "Marketo",
+        "slug": "marketo",
+        "mentions": 2
+      },
+      {
+        "tool": "Warmly",
+        "slug": "warmly",
         "mentions": 2
       }
     ],
     "2025-09": [
       {
+        "tool": "Drift Ai",
+        "slug": "drift-ai",
+        "mentions": 7
+      },
+      {
+        "tool": "Tableau",
+        "slug": "tableau",
+        "mentions": 4
+      },
+      {
+        "tool": "Captivateiq",
+        "slug": "captivateiq",
+        "mentions": 3
+      },
+      {
+        "tool": "G2",
+        "slug": "g2",
+        "mentions": 3
+      },
+      {
         "tool": "Salesforce",
         "slug": "salesforce",
         "mentions": 3
+      },
+      {
+        "tool": "Artisan",
+        "slug": "artisan",
+        "mentions": 2
       }
     ],
     "2025-08": [
       {
+        "tool": "Artisan",
+        "slug": "artisan",
+        "mentions": 9
+      },
+      {
+        "tool": "Tableau",
+        "slug": "tableau",
+        "mentions": 4
+      },
+      {
+        "tool": "Tensorflow",
+        "slug": "tensorflow",
+        "mentions": 3
+      },
+      {
+        "tool": "Pytorch",
+        "slug": "pytorch",
+        "mentions": 2
+      },
+      {
+        "tool": "Demandtools",
+        "slug": "demandtools",
+        "mentions": 2
+      },
+      {
+        "tool": "Llama",
+        "slug": "llama",
+        "mentions": 2
+      },
+      {
+        "tool": "Hubspot",
+        "slug": "hubspot",
+        "mentions": 2
+      },
+      {
+        "tool": "Jax",
+        "slug": "jax",
+        "mentions": 2
+      }
+    ],
+    "2025-07": [
+      {
+        "tool": "Tensorflow",
+        "slug": "tensorflow",
+        "mentions": 8
+      },
+      {
         "tool": "Salesforce",
         "slug": "salesforce",
-        "mentions": 4
+        "mentions": 6
+      },
+      {
+        "tool": "Hubspot",
+        "slug": "hubspot",
+        "mentions": 2
+      },
+      {
+        "tool": "Catalyst",
+        "slug": "catalyst",
+        "mentions": 2
+      },
+      {
+        "tool": "Intercom",
+        "slug": "intercom",
+        "mentions": 2
+      }
+    ],
+    "2025-06": [
+      {
+        "tool": "Salesforce",
+        "slug": "salesforce",
+        "mentions": 5
+      },
+      {
+        "tool": "Pytorch",
+        "slug": "pytorch",
+        "mentions": 3
+      },
+      {
+        "tool": "Anthropic",
+        "slug": "anthropic",
+        "mentions": 2
+      },
+      {
+        "tool": "Hubspot",
+        "slug": "hubspot",
+        "mentions": 2
+      }
+    ],
+    "2025-05": [
+      {
+        "tool": "Catalyst",
+        "slug": "catalyst",
+        "mentions": 2
+      },
+      {
+        "tool": "Marketo",
+        "slug": "marketo",
+        "mentions": 2
+      },
+      {
+        "tool": "Salesforce",
+        "slug": "salesforce",
+        "mentions": 2
       }
     ]
   }
